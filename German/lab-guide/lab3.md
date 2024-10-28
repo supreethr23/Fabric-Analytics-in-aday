@@ -52,7 +52,7 @@ Die Verknüpfung wird verwendet, um eine Verknüpfung zum Zielort zu erstellen. 
 
     ![](../media/lab-03/image009.jpg)
 
-6. Sie müssen eine Verbindung zur ADLS Gen2-Datenquelle herstellen. Geben Sie unter Verbindungseinstellungen -> URL diesen Link ein: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
+6. Sie müssen eine Verbindung zur ADLS Gen2-Datenquelle herstellen. Geben Sie unter **Verbindungseinstellungen -> URL** diesen Link ein: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 7. Wählen Sie **Shared Access Signature (SAS)** aus der Dropdown-Liste Authentifizierungsart.
 8. Kopieren Sie das **SAS-Token** aus der Registerkarte **Umgebungsvariablen** (neben der Registerkarte Laborhandbuch) und fügen Sie es in das Feld **SAS-Token** ein.
