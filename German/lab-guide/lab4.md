@@ -66,7 +66,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 10. Drücken Sie im Bereich **Dataflow** auf **STRG+V** (das Einfügen mittels Rechtsklick ist derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
 
-**Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard** zu aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
+**Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zu aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
 
 Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, eine Verbindung zu konfigurieren.
 
@@ -96,14 +96,13 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaubereich an
 
     ![](../media/lab-04.1/image021.jpg)
 
-3. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wir müssen eine neue Verbindung zu Lakehouse herstellen. Wenn **Neue Verbindung erstellen im Dropdown-
-Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organisationskonto** festgelegt ist, wählen Sie **Weiter** aus.
+3. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wir müssen eine neue Verbindung zu Lakehouse herstellen. Wenn **Neue Verbindung erstellen** im **Dropdown-Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organisationskonto** festgelegt ist, wählen Sie **Weiter** aus.
 
     ![](../media/lab-04.1/image024.jpg)
 
 4. Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist, da wir eine neue Tabelle erstellen.
 
-5. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> **FAIAD_\<Benutzername>**.
+5. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> **FAIAD_\<username>**.
 
 6. Wählen Sie **lh_FAIAD** aus.
 
@@ -129,7 +128,7 @@ Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organis
 
     ![](../media/lab-04.1/image033.jpg)
 
-    **Hinweis**: Sie werden zum Arbeitsbereich **FAIAD_\<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+    **Hinweis**: Sie werden zum Arbeitsbereich **FAIAD_\<username>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
 
 3. Wir arbeiten mit Dataflow 1. Benennen wir ihn um, bevor wir fortfahren. Klicken Sie auf die **Auslassungspunkte (…)** neben Dataflow 1. Wählen Sie **Eigenschaften** aus.
 
@@ -137,13 +136,13 @@ Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organis
 
 4. Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den **Namen** in **df_People_SharePoint**.
 
-5. Ergänzen Sie im Textfeld **Beschreibung** den Text **Dataflow zur Erfassung der „People“-Daten aus SharePoint im Lakehouse**.
+5. Ergänzen Sie im Textfeld **Beschreibung** den Text **Text Dataflow to ingest People data from SharePoint to Lakehouse.**.
  
 6. Wählen Sie **Speichern** aus.
 
     ![](../media/lab-04.1/image039.png)
 
-    Sie werden zum Arbeitsbereich **FAIAD_\<Benutzername>** weitergeleitet.
+    Sie werden zum Arbeitsbereich **FAIAD_\<username>** weitergeleitet.
 
 7. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
 
@@ -158,7 +157,7 @@ Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organis
  
 ### Aufgabe 5: Snowflake-Abfragen in Dataflow kopieren
 
-1. Wir navigieren zurück zum Fabric-Arbeitsbereich **FAIAD_\<Benutzername>**.
+1. Wir navigieren zurück zum Fabric-Arbeitsbereich **FAIAD_\<username>**.
 
 2. Wählen Sie im Menü oben die Option **Neu -> Dataflow Gen2** aus.
 
@@ -230,7 +229,7 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
 
 5. Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das Optionsfeld **Neue Tabelle ausgewählt** ist, weil wir eine neue Tabelle erstellen.
 
-6. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> **FAIAD_\<Benutzername>**.
+6. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> **FAIAD_\<username>**.
 
 7. Wählen Sie **lh_FAIAD** aus.
 
@@ -262,7 +261,7 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
 
     ![](../media/lab-04.1/image075.jpg)
 
-   Sie werden zum Arbeitsbereich **FAIAD_\<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+   Sie werden zum Arbeitsbereich **FAIAD_\<username>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
 
 5. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
 
@@ -283,13 +282,13 @@ Sie sollten sich im Lakehouse lh_FAIAD befinden. Stellen Sie sicher, dass Sie si
 
 ![](../media/lab-04.1/image078.jpg)
 
-1. Wählen Sie im Bereich **Explorer** die **Auslassungspunkte** neben **Tabellen** aus.
+1. Wählen Sie im Bereich **Explorer** die **Auslassungspunkte** neben **Tabeles** aus.
 
 2. Wählen Sie **Neue Verknüpfung** aus.
 
      ![](../media/lab-04.1/image081.jpg)
 
-3. Das Dialogfeld „Neue Verknüpfung“ wird geöffnet. Wählen Sie unter **Externe Quellen die Option Dataverse** aus.
+3. Das Dialogfeld „Neue Verknüpfung“ wird geöffnet. Wählen Sie unter **Externe Quellen** die Option **Dataverse** aus.
 
    **Hinweis:** In der vorherigen Übung haben wir ähnliche Schritte zum Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
 
@@ -343,9 +342,9 @@ Sie sollten sich im Lakehouse lh_FAIAD befinden. Stellen Sie sicher, dass Sie si
 
      ![](../media/lab-04.1/image101.jpg)
 
-7. Erweitern Sie im linken Bereich **lh_dataverse -> Tabellen**. Beachten Sie, dass der IT-Administrator Zugriff auf die Tabelle „Customer“ gewährt hat.
+7. Erweitern Sie im linken Bereich **lh_dataverse -> Tabeles**. Beachten Sie, dass der IT-Administrator Zugriff auf die Tabelle „Customer“ gewährt hat.
 
-8. Wählen Sie **Kunde** aus.
+8. Wählen Sie **Customer** aus.
  
 9. Wählen Sie **Weiter** aus.
 
