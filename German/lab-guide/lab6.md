@@ -34,13 +34,13 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 ## Aufgabe 1: Daten mithilfe von SQL abfragen
 
-1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich **FAIAD_\<Benutzername>**, den Sie in Übung 2, Aufgabe 9, erstellt haben.
+1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich **FAIAD_\<username>**, den Sie in Übung 2, Aufgabe 9, erstellt haben.
 
 2. Sie können bei Bedarf den **Aufgabenfluss minimieren**, um die vollständige Liste der Elemente anzuzeigen.
 
 3. Sie sehen drei Arten von lh_FAIAD – Lakehouse, Semantikmodell und SQL-Endpunkt. In einer früheren Übung haben wir uns mit Lakehouse beschäftigt und Visual-Abfragen mithilfe des SQL- Analyseendpunkts erstellt. Wählen Sie die Option **lh_FAIAD SQL-Analyseendpunkt** aus, um diese Option weiter zu erkunden. Sie werden zur **SQL-Ansicht** des Explorers weitergeleitet.
 
-   ![](../media/lab-06/image005.jpg)
+   ![](../media/lab-06.1/image005.jpg)
 
    Wenn Sie sich die Daten vor der Erstellung eines Datenmodells genauer ansehen möchten, können Sie dies mit SQL tun. Für die Verwendung von SQL sind zwei Optionen verfügbar. Option eins ist die Visual-Abfrage, die wir in der vorherigen Übung verwendet haben. Option zwei ist das Schreiben von TSQL-Code. Dies ist eine entwicklerfreundliche Option. Untersuchen wir dies genauer.
  
@@ -50,7 +50,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 4. Wählen Sie im **Menü oben** die Option **Neue SQL-Abfrage** aus, oder klicken Sie **links unten** auf **Abfrage**. Die Ansicht „SQL-Abfrage“ wird geöffnet.
 
-   ![](../media/lab-06/image008.jpg)
+   ![](../media/lab-06.1/image008.jpg)
 
 5. Fügen Sie die unten **stehende SQL-Abfrage** in das **Abfragefenster** ein. Mit dieser Abfrage werden die Units by Supplierenname ermittelt. Dazu wird die Tabelle „Sales“ mit den Tabellen „Product“ und „Supplier“ verknüpft.
 
@@ -66,43 +66,44 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 7. Beachten Sie, dass die Abfrage mit der Option **Als Ansicht speichern** gespeichert werden kann.
 
-8. Die Abfrage wird dann **links** im Bereich **Explorer** unter dem Abschnitt **Abfragen** unter **Meine Abfragen** als **SQL-Abfrage 1** gespeichert. So kann die Abfrage umbenannt und zur späteren Verwendung gespeichert werden. Es ist auch möglich, Abfragen anzuzeigen, die an Sie freigegeben wurden. Öffnen Sie dazu den Ordner **Freigegebene Abfragen**.
+8. Die Abfrage wird dann **links** im Bereich **Explorer** unter dem Abschnitt **Queries** unter **Meine Abfragen** als **SQL query 1** gespeichert. So kann die Abfrage umbenannt und zur späteren Verwendung gespeichert werden. Es ist auch möglich, Abfragen anzuzeigen, die an Sie freigegeben wurden. Öffnen Sie dazu den Ordner **Freigegebene Abfragen**.
  
    **Hinweis:** Visual-Abfragen, die Sie in früheren Übungen erstellt haben, sind auch im Ordner „Meine Abfragen“ verfügbar.
 
-   ![](../media/lab-06/image011.jpg)
+   ![](../media/lab-06.1/image011.jpg)
 
 ## Aufgabe 2: T-SQL-Ergebnis veranschaulichen
 
 1. Das Ergebnis der Abfrage kann auch bildlich veranschaulicht werden. **Markieren Sie die Abfrage** im Abfragebereich
 
-2. Wählen Sie im Menü des Bereichs „Ergebnisse“ **Diese Daten erkunden (Vorschauversion) -> Ergebnisse visualisieren** aus.
+2. Wählen Sie im Menü des Bereichs „Ergebnisse“ **Diese Daten erkunden (Vorschau) -> 
+Visualisieren von Ergebnissen** aus.
 
-   ![](../media/lab-06/image014.png)
+   ![](../media/lab-06.1/image014.png)
 
 3. Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet. Wählen Sie **Weiter** aus.
 
    Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet und ähnelt der Power BI Desktop - Berichtsansicht. Es umfasst alle in der Power BI Desktop-Berichtsansicht verfügbaren Funktionen. Sie können die Seite formatieren, verschiedene Visuals auswählen, Visuals formatieren, Filter hinzufügen usw. Wir werden uns in diesem Kurs nicht mit diesen Optionen beschäftigen.
  
-4. Erweitern Sie den Bereich **Daten**, und erweitern Sie **SQL-Abfrage 1**.
+4. Erweitern Sie den Bereich **Daten**, und erweitern Sie **SQL query 1**.
 
 5. Wählen Sie die Felder **Supplier_Name** und **Units** aus. Das Tabellenvisual wird erstellt.
 
-    ![](../media/lab-06/image017.jpg)
+    ![](../media/lab-06.1/image017.jpg)
 
 6. Ändern Sie unter **Visualisierung** den Visualtyp durch Auswahl des **gestapelten Säulendiagramms**.
 
 7. Wählen Sie unten rechts auf dem Bildschirm die Option **Als Bericht speichern** aus.
 
-   ![](../media/lab-06/image020.jpg)
+   ![](../media/lab-06.1/image020.jpg)
 
-8. Das Dialogfeld „Bericht speichern“ wird geöffnet. Geben Sie im Textfeld Bericht benennen den Text **Units by Supplier** ein.
+8. Das Dialogfeld „Bericht speichern“ wird geöffnet. Geben Sie im Textfeld **Namen für Bericht eingebenn** den Text **Units by Supplier** ein.
 
-9. Überprüfen Sie, dass der Zielarbeitsbereich Ihrem Fabric-Arbeitsbereich **FAIAD_\<Benutzername>** entspricht.
+9. Überprüfen Sie, dass der Zielarbeitsbereich Ihrem Fabric-Arbeitsbereich **FAIAD_\<username>** entspricht.
 
 10. Wählen Sie **Speichern** aus.
 
-    ![](../media/lab-06/image023.png)
+    ![](../media/lab-06.1/image023.png)
 
     Sie werden zum Bildschirm „SQL-Abfrage“ weitergeleitet.
  
@@ -112,7 +113,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 1. Wählen Sie im **unteren Bereich** die Option **Modell** aus. Sie werden feststellen, dass der mittlere Bereich wie die Modellansicht in Power BI Desktop aussieht.
 
-    ![](../media/lab-06/image026.jpg)
+    ![](../media/lab-06.1/image026.jpg)
 
    Hierbei handelt es sich um das Standardmodell, das vom Lakehouse erstellt wird. Beim Standardmodell gelten jedoch einige Einschränkungen (z. B. die Möglichkeit zum Formatieren von Kennzahlen usw.). Außerdem benötigen wir in unserem Modell nur eine Teilmenge der Tabellen. Wir erstellen also ein neues semantisches Modell.
 
@@ -120,15 +121,15 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 3. Wählen Sie **Lakehouse**, um zur Lakehouse-Ansicht zu gelangen.
 
-    ![](../media/lab-06/image029.jpg)
+    ![](../media/lab-06.1/image029.jpg)
 
-4. Wählen Sie im Menü **Start -> Neues semantisches Modell** aus.
+4. Wählen Sie im Menü **Start -> Neues Semantikmodell** aus.
 
 5. Das Dialogfeld „Neues semantisches Modell“ wird geöffnet. Geben Sie **sm_FAIAD** als Name des semantischen Direct Lake-Modells ein.
  
 6. Wir haben standardmäßig die Möglichkeit, eine Teilmenge der Tabellen auszuwählen. Denken Sie daran, dass wir in der vorherigen Übung Ansichten erstellt haben. Wir möchten diese Ansichten in das Modell einbeziehen. **Klicken Sie** auf das **Symbol** in der **Suchleiste**, und wählen Sie **Ansichten** **anzeigen** aus. Jetzt haben wir die Möglichkeit, Ansichten anzuzeigen und auszuwählen.
 
-   ![](../media/lab-06/image032.jpg)
+   ![](../media/lab-06.1/image032.jpg)
 
 7. **Wählen Sie** die folgenden Tabellen/Ansichten aus:
 
@@ -152,7 +153,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
  
 8. Wählen Sie **Bestätigen** aus.
 
-   ![](../media/lab-06/image035.png)
+   ![](../media/lab-06.1/image035.png)
 
 ## Aufgabe 4: Beziehungen erstellen
 
@@ -160,25 +161,25 @@ Sie navigieren zum neuen semantischen Modell mit den ausgewählten Tabellen. Sie
 
 **Hinweis:** Der Direct Lake-Modus ist schneller als der Direct Query-Modus.
 
- ![](../media/lab-06/image038.jpg)
+ ![](../media/lab-06.1/image038.jpg)
 
 Das erste Schritt besteht darin, Beziehungen zwischen diesen Tabellen zu erstellen.
 
 1. Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Sales“ und „Reseller“. Wählen Sie in der Tabelle **Sales** den Eintrag **ResellerID** aus, und ziehen Sie ihn in der Tabelle **Reseller** auf den Eintrag **ResellerID**.
 
-   ![](../media/lab-06/image041.jpg)
+   ![](../media/lab-06.1/image041.jpg)
 
 2. Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Von Tabelle Sales** und bei **Spalte ResellerID** angegeben ist.
 
 3. Vergewissern Sie sicher, dass unter **In Tabelle Reseller** und bei **Spalte ResellerID** angegeben ist.
 
-4. Die **Kardinalität** lautet **n:1**.
+4. Die **Kardinalität** lautet **Viele-zu-Eins (*:1)**.
 
 5. Bei **Kreuzfilterrichtung** muss **Einfach** ausgewählt sein.
 
 6. Wählen Sie **Speichern** aus.
 
-   ![](../media/lab-06/image044.png)
+   ![](../media/lab-06.1/image044.png)
 
 7. Erstellen wir auf diese Weise auch eine Beziehung zwischen den Tabellen „Sales“ und „Date“. Wählen Sie in der Tabelle **Sales** den Eintrag **InvoiceDate** aus, und ziehen Sie ihn in der Tabelle **Date** auf den Eintrag **Date**.
 
@@ -186,21 +187,21 @@ Das erste Schritt besteht darin, Beziehungen zwischen diesen Tabellen zu erstell
 
 9. Vergewissern Sie sich, dass unter **In Tabelle Date** und bei **Spalte Date** angegeben ist.
 
-10. Die **Kardinalität** lautet n:1.
+10. Die **Kardinalität** lautet **Viele-zu-Eins (*:1)**.
 
 11. Bei **Kreuzfilterrichtung** muss **Einfach** ausgewählt sein.
 
 12. Wählen Sie **Speichern** aus.
 
-    ![](../media/lab-06/image047.png)
+    ![](../media/lab-06.1/image047.png)
 
-13. Erstellen Sie eine analog eine **n:1-Beziehung** zwischen den Tabellen **Sales** und **Product**. Wählen Sie in der Tabelle **Sales** den Eintrag **StockItemID** und in der Tabelle **Product** den Eintrag **StockItemID** aus.
+13. Erstellen Sie eine analog eine **Viele-zu-Eins-Beziehung** zwischen den Tabellen **Sales** und **Product**. Wählen Sie in der Tabelle **Sales** den Eintrag **StockItemID** und in der Tabelle **Product** den Eintrag **StockItemID** aus.
 
     **Hinweis:** Alle unsere Aktualisierungen werden automatisch gespeichert.
 
     **Überprüfen Sie:** Das Modell muss die drei Beziehungen zwischen den Tabellen „Sales“ und „Reseller“,„Sales“ und „Date“ sowie „Sales“ und „Product“ aufweisen, wie im folgenden Screenshot gezeigt:
 
-    ![](../media/lab-06/image050.jpg)
+    ![](../media/lab-06.1/image050.jpg)
 
     Aus Zeitgründen können wir nicht alle Beziehungen erstellen. Sofern Zeit verbleibt, können Sie den fakultativen Abschnitt am Ende der Übung durcharbeiten. Darin werden die restlichen Beziehungen erstellt.
 
@@ -224,7 +225,7 @@ Ergänzen wir ein paar Kennzahlen, die zur Erstellung des Sales-Dashboards benö
  
 8. Legen Sie Dezimalstellen auf **0** fest.
 
-   ![](../media/lab-06/image053.jpg)
+   ![](../media/lab-06.1/image053.jpg)
 
 9. Wählen Sie bei Auswahl der Tabelle **Sales** im Menü oben die Option **Start -> Neues Measure** aus. Die Bearbeitungsleiste wird angezeigt.
 
@@ -238,7 +239,7 @@ Ergänzen wir ein paar Kennzahlen, die zur Erstellung des Sales-Dashboards benö
 
 14. Verwenden Sie den Schieberegler, um **Tausendertrennzeichen** auf **Ja** festzulegen.
 
-    ![](../media/lab-06/image056.jpg)
+    ![](../media/lab-06.1/image056.jpg)
 
 15. Wählen Sie bei Auswahl der Tabelle **Sales** im Menü oben die Option **Start -> Neues Measure** aus. Die Bearbeitungsleiste wird angezeigt.
  
@@ -252,15 +253,15 @@ Ergänzen wir ein paar Kennzahlen, die zur Erstellung des Sales-Dashboards benö
 
 20. Verwenden Sie den Schieberegler, um **Tausendertrennzeichen** auf **Ja** festzulegen.
 
-    ![](../media/lab-06/image059.jpg)
+    ![](../media/lab-06.1/image059.jpg)
 
 21. Wählen Sie im **Datenbereich** (rechts) die Option **Modell** aus. Beachten Sie, dass dadurch eine Ansicht bereitgestellt wird, in der Sie alle Elemente im semantischen Modell organisieren können.
 
-22. Erweitern Sie **Semantisches Modell -> Kennzahlen**, um alle Kennzahlen anzuzeigen, die Sie gerade erstellt haben.
+22. Erweitern Sie **Semantikmodell -> Measures**, um alle Kennzahlen anzuzeigen, die Sie gerade erstellt haben.
 
 23. Sie können auch **einzelne Tabellen erweitern**, um die Spalten, Hierarchien und Kennzahlen in jeder einzelnen Tabelle anzuzeigen.
 
-    ![](../media/lab-06/image062.png)
+    ![](../media/lab-06.1/image062.png)
 
     Auch hier können wir aus Zeitgründen nicht alle Kennzahlen erstellen. Sofern Zeit verbleibt, können Sie den fakultativen Abschnitt am Ende der Übung durcharbeiten. Darin werden die restlichen Measures erstellt.
 
@@ -274,19 +275,19 @@ Ergänzen wir die restlichen Beziehungen.
 
 2. Das Dialogfeld „Beziehungen verwalten“ wird geöffnet. Wählen Sie Neue Beziehung aus.
 
-    ![](../media/lab-06/image065.jpg)
+    ![](../media/lab-06.1/image065.jpg)
 
 3. Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Von Tabelle Sales** und bei **Spalte SalespersonPersonID** angegeben ist.
 
 4. Vergewissern Sie sich, dass unter **In Tabelle People** und bei **Spalte PersonID** angegeben ist.
 
-5. Die **Kardinalität** lautet **n:1**.
+5. Die **Kardinalität** lautet **Viele-zu-Eins (*:1)**.
 
 6. Bei **Kreuzfilterrichtung** muss **Einfach** ausgewählt sein.
 
 7. Wählen Sie **Speichern** aus. Das Dialogfeld „Beziehungen verwalten“ wird mit der neuen hinzugefügten Beziehung geöffnet.
 
-    ![](../media/lab-06/image068.jpg)
+    ![](../media/lab-06.1/image068.jpg)
  
 8. Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Product“ und „Supplier“. Wählen Sie **Neue Beziehung** aus.
 
@@ -294,27 +295,27 @@ Ergänzen wir die restlichen Beziehungen.
 
 10. Vergewissern Sie sich, dass unter **In Tabelle Supplier** und bei **Spalte SupplierID** angegeben ist.
 
-11. Die **Kardinalität** lautet **n:1**.
+11. Die **Kardinalität** lautet **Viele-zu-Eins (*:1)**.
 
 12. Bei **Kreuzfilterrichtung** muss **Beides** ausgewählt sein.
 
 13. Wählen Sie **Speichern** aus.
 
-    ![](../media/lab-06/image071.png)
+    ![](../media/lab-06.1/image071.jpg)
 
 14. Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Reseller“ und „Geo“. Wählen Sie **Neue Beziehung** aus.
 
 15. Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Von Tabelle Reseller** und bei **Spalte PostalCityID** festgelegt ist.
 
-16. Vergewissern Sie sich, dass unter **In Tabelle** auf **Geo** und Spalte auf **CityID** festgelegt ist.
+16. Vergewissern Sie sich, dass unter **In Tabelle** auf **Geo** und **Spalte** auf **CityID** festgelegt ist.
 
-17. Die **Kardinalität** lautet **n:1**.
+17. Die **Kardinalität** lautet **Viele-zu-Eins (*:1)**.
 
 18. Bei **Kreuzfilterrichtung** muss **Beides** ausgewählt sein.
  
 19. Wählen Sie **Speichern** aus.
 
-    ![](../media/lab-06/image074.png)
+    ![](../media/lab-06.1/image074.png)
 
 20. Erstellen Sie ebenso eine Beziehung zwischen den Tabellen „Customer“ und „Reseller“. Wählen Sie **Neue Beziehung** aus.
 
@@ -322,7 +323,7 @@ Ergänzen wir die restlichen Beziehungen.
 
 22. Vergewissern Sie sicher, dass unter **In Tabelle Reseller** und bei **Spalte ResellerID** angegeben ist.
 
-23. Die **Kardinalität** lautet **n:1**.
+23. Die **Kardinalität** lautet **Viele-zu-Eins (*:1)**.
 
 24. Bei **Kreuzfilterrichtung** muss **Einfach** ausgewählt sein.
 
@@ -330,19 +331,19 @@ Ergänzen wir die restlichen Beziehungen.
 
     **Prüfpunkt:** „Beziehungen verwalten“ sollte so wie im Screenshot unten aussehen.
 
-    ![](../media/lab-06/image077.png)
+    ![](../media/lab-06.1/image077.png)
 
-26. Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen **PO** und **Date**. Wählen Sie **Order_Date** aus **PO** und **Date** aus **Date** aus.
+26. Erstellen Sie ebenso eine **Viele-zu-Eins-Beziehung** zwischen den Tabellen **PO** und **Date**. Wählen Sie **Order_Date** aus **PO** und **Date** aus **Date** aus.
 
-27. Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen PO und Product. Wählen Sie unter **PO** den Eintrag **StockItemID** und unter **Product** den Eintrag **StockItemID** aus.
+27. Erstellen Sie ebenso eine **Viele-zu-Eins-Beziehung** zwischen den Tabellen **PO** und **Product**. Wählen Sie unter **PO** den Eintrag **StockItemID** und unter **Product** den Eintrag **StockItemID** aus.
 
-28. Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen **PO** und **People**. Wählen Sie unter **PO** den Eintrag **ContactPersonID** und unter **People** den Eintrag **PersonID** aus.
+28. Erstellen Sie ebenso eine **Viele-zu-Eins-Beziehung** zwischen den Tabellen **PO** und **People**. Wählen Sie unter **PO** den Eintrag **ContactPersonID** und unter **People** den Eintrag **PersonID** aus.
 
 29. Wählen Sie **Schließen** aus, um das Dialogfeld „Beziehungen verwalten“ zu schließen. Nun sind alle Beziehungen erstellt.
 
     **Überprüfen Sie:** Das Modell sollte so wie im Screenshot unten aussehen.
 
-    ![](../media/lab-06/image080.jpg)
+    ![](../media/lab-06.1/image080.jpg)
 
 # Aufgabe 7: Fakultativer Abschnitt – Measures erstellen
 
@@ -362,7 +363,7 @@ Ergänzen wir die restlichen Measures.
  
 7. Legen Sie Dezimalstellen auf 0 fest.
 
-   ![](../media/lab-06/image083.jpg)
+   ![](../media/lab-06.1/image083.jpg)
 
 8. Fügen Sie auf gleiche Weise die folgenden Measures hinzu:
 
@@ -377,7 +378,7 @@ Ergänzen wir die restlichen Measures.
 ## Referenzen
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
 
-  ![](../media/lab-06/image086.png)
+  ![](../media/lab-06.1/image086.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
 
