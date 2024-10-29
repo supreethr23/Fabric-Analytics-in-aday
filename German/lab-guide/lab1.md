@@ -55,13 +55,13 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in Power BI D
  
 2. Geben Sie im Dialogfeld Ihre E-Mail-Adresse ein. Öffnen Sie rechts in der Übungsumgebung die Registerkarte **Environment Details**.
 
-3. Kopieren Sie den **Benutzernamen** und fügen Sie ihn im Dialogfeld in das Textfeld für die E-Mail-Adresse ein.
+3. Kopieren Sie den **username** und fügen Sie ihn im Dialogfeld in das Textfeld für die E-Mail-Adresse ein.
 
 4. Wählen Sie **Continue** aus.
 
     ![](../media/lab-01/image012.png)
 
-5. Das Dialogfeld „Anmelden“ wird geöffnet. Geben Sie den **Benutzernamen** erneut ein, indem Sie ihn aus der Registerkarte **Umgebungsdetails** kopieren.
+5. Das Dialogfeld „Anmelden“ wird geöffnet. Geben Sie den **username** erneut ein, indem Sie ihn aus der Registerkarte **Umgebungsdetails** kopieren.
 
 6. Wählen Sie **Next** aus.
 
@@ -164,7 +164,7 @@ Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert. Die KPIs 
 
     d.	**Das Sales-Element** ergibt sich durch die Zusammenführung der Abfragen „InvoiceLineItems“ und „Invoice“.
 
-9. Bei der Datenquelle „Snowflake“ verwenden Sie den **Snowflake-Benutzernamen** und das **Snowflake-Kennwort** von der Registerkarte **Environment Variables** (neben der Übungsanleitung).
+9. Bei der Datenquelle „Snowflake“ verwenden Sie den **Snowflake-username** und das **Snowflake-Kennwort** von der Registerkarte **Environment Variables** (neben der Übungsanleitung).
 
 10. Beachten Sie, dass der Ordner **SnowflakeData** die Dimension „Supplier und das Element „PO“ (Bestellung/Ausgabe) enthält.
 
