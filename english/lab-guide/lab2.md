@@ -13,24 +13,22 @@
 - Overview of Fabric Experiences:
 
     - Task 2: Data Factory Experience
-  
-    - Task 3: Data Activator Experience
      
-    - Task 4: Industry Solutions Experience
+    - Task 3: Industry Solutions Experience
 
-    - Task 5: Real-Time Intelligence Experience
+    - Task 4: Real-Time Intelligence Experience
 
-    - Task 6: Synapse Data Engineering Experience
+    - Task 5: Synapse Data Engineering Experience
   
-    - Task 7: Synapse Data Science Experience
+    - Task 6: Synapse Data Science Experience
   
-    - Task 8: Synapse Data Warehouse Experience
+    - Task 7: Synapse Data Warehouse Experience
 
 - Fabric Workspace
 
-    - Task 9: Create a Fabric Workspace
+    - Task 8: Create a Fabric Workspace
   
-    - Task 10: Create a Lakehouse
+    - Task 9: Create a Lakehouse
 
 - References
  
@@ -107,19 +105,8 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
     d. **Quick Access:** This section lists the recently used or favorite items.
 
       ![](../media/lab-02/f3.png)
- 
-## Task 3: Data Activator Experience
-1. Select **Fabric experience selector icon** (currently set to Data Factory) on the bottom left of your screen. Fabric experience dialog opens.
 
-    ![](../media/lab-02/image030.png)
-
-2. Select **Data Activator** from the dialog. You will be navigated to **Data Activator Home page**. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the four sections are like the Data Factory experience. In the Recommended section, notice the items:
-
-    a. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
-
-      ![](../media/lab-02/f2.png)
-
-## Task 4: Industry Solutions Experience
+## Task 3: Industry Solutions Experience
 1. Select **Fabric experience selector icon** (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
 
 2. Select **Industry Solutions** from the dialog. You will navigate to **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the four sections are like the previous experiences. In the Recommended section, notice the items:
@@ -132,7 +119,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     ![](../media/lab-02/image036.png)
  
-## Task 5: Real-Time Intelligence Experience
+## Task 4: Real-Time Intelligence Experience
 1. Select **Fabric experience selector icon** (currently set to Industry Solutions) on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Real-Time Intelligence**. You will navigate to **Real-Time Intelligence Home page**. Again, there are four sections. In the Recommended section, notice the items:
 
@@ -151,7 +138,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     ![](../media/lab-02/image039u.png)
  
-## Task 6: Synapse Data Engineering Experience
+## Task 5: Synapse Data Engineering Experience
 1. Select **Fabric experience selector icon** (currently set to Real-Time Intelligence) on the bottom left of your screen. Fabric experience dialog opens.
 
 2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains four main sections. In the Recommended section, notice the items:
@@ -172,7 +159,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     ![](../media/lab-02/image042.jpg)
  
-## Task 7: Synapse Data Science Experience
+## Task 6: Synapse Data Science Experience
 1. Select **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are four sections. In the Recommended section, notice the items:
 
@@ -192,7 +179,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     ![](../media/lab-02/image045u.png)
  
-## Task 8: Synapse Data Warehouse Experience
+## Task 7: Synapse Data Warehouse Experience
 1. Select **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Warehouse**. You will be navigated to **Data Warehouse Home page**. Again, there are four sections. In the New section, notice the items:
 
@@ -216,7 +203,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
  
 # Fabric Workspace
 
-## Task 9: Create a Fabric Workspace
+## Task 8: Create a Fabric Workspace
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
 2. Select **New workspace**.
 
@@ -239,7 +226,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
 A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 
-## Task 10: Create a Lakehouse
+## Task 9: Create a Lakehouse
 1. Select **Fabric experience selector icon** (currently set to Data Warehouse) on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Engineering** to be navigated to Data Engineering Home page.
 
