@@ -137,7 +137,7 @@ You will be navigated back to the SQL query screen.
    
 5. A new semantic model dialog opens. Enter **sm\_FAIAD** as the Direct Lake semantic model name.
    
-   ![](../media/lab-06/14-10-24.png)
+    ![](../media/lab-06/14-10-24u.png)
 
 7. **Select** the following tables/views:
    
@@ -162,6 +162,10 @@ You will be navigated back to the SQL query screen.
 9. Select **Confirm**.
 
    ![](../media/lab-06/image017.png)
+
+   **Note**: If you have difficulty finding the tables or views mentioned above, use the filter option within the search box and select the checkboxes for Tables and Views.
+
+   ![](../media/lab-06/notet3s9.png)
 
 ## Task 4: Create Relationships
 

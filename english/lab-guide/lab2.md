@@ -54,6 +54,8 @@ and click **Submit**.
 4. Click **Sign in** and follow the prompts to sign into Fabric.
  
     ![](../media/lab-02/image009.png)
+
+  **Note:** If you're using the lab environment, it may sign you in directly. 
  
 5. You will be navigated to the familiar **Power BI Service Home page**.
 
@@ -76,15 +78,15 @@ and click **Submit**.
 
 11. You will be navigated to the **Microsoft Fabric Home page**.
 
-    ![](../media/lab-02/image021.jpg)
+    ![](../media/lab-02/image021u.png)
 
 # Overview of Fabric Experiences
 ## Task 2: Data Factory Experience
-1. Select the **Microsoft Fabric** (fabric experience selector) icon on the bottom left of your screen. A dialog with the list of Fabric experiences will open. Notice that Power BI, Data Factory, Data Activator, Industry Solutions and Real-Time Intelligence are independent experiences. Data
+1. Select the **Microsoft Fabric** (fabric experience selector) icon on the bottom left of your screen. A dialog with the list of Fabric experiences will open. Notice that Power BI, Data Factory, Industry Solutions and Real-Time Intelligence are independent experiences. Data
 Engineering, Data Science and Data Warehouse are Synapse experiences as these experiences are powered by Synapse. Let’s explore.
 2. Select **Data Factory**.
  
-    ![](../media/lab-02/image024.jpg)
+    ![](../media/lab-02/image024u.png)
  
 3. You are navigated to the **Data Factory Home page**. The page contains three main sections.
 
@@ -107,7 +109,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
       ![](../media/lab-02/f3.png)
 
 ## Task 3: Industry Solutions Experience
-1. Select **Fabric experience selector icon** (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select **Fabric experience selector icon** (currently set to Data Factory) on the bottom left of your screen. Fabric experience dialog opens.
 
 2. Select **Industry Solutions** from the dialog. You will navigate to **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the four sections are like the previous experiences. In the Recommended section, notice the items:
 
@@ -131,12 +133,10 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
     
     d. **Eventstream:** Used to capture, transform, and route real-time event stream.
     
-    e. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
+    e. **Activator:** Used to monitor datasets, queries, and event streams for patterns.
     
 
-    **Note:** Reflex is available in Data Activator experiences as well.
-
-    ![](../media/lab-02/image039u.png)
+     ![](../media/lab-02/image039uu.png)
  
 ## Task 5: Synapse Data Engineering Experience
 1. Select **Fabric experience selector icon** (currently set to Real-Time Intelligence) on the bottom left of your screen. Fabric experience dialog opens.
@@ -157,7 +157,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     g. **Import notebook:** Used to import notebooks from local machine.
 
-    ![](../media/lab-02/image042.jpg)
+    ![](../media/lab-02/image042u.png)
  
 ## Task 6: Synapse Data Science Experience
 1. Select **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
@@ -177,7 +177,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     **Note:** Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
 
-    ![](../media/lab-02/image045u.png)
+    ![](../media/lab-02/image045uu.png)
  
 ## Task 7: Synapse Data Warehouse Experience
 1. Select **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
@@ -199,13 +199,19 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     h. **Mirrored Azure Cosmos DB:** Used to mirror Azure Cosmos DB.
 
-    ![](../media/lab-02/image048.jpg)
+    i. **Mirrored Azure SQL Managed Database:** Used to mirror Azure SQL Managed Databases for high availability and disaster recovery.
+
+    j. **Mirrored Database:** Used to replicate databases for high availability and disaster recovery.
+
+    ![](../media/lab-02/image048u.png)
+
+    ![](../media/lab-02/image048uu.png)
  
 # Fabric Workspace
 
 ## Task 8: Create a Fabric Workspace
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
-2. Select **New workspace**.
+2. Select **+ New workspace**.
 
     ![](../media/lab-02/image051.png)
  

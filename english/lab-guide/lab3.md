@@ -155,6 +155,10 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     ![](../media/lab-03/image030.jpg)
  
+   **Note** : If you are unable to find **New Visual Query**, click the dropdown arrow in **New SQL Query** and select **New Visual Query**.
+
+     ![](../media/lab-03/newvisualnote.png)
+
 3. We need to drag tables to the Visual query panel to build a query. Let’s drag, the **Cities**, **States** and **Countries** query into the visual query panel.
 
     ![](../media/lab-03/image033.jpg)
@@ -237,6 +241,8 @@ The next step is to transform the data, so we can create a semantic model. We ar
 22. With the Merge query selected, from the ribbon select **Home -> Choose columns -> Choose columns**.
 
     ![](../media/lab-03/image057.jpg)
+
+    >**Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
 23. Choose columns dialog opens. **Uncheck** the following columns.
 
@@ -392,11 +398,11 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 1. From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
 2. From **Explorer -> Table** section, drag **InvoiceLineItems, Invoices** tables to the visual query section
 3. From **Explorer -> Views** section, drag **Reseller** view to the visual query section
-4. From the Visual query editor, select the **Focus mode icon** to open Power Query editor.
+4. From the Visual query editor, select the **Open in popup** to open Power Query editor.
 
     ![](../media/lab-03/image108.jpg)
 
-5. With InvoiceLineItems query selected, from the ribbon select **Home - > Merge queries - > Merge queries as new**.
+5. With InvoiceLineItems query selected, from the ribbon select **Home - > Combine - > Merge queries - > Merge queries as new**.
 
     ![](../media/lab-03/image111.jpg)
  
@@ -421,6 +427,8 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 14. From the ribbon select **Home - > Advanced Editor**. Advanced Editor dialog opens.
 
     ![](../media/lab-03/image120.jpg)
+
+    >**Note:** If you're unable to find the Advanced Editor, you can access it under **Home -> Query -> Advanced Editor**.
 
 15. **Select code from Line 3** (#"Expanded Invoice" …) all the way through to the last line of code.
 16. **Right click** and select **Copy**.
@@ -507,6 +515,8 @@ Let’s create Product view, which is created by merging ProductItem, ProductIte
 10. With the Merge query selected, from the ribbon, select **Home -> Advanced editor**. Advanced editor dialog opens.
 
     ![](../media/lab-03/image153.jpg)
+
+    >**Note:** If you're unable to find the Advanced Editor, you can access it under **Home -> Query -> Advanced Editor**.
 
 11. **Select all the code** in Advanced editor and **delete** it.
 12. **Paste** the below code into the Advanced editor. 
