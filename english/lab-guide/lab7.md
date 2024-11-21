@@ -95,13 +95,15 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 9. Let’s save this report. From the top menu, select **Save**.
 
+    ![](../media/lab-07/image021.jpg)
+
 10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report Note:** We are prefixing the report name with rpt which is short for report.
 
 11. Make sure the report is saved in your workspace, **FAIAD_<username\>**.
 
 12. Select **Save**.
 
-    ![](../media/lab-07/image021.jpg)
+    ![](../media/lab-07/image021uu.png)
 
     **Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6). 
 
@@ -148,6 +150,8 @@ Let’s create a new report using a blank canvas.
 11. Navigate to **Reports** folder on the **desktop** of your lab environment. 
 
 12. Select **Summary Background.png**. 
+
+    **Note**: In the File Explorer search bar, navigate to `C:\Users\Public\Desktop\Reports` to locate the image mentioned above.
 
 13. Set **Image fit** dropdown to Fit.
 
@@ -245,6 +249,10 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
    
    ![](../media/lab-07/image059.png)
 
+   **Note**: If any other option is selected in the Y-axis, click the dropdown arrow and select **Sum**.
+
+    ![](../media/lab-07/t5notel7.png)
+
 ## Task 6: Save the report 
 
 Let’s save the report before we navigate away from the report to make changes to the model. 
@@ -297,7 +305,7 @@ Let’s save the report before we navigate away from the report to make changes 
 
 2. Select the **ellipsis (…)** on the top right corner of the visual.
 
-3. Select **Sort axis -> Year Short_Month_Name**. 
+3. Select **Sort axis -> Year MonthNameShort**. 
 
 4. Select the **ellipsis (…)** on the top right corner of the visual. 
 
@@ -403,6 +411,8 @@ Now let’s see how easy it is to connect Power BI Desktop to the semantic model
 
 10. Navigate to **FAIADTemplate.pbix** and select the report canvas. 
 
+    **Note:** If you are facing any difficulty pasting into **FAIADTemplate.pbix**, close both **FAIADTemplate.pbix** and **FAIAD.pbix**, then reopen them.
+
 11. From the ribbon, select **Home -> Paste**. 
 
     ![](../media/lab-07/image107.png)
@@ -458,7 +468,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
    ![](../media/lab-07/image125.jpg)
 
-7. **Under Connection Settings -> URL** enter this link `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
+7. Select the Create new connection and **Under Connection Settings -> URL** enter this link `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 8. Since we have created the connection earlier, it is recognized. Select **Next**. 
 
