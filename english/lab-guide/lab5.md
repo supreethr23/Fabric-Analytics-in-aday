@@ -456,7 +456,7 @@ Now we need to set the counter if the dataflow activity fails. In Data Pipeline,
 
 9. In the **Value** field, select the **text box**. Select the **Add dynamic content** link.
 
-10. Pipeline expression builder dialog opens. Enter **\@add(variables(\'varCounter\'),1)**
+10. Pipeline expression builder dialog opens. Enter **\@add(variables(\'varCounter\'),1)** and Select **Ok**
 
     **Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function is setting the value of variable varTempCounter to the value of variable varCounter plus one, (varTempCounter = varCounter + 1).
 
@@ -486,7 +486,7 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 
 9. In the **Value** field, select the **text box**. Select the **Add dynamic content** link.
 
-10. Pipeline expression builder dialog opens. Enter **\@variables(\'varTempCounter\')**. Feel free to type this expression in, use the menu to select the functions, or copy and paste it in.
+10. Pipeline expression builder dialog opens. Enter **\@variables(\'varTempCounter\')** and Select **Ok**. Feel free to type this expression in, use the menu to select the functions, or copy and paste it in.
 
     **Note:** This function sets the value of variable varCounter to the value of variable varTempCounter (varCounter = varTempCounter). At the end of each iteration, both varCounter and varTempCounter have the same value.
 
