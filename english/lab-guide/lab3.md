@@ -155,6 +155,10 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     ![](../media/lab-03/image030.jpg)
  
+   **Note** : If you are unable to find **New Visual Query**, click the dropdown arrow in **New SQL Query** and select **New Visual Query**.
+
+     ![](../media/lab-03/newvisualnote.png)
+
 3. We need to drag tables to the Visual query panel to build a query. Let’s drag, the **Cities**, **States** and **Countries** query into the visual query panel.
 
     ![](../media/lab-03/image033.jpg)
