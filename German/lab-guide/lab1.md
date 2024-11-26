@@ -166,6 +166,11 @@ Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert. Die KPIs 
 
 9. Bei der Datenquelle „Snowflake“ verwenden Sie den **Snowflake-username** und das **Snowflake-Kennwort** von der Registerkarte **Environment Variables** (neben der Übungsanleitung).
 
+    >**Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben, verwenden Sie bitte die unten angegebenen Anmeldeinformationen.
+
+    - **Benutzername:** SNOWFLAKE_BACKUP
+    - **Kennwort:** 8UpfRpExVDXv2AC1
+
 10. Beachten Sie, dass der Ordner **SnowflakeData** die Dimension „Supplier und das Element „PO“ (Bestellung/Ausgabe) enthält.
 
     a.	Die **Supplier-Dimension** ergibt sich durch die Zusammenführung der Abfragen „Suppliers“ und „SupplierCategories“.

@@ -165,6 +165,12 @@ available in Fabric. We will not be focusing on report development or navigation
     d. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
 9. For the Snowflake data source, use the **Snowflake Username** and **Snowflake Password** that is available in the **Environment Variables** tab (next to the Lab Guide).
+
+    >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+
+    - **Username:** SNOWFLAKE_BACKUP
+    - **Password:** 8UpfRpExVDXv2AC1
+
 10. Notice the **SnowflakeData** folder has Supplier dimension and PO (Order / Spend) fact.
 
     a. **Supplier dimension** is created by merging Suppliers query with SupplierCategories query.

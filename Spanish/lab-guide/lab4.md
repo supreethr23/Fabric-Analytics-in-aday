@@ -208,6 +208,11 @@ Observe que las cinco consultas están pegadas y ahora tiene el panel Consultas 
 5. Seleccione **Conectar**.
 
    ![](../media/lab-04/image52.png)
+
+    >**Nota:** Si tiene problemas para conectarse a Snowflake con las credenciales de los detalles del entorno, utilice las credenciales que se proporcionan a continuación.
+
+    - **Nombre de usuario:** SNOWFLAKE_BACKUP
+    - **Contraseña:** 8UpfRpExVDXv2AC1
  
 Se establece la conexión y puede ver los datos en el panel de versión preliminar. Siéntase libre de navegar por los pasos aplicados de las consultas. Básicamente, la consulta Suppliers tiene los detalles de los proveedores y SupplierCategories, como su nombre indica, tiene categorías de proveedores. Estas dos tablas se unen para crear la dimensión Supplier, con las columnas que necesitamos. De manera similar, tenemos PO Line Items combinada con pedidos de compra para crear el dato de PO. Ahora necesitamos incorporar los datos de Supplier y de PO en el almacén de lago de datos.
 

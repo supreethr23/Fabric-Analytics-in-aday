@@ -224,6 +224,11 @@ Notez que les cinq requêtes sont collées et que vous disposez désormais du vo
 
    ![](../media/lab-04/image054.png)
 
+   >**Remarque:** si vous rencontrez des problèmes de connexion à Snowflake à l'aide des informations d'identification fournies dans les détails de l'environnement, veuillez utiliser les informations d'identification fournies ci-dessous.
+
+   - **Nom d'utilisateur :** SNOWFLAKE_BACKUP
+   - **Mot de passe :** 8UpfRpExVDXv2AC1
+
    La connexion est alors établie et vous pouvez afficher les données dans le volet d’aperçu. N’hésitez pas à parcourir les étapes appliquées des requêtes. En substance, la requête Suppliers comporte les détails des fournisseurs et la requête SupplierCategories, comme son nom l’indique, comporte des catégories de fournisseurs. Ces deux tables sont jointes pour créer la dimension Supplier, avec les colonnes dont nous avons besoin. De même, nous avons fusionné la requête PO Line Items avec la requête PO pour créer le fait PO. Nous devons maintenant ingérer les données Supplier et PO dans Lakehouse.
 
 ## Tâche 7 : configurer la destination des données pour les requêtes Supplier et PO

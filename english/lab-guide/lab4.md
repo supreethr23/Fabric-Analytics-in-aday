@@ -192,6 +192,11 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 5. Select **Connect**.
 
     ![](../media/lab-04/image054.jpg)
+
+    >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+
+    - **Username:** SNOWFLAKE_BACKUP
+    - **Password:** 8UpfRpExVDXv2AC1
  
     Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Basically, the Suppliers query has the details of suppliers and SupplierCategories as the name implies have supplier categories. These two tables are joined to create the Supplier dimension, with the columns we need. Similarly, we have PO Line Items merged with PO to create the PO fact. Now we need to ingest the Supplier and PO data into Lakehouse.
 

@@ -188,6 +188,11 @@ Fabric の説明を始める前に、変換とモデルについて理解する�
 
 9. Snowflake データ ソースの場合は、**環境変数**タブ ([ラボ ガイド] の隣) で確認できる **Snowflake ユーザー名**と **Snowflake パスワード**を使用します。 
 
+    >**注意:** 環境の詳細の認証情報を使用して Snowflake に接続する際に問題が発生した場合は、以下の認証情報を使用してください。
+
+    - **ユーザー名:** SNOWFLAKE_BACKUP
+    - **パスワード:** 8UpfRpExVDXv2AC1
+
 10. **SnowflakeData** フォルダーには、Supplier ディメンションと PO (Order / Spend) ファクトが含まれていることがわかります。 
 
     a. Supplier ディメンションは、Suppliers クエリと SupplierCategories クエリをマージすることで作成されます。 

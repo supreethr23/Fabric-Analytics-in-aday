@@ -224,6 +224,11 @@ Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il
 
     ![](../media/lab-04/image054.png)
 
+    >**Nota:** se riscontri problemi durante la connessione a Snowflake utilizzando le credenziali dai dettagli dell'ambiente, utilizza le credenziali fornite di seguito.
+
+    - **Nome utente:** SNOWFLAKE_BACKUP
+    - **Password:** 8UpfRpExVDXv2AC1
+
     Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello di anteprima. Esplorare i Passaggi applicati delle query. In genere, la query Suppliers contiene i dettagli sui fornitori e SupplierCategories contiene le categorie di fornitori. Queste due tabelle vengono unite per creare la dimensione Supplier, con le colonne necessarie. Analogamente, PO Line Items viene unita con PO per creare il fatto PO. Ora dobbiamo inserire i dati di Supplier e PO in Lakehouse.
 
 ## Attività 7: Configurazione della destinazione dei dati per le query Supplier e PO

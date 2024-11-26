@@ -183,6 +183,11 @@ O relatório abaixo analisa as Sales da Fabrikam. Os KPIs estão listados no can
 
 9. Para a fonte de dados Snowflake, use o **SnowFlake Username** e a **SnowFlake Password** que estão disponíveis na guia **Environment Variables** (ao lado do Guia de Laboratório).
 
+    >**Observação:** se você encontrar algum problema ao se conectar ao Snowflake usando as credenciais dos detalhes do ambiente, use as credenciais fornecidas abaixo.
+
+    - **Nome de usuário:** SNOWFLAKE_BACKUP
+    - **Senha:** 8UpfRpExVDXv2AC1
+
 10. Observe que a pasta **SnowflakeData** tem a dimensão Supplier e o fato PO (Oder/Spend).
 
     a. A **dimensão Supplier** é criada mesclando a consulta Suppliers com a consulta SupplierCategories.

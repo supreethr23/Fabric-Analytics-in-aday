@@ -224,6 +224,11 @@ Observe que as cinco consultas foram coladas e agora você tem o painel Consulta
 
     ![](../media/lab-04/image054.png)
 
+    >**Observação:** se você encontrar algum problema ao se conectar ao Snowflake usando as credenciais dos detalhes do ambiente, use as credenciais fornecidas abaixo.
+
+    - **Nome de usuário:** SNOWFLAKE_BACKUP
+    - **Senha:** 8UpfRpExVDXv2AC1
+
     A conexão é estabelecida e você pode exibir os dados no painel de visualização. Fique à vontade para navegar pelas Etapas aplicadas das consultas. Basicamente, a consulta Suppliers tem os detalhes dos fornecedores e SupplierCategories, como o nome indica, tem categorias de fornecedores. Essas duas tabelas são unidas para criar a dimensão Supplier, com as colunas necessárias. Da mesma forma, temos a consulta PO Line Items mesclada com PO para criar o fato PO. Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
 ## Tarefa 7: Configurar destino de dados para as consultas Supplier e PO

@@ -180,6 +180,11 @@ différentes : BabyBoomer, GenX, GenY et GenZ. Ces quatre requêtes sont ajouté
 
 9. Pour la source de données Snowflake, utilisez le **Nom d’utilisateur Snowflake** et le **Mot de passe Snowflake** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo).
 
+    >**Remarque:** si vous rencontrez des problèmes de connexion à Snowflake à l'aide des informations d'identification fournies dans les détails de l'environnement, veuillez utiliser les informations d'identification fournies ci-dessous.
+
+    - **Nom d'utilisateur :** SNOWFLAKE_BACKUP
+    - **Mot de passe :** 8UpfRpExVDXv2AC1
+
 10. Notez que le dossier **SnowflakeData** comporte une dimension Supplier et un fait PO (Commande/Dépense).
 
     a. **La dimension Supplier** est créée en fusionnant la requête Suppliers avec la requête SupplierCategories.

@@ -211,6 +211,11 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
 
     ![](../media/lab-04.1/image054.png)
 
+    >**Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben, verwenden Sie bitte die unten angegebenen Anmeldeinformationen.
+
+    - **Benutzername:** SNOWFLAKE_BACKUP
+    - **Kennwort:** 8UpfRpExVDXv2AC1
+
     Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaubereich ansehen. Wenn Sie möchten, sehen Sie sich die angewandten Schritte der Abfragen an. Grundsätzlich enthält die Suppliers-Abfrage Lieferanteninformationen und „SupplierCategories“, wie der Name schon sagt, Lieferantenkategorien. Diese beiden Tabellen werden zusammengeführt, um die Dimension „Supplier“ mit den erforderlichen Spalten zu erstellen. Auf ähnliche Weise wird „PO Line Items“ mit „PO“ zusammengeführt, um den Fakt „PO“ zu erstellen. Nun müssen die Daten von „Supplier“ und „PO“ im Lakehouse erfasst werden.
  
 ### Aufgabe 7: Datenziel für die Abfragen „Supplier“ und „PO“ konfigurieren

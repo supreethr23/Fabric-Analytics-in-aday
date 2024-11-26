@@ -175,7 +175,12 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 4. 输入 **Snowflake 用户名和密码，** 其位于“环境变量”选项卡中（“实验指南”选项卡旁边）。
 5. 选择**连接。**
 
-   ![](../media/lab-04/image054.png)  
+   ![](../media/lab-04/image054.png)
+
+   >**注意** 如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的凭据。
+
+   - **用户名**：SNOWFLAKE_BACKUP
+   - **密码**：8UpfRpExVDXv2AC1
 
     连接已建立，您可以在预览面板中查看数据。请自行浏览查询的应用步骤。Suppliers 查询基本上包含供应商的详细信息，SupplierCategories 顾名思义包含供应商的类别。这两个表与
     我们需要的列联接，以创建 Supplier 维度。同样，我们将 PO Line Items 与 PO 合并，以创建 PO 事实。现在，我们需要将 Supplier 和 PO 数据引入到湖屋中。
