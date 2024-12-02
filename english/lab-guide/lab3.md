@@ -15,9 +15,9 @@
     
   - Task 3: Create a Reseller view using Visual Query
     
-  - Task 4: Create a Sales view using Visual query
+  - Task 4: Create a Sales view using a Visual query
     
-  - Task 5: Create a Product view using Visual query
+  - Task 5: Create a Product view using a Visual query
 
 - References
 
@@ -39,7 +39,7 @@ We will start by creating a Shortcut to ingest data into Lakehouse from the ADLS
 
 By the end of this lab, you will have learned:
 
-- How to create a Shortcut to Lakehouse
+- How to create a Shortcut to the Lakehouse
 
 - How to transform data using Visual query
 
@@ -127,7 +127,7 @@ The shortcut is used to create a link to the target location. This is like creat
     
      j. Warehouse.StockItems to **ProductItem**
 
-     **Note:** Double check the names. A typo may cause errors during the lab.
+     **Note:** Double-check the names. A typo may cause errors during the lab.
 
 17. Select **Create** to create the Shortcut.
 
@@ -155,7 +155,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     ![](../media/lab-03/image030.jpg)
  
-   **Note** : If you are unable to find **New Visual Query**, click the dropdown arrow in **New SQL Query** and select **New Visual Query**.
+   **Note**: If you are unable to find **New Visual Query**, click the dropdown arrow in **New SQL Query** and select **New Visual Query**.
 
      ![](../media/lab-03/newvisualnote.png)
 
@@ -391,18 +391,18 @@ after Table (this indicates we are adding a step after Table. If you do not see 
 
     ![](../media/lab-03/image105.png)
 
-## Task 4: Create Sales view using Visual query
-Let’s create Sales view, which is created by merging InvoiceLineItems and Invoices table and Reseller
+## Task 4: Create a Sales view using a Visual query
+Let’s create a Sales view, which is created by merging the InvoiceLineItems and Invoices table and the Reseller
 view. We have this query in Power BI Desktop. We will copy the code from Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let’s give this method a try.
 
 1. From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
 2. From **Explorer -> Table** section, drag **InvoiceLineItems, Invoices** tables to the visual query section
 3. From **Explorer -> Views** section, drag **Reseller** view to the visual query section
-4. From the Visual query editor, select the **Open in popup** to open Power Query editor.
+4. From the Visual query editor, select the **Open in popup** to open the Power Query editor.
 
     ![](../media/lab-03/image108.jpg)
 
-5. With InvoiceLineItems query selected, from the ribbon select **Home - > Combine - > Merge queries - > Merge queries as new**.
+5. With the InvoiceLineItems query selected, from the ribbon select **Home - > Combine - > Merge queries - > Merge queries as new**.
 
     ![](../media/lab-03/image111.jpg)
  
@@ -416,14 +416,14 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 
     ![](../media/lab-03/image114.jpg)
 
-    We are going to copy code from Power BI Desktop and paste it using Advanced Editor.
+    We are going to copy the code from Power BI Desktop and paste it using Advanced Editor.
 
 11. If you have not already opened it, open **FAIAD.pbix** located in the **Reports** folder on the desktop of your lab environment.
-12. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+12. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 
     ![](../media/lab-03/image117.jpg)
  
-13. From the left panel, under the ADLSData folder, select **Sales** query.
+13. From the left panel, under the ADLSData folder, select the **Sales** query.
 14. From the ribbon select **Home - > Advanced Editor**. Advanced Editor dialog opens.
 
     ![](../media/lab-03/image120.jpg)
@@ -437,7 +437,7 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
     ![](../media/lab-03/image123.jpg)
  
 18. **Navigate back to the browser** where you have the Power Query Editor open.
-19. Make sure you have **Merge** query selected.
+19. Make sure you have the **Merge** query selected.
 20. From the ribbon select **Home -> Advanced Editor**. Advanced Editor dialog opens.
 
     ![](../media/lab-03/image126.jpg)
@@ -475,12 +475,12 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 
 26. You will be navigated back to Power Query Editor. In the left, Queries panel, **double click on Merge** query to rename it.
 27. **Rename** Merge query to **Sales**.
-28. Right click on Sales query and select **Enable load** to enable the query to be loaded.
+28. Right-click on Sales query and select **Enable load** to enable the query to be loaded.
 
     ![](../media/lab-03/image135.png)
 
 29. Select **Save** to Save and Close the Power Query dialog. You will be navigated to Visual query.
-30. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
+30. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it if you choose it.
 31. Enter **Sales** as **View name**.
 32. Select **OK** to save the view.
 
@@ -492,7 +492,7 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 
     ![](../media/lab-03/image141.jpg)
  
-## Task 5: Create a Product view using Visual query
+## Task 5: Create a Product view using a Visual query
 Let’s create Product view, which is created by merging ProductItem, ProductItemGroup and ProductGroups tables. To move things along, we are going to copy the code into Advanced Editor.
 1. From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
 2. From Explorer section, drag **ProductItem**, **ProductItemGroup** and **ProductGroups** tables to the visual query section
