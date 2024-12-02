@@ -92,7 +92,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
    ![](../media/lab-05/image7.png)
 
-   Details screen will open. This will provide details of the refresh, it lists the start, end time, and duration. It also lists the tables /activities that were refreshed. In case there is a failure, you can click on the name of the table / activity to investigate further.
+   Details screen will open. This will provide details of the refresh, it lists the start, end time, and duration. It also lists the tables /activities that were refreshed. In case there is a failure, you can click on the name of the table/activity to investigate further.
 
    ![](../media/lab-05/image8.png)
 
