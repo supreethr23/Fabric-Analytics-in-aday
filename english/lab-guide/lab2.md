@@ -55,20 +55,20 @@ and click **Submit**.
  
     ![](../media/lab-02/image009.png)
 
-  **Note:** If you're using the lab environment, it may sign you in directly. 
+     **Note:** If you're using the lab environment, it may sign you indirectly. 
  
 5. You will be navigated to the familiar **Power BI Service Home page**.
 
 6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
-    Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license assigned. Let’s set this up.
+    Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has a Fabric license assigned. Let’s set this up.
 
 7. On the top right corner of the screen, select the **user icon**.
 8. Select **Free trial**.
 
     ![](../media/lab-02/image012.jpg)
 
-9. Activate your 60-day free Fabric trail capacity. Select **Activate**.
+9. Activate your 60-day free Fabric trial capacity. Select **Activate**.
 
     ![](../media/lab-02/image015u.png)
  
@@ -90,7 +90,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
  
 3. You are navigated to the **Data Factory Home page**. The page contains three main sections.
 
-    a. **Create a Workspace** : This section explains how to create a workspace using a predesigned template called a task flow, which helps keep your items organized in Microsoft Fabric.
+    a. **Create a Workspace**: This section explains how to create a workspace using a predesigned template called a task flow, which helps keep your items organized in Microsoft Fabric.
    
     b. **Recommended:** This lists the items available in Data Factory – Dataflow Gen2, Data pipeline, Data workflow and API for GraphQL.
         
@@ -102,16 +102,16 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
         
     iv. API for GraphQL is API to query multiple data sources.
 
-    c. **Learn:** This section provides access to quick start learning documentation.
+    c. **Learn:** This section provides access to quick-start learning documentation.
     
-    d. **Quick Access:** This section lists the recently used or favorite items.
+    d. **Quick Access:** This section lists the recently used or favourite items.
 
       ![](../media/lab-02/f3.png)
 
 ## Task 3: Industry Solutions Experience
 1. Select **Fabric experience selector icon** (currently set to Data Factory) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Industry Solutions** from the dialog. You will navigate to **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the four sections are like the previous experiences. In the Recommended section, notice the items:
+2. Select **Industry Solutions** from the dialog. You will navigate to the **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice that the four sections are similar to the previous experiences. In the Recommended section, notice the following items:
 
     a. **Sustainability solutions:** supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
 
@@ -123,9 +123,9 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
  
 ## Task 4: Real-Time Intelligence Experience
 1. Select **Fabric experience selector icon** (currently set to Industry Solutions) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select **Real-Time Intelligence**. You will navigate to **Real-Time Intelligence Home page**. Again, there are four sections. In the Recommended section, notice the items:
+2. Select **Real-Time Intelligence**. You will navigate to the **Real-Time Intelligence Home page**. Again, there are four sections. In the Recommended section, notice the following items:
 
-    a. **Eventhouse:** Used to create a workspace of database, which can be shared across projects.
+    a. **Eventhouse:** Used to create a workspace of the database, which can be shared across projects.
     
     b. **KQL Queryset:** Used to run queries on the data to produce shareable tables and visuals.
     
@@ -141,7 +141,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 ## Task 5: Synapse Data Engineering Experience
 1. Select **Fabric experience selector icon** (currently set to Real-Time Intelligence) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains four main sections. In the Recommended section, notice the items:
+2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains four main sections. In the Recommended section, notice the following items:
 
     a. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
 
@@ -161,11 +161,11 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
  
 ## Task 6: Synapse Data Science Experience
 1. Select **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are four sections. In the Recommended section, notice the items:
+2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are four sections. In the Recommended section, notice the following items:
 
     a. **ML model:** Used to create machine learning models.
     
-    b. **Experiment:** Used to create, run, and track development of multiple models.
+    b. **Experiment:** Used to create, run, and track the development of multiple models.
     
     c. **Notebook:** Used to explore data and build machine learning solutions.
     
@@ -181,7 +181,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
  
 ## Task 7: Synapse Data Warehouse Experience
 1. Select **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select **Data Warehouse**. You will be navigated to **Data Warehouse Home page**. Again, there are four sections. In the New section, notice the items:
+2. Select **Data Warehouse**. You will be navigated to the **Data Warehouse Home page**. Again, there are four sections. In the New section, notice the items:
 
     a. **Warehouse:** Used to create a Data Warehouse.
 
@@ -210,7 +210,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 # Fabric Workspace
 
 ## Task 8: Create a Fabric Workspace
-1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
+1. Now let’s create a workspace with a Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
 2. Select **+ New workspace**.
 
     ![](../media/lab-02/image051.png)
@@ -234,7 +234,7 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 
 ## Task 9: Create a Lakehouse
 1. Select **Fabric experience selector icon** (currently set to Data Warehouse) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select **Data Engineering** to be navigated to Data Engineering Home page.
+2. Select **Data Engineering** to be navigated to the Data Engineering Home page.
 
     ![](../media/lab-02/image060.png)
 
@@ -252,11 +252,11 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 
 Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface. On the **left panel**, notice that below your workspace, you will have the Lakehouse icon. You can easily navigate to the Lakehouse by clicking on this icon at any time.
 
-Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options in the following labs.
+Within the Lakehouse Explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options in the following labs.
 
 ![](../media/lab-02/image069.jpg)
 
-In this lab, we explored the Fabric interface, created a Fabric workspace, and a Lakehouse. In the next lab, we will learn how to use Shortcuts in Lakehouse to connect to ADLS Gen2 data and how to transform this data using views.
+In this lab, we explored the Fabric interface and created a Fabric workspace and a Lakehouse. In the next lab, we will learn how to use Shortcuts in Lakehouse to connect to ADLS Gen2 data and how to transform this data using views.
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
@@ -304,4 +304,3 @@ MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD
 **DISCLAIMER**
 
 This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
-
