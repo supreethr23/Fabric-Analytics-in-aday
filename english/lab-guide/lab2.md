@@ -3,55 +3,62 @@
 # Contents	
 - Introduction
 - Fabric License
-- Task 1: Enable a Microsoft Fabric trial license
+    - Task 1: Enable a Microsoft Fabric trial license
 - Overview of Fabric Experiences
-- Task 2: Data Factory Experience
-- Task 3: Industry Solutions Experience
-- Task 4: Real-Time Intelligence Experience
-- Task 5: Data Engineering Experience
-- Task 6: Data Science Experience
-- Task 7: Data Warehouse Experience
+    - Task 2: Data Factory Experience
+    - Task 3: Industry Solutions Experience
+    - Task 4: Real-Time Intelligence Experience
+    - Task 5: Data Engineering Experience
+    - Task 6: Data Science Experience
+    - Task 7: Data Warehouse Experience
 - Fabric Workspace
-- Task 8: Create a Fabric Workspace
-- Task 9: Create a Lakehouse
+    - Task 8: Create a Fabric Workspace
+    - Task 9: Create a Lakehouse
 - References
 
-Introduction 
+# Introduction 
 Today you will learn about various key features of Microsoft Fabric. This is an introductory workshop intended to introduce you to the various product experiences and items available in Fabric. By the end of this workshop, you will learn how to use Lakehouse, Dataflow Gen2, Data Pipeline, DirectLake and more.
+
 By the end of this lab, you will have learned: 
-•	How to create a Fabric workspace
-•	How to create a Lakehouse  
 
-Fabric License
-Task 1: Enable a Microsoft Fabric trial license
-1. Open the browser and navigate to https://app.powerbi.com/. You will be navigated to the login page.
-Note: If you're using the lab environment, it may sign you in directly.
-Note: If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
-2. Enter the Username available in the Environment Variables tab (next to the Lab Guide) as the Email and click Submit.
+- How to create a Fabric workspace
+- How to create a Lakehouse  
+
+# Fabric License
+## Task 1: Enable a Microsoft Fabric trial license
+1. Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page.
+
+**Note:** If you're using the lab environment, it may sign you in directly.
+
+**Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
+
+2. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the **Email** and click **Submit**.
  
-3. You will be navigated to the Password screen. Enter the Password available in the Environment Variables tab (next to the Lab Guide) shared with you by the instructor. 
-4. Click Sign in and follow the prompts to sign into Fabric.
+3. You will be navigated to the **Password** screen. Enter the **Password** available in the **Environment Variables** tab (next to the Lab Guide) shared with you by the instructor. 
+4. Click **Sign in** and follow the prompts to sign into Fabric.
 
  
-5. You will be navigated to the familiar Power BI Service Home page.
+5. You will be navigated to the familiar **Power BI Service Home page**.
 6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
-Currently, you are in My Workspace. To work with Fabric items, you will need a trial license and a workspace that has Fabric license assigned. Let’s set this up.
+Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license assigned. Let’s set this up.
 
-7. On the top right corner of the screen, select the user icon.
-8. Select Free trial.
+7. On the top right corner of the screen, select the **user icon**.
+8. Select **Free trial**.
  
-9. Upgrade to a free Microsoft Fabric trial dialog opens. Select Start trial.
-
- 
-10. Successfully upgraded to Microsoft Fabric dialog opens. Select Fabric Home Page. 
- 
-11. You will be navigated to the Microsoft Fabric Home page.
+9. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
 
  
+10. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**. 
+ 
+11. You will be navigated to the **Microsoft Fabric Home page**.
 
-Overview of Fabric Experiences
-Task 2: Data Factory Experience
+ 
+
+# Overview of Fabric Experiences
+
+## Task 2: Data Factory Experience
+
 1. Select the Microsoft Fabric (fabric experience selector) icon on the bottom left of your screen. A dialog with the list of Fabric experiences will open.  The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
 2. Select Data Factory.
 
