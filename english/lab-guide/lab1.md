@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 1
 
+![](../media/lab-01/main1.png)
+
 # Contents
 - Document Structure
 - Scenario / Problem Statement
@@ -25,7 +27,6 @@ In order to draw valuable insights from the data, you pull data from multiple sy
 - **Supplier Data:** comes from different suppliers and data is stored in a Snowflake database. It gets updated at midnight / 12 AM every day.
 - **Customer Data:** comes from Customer Insights and data is stored in Dataverse. The data is always up to date.
 - **Employee Data:** comes from the HR system; it is stored as an export file in a SharePoint folder. It gets updated every morning at 9 AM.
-
 
     ![](../media/lab-01/image006.jpg)
  
