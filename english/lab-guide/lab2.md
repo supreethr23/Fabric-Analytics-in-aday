@@ -33,12 +33,15 @@ By the end of this lab, you will have learned:
     > **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
 
 2. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the **Email** and click **Submit**.
+
+    ![](../media/lab-02/image006.png)
  
 3. You will be navigated to the **Password** screen. Enter the **Password** available in the **Environment Variables** tab (next to the Lab Guide) shared with you by the instructor. 
 
 4. Click **Sign in** and follow the prompts to sign into Fabric.
 
- 
+    ![](../media/lab-02/image009.png)
+
 5. You will be navigated to the familiar **Power BI Service Home page**.
 6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
@@ -46,13 +49,20 @@ By the end of this lab, you will have learned:
 
 7. On the top right corner of the screen, select the **user icon**.
 8. Select **Free trial**.
+
+    ![](../media/lab-02/image012.jpg)
  
 9. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
 
+    ![](../media/lab-02/image014.jpg)
  
-10. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**. 
+10. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.
+
+    ![](../media/lab-02/image017.png)
  
 11. You will be navigated to the **Microsoft Fabric Home page**.
+
+    ![](../media/lab-02/image019.jpg)
 
 # Overview of Fabric Experiences
 
@@ -61,6 +71,7 @@ By the end of this lab, you will have learned:
 1. Select the **Microsoft Fabric** (fabric experience selector) icon on the bottom left of your screen. A dialog with the list of Fabric experiences will open.  The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
 2. Select **Data Factory**.
 
+    ![](../media/lab-02/image022.jpg)
  
 3. You are navigated to the **Data Factory Home page**. The page contains  four main sections. 
 
@@ -80,6 +91,8 @@ By the end of this lab, you will have learned:
 
     d. **Quick Access:** This section lists the recently used or favorite items.
 
+    ![](../media/lab-02/image023.jpg)
+
  
 ## Task 3: Industry Solutions Experience
 1. Select **Fabric experience selector icon** (currently set to DataFactory) on the bottom left of your screen. Fabric experience dialog opens.
@@ -90,6 +103,8 @@ By the end of this lab, you will have learned:
     b. **Retail solutions:** helps in managing large volumes of data, integrating data from various sources, and providing real-time analytics for prompt decision-making. Retailers can use these solutions for inventory optimization, customer segmentation, sales forecasting, dynamic pricing, and fraud detection.
 
     c. **Healthcare solutions:** are strategically designed to accelerate the time to value for customers by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.
+
+    ![](../media/lab-02/image025.png)
  
 ## Task 4: Real-Time Intelligence Experience
 1. Select **Fabric experience selector icon** (currently set to Industry Solutions) on the bottom left of your screen. Fabric experience dialog opens.
@@ -106,6 +121,7 @@ By the end of this lab, you will have learned:
 
     e. **Activator:** Used to monitor datasets, queries, and event streams for patterns.
 
+    ![](../media/lab-02/image027.png)
  
 ## Task 5: Data Engineering Experience
 1. Select **Fabric experience selector icon** (currently set to Real-Time Intelligence) on the bottom left of your screen. Fabric experience dialog opens.
@@ -124,7 +140,8 @@ By the end of this lab, you will have learned:
     f. **API for GraphQL:** Is API to query multiple data sources.
 
     g. **Import notebook:** Used to import notebooks from local machine.
- 
+
+    ![](../media/lab-02/image029.png)
 
 ## Task 6: Data Science Experience
 1. Select **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
@@ -143,7 +160,8 @@ By the end of this lab, you will have learned:
     f. **Import Notebook:** Used to import notebooks from local machine.
 
     **Note:** Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
- 
+
+    ![](../media/lab-02/image031.png)
 
 ## Task 7: Data Warehouse Experience
 1. Select **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
@@ -168,6 +186,8 @@ By the end of this lab, you will have learned:
     i. **Mirrored Azure SQL Managed Database:** Used to mirror Azure SQL Managed Databases for high availability and disaster recovery.
 
     j. **Mirrored Database:** Used to replicate databases for high availability and disaster recovery.
+
+    ![](../media/lab-02/image033.png)
  
 
 # Fabric Workspace
@@ -176,7 +196,8 @@ By the end of this lab, you will have learned:
 
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
 2. Click **+ New workspace** found at the bottom of the pop out menu
- 
+
+    ![](../media/lab-02/image036.jpg)
 
 3. **Create a workspace** dialog opens on the right side of the browser.
 4. In the **Name** field enter **FAIAD_<username\>**
@@ -185,10 +206,13 @@ By the end of this lab, you will have learned:
 
 5. If you choose, you can enter a **Description** for the workspace. This is an optional field.
 6. Click on **Advanced** to expand the section.
+
+    ![](../media/lab-02/image038.png)
  
 7. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
 8. Select **Apply** to create a new workspace.
  
+    ![](../media/lab-02/image041.png)
 
 A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 
@@ -196,26 +220,32 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 1. Select **Fabric experience selector icon** (currently set to Data Warehouse) on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Engineering** to be navigated to Data Engineering Home page.
 
- 
+    ![](../media/lab-02/image044.jpg)
+
 3. Select **Lakehouse**.
- 
+
+    ![](../media/lab-02/image045.png)
 
 4. New lakehouse dialog opens. Type **lh_FAIAD** in the Name textbox.
 
    **Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
 
 5. Select **Create**.
+
+    ![](../media/lab-02/image048.png)
  
     Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface. On the **left panel**, notice that below your workspace, you will have the Lakehouse icon. You can easily navigate to the Lakehouse by clicking on this icon at any time.
 
-    Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options in the following labs. 
+    Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options in the following labs.
+
+    ![](../media/lab-02/image050.png)
 
     In this lab, we explored the Fabric interface, created a Fabric workspace, and a Lakehouse. In the next lab, we will learn how to use Shortcuts in Lakehouse to connect to ADLS Gen2 data and how to transform this data using views.
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
-![](../media/lab-01/image050.png)
+![](../media/lab-02/image052.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
