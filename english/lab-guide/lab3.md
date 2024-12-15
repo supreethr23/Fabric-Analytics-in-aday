@@ -84,7 +84,6 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
     ![](../media/lab-03/image013.jpg)
 
 13. Select **Next**.
- 
 
 14. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon** under Actions for Application.Cities.
 15. Rename **Application.Cities to Cities**.
