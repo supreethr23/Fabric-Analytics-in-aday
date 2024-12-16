@@ -108,6 +108,7 @@ Let’s create a new report using a blank canvas.
 
 3. Select **Pick a published semantic model**, so we can pick the model we have created.
 	
+	![](../media/lab-07/step3.png)
 
 4. Pick a semantic model to use in your report dialog opens. Select **sm_FAIAD**.
 
