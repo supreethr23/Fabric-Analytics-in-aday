@@ -233,6 +233,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
     Now let’s create a shortcut to bring in data from Dataverse.
 
 # Shortcut to ADLS Gen2
+
 ## Task 9: How to create a Shortcut to Dataverse
 You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view (not SQL analytics endpoint).
 
