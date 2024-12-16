@@ -138,7 +138,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 5. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
 
-6. Click on the Customer Query from the Queries window. Selecting this query will require that you re- enter your Dataverse credentials. Click **Edit Credentials**.
+6. Click on the Customer Query from the Queries window. Selecting this query will require that you re-enter your Dataverse credentials. Click **Edit Credentials**.
 
     ![](../media/lab-01/image043.png)
 
