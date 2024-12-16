@@ -1,4 +1,4 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Lab 6
+# **Microsoft Fabric - Fabric Analyst in a Day - Lab 6**
 
 ![](../media/lab-06/1.png)
 
@@ -25,7 +25,6 @@ By the end of this lab, you will have learned:
 
 - How to Create a semantic model
 
-
 # Lakehouse – Analyzing data
 
 ## Task 1: Query data using SQL
@@ -37,13 +36,13 @@ By the end of this lab, you will have learned:
 3. You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
 
-    ![](../media/lab-06/image007.jpg)
+   ![](../media/lab-06/image007.jpg)
 
-    If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let’s explore this.
+   If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let’s explore this.
  
-    Let’s assume you want to quickly find out the Units sold by Supplier using SQL.
+   Let’s assume you want to quickly find out the Units sold by Supplier using SQL.
 
-    In the Lakehouse, SQL analytics endpoint, notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
+   In the Lakehouse, SQL analytics endpoint, notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
 4. From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**.. You will be navigated to SQL query view.
 
@@ -309,35 +308,35 @@ Let’s add the remaining relationships.
 
 18.	Make sure **Cardinality** is **Many to one (*:1)**.
 
-19.	Make sure **Cross filter direction** is **Both**.
+19. Make sure **Cross filter direction** is **Both**.
 
-20.	Select **Save**.
+20. Select **Save**.
 
     ![](../media/lab-06/image076.png)
 
-20.	Similarly,  create a relationship between Customer and Reseller. Select **New relationship**.
+20. Similarly,  create a relationship between Customer and Reseller. Select **New relationship**.
 
-21.	New relationship dialog opens. Make sure **From table** is **Customer** and **Column** is **ResellerID**.
+21. New relationship dialog opens. Make sure **From table** is **Customer** and **Column** is **ResellerID**.
 
-22.	Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
+22. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
-23.	Make sure **Cardinality** is **Many to one (*:1)**.
+23. Make sure **Cardinality** is **Many to one (*:1)**.
 
-24.	Make sure **Cross filter direction** is **Single**.
+24. Make sure **Cross filter direction** is **Single**.
 
-25.	Select **Save**.	
+25. Select **Save**.	
 
     >**Checkpoint**: Manage relationships should look like screenshot below.
 
     ![](../media/lab-06/image081.png)
 
-26.	Similarly, create a **many to one** relationship between **PO** and **Date**. Select **Order_Date** from **PO** and **Date** from **Date**.
+26. Similarly, create a **many to one** relationship between **PO** and **Date**. Select **Order_Date** from **PO** and **Date** from **Date**.
 
-27.	Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and StockItemID from Product.
+27. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and StockItemID from Product.
 
-28.	Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**.
+28. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**.
 
-29.	Select **Close** to close Manage relationships dialog. We are done creating all the relationships.
+29. Select **Close** to close Manage relationships dialog. We are done creating all the relationships.
 
     >**Checkpoint**: Your model should look like the screenshot below.
 

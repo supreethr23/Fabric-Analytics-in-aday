@@ -1,4 +1,4 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Lab 5
+# **Microsoft Fabric - Fabric Analyst in a Day - Lab 5**
 
 ![](../media/lab-05/main5.png)
 
