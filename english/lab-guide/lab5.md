@@ -469,15 +469,16 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
 8. Pipeline expression builder dialog opens. Enter
 
-    ```
-    @if(
-    greater(variables('varCounter'), 1),  
-    if(equals(variables('varCounter'), 2),  
-        mul(variables('varWaitTime'),15 ),  
-        mul(variables('varWaitTime'), 0)  
-    ),  
-    mul(variables('varWaitTime'),5 )
-    ```
+   ```
+   @if(
+       greater(variables('varCounter'), 1),
+       if(equals(variables('varCounter'), 2),
+           mul(variables('varWaitTime'),15 ), 
+           mul(variables('varWaitTime'), 0)
+       ),
+       mul(variables('varWaitTime'),5 )
+   )
+   ```
 
     Feel free to type the expression in, or use the menu to select the functions, or copy and paste it in.
 
