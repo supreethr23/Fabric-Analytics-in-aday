@@ -29,27 +29,27 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Query data using SQL
 
-1.	Let’s navigate back to the Fabric workspace, FAIAD_<username\> you created in Lab 2, Task 9.
+1.	Let’s navigate back to the Fabric workspace, **FAIAD_<username\>** you created in Lab 2, Task 9.
 
-2.	If you choose to, Minimize the task flow to view the entire list of items.
+2.	If you choose to, **Minimize the task flow** to view the entire list of items.
 
-3.	You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select lh_FAIAD SQL analytics endpoint option to continue to explore this option. You will be navigated to the SQL view of the explorer.
+3.	You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
 
-
+     <picture1>
 
     If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let’s explore this.
- 
  
     Let’s assume you want to quickly find out the Units sold by Supplier using SQL.
 
     In the Lakehouse, SQL analytics endpoint, notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
-4.	From the top menu select New SQL queryor from the center of the screen click New SQL query.. You will be navigated to SQL query view.
+4.	From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**.. You will be navigated to SQL query view.
 
 
+    <Picure2>
 
-5.	Paste the below SQL query into the query window. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
+5.	Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
     ```
     SELECT su.SupplierName, SUM(Quantity) as Units 
@@ -58,99 +58,104 @@ By the end of this lab, you will have learned:
     GROUP BY su.SupplierName
     ```
 
-6. Click Run in the SQL editor menu to view the results.
+6. Click **Run** in the SQL editor menu to view the results.
 
-7. Notice there is an option to save this query as a View by selecting Save as view.
+7. Notice there is an option to save this query as a View by selecting **Save as view**.
 
-8. On the left Explorer panel, under Queries section notice this query is saved under My queries as SQL query 1. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the Shared queries folder.
+8. On the **left Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
     >**Note**: Visual queries you had created in earlier labs are also available under My queries folder.
  
 
-
+<pitcure3>
 
 
  
 ## Task 2: Visualize T-SQL result
 
-1. We can also visualize the result of this query. Highlight the query in the query pane
+1. We can also visualize the result of this query. **Highlight the query** in the query pane
 
-2. In the Results pane menu, select Explore this data (preview) -> Visualize results.
+2. In the Results pane menu, select **Explore this data (preview) -> Visualize results**.
 
-3. Visualize results dialog opens. Select Continue.
-Visualize results dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
+3. **Visualize results** dialog opens. Select **Continue**.
 
-4. Expand Data pane and expand SQL query 1.
+**Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
 
-5. Select Supplier_Name and Units fields. Table visual is created.
+4. Expand **Data** pane and expand **SQL query 1**.
+
+5. Select **Supplier_Name** and **Units fields**. Table visual is created.
  
-
+  <picture4>
  
-6. From the Visualization section, change the visual type by selecting the Stacked column chart.
+6. From the **Visualization** section, change the visual type by selecting the S**tacked column chart**.
 
-7. Select Save as report on the bottom right of the screen.
+7. Select **Save as report** on the bottom right of the screen.
 
-8. Save your report dialog opens. Type Units by Supplier in the Enter a name for your report textbox.
+8. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
 
-9. Make sure the destination workspace is your Fabric workspace, FAIAD<username>
+9. Make sure the destination workspace is your Fabric workspace, **FAIAD<username>**
 
-10.	Select Save.
- 
+10.	Select **Save**.
+    
+    <Picture5>
 
  
     You will be navigated to back to the SQL query screen.
 
 # Lakehouse – Semantic Modeling
+
 ## Task 3: Create Semantic model
 
-1. Open up the SQL analytics endpoint from your lakehouse.
+1. Open up the **SQL analytics endpoint** from your lakehouse.
 
-2. From the explorer pane, scroll down and select Model Layouts. You will notice the center pane looks like the model view we will see in Power BI Desktop.
+2. From the explorer pane, scroll down and select **Model Layouts**. You will notice the center pane looks like the model view we will see in Power BI Desktop.
 
     This is the default model the Lakehouse creates. However, there are some limitations with the default model (like ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
 
-3. From the menu, on the top right select the arrow next to SQL analytics endpoint.
+3. From the menu, on the top right **select the arrow next to SQL analytics endpoint**.
 
-4. Select Lakehouse to be navigated to the Lakehouse view.
+4. Select **Lakehouse** to be navigated to the Lakehouse view.
  
 
+ <picture6>
 
+5. From the menu select **Home -> New semantic model**.
 
-5. From the menu select Home -> New semantic model.
-
-6. New semantic model dialog opens. Enter sm_FAIAD as the Direct Lake semantic model name.
+6. New semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
 
 7. We have the option to select a subset of the tables by default. Remember, we created views in the
-earlier lab. We want to include these views in the model. Expand the dbo schema, from here you can see all tables and views in your lakehouse.
+earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
 
-8.	Select the following tables/views:
+  <pitcure7>
 
-    a.	Date
+8.	**Select** the following tables/views:
 
-    b.	People
+    **a. Date**
 
-    c.	Customer
+    **b. People**
 
-    d.	PO
+    **c. Customer**
 
-    e.	Supplier
+    **d. PO**
 
-    f.	Geo
+    **e. Supplier**
 
-    g.	Reseller
+    **f. Geo**
 
-    h.	Sales
+    **g. Reseller**
 
-    i.	Product
+    **h. Sales**
 
-9.	Select Confirm.
+    **i. Product**
+
+9.	Select **Confirm**.
  
-
+<pictur8>
 
  
 ## Task 4: Create Relationships
 
-You will navigate to the new semantic model with the selected tables. Feel free to rearrange the tables as needed. Notice that some of the tables (Geo, Reseller, Sales and Product) have a warning sign on the top right of the table. This is because these are views. Any visuals created with fields from these views will be in direct query mode and not direct lake mode.
+You will navigate to the new semantic model with the selected tables. Feel free to **rearrange** the tables as needed. Notice that some of the tables (Geo, Reseller, Sales and Product) have a warning sign on the top right of the table. This is because these are views. Any visuals created with fields from these views will be in direct query mode and not direct lake mode.
  
 
 
@@ -158,44 +163,48 @@ You will navigate to the new semantic model with the selected tables. Feel free 
 
 >**Note**: Direct lake mode is faster than direct query mode.
 
+<picture9>
+
 The first step is to create relationships between these tables.
 
-1. Let’s create a relationship between Sales and Reseller tables. Select ResellerID from the Sales table and drag it over to ResellerID in the Reseller table.
+1. Let’s create a relationship between Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
+
+<picture10>
  
-2. New relationship dialog opens. Make sure From table is Sales and Column is ResellerID.
+2. New relationship dialog opens. Make sure **From table** is **Sales** and Column is **ResellerID**.
 
-3. Make sure To table is Reseller and Column is ResellerID.
+3. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
-4.	Make sure Cardinality is Many to one (*:1).
+4.	Make sure **Cardinality** is **Many to one (*:1)**.
 
-5.	Make sure Cross filter direction is Single.
+5.	Make sure **Cross filter direction** is **Single**.
 
-6.	Select Save.
+6.	Select **Save**.
 
+   <picture11>
 
-7.	Similarly, create a relationship between Sales and Date tables. Select InvoiceDate from the Sales table and drag it over to Date in the Date table.
+7.	Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
-8.	New relationship dialog opens. Make sure From table is Sales and Column is InvoiceDate.
+8.	New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
 
-9.	Make sure To table is Date and Column is Date.
+9.	Make sure **To table** is **Date** and **Column** is **Date**.
 
-10.	Make sure Cardinality is Many to one (*:1).
+10.	Make sure **Cardinality** is **Many to one (*:1)**.
 
-11.	Make sure Cross filter direction is Single.
+11.	Make sure **Cross filter direction** is **Single**.
 
-12.	Select Save.
+12.	Select **Save**.
 
-13.	Similarly, create a many-to-one relationship between Sales and Product tables. Select StockItemID
-from the Sales table and StockItemID from the Product table.
+13.	Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID**
+from the **Sales** table and **StockItemID** from the **Product** table.
 
+    <picture12>
 
     >**Note**: All our updates are automatically saved.
-    Checkpoint: Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
+
+    >**Checkpoint**: Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
  
-
-
-
-
+    <picture13>
  
     In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
     remaining relationships.
@@ -204,69 +213,63 @@ from the Sales table and StockItemID from the Product table.
 
 Let’s add a few measures we need to create the Sales dashboard.
 
-1. Select Sales table from the model view. We want to add the measures to the Sales table.
+1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
 
-2. From the top menu, select Home -> New Measure. Notice the formula bar is displayed.	
+2. From the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.	
 
-3.Enter Sales = SUM(Sales[Sales Amount]) in the formula bar.
+3.Enter **Sales = SUM(Sales[Sales Amount])** in the **formula bar**.
 
-4. Click the check mark left of the formula bar or click the Enter button.
+4. Click the **check mark** left of the formula bar or click the **Enter** button.
 
 5. Expand the Properties panel on the right.
 
-6. Expand the Formatting section.
+6. Expand the **Formatting** section.
 
-7. From the Format dropdown select Currency.
+7. From the **Format** dropdown select **Currency**.
 
-8. Set Decimal places to 0.
+8. Set Decimal places to **0**.
+ 
+ <picture14>
+
+
+9. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
+
+10. Enter **Units = SUM(Sales[Quantity])** in the formula bar.
+
+11.	Click the **check mark** left of the formula bar or click the **Enter** button.
+
+12.	In the Properties panel on the right, expand the **Formatting** section (it may take a few moments for the Properties panel to load).
+
+13.	From the **Format** dropdown select **Whole number**.
+
+14.	Use the slider to set **Thousands separator** to **Yes**.
+ 
+
+<picture15>
  
 
 
+15. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
+16. Enter **Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar**.
 
+17.	Click the **check mark** left of the formula bar or click the **Enter** button.
+
+18.	In the Properties panel on the right, expand the **Formatting** section.
+
+19.	From the **Format** dropdown select **Whole number**.
+
+20.	Use the slider to set **Thousands separator** to **Yes**.
+
+<picture16>
  
-9. With the Sales table selected from the top menu, select Home -> New Measure. Notice the formula bar is displayed.
+21.	In the **Data panel** (on the right), select **Model**. Notice this provides a view that will help organize all the items in the semantic model.
 
-10. Enter Units = SUM(Sales[Quantity]) in the formula bar.
+22.	Expand **Semantic model -> Measures** to view all the measures you just created.
 
-11.	Click the check mark left of the formula bar or click the Enter button.
-
-12.	In the Properties panel on the right, expand the Formatting section (it may take a few moments for the Properties panel to load).
-
-13.	From the Format dropdown select Whole number.
-
-14.	Use the slider to set Thousands separator to Yes.
+23.	You can also **expand individual Tables** to view the Columns, Hierarchies and Measures in each one of them.
  
-
-
- 
-
-
-15. With the Sales table selected from the top menu, select Home -> New Measure. Notice the formula bar is displayed.
-
-16. Enter Sales Orders = DISTINCTCOUNT(Sales[InvoiceID]) in the formula bar.
-
-17.	Click the check mark left of the formula bar or click the Enter button.
-
-18.	In the Properties panel on the right, expand the Formatting section.
-
-19.	From the Format dropdown select Whole number.
-
-20.	Use the slider to set Thousands separator to Yes.
- 
-
-
- 
-21.	In the Data panel (on the right), select Model. Notice this provides a view that will help organize all the items in the semantic model.
-
-22.	Expand Semantic model -> Measures to view all the measures you just created.
-
-23.	You can also expand individual Tables to view the Columns, Hierarchies and Measures in each one of them.
- 
-
-
-
-
+ <pitcure19>
  
     Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
     remaining measures.
@@ -280,95 +283,101 @@ Let’s add the remaining relationships.
 1. From the menu, select Home -> Manage relationships.
 
 2. Manage relationships dialog opens. Select New relationship.
-
-3. New relationship dialog opens. Make sure From table is Sales and Column is SalespersonPersonID.
  
+ <picture20>
 
+3. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **SalespersonPersonID**.
 
-4. Make sure To table is People and Column is PersonID.
+4. Make sure **To table** is **People** and **Column** is **PersonID**.
 
-5. Make sure Cardinality is Many to one (*:1).
+5. Make sure **Cardinality** is **Many to one (*:1)**.
 
-6. Make sure Cross filter direction is Single.
+6. Make sure **Cross filter direction** is **Single**.
 
-7. Select Save. Manage relationships dialog opens with the new relationship added.
+7. Select **Save**. Manage relationships dialog opens with the new relationship added.
 
-8. Now let’s create a relationship between Product and Supplier. Select New relationship.
+ <picture21>
 
-9. Make sure From table is Product and Column is SupplierID.
+8. Now let’s create a relationship between Product and Supplier. Select **New relationship**.
 
-10. Make sure To table is Supplier and Column is SupplierID.
+9. Make sure **From table** is **Product** and **Column** is **SupplierID**.
 
-11. Make sure Cardinality is Many to one (*:1).
+10. Make sure **To table** is **Supplier** and **Column** is **SupplierID**.
 
-12. Make sure Cross filter direction is Both.
+11. Make sure **Cardinality** is **Many to one (*:1)**.
 
-13.	Select Save.
+12. Make sure **Cross filter direction** is **Both**.
+
+13.	Select **Save**.
  
-14.	Now let’s create a relationship between Reseller and Geo. Select New relationship.
+14.	Now let’s create a relationship between Reseller and Geo. Select **New relationship**.
 
-15.	New relationship dialog opens. Make sure From table is Reseller and Column is PostalCityID.
+15.	New relationship dialog opens. Make sure **From table** is **Reseller** and **Column** is **PostalCityID**.
 
-16.	Make sure To table is Geo and Column is CityID.
+16.	Make sure **To table** is **Geo** and **Column** is **CityID**.
 
-17.	Make sure Cardinality is Many to one (*:1).
+17.	Make sure **Cardinality** is **Many to one (*:1)**.
 
-18.	Make sure Cross filter direction is Both.
+18.	Make sure **Cross filter direction** is **Both**.
 
-19.	Select Save.
+19.	Select **Save**.
 
-20.	Similarly,  create a relationship between Customer and Reseller. Select New relationship.
+  <save>
 
-21.	New relationship dialog opens. Make sure From table is Customer and Column is ResellerID.
+20.	Similarly,  create a relationship between Customer and Reseller. Select **New relationship**.
 
-22.	Make sure To table is Reseller and Column is ResellerID.
+21.	New relationship dialog opens. Make sure **From table** is **Customer** and **Column** is **ResellerID**.
 
-23.	Make sure Cardinality is Many to one (*:1).
+22.	Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
-24.	Make sure Cross filter direction is Single.
+23.	Make sure **Cardinality** is **Many to one (*:1)**.
 
-25.	Select Save.	
+24.	Make sure **Cross filter direction** is **Single**.
+
+ <picture25>
+
+25.	Select **Save**.	
 
     >**Checkpoint**: Manage relationships should look like screenshot below.
 
-26.	Similarly, create a many to one relationship between PO and Date. Select Order_Date from PO and
-Date from Date.
+26.	Similarly, create a **many to one** relationship between **PO** and **Date**. Select **Order_Date** from **PO** and **Date** from **Date**.
 
-27.	Similarly, create a many to one relationship between PO and Product. Select StockItemID from PO
-and StockItemID from Product.
+27.	Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and StockItemID from Product.
 
-28.	Similarly, create a many to one relationship between PO and People. Select ContactPersonID from
-PO and PersonID from People.
+28.	Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**.
 
-29.	Select Close to close Manage relationships dialog. We are done creating all the relationships.
-Checkpoint: Your model should look like the screenshot below.
- 
+29.	Select **Close** to close Manage relationships dialog. We are done creating all the relationships.
+
+>**Checkpoint**: Your model should look like the screenshot below.
+ <picture25>
  
 ## Task 7: Optional section – Create Measures
 
 Let’s add the remaining measures.
 
-1. Select Sales table and from the top menu select Home -> New Measure.
+1. Select **Sales** table and from the top menu select **Home -> New Measure**.
 
-2. Enter Avg Order = DIVIDE([Sales], [Sales Orders]) in the formula bar.
+2. Enter **Avg Order = DIVIDE([Sales], [Sales Orders])** in the formula bar.
 
-3. Click the check mark in the formula bar or click Enter button.
+3. Click the **check mark** in the formula bar or click Enter button.
 
 4. Expand the Properties panel on the right.
 
-5. Expand the Formatting section.
+5. Expand the **Formatting** section.
 
-6. From the Format dropdown select Currency.
+6. From the **Format** dropdown select **Currency**.
 
 7. Set Decimal places to 0.
+
+<picture27>
  
 8. Follow similar steps to add the following measures:
 
-    a. In Sales table, GM = SUM(Sales[LineProfit]) formatted as Currency with 0 decimal places.
+    a. In **Sales** table, **GM = SUM(Sales[LineProfit])** formatted as **Currency with 0 decimal places**.
 
-    b.In Sales table, GM% = DIVIDE([GM], [Sales]) formatted as Percentage with 0 decimal places.
+    b. In **Sales** table, **GM% = DIVIDE([GM], [Sales])** formatted as **Percentage with 0 decimal places**.
 
-    c.In Customer table, No of Customers = COUNTROWS(Customer) formatted as Whole Number with Thousands separator enabled.
+    c. In **Customer** table, **No of Customers = COUNTROWS(Customer)** formatted as **Whole Number with Thousands separator enabled**.
 
 # References
 
