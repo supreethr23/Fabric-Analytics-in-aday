@@ -135,23 +135,15 @@ By the end of this lab, you will have learned:
 
 8. **Select** the following tables/views:
 
-    **a. Date**
-
-    **b. People**
-
-    **c. Customer**
-
-    **d. PO**
-
-    **e. Supplier**
-
-    **f. Geo**
-
-    **g. Reseller**
-
-    **h. Sales**
-
-    **i. Product**
+    **a. Date**<br/>
+    **b. People**<br/>
+    **c. Customer**<br/>
+    **d. PO**<br/>
+    **e. Supplier**<br/>
+    **f. Geo**<br/>
+    **g. Reseller**<br/>
+    **h. Sales**<br/>
+    **i. Product**<br/>
 
 9. Select **Confirm**.
  
