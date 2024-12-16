@@ -35,7 +35,6 @@ By the end of this lab, you will have learned:
 
 3. You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
-
     ![](../media/lab-06/image007.jpg)
 
     If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let’s explore this.
