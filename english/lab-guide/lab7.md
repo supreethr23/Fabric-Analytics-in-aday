@@ -1,65 +1,65 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 7
 
-Contents
-Introduction
-Power BI
-Task 1: Auto-Create Report
-Task 2: Configure background for a New report
-Task 3: Add Header to the report
-Task 4: Add KPIs to the report
-Task 5: Add Line chart to the report	
-Task 6: Save the report
-Task 7: Configure Year column in Date table
-Task 8: Configure Month Name column in Date table
-Task 9: Format Line chart
-Task 10: Connect Power BI Desktop to Semantic model
-Task 11: Add new data to simulate Direct Lake Mode
-Clean up Lab environment
-References
+# Contents
 
- 
-
+- Introduction
+- Power BI
+	- Task 1: Auto-Create Report
+	- Task 2: Configure background for a New report
+	- Task 3: Add Header to the report
+	- Task 4: Add KPIs to the report
+	- Task 5: Add Line chart to the report	
+	- Task 6: Save the report
+	- Task 7: Configure Year column in Date table
+	- Task 8: Configure Month Name column in Date table
+	- Task 9: Format Line chart
+	- Task 10: Connect Power BI Desktop to Semantic model
+	- Task 11: Add new data to simulate Direct Lake Mode
+- Clean up Lab environment
+- References
 
 
-Introduction
-In this course you have beenintroduced to the Lakehouse, ingested data from different data sources into the Lakehouse,  set a refresh schedule for the data sources and created a data model . Now you are going  to create a report.
+# Introduction
+
+In this course you have been introduced to the Lakehouse, ingested data from different data sources into the Lakehouse,  set a refresh schedule for the data sources and created a data model . Now you are going to create a report.
+
 By the end of this lab, you will have learned:
-•	How to auto-create a report
-•	How to build a report starting from a blank canvas
-•	How to build a report using Power BI Desktop
-•	How to experience Direct Lake mode resulting in data automatically refreshing
-Power BI
-Task 1: Auto-Create Report
+	- How to auto-create a report
+	- How to build a report starting from a blank canvas
+	- How to build a report using Power BI Desktop
+	- How to experience Direct Lake mode resulting in data automatically refreshing
+
+# Power BI
+
+## Task 1: Auto-Create Report
+
 Let’s start by using the auto-create report option. And later in the lab, we will re-create the report we have in Power BI.
 
 1.	Let’s navigate back to the Fabric workspace you created in the earlier lab.
+
 2.	From the bottom of the left panel select Fabric experience selector icon.
+
 3.	Fabric experience dialog opens. Select Power BI. You will be navigated to Power BI Home page.
 
 4.	Select New Report from the top menu.
  
-
-
-
-
- 
 5.	You will be navigated to Build your first report screen. There will be options to build report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select Pick a published semantic model option.
 
 6.	Pick a dataset to use in your report page opens. Notice we have multiple options. Select sm_FAIAD.
-a.	sm_FAIAD: This is the semantic model we have created and want to use to build the report.
-b.	lh_FAIAD: This is the lakehouse where we ingested all the data into.
-c.	Units by Supplier: This is the dataset we created using T-SQL.
-d.	DataflowsStagingWarehouse: This is the staging warehouse which is created by default. We did not use this as we did not stage data.
-e.	DataflowsStagingLakehouse: This is the staging lakehouse which is created by default. We did not use this as we did not stage data.
+
+	a. sm_FAIAD: This is the semantic model we have created and want to use to build the report.
+
+	b. lh_FAIAD: This is the lakehouse where we ingested all the data into.
+
+	c. Units by Supplier: This is the dataset we created using T-SQL.
+
+	d. DataflowsStagingWarehouse: This is the staging warehouse which is created by default. We did not use this as we did not stage data.
+
+	e. DataflowsStagingLakehouse: This is the staging lakehouse which is created by default. We did not use this as we did not stage data.
+
 7.	Click the arrow next to Auto-create report button. Notice there are two options, Auto-create report and Create a blank report. Let’s try auto-creating, so select Auto-create report.
  
-
-
-
-
- 
-8.	Power BI will start auto creating the report. Notice there is an option to Pre-select data, if we choose too. Once the report is ready, a dialog appears on the top right of the screen. Select View report
-now or it will autoload in a few seconds.
+8.	Power BI will start auto creating the report. Notice there is an option to Pre-select data, if we choose too. Once the report is ready, a dialog appears on the top right of the screen. Select View report now or it will autoload in a few seconds.
 
 Checkpoint: You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
 Note: Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
@@ -67,10 +67,6 @@ Note: Notice on the top menu, you have the option to Edit the report or view som
 10.	Save your report dialog opens. Name the report as rpt_Sales_Auto_Report Note: we are prefixing report name with rpt which is short for report.
 11.	Make sure the report is saved in your workspace, FAIAD_<username>.
  
-
-
-
-
 
 12.	Select Save.
 
