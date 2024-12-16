@@ -211,13 +211,17 @@ activity.
 	We need to write an expression which would execute until either the value of **varCounter is 3** or value
 **varIsSuccess is Yes**. (varCounter and varIsSuccess are the variables we just created.)
 
-8.	**Pipeline expression builder** dialog opens. In the bottom half of the dialog, you will have a menu:
+8. **Pipeline expression builder** dialog opens. In the bottom half of the dialog, you will have a menu:
 
-	a. **Parameters**: Are constants across a data factory that can be consumed by a pipeline in any expression.
-	b. **System variables:** These variables can be used in expressions when defining entities within either service. E.g., pipeline id, pipeline name, trigger name, etc.
-	c. **Trigger parameters:** Parameters that triggered the pipeline. E.g., File Name or Folder Path.
-	d. **Functions:** You can call functions within expressions. Functions are categorized into Collection, Conversion, Date, Logical, Math, and String functions. E.g., concat is a String function, add is a Math function, etc.
-	e. **Variables:** Pipeline variables are values that can be set and modified during a pipeline run. Unlike pipeline parameters, which are defined at the pipeline level and cannot be changed during a pipeline run, pipeline variables can be set and modified within a pipeline using a Set Variable activity. We are going to use Set Variable activity shortly.
+      a. **Parameters**: Are constants across a data factory that can be consumed by a pipeline in any expression.
+
+      b. **System variables:** These variables can be used in expressions when defining entities within either service. E.g., pipeline id, pipeline name, trigger name, etc.
+
+      c. **Trigger parameters:** Parameters that triggered the pipeline. E.g., File Name or Folder Path.
+
+      d. **Functions:** You can call functions within expressions. Functions are categorized into Collection, Conversion, Date, Logical, Math, and String functions. E.g., concat is a String function, add is a Math function, etc.
+
+      e. **Variables:** Pipeline variables are values that can be set and modified during a pipeline run. Unlike pipeline parameters, which are defined at the pipeline level and cannot be changed during a pipeline run, pipeline variables can be set and modified within a pipeline using a Set Variable activity. We are going to use Set Variable activity shortly.
  
 9.	**Click Functions** from the bottom menu.
 
@@ -226,7 +230,7 @@ expression text box. The **or** function takes two parameters, we are working on
 
 11.	Place the cursor **in between the parentheses** of the **@or** function.
 
-12.	From the Logical Functions section, select equals function. Notice this is added to the dynamic expression text box.
+12.	From the **Logical Functions** section, select equals function. Notice this is added to the dynamic expression text box.
 
 **Note:** Your function should look like **@or(equals())**. The equals function also takes  two parameters. We will be checking if the variable varCounter is equal to 3.
 
@@ -286,15 +290,15 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
 4.	In the **Description** field, enter **Set variable varIsSuccess to Yes**.
 
-**Note:** Hover over **Dataflow activity**. To the right of the activity box there are four icons. These can be used to connect to the next activity based on the result of the activity:
+    **Note:** Hover over **Dataflow activity**. To the right of the activity box there are four icons. These can be used to connect to the next activity based on the result of the activity:
 
-	a. Grey curved arrow icon is used on skip the activity.
+    a. **Grey curved arrow** icon is used on skip the activity.
 
-	b. Green check mark icon is used on success of the activity.
+    b. **Green check mark** icon is used on success of the activity.
 
-	c. Red x-mark icon is used on failure of the activity.
+    c. **Red x-mark** icon is used on failure of the activity.
 
-	d. Blue straight arrow icon is used on completion of the activity.
+    d. **Blue straight arrow** icon is used on completion of the activity.
 
 5.	Click the **green check mark** from dfactivity_People_SharePoint Dataflow activity and drag to connect to the new **set_varIsSuccess** **Set variable activity**. So, on success of dataflow refresh we want to execute the Set variable activity.
  
@@ -322,7 +326,7 @@ value (varCounter = varCounter + 1). So, we make use of the varTempCounter varia
 
 3.	In the **Name** field, enter **set_varTempCounter**
 
-4.	In the Descr****iption field, enter **Increment variable varTempCounter**.
+4.	In the **Description** field, enter **Increment variable varTempCounter**.
 
 5.	Click the **red x-mark** from Dataflow activity to the new Set variable activity. So, on failure of dataflow refresh we want to execute this Set variable activity.
 
@@ -336,7 +340,7 @@ value (varCounter = varCounter + 1). So, we make use of the varTempCounter varia
 
 10.	Pipeline expression builder dialog opens. Enter **@add(variables('varCounter'),1)**
 
-**Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function is setting the value of variable varTempCounter to the value of variable varCounter plus one,
+    **Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function is setting the value of variable varTempCounter to the value of variable varCounter plus one,
 (varTempCounter = varCounter + 1).
   
 Now we need to set the value of varCounter variable to the value of varTempCounter.
@@ -363,7 +367,7 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 
 10.	Pipeline expression builder dialog opens. Enter **@variables('varTempCounter')**. Feel free to type this expression in, or use the menu to select the functions, or copy and paste it in.
 
-**Note:** This function sets the value of variable varCounter to the value of variable varTempCounter
+    **Note:** This function sets the value of variable varCounter to the value of variable varTempCounter
 (varCounter = varTempCounter). At the end of each iteration both varCounter and varTempCounter have the same value.
   
 ## Task 12: Configure Wait Activity
@@ -386,17 +390,22 @@ again. If the dataflow refresh fails for the second time, we need to wait 15 min
 7.	In the **Wait time in seconds** field, select the **text box** and select **Add dynamic content** link.
 
 8.	Pipeline expression builder dialog opens. Enter
-**@if(
-  greater(variables('varCounter'), 1),
-  if(equals(variables('varCounter'), 2),
-	mul(variables('varWaitTime'),15 ),
-	mul(variables('varWaitTime'), 0)
-  ),
+
+    **@if(
+  greater(variables('varCounter'), 1),  
+  if(equals(variables('varCounter'), 2),  
+	mul(variables('varWaitTime'),15 ),  
+	mul(variables('varWaitTime'), 0)  
+  ),  
   mul(variables('varWaitTime'),5 )**
 
+Feel free to type the expression in, or use the menu to select the functions, or copy and paste it in.
+
 We are using two new functions here:
-	- **greater**: Takes two numbers as parameters and compares which one is greater.
-	- **mul**: This is a multiply function, it takes in two parameters to multiply.
+
+- **greater**: Takes two numbers as parameters and compares which one is greater.
+
+- **mul**: This is a multiply function, it takes in two parameters to multiply.
 
 The expression is a nested if statement. It is checking if the value of varCounter variable is greater than 1.
 If it is true, it checks if the value of varCounter variable is 2. If it is true, it set the wait time to
@@ -404,7 +413,8 @@ varWaitTime times 15. Remember, we had defaulted varWaitTime value to 60. That w
 varWaitTime * 0. So, to 0. If the value of varCounter variable is 1, then we multiply the varWaitTime * 5. That would be 60*5 = 300 seconds.
 
 10.	Select **OK**.
-**Checkpoint**: You’re Until iterator should look like the screenshot below.
+
+    **Checkpoint**: You’re Until iterator should look like the screenshot below.
   
 11.	From the top left of the design canvas select **pl_Refresh_People_Sharepoint_Option2** to be navigated out of Until iterator.
 
@@ -413,7 +423,7 @@ varWaitTime * 0. So, to 0. If the value of varCounter variable is 1, then we mul
 ## Task 13: Configure Schedule Refresh for Data Pipeline
 1.	We can test the data pipeline, by selecting **Home -> Run**.
 
-**Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
+    **Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
 
 2.	We can set the data pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
 
@@ -429,7 +439,7 @@ varWaitTime * 0. So, to 0. If the value of varCounter variable is 1, then we mul
 
 8.	Set your **Time zone**.
 
-**Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
+    **Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
 9.	Select **Apply**.
 
@@ -437,7 +447,7 @@ varWaitTime * 0. So, to 0. If the value of varCounter variable is 1, then we mul
  
 11.	Select your Fabric workspace **FAIAD_<username\>** in the left panel to navigate to the workspace.
 
-**Note:** In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule).
+    **Note:** In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule).
 Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab because this is a lab environment.
 We have scheduled refreshes for the various data sources. We will create a semantic model with relationships, measures and other modeling operations in the next lab.
 
