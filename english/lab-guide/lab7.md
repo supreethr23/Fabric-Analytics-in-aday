@@ -107,7 +107,6 @@ Let’s create a new report using a blank canvas.
 	![](../media/lab-07/image025.jpg)
 
 3. Select **Pick a published semantic model**, so we can pick the model we have created.
-
 	
 
 4. Pick a semantic model to use in your report dialog opens. Select **sm_FAIAD**.
@@ -124,19 +123,19 @@ Let’s create a new report using a blank canvas.
 
 7. Navigate back to **Power BI canvas** in your browser.
 
-8.	Select **Format page icon** in **Visualization pane**.
+8. Select **Format page icon** in **Visualization pane**.
 
-9.	Expand **Canvas background section**.
+9. Expand **Canvas background section**.
 
-10.	Select **Browse** from **Image** option. File explorer dialog opens.
+10. Select **Browse** from **Image** option. File explorer dialog opens.
 
-11.	Navigate to **Reports** folder on the **desktop** of your lab environment.
+11. Navigate to **Reports** folder on the **desktop** of your lab environment.
 
-12.	Select **Summary Background.png**.
+12. Select **Summary Background.png**.
 
-13.	Set **Image fit** dropdown to **Fit**.
+13. Set **Image fit** dropdown to **Fit**.
 
-14.	Set Transparency to **0%**.
+14. Set Transparency to **0%**.
 
 	![](../media/lab-07/image036.jpg)
 
