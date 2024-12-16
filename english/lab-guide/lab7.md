@@ -61,9 +61,9 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 8. Power BI will start auto creating the report. Notice there is an option to Pre-select data, if we choose too. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now or it will autoload in a few seconds**.
 
-**Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
+	**Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
 
-**Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
+	**Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
 
 9. Let’s save this report. From the top menu, select **Save**.
 
@@ -74,7 +74,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
  
 13. Select **Save**.
 
-**Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6).
+	**Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6).
 
 Above screenshot is how the auto-created report may look if you created all the relationships and measures including the optional relationships (Lab 6).
 
