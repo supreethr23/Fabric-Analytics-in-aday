@@ -22,7 +22,7 @@
 - References
 
 # Introduction
-We have ingested data from different data sources into Lakehouse. In this lab, you will set up a refresh schedule for the data sources. Just to recap the requirement:
+We have ingested data from different data sources into Lakehouse. In this lab, you will set up a refresh schedule for the data sources. Just to recap the requirements:
 - **Supplier Data:** Snowflake is updated at midnight / 12 AM every day.
 - **Employee Data:** in SharePoint is updated at 9 AM every day. However, we have noticed that sometimes there is a  5 – 15 minute delay. We need to create a refresh schedule to accommodate this.
 - **Customer Data:** in Dataverse is always up to date. Previously we refreshed this four times a day, at midnight / 12 AM, 6 AM, noon / 12 PM, and 6 PM. Now, IT team has created a link to
@@ -54,7 +54,7 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
     ![](../media/lab-05/image017.png)
 
-   **Note**: Settings page opens. In the left panel you will find all the Dataflows listed.
+   **Note**: Settings page opens. In the left panel, you will find all the Dataflows listed.
 
 6. In the center pane, select **Refresh history** link.
 
@@ -294,7 +294,7 @@ activity.
 
     ![](../media/lab-05/image082.jpg)
  
-17. We need to add the second parameter to the or function. **Add a comma** in between the ending two parentheses. This time we will try typing in the function name. Start typing **equ** and you will get a drop down of available functions (this is called IntelliSense). Select the **equals** function.
+17. We need to add the second parameter to the or function. **Add a comma** in between the ending two parentheses. This time we will try typing in the function name. Start typing **equ** and you will get a drop-down of available functions (this is called IntelliSense). Select the **equals** function.
 
     ![](../media/lab-05/image085.jpg)
 
@@ -354,7 +354,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
 4. In the **Description** field, enter **Set variable varIsSuccess to Yes**.
 
-   **Note:** Hover over **Dataflow activity**. To the right of the activity box there are four icons. These can be used to connect to the next activity based on the result of the activity:
+   **Note:** Hover over **Dataflow activity**. To the right of the activity box, there are four icons. These can be used to connect to the next activity based on the result of the activity:
 
    a. **Grey curved arrow** icon is used on skip the activity.
 
