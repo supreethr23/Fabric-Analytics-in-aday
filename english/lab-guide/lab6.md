@@ -52,7 +52,7 @@ By the end of this lab, you will have learned:
 5.	Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
     ```
-    SELECT su.SupplierName, SUM(Quantity) as Units 
+    SELECT su.SupplierName,SUM(Quantity) as Units 
     FROM dbo.Sales s
     JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
     GROUP BY su.SupplierName
