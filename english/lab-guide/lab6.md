@@ -30,11 +30,11 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Query data using SQL
 
-1.	Let’s navigate back to the Fabric workspace, **FAIAD_<username\>** you created in Lab 2, Task 9.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>** you created in Lab 2, Task 9.
 
-2.	If you choose to, **Minimize the task flow** to view the entire list of items.
+2. If you choose to, **Minimize the task flow** to view the entire list of items.
 
-3.	You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
+3. You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
 
       ![](../media/lab-06/image007.jpg)
@@ -45,12 +45,12 @@ By the end of this lab, you will have learned:
 
     In the Lakehouse, SQL analytics endpoint, notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
-4.	From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**.. You will be navigated to SQL query view.
+4. From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**.. You will be navigated to SQL query view.
 
 
      ![](../media/lab-06/image009.jpg)
 
-5.	Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
+5. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
     ```
     SELECT su.SupplierName,SUM(Quantity) as Units 
@@ -133,7 +133,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-06/image033.png)
 
-8.	**Select** the following tables/views:
+8. **Select** the following tables/views:
 
     **a. Date**
 
@@ -153,7 +153,7 @@ By the end of this lab, you will have learned:
 
     **i. Product**
 
-9.	Select **Confirm**.
+9. Select **Confirm**.
  
     ![](../media/lab-06/image035.png)
 
@@ -184,17 +184,17 @@ The first step is to create relationships between these tables.
 
    ![](../media/lab-06/image044.png)
 
-7.	Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
+7. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
-8.	New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
+8. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
 
-9.	Make sure **To table** is **Date** and **Column** is **Date**.
+9. Make sure **To table** is **Date** and **Column** is **Date**.
 
-10.	Make sure **Cardinality** is **Many to one (*:1)**.
+10. Make sure **Cardinality** is **Many to one (*:1)**.
 
 11.	Make sure **Cross filter direction** is **Single**.
 
-12.	Select **Save**.
+12. Select **Save**.
 
     ![](../media/lab-06/image047.png)
    
