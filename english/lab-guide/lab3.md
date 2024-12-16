@@ -45,7 +45,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     ![](../media/lab-03/image008.jpg)
  
-6. Select Create new connection.
+6. Select **Create new connection**.
 7. Enter the following link for the **URL** property: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 8. Select **Shared Access Signature (SAS)** from the Authentication kind dropdown.
 9. Copy the **SAS token** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it into the **SAS token** box.
@@ -86,7 +86,9 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 13. Select **Next**.
 
 14. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon** under Actions for Application.Cities.
+
 15. Rename **Application.Cities to Cities**.
+
 16. Select the check mark next to the name to save the change.
 
     ![](../media/lab-03/image015.jpg)
@@ -113,7 +115,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     j. Warehouse.StockItems to **ProductItem**
 
-    **Note:** Double check the names. A typo may cause errors during the lab.
+    **Note:** Double-check the names. A typo may cause errors during the lab.
 
 18. Select **Create** to create the Shortcut.
 
@@ -136,7 +138,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
    We will start by creating a Geo view. We need to merge data from Cities, States and Countriesquery to create the Geo view.
 
-2. From the top menu, click the drop down next to **New SQL query** and then select **New visual query**.
+2. From the top menu, click the drop-down next to **New SQL query** and then select **New visual query**.
 
     ![](../media/lab-03/image026.jpg)
 
@@ -152,7 +154,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
  
 5. With Cities query selected, from the Power Query editor ribbon, select **Home - > Merge queries -> Merge queries as new**. Merge queries dialog opens.
 
-   **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop down for Combine and select Merge queries.
+   **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for Combine and select Merge queries.
 
    ![](../media/lab-03/image033.jpg) 
  
@@ -186,7 +188,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
 14. With Merge query selected, select **Home -> Merge queries -> Merge queries** from the ribbon.
 
-    **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop down for Combine and select Merge queries.
+    **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for Combine and select Merge queries.
 
     ![](../media/lab-03/image041.jpg)
  
@@ -250,8 +252,8 @@ The next step is to transform the data, so we can create a semantic model. We ar
  
     Notice the process is like Power Query, we have all the steps recorded both in the Applied Steps panel on the right and the visual view. Let’s rename Merge query and Enable load, so that the data is loaded from this query.
 
-25. **Right click on Merge** query in the Queries (left) panel. Select **Rename** and rename the query to **Geo**.
-26. **Right click on Geo** query in the Queries (left) panel. Select **Enable Load** to enable this query.
+25. **Right-click on Merge** query in the Queries (left) panel. Select **Rename** and rename the query to **Geo**.
+26. **Right-click on Geo** query in the Queries (left) panel. Select **Enable Load** to enable this query.
 27. Make sure that Cities, States and Countries queries are **disabled**.
 28. Select **Save**, found in the bottom right of the power query editor.
 
@@ -280,7 +282,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
  
 ## Task 3: Create Reseller view using Visual Query
 Let’s create Reseller view which is created by merging Customers table with BuyingGroups table. This time around we will create the view using Visual query.
-1. From the top menu, click the drop down next to **New SQL query** and then select **New visual query**.
+1. From the top menu, click the drop-down next to **New SQL query** and then select **New visual query**.
 
     ![](../media/lab-03/image067.jpg)
 
@@ -346,7 +348,7 @@ Let’s create Reseller view which is created by merging Customers table with Bu
 
     ![](../media/lab-03/image083.png)
  
-15. Let’s rename BuyingGroupName column. In the **Data view, double click on BuyingGroupName** column header to make it editable.
+15. Let’s rename BuyingGroupName column. In the **Data view, double-click on BuyingGroupName** column header to make it editable.
 
 16. **Rename** the column to **ResellerCompany**.
 
@@ -382,7 +384,7 @@ Let’s create Reseller view which is created by merging Customers table with Bu
 ## Task 4: Create Sales view using Visual query
 Let’s create Sales view, which is created by merging InvoiceLineItems and Invoices table and Reseller view. We have this query in Power BI Desktop. We will copy the code from Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let’s give this method a try.
 
-1. From the top menu, click the drop down next to **New SQL query** and then select **New visual query**. 
+1. From the top menu, click the drop-down next to **New SQL query** and then select **New visual query**. 
 
     ![](../media/lab-03/image100.jpg)
 
@@ -394,7 +396,7 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
 
 5. With InvoiceLineItems query selected, from the ribbon select **Home - > Merge queries - > Merge queries as new**.
 
-   **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop down for Combine and select Merge queries.
+   **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for Combine and select Merge queries.
 
    ![](../media/lab-03/image103.jpg)
  
@@ -469,7 +471,7 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
 
 26. You will be navigated back to Power Query Editor. In the left, Queries panel, **double click on Merge** query to rename it.
 27. **Rename** Merge query to **Sales**.
-28. Right click on Sales query and select **Enable load** to enable the query to be loaded.
+28. Right-click on Sales query and select **Enable load** to enable the query to be loaded.
 
     ![](../media/lab-03/image127.png)
  
@@ -533,7 +535,7 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
  
 14. In the left, Queries panel, **double click on Merge** query to rename it.
 15. **Rename** Merge query to **Product**.
-16. Right click on Product query and select **Enable load** to enable the query to be loaded.
+16. Right-click on Product query and select **Enable load** to enable the query to be loaded.
 17. Select **Save** to Save and Close the Power Query dialog. You will be navigated to Visual query.
 
     ![](../media/lab-03/image150.jpg)
