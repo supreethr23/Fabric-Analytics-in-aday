@@ -13,7 +13,6 @@
   - Task 7: Optional section – Create Measures	
  - References	
 
- 
 
 ## Introduction
 
@@ -377,32 +376,27 @@ Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions avai
   
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
-- See blog post to read the full Microsoft Fabric GA announcement
-- Explore Fabric through the Guided Tour
-- Sign up for the Microsoft Fabric free trial
-- Visit the Microsoft Fabric website
-- Learn new skills by exploring the Fabric Learning modules
-- Explore the Fabric technical documentation
-- Read the free e-book on getting started with Fabric
-- Join the Fabric community to post your questions, share your feedback, and learn from others
+- See the blog post to read the full [Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+- Explore Fabric through the [Guided Tour](https://aka.ms/Fabric-GuidedTour)
+- Sign up for the [Microsoft Fabric free trial](https://aka.ms/try-fabric)
+- Visit the [Microsoft Fabric website](https://aka.ms/microsoft-fabric)
+- Learn new skills by exploring the [Fabric Learning modules](https://aka.ms/learn-fabric)
+- Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
+- Read the [free e-book on getting started with Fabric](https://aka.ms/fabric-get-started-ebook)
+- Join the [Fabric community ](https://aka.ms/fabric-community) to post your questions, share your feedback, and learn from others
+
 Read the more in-depth Fabric experience announcement blogs:
 
-- Data Factory experience in Fabric blog
-- Synapse Data Engineering experience in Fabric blog
-- Synapse Data Science experience in Fabric blog
-- Synapse Data Warehousing experience in Fabric blog
-- Synapse Real-Time Analytics experience in Fabric blog
-- Power BI announcement blog
-- Data Activator experience in Fabric blog
-- Administration and governance in Fabric blog
-- OneLake in Fabric blog
- 
-
-
-
-
-
-- Dataverse and Microsof t Fabric integration blog
+- [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog) 
+- [Synapse Data Engineering experience in Fabric blog](https://aka.ms/Fabric-DE-Blog) 
+- [Synapse Data Science experience in Fabric blog](https://aka.ms/Fabric-DS-Blog) 
+- [Synapse Data Warehousing experience in Fabric blog](https://aka.ms/Fabric-DW-Blog) 
+- [Synapse Real-Time Analytics experience in Fabric blog](https://aka.ms/Fabric-RTA-Blog)
+- [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
+- [Data Activator experience in Fabric blog](https://aka.ms/Fabric-DA-Blog) 
+- [Administration and governance in Fabric blog](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [OneLake](https://aka.ms/Fabric-OneLake-Blog)[ in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
+- [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
 
 
 © 2023 Microsoft Corporation. All rights reserved.
