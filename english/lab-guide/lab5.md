@@ -211,7 +211,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
    **Note:** We are prepending variable names with var, so it is easy to find them, and it is good practice.
 
-   
+   ![](../media/lab-05/step6.png)
  
 7. Select **+ New** to add another new variable.
 
