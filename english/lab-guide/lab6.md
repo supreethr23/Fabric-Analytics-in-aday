@@ -36,7 +36,7 @@ By the end of this lab, you will have learned:
 3.	You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
 
-     <picture1>
+     <picture1> ![](../media/lab-06/image007.jpg)
 
     If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let’s explore this.
  
@@ -47,7 +47,7 @@ By the end of this lab, you will have learned:
 4.	From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**.. You will be navigated to SQL query view.
 
 
-    <Picure2>
+    <Picure2> ![](../media/lab-06/image009.jpg)
 
 5.	Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
@@ -67,7 +67,7 @@ By the end of this lab, you will have learned:
     >**Note**: Visual queries you had created in earlier labs are also available under My queries folder.
  
 
-<pitcure3>
+<pitcure3> ![](../media/lab-06/image013.jpg)
 
 
  
@@ -85,7 +85,7 @@ By the end of this lab, you will have learned:
 
 5. Select **Supplier_Name** and **Units fields**. Table visual is created.
  
-  <picture4>
+  <picture4> ![](../media/lab-06/image016.jpg)
  
 6. From the **Visualization** section, change the visual type by selecting the S**tacked column chart**.
 
@@ -97,7 +97,7 @@ By the end of this lab, you will have learned:
 
 10.	Select **Save**.
     
-    <Picture5>
+    <Picture5> ![](../media/lab-06/image019.jpg)
 
  
     You will be navigated to back to the SQL query screen.
@@ -117,7 +117,7 @@ By the end of this lab, you will have learned:
 4. Select **Lakehouse** to be navigated to the Lakehouse view.
  
 
- <picture6>
+ <picture6> ![](../media/lab-06/image022.jpg)
 
 5. From the menu select **Home -> New semantic model**.
 
@@ -126,7 +126,7 @@ By the end of this lab, you will have learned:
 7. We have the option to select a subset of the tables by default. Remember, we created views in the
 earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
 
-  <pitcure7>
+  <pitcure7> ![](../media/lab-06/image025.jpg)
 
 8.	**Select** the following tables/views:
 
@@ -150,26 +150,22 @@ earlier lab. We want to include these views in the model. Expand the **dbo** sch
 
 9.	Select **Confirm**.
  
-<pictur8>
+<pictur8> ![](../media/lab-06/image027.jpg)
 
  
 ## Task 4: Create Relationships
 
 You will navigate to the new semantic model with the selected tables. Feel free to **rearrange** the tables as needed. Notice that some of the tables (Geo, Reseller, Sales and Product) have a warning sign on the top right of the table. This is because these are views. Any visuals created with fields from these views will be in direct query mode and not direct lake mode.
  
-
-
-
-
 >**Note**: Direct lake mode is faster than direct query mode.
 
-<picture9>
+<picture9> ![](../media/lab-06/image031.jpg)
 
 The first step is to create relationships between these tables.
 
 1. Let’s create a relationship between Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
 
-<picture10>
+<picture10> ![](../media/lab-06/image033.jpg)
  
 2. New relationship dialog opens. Make sure **From table** is **Sales** and Column is **ResellerID**.
 
@@ -181,7 +177,7 @@ The first step is to create relationships between these tables.
 
 6.	Select **Save**.
 
-   <picture11>
+   <picture11> ![](../media/lab-06/image035.jpg)
 
 7.	Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
@@ -204,7 +200,7 @@ from the **Sales** table and **StockItemID** from the **Product** table.
 
     >**Checkpoint**: Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
  
-    <picture13>
+    <picture13> ![](../media/lab-06/image038.jpg)
  
     In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
     remaining relationships.
@@ -229,7 +225,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 8. Set Decimal places to **0**.
  
- <picture14>
+ <picture14> ![](../media/lab-06/image041.jpg)
 
 
 9. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
@@ -245,7 +241,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 14.	Use the slider to set **Thousands separator** to **Yes**.
  
 
-<picture15>
+<picture15> ![](../media/lab-06/image044.jpg)
  
 
 
@@ -261,7 +257,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 20.	Use the slider to set **Thousands separator** to **Yes**.
 
-<picture16>
+<picture16> ![](../media/lab-06/image047.jpg)
  
 21.	In the **Data panel** (on the right), select **Model**. Notice this provides a view that will help organize all the items in the semantic model.
 
@@ -269,7 +265,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 23.	You can also **expand individual Tables** to view the Columns, Hierarchies and Measures in each one of them.
  
- <pitcure19>
+ <pitcure19> ![](../media/lab-06/image050.jpg)
  
     Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
     remaining measures.
@@ -284,7 +280,7 @@ Let’s add the remaining relationships.
 
 2. Manage relationships dialog opens. Select New relationship.
  
- <picture20>
+ <picture20> ![](../media/lab-06/image055.jpg)
 
 3. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **SalespersonPersonID**.
 
@@ -296,7 +292,7 @@ Let’s add the remaining relationships.
 
 7. Select **Save**. Manage relationships dialog opens with the new relationship added.
 
- <picture21>
+ <picture21> ![](../media/lab-06/image057.jpg)
 
 8. Now let’s create a relationship between Product and Supplier. Select **New relationship**.
 
@@ -322,7 +318,7 @@ Let’s add the remaining relationships.
 
 19.	Select **Save**.
 
-  <save>
+  <save> ![](../media/lab-06/image059.jpg)
 
 20.	Similarly,  create a relationship between Customer and Reseller. Select **New relationship**.
 
@@ -334,7 +330,7 @@ Let’s add the remaining relationships.
 
 24.	Make sure **Cross filter direction** is **Single**.
 
- <picture25>
+ <picture25> ![](../media/lab-06/image064.jpg)
 
 25.	Select **Save**.	
 
@@ -349,7 +345,8 @@ Let’s add the remaining relationships.
 29.	Select **Close** to close Manage relationships dialog. We are done creating all the relationships.
 
 >**Checkpoint**: Your model should look like the screenshot below.
- <picture25>
+
+ <picture25> ![](../media/lab-06/image067.jpg)
  
 ## Task 7: Optional section – Create Measures
 
@@ -369,7 +366,7 @@ Let’s add the remaining measures.
 
 7. Set Decimal places to 0.
 
-<picture27>
+<picture27> ![](../media/lab-06/image070.jpg)
  
 8. Follow similar steps to add the following measures:
 
@@ -382,6 +379,8 @@ Let’s add the remaining measures.
 # References
 
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
+
+![](../media/lab-06/image092.jpg)
   
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
