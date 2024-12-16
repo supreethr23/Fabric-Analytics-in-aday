@@ -77,7 +77,7 @@ By the end of this lab, you will have learned:
 
 2. In the Results pane menu, select **Explore this data (preview) -> Visualize results**.
 
-   ![](../media/lab-06/image016.jpg)
+   ![](../media/lab-06/image016.png)
 
 3. **Visualize results** dialog opens. Select **Continue**.
 
@@ -89,7 +89,7 @@ By the end of this lab, you will have learned:
  
   <picture4> ![](../media/lab-06/image019.jpg)
  
-6. From the **Visualization** section, change the visual type by selecting the S**tacked column chart**.
+6. From the **Visualization** section, change the visual type by selecting the **Stacked column chart**.
 
 7. Select **Save as report** on the bottom right of the screen.
 
@@ -97,7 +97,7 @@ By the end of this lab, you will have learned:
 
 9. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
 
-10. Make sure the destination workspace is your Fabric workspace, **FAIAD<username>**
+10. Make sure the destination workspace is your Fabric workspace, **FAIAD_<username\>**
 
 11.	Select **Save**.
     
