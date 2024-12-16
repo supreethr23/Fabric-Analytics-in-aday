@@ -108,166 +108,155 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 1.	From the top menu select **Activities -> Dataflow**. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
 2.	We are going to configure the activity to connect to df_People_SharePoint activity. From the **bottom pane**, select **Settings**.
 3.	Make sure **Workspace** is set to your Fabric workspace, **FAIAD_<username\>**.
-4.	From the Dataflow dropdown select df_People_SharePoint. When this Dataflow activity is executed, it is going to refresh df_People_SharePoint. That was easy, right?
-In our scenario, Employee Data is not updated on schedule. Sometimes there is a delay. Let’s see if we can accommodate this.
+4.	From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint**. That was easy, right?
 
-5.	From the bottom pane, select General. Let’s give the activity a name and description.
-6.	In the Name field, enter dfactivity_People_SharePoint
-7.	In the Description field, enter Dataflow activity to refresh df_People_Sharepoint dataflow.
-8.	Notice there is an option to Deactivate an activity. This feature is useful during testing or debugging. Leave it as Activated.
- 
+    In our scenario, Employee Data is not updated on schedule. Sometimes there is a delay. Let’s see if we can accommodate this.
 
+5.	From the **bottom pane**, select **General**. Let’s give the activity a name and description.
+6.	In the **Name** field, enter dfactivity_People_SharePoint
+7.	In the **Description** field, enter **Dataflow activity to refresh df_People_Sharepoint dataflow**.
+8.	Notice there is an option to Deactivate an activity. This feature is useful during testing or debugging. Leave it as **Activated**.
 
+9.	There is an option to set **Timeout**. Let’s leave the **default value** as is which should give enough time for the dataflow to refresh.
 
+**Note**: If the data is not available on schedule, let’s set the activity to re-execute every 10 minutes, three times. If it fails on the third attempt as well, then it will report a failure.
 
+10.	Set **Retry** to **3**
 
-9.	There is an option to set Timeout. Let’s leave the default value as is which should give enough time for the dataflow to refresh.
-Note: If the data is not available on schedule, let’s set the activity to re-execute every 10 minutes, three times. If it fails on the third attempt as well, then it will report a failure.
-10.	Set Retry to 3
-11.	Expand Advanced section.
-12.	Set Retry interval (sec) to 600.
-13.	From the menu select Home -> Save icon to save the pipeline.
+11.	Expand **Advanced** section.
+12.	Set **Retry interval (sec)** to **600**.
+13.	From the menu select **Home -> Save** icon to save the pipeline.
 
 Notice the advantage of using the data pipeline compared to setting the dataflow on scheduled refresh (like we did for the earlier dataflows):
 - Pipeline provides the option to retry multiple times before failing the refresh.
 - Pipeline provides the ability to refresh within seconds whereas with dataflow, scheduled refresh is every 30 minutes.
- 
 
+## Task 4: Create new Data Pipeline
 
-
-
-Task 4: Create new Data Pipeline
 Let’s add a little more complexity to our scenario. We have noticed that if the data is not available at 9 AM, then typically it is available within five minutes. If the time window is missed, then it takes 15
 minutes for the file to be available. We want to schedule the retries at five and 15 minutes. Let’s see how this can be achieved by creating a new Data Pipeline.
-1.	From the left panel, click FAIAD_<username>, to be navigated to the workspace home.
-2.	From the top menu, click New and from the popout window, click Data pipeline.
-3.	New pipeline dialog opens. Name the pipeline as pl_Refresh_People_SharePoint_Option2
-4.	Select Create.
+1.	From the left panel, click **FAIAD_<username\>**, to be navigated to the workspace home.
 
+2.	From the top menu, click **New** and from the **popout window**, click **Data pipeline**.
 
-Task 5: Create Until Activity
-1.	You will be navigated to the Data Pipeline screen. From the menu, select Activities.
-2.	Click the ellipsis(…) on the right.
-3.	From the activity list, click Until.
+3.	New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint_Option2**
 
-Until: is an activity that is used to iterate until a condition is satisfied.
+4.	Select **Create**.
+
+## Task 5: Create Until Activity
+
+1.	You will be navigated to the Data Pipeline screen. From the menu, select **Activities**.
+
+2.	Click the **ellipsis(…)** on the right.
+
+3.	From the activity list, click **Until**.
+
+**Until:** is an activity that is used to iterate until a condition is satisfied.
+
 In our scenario, we are going to iterate and refresh the dataflow until it is successful, or we have tried three times.
  
+## Task 6: Create Variables
 
+1.	We need to create variables which will be used to iterate and set status. Select the **blank area** in the pipeline design pane.
 
+2.	Notice the menu in the bottom pane changes. Select **Variables**.
 
+3.	Select **+ New** to add a new variable.
 
+4.	Notice a row appears. Enter **varCounter** in the **Name text box**. We will use this variable to iterate three times.
+
+5.	From **Type** dropdown select **Integer**.
+
+6.	Enter **Default value** of **0**.
+
+**Note:** We are prepending variable names with var, so it is easy to find them, and it is good practice.
  
-Task 6: Create Variables
-1.	We need to create variables which will be used to iterate and set status. Select the blank area in the pipeline design pane.
-2.	Notice the menu in the bottom pane changes. Select Variables.
-3.	Select + New to add a new variable.
-4.	Notice a row appears. Enter varCounter in the Name text box. We will use this variable to iterate three times.
-5.	From Type dropdown select Integer.
-6.	Enter Default value of 0.
-Note: we are prepending variable names with var, so it is easy to find them, and it is good practice.
- 
+7.	Select **+ New** to add another new variable.
 
+8.	Notice a row appears. Enter **varTempCounter** in the **Name text box**. We are going to use this variable increment varCounter variable.
 
+9.	From **Type** dropdown select **Integer**.
 
+10.	Enter **Default value** of **0**.
 
- 
-7.	Select + New to add another new variable.
-8.	Notice a row appears. Enter varTempCounter in the Name text box. We are going to use this variable increment varCounter variable.
-9.	From Type dropdown select Integer.
-10.	Enter Default value of 0.
 11.	Follow similar steps to add three more variables:
-a.	varIsSuccess of type String and default value No. This variable will be used to indicate if the dataflow refresh was successful.
-b.	varSuccess of type String and default value Yes. This variable will be used to set the value of varIsSuccess if dataflow refresh is successful.
-c.	varWaitTime of type Integer and default value 60. This variable will be used to set the wait time if dataflow fails. (Either 5 minutes/300 seconds or 15 minutes/900 seconds.)
-Note: Make sure there is no space before or after the variable name.
+
+    a.	**varIsSuccess** of type **String** and default value **No**. This variable will be used to indicate if the dataflow refresh was successful.
+
+    b.	**varSuccess** of type **String** and default value **Yes**. This variable will be used to set the value of varIsSuccess if dataflow refresh is successful.
+
+    c.	**varWaitTime** of type **Integer** and default value **60**. This variable will be used to set the wait time if dataflow fails. (Either 5 minutes/300 seconds or 15 minutes/900 seconds.)
+
+**Note:** Make sure there is no space before or after the variable name.
  
+## Task 7: Configure Until Activity
 
+1.	Select **Until** activity.
 
-
-
- 
-Task 7: Configure Until Activity
-1.	Select Until activity.
 2.	From the bottom pane, select General.
+
 3.	Enter Name as Iterator
+
 4.	Enter Description as Iterator to refresh dataflow. It will retry up to 3 times.
 
- 
-
-
-
-
-
 5.	From the bottom pane, select Settings.
+
 6.	Select the Expression text box. We need to enter an expression in this text box that will evaluate to true or false. The Until activity will continue to iterate while this expression evaluates to false. Once the expression evaluates to true, the Until activity stops the iteration and moves on to the next
 activity.
+
 7.	Select Add dynamic content link that appears below the text box.
 
 We need to write an expression which would execute until either the value of varCounter is 3 or value
 varIsSuccess is Yes. (varCounter and varIsSuccess are the variables we just created.)
+
 8.	Pipeline expression builder dialog opens. In the bottom half of the dialog, you will have a menu:
+
 a.	Parameters: Are constants across a data factory that can be consumed by a pipeline in any expression.
+
 b.	System variables: These variables can be used in expressions when defining entities within either service. E.g., pipeline id, pipeline name, trigger name, etc.
+
 c.	Trigger parameters: Parameters that triggered the pipeline. E.g., File Name or Folder Path.
+
 d.	Functions: You can call functions within expressions. Functions are categorized into Collection, Conversion, Date, Logical, Math, and String functions. E.g., concat is a String function, add is a Math function, etc.
+
 e.	Variables: Pipeline variables are values that can be set and modified during a pipeline run. Unlike pipeline parameters, which are defined at the pipeline level and cannot be changed during a pipeline run, pipeline variables can be set and modified within a pipeline using a Set Variable activity. We are going to use Set Variable activity shortly.
  
-
-
-
-
- 
 9.	Click Functions from the bottom menu.
+
 10.	From the Logical Functions section, select or function. Notice @or() is added to the dynamic
 expression text box. The or function takes two parameters, we are working on the first parameter.
 
- 
-
-
-
-
-
-
-
 11.	Place the cursor in between the parentheses of the @or function.
+
 12.	From the Logical Functions section, select equals function. Notice this is added to the dynamic expression text box.
 
 Note: Your function should look like @or(equals()). The equals function also takes  two parameters.	 We will be checking if the variable varCounter is equal to 3.
 
 13.	Now place the cursor in between the parentheses of @equals function to add the parameters.
+
 14.	From the bottom menu, select Variables.
+
 15.	Select varCounter variable which will be the first parameter.
+
 16.	Enter 3 as the second parameter of the equals function. Like the screenshot below, your expression will be @or(equals(variables('varCounter'),3))
- 
-
-
-
-
  
 17.	We need to add the second parameter to the or function. Add a comma in between the ending two parentheses. This time we will try typing in the function name. Start typing equ and you will get a
 drop down of available functions (this is called IntelliSense). Select the equals function.
 
 18.	The first parameter of equals function is a variable. Place cursor before the comma.
+
 19.	Start typing variables(
+
 20.	With the help of IntelliSense select variables('varIsSuccess')
+
 21.	After the comma, let’s enter the second parameter. Start typing variables(
+
 22.	With the help of IntelliSense select variables('varSuccess'). Here we are comparing the value of varIsSuccess to the value of varSuccess. (varSuccess is defaulted to Yes.)
- 
-
-
-
-
  
 23.	Your expression should be:
 @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),  variables('varSuccess')))
 
 24.	Select OK.
-
- 
-
-
-
 
 Task 8: Configure Dataflow Activity
 1.	You will be navigated back to the design screen. With Until activity selected, from the bottom pane, select Activities. We will now add the activities that need to be executed.
@@ -285,7 +274,7 @@ Task 8: Configure Dataflow Activity
 
 
 7.	Select Settings from the bottom pane.
-8.	Make sure Workspace is set to your workspace, FAIAD_<username>.
+8.	Make sure Workspace is set to your workspace, FAIAD_<username\>.
 9.	From the Dataflow dropdown select df_People_SharePoint. When this Dataflow activity is executed, it is going to refresh df_People_SharePoint.
 
 
@@ -452,7 +441,7 @@ Note: Since this is a lab environment, you can set the time zone to your preferr
 
 
  
-11.	Select your Fabric workspace FAIAD_<username> in the left panel to navigate to the workspace.
+11.	Select your Fabric workspace FAIAD_<username\> in the left panel to navigate to the workspace.
 Note: In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule).
 Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab because this is a lab environment.
 We have scheduled refreshes for the various data sources. We will create a semantic model with relationships, measures and other modeling operations in the next lab.
