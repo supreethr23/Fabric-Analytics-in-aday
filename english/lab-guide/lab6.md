@@ -101,9 +101,8 @@ By the end of this lab, you will have learned:
 
 11.	Select **Save**.
     
-    <Picture5> ![](../media/lab-06/image025.jpg)
+    <Picture5> ![](../media/lab-06/image025.png)
 
- 
     You will be navigated to back to the SQL query screen.
 
 # Lakehouse – Semantic Modeling
@@ -131,7 +130,7 @@ By the end of this lab, you will have learned:
 
 7. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
 
-  <pitcure7> ![](../media/lab-06/image033.jpg)
+  <pitcure7> ![](../media/lab-06/image033.png)
 
 8.	**Select** the following tables/views:
 
@@ -155,7 +154,7 @@ By the end of this lab, you will have learned:
 
 9.	Select **Confirm**.
  
-<pictur8> ![](../media/lab-06/image035.jpg)
+<pictur8> ![](../media/lab-06/image035.png)
 
  
 ## Task 4: Create Relationships
@@ -170,19 +169,19 @@ The first step is to create relationships between these tables.
 
 1. Let’s create a relationship between Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
 
-<picture10> ![](../media/lab-06/image041.jpg)
+<picture10> ![](../media/lab-06/image041.png)
  
 2. New relationship dialog opens. Make sure **From table** is **Sales** and Column is **ResellerID**.
 
 3. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
-4.	Make sure **Cardinality** is **Many to one (*:1)**.
+4. Make sure **Cardinality** is **Many to one (*:1)**.
 
-5.	Make sure **Cross filter direction** is **Single**.
+5. Make sure **Cross filter direction** is **Single**.
 
-6.	Select **Save**.
+6. Select **Save**.
 
-   <picture11> ![](../media/lab-06/image044.jpg)
+   <picture11> ![](../media/lab-06/image044.png)
 
 7.	Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
@@ -196,7 +195,7 @@ The first step is to create relationships between these tables.
 
 12.	Select **Save**.
 
-    ![](../media/lab-06/image044.jpg)
+    ![](../media/lab-06/image047.png)
    
 13.	Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID**
 from the **Sales** table and **StockItemID** from the **Product** table.
@@ -205,7 +204,7 @@ from the **Sales** table and **StockItemID** from the **Product** table.
 
     >**Checkpoint**: Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
  
-      ![](../media/lab-06/image047.jpg)
+      ![](../media/lab-06/image050.jpg)
  
     In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
     remaining relationships.
@@ -230,7 +229,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 8. Set Decimal places to **0**.
  
-   ![](../media/lab-06/image050.jpg)
+   ![](../media/lab-06/image055.png)
 
 
 9. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
@@ -245,7 +244,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 14.	Use the slider to set **Thousands separator** to **Yes**.
 
-    ![](../media/lab-06/image055.jpg)
+    ![](../media/lab-06/image057.png)
    	
 16. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
@@ -259,7 +258,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 21.	Use the slider to set **Thousands separator** to **Yes**.
 
-<picture16>  ![](../media/lab-06/image057.jpg)
+<picture16>  ![](../media/lab-06/image059.png)
  
 21.	In the **Data panel** (on the right), select **Model**. Notice this provides a view that will help organize all the items in the semantic model.
 
@@ -267,12 +266,12 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 23.	You can also **expand individual Tables** to view the Columns, Hierarchies and Measures in each one of them.
  
- <pitcure19> ![](../media/lab-06/image059.jpg)
+ <pitcure19> ![](../media/lab-06/image064.jpg)
  
-    Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
-    remaining measures.
+  Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
+  remaining measures.
 
-    We have created a semantic model, the next step is to create a report. We will do it in the next lab.
+  We have created a semantic model, the next step is to create a report. We will do it in the next lab.
 
 ## Task 6: Optional section – Create Relationships
 
@@ -282,7 +281,7 @@ Let’s add the remaining relationships.
 
 2. Manage relationships dialog opens. Select New relationship.
  
- <picture20> ![](../media/lab-06/image064.jpg)
+ <picture20> ![](../media/lab-06/image067.jpg)
 
 3. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **SalespersonPersonID**.
 
@@ -294,7 +293,7 @@ Let’s add the remaining relationships.
 
 7. Select **Save**. Manage relationships dialog opens with the new relationship added.
 
- <picture21> ![](../media/lab-06/image067.jpg)
+ <picture21> ![](../media/lab-06/image070.png)
 
 8. Now let’s create a relationship between Product and Supplier. Select **New relationship**.
 
@@ -308,7 +307,7 @@ Let’s add the remaining relationships.
 
 13.	Select **Save**.
 
-    ![](../media/lab-06/image070.jpg)
+    ![](../media/lab-06/image073.jpg)
  
 15.	Now let’s create a relationship between Reseller and Geo. Select **New relationship**.
 
@@ -322,7 +321,7 @@ Let’s add the remaining relationships.
 
 20.	Select **Save**.
 
-    ![](../media/lab-06/image073.jpg)
+    ![](../media/lab-06/image076.png)
 
 20.	Similarly,  create a relationship between Customer and Reseller. Select **New relationship**.
 
@@ -338,7 +337,7 @@ Let’s add the remaining relationships.
 
     >**Checkpoint**: Manage relationships should look like screenshot below.
 
-    ![](../media/lab-06/image076.jpg)
+    ![](../media/lab-06/image081.png)
 
 26.	Similarly, create a **many to one** relationship between **PO** and **Date**. Select **Order_Date** from **PO** and **Date** from **Date**.
 
@@ -350,7 +349,7 @@ Let’s add the remaining relationships.
 
 >**Checkpoint**: Your model should look like the screenshot below.
 
-  ![](../media/lab-06/image081.jpg)
+  ![](../media/lab-06/image086.jpg)
  
 ## Task 7: Optional section – Create Measures
 
@@ -370,7 +369,7 @@ Let’s add the remaining measures.
 
 7. Set Decimal places to 0.
 
-<picture27> ![](../media/lab-06/image086.jpg)
+<picture27> ![](../media/lab-06/image089.jpg)
  
 8. Follow similar steps to add the following measures:
 
@@ -384,7 +383,7 @@ Let’s add the remaining measures.
 
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
-![](../media/lab-06/image092.jpg)
+![](../media/lab-06/image092.png)
   
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
