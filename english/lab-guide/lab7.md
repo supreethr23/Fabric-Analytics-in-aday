@@ -22,13 +22,13 @@
 
 # Introduction
 
-In this course you have been introduced to the Lakehouse, ingested data from different data sources into the Lakehouse,  set a refresh schedule for the data sources and created a data model . Now you are going to create a report.
+In this course, you have been introduced to the Lakehouse, ingested data from different data sources into the Lakehouse,  set a refresh schedule for the data sources and created a data model. Now you are going to create a report.
 
 By the end of this lab, you will have learned:
-	- How to auto-create a report
-	- How to build a report starting from a blank canvas
-	- How to build a report using Power BI Desktop
-	- How to experience Direct Lake mode resulting in data automatically refreshing
+- How to auto-create a report
+- How to build a report starting from a blank canvas
+- How to build a report using Power BI Desktop
+- How to experience Direct Lake mode resulting in data automatically refreshing
 
 # Power BI
 
