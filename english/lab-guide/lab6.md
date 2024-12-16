@@ -307,7 +307,7 @@ Let’s add the remaining relationships.
 
 13.	Select **Save**.
 
-    ![](../media/lab-06/image073.jpg)
+    ![](../media/lab-06/image073.png)
  
 15.	Now let’s create a relationship between Reseller and Geo. Select **New relationship**.
 
