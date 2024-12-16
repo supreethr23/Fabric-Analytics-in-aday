@@ -1,8 +1,8 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 6
 
-![](../media/lab-06/dece-1.png)
+![](../media/lab-06/1.png)
 
-## Contents
+# Contents
 - Introduction	
 - Lakehouse – Analyzing data	
   - Task 1: Query data using SQL	
@@ -15,15 +15,15 @@
   - Task 7: Optional section – Create Measures	
  - References	
 
-## Introduction
+# Introduction
 
 We have data from various sources ingested into the Lakehouse. In this lab, you will work with the semantic model. Typically, we performed modeling activities like creating relationships, adding measures, etc. in Power BI Desktop. Here we will learn how to perform these modeling activities in the service.
 
 By the end of this lab, you will have learned:
 
-•	Using SQL view in SQL analytics endpoint
+- Using SQL view in SQL analytics endpoint
 
-•	How to Create a semantic model
+- How to Create a semantic model
 
 
 # Lakehouse – Analyzing data
@@ -37,7 +37,7 @@ By the end of this lab, you will have learned:
 3. You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
 
-      ![](../media/lab-06/image007.jpg)
+    ![](../media/lab-06/image007.jpg)
 
     If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let’s explore this.
  
@@ -46,7 +46,6 @@ By the end of this lab, you will have learned:
     In the Lakehouse, SQL analytics endpoint, notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
 4. From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**.. You will be navigated to SQL query view.
-
 
      ![](../media/lab-06/image009.jpg)
 
@@ -66,11 +65,8 @@ By the end of this lab, you will have learned:
 8. On the **left Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
     >**Note**: Visual queries you had created in earlier labs are also available under My queries folder.
- 
 
    ![](../media/lab-06/image013.jpg)
-
-
  
 ## Task 2: Visualize T-SQL result
 
@@ -121,7 +117,6 @@ By the end of this lab, you will have learned:
 4. From the menu, on the top right **select the arrow next to SQL analytics endpoint**.
 
 5. Select **Lakehouse** to be navigated to the Lakehouse view.
- 
 
     ![](../media/lab-06/image031.jpg)
 
@@ -198,17 +193,15 @@ The first step is to create relationships between these tables.
 
     ![](../media/lab-06/image047.png)
    
-13. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID**
-from the **Sales** table and **StockItemID** from the **Product** table.
+13. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
 
     >**Note**: All our updates are automatically saved.
 
     >**Checkpoint**: Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
  
-      ![](../media/lab-06/image050.jpg)
+    ![](../media/lab-06/image050.jpg)
  
-    In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
-    remaining relationships.
+    In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining relationships.
 
 ## Task 5: Create Measures
 
@@ -231,7 +224,6 @@ Let’s add a few measures we need to create the Sales dashboard.
 8. Set Decimal places to **0**.
  
     ![](../media/lab-06/image055.png)
-
 
 9. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
@@ -269,10 +261,9 @@ Let’s add a few measures we need to create the Sales dashboard.
  
     ![](../media/lab-06/image064.jpg)
  
-  Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
-  remaining measures.
+    Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining measures.
 
-  We have created a semantic model, the next step is to create a report. We will do it in the next lab.
+    We have created a semantic model, the next step is to create a report. We will do it in the next lab.
 
 ## Task 6: Optional section – Create Relationships
 
@@ -381,11 +372,10 @@ Let’s add the remaining measures.
     c. In **Customer** table, **No of Customers = COUNTROWS(Customer)** formatted as **Whole Number with Thousands separator enabled**.
 
 # References
-
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
-![](../media/lab-06/image092.png)
-  
+![](../media/lab-01/image050.png)
+ 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
 - See the blog post to read the full [Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
@@ -410,23 +400,19 @@ Read the more in-depth Fabric experience announcement blogs:
 - [OneLake](https://aka.ms/Fabric-OneLake-Blog)[ in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
 - [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
 
-
 © 2023 Microsoft Corporation. All rights reserved.
+
 By using this demo/lab, you agree to the following terms:
 
-The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining your feedback and to provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell thisdemo/lab or any portion thereof.
+The technology/functionality described in this demo/lab is provided by Microsoft Corporation for the purposes of obtaining your feedback and providing you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/lab or any portion thereof.
 
 COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
 
-THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED
-ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
+THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
 
+**FEEDBACK**. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
 
-**FEEDBACK**. If you give feedback about the technology features, functionality and/or concepts
-described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
-
-MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON- INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
-
+MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
 
 **DISCLAIMER**
 
