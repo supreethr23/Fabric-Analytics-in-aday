@@ -77,27 +77,31 @@ By the end of this lab, you will have learned:
 
 2. In the Results pane menu, select **Explore this data (preview) -> Visualize results**.
 
+   ![](../media/lab-06/image016.jpg)
+
 3. **Visualize results** dialog opens. Select **Continue**.
 
-**Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
+  **Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
 
 4. Expand **Data** pane and expand **SQL query 1**.
 
 5. Select **Supplier_Name** and **Units fields**. Table visual is created.
  
-  <picture4> ![](../media/lab-06/image016.jpg)
+  <picture4> ![](../media/lab-06/image019.jpg)
  
 6. From the **Visualization** section, change the visual type by selecting the S**tacked column chart**.
 
 7. Select **Save as report** on the bottom right of the screen.
 
-8. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
+   ![](../media/lab-06/image022.jpg)
 
-9. Make sure the destination workspace is your Fabric workspace, **FAIAD<username>**
+9. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
 
-10.	Select **Save**.
+10. Make sure the destination workspace is your Fabric workspace, **FAIAD<username>**
+
+11.	Select **Save**.
     
-    <Picture5> ![](../media/lab-06/image019.jpg)
+    <Picture5> ![](../media/lab-06/image025.jpg)
 
  
     You will be navigated to back to the SQL query screen.
@@ -110,23 +114,24 @@ By the end of this lab, you will have learned:
 
 2. From the explorer pane, scroll down and select **Model Layouts**. You will notice the center pane looks like the model view we will see in Power BI Desktop.
 
+    ![](../media/lab-06/image027.jpg)
+
     This is the default model the Lakehouse creates. However, there are some limitations with the default model (like ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
 
-3. From the menu, on the top right **select the arrow next to SQL analytics endpoint**.
+4. From the menu, on the top right **select the arrow next to SQL analytics endpoint**.
 
-4. Select **Lakehouse** to be navigated to the Lakehouse view.
+5. Select **Lakehouse** to be navigated to the Lakehouse view.
  
 
- <picture6> ![](../media/lab-06/image022.jpg)
+ <picture6> ![](../media/lab-06/image031.jpg)
 
 5. From the menu select **Home -> New semantic model**.
 
 6. New semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
 
-7. We have the option to select a subset of the tables by default. Remember, we created views in the
-earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
+7. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
 
-  <pitcure7> ![](../media/lab-06/image025.jpg)
+  <pitcure7> ![](../media/lab-06/image033.jpg)
 
 8.	**Select** the following tables/views:
 
@@ -150,7 +155,7 @@ earlier lab. We want to include these views in the model. Expand the **dbo** sch
 
 9.	Select **Confirm**.
  
-<pictur8> ![](../media/lab-06/image027.jpg)
+<pictur8> ![](../media/lab-06/image035.jpg)
 
  
 ## Task 4: Create Relationships
@@ -159,13 +164,13 @@ You will navigate to the new semantic model with the selected tables. Feel free 
  
 >**Note**: Direct lake mode is faster than direct query mode.
 
-<picture9> ![](../media/lab-06/image031.jpg)
+<picture9> ![](../media/lab-06/image038.jpg)
 
 The first step is to create relationships between these tables.
 
 1. Let’s create a relationship between Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
 
-<picture10> ![](../media/lab-06/image033.jpg)
+<picture10> ![](../media/lab-06/image041.jpg)
  
 2. New relationship dialog opens. Make sure **From table** is **Sales** and Column is **ResellerID**.
 
@@ -177,7 +182,7 @@ The first step is to create relationships between these tables.
 
 6.	Select **Save**.
 
-   <picture11> ![](../media/lab-06/image035.jpg)
+   <picture11> ![](../media/lab-06/image044.jpg)
 
 7.	Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
@@ -191,16 +196,16 @@ The first step is to create relationships between these tables.
 
 12.	Select **Save**.
 
+    ![](../media/lab-06/image044.jpg)
+   
 13.	Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID**
 from the **Sales** table and **StockItemID** from the **Product** table.
-
-    <picture12>
 
     >**Note**: All our updates are automatically saved.
 
     >**Checkpoint**: Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
  
-    <picture13> ![](../media/lab-06/image038.jpg)
+      ![](../media/lab-06/image047.jpg)
  
     In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
     remaining relationships.
@@ -225,7 +230,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 8. Set Decimal places to **0**.
  
- <picture14> ![](../media/lab-06/image041.jpg)
+   ![](../media/lab-06/image050.jpg)
 
 
 9. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
@@ -239,25 +244,22 @@ Let’s add a few measures we need to create the Sales dashboard.
 13.	From the **Format** dropdown select **Whole number**.
 
 14.	Use the slider to set **Thousands separator** to **Yes**.
- 
 
-<picture15> ![](../media/lab-06/image044.jpg)
- 
+    ![](../media/lab-06/image055.jpg)
+   	
+16. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
+17. Enter **Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar**.
 
-15. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
+18.	Click the **check mark** left of the formula bar or click the **Enter** button.
 
-16. Enter **Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar**.
+19.	In the Properties panel on the right, expand the **Formatting** section.
 
-17.	Click the **check mark** left of the formula bar or click the **Enter** button.
+20.	From the **Format** dropdown select **Whole number**.
 
-18.	In the Properties panel on the right, expand the **Formatting** section.
+21.	Use the slider to set **Thousands separator** to **Yes**.
 
-19.	From the **Format** dropdown select **Whole number**.
-
-20.	Use the slider to set **Thousands separator** to **Yes**.
-
-<picture16> ![](../media/lab-06/image047.jpg)
+<picture16>  ![](../media/lab-06/image057.jpg)
  
 21.	In the **Data panel** (on the right), select **Model**. Notice this provides a view that will help organize all the items in the semantic model.
 
@@ -265,7 +267,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 23.	You can also **expand individual Tables** to view the Columns, Hierarchies and Measures in each one of them.
  
- <pitcure19> ![](../media/lab-06/image050.jpg)
+ <pitcure19> ![](../media/lab-06/image059.jpg)
  
     Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
     remaining measures.
@@ -280,7 +282,7 @@ Let’s add the remaining relationships.
 
 2. Manage relationships dialog opens. Select New relationship.
  
- <picture20> ![](../media/lab-06/image055.jpg)
+ <picture20> ![](../media/lab-06/image064.jpg)
 
 3. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **SalespersonPersonID**.
 
@@ -292,7 +294,7 @@ Let’s add the remaining relationships.
 
 7. Select **Save**. Manage relationships dialog opens with the new relationship added.
 
- <picture21> ![](../media/lab-06/image057.jpg)
+ <picture21> ![](../media/lab-06/image067.jpg)
 
 8. Now let’s create a relationship between Product and Supplier. Select **New relationship**.
 
@@ -305,20 +307,22 @@ Let’s add the remaining relationships.
 12. Make sure **Cross filter direction** is **Both**.
 
 13.	Select **Save**.
+
+    ![](../media/lab-06/image070.jpg)
  
-14.	Now let’s create a relationship between Reseller and Geo. Select **New relationship**.
+15.	Now let’s create a relationship between Reseller and Geo. Select **New relationship**.
 
-15.	New relationship dialog opens. Make sure **From table** is **Reseller** and **Column** is **PostalCityID**.
+16.	New relationship dialog opens. Make sure **From table** is **Reseller** and **Column** is **PostalCityID**.
 
-16.	Make sure **To table** is **Geo** and **Column** is **CityID**.
+17.	Make sure **To table** is **Geo** and **Column** is **CityID**.
 
-17.	Make sure **Cardinality** is **Many to one (*:1)**.
+18.	Make sure **Cardinality** is **Many to one (*:1)**.
 
-18.	Make sure **Cross filter direction** is **Both**.
+19.	Make sure **Cross filter direction** is **Both**.
 
-19.	Select **Save**.
+20.	Select **Save**.
 
-  <save> ![](../media/lab-06/image059.jpg)
+    ![](../media/lab-06/image073.jpg)
 
 20.	Similarly,  create a relationship between Customer and Reseller. Select **New relationship**.
 
@@ -330,11 +334,11 @@ Let’s add the remaining relationships.
 
 24.	Make sure **Cross filter direction** is **Single**.
 
- <picture25> ![](../media/lab-06/image064.jpg)
-
 25.	Select **Save**.	
 
     >**Checkpoint**: Manage relationships should look like screenshot below.
+
+    ![](../media/lab-06/image076.jpg)
 
 26.	Similarly, create a **many to one** relationship between **PO** and **Date**. Select **Order_Date** from **PO** and **Date** from **Date**.
 
@@ -346,7 +350,7 @@ Let’s add the remaining relationships.
 
 >**Checkpoint**: Your model should look like the screenshot below.
 
- <picture25> ![](../media/lab-06/image067.jpg)
+  ![](../media/lab-06/image081.jpg)
  
 ## Task 7: Optional section – Create Measures
 
@@ -366,7 +370,7 @@ Let’s add the remaining measures.
 
 7. Set Decimal places to 0.
 
-<picture27> ![](../media/lab-06/image070.jpg)
+<picture27> ![](../media/lab-06/image086.jpg)
  
 8. Follow similar steps to add the following measures:
 
