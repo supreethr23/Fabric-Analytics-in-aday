@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 6
 
+![](../media/lab-06/dece-1.png)
+
 ## Contents
 - Introduction	
 - Lakehouse – Analyzing data	
@@ -12,7 +14,6 @@
   - Task 6: Optional section – Create Relationships	
   - Task 7: Optional section – Create Measures	
  - References	
-
 
 ## Introduction
 
