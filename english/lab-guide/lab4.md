@@ -40,7 +40,6 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-04/image005.png)
 
- 
 4. Under Recommended items, select **Dataflow Gen2**.
 
     ![](../media/lab-04/image008.jpg)
