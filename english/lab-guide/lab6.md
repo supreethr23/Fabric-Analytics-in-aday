@@ -99,7 +99,7 @@ By the end of this lab, you will have learned:
     
     ![](../media/lab-06/image025.png)
 
-    You will be navigated to back to the SQL query screen.
+    You will be navigated back to the SQL query screen.
 
 # Lakehouse – Semantic Modeling
 
@@ -151,7 +151,6 @@ By the end of this lab, you will have learned:
  
     ![](../media/lab-06/image035.png)
 
- 
 ## Task 4: Create Relationships
 
 You will navigate to the new semantic model with the selected tables. Feel free to **rearrange** the tables as needed. Notice that some of the tables (Geo, Reseller, Sales and Product) have a warning sign on the top right of the table. This is because these are views. Any visuals created with fields from these views will be in direct query mode and not direct lake mode.
