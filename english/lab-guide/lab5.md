@@ -169,8 +169,8 @@ Note: If the data is not available on schedule, let’s set the activity to re-e
 13.	From the menu select Home -> Save icon to save the pipeline.
 
 Notice the advantage of using the data pipeline compared to setting the dataflow on scheduled refresh (like we did for the earlier dataflows):
-•	Pipeline provides the option to retry multiple times before failing the refresh.
-•	Pipeline provides the ability to refresh within seconds whereas with dataflow, scheduled refresh is every 30 minutes.
+- Pipeline provides the option to retry multiple times before failing the refresh.
+- Pipeline provides the ability to refresh within seconds whereas with dataflow, scheduled refresh is every 30 minutes.
  
 
 
