@@ -5,149 +5,109 @@
 - Dataflow Gen2
     - Task 1: Configure scheduled refresh for Supplier Dataflow
 - Data Pipeline
-- Task 2: Create Data Pipeline
-- Task 3: Build simple Data Pipeline
-- Task 4: Create new Data Pipeline
-Task 5: Create Until Activity
-Task 6: Create Variables
-Task 7: Configure Until Activity
-Task 8: Configure Dataflow Activty	22
-Task 9: Configure 1st Set variable Activity	23
-Task 10: Configure 2nd Set variable Activity	26
-Task 11: Configure 3rd Set variable Activity	27
-Task 12: Configure Wait Activity	29
-Task 13: Configure Schedule Refresh for Data Pipeline	32
-References	33
+  - Task 2: Create Data Pipeline
+  - Task 3: Build simple Data Pipeline
+  - Task 4: Create new Data Pipeline
+  - Task 5: Create Until Activity
+  - Task 6: Create Variables
+  - Task 7: Configure Until Activity
+  - Task 8: Configure Dataflow Activty
+   -Task 9: Configure 1st Set variable Activity	
+  - Task 10: Configure 2nd Set variable Activity
+  - Task 11: Configure 3rd Set variable Activity
+  - Task 12: Configure Wait Activity
+  - Task 13: Configure Schedule Refresh for Data Pipeline
+- References
 
- 
-
-
-
-Introduction
+# Introduction
 We have ingested data from different data sources into Lakehouse. In this lab, you will set up a refresh schedule for the data sources. Just to recap the requirement:
 - **Supplier Data:** Snowflake is updated at midnight / 12 AM every day.
-- Employee Data: in SharePoint is updated at 9 AM every day. However, we have noticed that sometimes there is a  5 – 15 minute delay. We need to create a refresh schedule to accommodate this.
-- Customer Data: in Dataverse is always up to date. Previously we refreshed this four times a day, at midnight / 12 AM, 6 AM, noon / 12 PM, and 6 PM. Now, IT team has created a link to
+- **Employee Data:** in SharePoint is updated at 9 AM every day. However, we have noticed that sometimes there is a  5 – 15 minute delay. We need to create a refresh schedule to accommodate this.
+- **Customer Data:** in Dataverse is always up to date. Previously we refreshed this four times a day, at midnight / 12 AM, 6 AM, noon / 12 PM, and 6 PM. Now, IT team has created a link to
 Dataverse to ingest this data to an Admin Lakehouse. They have also transformed this data. We do not need to set up refresh as we are linking to the Lakehouse provided by IT team.
-- Sales Data: in ADLS is updated at noon / 12 PM every day. We do not need to set up refresh for this since we have created a shortcut. As soon as data is updated in ADLS, it is available.
+- **Sales Data:** in ADLS is updated at noon / 12 PM every day. We do not need to set up refresh for this since we have created a shortcut. As soon as data is updated in ADLS, it is available.
 
 By the end of this lab, you will have learned:
 - How to configure a scheduled refresh of Dataflow Gen2
 - How to create a Data Pipeline
 - How to configure a scheduled refresh of a Data Pipeline
 
-
-Dataflow Gen2
-Task 1: Configure scheduled refresh for Supplier Dataflow
+# Dataflow Gen2
+## Task 1: Configure scheduled refresh for Supplier Dataflow
 Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
 1.	Let’s navigate back to the Fabric workspace, **FAIAD_<username\>** by selecting the workspace in the left panel.
-2.	To maximize the panel with the list of artifacts, select the double arrow on the top right of the panel.
- 
 
- 
-3.	All the artifacts you have created are listed here. On the right of the screen, in the Search box enter
-df. This will filter the artifacts to Dataflows.
+2.	To maximize the panel with the list of artifacts, select the double arrow on the top right of the panel. 
+3.	All the artifacts you have created are listed here. On the right of the screen, in the **Search box** enter
+**df**. This will filter the artifacts to Dataflows.
+4.	Hover over the **df_Supplier_Snowflake** row. Notice that the familiar **Refresh** and **Schedule Refresh icons** are available. Select the **ellipsis (…)**.
+5.	Notice there is option to Delete, Edit, and Export the Dataflow. We can use Properties to update the name and description of the Dataflow. We will look at Refresh history shortly. Select **Settings**.
 
-4.	Hover over the df_Supplier_Snowflake row. Notice that the familiar Refresh and Schedule Refresh icons are available. Select the ellipsis (…).
-5.	Notice there is option to Delete, Edit, and Export the Dataflow. We can use Properties to update the name and description of the Dataflow. We will look at Refresh history shortly. Select Settings.
- 
+**Note**: Settings page opens. In the left panel you will find all the Dataflows listed.
 
+6.	In the center pane, select **Refresh history** link.
 
+7. Refresh history dialog opens. You will have a refresh listed. This is the refresh which occurred when	 the dataflow was published. Select the **Start time** link.
 
+**Note**: Start time will be different for you.
 
- 
-Note: Settings page opens. In the left panel you will find all the Dataflows listed.
-
-6.	In the center pane, select Refresh history link.
-
- 
-
-
-
-
- 
 Details screen will open. This will provide details of the refresh, it lists the start, end time, and duration. It also lists the tables / activities that were refreshed. In case there is a failure, you can click on the name of the table / activity to investigate further.
 
+8.	Let’s navigate away, by clicking on the **X** on the top right corner. You will be navigated back to the
+**dataflow settings** page.
+9.	Under Gateway connection, expand **Data source credentials**. A list of connections used in the dataflow is displayed. In this case, Lakehouse and Snowflake.
 
-8.	Let’s navigate away, by clicking on the X on the top right corner. You will be navigated back to the
-dataflow settings page.
-9.	Under Gateway connection, expand Data source credentials. A list of connections used in the dataflow is displayed. In this case, Lakehouse and Snowflake.
-a.	Lakehouse: This is the connection to ingest data from Dataflow.
-b.	Snowflake: This is the connection to the Snowflake source data.
+      a.	**Lakehouse**: This is the connection to ingest data from Dataflow.
 
- 
+      b.	**Snowflake**: This is the connection to the Snowflake source data.
 
+10.	Expand **Refresh**.
+11.	Set **Configure a refresh schedule** slider to On.
+12.	Set **Refresh frequency dropdown** to **Daily**. Notice there is an option to set it to Weekly as well.
 
+13.	Set **Time Zone** to your preferred time zone.
 
+**Note**: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
+14.	Click **Add another time** link. Notice **Time** option is displayed.
 
-10.	Expand Refresh.
-11.	Set Configure a refresh schedule slider to On.
-12.	Set Refresh frequency dropdown to Daily. Notice there is an option to set it to Weekly as well.
-13.	Set Time Zone to your preferred time zone.
-Note: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
-14.	Click Add another time link. Notice Time option is displayed.
-15.	Set Time to midnight / 12 AM. Notice that you can set refresh on the top of the hour or half hour.
-16.	Select Apply to save this setting.
-Note: By clicking on Add another time link, you can add multiple refresh times. You can also send failure notifications to the dataflow owner and other contacts.
- 
+15.	Set **Time** to **midnight / 12 AM**. Notice that you can set refresh on the top of the hour or half hour.
 
+16.	Select **Apply** to save this setting.
 
+**Note**: By clicking on Add another time link, you can add multiple refresh times.
 
+You can also send failure notifications to the dataflow owner and other contacts.
 
- 
 As mentioned earlier, we need to build custom logic to handle the scenario where the Employee file in SharePoint is not delivered on time. Let’s use Data Pipeline to solve this.
-Data Pipeline
-Task 2: Create Data Pipeline
-1.	Select Fabric experience selector icon on the bottom left of your screen.
-2.	Microsoft Fabric dialog opens. Select Data Factory. You will navigate to the Data Factory Home page.
+
+# Data Pipeline
+## Task 2: Create Data Pipeline
+1.	Select **Fabric experience selector** icon on the bottom left of your screen.
+2.	Microsoft Fabric dialog opens. Select **Data Factory**. You will navigate to the Data Factory Home page.
+
+3.	From recommended items to create, select **Data pipeline** to create a new pipeline.
+4.	New pipeline dialog opens. Name the pipeline as **pl_Refresh_People_SharePoint**
+5.	Select **Create**.
+
+    You are navigated to the **Data Pipeline page**. If you have worked with Azure Data Factory, this screen will be familiar. Let’s get a quick overview of the layout.
+
+    You are on the **Home** screen. If you look at the top menu, you will find options to add the commonly used activities: validate, run a pipeline, and view the run history. Also, in the center pane, you will find quick options to start building the pipeline.
  
+6.	From the top menu select **Activities**. Now in the menu you will find a list of commonly used Activities.
+7.	Select the **ellipsis (…)** on the right on the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
 
+8.	From the top menu click **Run**. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View run history.
+9.	From the top menu select **View**. Here you will find options to view the code in JSON format. You will also find options to format the activities.
 
-
-
+**Note**: If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON.
  
-3.	From recommended items to create, select Data pipeline to create a new pipeline.
-4.	New pipeline dialog opens. Name the pipeline as pl_Refresh_People_SharePoint
-5.	Select Create.
-
-
-
-
-You are navigated to the Data Pipeline page. If you have worked with Azure Data Factory, this screen will be familiar. Let’s get a quick overview of the layout.
-You are on the Home screen. If you look at the top menu, you will find options to add the commonly used activities: validate, run a pipeline, and view the run history. Also, in the center pane, you will find quick options to start building the pipeline.
- 
-
-
-
-
- 
-6.	From the top menu select Activities. Now in the menu you will find a list of commonly used Activities.
-7.	Select the ellipsis (…) on the right on the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
-
-
- 
-8.	From the top menu click Run. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View run history.
-9.	From the top menu select View. Here you will find options to view the code in JSON format. You will also find options to format the activities.
-Note: If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON.
- 
-
-
-
-
-Commented [NP7R6]: ok
- 
-
-
-
-
- 
-Task 3: Build simple Data Pipeline
+## Task 3: Build simple Data Pipeline
 Let’s start building the pipeline. We need an activity to refresh the Dataflow. Let’s find an activity which we can use.
-1.	From the top menu select Activities -> Dataflow. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
-2.	We are going to configure the activity to connect to df_People_SharePoint activity. From the bottom pane, select Settings.
-3.	Make sure Workspace is set to your Fabric workspace, FAIAD_<username>.
+1.	From the top menu select **Activities -> Dataflow**. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
+2.	We are going to configure the activity to connect to df_People_SharePoint activity. From the **bottom pane**, select **Settings**.
+3.	Make sure **Workspace** is set to your Fabric workspace, **FAIAD_<username\>**.
 4.	From the Dataflow dropdown select df_People_SharePoint. When this Dataflow activity is executed, it is going to refresh df_People_SharePoint. That was easy, right?
 In our scenario, Employee Data is not updated on schedule. Sometimes there is a delay. Let’s see if we can accommodate this.
 
