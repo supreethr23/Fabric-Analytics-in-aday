@@ -30,11 +30,11 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Query data using SQL
 
-1.	Let’s navigate back to the Fabric workspace, **FAIAD_<username\>** you created in Lab 2, Task 9.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>** you created in Lab 2, Task 9.
 
-2.	If you choose to, **Minimize the task flow** to view the entire list of items.
+2. If you choose to, **Minimize the task flow** to view the entire list of items.
 
-3.	You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
+3. You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
 
       ![](../media/lab-06/image007.jpg)
@@ -45,12 +45,12 @@ By the end of this lab, you will have learned:
 
     In the Lakehouse, SQL analytics endpoint, notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
-4.	From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**.. You will be navigated to SQL query view.
+4. From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**.. You will be navigated to SQL query view.
 
 
      ![](../media/lab-06/image009.jpg)
 
-5.	Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
+5. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
     ```
     SELECT su.SupplierName,SUM(Quantity) as Units 
@@ -100,7 +100,7 @@ By the end of this lab, you will have learned:
 
 10. Make sure the destination workspace is your Fabric workspace, **FAIAD_<username\>**
 
-11.	Select **Save**.
+11. Select **Save**.
     
     ![](../media/lab-06/image025.png)
 
@@ -125,15 +125,15 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-06/image031.jpg)
 
-5. From the menu select **Home -> New semantic model**.
+6. From the menu select **Home -> New semantic model**.
 
-6. New semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
+7. New semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
 
-7. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
+8. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
 
     ![](../media/lab-06/image033.png)
 
-8.	**Select** the following tables/views:
+9. **Select** the following tables/views:
 
     **a. Date**
 
@@ -153,7 +153,7 @@ By the end of this lab, you will have learned:
 
     **i. Product**
 
-9.	Select **Confirm**.
+10. Select **Confirm**.
  
     ![](../media/lab-06/image035.png)
 
@@ -184,21 +184,21 @@ The first step is to create relationships between these tables.
 
    ![](../media/lab-06/image044.png)
 
-7.	Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
+7. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
-8.	New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
+8. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
 
-9.	Make sure **To table** is **Date** and **Column** is **Date**.
+9. Make sure **To table** is **Date** and **Column** is **Date**.
 
-10.	Make sure **Cardinality** is **Many to one (*:1)**.
+10. Make sure **Cardinality** is **Many to one (*:1)**.
 
-11.	Make sure **Cross filter direction** is **Single**.
+11. Make sure **Cross filter direction** is **Single**.
 
-12.	Select **Save**.
+12. Select **Save**.
 
     ![](../media/lab-06/image047.png)
    
-13.	Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID**
+13. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID**
 from the **Sales** table and **StockItemID** from the **Product** table.
 
     >**Note**: All our updates are automatically saved.
@@ -237,13 +237,13 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 10. Enter **Units = SUM(Sales[Quantity])** in the formula bar.
 
-11.	Click the **check mark** left of the formula bar or click the **Enter** button.
+11. Click the **check mark** left of the formula bar or click the **Enter** button.
 
-12.	In the Properties panel on the right, expand the **Formatting** section (it may take a few moments for the Properties panel to load).
+12. In the Properties panel on the right, expand the **Formatting** section (it may take a few moments for the Properties panel to load).
 
-13.	From the **Format** dropdown select **Whole number**.
+13. From the **Format** dropdown select **Whole number**.
 
-14.	Use the slider to set **Thousands separator** to **Yes**.
+14. Use the slider to set **Thousands separator** to **Yes**.
 
     ![](../media/lab-06/image057.png)
    	
@@ -251,21 +251,21 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 17. Enter **Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar**.
 
-18.	Click the **check mark** left of the formula bar or click the **Enter** button.
+18. Click the **check mark** left of the formula bar or click the **Enter** button.
 
-19.	In the Properties panel on the right, expand the **Formatting** section.
+19. In the Properties panel on the right, expand the **Formatting** section.
 
-20.	From the **Format** dropdown select **Whole number**.
+20. From the **Format** dropdown select **Whole number**.
 
-21.	Use the slider to set **Thousands separator** to **Yes**.
+21. Use the slider to set **Thousands separator** to **Yes**.
 
     ![](../media/lab-06/image059.png)
  
-21.	In the **Data panel** (on the right), select **Model**. Notice this provides a view that will help organize all the items in the semantic model.
+21. In the **Data panel** (on the right), select **Model**. Notice this provides a view that will help organize all the items in the semantic model.
 
-22.	Expand **Semantic model -> Measures** to view all the measures you just created.
+22. Expand **Semantic model -> Measures** to view all the measures you just created.
 
-23.	You can also **expand individual Tables** to view the Columns, Hierarchies and Measures in each one of them.
+23. You can also **expand individual Tables** to view the Columns, Hierarchies and Measures in each one of them.
  
     ![](../media/lab-06/image064.jpg)
  
@@ -306,11 +306,11 @@ Let’s add the remaining relationships.
 
 12. Make sure **Cross filter direction** is **Both**.
 
-13.	Select **Save**.
+13. Select **Save**.
 
     ![](../media/lab-06/image073.png)
  
-15.	Now let’s create a relationship between Reseller and Geo. Select **New relationship**.
+15. Now let’s create a relationship between Reseller and Geo. Select **New relationship**.
 
 16.	New relationship dialog opens. Make sure **From table** is **Reseller** and **Column** is **PostalCityID**.
 
