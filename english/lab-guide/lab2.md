@@ -94,7 +94,6 @@ By the end of this lab, you will have learned:
     d. **Quick Access:** This section lists the recently used or favorite items.
 
     ![](../media/lab-02/image023.jpg)
-
  
 ## Task 3: Industry Solutions Experience
 1. Select **Fabric experience selector icon** (currently set to DataFactory) on the bottom left of your screen. Fabric experience dialog opens.
@@ -147,7 +146,7 @@ By the end of this lab, you will have learned:
 
 ## Task 6: Data Science Experience
 1. Select **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select Data Science. You will be navigated to the **Data Science Home page**. Again, there are foursections. In the Recommended section, notice the items:
+2. Select Data Science. You will be navigated to the **Data Science Home page**. Again, there are four sections. In the Recommended section, notice the items:
 
     a. **ML model:** Used to create machine learning models.
 
@@ -191,13 +190,12 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/image033.png)
  
-
 # Fabric Workspace
 
 ## Task 8: Create a Fabric Workspace
 
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
-2. Click **+ New workspace** found at the bottom of the pop out menu
+2. Click **+ New workspace** found at the bottom of the pop-out menu
 
     ![](../media/lab-02/image036.jpg)
 
@@ -242,7 +240,7 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 
     ![](../media/lab-02/image050.png)
 
-    In this lab, we explored the Fabric interface, created a Fabric workspace, and a Lakehouse. In the next lab, we will learn how to use Shortcuts in Lakehouse to connect to ADLS Gen2 data and how to transform this data using views.
+    In this lab, we explored the Fabric interface, and created a Fabric workspace, and a Lakehouse. In the next lab, we will learn how to use Shortcuts in Lakehouse to connect to ADLS Gen2 data and how to transform this data using views.
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
