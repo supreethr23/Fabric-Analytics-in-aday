@@ -172,6 +172,12 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
 3. **Authentication kind** should be **Snowflake**.
 4. Enter the **Snowflake Username and Password** available in the Environment Variables tab (next to the Lab Guide tab).
+
+   >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+
+   - **Username:** SNOWFLAKE_BACKUP
+   - **Password:** 8UpfRpExVDXv2AC1
+
 5. Select **Connect**.
 
     ![](../media/lab-04/image051.jpg)

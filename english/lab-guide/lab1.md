@@ -142,8 +142,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     ![](../media/lab-01/image043.png)
 
-7. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password**
-available in the **Environment Variables** tab (next to the Lab Guide).
+7. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password** available in the **Environment Variables** tab (next to the Lab Guide).
 
     ![](../media/lab-01/image045.jpg)
 
@@ -160,6 +159,11 @@ available in the **Environment Variables** tab (next to the Lab Guide).
     d. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
 10. For the Snowflake data source, use the **Snowflake Username** and **Snowflake Password** that is available in the **Environment Variables** tab (next to the Lab Guide).
+
+    >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+
+    - **Username:** SNOWFLAKE_BACKUP
+    - **Password:** 8UpfRpExVDXv2AC1
 
 11. Notice the **SnowflakeData** folder has Supplier dimension and PO (Order / Spend) fact.
 
