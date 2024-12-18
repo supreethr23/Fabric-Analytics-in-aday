@@ -329,7 +329,7 @@ Let’s add the remaining relationships.
 
     ![](../media/lab-06/image081.png)
 
-26. Similarly, create a **many to one** relationship between **PO** and **Date**. Select **Order_Date** from **PO** and **Date** from **Date**.
+26. Similarly, create a **many to one** relationship between **PO** and **Date**. Select **OrderDate** from **PO** and **Date** from **Date**.
 
 27. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and StockItemID from Product.
 
