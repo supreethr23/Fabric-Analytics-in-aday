@@ -134,7 +134,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     ![](../media/lab-03/image023.jpg)
  
-   You will be navigated to SQL analytics endpoint. Notice the Explorer panel has changed. You now can create views, stored procedures, queries and more. We are going to create a visual query as it provides a Power Querylike interface and save this as a view.
+   You will be navigated to SQL analytics endpoint. Notice the Explorer panel has changed. You now can create views, stored procedures, queries and more. We are going to create a visual query as it provides a Power Query like interface and save this as a view.
 
    We will start by creating a Geo view. We need to merge data from Cities, States and Countriesquery to create the Geo view.
 
