@@ -1,3 +1,5 @@
+<div style="font-family: 'Meiryo'">
+
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 7
 
 ![](../media/lab-07/imagelab7.png)  
@@ -611,3 +613,5 @@ Microsoft Corporation は、明示、黙示、または法律上にかかわら�
 **免責事項**
 
 このデモ/ラボには、Microsoft Power BI の新機能と機能強化の一部のみが含まれています。一部の機能は、製品の将来のリリースで変更される可能性があります。このデモ/ラ ボでは、新機能のすべてではなく一部について学習します。
+
+</div>
