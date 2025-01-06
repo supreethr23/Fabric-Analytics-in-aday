@@ -1,3 +1,22 @@
+![](../media/lab-02/lab2-intro.png)
+
+# Inhalt
+
+- Einführung
+- Fabric-Lizenz
+    - Aufgabe 1: Lizenz für Testversion von Microsoft Fabric aktivieren
+- Übersicht über die Funktionsbereiche in Fabric
+    - Aufgabe 2: Data Factory-Funktionsbereich
+    - Aufgabe 3: Industry Solutions-Funktionsbereich
+    - Aufgabe 4: Real-Time Intelligence-Funktionsbereich
+    - Aufgabe 5: Data Engineering-Funktionsbereich
+    - Aufgabe 6: Data Science-Funktionsbereich
+    - Aufgabe 7: Data Warehouse-Funktionsbereich
+- Fabric-Arbeitsbereich
+    - Aufgabe 8: Fabric-Arbeitsbereich erstellen
+    - Aufgabe 9: Lakehouse erstellen
+- Referenzen
+
 # Einführung 
 
 Heute geht es um die verschiedenen Hauptfunktionen von Microsoft Fabric.

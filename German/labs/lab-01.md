@@ -1,3 +1,15 @@
+![](../media/lab-01/lab-1-intro.png)
+
+# Inhalt
+
+- Dokumentstruktur
+- Anwendungsfall/Problemstellung
+- Überblick über den Power BI Desktop-Bericht
+    - Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
+    - Aufgabe 2: Power BI Desktop-Bericht analysieren
+    - Aufgabe 3: Power Query-Abfragen überprüfen
+- Referenzen
+
 # Dokumentstruktur
 
 Die Übung enthält die Schritte, die der Benutzer durchführen muss, sowie
