@@ -179,7 +179,7 @@ Ausreißer aus, um den **Filter zu entfernen**.
 Wiederverkäufer an. Klicken Sie im Balkendiagrammvisual „Sales by
 Product Group and Reseller Company" mit der rechten Maustaste auf
 den Balken **Packaging Materials** von Tailspin Toys, und wählen Sie
-im Dialogfeld die Option **Drillthrough ausführen -\Product
+im Dialogfeld die Option **Drillthrough ausführen -\> Product
 Detail** aus.
 
     ![](../media/lab-01/image15.png)
@@ -218,12 +218,12 @@ gibt: Sales und PO.
 ### Aufgabe 3: Power Query-Abfragen überprüfen
 
 1. Beschäftigen wir uns in Power Query mit den Datenquellen. Klicken
-Sie im Menüband auf **Start \Daten transformieren**.
+Sie im Menüband auf **Start \> Daten transformieren**.
 
     ![](../media/lab-01/image17.png)
 
 2. Das Power Query-Fenster wird geöffnet. Wählen Sie im Menüband die
-Option **Start -\Datenquelleneinstellungen** aus. Das Dialogfeld
+Option **Start \> Datenquelleneinstellungen** aus. Das Dialogfeld
 mit den Datenquelleneinstellungen wird geöffnet. Wenn Sie durch die
 Liste blättern, werden Sie sehen, dass es vier Datenquellen gibt,
 die in der Problemstellung genannt sind:
