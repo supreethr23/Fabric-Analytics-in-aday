@@ -615,7 +615,7 @@ move things along, we are going to copy code into Advanced Editor.
 
 10. Select **OK**. New Merge query is created.
 
-    ![](../media/lab-03/image58.png)
+    ![](../media/lab-03/image70.png)
 
 11. With Merge query selected, from the ribbon, select **Home -> Advanced editor**. Advanced editor dialog opens.
 
