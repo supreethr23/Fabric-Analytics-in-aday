@@ -109,17 +109,22 @@ Desktop para comprender las transformaciones y el modelo.
 3. Copie las credenciales de **Nombre de usuario** y péguelas en el
     cuadro de texto **Correo electrónico** del cuadro de diálogo.
 
+    - **Correo electrónico/nombre de usuario:** <inject key="AzureAdUserEmail"></inject>
+
 4. Seleccione **Continuar**.
 
     ![](../media/lab-01/image7.png)
 
-5. Se abre el cuadro de diálogo Iniciar sesión. Vuelva a introducir el
-    Nombre de usuario copiándolo de la pestaña Detalles del entorno.
+5. Se abre el cuadro de diálogo Iniciar sesión. Vuelva a introducir el Nombre de usuario copiándolo de la pestaña Detalles del entorno.
+
+    - **Correo electrónico/nombre de usuario:** <inject key="AzureAdUserEmail"></inject>
 
 6. Seleccione **Siguiente**.
 
 7. En el siguiente cuadro de diálogo, introduzca las **Credenciales**
     de **Contraseña** de la pestaña **Detalles del entorno**.
+
+    - **Escribir contraseña:** <inject key="AzureAdUserPassword"></inject>
 
 8. Seleccione **Iniciar sesión**.
 
@@ -275,10 +280,9 @@ avancemos a los siguientes pasos.
     credenciales se proporcionan a continuación y seleccione
     **Conectar**.
 
-    - Correo electrónico/nombre de usuario: **se encuentra en la pestaña
-      Entorno.**
+    - **Correo electrónico/nombre de usuario:** <inject key="AzureAdUserEmail"></inject>
 
-    - Contraseña: **se encuentra en la pestaña Entorno.**
+    - **Contraseña:** <inject key="AzureAdUserPassword"></inject>
 
 9. Haga clic en la consulta **ADLS Base Folder** en la ventana
     Consultas. Al seleccionar esta consulta, tendrá que volver a
@@ -290,7 +294,7 @@ avancemos a los siguientes pasos.
     compartido** **(SAS)** e introduzca el **token de SAS** que se
     proporciona a continuación. Después, seleccione **Conectar**.
 
-    - **Token de SAS:** se encuentra en la pestaña Entorno.
+    - **Token de SAS:** <inject key="Sas token"></inject>
 
       ![](../media/lab-01/image22.png)
 
@@ -321,13 +325,17 @@ avancemos a los siguientes pasos.
     credenciales para conectar todas las tablas de Snowflake con
     Snowflake y luego seleccione Conectar.
 
-    - **Nombre de usuario de Snowflake:** TE_SNOWFLAKE1
+    - **Nombre de usuario de Snowflake:** <inject key="SnowFlake Username"></inject>
 
-    - **Contraseña de Snowflake:** 8UpfRpExVDXv2AC1
+    - **Contraseña de Snowflake:** <inject key="SnowFlake Password"></inject>
 
     *Nota: Si tiene algún problema para conectarse a Snowflake con las
     credenciales de los detalles del entorno, utilice las credenciales de
     copia de seguridad que se proporcionan en la pestaña Entorno.*
+
+    - **Nombre de usuario de Snowflake:** SNOWFLAKE_BACKUP
+
+    - **Contraseña de Snowflake:** 8UpfRpExVDXv2AC1
 
 14. Observe que la carpeta **SnowflakeData** tiene la dimensión Supplier
     y los datos de PO (pedido/gasto).
@@ -350,10 +358,9 @@ avancemos a los siguientes pasos.
     contraseña que se proporcionan a continuación y luego seleccione
     Conectar.
 
-    - **Correo electrónico/nombre de usuario:** se encuentra en la
-      pestaña Entorno.
+    - **Correo electrónico/nombre de usuario:** <inject key="AzureAdUserEmail"></inject>
 
-    - **Contraseña:** se encuentra en la pestaña Entorno.
+    - **Contraseña:** <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/lab-01/image25.png)
 
