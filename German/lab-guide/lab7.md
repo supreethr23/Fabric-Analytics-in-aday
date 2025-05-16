@@ -643,7 +643,7 @@ aktualisieren.
     ein neuer Bereich für SQL-Abfragen geöffnet.
 
 20. **Kopieren** Sie den folgenden Code, und **fügen** Sie ihn in den
-    SQL-Abfragebereich **ein.**
+    SQL-Abfragebereich **ein**.
 
 ```
 ALTER VIEW [dbo].[Sales] AS (
@@ -814,7 +814,7 @@ where exists
 
     - **Das Dataset muss mindestens dreimal täglich aktualisiert werden, um
     den verschiedenen Aktualisierungszeiten der Datenquellen Rechnung zu
-    tragen.**
+    tragen**.
 
     Wir haben dieses Problem mithilfe von Direct Lake gelöst. Jeder einzelne
     Dataflow wird nach seinem Zeitplan aktualisiert. Datasets und Berichte
@@ -822,7 +822,7 @@ where exists
 
     - **Ihre Aktualisierungsvorgänge dauern lange, weil die Daten jedes Mal
     komplett aktualisiert werden müssen, um alle Änderungen an den Daten
-    in den Quellsystemen zu erfassen.**
+    in den Quellsystemen zu erfassen**.
 
     Auch hier haben wir dieses Problem mithilfe von Direct Lake gelöst.
     Jeder einzelne Dataflow wird nach seinem Zeitplan aktualisiert. Datasets
@@ -832,7 +832,7 @@ where exists
     - **Tritt in den Datenquellen, aus denen die Daten abgerufen werden, ein
     Fehler auf, wird die DataSet-Aktualisierung abgebrochen. Oftmals wird
     die Mitarbeiterdatei nicht pünktlich hochgeladen, was ebenso zum
-    Abbruch der DataSet-Aktualisierung führt.**
+    Abbruch der DataSet-Aktualisierung führt**.
 
     Datenpipelines helfen, dieses Problem zu lösen, indem sie die
     Möglichkeit bieten, die Aktualisierung bei Fehlern und in verschiedenen
@@ -841,14 +841,14 @@ where exists
     - **Änderungen am Datenmodell nehmen sehr viel Zeit in Anspruch, weil
     Power Query aufgrund der großen Datenmenge und des aufwändigen
     Transformationsvorgangs sehr lange braucht, um die Vorschauversionen
-    zu aktualisieren.**
+    zu aktualisieren**.
 
     Wir haben festgestellt, dass Dataflows und Lakehouses effizient und
     einfach zu ändern sind. Das Laden der Vorschauversion in Dataflows und
     Lakehouses dauert in der Regel nicht lange.
 
     - **Für Power BI Desktop brauchen Sie einen PC mit Windows, auch wenn im
-    Unternehmen Mac-Geräte genutzt werden.**
+    Unternehmen Mac-Geräte genutzt werden**.
 
     Microsoft Fabric ist ein SaaS-Angebot. Wir benötigen lediglich einen
     Browser, um auf den Dienst zuzugreifen. Wir müssen keine Software auf
@@ -976,7 +976,7 @@ ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
 BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
 PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
 
-**FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
 und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
 gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
 für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und

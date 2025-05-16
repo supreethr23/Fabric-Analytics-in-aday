@@ -188,7 +188,7 @@ Lakehouse erfasst werden.
     weitergeleitet. Es kann einige Momente dauern, bis der Dataflow
     veröffentlicht wird.
 
-3. Wir arbeiten mit **Dataflow 1.** Benennen wir ihn um, bevor wir
+3. Wir arbeiten mit **Dataflow 1**. Benennen wir ihn um, bevor wir
     fortfahren. Klicken Sie auf die **Auslassungspunkte (...)** neben
     Dataflow 1. Wählen Sie **Eigenschaften** aus.
     (Während der Dataflow-Ausführung können Sie nicht auf die
@@ -464,7 +464,7 @@ befinden.
     zu transformieren und Ansichten zu erstellen). Wir können auch mit
     Dataflow Gen2 eine Verbindung zu SharePoint herstellen, wie zuvor in
     dieser Übung. **Wir können jedoch nicht auf diese Bucket/Verzeichnisse
-    zugreifen.**
+    zugreifen**.
 
     In unseren Szenario hat das IT-Team bereits eine Verknüpfung zu
     Dataverse erstellt und die erforderlichen Datentransformationen
@@ -628,7 +628,7 @@ ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
 BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
 PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
 
-**FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
 und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
 gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
 für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und

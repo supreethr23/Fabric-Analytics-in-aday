@@ -242,7 +242,7 @@ Aktivität suchen, die wir verwenden können.
 4. Wählen Sie im **Dropdownmenü „Dataflow"** die Option
     **df_People_SharePoint** aus. Wenn diese Dataflow-Aktivität
     ausgeführt wird, erfolgt eine Aktualisierung
-    von **df_People_SharePoint.** Das war doch einfach, oder?
+    von **df_People_SharePoint**. Das war doch einfach, oder?
 
     In unserem Szenario werden Mitarbeiterdaten nicht planmäßig
     aktualisiert. Manchmal kommt es zu einer Verzögerung. Sehen wir uns an,
@@ -256,7 +256,7 @@ Aktivität suchen, die wir verwenden können.
 6. Geben Sie im Feld **Name** **dfactivity_People_SharePoint** ein.
 
 7. Geben Sie im Feld **Beschreibung** die **Dataflow-Aktivität ein, um
-    den df_People_Sharepoint-Dataflow zu aktualisieren.**
+    den df_People_Sharepoint-Dataflow zu aktualisieren**.
 
 8. Beachten Sie, dass eine Option zum Deaktivieren einer Aktivität
     vorhanden ist. Diese Funktion ist beim Testen oder Debuggen
@@ -518,7 +518,7 @@ neuen Datenpipeline erreicht werden kann.
 5. Geben Sie im Feld **Name** **dfactivity_People_SharePoint** ein.
 
 6. Geben Sie im Feld **Beschreibung** die **Dataflow-Aktivität ein, um
-    den df_People_Sharepoint-Dataflow zu aktualisieren.**
+    den df_People_Sharepoint-Dataflow zu aktualisieren**.
 
     ![](../media/lab-05/image36.png)
 
@@ -947,7 +947,7 @@ ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
 BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
 PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
 
-**FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
 und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
 gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
 für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und

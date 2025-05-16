@@ -621,7 +621,7 @@ ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
 BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
 PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
 
-**FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
 und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
 gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
 für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und

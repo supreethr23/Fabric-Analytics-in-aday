@@ -65,7 +65,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
         ![](../media/lab-02/image7.png)
 
 4. Geben Sie nun das folgende **Kennwort** ein, und klicken Sie auf
-    **Anmelden.**
+    **Anmelden**.
 
     - **Kennwort:** <inject key="AzureAdUserPassword"></inject>
 
@@ -857,7 +857,7 @@ ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
 BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
 PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
 
-**FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
 und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
 gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
 für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und

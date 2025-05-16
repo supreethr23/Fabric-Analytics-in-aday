@@ -591,7 +591,7 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
 
 6. Wählen Sie bei ausgewählter Abfrage **InvoiceLineItems** im Menüband
     **Start (2)-> Kombinieren (3) -> Abfragen zusammenführen (4) ->
-    Abfragen als neue Abfrage zusammenführen (5).** Das Dialogfeld
+    Abfragen als neue Abfrage zusammenführen (5)**. Das Dialogfeld
     „Abfragen zusammenführen" wird geöffnet.
 
     ![](../media/lab-03/image42.png)
@@ -625,7 +625,7 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
     ![](../media/lab-03/image44.png)
 
 14. Wählen Sie im linken Bereich **Abfragen** unter dem Ordner
-    **ADLSData** **(1)** die Abfrage **Sales (2)** aus**.**
+    **ADLSData** **(1)** die Abfrage **Sales (2)** aus****.
 
 15. Wählen Sie im Menüband die Registerkarte **Start -> Erweiterter
     Editor (3)** aus. Das Dialogfenster „Erweiterter Editor" wird
@@ -765,7 +765,7 @@ Editor".
 
 5. Wählen Sie bei ausgewählter Abfrage **ProductItem (1)** im Menüband
     **Start (2)-> Kombinieren (3) -> Abfragen zusammenführen (4) ->
-    Abfragen als neue Abfrage zusammenführen (5).** Das Dialogfeld zum
+    Abfragen als neue Abfrage zusammenführen (5)**. Das Dialogfeld zum
     Zusammenführen wird geöffnet.
 
     ![](../media/lab-03/image57.png)
@@ -956,7 +956,7 @@ ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
 BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
 PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
 
-**FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
 und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
 gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
 für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und

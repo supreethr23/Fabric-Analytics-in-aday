@@ -100,7 +100,7 @@ verstehen.
 ## Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
 
 1. Öffnen Sie in der Übungsumgebung auf dem **Desktop** im Ordner
-    **Reports** die Datei **FAIAD.pbix.** Die Datei wird in Power BI
+    **Reports** die Datei **FAIAD.pbix**. Die Datei wird in Power BI
     Desktop geöffnet.
 
     ![](../media/lab-01/image6.png)
@@ -124,12 +124,15 @@ verstehen.
     - E-Mail-Adresse/Benutzername: <inject key="AzureAdUserEmail"></inject>
 
 4. Geben Sie nun das folgende **Kennwort** ein, und klicken Sie auf
-    **Anmelden.**
+    **Anmelden**.
 
    ![](../media/lab-01/image8.png)
 
-10. Das Dialogfeld **Die Einrichtung ist abgeschlossen!** wird geöffnet.
-    Klicken Sie auf **Fertig**.
+1. Das Dialogfeld **Bei all Ihren Apps angemeldet bleiben** wird geöffnet. Klicken Sie auf **OK**.
+
+   ![](../media/lab-01/image9.png)
+
+1. Das Dialogfeld **Die Einrichtung ist abgeschlossen!** wird geöffnet Klicken Sie auf **Fertig**.
 
 Nun wird Power BI Desktop geöffnet.
 
