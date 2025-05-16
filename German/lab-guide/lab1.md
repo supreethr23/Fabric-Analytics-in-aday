@@ -108,31 +108,25 @@ verstehen.
 2. Geben Sie im Dialogfeld Ihre E-Mail-Adresse ein. Öffnen Sie rechts
     in der Übungsumgebung die Registerkarte **Environment Details**.
 
-3. Kopieren Sie den **Benutzernamen**, und fügen Sie ihn im Dialogfeld
-    in das Textfeld für die **E-Mail-Adresse** ein.
+2. Sobald das Dialogfeld „Geben Sie Ihre E-Mail-Adresse ein" angezeigt
+    wird, kopieren Sie den **Benutzernamen**, fügen Sie ihn in das Feld
+    **E-Mail-Adresse** des Dialogfelds ein, und wählen Sie
+    **Weiter** aus.
 
-4. Wählen Sie **Weiter** aus.
+    - E-Mail-Adresse/Benutzername: <inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/lab-01/image7.png)
+      ![](../media/lab-01/image7.png)
 
-5. Das Dialogfeld „Anmelden" wird geöffnet. Geben Sie den
-    **Benutzernamen** erneut ein, indem Sie ihn aus der Registerkarte
-    **Umgebungsdetails** kopieren.
+3. Auf der Registerkarte „Bei Microsoft Azure anmelden" sehen Sie den
+    Anmeldebildschirm, in dem Sie die folgende
+    E-Mail-Adresse/Benutzernamen eingeben und dann auf „Weiter" klicken.
 
-6. Wählen Sie **Weiter** aus.
+    - E-Mail-Adresse/Benutzername: <inject key="AzureAdUserEmail"></inject>
 
-7. Geben Sie im nächsten Dialogfeld das **Kennwort** und die
-    **Anmeldeinformationen** ein, indem Sie beides aus der Registerkarte
-    **Umgebungsdetails** kopieren.
+4. Geben Sie nun das folgende **Kennwort** ein, und klicken Sie auf
+    **Anmelden.**
 
-8. Wählen Sie **Anmelden** aus.
-
-    ![](../media/lab-01/image8.png)
-
-9. Das Dialogfeld **Bei all Ihren Apps angemeldet bleiben** wird
-    geöffnet. Klicken Sie auf **OK**.
-
-    ![](../media/lab-01/image9.png)
+   ![](../media/lab-01/image8.png)
 
 10. Das Dialogfeld **Die Einrichtung ist abgeschlossen!** wird geöffnet.
     Klicken Sie auf **Fertig**.
@@ -281,10 +275,9 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     eingeben. Die Anmeldeinformationen werden unten angegeben. Wählen
     Sie **Verbinden** aus.
 
-    - E-Mail/Benutzername: **Befindet sich auf der Registerkarte
-      „Umgebung"**
+    - E-Mail/Benutzername: <inject key="AzureAdUserEmail"></inject>
 
-    - Kennwort: **Befindet sich auf der Registerkarte „Umgebung"**
+    - Kennwort: <inject key="AzureAdUserPassword"></inject>
 
 9. Klicken Sie im Fenster „Abfragen" auf die Abfrage **ADLS Base
     Folder**. Sie müssen die Anmeldeinformationen erneut eingeben, wenn
@@ -297,7 +290,7 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     Signature (SAS)** aus, und geben Sie das unten angegebene
     **SAS-Token** ein. Wählen Sie dann **Verbinden** aus.
 
-    - **SAS-Token:** Befindet sich auf der Registerkarte „Umgebung"
+    - **SAS-Token:** <inject key="Sas token"></inject>
 
         ![](../media/lab-01/image22.png)
 
@@ -330,9 +323,9 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     Anmeldeinformationen, um alle Tabellen unter Snowflake mit Snowflake
     zu verbinden, und wählen Sie dann „Verbinden".
 
-    - **Snowflake-Benutzername:** TE_SNOWFLAKE1
+    - **Snowflake-Benutzername:** <inject key="SnowFlake Username"></inject>
 
-    - **Snowflake-Kennwort:**  8UpfRpExVDXv2AC1
+    - **Snowflake-Kennwort:** <inject key="SnowFlake Password"></inject>
 
     **Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu
     Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben,
@@ -359,10 +352,9 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     auf **Anmelden**. Geben Sie den unten angegebenen Benutzernamen und
     das Kennwort ein, und wählen Sie dann „Verbinden" aus.
 
-    - **E-Mail/Benutzername:** Befindet sich auf der Registerkarte
-      „Umgebung"
+    - **E-Mail/Benutzername:** <inject key="AzureAdUserEmail"></inject>
 
-    - **Kennwort:** Befindet sich auf der Registerkarte „Umgebung"
+    - **Kennwort:** <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/lab-01/image25.png)
 
