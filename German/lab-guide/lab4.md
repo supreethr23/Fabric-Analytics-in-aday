@@ -55,7 +55,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1),** den Sie in Übung 2, Aufgabe 8 erstellt
     haben.
 
-2. Wählen Sie die Option + **Neues Element (2)** in der oberen linken
+2. Wählen Sie die Option **+ Neues Element (2)** in der oberen linken
     Ecke.
 
 3. Wählen Sie unter dem Abschnitt **Daten abrufen (3)** die Option
@@ -228,7 +228,7 @@ incorrect.](../media/lab-04/image19.png)
 1. Wir navigieren zurück zum Fabric-Arbeitsbereich
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
 
-2. Wählen Sie die Option + **Neues Element (2)** in der oberen linken
+2. Wählen Sie die Option **+ Neues Element (2)** in der oberen linken
     Ecke.
 
 3. Wählen Sie unter „Empfohlene Elemente" die Option **Dataflow Gen2
