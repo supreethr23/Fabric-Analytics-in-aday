@@ -52,8 +52,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 2. Kopieren Sie den Benutzernamen, fügen Sie ihn im Feld „E-Mail" des
     Dialogfelds ein, und wählen Sie „Senden" aus.
 
-    - **E-Mail/Benutzername:** Befindet sich auf der Registerkarte
-      „Umgebung"
+    - **E-Mail/Benutzername:** <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/lab-02/image6.png)
 
@@ -61,15 +60,14 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
     Anmeldebildschirm, in dem Sie die folgende **EmailUsername**
     eingeben und dann auf **Weiter** klicken.
 
-    - **E-Mail/Benutzername:** Befindet sich auf der Registerkarte
-      „Umgebung"
+    - **E-Mail/Benutzername:** <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/lab-02/image7.png)
 
 4. Geben Sie nun das folgende **Kennwort** ein, und klicken Sie auf
     **Anmelden.**
 
-    - **Kennwort:** Befindet sich auf der Registerkarte „Umgebung"
+    - **Kennwort:** <inject key="AzureAdUserPassword"></inject>
 
         ![](../media/lab-02/image8.png)
 
@@ -119,8 +117,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 3. Rechts im Browser wird das Dialogfeld **Arbeitsbereich erstellen**
     geöffnet.
 
-4. Geben Sie im Feld **Name** „FAIAD_UserID" ein (Sie finden dieseauf
-    der Registerkarte „Umgebung").
+4. Geben Sie im Feld **Name** „FAIAD_<inject key="Deployment ID" enableCopy="false"/>" ein (Sie finden dieseauf der Registerkarte „Umgebung").
 
     ***Hinweis:** Der Name des Arbeitsbereichs muss eindeutig sein. Achten
     Sie darauf, dass unter dem Feld für den Namen ein grünes Häkchen mit dem
