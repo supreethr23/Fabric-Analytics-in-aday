@@ -310,7 +310,7 @@ configure la conexión.
 
 5. Seleccione **Conectar**.
 
-    ![P134#yIS1](../media/lab-04/image24.png)
+    ![](../media/lab-04/image24.png)
 
 Se establece la conexión y puede ver los datos en el panel de versión
 preliminar. Siéntase libre de navegar por los pasos aplicados de las
