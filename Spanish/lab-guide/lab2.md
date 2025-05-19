@@ -144,7 +144,7 @@ Daten für Berichte. Erstellen wir zunächst ein Lakehouse.
 
 ## Aufgabe 3: Lakehouse erstellen
 
-1. Suchen Sie im neu erstellten Arbeitsbereich **FAIAD_Username** im
+1. Suchen Sie im neu erstellten Arbeitsbereich **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** im
     linken Navigationsbereich die Schaltfläche **+ Neues Element (1)**.
     Hier können Sie neue Elemente in Ihrem Arbeitsbereich erstellen.
 

@@ -10,3 +10,4 @@
     - Tarea 4: Crear una vista Sales con consultas visuales
     - Tarea 5: Crear una vista de producto con consultas visuales
 - Referencias
+
