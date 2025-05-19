@@ -207,19 +207,15 @@ o relatório e passar para as próximas etapas.
 
 10. Observe que existem duas tabelas de fatos, **Sales** e **PO**.
 
-a\. A granularidade dos dados de Sales é por Date, Reseller, Product e
-People. Date, Reseller, Product e People conectam-se a Sales.
-
-b\. A granularidade dos dados de PO é por Date, Product e People. Date,
-Product e People conectam-se a PO.
-
-c\. Temos dados de Supplier por Product. Supplier conecta-se a Product.
-
-d\. Temos os dados de localização de Reseller por Geo. Geo conecta-se a
-Reseller.
-
-e\. Temos informações de Customer por Reseller. Customer conecta-se a
-Reseller.
+    a\. A granularidade dos dados de Sales é por Date, Reseller, Product e
+        People. Date, Reseller, Product e People conectam-se a Sales.
+    b\. A granularidade dos dados de PO é por Date, Product e People. Date,
+        Product e People conectam-se a PO.
+    c\. Temos dados de Supplier por Product. Supplier conecta-se a Product.
+    d\. Temos os dados de localização de Reseller por Geo. Geo conecta-se a
+         Reseller.
+    e\. Temos informações de Customer por Reseller. Customer conecta-se a
+         Reseller.
 
 ### Tarefa 3: Revisar Power Queries
 
@@ -279,7 +275,7 @@ Reseller.
 
     -   **Token SAS:** encontrado na guia Ambiente
 
-   ![](../media/lab-01/image22.png)
+    ![](../media/lab-01/image22.png)
 
 11. Observe que a pasta **ADLSData** tem múltiplas dimensões: Geo,
     Product, Reseller e Date. Também tem o fato Sales.
