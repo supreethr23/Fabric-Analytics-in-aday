@@ -426,7 +426,7 @@ Visual sem abrir a opção Power Query.
 
    ![](../media/lab-03/image30.png)
 
-A caixa de diálogo Mesclar é aberta com Customers selecionada como a
+   A caixa de diálogo Mesclar é aberta com Customers selecionada como a
 tabela superior.
 
 6. Na **Tabela direita para mesclagem**, selecione **BuyingGroups**.
@@ -456,7 +456,7 @@ apenas aquelas de que precisamos.
 13. No menu de consulta de Visual, selecione **Gerenciar colunas -\>
     Escolher colunas**.
 
-   ![](../media/lab-03/image33.png)
+    ![](../media/lab-03/image33.png)
 
 14. A caixa de diálogo Escolher colunas é aberta. **Selecione** as
     colunas a seguir.
@@ -510,14 +510,14 @@ salvar esta exibição.
 
     ![](../media/lab-03/image36.png)
 
-**Observação**: A caixa **Customer** deve ter uma borda azul se a opção
+    - **Observação**: A caixa **Customer** deve ter uma borda azul se a opção
 Habilitar carga estiver marcada.
 
 20. No menu de consultas Visual, selecione **Salvar como exibição**.
 
-   ![](../media/lab-03/image37.png)
+    ![](../media/lab-03/image37.png)
 
-A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta
+    A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta
 SQL está disponível. Você pode revê-la, se selecioná-la.
 
 21. Insira **Reseller** como **Nome da exibição**.
@@ -526,7 +526,7 @@ SQL está disponível. Você pode revê-la, se selecioná-la.
 
     ![](../media/lab-03/image38.png)
 
-Você receberá um alerta assim que a exibição for salva.
+    Você receberá um alerta assim que a exibição for salva.
 
 23. No painel Explorer (à esquerda), expanda **Views.** Temos a exibição
     recém-criada Reseller.
@@ -581,9 +581,9 @@ consulta Visual. Vamos testar esse método.
 
 11. Selecione **OK.**
 
-    ![](../media/lab-03/image43.png)
+     ![](../media/lab-03/image43.png)
 
-Vamos copiar o código do Power BI Desktop e colá-lo usando o Editor
+     Vamos copiar o código do Power BI Desktop e colá-lo usando o Editor
 Avançado.
 
 12. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que
@@ -605,7 +605,7 @@ Avançado.
 
     ![](../media/lab-03/image45.png)
 
-**Observação:** se você não conseguir encontrar o Editor Avançado,
+    - **Observação:** se você não conseguir encontrar o Editor Avançado,
 poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
 
 16. **Selecione código da Linha 3** (#\"Expanded Invoice\"\...) até a
@@ -642,9 +642,9 @@ o controle deslizante para **habilitar** **Área de Transferência Nativa
 da VM**. Selecione OK na caixa de diálogo. Depois que terminar de colar
 as consultas, você poderá desabilitar essa opção.
 
-   ![](../media/lab-03/image48.png)
+    ![](../media/lab-03/image48.png)
 
-   ![](../media/lab-03/image49.png)
+    ![](../media/lab-03/image49.png)
 
 25. Realce as duas últimas linhas de código (na Origem) e **exclua-o**.
 
@@ -658,8 +658,10 @@ código abaixo.
     ```
       let
       Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
-      #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
-      #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+      #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", 
+      "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+      #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", 
+      "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
       #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
       #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
       #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
@@ -667,7 +669,6 @@ código abaixo.
       #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
       in
       #"Removed Columns"
-
     ```
 
 27. Você voltará para o Editor do Power Query. À esquerda, no painel
@@ -693,7 +694,7 @@ código abaixo.
 
      ![](../media/lab-03/image52.png)
 
-Você receberá um alerta assim que a exibição for salva.
+     Você receberá um alerta assim que a exibição for salva.
 
 34. No painel Explorer (à esquerda), expanda **Views.** Temos a exibição
     recém-criada Sales.
@@ -752,7 +753,7 @@ código no Editor Avançado.
 
     ![](../media/lab-03/image59.png)
 
-**Observação:** se você não conseguir encontrar o Editor Avançado,
+    - **Observação:** se você não conseguir encontrar o Editor Avançado,
 poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
 
 12. **Selecione todo o código** no Editor Avançado e **exclua-o**.
@@ -760,15 +761,15 @@ poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
 13. **Cole** o código abaixo no Editor Avançado.
 
     ```
-    let
-    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
-    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
-    #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
-    #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
-    #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
-    in
-    #"Choose columns"
-    
+      let
+      Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+      #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+      #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+      #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+      #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", 
+      "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+      in
+      #"Choose columns"
     ```
 
 14. Selecione **OK** para fechar o Editor Avançado. Você voltará para o
@@ -799,18 +800,18 @@ poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
 
     ![](../media/lab-03/image62.png)
 
-Você receberá um alerta assim que a exibição for salva.
+    Você receberá um alerta assim que a exibição for salva.
 
 22. No painel Explorer (à esquerda), expanda **Views.** Temos a exibição
     recém-criada Product.
 
-   ![](../media/lab-03/image63.png)
+    ![](../media/lab-03/image63.png)
 
-Transformamos os dados da fonte de dados ADLS Gen2. Neste laboratório,
+    Transformamos os dados da fonte de dados ADLS Gen2. Neste laboratório,
 aprendemos a criar atalhos e exploramos várias opções para usar modos de
 exibição de consulta visual para transformar dados.
 
-No próximo laboratório, aprenderemos a usar o Fluxo de Dados Gen2 e
+    No próximo laboratório, aprenderemos a usar o Fluxo de Dados Gen2 e
 criar o Atalho para outro Lakehouse.
 
 # Referências
