@@ -44,10 +44,10 @@ Ao final deste laboratório, você terá aprendido a:
     BI](https://app.powerbi.com/). Você será direcionado para a página
     de logon.
 
-***Observação:** Se você estiver usando o ambiente de laboratório, ele
+   - ***Observação:** Se você estiver usando o ambiente de laboratório, ele
 poderá conectar você automaticamente.*
 
-***Observação:** Se você não estiver usando o ambiente de laboratório e
+   - ***Observação:** Se você não estiver usando o ambiente de laboratório e
 já tiver uma conta do Power BI, talvez queira usar o navegador no modo
 privado/anônimo.*
 
@@ -64,13 +64,13 @@ privado/anônimo.*
 
     - **Email/Nome de usuário:** encontrado na guia Ambiente
 
-   ![](../media/lab-02/image7.png)
+    ![](../media/lab-02/image7.png)
 
 4. Agora, insira a seguinte **Senha** e clique em **Entrar**.
 
     - **Senha:** encontrada na guia Ambiente
 
-   ![](../media/lab-02/image8.png)
+    ![](../media/lab-02/image8.png)
 
 5. Você será direcionado à conhecida **Página Inicial de Serviço do
     Power BI**.
@@ -79,7 +79,7 @@ privado/anônimo.*
     Power BI. Se você tiver alguma dúvida, não hesite em perguntar ao
     instrutor.
 
-Atualmente, você está em **Meu workspace**. Para trabalhar com itens do
+    Atualmente, você está em **Meu workspace**. Para trabalhar com itens do
 Fabric, você precisará de uma licença de avaliação e de um workspace que
 tenha a licença do Fabric atribuída. Vamos configurar tudo.
 
@@ -123,7 +123,7 @@ tenha a licença do Fabric atribuída. Vamos configurar tudo.
 4. No campo **Nome**, insira FAIAD_UserID (encontrado na guia
     Ambiente).
 
-***Observação:** O nome do workspace deve ser exclusivo. Verifique se há
+   - ***Observação:** O nome do workspace deve ser exclusivo. Verifique se há
 uma marca de seleção verde em \"Este nome está disponível\", abaixo do
 campo Nome.*
 
@@ -162,10 +162,10 @@ dados do Lakehouse para criar nosso modelo e relatá-lo. A primeira etapa
 3. Uma caixa de diálogo Novo lakehouse será exibida. Insira
     **lh_FAIAD** na caixa de texto Nome.
 
-***Observação:** \"lh\" refere-se a Lakehouse. Estamos prefixando \"lh\"
+   - ***Observação:** \"lh\" refere-se a Lakehouse. Estamos prefixando \"lh\"
 para que seja fácil de identificar e pesquisar.*
 
-***Observação:** A versão prévia do recurso de **Esquemas de Lakehouse**
+   - ***Observação:** A versão prévia do recurso de **Esquemas de Lakehouse**
 é muito interessante, portanto, é algo que você deve estar ciente. Como
 está no estado **Versão preliminar**, vamos ignorá-lo para que não haja
 impacto negativo na experiência do laboratório. Assim que o recurso
@@ -175,18 +175,18 @@ estiver disponível em geral, vamos trazê-lo para este laboratório.*
 
    ![](../media/lab-02/image17.png)
 
-Em alguns instantes, um Lakehouse será criado e você será direcionado
+   Em alguns instantes, um Lakehouse será criado e você será direcionado
 para a interface do Lakehouse. No painel esquerdo, observe que abaixo do
 seu workspace você terá o ícone Lakehouse. Você pode navegar facilmente
 até o Lakehouse clicando neste ícone a qualquer momento.
 
-No Explorador do Lakehouse, você observará Tables e Files. O Lakehouse
+   No Explorador do Lakehouse, você observará Tables e Files. O Lakehouse
 poderá expor arquivos do Azure Data Lake Storage Gen2 na seção de
 arquivos, ou um fluxo de dados poderá carregar dados para as tabelas do
 Lakehouse. Existem várias opções disponíveis. Mostraremos algumas das
 opções nos laboratórios a seguir.
 
-   ![](../media/lab-02/image18.png)
+    ![](../media/lab-02/image18.png)
 
 ## Visão geral das experiências do Fabric
 
@@ -675,47 +675,47 @@ opções nos laboratórios a seguir.
     seguir, está uma visão geral detalhada de suas seções, desenvolvidas
     para ajudar você a usar Bancos de Dados de forma eficaz.
 
-**O que é um Fabric Database?**\
-\
-O banco de dados SQL no Microsoft Fabric é um banco de dados
-transacional fácil de usar para desenvolvedores, baseado no Banco de
-Dados SQL do Azure, que permite criar facilmente seu banco de dados
-operacional no Fabric. Um banco de dados SQL no Fabric usa o mesmo
-Mecanismo de Banco de Dados SQL que o Banco de Dados SQL do Azure.
-
-**Tipos de item:**
-
-a\. **SQL database (preview):** o banco de dados SQL no Fabric faz parte
-da carga de trabalho Banco de Dados, e os dados podem ser acessados de
-outros itens no Fabric. Seus dados de banco de dados SQL também são
-mantidos atualizados em um formato consultável no OneLake, para que você
-possa usar todos os diferentes serviços no Fabric, como executar
-análises com o Spark, executar notebooks, engenharia de dados,
-visualizar por meio de Relatórios do Power BI e muito mais.
-
-**Introdução:**
-
-Para começar a usar Bancos de Dados, siga as etapas abaixo:
-
-a\. **Explorar:** clique em \"Abrir\" para explorar um banco de dados de
-exemplo.\
-b. **Database concepts:** explica termos e conceitos comuns em torno do
-banco de dados transacional para que você possa se familiarizar com como
-trabalhar com o Banco de Dados SQL.
-
-c\. **Database templates:** examine uma biblioteca de modelos
-pré-criados de designs de banco de dados comuns.
-
-   ![](../media/lab-02/image33.png)
-
-3.    ![](../media/lab-02/image22.png)
+    **O que é um Fabric Database?**\
+    \
+    O banco de dados SQL no Microsoft Fabric é um banco de dados
+    transacional fácil de usar para desenvolvedores, baseado no Banco de
+    Dados SQL do Azure, que permite criar facilmente seu banco de dados
+    operacional no Fabric. Um banco de dados SQL no Fabric usa o mesmo
+    Mecanismo de Banco de Dados SQL que o Banco de Dados SQL do Azure.
     
-    Clique em Retornar às cargas de
+    **Tipos de item:**
+    
+    a\. **SQL database (preview):** o banco de dados SQL no Fabric faz parte
+    da carga de trabalho Banco de Dados, e os dados podem ser acessados de
+    outros itens no Fabric. Seus dados de banco de dados SQL também são
+    mantidos atualizados em um formato consultável no OneLake, para que você
+    possa usar todos os diferentes serviços no Fabric, como executar
+    análises com o Spark, executar notebooks, engenharia de dados,
+    visualizar por meio de Relatórios do Power BI e muito mais.
+    
+    **Introdução:**
+    
+    Para começar a usar Bancos de Dados, siga as etapas abaixo:
+    
+    a\. **Explorar:** clique em \"Abrir\" para explorar um banco de dados de
+    exemplo.\
+    b. **Database concepts:** explica termos e conceitos comuns em torno do
+    banco de dados transacional para que você possa se familiarizar com como
+    trabalhar com o Banco de Dados SQL.
+    
+    c\. **Database templates:** examine uma biblioteca de modelos
+    pré-criados de designs de banco de dados comuns.
+    
+       ![](../media/lab-02/image33.png)
+
+3.  Clique em Retornar às cargas de
     trabalho no canto superior esquerdo da tela. Essa ação levará você
     para a página principal de cargas de trabalho, na qual você poderá
     explorar outras ferramentas ou seções.
-
-Neste laboratório, exploramos a interface do Fabric e criamos um
+    
+    ![](../media/lab-02/image22.png)
+    
+    Neste laboratório, exploramos a interface do Fabric e criamos um
 workspace do Fabric e um Lakehouse. No próximo laboratório, aprenderemos
 como usar atalhos no Lakehouse para se conectar aos dados do ADLS Gen2 e
 como transformar esses dados usando exibições.
