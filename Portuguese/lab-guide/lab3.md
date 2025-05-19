@@ -94,7 +94,7 @@ Windows.
 
 10. Copie o token SAS e cole-o no campo Token SAS (5).
 
--   **Token SAS:**
+    - **Token SAS:**
 
 11. Selecione **Avançar (6)** na parte inferior direita da tela.
 
@@ -129,10 +129,10 @@ Windows.
 
     k. Warehouse.StockItems
 
-**Observação:** Sales.Invoices_May é o único diretório que **não está**
+    **Observação:** Sales.Invoices_May é o único diretório que **não está**
 selecionado.
 
-   ![](../media/lab-03/image9.png)
+    ![](../media/lab-03/image9.png)
 
 14. Você irá para a próxima caixa de diálogo para editar os nomes.
     Selecione o **ícone Editar (1)**, em Ações, para
@@ -167,18 +167,18 @@ selecionado.
 
     j. Warehouse.StockItems para **ProductItem**
 
-> **Observação**: confira novamente os nomes. Um erro de digitação pode
-> causar erros durante o laboratório.
+    > **Observação**: confira novamente os nomes. Um erro de digitação pode
+    > causar erros durante o laboratório.
 
 18. Selecione **Criar** para criar o atalho.
 
-   ![](../media/lab-03/image11.png)
+    ![](../media/lab-03/image11.png)
 
 19. Observe que todos os atalhos são criados como tabelas. Selecione a
     tabela **BuyingGroups** e observe que podemos ver uma prévia dos
     dados no painel de dados.
 
-   ![](../media/lab-03/image12.png)
+    ![](../media/lab-03/image12.png)
 
 A próxima etapa é transformar os dados, para que possamos criar um
 modelo semântico. Vamos criar exibições para transformar os dados.
@@ -192,38 +192,38 @@ modelo semântico. Vamos criar exibições para transformar os dados.
     superior direito** da tela, selecione **Lakehouse (1) -\> Ponto
     de extremidade de análise de SQL (2)**.
 
-   ![](../media/lab-03/image13.png)
+    ![](../media/lab-03/image13.png)
 
-Você irá para o ponto de extremidade de análise de SQL. Observe que o
-painel Explorer foi alterado. Agora você pode criar exibições,
-procedimentos armazenados, consultas e muito mais. Vamos criar uma
-consulta visual, pois ela fornece um low-code, semelhante à interface do
-Power Query. Vamos salvar o resultado como uma exibição.
-
-Começaremos criando uma exibição Geo. Precisamos mesclar dados das
-tabelas Cities, States e Countries para criar a exibição Geo.
+    Você irá para o ponto de extremidade de análise de SQL. Observe que o
+    painel Explorer foi alterado. Agora você pode criar exibições,
+    procedimentos armazenados, consultas e muito mais. Vamos criar uma
+    consulta visual, pois ela fornece um low-code, semelhante à interface do
+    Power Query. Vamos salvar o resultado como uma exibição.
+    
+    Começaremos criando uma exibição Geo. Precisamos mesclar dados das
+    tabelas Cities, States e Countries para criar a exibição Geo.
 
 2. No menu superior, clique no menu suspenso ao lado de **Nova consulta
     SQL (1)** e depois selecione **Nova consulta visual (2)**.
 
-   ![](../media/lab-03/image14.png)
+    ![](../media/lab-03/image14.png)
 
 3. Para criar uma consulta, precisamos adicionar tabelas ao painel
     Consulta Visual. Clique nas reticências ao lado da tabela **Cities
     (1)** e selecione **Inserir na tela (2).**
 
-   ![](../media/lab-03/image15.png)
+    ![](../media/lab-03/image15.png)
 
 4. Repita as mesmas etapas para as tabelas **States** e **Countries**.
 
-Em seguida, precisamos mesclar essas consultas. O editor de consultas
+   Em seguida, precisamos mesclar essas consultas. O editor de consultas
 visuais vem com a opção de usar o Editor do Power Query. Vamos usar
 isso, já que estamos familiarizados.
 
 5. No menu do Editor de consultas visuais, selecione o ícone **Abrir em
     popup** (à direita). Você irá para o Editor do Power Query.
 
-***Observação:** Talvez seja necessário rolar para a direita ou reabrir
+   - ***Observação:** Talvez seja necessário rolar para a direita ou reabrir
 a guia de consulta de visual se você não vir imediatamente esse ícone.*
 
    ![](../media/lab-03/image16.png)
@@ -234,7 +234,7 @@ a guia de consulta de visual se você não vir imediatamente esse ícone.*
     consultas como novas (5).** A caixa de diálogo Mesclar consultas é
     aberta.
 
-   ![](../media/lab-03/image17.png)
+    ![](../media/lab-03/image17.png)
 
 7. Na **Tabela esquerda para mesclagem**, selecione **Cities**.
 
@@ -247,9 +247,9 @@ a guia de consulta de visual se você não vir imediatamente esse ícone.*
 
 11. Selecione **OK.**
 
-   ![](../media/lab-03/image18.png)
+    ![](../media/lab-03/image18.png)
 
-Observe que uma nova consulta chamada **Merge** foi criada. Precisamos
+     Observe que uma nova consulta chamada **Merge** foi criada. Precisamos
 de algumas colunas de States.
 
 12. Na **exibição Dados** (painel inferior), clique na **seta dupla** ao
@@ -266,16 +266,16 @@ de algumas colunas de States.
     d. SalesTerritory
 
 14. Selecione **OK**.
+ 
+    ![](../media/lab-03/image19.png)
 
-   ![](../media/lab-03/image19.png)
-
-Precisamos mesclar a consulta Countries agora.
+     Precisamos mesclar a consulta Countries agora.
 
 15. Com a consulta Merge selecionada (1), selecione **Página Inicial (2)
     -\> Combinar (3) -\> menu suspenso Mesclar consultas (4) -\> Mesclar
     consultas (5)**.
 
-   ![](../media/lab-03/image20.png)
+    ![](../media/lab-03/image20.png)
 
 16. A caixa de diálogo Mesclar é aberta. Na **Tabela direita para
     mesclagem**, selecione **Countries**.
@@ -287,9 +287,9 @@ Precisamos mesclar a consulta Countries agora.
 
 19. Selecione **OK.**
 
-   ![](../media/lab-03/image21.png)
+    ![](../media/lab-03/image21.png)
 
-Precisamos de algumas colunas de Countries.
+    Precisamos de algumas colunas de Countries.
 
 20. Na **exibição Dados** (painel inferior), clique na **seta dupla** ao
     lado da coluna **Countries**.
@@ -314,17 +314,17 @@ Precisamos de algumas colunas de Countries.
 
 22. Selecione **OK**.
 
-   ![](../media/lab-03/image22.png)
+     ![](../media/lab-03/image22.png)
 
-Não precisamos de todas as colunas na tabela **Merge**. Certifique-se de
+      Não precisamos de todas as colunas na tabela **Merge**. Certifique-se de
 selecionar apenas as colunas que precisamos.
 
 23. Com a consulta **Merge** selecionada (1), selecione **Página
     Inicial (2) -\> Escolher colunas (3) -\> Escolher colunas (4)** na
     faixa de opções.
 
-> **Observação:** se a opção Escolher colunas não estiver visível, você
-> poderá encontrá-la em Gerenciar colunas.
+    > **Observação:** se a opção Escolher colunas não estiver visível, você
+    > poderá encontrá-la em Gerenciar colunas.
 
    ![](../media/lab-03/image23.png)
 
@@ -345,9 +345,9 @@ selecionar apenas as colunas que precisamos.
 
 25. Selecione **OK**.
 
-   ![](../media/lab-03/image24.png)
+     ![](../media/lab-03/image24.png)
 
-Observe que o processo é como o Power Query. Temos todas as etapas
+     Observe que o processo é como o Power Query. Temos todas as etapas
 gravadas tanto no painel Etapas Aplicadas à direita quanto na exibição
 visual. Vamos renomear a consulta Merge e Habilitar carga, para que os
 dados sejam carregados a partir dessa consulta.
@@ -366,20 +366,20 @@ dados sejam carregados a partir dessa consulta.
 29. Selecione **Salvar** encontrado no canto inferior direito do Editor
     do Power Query.
 
-   ![](../media/lab-03/image25.png)
+    ![](../media/lab-03/image25.png)
 
-Navegaremos até o Editor de consulta de visual. Agora vamos salvar essa
+    Navegaremos até o Editor de consulta de visual. Agora vamos salvar essa
 consulta como uma exibição.
 
-**Observação**: todas as etapas que executamos usando o editor do Power
+    **Observação**: todas as etapas que executamos usando o editor do Power
 Query podem ser executadas usando o editor de consulta Visual também.
 
 30. No menu Editor de consultas Visual, selecione **Salvar como
     exibição**.
 
-   ![](../media/lab-03/image26.png)
+    ![](../media/lab-03/image26.png)
 
-A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta
+    A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta
 SQL está disponível. Você pode revisá-la, se quiser revisar o código
 SQL.
 
@@ -387,14 +387,14 @@ SQL.
 
 32. Selecione **OK** para salvar a exibição.
 
-   ![](../media/lab-03/image27.png)
+    ![](../media/lab-03/image27.png)
 
-Você receberá um alerta assim que a exibição for salva.
+    Você receberá um alerta assim que a exibição for salva.
 
 33. No painel Explorer (à esquerda), expanda **Views.** Temos a exibição
     recém-criada Geo.
 
-   ![](../media/lab-03/image28.png)
+    ![](../media/lab-03/image28.png)
 
 ### Tarefa 3: Criar exibição Reseller usando uma consulta Visual
 
@@ -409,7 +409,7 @@ Visual sem abrir a opção Power Query.
     Consulta Visual. Clique nas reticências ao lado da tabela
     **BuyingGroups (1)** e selecione **Inserir na tela (2)**.
 
-   ![](../media/lab-03/image29.png)
+    ![](../media/lab-03/image29.png)
 
 3. Repita as mesmas etapas para a tabela **Customers**.
 
@@ -438,7 +438,7 @@ tabela superior.
 
 9. Selecione **OK.**
 
-   ![](../media/lab-03/image31.png)
+    ![](../media/lab-03/image31.png)
 
 10. Na **exibição Dados** (painel inferior), clique na **seta dupla** ao
     lado da coluna **BuyingGroups** (última coluna à direita) para
@@ -448,9 +448,9 @@ tabela superior.
 
 12. Selecione **OK**.
 
-   ![](../media/lab-03/image32.png)
+    ![](../media/lab-03/image32.png)
 
-Não precisamos de todas as colunas na tabela Customer. Vamos selecionar
+    Não precisamos de todas as colunas na tabela Customer. Vamos selecionar
 apenas aquelas de que precisamos.
 
 13. No menu de consulta de Visual, selecione **Gerenciar colunas -\>
@@ -489,17 +489,17 @@ apenas aquelas de que precisamos.
 
 15. Selecione **OK**.
 
-   ![](../media/lab-03/image34.png)
-
+    ![](../media/lab-03/image34.png)
+   
 16. Vamos renomear a coluna BuyingGroupName. Na **exibição Dados, clique
     duas vezes no cabeçalho da coluna BuyingGroupName** para torná-lo
     editável.
 
 17. **Renomeie** a coluna como **ResellerCompany**.
 
-   ![](../media/lab-03/image35.png)
+     ![](../media/lab-03/image35.png)
 
-Observe que a tabela Customer tem todas as etapas documentadas. Vamos
+     Observe que a tabela Customer tem todas as etapas documentadas. Vamos
 salvar esta exibição.
 
 18. Precisamos salvar a consulta Customer, pois ela tem todas as etapas.
@@ -508,7 +508,7 @@ salvar esta exibição.
 
 19. Verifique se a opção **Habilitar carga** está marcada.
 
-   ![](../media/lab-03/image36.png)
+    ![](../media/lab-03/image36.png)
 
 **Observação**: A caixa **Customer** deve ter uma borda azul se a opção
 Habilitar carga estiver marcada.
@@ -524,14 +524,14 @@ SQL está disponível. Você pode revê-la, se selecioná-la.
 
 22. Selecione **OK** para salvar a exibição.
 
-   ![](../media/lab-03/image38.png)
+    ![](../media/lab-03/image38.png)
 
 Você receberá um alerta assim que a exibição for salva.
 
 23. No painel Explorer (à esquerda), expanda **Views.** Temos a exibição
     recém-criada Reseller.
 
-   ![](../media/lab-03/image39.png)
+    ![](../media/lab-03/image39.png)
 
 ### Tarefa 4: Criar a exibição Sales usando uma consulta Visual
 
@@ -545,7 +545,7 @@ consulta Visual. Vamos testar esse método.
 1. No menu superior, clique no menu suspenso ao lado de **Nova consulta
     SQL** e depois selecione **Nova consulta visual**.
 
-   ![](../media/lab-03/image40.png)
+    ![](../media/lab-03/image40.png)
 
 2. Na seção **Explorer -\> Table**, precisamos adicionar as tabelas ao
     painel de Consulta Visual. Clique nas reticências ao lado da tabela
@@ -560,14 +560,14 @@ consulta Visual. Vamos testar esse método.
 5. No Editor de consulta Visual, selecione o ícone **Abrir em popup**
     para abrir o Editor do Power Query.
 
-   ![](../media/lab-03/image41.png)
+    ![](../media/lab-03/image41.png)
 
 6. Com a consulta **InvoiceLineItems** selecionada, na faixa de opções,
     selecione **Página Inicial (2) -\> Combinar (3) -\> menu suspenso
     Mesclar consultas (4) -\> Mesclar consultas como novas (5).**
     A caixa de diálogo Mesclar consultas é aberta.
 
-   ![](../media/lab-03/image42.png)
+    ![](../media/lab-03/image42.png)
 
 7. Na **Tabela esquerda para mesclagem**, selecione
     **InvoiceLineItems**.
@@ -581,7 +581,7 @@ consulta Visual. Vamos testar esse método.
 
 11. Selecione **OK.**
 
-   ![](../media/lab-03/image43.png)
+    ![](../media/lab-03/image43.png)
 
 Vamos copiar o código do Power BI Desktop e colá-lo usando o Editor
 Avançado.
@@ -595,7 +595,7 @@ Avançado.
     laboratório anterior, as consultas no painel esquerdo são
     organizadas por fonte de dados.
 
-   ![](../media/lab-03/image44.png)
+    ![](../media/lab-03/image44.png)
 
 14. No painel esquerdo **Consultas**, na pasta **ADLSData** **(1)**,
     selecione a consulta **Sales (2).**
@@ -603,7 +603,7 @@ Avançado.
 15. Na faixa de opções, selecione **Página Inicial -\> Editor Avançado
     (3)**. A caixa de diálogo Editor Avançado é aberta.
 
-   ![](../media/lab-03/image45.png)
+    ![](../media/lab-03/image45.png)
 
 **Observação:** se você não conseguir encontrar o Editor Avançado,
 poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
@@ -615,7 +615,7 @@ poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
 
 18. Selecione **Cancelar** para fechar o Editor Avançado.
 
-   ![](../media/lab-03/image46.png)
+     ![](../media/lab-03/image46.png)
 
 19. **Volte a acessar o navegador** onde o Editor do Power Query está
     aberto.
@@ -625,7 +625,7 @@ poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
 21. Na faixa de opções, selecione **Página Inicial -\> Editor
     Avançado**. A caixa de diálogo Editor Avançado é aberta.
 
-   ![](../media/lab-03/image47.png)
+     ![](../media/lab-03/image47.png)
 
 22. No **fim da linha 2, adicione uma vírgula** (Source =
     Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"}, Invoices,
@@ -636,7 +636,7 @@ poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
 24. Digite **Ctrl+V** no teclado para colar o código copiado do Power BI
     Desktop.
 
-**Observação**: se você estiver trabalhando no ambiente de laboratório,
+    - **Observação**: se você estiver trabalhando no ambiente de laboratório,
 selecione as **reticências(...)** no canto superior direito da tela. Use
 o controle deslizante para **habilitar** **Área de Transferência Nativa
 da VM**. Selecione OK na caixa de diálogo. Depois que terminar de colar
@@ -650,7 +650,7 @@ as consultas, você poderá desabilitar essa opção.
 
 26. Selecione **OK** para salvar as alterações.
 
-   ![](../media/lab-03/image50.png)
+    ![](../media/lab-03/image50.png)
 
    - Se for mais fácil, exclua todo o código no Editor Avançado e cole o
 código abaixo.
@@ -678,7 +678,7 @@ código abaixo.
 29. Clique com o botão direito do mouse na consulta Sales e selecione
     **Habilitar carga** para permitir que a consulta seja carregada.
 
-    ![](../media/lab-03/image51.png)
+     ![](../media/lab-03/image51.png)
 
 30. Selecione **Salvar** para salvar e fechar a caixa de diálogo Power
     Query. Você navegará até o Editor de consulta de visual.
@@ -691,7 +691,7 @@ código abaixo.
 
 33. Selecione **OK (2)** para salvar a exibição.
 
-    ![](../media/lab-03/image52.png)
+     ![](../media/lab-03/image52.png)
 
 Você receberá um alerta assim que a exibição for salva.
 
@@ -709,13 +709,13 @@ código no Editor Avançado.
 1. No menu superior, clique no menu suspenso ao lado de **Nova consulta
     SQL (1)** e depois selecione **Nova consulta visual (2)**.
 
-   ![](../media/lab-03/image54.png)
+    ![](../media/lab-03/image54.png)
 
 2. Na seção Explorer, precisamos adicionar as tabelas ao painel de
     Consulta Visual. Clique nas reticências ao lado da tabela
     **ProductItem (1)** e selecione **Inserir na tela (2)**.
 
-   ![](../media/lab-03/image55.png)
+    ![](../media/lab-03/image55.png)
 
 3. Repita as mesmas etapas para as tabelas **ProductItemGroup** e
     **ProductGroups**.
@@ -730,7 +730,7 @@ código no Editor Avançado.
     suspenso Mesclar consultas (4) -\> Mesclar consultas como novas
     (5).** A caixa de diálogo Mesclar é aberta.
 
-   ![](../media/lab-03/image57.png)
+    ![](../media/lab-03/image57.png)
 
 6. Na **Tabela esquerda para mesclagem**, selecione **ProductItem**.
 
@@ -744,13 +744,13 @@ código no Editor Avançado.
 
 10. Selecione **OK.** Uma nova consulta Merge é criada.
 
-   ![](../media/lab-03/image58.png)
+     ![](../media/lab-03/image58.png)
 
 11. Com a consulta Merge selecionada, selecione **Página Inicial - \>
     Editor Avançado** na faixa de opções. A caixa de diálogo Editor
     Avançado é aberta.
 
-   ![](../media/lab-03/image59.png)
+    ![](../media/lab-03/image59.png)
 
 **Observação:** se você não conseguir encontrar o Editor Avançado,
 poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
@@ -774,7 +774,7 @@ poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
 14. Selecione **OK** para fechar o Editor Avançado. Você voltará para o
     Editor do Power Query.
 
-   ![](../media/lab-03/image60.png)
+    ![](../media/lab-03/image60.png)
 
 15. No painel Consultas à esquerda, **clique duas vezes na consulta
     Merge** para renomeá-la.
@@ -787,7 +787,7 @@ poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
 18. Selecione **Salvar** para salvar e fechar a caixa de diálogo Power
     Query. Você será direcionado à consulta Visual.
 
-   ![](../media/lab-03/image61.png)
+    ![](../media/lab-03/image61.png)
 
 19. No menu de consultas Visual, selecione **Salvar como exibição**. A
     caixa de diálogo Salvar como exibição é aberta. Observe que a
@@ -797,7 +797,7 @@ poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
 
 21. Selecione **OK** para salvar a exibição.
 
-   ![](../media/lab-03/image62.png)
+    ![](../media/lab-03/image62.png)
 
 Você receberá um alerta assim que a exibição for salva.
 
