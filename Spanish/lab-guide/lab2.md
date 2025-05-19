@@ -831,7 +831,7 @@ beschrieben werden:
 - [Blog zur Dataverse- und Microsoft
   Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Alle Rechte vorbehalten.
+© 2025 Microsoft Corporation. Alle Rechte vorbehalten.
 
 Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
 folgenden Bedingungen zu:
