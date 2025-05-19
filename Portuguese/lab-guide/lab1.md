@@ -305,9 +305,7 @@ o relatório e passar para as próximas etapas.
     -   **Nome de usuário do Snowflake:** TE_SNOWFLAKE1
     -   **Senha do Snowflake:** 8UpfRpExVDXv2AC1
 
-*Observação: Se você encontrar problemas para se conectar ao Snowflake
-usando as credenciais dos detalhes do ambiente, use as credenciais de
-backup fornecidas na guia Ambiente.*
+    *Observação: Se você encontrar problemas para se conectar ao Snowflake usando as credenciais dos detalhes do ambiente, use as credenciais de backup fornecidas na guia Ambiente.*
 
 14. A pasta SnowflakeData tem a dimensão Supplier e o fato PO
     (Order/Spend).
@@ -321,21 +319,21 @@ backup fornecidas na guia Ambiente.*
     janela Consultas. A seleção dessa consulta solicitará que você
     forneça as credenciais. Clique em **Editar Credenciais**.
 
-   ![](../media/lab-01/image24.png)
+    ![](../media/lab-01/image24.png)
 
 16. Selecione a opção **Conta da Microsoft** e clique em **Entrar**.
     Insira o Nome de usuário e a Senha fornecidos abaixo e selecione
     Conectar.
 
-   -   **Email/Nome de usuário:** encontrado na guia Ambiente
+    - **Email/Nome de usuário:** encontrado na guia Ambiente
    
-   -   **Senha:** encontrada na guia Ambiente
+    - **Senha:** encontrada na guia Ambiente
 
-   ![](../media/lab-01/image25.png)
+    ![](../media/lab-01/image25.png)
 
 17. Observe que a pasta **SharepointData** tem a dimensão People.
 
-   ![](../media/lab-01/image26.png)
+    ![](../media/lab-01/image26.png)
 
 Agora sabemos com o que estamos lidando. Nos laboratórios a seguir,
 criaremos um Power Query semelhante usando o Fluxo de Dados Gen2 e uma
