@@ -56,7 +56,7 @@ sistemas, limpa-os e combina-os. Você extrai dados das seguintes fontes:
     como um arquivo de exportação em uma pasta do SharePoint. São
     atualizados todas as manhãs, às 9h.
 
-   ![](media/image4.jpeg)
+![](media/image4.jpeg)
 
 No momento, você está criando um modelo semântico no Power BI Premium
 que extrai os dados dos sistemas de origem acima para que você possa
