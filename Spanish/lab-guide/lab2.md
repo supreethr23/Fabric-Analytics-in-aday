@@ -1,8 +1,23 @@
 # Microsoft Fabric Fabric Analyst in a Day - Laboratorio 2
 
+![](../media/lab-02/main2.png)
 
-
-
+# Contenido
+- Presentación
+- Licencia de Fabric
+    - Tarea 1: Habilitar una licencia de prueba de Microsoft Fabric
+- Área de trabajo de Fabric
+    - Tarea 2: Crear un área de trabajo de Fabric
+    - Tarea 3: Crear un Lakehouse
+- Información general de las experiencias de Fabric
+    - Tarea 4: Experiencia de Data Factory
+    - Tarea 5: Experiencia de Industry Solutions
+    - Tarea 6: Experiencia de Real-Time Intelligence
+    - Tarea 7: Experiencia de Data Engineering
+    - Tarea 8: Experiencia de Data Science
+    - Tarea 9: Experiencia de Data Warehouse
+    - Tarea 10: Experiencia de bases de datos
+- Referencias
 
 # Einführung 
 
@@ -36,26 +51,24 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 2. Kopieren Sie den Benutzernamen, fügen Sie ihn im Feld „E-Mail" des
     Dialogfelds ein, und wählen Sie „Senden" aus.
 
-    - **E-Mail/Benutzername:** Befindet sich auf der Registerkarte
-      „Umgebung"
+    - **E-Mail/Benutzername:** <inject key="AzureAdUserEmail"></inject>
 
-        ![](images2/media/image6.png)
+        ![](../media/lab-02/image6.png)
 
 3. Auf der Registerkarte **Bei Microsoft Azure anmelden** sehen Sie den
     Anmeldebildschirm, in dem Sie die folgende **EmailUsername**
     eingeben und dann auf **Weiter** klicken.
 
-    - **E-Mail/Benutzername:** Befindet sich auf der Registerkarte
-      „Umgebung"
+    - **E-Mail/Benutzername:** <inject key="AzureAdUserEmail"></inject>
 
-        ![](images2/media/image7.png)
+        ![](../media/lab-02/image7.png)
 
 4. Geben Sie nun das folgende **Kennwort** ein, und klicken Sie auf
     **Anmelden.**
 
-    - **Kennwort:** Befindet sich auf der Registerkarte „Umgebung"
+    - **Kennwort:** <inject key="AzureAdUserPassword"></inject>
 
-        ![](images2/media/image8.png)
+        ![](../media/lab-02/image8.png)
 
 5. Sie werden zur bereits bekannten **Startseite des Power
     BI-Dienstes** geleitet.
@@ -72,21 +85,21 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 8. Wählen Sie **Kostenlose Testversion** aus.
 
-    ![](images2/media/image9.png)
+    ![](../media/lab-02/image9.png)
 
 9. Das Dialogfeld „Upgrade auf eine kostenlose Testversion von
     Microsoft Fabric" wird geöffnet. Wählen Sie **Aktivieren** aus.
 
-    ![](images2/media/image10.png)
+    ![](../media/lab-02/image10.png)
 
 10. Das Dialogfeld „Erfolgreiches Upgrade auf Microsoft Fabric" wird
     geöffnet. Wählen Sie Fabric Home Page aus.
 
-    ![](images2/media/image11.png)
+    ![](../media/lab-02/image11.png)
 
 11. Sie werden zur **Startseite von Microsoft** **Fabric** geleitet.
 
-    ![](images2/media/image12.png)
+    ![](../media/lab-02/image12.png)
 
 # Fabric-Arbeitsbereich
 
@@ -98,13 +111,12 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 2. Klicken Sie auf **+ Neuer Arbeitsbereich** **(2)** unten im Popup-Menü.
 
-    ![](images2/media/image13.png)
+    ![](../media/lab-02/image13.png)
 
 3. Rechts im Browser wird das Dialogfeld **Arbeitsbereich erstellen**
     geöffnet.
 
-4. Geben Sie im Feld **Name** „FAIAD_UserID" ein (Sie finden dieseauf
-    der Registerkarte „Umgebung").
+4. Geben Sie im Feld **Name** „**FAIAD_<inject key="Deployment ID" enableCopy="false"/>**" ein (Sie finden dieseauf der Registerkarte „Umgebung").
 
     ***Hinweis:** Der Name des Arbeitsbereichs muss eindeutig sein. Achten
     Sie darauf, dass unter dem Feld für den Namen ein grünes Häkchen mit dem
@@ -115,7 +127,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 6. Klicken Sie auf **Erweitert**, um den Abschnitt zu erweitern.
 
-    ![](images2/media/image14.png)
+    ![](../media/lab-02/image14.png)
 
 7. Überprüfen Sie unter **Lizenzmodus**, dass die Option
     **Testversion** ausgewählt ist. (Standardmäßig ist dies der Fall.)
@@ -123,7 +135,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 8. Erstellen Sie den neuen Arbeitsbereich durch Klicken auf
     **Übernehmen**.
 
-    ![](images2/media/image15.png)
+    ![](../media/lab-02/image15.png)
 
 Ein neuer Arbeitsbereich wird erstellt, und Sie werden zu diesem
 weitergeleitet. Als Nächstes importieren wir Daten aus verschiedenen
@@ -141,7 +153,7 @@ Daten für Berichte. Erstellen wir zunächst ein Lakehouse.
     können Sie ein neues Lakehouse erstellen, um Ihre Big Data
     zu speichern, abzufragen und zu verwalten.
 
-    ![](images2/media/image16.png)
+    ![](../media/lab-02/image16.png)
 
 3. Das Dialogfeld „Neues Lakehouse" wird angezeigt. Geben Sie
     **lh_FAIAD** in das Textfeld „Name" ein.
@@ -159,7 +171,7 @@ Daten für Berichte. Erstellen wir zunächst ein Lakehouse.
 4. Wählen Sie **Erstellen** aus
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](images2/media/image17.png)
+incorrect.](../media/lab-02/image17.png)
 
     Das Lakehouse wird in kurzer Zeit erstellt, und Sie werden zur
     Lakehouse-Oberfläche weitergeleitet. Beachten Sie, dass links unter dem
@@ -173,7 +185,7 @@ incorrect.](images2/media/image17.png)
     zur Auswahl. In den folgenden Übungen werden einige dieser Möglichkeiten
     vorgestellt.
 
-    ![](images2/media/image18.png)
+    ![](../media/lab-02/image18.png)
 
 # Übersicht über die Funktionsbereiche in Fabric
 
@@ -185,11 +197,11 @@ incorrect.](images2/media/image17.png)
     Solutions, Real-Time Intelligence, Data Engineering, Data Science
     und Data Warehouse. Untersuchen wir dies genauer .
 
-    ![](images2/media/image19.png)
+    ![](../media/lab-02/image19.png)
 
 2. Wählen Sie **Data Factory** aus.
 
-    ![](images2/media/image20.png)
+    ![](../media/lab-02/image20.png)
 
 3. Sie werden zur Data Factory-Startseite weitergeleitet. Im Folgenden
     finden Sie eine ausführliche Erläuterung der Abschnitte, die Sie
@@ -279,21 +291,21 @@ incorrect.](images2/media/image17.png)
         erfahren Sie, wie Sie Benutzerdatenfunktionen erstellen, die zum
         Verwalten und Transformieren von Benutzerdaten nützlich sind.
 
-    ![](images2/media/image21.png)
+    ![](../media/lab-02/image21.png)
 
 4. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück
     zu Workloads**. Auf diese Weise gelangen Sie zur
     Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte
     erkunden können.
 
-    ![](images2/media/image22.png)
+    ![](../media/lab-02/image22.png)
 
 ## Aufgabe 5: Industry Solutions-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf **Industry Solutions**,
     um fortzufahren.
 
-    ![](images2/media/image23.png)
+    ![](../media/lab-02/image23.png)
 
 2. Sie werden zur Startseite von Industry Solutions weitergeleitet.
     Nachfolgend finden Sie eine detaillierte Übersicht über die
@@ -366,14 +378,14 @@ incorrect.](images2/media/image17.png)
     Workloads". Auf diese Weise gelangen Sie zur Workloads-Hauptseite,
     auf der Sie andere Tools oder Abschnitte erkunden können.
 
-    ![](images2/media/image22.png)
+    ![](../media/lab-02/image22.png)
 
 ## Aufgabe 6: Real-Time Intelligence-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf **Real-Time
     Intelligence**, um fortzufahren.
 
-    ![](images2/media/image24.png)
+    ![](../media/lab-02/image24.png)
 
 2. Sie werden zur Startseite von Real-Time Intelligence weitergeleitet.
     Nachfolgend finden Sie eine detaillierte Übersicht über die
@@ -439,20 +451,20 @@ incorrect.](images2/media/image17.png)
         „Öffnen", um mit Aktiviatorkonzepten zu beginnen und das Tool
         effektiv zu nutzen.
 
-    ![](images2/media/image25.png)
+    ![](../media/lab-02/image25.png)
 
 3. Klicken Sie in der oberen linken Ecke des Bildschirms auf „Zurück zu
     Workloads". Auf diese Weise gelangen Sie zur Workloads-Hauptseite,
     auf der Sie andere Tools oder Abschnitte erkunden können.
 
-    ![](images2/media/image22.png)
+    ![](../media/lab-02/image22.png)
 
 ## Aufgabe 7: Data Engineering-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf „Data Engineering", um
     fortzufahren.
 
-    ![](images2/media/image26.png)
+    ![](../media/lab-02/image26.png)
 
 2. Sie werden zur Startseite von **Data Engineering** weitergeleitet.
     Nachfolgend finden Sie eine detaillierte Übersicht über die
@@ -536,21 +548,21 @@ incorrect.](images2/media/image17.png)
         Schaltfläche „Öffnen", um zu erfahren, wie Sie eine API für GraphQL
         erstellen.
 
-    ![](images2/media/image27.png)
+    ![](../media/lab-02/image27.png)
 
 3. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück
     zu Workloads**. Auf diese Weise gelangen Sie zur
     Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte
     erkunden können.
 
-    ![](images2/media/image22.png)
+    ![](../media/lab-02/image22.png)
 
 ## Aufgabe 8: Data Science-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf **Data Science**, um
     fortzufahren.
 
-    ![](images2/media/image28.png)
+    ![](../media/lab-02/image28.png)
 
 2. Sie werden zur Startseite von **Data Science** weitergeleitet.
     Nachfolgend finden Sie eine detaillierte Übersicht über die
@@ -610,21 +622,21 @@ incorrect.](images2/media/image17.png)
     e. **Erste Schritte mit Notebooks:** Klicken Sie auf die Schaltfläche
         „Öffnen", um zu erfahren, wie Sie mit Notebooks beginnen können.
 
-    ![](images2/media/image29.png)
+    ![](../media/lab-02/image29.png)
 
 3. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück
     zu Workloads**. Auf diese Weise gelangen Sie zur
     Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte
     erkunden können.
 
-    ![](images2/media/image22.png)
+    ![](../media/lab-02/image22.png)
 
 ## Aufgabe 9: Data Warehouse-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf **Data Warehouse**, um
     fortzufahren.
 
-    ![](images2/media/image30.png)
+    ![](../media/lab-02/image30.png)
 
 2. Sie werden zur Startseite von Data Warehouse weitergeleitet.
     Nachfolgend finden Sie eine detaillierte Übersicht über die
@@ -686,21 +698,21 @@ incorrect.](images2/media/image17.png)
         „Öffnen", um zu erfahren, wie Sie ein Warehouse zum Analysieren von
         Daten verwenden können.
 
-    ![](images2/media/image31.png)
+    ![](../media/lab-02/image31.png)
 
 3. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück
     zu Workloads**. Auf diese Weise gelangen Sie zur
     Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte
     erkunden können.
 
-    ![](images2/media/image22.png)
+    ![](../media/lab-02/image22.png)
 
 ## Aufgabe 10: Datenbanken-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf **Databases**, um
     fortzufahren.
 
-    ![](images2/media/image32.png)
+    ![](../media/lab-02/image32.png)
 
 2. Sie werden zur Datenbanken-Startseite weitergeleitet. Im Folgenden
     finden Sie eine detaillierte Übersicht über die Abschnitte, die
@@ -740,13 +752,13 @@ incorrect.](images2/media/image17.png)
     c. **Datenbankvorlagen:** Durchsuchen Sie eine Bibliothek mit
         vorgefertigten Vorlagen gängiger Datenbankdesigns
 
-    ![](images2/media/image33.png)
+    ![](../media/lab-02/image33.png)
 
 3. Klicken Sie in der oberen linken Ecke des Bildschirms auf „Zurück zu
     Workloads". Auf diese Weise gelangen Sie zur Workloads-Hauptseite,
     auf der Sie andere Tools oder Abschnitte erkunden können.
 
-    ![](images2/media/image22.png)
+    ![](../media/lab-02/image22.png)
 
 In dieser Übung haben wir die Fabric-Oberfläche kennengelernt und einen
 Fabric-Arbeitsbereich und ein Lakehouse erstellt. In der nächsten Übung
@@ -760,7 +772,7 @@ Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten
 Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie
 in der Hilfe (?) Links zu praktischen Informationen.
 
-![](images2/media/image34.png)
+![](../media/lab-02/image34.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit
 Microsoft Fabric.
