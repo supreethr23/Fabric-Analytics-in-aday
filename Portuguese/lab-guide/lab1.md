@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 1
 
+   ![](../media/lab-01/Lab1Image)
+
 # Sumário
 
 - Estrutura do documento
