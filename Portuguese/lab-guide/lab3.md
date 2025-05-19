@@ -326,7 +326,7 @@ selecionar apenas as colunas que precisamos.
     > **Observação:** se a opção Escolher colunas não estiver visível, você
     > poderá encontrá-la em Gerenciar colunas.
 
-   ![](../media/lab-03/image23.png)
+    ![](../media/lab-03/image23.png)
 
 24. A caixa de diálogo Escolher colunas é aberta. **Desmarque** as
     colunas a seguir.
