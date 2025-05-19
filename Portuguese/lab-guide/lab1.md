@@ -235,11 +235,8 @@ Reseller.
     mencionado na declaração do problema:
 
     -   Snowflake
-
     -   SharePoint
-
     -   ADLS Gen2
-
     -   Dataverse
 
 3. Selecione **Fechar** para fechar a caixa de diálogo Configurações da
@@ -265,13 +262,10 @@ Reseller.
 
 7. Clique em **Entrar** para fazer login na sua conta.
 
-8. Você pode inserir as credenciais para a fonte de dados do Dataverse
-    inserindo o **Nome de usuário** e a **Senha**. As credenciais são
-    fornecidas abaixo. Selecione **Conectar**.
+8. Você pode inserir as credenciais para a fonte de dados do Dataverse inserindo o **Nome de usuário** e a **Senha**. As credenciais são fornecidas abaixo. Selecione **Conectar**.
 
--   Email/Nome de usuário: **encontrado na guia Ambiente**
-
--   Senha: **encontrada na guia Ambiente**
+    -   Email/Nome de usuário: **encontrado na guia Ambiente**
+    -   Senha: **encontrada na guia Ambiente**
 
 9. Clique na Consulta **ADLS Base Folder** na janela Consultas. Para
     selecionar essa consulta, forneça as credenciais. Clique em **Editar
@@ -283,7 +277,7 @@ Reseller.
     acesso compartilhado)** e insira o **token SAS** fornecido abaixo.
     Em seguida, selecione **Conectar**.
 
--   **Token SAS:** encontrado na guia Ambiente
+    -   **Token SAS:** encontrado na guia Ambiente
 
    ![](images1/media/image22.png)
 
@@ -306,15 +300,14 @@ Reseller.
     A seleção dessa consulta solicitará que você forneça as credenciais.
     Clique em **Editar Credenciais**.
 
-   ![](images1/media/image23.png)
+    ![](images1/media/image23.png)
 
 13. Insira o **Nome de usuário do Snowflake** e a **Senha do Snowflake**
     fornecidos abaixo. Use essas credenciais para conectar todas as
     tabelas do Snowflake ao Snowflake e selecione Conectar.
 
--   **Nome de usuário do Snowflake:** TE_SNOWFLAKE1
-
--   **Senha do Snowflake:** 8UpfRpExVDXv2AC1
+    -   **Nome de usuário do Snowflake:** TE_SNOWFLAKE1
+    -   **Senha do Snowflake:** 8UpfRpExVDXv2AC1
 
 *Observação: Se você encontrar problemas para se conectar ao Snowflake
 usando as credenciais dos detalhes do ambiente, use as credenciais de
@@ -323,10 +316,10 @@ backup fornecidas na guia Ambiente.*
 14. A pasta SnowflakeData tem a dimensão Supplier e o fato PO
     (Order/Spend).
 
--   A **dimensão Supplier** é criada mesclando a consulta Suppliers com
-    a consulta SupplierCategories.
-
--   O **fato PO** é criado mesclando PO com a consulta PO Line Items.
+   -   A **dimensão Supplier** é criada mesclando a consulta Suppliers com
+       a consulta SupplierCategories.
+   
+   -   O **fato PO** é criado mesclando PO com a consulta PO Line Items.
 
 15. Para a fonte de dados SharePoint, selecione a consulta **People** na
     janela Consultas. A seleção dessa consulta solicitará que você
@@ -338,9 +331,9 @@ backup fornecidas na guia Ambiente.*
     Insira o Nome de usuário e a Senha fornecidos abaixo e selecione
     Conectar.
 
--   **Email/Nome de usuário:** encontrado na guia Ambiente
-
--   **Senha:** encontrada na guia Ambiente
+   -   **Email/Nome de usuário:** encontrado na guia Ambiente
+   
+   -   **Senha:** encontrada na guia Ambiente
 
    ![](images1/media/image25.png)
 
