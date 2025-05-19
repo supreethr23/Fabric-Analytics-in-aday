@@ -143,7 +143,7 @@ selecionado.
 16. Marque a caixa de seleção ao lado do nome para salvar a alteração
     **(3)**.
 
-   ![](../media/lab-03/image10.png)
+    ![](../media/lab-03/image10.png)
 
 17. Da mesma forma, renomeie os nomes de atalhos como abaixo:
 
