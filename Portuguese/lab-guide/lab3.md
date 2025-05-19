@@ -98,7 +98,7 @@ Windows.
 
 11. Selecione **Avançar (6)** na parte inferior direita da tela.
 
-   ![](../media/lab-03/image8.png)
+    ![](../media/lab-03/image8.png)
 
 12. Você será conectado ao ADLS Gen2 com a estrutura de diretórios
     exibida no painel esquerdo. Expanda **Delta-Parquet-Format-FY25
