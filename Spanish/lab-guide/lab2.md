@@ -19,879 +19,861 @@
     - Tarea 10: Experiencia de bases de datos
 - Referencias
 
-# Einführung 
+# Presentación 
 
-Heute geht es um die verschiedenen Hauptfunktionen von Microsoft Fabric.
-In diesem Einführungsworkshop werden die verschiedenen Funktionsbereiche
-und Bestandteile von Fabric vorgestellt. Am Ende des Workshops erfahren
-Sie zudem, wie Sie Lakehouse, Dataflow Gen2, Data Pipeline, DirectLake
-und mehr verwenden.
+Hoy tendrá ocasión de aprender diversas características clave de
+Microsoft Fabric. Este es un taller introductorio destinado a
+presentarle las diversas experiencias de productos y artículos
+disponibles en Fabric. Al final de este taller, habrá aprendido a
+utilizar almacenes de lago de datos, flujos de datos Gen2,
+canalizaciones de datos, DirectLake, etc.
 
-Am Ende dieser Übung haben Sie Folgendes gelernt:
+Al final de este laboratorio, habrá aprendido:
 
-- Wie Sie einen Fabric-Arbeitsbereich erstellen
+- Cómo crear un área de trabajo de Fabric
 
-- Wie Sie ein Lakehouse erstellen
+- Cómo crear un lakehouse
 
-# Fabric-Lizenz
+# Licencia de Fabric
 
-## Aufgabe 1: Lizenz für Testversion von Microsoft Fabric aktivieren
+## Tarea 1: Habilitar una licencia de prueba de Microsoft Fabric
 
-1. Öffnen Sie den **Browser**, und wechseln Sie zum [Microsoft Power
-    BI-Portal](https://app.powerbi.com/). Die Anmeldeseite wird
-    angezeigt.
+1. Abra el **explorador** y vaya al [Portal de Microsoft Power
+    BI](https://app.powerbi.com/). Se le llevará a la página de inicio
+    de sesión.
 
-    ***Hinweis:** Wenn Sie nicht die Übungsumgebung nutzen, werden Sie
-    automatisch angemeldet.*
+    ***Nota:** Si está utilizando el entorno de laboratorio, es posible que
+    su sesión se inicie automáticamente.*
 
-    ***Hinweis:** Wenn Sie die Übungsumgebung nicht nutzen und bereits ein
-    Power BI-Konto haben, können Sie den Browser im privaten
-    Modus/Inkognito-Modus verwenden.*
+    ***Nota:** Si no está utilizando el entorno de laboratorio y tiene una
+    cuenta de Power BI existente, es posible que desee utilizar el
+    explorador en modo privado/incógnito.*
 
-2. Kopieren Sie den Benutzernamen, fügen Sie ihn im Feld „E-Mail" des
-    Dialogfelds ein, und wählen Sie „Senden" aus.
+2. Copie el nombre de usuario y péguelo en el campo Correo electrónico
+    del cuadro de diálogo y seleccione Enviar.
 
-    - **E-Mail/Benutzername:** <inject key="AzureAdUserEmail"></inject>
+    - **Correo electrónico/nombre de usuario:** <inject key="AzureAdUserEmail"></inject>
 
-        ![](../media/lab-02/image6.png)
+      ![](../media/lab-02/image6.png)
 
-3. Auf der Registerkarte **Bei Microsoft Azure anmelden** sehen Sie den
-    Anmeldebildschirm, in dem Sie die folgende **EmailUsername**
-    eingeben und dann auf **Weiter** klicken.
+3. En la pestaña de **inicio de sesión de Microsoft Azure**, verá la
+    pantalla de inicio de sesión. Introduzca el siguiente
+    **EmailUsername** y luego haga clic en **Siguiente**.
 
-    - **E-Mail/Benutzername:** <inject key="AzureAdUserEmail"></inject>
+    - **Correo electrónico/nombre de usuario**: <inject key="AzureAdUserEmail"></inject>
 
-        ![](../media/lab-02/image7.png)
+      ![](../media/lab-02/image7.png)
 
-4. Geben Sie nun das folgende **Kennwort** ein, und klicken Sie auf
-    **Anmelden.**
+4. Ahora introduzca la siguiente **contraseña** y haga clic en
+    **Iniciar sesión.**
 
-    - **Kennwort:** <inject key="AzureAdUserPassword"></inject>
+    - **Contraseña:** <inject key="AzureAdUserPassword"></inject>
 
-        ![](../media/lab-02/image8.png)
+      ![](../media/lab-02/image8.png)
 
-5. Sie werden zur bereits bekannten **Startseite des Power
-    BI-Dienstes** geleitet.
+5. Se le dirigirá a la **página principal del servicio Power BI** que
+    ya conoce.
 
-6. Es wird angenommen, dass Ihnen der Aufbau des Power BI-Dienstes
-    bekannt ist. Bei Fragen wenden Sie sich einfach an den Kursleiter.
+6. Asumimos que está familiarizado con el diseño del servicio Power BI.
+    Si tiene alguna pregunta, no dude en consultar al instructor.
 
-    Sie befinden sich in **Mein Arbeitsbereich**. Wenn Sie mit
-    Fabric-Elementen arbeiten möchten, benötigen Sie eine Testlizenz und
-    einen Arbeitsbereich mit zugewiesener Fabric-Lizenz. Lassen Sie uns das
-    einrichten.
+    Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos
+    de Fabric, necesitará una licencia de prueba y un área de trabajo que
+    tenga una licencia de Fabric asignada. Configurémoslo.
 
-7. Klicken Sie oben rechts im Bildschirm auf das **Benutzersymbol**.
+7. En la esquina superior derecha de la pantalla, seleccione el
+    **icono** del **usuario**.
 
-8. Wählen Sie **Kostenlose Testversion** aus.
+8. Seleccione **Prueba gratuita**.
 
     ![](../media/lab-02/image9.png)
 
-9. Das Dialogfeld „Upgrade auf eine kostenlose Testversion von
-    Microsoft Fabric" wird geöffnet. Wählen Sie **Aktivieren** aus.
+9. Se abre un cuadro de diálogo para actualizar a una prueba de
+    Microsoft Fabric gratuita. Seleccione **Activar**.
 
     ![](../media/lab-02/image10.png)
 
-10. Das Dialogfeld „Erfolgreiches Upgrade auf Microsoft Fabric" wird
-    geöffnet. Wählen Sie Fabric Home Page aus.
+10. Se abre el cuadro de diálogo Actualizado correctamente a Microsoft
+    Fabric. Seleccione **Fabric Home Page.**
 
     ![](../media/lab-02/image11.png)
 
-11. Sie werden zur **Startseite von Microsoft** **Fabric** geleitet.
+11. Se le dirigirá a la **página Inicio de Microsoft** **Fabric**.
 
     ![](../media/lab-02/image12.png)
 
-# Fabric-Arbeitsbereich
+# Área de trabajo de Fabric
 
-## Aufgabe 2: Fabric-Arbeitsbereich erstellen
+## Tarea 2: Crear un área de trabajo de Fabric
 
-1. Erstellen wir jetzt einen Arbeitsbereich mit einer Fabric-Lizenz.
-    Wählen Sie in der Navigationsleiste links die Option
-    **Arbeitsbereiche (1)** aus. Ein Dialogfeld wird geöffnet.
+1. Creemos ahora un área de trabajo con una licencia de Fabric.
+    Seleccione **Áreas de trabajo** **(1)** en la barra de navegación de la
+    izquierda. Se abre un cuadro de diálogo.
 
-2. Klicken Sie auf **+ Neuer Arbeitsbereich** **(2)** unten im Popup-Menü.
+2. Haga clic en **+ Nueva área de trabajo** **(2)** que se encuentra en la
+    parte inferior del menú emergente.
 
     ![](../media/lab-02/image13.png)
 
-3. Rechts im Browser wird das Dialogfeld **Arbeitsbereich erstellen**
-    geöffnet.
+3. El cuadro de diálogo **Crear un área de trabajo** se abre en el lado
+    derecho del explorador.
 
-4. Geben Sie im Feld **Name** „**FAIAD_<inject key="Deployment ID" enableCopy="false"/>**" ein (Sie finden dieseauf der Registerkarte „Umgebung").
+4. En el campo **Nombre**, introduzca **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** (que se encuentra en la pestaña Entorno).
 
-    ***Hinweis:** Der Name des Arbeitsbereichs muss eindeutig sein. Achten
-    Sie darauf, dass unter dem Feld für den Namen ein grünes Häkchen mit dem
-    Text „Dieser Name ist verfügbar" zu sehen ist.*
+    ***Nota:** El nombre del área de trabajo debe ser único. Asegúrese de
+    que aparezca una marca de verificación verde con "Este nombre está
+    disponible" debajo del campo Nombre.*
 
-5. Wenn Sie möchten, können Sie eine Beschreibung des Arbeitsbereichs
-    eingeben. Dieses Feld ist optional.
+5. Si lo desea, puede escribir una Descripción para el área de trabajo.
+    Este campo es opcional.
 
-6. Klicken Sie auf **Erweitert**, um den Abschnitt zu erweitern.
+6. Haga clic en **Avanzado** para expandir la sección.
 
     ![](../media/lab-02/image14.png)
 
-7. Überprüfen Sie unter **Lizenzmodus**, dass die Option
-    **Testversion** ausgewählt ist. (Standardmäßig ist dies der Fall.)
+7. En **Modo de licencia**, asegúrese de que **Prueba** esté
+    seleccionado. (Debería estar seleccionado por defecto).
 
-8. Erstellen Sie den neuen Arbeitsbereich durch Klicken auf
-    **Übernehmen**.
+8. Seleccione **Aplicar** para crear un nuevo área de trabajo.
 
     ![](../media/lab-02/image15.png)
 
-Ein neuer Arbeitsbereich wird erstellt, und Sie werden zu diesem
-weitergeleitet. Als Nächstes importieren wir Daten aus verschiedenen
-Quellen in ein Lakehouse, entwickeln damit ein Modell und nutzen die
-Daten für Berichte. Erstellen wir zunächst ein Lakehouse.
+    Se crea un nuevo área de trabajo y podrá ir a él. Traeremos datos de los
+    diferentes orígenes de datos a un Lakehouse y utilizaremos los datos del
+    Lakehouse para crear nuestro modelo y generar informes en él. El primer
+    paso es crear un Lakehouse.
 
-## Aufgabe 3: Lakehouse erstellen
+## Tarea 3: Crear un Lakehouse
 
-1. Suchen Sie im neu erstellten Arbeitsbereich **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** im
-    linken Navigationsbereich die Schaltfläche **+ Neues Element (1)**.
-    Hier können Sie neue Elemente in Ihrem Arbeitsbereich erstellen.
+1. En el espacio de trabajo **FAIAD_Username** recién creado, localice
+    el botón **+ Nuevo elemento (1)** en el panel de navegación de la
+    izquierda. Aquí es donde puede comenzar a crear nuevos elementos en
+    su área de trabajo.
 
-2. Geben Sie im Suchfeld **Lakehouse (2)** ein, und wählen Sie in den
-    Suchergebnissen die Option **Lakehouse (3)** aus. Auf diese Weise
-    können Sie ein neues Lakehouse erstellen, um Ihre Big Data
-    zu speichern, abzufragen und zu verwalten.
+2. En el cuadro de búsqueda, escriba **Lakehouse (2)** y, en los
+    resultados de búsqueda, seleccione la opción **Lakehouse (3)**. Esto
+    le permitirá crear un nuevo almacén de lago de datos para almacenar,
+    consultar y administrar sus macrodatos.
 
     ![](../media/lab-02/image16.png)
 
-3. Das Dialogfeld „Neues Lakehouse" wird angezeigt. Geben Sie
-    **lh_FAIAD** in das Textfeld „Name" ein.
+3. Aparecerá un cuadro de diálogo Nuevo lakehouse. Escriba **lh_FAIAD**
+    en el cuadro de texto Nombre.
 
-    ***Hinweis:** „lh" bezieht sich hier auf Lakehouse. Die Buchstaben „lh"
-    werden vorangestellt, damit das Lakehouse leichter erkannt und gefunden
-    werden kann.*
+    ***Nota:** lh aquí se refiere al Lakehouse. Vamos a anteponer lh para
+    que sea fácil de identificar y buscar.*
 
-    ***Hinweis:** Die Previewfunktion von **Lakehouse-Schemas** ist sehr
-    interessant und sollte daher beachtet werden. Da sie sich im Zustand
-    **Vorschauversion** befindet, werden wir sie ignorieren, um unerwünschte
-    Auswirkungen auf die Übungserfahrung zu verhindern. Sobald die Funktion
-    allgemein verfügbar ist, wird sie in diese Übung integriert.*
+    ***Nota:** La característica en vista previa (GB) de **Esquemas de
+    Lakehouse** es muy interesante, por lo que es algo que debe tener en
+    cuenta. Dado que está en **Versión preliminar**, lo ignoraremos para que
+    no haya un impacto negativo en la experiencia del laboratorio. Una vez
+    que la característica esté disponible de manera general, lo
+    incorporaremos a este laboratorio.*
 
-4. Wählen Sie **Erstellen** aus
+4. Seleccione **Crear**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](../media/lab-02/image17.png)
+    ![](../media/lab-02/image17.png)
 
-    Das Lakehouse wird in kurzer Zeit erstellt, und Sie werden zur
-    Lakehouse-Oberfläche weitergeleitet. Beachten Sie, dass links unter dem
-    Arbeitsbereich jetzt das Lakehouse-Symbol zu sehen ist. Durch Klicken
-    auf dieses Symbol können Sie das Lakehouse jederzeit aufrufen.
+    En unos momentos, se crea un lakehouse y se le dirigirá a la interfaz
+    del mismo. En el panel izquierdo, observe que debajo de su área de
+    trabajo tendrá el icono del lakehouse. Puede navegar fácilmente hasta el
+    almacén de lago de datos si hace clic en este icono en cualquier
+    momento.
 
-    Im Lakehouse-Explorer werden Tabellen und Dateien angezeigt. In einem
-    Lakehouse können im Abschnitt mit den Dateien auch Dateien von Azure
-    Data Lake Storage Gen2 stehen, oder mit einem Dataflow können Daten in
-    Lakehouse-Tabellen geladen werden. Es stehen mehrere Möglichkeiten
-    zur Auswahl. In den folgenden Übungen werden einige dieser Möglichkeiten
-    vorgestellt.
+    Dentro del explorador del almacén de lago de datos, verá Tables y Files.
+    El almacén de lago de datos podría exponer archivos Azure Data Lake
+    Storage Gen2 en la sección de archivos o un flujo de datos podría cargar
+    datos en las tablas del almacén de lago de datos. Existen varias
+    opciones disponibles. Le mostraremos algunas de las opciones en las
+    siguientes prácticas de laboratorio.
 
     ![](../media/lab-02/image18.png)
 
-# Übersicht über die Funktionsbereiche in Fabric
+# Información general de las experiencias de Fabric
 
-## Aufgabe 4: Data Factory-Funktionsbereich
+## Tarea 4: Experiencia de Data Factory
 
-1. Wählen Sie links das Workloads-Symbol aus. Ein Dialogfeld mit einer
-    Liste der Funktionsbereiche von Fabric wird geöffnet. Die Liste der
-    Funktionsbereiche umfasst Power BI, Data Factory, Industry
-    Solutions, Real-Time Intelligence, Data Engineering, Data Science
-    und Data Warehouse. Untersuchen wir dies genauer .
+1. Seleccione el icono de Cargas de trabajo en la parte izquierda de su
+    pantalla. Se abrirá un cuadro de diálogo con la lista de
+    experiencias de Fabric. La lista de experiencias incluye Power BI,
+    Data Factory, Industry Solutions, Real-Time Intelligence, Data
+    Engineering, Data Science y Data Warehouse. Exploremos.
 
     ![](../media/lab-02/image19.png)
 
-2. Wählen Sie **Data Factory** aus.
+2. Seleccione **Data Factory**.
 
     ![](../media/lab-02/image20.png)
 
-3. Sie werden zur Data Factory-Startseite weitergeleitet. Im Folgenden
-    finden Sie eine ausführliche Erläuterung der Abschnitte, die Sie
-    Schritt für Schritt für eine effektive Verwendung von Data Factory
-    leitet. Dataflow Gen2 ist die nächste Generation von Dataflow.
+3. Se le dirigirá a la página principal de Data Factory. A
+    continuación, se muestra una explicación detallada de sus secciones,
+    diseñada para guiar paso a paso en el uso efectivo de Data Factory.
+    El flujo de datos de segunda generación es la nueva generación de
+    flujos de datos.
 
-    **Was ist Data Factory?**
+    **¿Qué es Data Factory?**
 
-    Data Factory hilft Ihnen dabei, Daten aus verschiedenen Quellen zu
-    verwalten und zu organisieren. Es ermöglicht Ihnen, Daten zu sammeln,
-    aufzubereiten und zu transformieren, um sie effektiv einsetzen zu
-    können. Egal, ob Sie neu einsteigen oder bereits viel Erfahrung
-    mitbringen, Data Factory stellt Ihnen Tools zu Verfügung, mit denen
-    Sie die Datentransformation einfacher und effizienter gestalten
-    können.
+    Data Factory es una herramienta que le ayuda a administrar y organizar
+    datos de diferentes orígenes. Le permite recopilar, preparar y
+    transformar los datos para que se puedan utilizar de forma eficaz. Tanto
+    si es principiante como experto, Data Factory proporciona herramientas
+    para que la transformación de datos sea más fácil y eficiente.
 
-    **Elementtypen:**
+    **Tipos de elementos:**
 
-    a. **Dataflows:** Dataflows sind wie Rezepte zum Transformieren von
-        Daten. Sie bieten über 300 verschiedene Transformationen, die Sie
-        auf Ihre Daten anwenden können. Das bedeutet, dass Sie Ihre Daten
-        auf vielfältige Weise bereinigen, kombinieren und ändern können, um
-        sie ganz an Ihre Anforderungen anzupassen.
+    a. **Flujos de datos**: los flujos de datos son como recetas para
+        transformar datos. Ofrecen más de 300 transformaciones diferentes
+        que puede aplicar a sus datos. Esto significa que puede limpiar,
+        combinar y cambiar los datos de muchas maneras para adaptarlos a sus
+        necesidades.
 
-    b. **Pipelines:** Pipelines sind Workflows, mit denen Sie Ihre
-        Datenprozesse automatisieren können. Sie ermöglichen es Ihnen,
-        flexible Daten-Workflows zu erstellen, die auf Ihre speziellen
-        Anforderungen zugeschnitten werden können. Das erleichtert es, Daten
-        strukturiert zu verwalten und zu verarbeiten.
+    b. **Canalizaciones**: las canalizaciones son flujos de trabajo que le
+        ayudan a automatizar los procesos de datos. Le permiten crear flujos
+        de trabajo de datos flexibles que se pueden adaptar a sus requisitos
+        específicos. Esto facilita la gestión y el procesamiento de datos de
+        forma estructurada.
 
-    c. **Azure Data Factory:** Azure Data Factory ist ein cloudbasierter
-        Datenintegrationsdienst, mit dem Sie datengesteuerte Workflows zur
-        Orchestrierung und Automatisierung von Datenverschiebungen und
-        Datentransformationen erstellen können.
+    c. **Azure Data Factory**: Azure Data Factory es un servicio de
+        integración de datos basado en la nube que le permite crear flujos
+        de trabajo basados en datos para orquestar y automatizar el
+        movimiento y la transformación de datos.
 
-    d. **Apache Airflow Job:** Apache Airflow ist eine
-        Open-Source-Plattform, die für das programmgesteuerte Erstellen,
-        Planen und Überwachen von Workflows verwendet wird. In Data Factory
-        können Sie damit komplexe Datenworkflows erstellen, planen und
-        verwalten.
+    d. **Trabajo de Apache Airflow**: Apache Airflow es una plataforma de
+        código abierto que se utiliza para crear, programar y supervisar
+        flujos de trabajo mediante programación. En Data Factory, le permite
+        crear, programar y administrar flujos de trabajo de datos complejos.
 
-    e. **Projekt kopieren:** Mit der Funktion „Projekt kopieren" können Sie
-        Daten von einer Quelle in eine andere kopieren. Sie bietet eine
-        einfache und effiziente Möglichkeit, Daten zwischen verschiedenen
-        Datenspeichern zu verschieben.
+    e. **Copiar trabajo**: Copiar trabajo es una característica que le
+        permite copiar datos de un origen a otro. Proporciona una forma
+        sencilla y eficaz de mover datos entre diferentes almacenes de
+        datos.
 
-    f. **Gespiegelte Datenbank:** Eine Funktion zum Erstellen gespiegelter
-        Versionen von Datenbanken für Sicherungen, Tests oder
-        schreibgeschützten Zugriff.
+    f. **Base de datos reflejada**: característica para crear versiones
+        duplicadas de bases de datos para copia de seguridad, prueba o
+        acceso de solo lectura.
 
-    g. **Variablenbibliothek (Vorschauversion):** Enthält eine Liste von
-        Variablen und ihren Standardwerten. Sie kann auch andere Wertesätze
-        mit alternativen Werten enthalten
+    g. **Biblioteca de variables (versión preliminar)**: contiene una lista
+        de variables y sus valores predeterminados. También puede contener
+        otros conjuntos de valores que contengan valores alternativos.
 
-    **Erste Schritte:**
+    **Introducción:**
 
-    Sie können folgende Schritte ausführen, um mit Data Factory
-    loszulegen:
+    Para empezar a usar Data Factory, puede seguir estos pasos:
 
-    a. **Verwenden von Data Factory:** Dieser Abschnitt hilft Ihnen beim
-        Einstieg in Data Factory. Er zeigt Ihnen, wie Sie das Tool effektiv
-        verwenden können.
+    a. **Aprender a usar Data Factory**: en esta sección encontrará ayuda
+        para empezar a utilizar Data Factory. Proporciona orientación sobre
+        cómo comenzar a usar la herramienta de manera efectiva.
 
-    b. **Erstellen Sie Ihren ersten Dataflow:** Hier erfahren Sie, wie Sie
-        Ihren ersten Dataflow erstellen. Dataflows sind unerlässlich, um
-        Ihre Daten entsprechend Ihren Anforderungen zu transformieren.
+    b. **Crear su primer flujo de datos**: aquí puede aprender a crear su
+        primer flujo de datos. Los flujos de datos son esenciales para
+        transformar sus datos de acuerdo con sus necesidades.
 
-    c. **Erstellen Sie Ihre erste Datenpipeline:** In diesem Abschnitt
-        erfahren Sie, wie Sie Ihre erste Datenpipeline erstellen. Pipelines
-        helfen Ihnen dabei, Ihre Datenprozesse effizient zu automatisieren
-        und zu verwalten.
+    c. **Crear la primera canalización de datos**: esta sección le guía
+        sobre cómo crear su primera canalización de datos. Las
+        canalizaciones ayudan a automatizar y administrar sus procesos
+        de datos de manera eficiente.
 
-    d. **Informationen zum Überwachen von Data Factory:** Die Überwachung
-        ist entscheidend, um sicherzustellen, dass Ihre Datenprozesse
-        reibungslos ablaufen. In diesem Abschnitt erfahren Sie, wie Sie Ihre
-        Data Factory-Aktivitäten überwachen.
+    d. **Aprenda a supervisar Data Factory**: la supervisión es fundamental
+        para garantizar que sus procesos de datos funcionen sin problemas.
+        En esta sección se aprende a supervisar las actividades de Data
+        Factory.
 
-    e. **Daten mit Dataflows transformieren:** In diesem Abschnitt erfahren
-        Sie, wie Sie Dataflows verwenden, um Ihre Daten effektiv zu
-        transformieren.
+    e. **Aprender a transformar datos con flujos de datos**: esta sección
+        le ayuda a comprender cómo usar los flujos de datos para transformar
+        sus datos de manera efectiva.
 
-    f. **Erste API für GraphQL erstellen:** Wenn Sie APIs mit GraphQL
-        verwenden möchten, finden Sie in diesem Abschnitt Informationen zu
-        den ersten Schritten.
+    f. **Crear su primera API para GraphQL**: si le interesa utilizar API
+        con GraphQL, esta sección le guiará sobre cómo empezar.
 
-    g. **Erste Benutzerdatenfunktionen erstellen:** In diesem Abschnitt
-        erfahren Sie, wie Sie Benutzerdatenfunktionen erstellen, die zum
-        Verwalten und Transformieren von Benutzerdaten nützlich sind.
+    g. **Crear sus primeras funciones de datos de usuario**: esta sección
+        le ayuda a crear funciones de datos de usuario, que son útiles para
+        administrar y transformar los datos del usuario.
 
     ![](../media/lab-02/image21.png)
 
-4. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück
-    zu Workloads**. Auf diese Weise gelangen Sie zur
-    Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte
-    erkunden können.
+4. Haga clic en **Volver a las cargas de trabajo** en la esquina
+    superior izquierda de la pantalla. Esta acción le llevará a la
+    página principal de cargas de trabajo, donde puede explorar otras
+    herramientas o secciones.
 
     ![](../media/lab-02/image22.png)
 
-## Aufgabe 5: Industry Solutions-Funktionsbereich
+## Tarea 5: Experiencia de Industry Solutions 
 
-1. Klicken Sie auf der Seite **Workloads** auf **Industry Solutions**,
-    um fortzufahren.
+1. En la página **Cargas de trabajo**, haga clic en **Industry**
+    **Solutions** para continuar.
 
     ![](../media/lab-02/image23.png)
 
-2. Sie werden zur Startseite von Industry Solutions weitergeleitet.
-    Nachfolgend finden Sie eine detaillierte Übersicht über die
-    Abschnitte, die Ihnen helfen sollen, Industry Solutions effektiv und
-    Schritt für Schritt zu nutzen.
+2. Se le dirigirá a la página principal de Industry Solutions. A
+    continuación, se muestra una descripción detallada de sus secciones,
+    diseñadas para ayudarle a utilizar Industry Solutions de manera
+    efectiva y paso a paso.
 
-    **Was ist Industry Solutions?**
+    **¿Qué es Industry Solutions?**
 
-    Industry Solutions sind einsatzbereite Datenlösungen in Microsoft
-    Fabric, die Lösungen und Ressourcen für verschiedene Branchen
-    bereitstellen. Industry Solutions unterstützt Sie beim Einstieg in
-    wichtige Geschäftsszenarien mit branchenbezogenen Datenmodellen,
-    Konnektoren, Transformationen, Berichten und anderen Anlagen.
+    Industry Solutions son soluciones de datos listas para usar de Microsoft
+    Fabric que proporcionan soluciones y recursos para diversos sectores.
+    Industry Solutions le ayuda a comenzar con escenarios empresariales
+    clave mediante el uso de modelos de datos, conectores, transformaciones,
+    informes y otros activos relacionados con el sector.
 
-    **Elementtypen:**
+    **Tipos de elementos**:
 
-    a. **Nachhaltigkeitslösungen** unterstützen die Erfassung,
-        Standardisierung und Analyse von Umwelt-, Sozial- und
-        Governance-Daten (ESG).
+    a. **Soluciones de sostenibilidad**: admiten la ingesta, la
+        estandarización y el análisis de datos ambientales, sociales y de
+        gobernanza (ASG).
 
-    b. **Lösungen für den Einzelhandel** helfen bei der Verwaltung großer
-        Datenmengen, der Integration von Daten aus verschiedenen Quellen und
-        der Bereitstellung von Echtzeitanalysen für eine schnelle
-        Entscheidungsfindung. Einzelhändler können diese Lösungen zur
-        Bestandsoptimierung, Kundensegmentierung, Umsatzprognose,
-        dynamischen Preisgestaltung und Betrugserkennung nutzen.
+    b. Las **soluciones de datos de comercio minorista**: ayudan a
+        administrar grandes volúmenes de datos, a integrar datos de diversos
+        orígenes y a proporcionar análisis en tiempo real para una toma de
+        decisiones rápida. Los minoristas pueden utilizar estas soluciones
+        para la optimización del inventario, la segmentación de clientes, la
+        previsión de ventas, la fijación de precios dinámicos y la detección
+        de fraude.
 
-    c. **Datenlösungen für das Gesundheitswesen** sind strategisch darauf
-        ausgelegt, die Zeit bis zur Wertschöpfung für die Kunden zu
-        verkürzen, indem die kritische Notwendigkeit der effizienten
-        Umwandlung von Daten aus dem Gesundheitswesen in ein geeignetes
-        Format für die Analyse erfüllt wird.
+    c. Las **soluciones de atención sanitaria**: están diseñadas
+        estratégicamente para acelerar el tiempo de creación de valor para
+        los clientes al abordar la necesidad crítica de transformar de
+        manera eficiente los datos sanitarios en un formato adecuado para el
+        análisis.
 
-    **Erste Schritte**
+    > **Introducción:** Para empezar a usar Industry Solutions, siga estos pasos:
 
-    Sie können folgende Schritte ausführen, um mit Industry Solutions
-    loszulegen:
+    a. **Obtener información sobre las soluciones de datos de atención
+        sanitaria**: haga clic en el botón "Más información" para leer sobre
+        las soluciones de datos de atención sanitaria y comprender cómo se
+        pueden utilizar en sus proyectos.
 
-    a. **Mehr über Datenlösungen für das Gesundheitswesen erfahren**:
-        Klicken Sie auf die Schaltfläche „Weitere Informationen", um mehr
-        über Datenlösungen für das Gesundheitswesen zu erfahren und zu
-        verstehen, wie Sie diese in Ihren Projekten einsetzen können.
+    b. **Implementar soluciones de datos de atención sanitaria**: haga clic
+        en el botón "Implementar" para empezar a implementar soluciones de
+        datos de atención sanitaria e implementarlas en sus proyectos.
 
-    b. **Datenlösungen für das Gesundheitswesen bereitstellen**: Klicken
-        Sie auf die Schaltfläche „Bereitstellen", um mit dem Bereitstellen
-        von Datenlösungen für das Gesundheitswesen zu beginnen und diese in
-        Ihre Projekten zu implementieren.
+    c. **Obtener información sobre las soluciones de sostenibilidad**: haga
+        clic en el botón "Más información" para leer sobre las soluciones de
+        sostenibilidad y comprender cómo se pueden utilizar en sus
+        proyectos.
 
-    c. **Mehr über Nachhaltigkeitslösungen erfahren**: Klicken Sie auf die
-        Schaltfläche „Weitere Informationen", um mehr über
-        Nachhaltigkeitslösungen zu erfahren und zu verstehen, wie Sie diese
-        in Ihren Projekten einsetzen können.
+    d. **Implementar soluciones de sostenibilidad**: haga clic en el botón
+        "Implementar" para comenzar a implementar soluciones de
+        sostenibilidad e implementarlas en sus proyectos.
 
-    d. **Nachhaltigkeitslösungen bereitstellen**: Klicken Sie auf die
-        Schaltfläche „Bereitstellen", um mit dem Bereitstellen von
-        Nachhaltigkeitslösungen zu beginnen und diese in Ihre Projekten zu
-        implementieren.
+    e. **Obtener información sobre la solución minorista**: haga clic en el
+        botón "Más información" para leer sobre las soluciones de comercio
+        minorista y comprender cómo se pueden utilizar en sus proyectos.
 
-    e. **Mehr über die Lösung für den Einzelhandel erfahren**: Klicken Sie
-        auf die Schaltfläche „Weitere Informationen", um mehr über Lösungen
-        für den Einzelhandel zu erfahren und zu verstehen, wie Sie diese in
-        Ihren Projekten einsetzen können.
+    f. **Implementar soluciones de comercio minorista**: haga clic en el
+        botón "Implementar" para comenzar a utilizar soluciones de comercio
+        minorista e implementarlas en sus proyectos.
 
-    f. **Lösungen für den Einzelhandel bereitstellen**: Klicken Sie auf die
-        Schaltfläche „Bereitstellen", um mit dem Bereitstellen von Lösungen
-        für den Einzelhandel zu beginnen und diese in Ihre Projekten zu
-        implementieren.
-
-3. Klicken Sie in der oberen linken Ecke des Bildschirms auf „Zurück zu
-    Workloads". Auf diese Weise gelangen Sie zur Workloads-Hauptseite,
-    auf der Sie andere Tools oder Abschnitte erkunden können.
+3. Haga clic en Volver a las cargas de trabajo en la esquina superior
+    izquierda de la pantalla. Esta acción le llevará a la página
+    principal de cargas de trabajo, donde puede explorar otras
+    herramientas o secciones.
 
     ![](../media/lab-02/image22.png)
 
-## Aufgabe 6: Real-Time Intelligence-Funktionsbereich
+## Tarea 6: Experiencia de Real-Time Intelligence
 
-1. Klicken Sie auf der Seite **Workloads** auf **Real-Time
-    Intelligence**, um fortzufahren.
+1. En la página **Cargas de trabajo**, haga clic en **Real-Time
+    Intelligence** para continuar.
 
     ![](../media/lab-02/image24.png)
 
-2. Sie werden zur Startseite von Real-Time Intelligence weitergeleitet.
-    Nachfolgend finden Sie eine detaillierte Übersicht über die
-    Abschnitte, die Ihnen helfen sollen, Real-Time Intelligence effektiv
-    und Schritt für Schritt zu nutzen.
+2. Se le dirigirá a la página principal de Real-Time Intelligence. A
+    continuación, se muestra una descripción detallada de sus secciones,
+    diseñadas para ayudarle a utilizar Real-Time Intelligence de manera
+    efectiva y paso a paso.
 
-    **Was ist Real-Time Intelligence?**
+    **¿Qué es Real-Time Intelligence?**
 
-    Mit Real-Time Intelligence können Sie große Mengen an Daten aus
-    verschiedenen Quellen mit hoher Granularität verwalten und analysieren.
-    Die Funktion ermöglicht es Ihnen, Ihre Daten in Echtzeit aufzunehmen, zu
-    analysieren und zu verwenden und so Ihre Geschäftsvorgänge durch
-    zeitnahe Entscheidungen und Maßnahmen zu verbessern.
+    Real-Time Intelligence es una herramienta que le ayuda a administrar y
+    analizar datos de gran volumen y alta granularidad de varios orígenes.
+    Le permite ingerir, analizar y tomar medidas sobre sus datos en tiempo
+    real, lo que mejora sus operaciones comerciales con una toma de
+    decisiones y acciones oportunas.
 
-    **Elementtypen**
+    **Tipos de elementos**:
 
-    a. **Eventhouse:** Dient dem Erstellen einer Arbeitsbereichs mit einer
-        oder mehreren KQL-Datenbanken, der projektübergreifend genutzt
-        werden kann.
+    a. **Casa de eventos**: se utiliza para crear un área de trabajo de una
+    o varias bases de datos KQL, que se puede compartir entre proyectos.
 
-    b. **KQL Queryset:** Wird verwendet, um Abfragen für die Daten
-        auszuführen, um freigabefähige Tabellen und Visuals zu erstellen.
+    b. **Conjunto de consultas KQL**: se utiliza para ejecutar consultas
+    sobre los datos para producir tablas y objetos visuales que se pueden
+    compartir.
 
-    c. **Echtzeit-Dashboard:** Wird verwendet, um Echtzeit-Dashboards
-        innerhalb von Sekunden nach der Datenerfassung zu visualisieren.
+    c. **Panel en tiempo real**: se utiliza para visualizar paneles de
+    información en tiempo real en cuestión de segundos desde la ingesta de
+    datos.
 
-    d. **Eventstream:** Hiermit werden Ereignisströme in Echtzeit erfasst,
-        umgewandelt und weitergeleitet.
+    d. **Eventstream**: se utiliza para capturar, transformar y enrutar el
+    flujo de eventos en tiempo real.
 
-    e. **Aktivator:** Wird verwendet, um Datasets, Abfragen und
-        Ereignisstreams auf Muster zu überwachen.
+    e. **Activador**: se utiliza para supervisar conjuntos de datos,
+    consultas y flujos de eventos en busca de patrones.
 
-    **Erste Schritte:**
+    **Introducción:**
 
-    Befolgen Sie diese Schritten, um mit der Verwendung von Real-Time
-    Intelligence zu beginnen:
+    Para empezar a utilizar Real-Time Intelligence, siga estos pasos:
 
-    a. **Beispiel für Real-Time Intelligence erkunden:** Klicken Sie auf
-        die Schaltfläche „Öffnen", um die Echtzeit-Datenanalyse mit einem
-        Beispiel zu erkunden.
+    a. **Explorar ejemplo de inteligencia de tiempo real**: haga clic en el
+    botón "Abrir" para explorar el análisis de datos en tiempo real con un
+    ejemplo.
 
-    b. **Ein Beispiel erkunden:** Klicken Sie auf die Schaltfläche
-        „Auswählen", um ein Beispiel zu verwenden und mehr über Real-Time
-        Intelligence zu erfahren.
+    b. **Explorar un ejemplo**: haga clic en el botón "Seleccionar" para
+    usar un ejemplo y obtener información sobre Real-Time Intelligence.
 
-    c. **Einführung in Real-Time Intelligence:** Klicken Sie auf die
-        Schaltfläche „Öffnen", um einen Überblick über Real-Time
-        Intelligence zu erhalten und das Tool effektiv zu nutzen.
+    c. **Introducción a la Inteligencia en tiempo real**: haga clic en el
+    botón "Abrir" para obtener una descripción general de Real-Time
+    Intelligence y comenzar a usar la herramienta de manera eficaz.
 
-    d. **KQL mit Beispieldaten lernen:** Klicken Sie auf die Schaltfläche
-        „Öffnen", um KQL anhand von Beispieldaten zu lernen.
+    d. **Obtenga información sobre KQL con datos de ejemplo**: haga clic en
+    el botón "Abrir" para aprender KQL con datos de ejemplo.
 
-    e. **Was ist ein Echtzeit-Hub:** Klicken Sie auf die Schaltfläche
-        „Öffnen", um zu erfahren, was ein Echtzeit-Hub ist und wie er
-        verwendet werden kann.
+    e. **¿Qué es un centro en tiempo real?**: haga clic en el botón "Abrir"
+    para saber qué es un centro en tiempo real y cómo se puede utilizar.
 
-    f. **Einen Beispielaktivator erkunden:** Klicken Sie auf die
-        Schaltfläche „Öffnen", um einen Beispielaktivator zu verwenden und
-        die Funktionen und Möglichkeiten von Real-Time Intelligence zu
-        verstehen.
+    f. **Explorar un activador de ejemplo**: haga clic en el botón "Abrir"
+    para usar un activador de muestra y comprender las características y
+    capacidades de Real-Time Intelligence.
 
-    g. **Erste Schritte mit Aktivator:** Klicken Sie auf die Schaltfläche
-        „Öffnen", um mit Aktiviatorkonzepten zu beginnen und das Tool
-        effektiv zu nutzen.
+    g. **Comenzar con activador**: haga clic en el botón "Abrir" para
+    comenzar con los conceptos de activador y comenzar a usar la herramienta
+    de manera efectiva.
 
     ![](../media/lab-02/image25.png)
 
-3. Klicken Sie in der oberen linken Ecke des Bildschirms auf „Zurück zu
-    Workloads". Auf diese Weise gelangen Sie zur Workloads-Hauptseite,
-    auf der Sie andere Tools oder Abschnitte erkunden können.
+3. Haga clic en Volver a las cargas de trabajo en la esquina superior
+    izquierda de la pantalla. Esta acción le llevará a la página
+    principal de cargas de trabajo, donde puede explorar otras
+    herramientas o secciones.
 
     ![](../media/lab-02/image22.png)
 
-## Aufgabe 7: Data Engineering-Funktionsbereich
+## Tarea 7: Experiencia de Data Engineering
 
-1. Klicken Sie auf der Seite **Workloads** auf „Data Engineering", um
-    fortzufahren.
+1. En la página **Cargas de trabajo**, haga clic en Data Engineering
+    para continuar.
 
     ![](../media/lab-02/image26.png)
 
-2. Sie werden zur Startseite von **Data Engineering** weitergeleitet.
-    Nachfolgend finden Sie eine detaillierte Übersicht über die
-    Abschnitte, die Ihnen helfen sollen, **Data Engineering** effektiv
-    und Schritt für Schritt zu nutzen.
+2. Se le dirigirá a la página principal de **Data Engineering**. A
+    continuación, se muestra una descripción detallada de sus secciones,
+    diseñadas para ayudarle a utilizar **Data Engineering** de manera
+    efectiva y paso a paso.
 
-    **Was ist Data Engineering?**
+    **¿Qué es Data Engineering?**
 
-    Data Engineering hilft Ihnen beim Entwerfen, Erstellen und Verwalten von
-    Infrastrukturen und Systemen zum Erfassen, Speichern, Verarbeiten und
-    Analysieren großer Datenmengen. Es ermöglicht Ihnen, Lakehouses zu
-    erstellen und Ihren Workflow zu operationalisieren, um Ihren
-    Datenbestand aufzubauen, zu transformieren und zu teilen.
+    Data Engineering es una herramienta que le ayuda a diseñar, construir y
+    mantener infraestructuras y sistemas para recopilar, almacenar, procesar
+    y analizar grandes volúmenes de datos. Le permite crear almacenes de
+    lago y poner en funcionamiento su flujo de trabajo para crear,
+    transformar y compartir su patrimonio de datos.
 
-    **Elementtypen:**
+    **Tipos de elementos:**
 
-    a. **Lakehouse:** Wird zum Speichern großer Datenmengen für die
-        Bereinigung, Abfrage, Berichterstellung und Freigabe verwendet.
+    a. **Lakehouse**: se utiliza para almacenar macrodatos para limpiar,
+        consultar, generar informes y compartir.
 
-    b. **Notebook:** Dient zur Datenerfassung, -aufbereitung, -analyse und
-        anderen datenbezogenen Aufgaben mithilfe verschiedener Sprachen wie
-        Python und Scala.
+    b. **Bloc de notas**: se utiliza para la ingesta de datos, la
+        preparación, el análisis y otras tareas relacionadas con los datos
+        utilizando varios lenguajes como Python y Scala.
 
-    c. **Umgebung:** Dient dem Einrichten gemeinsam genutzter Bibliotheken,
-        Spark-Compute-Einstellungen und Ressourcen für Notebooks und
-        Spark-Auftragsdefinitionen.
+    c. **Entorno**: se utiliza para configurar bibliotecas compartidas,
+        configuraciones y recursos informáticos de Spark para portátiles y
+        definiciones de trabajos de Spark.
 
-    d. **Spark-Auftragsdefinition:** Dient zum Definieren, Planen und
-        Verwalten von Apache-Aufträgen.
+    d. **Definición de trabajo de Spark**: se utiliza para definir,
+        programar y administrar trabajos de Apache.
 
-    e. **Benutzerdatenfunktionen (Vorschauversion):** Plattform, mit der
-        Sie Anwendungen in Fabric hosten und ausführen können.
+    e. **Funciones de datos de usuario (versión preliminar)**: plataforma
+        que le permite hospedar y ejecutar aplicaciones en Fabric.
 
-    f. **API für GraphQL:** Eine API zum Abfragen mehrerer Datenquellen.
+    f. **API para GraphQL**: es una API para consultar varios orígenes de
+        datos.
 
-    g. **Notebook importieren:** Hiermit werden Notebooks von einem lokalen
-        Computer importiert.
+    g. **Importar bloc de notas**: se usa para importar blocs de notas
+        desde la máquina local.
 
-    **Erste Schritte:**
+    **Introducción:**
 
-    Befolgen Sie die folgenden Schritte, um mit der Nutzung von Data
-    Engineering zu starten:
+    Para empezar a usar Data Engineering, siga estos pasos:
 
-    a. **Ein Beispiel erkunden:** Klicken Sie auf die Schaltfläche
-        „Auswählen", um ein Beispiel zu verwenden und mehr über Data
-        Engineering zu erfahren.
+    a. **Explorar un ejemplo**: haga clic en el botón "Seleccionar" para
+    usar una muestra y obtener información sobre Data Engineering.
 
-    b. **Was ist ein Lakehouse?:** Klicken Sie auf die Schaltfläche
-        „Öffnen", um mehr darüber zu erfahren, was ein Lakehouse ist und wie
-        Sie es verwenden können.
+    b. **¿Qué es un lakehouse?:** haga clic en el botón "Abrir" para
+    obtener información sobre los almacenes de lago de datos y cómo se
+    pueden usar.
 
-    c. **Abrufen von Datenerfahrungen in Lakehouse:** Klicken Sie auf die
-        Schaltfläche „Öffnen", um Datentechnik mittels Lakehouses zu nutzen.
+    c. **Obtención de la experiencia de datos en un lakehouse**: haga clic
+    en el botón "Abrir" para comenzar con ingeniería de datos y los
+    almacenes de lago de datos.
 
-    d. **Erste Schritte mit Spark-Auftragsdefinitionen:** Klicken Sie auf
-        die Schaltfläche „Öffnen", um zu erfahren, wie Sie
-        Spark-Auftragsdefinitionen für die Datenverarbeitung verwenden
-        können.
+    d. **Introducción a las definiciones de trabajo de Spark**: haga clic
+    en el botón "Abrir" para aprender a utilizar las definiciones de trabajo
+    de Spark para el procesamiento de datos.
 
-    e. **Notebooks entwickeln und ausführen:** Klicken Sie auf die
-        Schaltfläche „Öffnen", um zu erfahren, wie Sie Notebooks für die
-        Datenanalyse entwickeln und ausführen.
+    e. **Desarrollar y ejecutar cuadernos**: haga clic en el botón "Abrir"
+    para aprender a desarrollar y ejecutar cuadernos para el análisis de
+    datos.
 
-    f. **NotebookUtils verwenden:** Klicken Sie auf die Schaltfläche
-        „Öffnen", um zu erfahren, wie Sie NotebookUtils für die erweiterte
-        Datenanalyse verwenden können.
+    f. **Cómo usar NotebookUtils**: haga clic en el botón "Abrir" para
+    aprender a usar NotebookUtils para un análisis de datos mejorado.
 
-    g. **Notebooks für das eigene Lakehouse verwenden:** Klicken Sie auf
-        die Schaltfläche „Öffnen", um zu erfahren, wie Sie Notebooks für Ihr
-        Lakehouse nutzen können.
+    g. **Aprovechar los Notebooks para su almacén de lago de datos**: haga
+    clic en el botón "Abrir" para aprender a aprovechar los notebooks para
+    su almacén de lago de datos.
 
-    h. **Datasets für das eigene Lakehouse verwenden:** Klicken Sie auf die
-        Schaltfläche „Öffnen", um zu erfahren, wie Sie Datasets für Ihr
-        Lakehouse nutzen können.
+    h. **Aprovechar los conjuntos de datos para su almacén de lago de datos:** haga clic en el botón "Abrir" para aprender a aprovechar los
+    conjuntos de datos para su almacén de lago de datos.
 
-    i. **Erste Benutzerdatenfunktionen erstellen:** Klicken Sie auf die
-        Schaltfläche „Öffnen", um zu erfahren, wie Sie
-        Benutzerdatenfunktionen erstellen.
+    i. **Crear sus primeras funciones de datos de usuario**: haga clic en
+    el botón "Abrir" para aprender a crear funciones de datos de usuario.
 
-    j. **Erste API für GraphQL erstellen:** Klicken Sie auf die
-        Schaltfläche „Öffnen", um zu erfahren, wie Sie eine API für GraphQL
-        erstellen.
+    j. **Crear su primera API para GraphQL**: haga clic en el botón "Abrir"
+    para aprender a crear una API para GraphQL.
 
     ![](../media/lab-02/image27.png)
 
-3. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück
-    zu Workloads**. Auf diese Weise gelangen Sie zur
-    Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte
-    erkunden können.
+3. Haga clic en **Volver a las cargas de trabajo** en la esquina
+    superior izquierda de la pantalla. Esta acción le llevará a la
+    página principal de cargas de trabajo, donde puede explorar otras
+    herramientas o secciones.
 
     ![](../media/lab-02/image22.png)
 
-## Aufgabe 8: Data Science-Funktionsbereich
+## Tarea 8: Experiencia de Data Science
 
-1. Klicken Sie auf der Seite **Workloads** auf **Data Science**, um
-    fortzufahren.
+1. En la página **Cargas de trabajo**, haga clic en **Data Science**
+    para continuar.
 
     ![](../media/lab-02/image28.png)
 
-2. Sie werden zur Startseite von **Data Science** weitergeleitet.
-    Nachfolgend finden Sie eine detaillierte Übersicht über die
-    Abschnitte, die Ihnen helfen sollen, **Data Science** effektiv und
-    Schritt für Schritt zu nutzen.
+2. Se le dirigirá a la página principal de **Data Science**. A
+    continuación, se muestra una descripción detallada de sus secciones,
+    diseñadas para ayudarle a utilizar **Data Science** de manera
+    efectiva.
 
-    **Was ist Data Science?**
+    **¿Qué es Data Science?**
 
-    Data Science ist ein Tool, mit dem Sie dank KI und maschinellem Lernen
-    aussagekräftige Erkenntnisse gewinnen können. Es bietet KI-Tools, mit
-    denen Sie umfassende Data Science-Workflows durchführen und KI für die
-    Datenanreicherung und Geschäftseinblicke nutzen können.
+    Data Science es una herramienta que le ayuda a desbloquear información
+    valiosa mediante IA y tecnología de aprendizaje automático. Proporciona
+    herramientas de IA diseñadas para ayudarle a completar flujos de trabajo
+    de ciencia de datos a gran escala y aprovecha la IA para el
+    enriquecimiento de datos y la información empresarial.
 
-    **Elementtypen:**
+    **Tipos de elementos:**
 
-    a. **ML-Modell:** Wird zur Erstellung von Machine Learning-Modellen
-        verwendet.
+    a. **Modelos de ML**: se usa para crear modelos de Machine Learning.
 
-    b. **Experiment:** Dient zum Entwickeln und Ausführen von Modellen und
-        zur Nachverfolgung der Modellentwicklung.
+    b. **Experimento**: se utiliza para crear, ejecutar y hacer un
+    seguimiento del desarrollo de múltiples modelos.
 
-    c. **Notebook:** Hiermit werden Daten ausgewertet und
-        Machine-Learning-Lösungen entwickelt.
+    c. **Bloc de notas**: se utiliza para explorar datos y crear soluciones
+    de aprendizaje automático.
 
-    d. **Umgebung:** Dient dem Einrichten gemeinsam genutzter Bibliotheken,
-        Spark-Compute-Einstellungen und Ressourcen für Notebooks und
-        Spark-Auftragsdefinitionen.
+    d. **Entorno**: se utiliza para configurar bibliotecas compartidas,
+    configuraciones y recursos informáticos de Spark para portátiles y
+    definiciones de trabajos de Spark.
 
-    e. **Data Agent (Vorschauversion):** Wird verwendet, um
-        unterhaltungsorientierte KI-Umgebungen zu erstellen, die Fragen zu
-        in Lakehouses, Warehouses, semantischen Power BI-Modellen und
-        KQL-Datenbanken gespeicherten Daten beantworten.
+    e. **Agente de datos (versión preliminar)**: se utiliza para crear
+    experiencias de IA conversacional que respondan preguntas sobre datos
+    almacenados en almacenes de lago de datos, almacenes, modelos semánticos
+    de Power BI y bases de datos KQL.
 
-    f. **Python-Notebook:** Wird zum Importieren von Python-Notebooks von
-        einem lokalen Computer verwendet.
+    f. **Cuaderno de Python**: se utiliza para importar cuadernos de Python
+    desde una máquina local.
 
-    **Erste Schritte:**
+    **Introducción:**
 
-    Um Data Science zu verwenden, folgen Sie diesen Schritten
+    Para empezar a usar Data Science, siga estos pasos
 
-    a. **Ein Beispiel erkunden:** Klicken Sie auf die Schaltfläche
-        „Auswählen", um ein Beispiel zu verwenden und mehr über Data Science
-        zu erfahren.
+    a. **Explorar un ejemplo**: haga clic en el botón "Seleccionar" para
+    usar una muestra y obtener información sobre Data Science.
 
-    b. **Erste Schritte mit ML-Modellen:** Klicken Sie auf die Schaltfläche
-        „Öffnen", um zu erfahren, wie Sie mit Machine-Learning-Modellen
-        beginnen können.
+    b. **Introducción a los modelos de ML**: haga clic en el botón "Abrir"
+    para comenzar con los modelos de Machine Learning.
 
-    c. **Erste Schritte mit ML-Experimenten:** Klicken Sie auf die
-        Schaltfläche „Öffnen", um zu erfahren, wie Sie
-        Machine-Learning-Experimente durchführen können.
+    c. **Introducción a los experimentos de ML**: haga clic en el botón
+    "Abrir" para aprender a hacer experimentos de aprendizaje automático.
 
-    d. **Notebooks entwickeln und ausführen:** Klicken Sie auf die
-        Schaltfläche „Öffnen", um zu erfahren, wie Sie Notebooks für die
-        Datenanalyse entwickeln und ausführen.
+    d. **Desarrollar y ejecutar cuadernos**: haga clic en el botón "Abrir"
+    para aprender a desarrollar y ejecutar cuadernos para el análisis de
+    datos.
 
-    e. **Erste Schritte mit Notebooks:** Klicken Sie auf die Schaltfläche
-        „Öffnen", um zu erfahren, wie Sie mit Notebooks beginnen können.
+    e. **Introducción a Notebooks**: haga clic en el botón "Abrir" para
+    comenzar con notebooks.
 
-    ![](../media/lab-02/image29.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](../media/lab-02/image29.png)
 
-3. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück
-    zu Workloads**. Auf diese Weise gelangen Sie zur
-    Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte
-    erkunden können.
+3. Haga clic en **Volver a las cargas de trabajo** en la esquina
+    superior izquierda de la pantalla. Esta acción le llevará a la
+    página principal de cargas de trabajo, donde puede explorar otras
+    herramientas o secciones.
 
     ![](../media/lab-02/image22.png)
 
-## Aufgabe 9: Data Warehouse-Funktionsbereich
+## Tarea 9: Experiencia de Data Warehouse
 
-1. Klicken Sie auf der Seite **Workloads** auf **Data Warehouse**, um
-    fortzufahren.
+1. En la página **Cargas de trabajo**, haga clic en **Data Warehouse**
+    para continuar.
 
     ![](../media/lab-02/image30.png)
 
-2. Sie werden zur Startseite von Data Warehouse weitergeleitet.
-    Nachfolgend finden Sie eine detaillierte Übersicht über die
-    Abschnitte, die Sie bei der effektiven und schrittweisen Verwendung
-    von Data Warehouse unterstützen sollen.
+2. Se le dirigirá a la página principal de Data Warehouse. A
+    continuación se muestra una descripción detallada de sus secciones,
+    diseñadas para ayudarlo a usar Data Warehouse de manera efectiva y
+    paso a paso.
 
-    **Was ist ein Data Warehouse?**
+    **¿Qué es Data Warehouse?**
 
-    Data Warehouse ist ein Tool, mit dem Sie Daten in einem sicheren SQL
-    Warehouse speichern und analysieren können. Damit können Sie Ihre
-    Erkenntnisse erweitern, indem Sie von erstklassiger Leistung im
-    Petabytebereich in einem offenen Datenformat profitieren.
+    Data Warehouse es una herramienta que le ayuda a almacenar y analizar
+    datos en un almacén SQL seguro. Le permite ampliar sus conocimientos al
+    beneficiarse de un rendimiento de primer nivel a escala de petabytes en
+    un formato de datos abiertos.
 
-    **Elementtypen:**
+    **Tipos de elementos:**
 
-    a. **Warehouse:** Dient dem Erstellen eines Data Warehouse.
+    a. **Almacén**: se usa para crear un Data Warehouse.
 
-    b. **Beispiel-Warehouse:** Wird verwendet, um Datenlagerungsfunktionen
-        mit vorkonfigurierten Datensätzen und Modellen zu erkunden und zu
-        testen.
+    b. **Almacén de muestra**: se utiliza para explorar y probar las
+    capacidades de almacenamiento de datos con conjuntos de datos y modelos
+    preconfigurados.
 
-    c. **Notebook:** Wird für das Erstellen und Teilen interaktiver
-        Datenanalyse‑ und Visualisierungsaufgaben verwendet.
+    c. **Cuaderno**: se utiliza para crear y compartir tareas interactivas
+    de análisis y visualización de datos.
 
-    d. **Gespiegelte Azure SQL-Datenbank:** Wird verwendet, um die Azure
-        SQL-Datenbank zu spiegeln.
+    d. **Azure SQL Database reflejada**: se utiliza para reflejar Azure SQL
+    Database.
 
-    e. **Gespiegelter Azure Databricks-Katalog:** Wird zum Spiegeln von
-        Daten von Azure Databricks für verbesserte Integration und Analyse
-        verwendet.
+    e. **Catálogo de Azure Databricks reflejado**: se utiliza para reflejar
+    datos de Azure Databricks para mejorar la integración y el análisis.
 
-    f. **Gespiegeltes Snowflake:** Wird verwendet, um die
-        Snowflake-Datenbank zu spiegeln.
+    f. **Snowflake reflejado**: se utiliza para reflejar la base de datos
+    de Snowflake.
 
-    g. **Gespiegelte Azure Cosmos DB:** Wird verwendet, um Azure Cosmos DB
-        zu spiegeln.
+    g. **Azure Cosmos DB reflejado**: se utiliza para reflejar Azure Cosmos
+    DB.
 
-    h. **Gespiegelte Azure Database for PostgreSQL (Vorschauversion):**
-        Wird verwendet, um Ihre vorhandene Azure Database for PostgreSQL zu
-        spiegeln.
+    h. **Azure Database for PostgreSQL reflejada (versión preliminar)**: se
+    utiliza para duplicar su Azure Database for PostgreSQL existente para
+    PostgreSQL
 
-    i. **Gespiegelte verwaltete Azure SQL-Datenbank:** Wird verwendet, um
-        verwaltete Azure SQL-Datenbanken für Hochverfügbarkeit und
-        Notfallwiederherstellung zu spiegeln.
+    i. **Base de datos administrada de Azure SQL reflejada**: se utiliza
+    para reflejar bases de datos administradas de Azure SQL para alta
+    disponibilidad y recuperación ante desastres.
 
-    j. **Gespiegelte Datenbank (Vorschauversion):** Wird für das
-        Replizieren von Datenbanken für Hochverfügbarkeit und
-        Notfallwiederherstellung verwendet.
+    j. **Base de datos reflejada (versión preliminar)**: se utiliza para
+    replicar bases de datos para alta disponibilidad y recuperación ante
+    desastres.
 
-    **Erste Schritte:**
+    **Introducción:**
 
-    Befolgen Sie die folgenden Schritte, um mit der Verwendung von Data
-    Warehouse:
+    Para empezar a utilizar Data Warehouse, siga los siguientes pasos:
 
-    a. **Ein Beispiel-Warehouse erkunden:** Ein neues Warehouse mit bereits
-        geladenen Beispieldaten starten
+    a. **Explorar un almacén de muestra**: inicie un nuevo almacén con
+    datos de ejemplo ya cargados.
 
-    b. **Erste Schritte mit Warehouse:** Klicken Sie auf die Schaltfläche
-        „Öffnen", um zu erfahren, wie Sie ein Warehouse zum Analysieren von
-        Daten verwenden können.
+    b. **Introducción al almacén**: haga clic en el botón "Abrir" para
+    aprender a utilizar un almacén para analizar datos.
 
     ![](../media/lab-02/image31.png)
 
-3. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück
-    zu Workloads**. Auf diese Weise gelangen Sie zur
-    Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte
-    erkunden können.
+3. Haga clic en **Volver a las cargas de trabajo** en la esquina
+    superior izquierda de la pantalla. Esta acción le llevará a la
+    página principal de cargas de trabajo, donde puede explorar otras
+    herramientas o secciones.
 
     ![](../media/lab-02/image22.png)
 
-## Aufgabe 10: Datenbanken-Funktionsbereich
+## Tarea 10: Experiencia de bases de datos
 
-1. Klicken Sie auf der Seite **Workloads** auf **Databases**, um
-    fortzufahren.
+1. En la página **Cargas de trabajo**, haga clic en **Databases** para
+    continuar.
 
     ![](../media/lab-02/image32.png)
 
-2. Sie werden zur Datenbanken-Startseite weitergeleitet. Im Folgenden
-    finden Sie eine detaillierte Übersicht über die Abschnitte, die
-    Ihnen bei der effektiven Nutzung von Datenbanken helfen sollen.
+2. Se le dirigirá a la página principal de Bases de datos. A
+    continuación se muestra una descripción general detallada de sus
+    secciones, diseñadas para ayudarle a utilizar las bases de datos con
+    eficacia.
 
-    **Was ist eine Fabric-Datenbank?**
+    **¿Qué es una Fabric Database?**
 
-    Die SQL-Datenbank in Microsoft Fabric ist eine entwicklerfreundliche
-    Transaktionsdatenbank, die auf Azure SQL Database basiert und es Ihnen
-    ermöglicht, Ihre Betriebsdatenbank einfach in Fabric zu erstellen. Eine
-    SQL-Datenbank in Fabric verwendet dasselbe SQL-Datenbankmodul wie die
-    Azure SQL-Datenbank.
+    Una SQL Database en Microsoft Fabric es una base de datos transaccional
+    fácil de usar para desarrolladores, basada en Azure SQL Database, que le
+    permite crear con facilidad su base de datos operativa en Fabric. Una
+    SQL Database en Fabric utiliza el mismo motor de SQL Database que Azure
+    SQL Database.
 
-    **Elementtypen:**
+    **Tipos de elementos:**
 
-    a. **SQL-Datenbank (Vorschauversion):** Die SQL-Datenbank in Fabric ist
-        Teil der Datenbank-Workload, und auf die Daten kann von anderen
-        Elementen in Fabric aus zugegriffen werden. Ihre SQL-Datenbankdaten
-        werden auch in OneLake in einem abfragbaren Format auf dem neuesten
-        Stand gehalten, sodass Sie alle verschiedenen Dienste in Fabric
-        nutzen können, z. B. Analysen mit Spark, Ausführung von Notebooks,
-        Datentechnik, Visualisierung durch Power BI-Berichte und mehr.
+    a. **SQL Database (versión preliminar)**: la base de datos SQL en
+    Fabric es parte de la carga de trabajo de la base de datos y se puede
+    acceder a los datos desde otros elementos de Fabric. Los datos de su
+    base de datos de SQL también se mantienen actualizados en un formato que
+    se pueden consultar en OneLake, para que pueda usar todos los diferentes
+    servicios de Fabric, como la ejecución de análisis con Spark, la
+    ejecución de cuadernos, la ingeniería de datos y la visualización a
+    través Power BI de informes, entre otros.
 
-    **Erste Schritte:**
+    **Introducción:**
 
-    Befolgen Sie die folgenden Schritte, um mit der Verwendung von
-    Datenbanken zu beginnen:
+    Para empezar a utilizar Databases, siga los siguientes pasos:
 
-    a. **Erkunden:** Klicken Sie auf „Öffnen", um eine Beispieldatenbank zu
-        erkunden
+    a. **Explorar**: haga clic en "Abrir" para explorar una base de datos
+    de ejemplo.
 
-    b. **Datenbankkonzepte:** In diesem Abschnitt werden allgemeine
-        Begriffe und Konzepte rund um Transaktionsdatenbanken erläutert,
-        damit Sie sich mit der Arbeit mit der SQL-Datenbank vertraut machen
-        können
+    b. **Database concepts**: explica los términos y conceptos comunes en
+    torno a la base de datos transaccional para que pueda familiarizarse con
+    cómo trabajar con SQL Database.
 
-    c. **Datenbankvorlagen:** Durchsuchen Sie eine Bibliothek mit
-        vorgefertigten Vorlagen gängiger Datenbankdesigns
+    c. **Database templates**: revise una biblioteca de plantillas creadas
+    previamente con diseños comunes de bases de datos.
 
     ![](../media/lab-02/image33.png)
 
-3. Klicken Sie in der oberen linken Ecke des Bildschirms auf „Zurück zu
-    Workloads". Auf diese Weise gelangen Sie zur Workloads-Hauptseite,
-    auf der Sie andere Tools oder Abschnitte erkunden können.
+3. Haga clic en Volver a las cargas de trabajo en la esquina superior
+    izquierda de la pantalla. Esta acción le llevará a la página
+    principal de cargas de trabajo, donde puede explorar otras
+    herramientas o secciones.
 
     ![](../media/lab-02/image22.png)
 
-In dieser Übung haben wir die Fabric-Oberfläche kennengelernt und einen
-Fabric-Arbeitsbereich und ein Lakehouse erstellt. In der nächsten Übung
-lernen Sie, wie Sie mit Verknüpfungen in Lakehouse eine Verbindung zu
-ADLS Gen2-Daten herstellen und diese Daten anhand von Ansichten
-transformieren.
+En esta práctica de laboratorio, exploramos la interfaz de Fabric,
+creamos un área de trabajo de Fabric y un almacén de lago de datos. En
+el próximo laboratorio, aprenderemos a utilizar accesos directos en el
+almacén de lago de datos para conectarnos a los datos de ADLS Gen2 y a
+transformar estos datos mediante vistas.
 
-# Referenzen
+# Referencias
 
-Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten
-Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie
-in der Hilfe (?) Links zu praktischen Informationen.
+Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave
+disponibles en Microsoft Fabric. En el menú del servicio, la sección
+Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-![](../media/lab-02/image34.png)
+![](../media/lab-01/image27.png)
 
-Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit
-Microsoft Fabric.
+Estos son algunos recursos más que podrán ayudarle a seguir avanzando
+con Microsoft Fabric.
 
-- Lesen Sie den vollständigen Blogbeitrag 
+- Vea la publicación del blog para leer el [anuncio de disponibilidad
+  general de Microsoft Fabric
+  completo](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
-- Fabric bei einer [interaktiven
-  Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
+- Explore Fabric a través de la [Visita
+  guiada](https://aka.ms/Fabric-GuidedTour)
 
-- Zur [kostenlosen Testversion von Microsoft
-  Fabric](https://aka.ms/try-fabric) anmelden
+- Regístrese en la [prueba gratuita de Microsoft
+  Fabric](https://aka.ms/try-fabric)
 
-- [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric)
-  besuchen
+- Visite el [sitio web de Microsoft
+  Fabric](https://aka.ms/microsoft-fabric)
 
-- Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue
-  Qualifikationen erwerben
+- Adquiera nuevas capacidades mediante la exploración de los [módulos de
+  aprendizaje de Fabric](https://aka.ms/learn-fabric)
 
-- [Technische Dokumentation zu Fabric](https://aka.ms/fabric-docs) lesen
+- Explore la [documentación técnica de
+  Fabric](https://aka.ms/fabric-docs)
 
-- [Kostenloses E-Book zum Einstieg in
-  Fabric](https://aka.ms/fabric-get-started-ebook) lesen
+- Lea el libro [electrónico gratuito sobre cómo empezar a usar
+  Fabric](https://aka.ms/fabric-get-started-ebook)
 
-- Mitglied der [Fabric-Community](https://aka.ms/fabric-community)
-  werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen
-  auszutauschen
+- Únase a la [comunidad de Fabric](https://aka.ms/fabric-community) para
+  publicar sus preguntas, compartir sus comentarios y aprender de otros
 
-Lesen Sie die Blogs, in denen die Fabric-Funktionen ausführlich
-beschrieben werden:
+Obtenga más información en los blogs de anuncios de la experiencia
+Fabric:
 
-- [Blog zum Data Factory-Funktionsbereich in
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+- [Experiencia de Data Factory en el blog de
+  Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
-- [Blog zum Data Engineering-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+- [Experiencia de Synapse Data Engineering en el blog de
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
-- [Blog zum Data Science-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+- [Experiencia de Synapse Data Science en el blog de
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
-- [Blog zum Data Warehousing-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+- [Experiencia de Synapse Data Warehousing en el blog de
+  Fabric](https://aka.ms/Fabric-DW-Blog)
 
-- [Blog zum Real-Time Analytics-Funktionsbereich von Synapse in
+- [Experiencia de Synapse Real-Time Analytics en el blog de
   Fabric](https://aka.ms/Fabric-RTA-Blog)
 
-- [Blog mit Ankündigungen zu Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
 
-- [Blog zum Data Activator-Funktionsbereich in
+- [Experiencia de Data Activator en el blog de
   Fabric](https://aka.ms/Fabric-DA-Blog) 
 
-- [Blog zu Verwaltung und Governance in
+- [Administración y gobernanza en el blog de
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-- [Blog zu OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
-- [Blog zur Dataverse- und Microsoft
-  Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
+- [Blog de integración de Dataverse y Microsoft
+  Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2025 Microsoft Corporation. Alle Rechte vorbehalten.
+© 2025 Microsoft Corporation. Todos los derechos reservados.
 
-Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
-folgenden Bedingungen zu:
+Al participar en esta demostración o laboratorio práctico, acepta las
+siguientes condiciones:
 
-Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
-von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
-erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
-verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
-und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
-andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
-Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
-verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
-vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
-oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
+Microsoft Corporation pone a su disposición la tecnología o
+funcionalidad descrita en esta demostración/laboratorio práctico con el
+fin de obtener comentarios por su parte y de facilitarle una experiencia
+de aprendizaje. Esta demostración/laboratorio práctico solo se puede
+usar para evaluar las características de tal tecnología o funcionalidad
+y para proporcionar comentarios a Microsoft. No se puede usar para
+ningún otro propósito. Ninguna parte de esta demostración/laboratorio
+práctico se puede modificar, copiar, distribuir, transmitir, mostrar,
+realizar, reproducir, publicar, licenciar, transferir ni vender, ni
+tampoco crear trabajos derivados de ella.
 
-DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
-DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
-WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
+LA COPIA O REPRODUCCIÓN DE ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO (O
+PARTE DE ELLA) EN CUALQUIER OTRO SERVIDOR O UBICACIÓN PARA SU
+REPRODUCCIÓN O DISTRIBUCIÓN POSTERIOR QUEDA EXPRESAMENTE PROHIBIDA.
 
-DIESE DEMO/ÜBUNG STELLT BESTIMMTE
-SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
-POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
-UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
-BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
-DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
-FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
-ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
-ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
-BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
-PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
+ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO PROPORCIONA CIERTAS FUNCIONES
+Y CARACTERÍSTICAS DE PRODUCTOS O TECNOLOGÍAS DE SOFTWARE (INCLUIDOS
+POSIBLES NUEVOS CONCEPTOS Y CARACTERÍSTICAS) EN UN ENTORNO SIMULADO SIN
+INSTALACIÓN O CONFIGURACIÓN
+COMPLEJA PARA EL PROPÓSITO ARRIBA DESCRITO. LA TECNOLOGÍA/CONCEPTOS
+DESCRITOS EN ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NO REPRESENTAN LA
+FUNCIONALIDAD COMPLETA DE LAS CARACTERÍSTICAS Y, EN ESTE SENTIDO, ES
+POSIBLE QUE NO FUNCIONEN DEL MODO EN QUE LO HARÁN EN UNA VERSIÓN FINAL.
+ASIMISMO, PUEDE QUE NO SE PUBLIQUE UNA VERSIÓN FINAL DE TALES
+CARACTERÍSTICAS O CONCEPTOS. DE IGUAL MODO, SU EXPERIENCIA CON EL USO DE
+ESTAS CARACTERÍSTICAS Y FUNCIONALIDADES EN UN ENTORNO FÍSICO PUEDE SER
+DIFERENTE.
 
-**FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
-und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
-gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
-für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
-gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
-Patentrechte ab, die erforderlich sind, damit deren Produkte,
-Technologien und Dienste bestimmte Teile einer Software oder eines
-Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
-oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
-kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
-Microsoft Drittparteien eine Lizenz für seine Software oder
-Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
-Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
+**COMENTARIOS**. Si envía comentarios a Microsoft sobre las
+características, funcionalidades o conceptos de tecnología descritos en
+esta demostración/laboratorio práctico, acepta otorgar a Microsoft, sin
+cargo alguno, el derecho a usar, compartir y comercializar sus
+comentarios de cualquier modo y para cualquier fin. También concederá a
+terceros, sin cargo alguno, los derechos de patente necesarios para que
+sus productos, tecnologías y servicios usen o interactúen con cualquier
+parte específica de un software o servicio de Microsoft que incluya los
+comentarios. No enviará comentarios que estén sujetos a una licencia que
+obligue a Microsoft a conceder su software o documentación bajo licencia
+a terceras partes porque incluyamos sus comentarios en ellos. Estos
+derechos seguirán vigentes después del vencimiento de este acuerdo.
 
-DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
-GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
-AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
-GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
-ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
-DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
-ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
-DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
-BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
-FÜR EINEN BESTIMMTEN ZWECK.
+MICROSOFT CORPORATION RENUNCIA POR LA PRESENTE A TODAS LAS GARANTÍAS Y
+CONDICIONES RELATIVAS A LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO, INCLUIDA
+CUALQUIER GARANTÍA Y CONDICIÓN DE COMERCIABILIDAD (YA SEA EXPRESA,
+IMPLÍCITA O ESTATUTARIA), DE IDONEIDAD PARA UN FIN DETERMINADO, DE
+TITULARIDAD Y DE AUSENCIA DE INFRACCIÓN. MICROSOFT NO DECLARA NI
+GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA
+REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE
+LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
 
-**HAFTUNGSAUSSCHLUSS**
+**DECLINACIÓN DE RESPONSABILIDADES**
 
-Diese Demo/Übung enthält nur einen Teil der neuen Features und
-Verbesserungen in Microsoft Power BI. Einige Features können sich
-unter Umständen in zukünftigen Versionen des Produkts ändern. In
-dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
-über alle neuen Features.
+Esta demostración/laboratorio práctico contiene solo una parte de las
+nuevas características y mejoras realizadas en Microsoft Power BI. Puede
+que algunas de las características cambien en versiones futuras del
+producto. En esta demostración/laboratorio práctico, conocerá algunas de
+estas nuevas características, pero no todas.
