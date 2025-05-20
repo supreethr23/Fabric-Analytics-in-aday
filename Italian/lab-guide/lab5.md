@@ -325,7 +325,7 @@ possibile ottenere questo risultato creando una nuova pipeline di dati.
 
 3. Nell'elenco di attività fare clic su **Fino a**.
 
-   **Fino a**: è un'attività usata per eseguire l'iterazione finché una
+   **Fino a:** è un'attività usata per eseguire l'iterazione finché una
 condizione non viene soddisfatta.
 
    Nel nostro scenario, ripeteremo e aggiorneremo il flusso di dati finché
@@ -393,9 +393,9 @@ renderne più agevole la ricerca.
 
 2. Nel **riquadro inferiore** selezionare **Generale**.
 
-3. Immettere il **Nome**: **Iterator**
+3. Immettere il **Nome:** **Iterator**
 
-4. Immettere la **Descrizione**: **Iteratore per aggiornare il flusso
+4. Immettere la **Descrizione:** **Iteratore per aggiornare il flusso
     di dati. Riproverà fino a 3 volte**.
 
     ![](../media/lab-05/image26.png)

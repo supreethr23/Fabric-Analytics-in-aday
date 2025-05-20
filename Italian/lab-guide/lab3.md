@@ -82,9 +82,7 @@ nel desktop di Windows.
 
 6. Selezionare **Crea nuova connessione (1)**.
 
-7. Immettere il collegamento seguente per la proprietà **URL**:
-    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
-    **(2):**
+7. Immettere il collegamento seguente per la proprietà **URL:** https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2):**
 
 8. Fare clic su Crea nuova connessione (3) nella sezione Connessione.
 
@@ -92,9 +90,9 @@ nel desktop di Windows.
     discesa Tipo di autenticazione.
 
 10. Copiare il token di firma di accesso condiviso e incollarlo nel
-    campo Token di firma di accesso condiviso (5).
+    campo Token di firma di accesso condiviso **(5)**.
 
-    - **SAS token:** <inject key="Sas token"></inject>
+    - **Token di firma di accesso condiviso:** <inject key="Sas token"></inject>
 
 11. Selezionare **Avanti (6)** in basso a destra della schermata.
 
@@ -129,7 +127,7 @@ nel desktop di Windows.
 
     k. Warehouse.StockItems
 
-    - **Nota:** Sales.Invoices_May è l'unica directory **non** selezionata.
+    **Nota:** Sales.Invoices_May è l'unica directory **non** selezionata.
 
     ![](../media/lab-03/image9.png)
 
@@ -168,7 +166,7 @@ nel desktop di Windows.
 
     j. Warehouse.StockItems in **ProductItem**
 
-    ***Nota**: ricontrollare i nomi. Un errore di digitazione potrebbe
+    ***Nota:** ricontrollare i nomi. Un errore di digitazione potrebbe
 causare errori durante il lab.
 
 18. Selezionare **Crea** per creare il collegamento.
@@ -332,7 +330,7 @@ Assicurarsi di selezionare solo quelle necessarie.
     selezionare **Home (2) -> Scegli colonne (3) -> Scegli colonne
     (4)**.
 
-    ***Nota:** se l'opzione Scegli colonne non è visibile, cercarla in
+    **Nota:** se l'opzione Scegli colonne non è visibile, cercarla in
 Gestisci colonne.
 
     ![](../media/lab-03/image23.png)
@@ -379,7 +377,7 @@ caricamento, in modo da caricare i dati da questa query.
     Verremo indirizzati all'editor di query visive. Ora salviamo la query
 come vista.
 
-    * **Nota**: tutti i passaggi eseguiti mediante l'editor di Power Query
+    **Nota:** tutti i passaggi eseguiti mediante l'editor di Power Query
 possono anche essere eseguiti usando l'editor di query visive.
 
 30. Dal menu Editor di query visive selezionare **Salva come
@@ -521,7 +519,7 @@ la vista.
 
     ![](../media/lab-03/image36.png)
 
-    - **Nota**: se l'opzione Abilita caricamento è selezionata, la casella **Customer** deve avere un bordo blu.
+    **Nota:** se l'opzione Abilita caricamento è selezionata, la casella **Customer** deve avere un bordo blu.
 
 20. Dal menu Query visiva selezionare **Salva come visualizzazione**.
 
@@ -616,7 +614,7 @@ avanzato.
 
     ![](../media/lab-03/image45.png)
 
-    - **Nota:** se non si riesce a trovare l'Editor avanzato, è possibile
+    **Nota:** se non si riesce a trovare l'Editor avanzato, è possibile
 accedervi in 
 **Home -> Query -> Editor avanzato**.
 
@@ -650,7 +648,7 @@ accedervi in 
 24. Usare la combinazione di tasti **CTRL+V** per incollare il codice
     copiato da Power BI Desktop.
 
-    - **Nota**: se si lavora in un ambiente lab, selezionare i **puntini di
+    **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di
 sospensione (...)** in alto a destra nello schermo. Usare il dispositivo
 di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
 di dialogo selezionare OK. Dopo aver incollato le query è possibile
@@ -771,7 +769,7 @@ codice nell'Editor avanzato.
 
     ![](../media/lab-03/image59.png)
 
-    - **Nota:** se non si riesce a trovare l'Editor avanzato, è possibile
+    **Nota:** se non si riesce a trovare l'Editor avanzato, è possibile
 accedervi in **Home -> Query -> Editor avanzato**.
 
 12. **Selezionare tutto il codice** nell'Editor avanzato ed
@@ -903,7 +901,7 @@ Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
 - [Blog sull'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+© 2025 Microsoft Corporation. Tutti i diritti sono riservati.
 
 L'uso della demo/del lab implica l'accettazione delle seguenti
 condizioni:

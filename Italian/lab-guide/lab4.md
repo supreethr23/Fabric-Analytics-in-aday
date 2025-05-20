@@ -240,7 +240,7 @@ Power BI Desktop a Flusso di dati.
 
 6. Nel pannello di sinistra selezionare le seguenti query nella
     cartella **SnowflakeData** tenendo premuto il tasto **CTRL o
-    MAIUSC**:
+    MAIUSC:**
 
     a. SupplierCategories
 
