@@ -47,7 +47,7 @@ Vamos começar usando a opção de criação automática de relatório. E, mais
 adiante no laboratório, recriaremos o relatório que temos no Power BI.
 
 1. Vamos voltar ao **workspace do Fabric** que você criou no
-    laboratório 2, denominado **FAIAD_<nome de usuário>.**
+    laboratório 2, denominado **FAIAD_<nome de usuário>**.
 
 2. Na parte inferior esquerda da tela,
     selecione o ícone **Fabric experience selector**.
@@ -94,7 +94,7 @@ adiante no laboratório, recriaremos o relatório que temos no Power BI.
 8. O Power BI começará a criar automaticamente o relatório. Quando o
     relatório estiver pronto, uma caixa de diálogo será exibida na parte
     superior direita da tela. Selecione **Exiba o relatório agora ou ele
-    será carregado automaticamente em alguns segundos.**
+    será carregado automaticamente em alguns segundos**.
 
     ![](../media/lab-07/image11.png)
 
@@ -145,7 +145,7 @@ Vamos criar um novo relatório usando uma tela em branco.
     **FAIAD_<nome de usuário>** para ser direcionado para o
     workspace.
 
-2. No menu superior, selecione **Novo item -> Relatório.** Você será
+2. No menu superior, selecione **Novo item -> Relatório**. Você será
     direcionado para criar sua primeira página de relatório.
 
     ![](../media/lab-07/image14.png)
@@ -320,7 +320,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
     é a abreviação de relatório.
 
 3. Verifique se o relatório está salvo no workspace **FAIAD_<nome de
-    usuário>.**
+    usuário>**.
 
 4. Selecione **Salvar**.
 
@@ -441,14 +441,14 @@ Desktop.
 9. Expanda a seção **Linhas**.
 
 10. Na lista suspensa **Aplicar configurações a -> Série ->,**
-    selecione **Tailspin Toys.**
+    selecione **Tailspin Toys**.
 
 11. Expanda a seção **Cores**.
 
 12. Defina **cor** como **#F17925**
 
 13. Na lista suspensa **Aplicar configurações a -> Série ->,**
-    selecione **Wingtip Toys.**
+    selecione **Wingtip Toys**.
 
 14. Defina **cor** como **#004753**
 
@@ -604,9 +604,9 @@ e atualizando a exibição Sales.
     ![](../media/lab-07/image48.png)
 
 11. Você será conectado ao ADLS Gen2 com a estrutura de diretórios
-    exibida no painel esquerdo. Expanda **Delta-Parquet-Format-FY25.**
+    exibida no painel esquerdo. Expanda **Delta-Parquet-Format-FY25**.
 
-12. Selecione **Sales.Invoices_May.**
+12. Selecione **Sales.Invoices_May**.
 
 13. Selecione **Próximo**.
 
@@ -615,7 +615,7 @@ e atualizando a exibição Sales.
 14. Você irá para a próxima caixa de diálogo para editar os nomes.
     Selecione o **ícone Editar**, em Ações, para **Sales.Invoices_May**.
 
-15. Renomeie **Sales.Invoices_May para InvoicesMay.**
+15. Renomeie **Sales.Invoices_May para InvoicesMay**.
 
 16. Selecione a **marca de seleção** ao lado do nome para salvar a
     alteração.
@@ -636,7 +636,7 @@ InvoicesMay. Agora precisamos atualizar a exibição Sales.
     SQL**. Um painel de nova consulta SQL é aberto.
 
 20. **Copie** o código abaixo e **cole-o** no painel da consulta
-    SQL**.**
+    SQL****.
 
      ```
         ALTER VIEW [dbo].[Sales] AS (
@@ -790,7 +790,7 @@ dados de maio de 2024.
     ![](../media/lab-07/image52.png)
 
 22. Selecione **rpt_Sales_Report** na barra de menus à esquerda para
-    voltar para o relatório**.**
+    voltar para o relatório****.
 
 23. No menu superior, selecione **Atualizar**. Observe agora no gráfico
     de linhas que há dados de maio de 2024. Observe também que o valor
@@ -806,7 +806,7 @@ problema:
 
    - **Você precisa atualizar seu conjunto de dados pelo menos três vezes
     por dia para acomodar os diferentes horários de atualização para as
-    diferentes fontes de dados.**
+    diferentes fontes de dados**.
 
      Resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é
 atualizado em sua agenda. Os conjuntos de dados e os relatórios não
@@ -814,7 +814,7 @@ precisam ser atualizados.
 
    - **As operações de atualização podem demorar, pois é sempre
     necessário fazer uma atualização completa para capturar tudo o que
-    foi atualizado nos sistemas de origem.**
+    foi atualizado nos sistemas de origem**.
 
      Novamente, resolvemos isso usando Direct Lake. Cada Fluxo de Dados
 individual é atualizado em sua agenda. Os conjuntos de dados e os
@@ -825,7 +825,7 @@ preocupar com a atualização completa.
     extraindo dados resultarão na interrupção da atualização do conjunto
     de dados. Muitas vezes o arquivo do funcionário não é carregado no
     prazo, resultando na interrupção da atualização do conjunto de
-    dados.**
+    dados**.
 
      Os Pipelines de Dados ajudam a resolver esse problema, oferecendo o
 recurso de tentar novamente a atualização em caso de falha e em
@@ -833,14 +833,14 @@ intervalos diferentes.
 
    - **As alterações no modelo de dados demoram muito tempo, pois o Power
     Query leva tempo para atualizar as versões preliminares devido aos
-    tamanhos de dados grandes e às transformações complexas.**
+    tamanhos de dados grandes e às transformações complexas**.
 
      Percebemos que os Fluxos de Dados e o Lakehouses são eficientes e fáceis
 de alterar. Geralmente, a pré-visualização em Fluxos de Dados e
 Lakehouses não demora muito para carregar.
 
    - **Você precisa de um computador com Windows para usar o Power BI
-    Desktop mesmo que o padrão corporativo seja Mac.**
+    Desktop mesmo que o padrão corporativo seja Mac**.
 
      O Microsoft Fabric é uma oferta de SaaS. Tudo o que precisamos é de um
 navegador para acessar o serviço. Não precisamos instalar nenhum

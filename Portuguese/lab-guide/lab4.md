@@ -57,7 +57,7 @@ Ao final deste laboratório, você terá aprendido:
 2. Selecione a opção **+ Novo item (2)** disponível no canto superior
     esquerdo.
 
-3. Na seção **Obter Dados (3),** selecione **Fluxo de Dados Gen2 (4).**
+3. Na seção **Obter Dados (3),** selecione **Fluxo de Dados Gen2 (4)**.
 
     ![](../media/lab-04/image6.png)
 
@@ -148,7 +148,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 
 5. Queremos criar a tabela no Lakehouse que criamos anteriormente. No
     painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de
-    usuário>.**
+    usuário>**.
 
 6. Selecione **lh_FAIAD**.
 
@@ -326,7 +326,7 @@ Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
 1. Selecione a consulta **Supplier (1)**.
 
 2. Na faixa de opções, selecione **Página Inicial (2) -> Adicionar
-    destino de dados (3) -> Lakehouse (4).**
+    destino de dados (3) -> Lakehouse (4)**.
 
     ![](../media/lab-04/image25.png)
 
@@ -343,7 +343,7 @@ Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
 6. Queremos criar a tabela no Lakehouse que criamos anteriormente. No
     painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de
-    usuário>.**
+    usuário>**.
 
 7. Selecione **lh_FAIAD**.
 
@@ -429,9 +429,9 @@ para criar um atalho para Azure Data Lake Storage Gen2.
 
     ![](../media/lab-04/image35.png)
 
-4. **Selecione Criar nova conexão (1).** A caixa de diálogo
+4. **Selecione Criar nova conexão (1)**. A caixa de diálogo
     Configurações de conexão é aberta. Insira
-    **org6c18814a.crm.dynamics.com (2)** como **Domínio de ambiente.**
+    **org6c18814a.crm.dynamics.com (2)** como **Domínio de ambiente**.
 
 5. Deixe **Tipo de autenticação** como **Conta organizacional (3)**.
 

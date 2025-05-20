@@ -44,7 +44,7 @@ de dados. Apenas para recapitular o requisito:
     precisamos configurar a atualização, pois estamos vinculando ao
     Lakehouse fornecido pela equipe de TI.
 
-- **Dados de Venda**: no ADLS são atualizados ao meio-dia/12h todos os
+- **Dados de Venda:** no ADLS são atualizados ao meio-dia/12h todos os
     dias. Não precisamos configurar a atualização para isso, pois
     criamos um atalho. Os dados estarão disponíveis assim que forem
     atualizados no ADLS.
@@ -239,7 +239,7 @@ usar.
 
 4. Na lista suspensa **Fluxo de dados**, selecione
     **df_People_SharePoint**. Quando esta atividade Fluxo de dados for
-    executada, ela atualizará **df_People_SharePoint.** Isso foi fácil,
+    executada, ela atualizará **df_People_SharePoint**. Isso foi fácil,
     certo?
 
    Em nosso cenário, os Dados do Funcionário não são atualizados em uma
@@ -319,7 +319,7 @@ alcançado criando um novo Pipeline de dados.
 
 3. Na lista de atividades, clique em **Until**.
 
-   **Until**: é uma atividade usada para iterar até que uma condição seja
+   **Until:** é uma atividade usada para iterar até que uma condição seja
 satisfeita.
 
     Em nosso cenário, vamos iterar e atualizar o fluxo de dados até que seja
@@ -392,7 +392,7 @@ nome da variável.
 
     ![](../media/lab-05/image26.png)
 
-5. No painel inferior, selecione **Configurações (1).**
+5. No painel inferior, selecione **Configurações (1)**.
 
 6. Selecione a **caixa de texto Expressão (2)**. Precisamos inserir uma
     expressão nessa caixa de texto que será avaliada como verdadeira ou
@@ -407,7 +407,7 @@ nome da variável.
     ![](../media/lab-05/image27.png)
 
     Precisamos escrever uma expressão que seja executada até que o valor de
-**varCounter seja 3** ou** **o valor **de varIsSuccess seja Sim.**
+**varCounter seja 3** ou** **o valor **de varIsSuccess seja Sim**.
 (varCounter e varIsSuccess são as variáveis que acabamos de criar.)
 
 8. A caixa de diálogo **Construtor de expressão de pipeline** é aberta.
@@ -594,7 +594,7 @@ atividade:
 7. No painel inferior, verifique se **Tipo de variável** é **Variável
     de pipeline**.
 
-8. No campo **Nome**, selecione **varIsSucces.** Esta é a variável cujo
+8. No campo **Nome**, selecione **varIsSucces**. Esta é a variável cujo
     valor vamos definir.
 
 9. No campo **Valor**, selecione a **caixa de texto**. Selecione o link
@@ -605,7 +605,7 @@ atividade:
 10. A caixa de diálogo Construtor de expressões de pipeline é aberta.
     Selecione a área de texto **Adicionar conteúdo dinâmico abaixo
     usando qualquer combinação de expressões, funções e variáveis do
-    sistema (1).**
+    sistema (1)**.
 
 11. No menu inferior, clique nas **reticências(...) (2)** e selecione
     **Variáveis (3) -> varSuccess (4)**. Observe que
@@ -809,7 +809,7 @@ captura de tela abaixo.
 ## Tarefa 13: Configurar atualização de agenda para o Pipeline de dados
 
 1. Podemos testar o pipeline de dados selecionando **Página Inicial ->
-    Executar.**
+    Executar**.
 
    - **Observação:** Pode levar alguns minutos para que o pipeline de dados
 seja atualizado. Este é um ambiente de treinamento, portanto o arquivo

@@ -503,7 +503,7 @@ opções nos laboratórios a seguir.
     f. **Como usar o NotebookUtils:** clique no botão "Abrir" para saber
     como usar o NotebookUtils para uma análise de dados aprimorada.
 
-    g. **Aproveitar notebooks para seu lakehouse**: clique no botão
+    g. **Aproveitar notebooks para seu lakehouse:** clique no botão
     "Abrir" para saber como aproveitar os notebooks para seu lakehouse.
 
     h. **Aproveitar conjuntos de dados para seu lakehouse:** clique no

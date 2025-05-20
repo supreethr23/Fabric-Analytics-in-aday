@@ -205,7 +205,7 @@ nosso modelo. Então vamos criar um novo modelo semântico.
 
     i. **Sales**
 
-9. Selecione **Confirmar.**
+9. Selecione **Confirmar**.
 
     ![](../media/lab-06/image17.png)
 
@@ -439,7 +439,7 @@ Vamos adicionar os relacionamentos restantes.
     ![](../media/lab-06/image33.png)
 
 20. Da mesma forma, crie um relacionamento entre Customer e Reseller.
-    Selecione **+ Novo relacionamento.**
+    Selecione **+ Novo relacionamento**.
 
 21. A caixa de diálogo Novo relacionamento é aberta. Verifique se a
     tabela **From** é **Customer** e **Coluna** é **ResellerID**.
@@ -507,11 +507,11 @@ Vamos adicionar as medidas restantes.
         formatada como **Moeda com 0 casas decimais**.
 
     b. Na tabela **Sales** , **GM% = DIVIDE([GM], [Sales])** está
-        formatada como **Porcentagem com 0 casas decimais.**
+        formatada como **Porcentagem com 0 casas decimais**.
 
     c. Na tabela **Customer , No of Customers = COUNTROWS(Customer)**
         formatado como **Número Inteiro com separador de milhares
-        habilitado.**
+        habilitado**.
 
 # Referências
 

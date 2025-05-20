@@ -83,7 +83,7 @@ Windows.
 
 6. Selecione **Criar nova conexão (1)**.
 
-7. Insira o seguinte link para a propriedade **URL**:
+7. Insira o seguinte link para a propriedade **URL:**
     <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
     **(2):**
 
@@ -94,7 +94,7 @@ Windows.
 
 10. Copie o token SAS e cole-o no campo Token SAS (5).
 
-    - **Token SAS:**
+    - **Token SAS:** <inject key="Sas token"></inject>
 
 11. Selecione **Avançar (6)** na parte inferior direita da tela.
 
@@ -105,7 +105,7 @@ Windows.
     (1)**.
 
 13. **Selecione** os seguintes diretórios **(2)** e clique em **Avançar
-    (3)**:
+    (3):**
 
     a. Application.Cities
 
@@ -167,7 +167,7 @@ selecionado.
 
     j. Warehouse.StockItems para **ProductItem**
 
-    > **Observação**: confira novamente os nomes. Um erro de digitação pode
+    > **Observação:** confira novamente os nomes. Um erro de digitação pode
     > causar erros durante o laboratório.
 
 18. Selecione **Criar** para criar o atalho.
@@ -210,7 +210,7 @@ modelo semântico. Vamos criar exibições para transformar os dados.
 
 3. Para criar uma consulta, precisamos adicionar tabelas ao painel
     Consulta Visual. Clique nas reticências ao lado da tabela **Cities
-    (1)** e selecione **Inserir na tela (2).**
+    (1)** e selecione **Inserir na tela (2)**.
 
     ![](../media/lab-03/image15.png)
 
@@ -226,12 +226,12 @@ isso, já que estamos familiarizados.
    - ***Observação:** Talvez seja necessário rolar para a direita ou reabrir
 a guia de consulta de visual se você não vir imediatamente esse ícone.*
 
-   ![](../media/lab-03/image16.png)
+     ![](../media/lab-03/image16.png)
 
 6. Com a consulta **Cities(1)** selecionada, na faixa de opções do
     Editor do Power Query, selecione **Página Inicial (2) ->
     Combinar (3) -> menu suspenso Mesclar consultas (4) -> Mesclar
-    consultas como novas (5).** A caixa de diálogo Mesclar consultas é
+    consultas como novas (5)**. A caixa de diálogo Mesclar consultas é
     aberta.
 
     ![](../media/lab-03/image17.png)
@@ -245,7 +245,7 @@ a guia de consulta de visual se você não vir imediatamente esse ícone.*
 
 10. Selecione **Interna** como o **Tipo de junção**.
 
-11. Selecione **OK.**
+11. Selecione **OK**.
 
     ![](../media/lab-03/image18.png)
 
@@ -271,7 +271,7 @@ de algumas colunas de States.
 
      Precisamos mesclar a consulta Countries agora.
 
-15. Com a consulta Merge selecionada (1), selecione **Página Inicial (2)
+15. Com a consulta Merge selecionada **(1)**, selecione **Página Inicial (2)
     -> Combinar (3) -> menu suspenso Mesclar consultas (4) -> Mesclar
     consultas (5)**.
 
@@ -285,7 +285,7 @@ de algumas colunas de States.
 
 18. Selecione **Interna** como o **Tipo de junção**.
 
-19. Selecione **OK.**
+19. Selecione **OK**.
 
     ![](../media/lab-03/image21.png)
 
@@ -319,7 +319,7 @@ de algumas colunas de States.
       Não precisamos de todas as colunas na tabela **Merge**. Certifique-se de
 selecionar apenas as colunas que precisamos.
 
-23. Com a consulta **Merge** selecionada (1), selecione **Página
+23. Com a consulta **Merge** selecionada **(1)**, selecione **Página
     Inicial (2) -> Escolher colunas (3) -> Escolher colunas (4)** na
     faixa de opções.
 
@@ -371,7 +371,7 @@ dados sejam carregados a partir dessa consulta.
     Navegaremos até o Editor de consulta de visual. Agora vamos salvar essa
 consulta como uma exibição.
 
-    **Observação**: todas as etapas que executamos usando o editor do Power
+    **Observação:** todas as etapas que executamos usando o editor do Power
 Query podem ser executadas usando o editor de consulta Visual também.
 
 30. No menu Editor de consultas Visual, selecione **Salvar como
@@ -391,7 +391,7 @@ SQL.
 
     Você receberá um alerta assim que a exibição for salva.
 
-33. No painel Explorer (à esquerda), expanda **Views.** Temos a exibição
+33. No painel Explorer (à esquerda), expanda **Views**. Temos a exibição
     recém-criada Geo.
 
     ![](../media/lab-03/image28.png)
@@ -434,7 +434,7 @@ tabela superior.
 
 8. Selecione **Interna** como o **Tipo de junção**.
 
-9. Selecione **OK.**
+9. Selecione **OK**.
 
     ![](../media/lab-03/image31.png)
 
@@ -508,7 +508,7 @@ salvar esta exibição.
 
     ![](../media/lab-03/image36.png)
 
-    - **Observação**: A caixa **Customer** deve ter uma borda azul se a opção
+    - **Observação:** A caixa **Customer** deve ter uma borda azul se a opção
 Habilitar carga estiver marcada.
 
 20. No menu de consultas Visual, selecione **Salvar como exibição**.
@@ -526,7 +526,7 @@ SQL está disponível. Você pode revê-la, se selecioná-la.
 
     Você receberá um alerta assim que a exibição for salva.
 
-23. No painel Explorer (à esquerda), expanda **Views.** Temos a exibição
+23. No painel Explorer (à esquerda), expanda **Views**. Temos a exibição
     recém-criada Reseller.
 
     ![](../media/lab-03/image39.png)
@@ -562,7 +562,7 @@ consulta Visual. Vamos testar esse método.
 
 6. Com a consulta **InvoiceLineItems** selecionada, na faixa de opções,
     selecione **Página Inicial (2) -> Combinar (3) -> menu suspenso
-    Mesclar consultas (4) -> Mesclar consultas como novas (5).**
+    Mesclar consultas (4) -> Mesclar consultas como novas (5)**.
     A caixa de diálogo Mesclar consultas é aberta.
 
     ![](../media/lab-03/image42.png)
@@ -577,7 +577,7 @@ consulta Visual. Vamos testar esse método.
 
 10. Selecione **Interna** como o **Tipo de junção**.
 
-11. Selecione **OK.**
+11. Selecione **OK**.
 
      ![](../media/lab-03/image43.png)
 
@@ -596,7 +596,7 @@ Avançado.
     ![](../media/lab-03/image44.png)
 
 14. No painel esquerdo **Consultas**, na pasta **ADLSData** **(1)**,
-    selecione a consulta **Sales (2).**
+    selecione a consulta **Sales (2)**.
 
 15. Na faixa de opções, selecione **Página Inicial -> Editor Avançado
     (3)**. A caixa de diálogo Editor Avançado é aberta.
@@ -634,7 +634,7 @@ poderá acessá-lo em **Início -> Consulta -> Editor Avançado**.
 24. Digite **Ctrl+V** no teclado para colar o código copiado do Power BI
     Desktop.
 
-    - **Observação**: se você estiver trabalhando no ambiente de laboratório,
+    **Observação:** se você estiver trabalhando no ambiente de laboratório,
 selecione as **reticências(...)** no canto superior direito da tela. Use
 o controle deslizante para **habilitar** **Área de Transferência Nativa
 da VM**. Selecione OK na caixa de diálogo. Depois que terminar de colar
@@ -650,7 +650,7 @@ as consultas, você poderá desabilitar essa opção.
 
     ![](../media/lab-03/image50.png)
 
-   - Se for mais fácil, exclua todo o código no Editor Avançado e cole o
+    Se for mais fácil, exclua todo o código no Editor Avançado e cole o
 código abaixo.
 
       ```
@@ -692,7 +692,7 @@ código abaixo.
 
      Você receberá um alerta assim que a exibição for salva.
 
-34. No painel Explorer (à esquerda), expanda **Views.** Temos a exibição
+34. No painel Explorer (à esquerda), expanda **Views**. Temos a exibição
     recém-criada Sales.
 
     ![](../media/lab-03/image53.png)
@@ -725,7 +725,7 @@ código no Editor Avançado.
 5. Com a consulta **ProductItem** selecionada **(1)**, na faixa de
     opções, selecione **Página Inicial (2) -> Combinar (3) -> menu
     suspenso Mesclar consultas (4) -> Mesclar consultas como novas
-    (5).** A caixa de diálogo Mesclar é aberta.
+    (5)**. A caixa de diálogo Mesclar é aberta.
 
     ![](../media/lab-03/image57.png)
 
@@ -739,7 +739,7 @@ código no Editor Avançado.
 
 9. Selecione **Externa esquerda** como **Tipo de junção**.
 
-10. Selecione **OK.** Uma nova consulta Merge é criada.
+10. Selecione **OK**. Uma nova consulta Merge é criada.
 
      ![](../media/lab-03/image58.png)
 
@@ -749,7 +749,7 @@ código no Editor Avançado.
 
     ![](../media/lab-03/image59.png)
 
-    - **Observação:** se você não conseguir encontrar o Editor Avançado,
+    **Observação:** se você não conseguir encontrar o Editor Avançado,
 poderá acessá-lo em **Início -> Consulta -> Editor Avançado**.
 
 12. **Selecione todo o código** no Editor Avançado e **exclua-o**.
@@ -797,7 +797,7 @@ poderá acessá-lo em **Início -> Consulta -> Editor Avançado**.
 
     Você receberá um alerta assim que a exibição for salva.
 
-22. No painel Explorer (à esquerda), expanda **Views.** Temos a exibição
+22. No painel Explorer (à esquerda), expanda **Views**. Temos a exibição
     recém-criada Product.
 
     ![](../media/lab-03/image63.png)
