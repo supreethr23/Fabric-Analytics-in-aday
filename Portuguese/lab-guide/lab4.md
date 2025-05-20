@@ -16,7 +16,7 @@
   - Tarefa 8: Renomear e publicar o fluxo de dados do Snowflake
 - Atalho para o ADLS Gen2
   - Tarefa 9: Como criar um atalho para Dataverse
-  - Task 10: Create a Shortcut to a Lakehouse
+  - Tarefa 10: Create a Shortcut to a Lakehouse
 - Referências
 
 # Introdução 
@@ -51,8 +51,7 @@ Ao final deste laboratório, você terá aprendido:
 
 ## Tarefa 1: Copiar consultas do SharePoint para o Fluxo de dados
 
-1. Vamos voltar ao workspace do Fabric, **FAIAD_<nome de usuário>
-    (1),** que você criou no Laboratório 2, Tarefa 8.
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, que você criou no Laboratório 2, Tarefa 8.
 
 2. Selecione a opção **+ Novo item (2)** disponível no canto superior
     esquerdo.
@@ -90,17 +89,11 @@ Vamos testar.
 
     ![](../media/lab-04/image8.png)
 
-     - **Observação:** se você estiver trabalhando no ambiente de laboratório,
-selecione as reticências no canto superior direito da tela. Use o
-controle deslizante para **habilitar** **VM Native Clipboard**.
-Selecione OK na caixa de diálogo. Depois que terminar de colar as
-consultas, você poderá desabilitar essa opção.
+    **Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para **habilitar** **VM Native Clipboard**. Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
 
-     ![](../media/lab-04/image9.png)
+    ![](../media/lab-04/image9.png)
 
-     Observe se a consulta foi colada e se está disponível no painel
-esquerdo. Como não temos uma conexão criada para o SharePoint, você verá
-uma mensagem de aviso solicitando que configure a conexão.
+    Observe se a consulta foi colada e se está disponível no painel esquerdo. Como não temos uma conexão criada para o SharePoint, você verá uma mensagem de aviso solicitando que configure a conexão.
 
 ## Tarefa 2: Criar conexão do SharePoint
 
@@ -116,7 +109,7 @@ uma mensagem de aviso solicitando que configure a conexão.
 
 4. Selecione **Conectar**.
 
-    - **Observação:** você vai se conectar usando suas credenciais. Elas serão
+    **Observação:** você vai se conectar usando suas credenciais. Elas serão
 diferentes da captura de tela abaixo.
 
     ![](../media/lab-04/image11.png)
@@ -147,8 +140,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
     criando uma nova tabela.
 
 5. Queremos criar a tabela no Lakehouse que criamos anteriormente. No
-    painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de
-    usuário>**.
+    painel esquerdo, navegue para **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 6. Selecione **lh_FAIAD**.
 
@@ -161,7 +153,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 9. A caixa de diálogo Escolher configurações de destino é aberta.
     Habilite "**Usar configurações automáticas**".
 
-   - **Observação:** você pode desativar as configurações automáticas e notar
+   **Observação:** você pode desativar as configurações automáticas e notar
 que tem opções para definir o método Update e as opções de esquema.
 Depois de explorar, habilite "**Usar configurações automáticas**".
 
@@ -179,8 +171,8 @@ Depois de explorar, habilite "**Usar configurações automáticas**".
 
     ![](../media/lab-04/image16.png)
 
-    - **Observação:** você será direcionado de volta para o **workspace
-FAIAD_<nome de usuário>**. Pode levar alguns instantes para que Fluxo
+    **Observação:** você será direcionado de volta para o **workspace
+FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. Pode levar alguns instantes para que Fluxo
 de Dados seja publicado.
 
 3. **Fluxo de dados 1** é o fluxo de dados no qual estávamos
@@ -201,8 +193,7 @@ de Dados seja publicado.
 
     ![](../media/lab-04/image18.png)
 
-    Você será direcionado de volta para o **workspace FAIAD_<nome de
-usuário>**.
+    Você será direcionado de volta para o **workspace FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 7. Selecione **lh_FAIAD** para acessar o lakehouse.
 
@@ -213,14 +204,13 @@ usuário>**.
 
     ![](../media/lab-04/image19.png)
 
-     - **Observação:** se você não vir as tabelas recém-criadas, selecione as
+     **Observação:** se você não vir as tabelas recém-criadas, selecione as
 reticências ao lado de Tabelas e selecione Atualizar para atualizar as
 tabelas.
 
 ## Tarefa 5: Copiar consultas do Snowflake para o Fluxo de Dados
 
-1. Vamos voltar ao workspace do Fabric, **FAIAD_<nome de usuário>
-    (1)**.
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 2. Selecione a opção **+ Novo item (2)** disponível no canto superior
     esquerdo.
@@ -267,11 +257,7 @@ consultas do Power BI Desktop no Fluxo de Dados.
     mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V
     para colar.
 
-    > **Observação:** se você estiver trabalhando no ambiente de
-    > laboratório, selecione as **reticências(...)** no canto superior
-    > direito da tela. Use o controle deslizante para **habilitar** **VM
-    > Native Clipboard**. Selecione OK na caixa de diálogo. Depois que
-    > terminar de colar as consultas, você poderá desabilitar essa opção.
+    > **Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as **reticências(...)** no canto superior direito da tela. Use o controle deslizante para **habilitar** **VM Native Clipboard**. Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
 
     ![](../media/lab-04/image22.png)
 
@@ -296,11 +282,11 @@ conexão.
     fornecidos abaixo. Use essas credenciais para conectar todas as
     tabelas do Snowflake ao Snowflake e selecione **Conectar**.
 
-     - Nome de usuário do Snowflake: TE_SNOWFLAKE1
+    - **Nome de usuário do Snowflake:** <inject key="SnowFlake Username"></inject>
 
-     - Senha do Snowflake: 8UpfRpExVDXv2AC1
+    - **Senha do Snowflake:** <inject key="SnowFlake Password"></inject>
 
-     - **Observação:** Se você encontrar problemas para se conectar ao
+     **Observação:** Se você encontrar problemas para se conectar ao
 Snowflake usando as credenciais dos detalhes do ambiente, use as
 credenciais fornecidas abaixo.
 
@@ -342,8 +328,7 @@ Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
     criando uma nova tabela.
 
 6. Queremos criar a tabela no Lakehouse que criamos anteriormente. No
-    painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de
-    usuário>**.
+    painel esquerdo, navegue para **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 7. Selecione **lh_FAIAD**.
 
@@ -372,8 +357,7 @@ Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
 ## Tarefa 8: Renomear e publicar o fluxo de dados do Snowflake
 
-1. Na parte superior da tela, selecione a **seta ao lado do Dataflow
-    1** para renomear.
+1. Na parte superior da tela, selecione a **seta ao lado do Dataflow 1** para renomear.
 
 2. Na caixa de diálogo, altere o nome para **df_Supplier_Snowflake**.
 
@@ -385,9 +369,7 @@ Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
     ![](../media/lab-04/image31.png)
 
-    Você será direcionado de volta para o **workspace FAIAD_<nome de
-usuário>**. Pode levar alguns instantes para que Fluxo de Dados seja
-publicado.
+    Você será direcionado de volta para o **workspace FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. Pode levar alguns instantes para que Fluxo de Dados seja publicado.
 
 5. Selecione **lh_FAIAD** para acessar o lakehouse.
 
@@ -399,11 +381,9 @@ publicado.
 
     ![](../media/lab-04/image32.png)
 
-     - **Observação:** se você não vir as tabelas recém-criadas, selecione as
-reticências ao lado de Tabelas e selecione Atualizar para atualizar as
-tabelas.
+    **Observação:** se você não vir as tabelas recém-criadas, selecione as reticências ao lado de Tabelas e selecione Atualizar para atualizar as tabelas.
 
-     Agora vamos criar um atalho para mostrar dados do Dataverse.
+    Agora vamos criar um atalho para mostrar dados do Dataverse.
 
 # Atalho para o ADLS Gen2
 
@@ -424,14 +404,11 @@ exibição Lakehouse (não no ponto de extremidade da análise SQL).
 3. A caixa de diálogo Novo atalho é aberta. Em **Fontes externas**,
     selecione **Dataverse**.
 
-   - **Observação:** no laboratório anterior, seguimos etapas semelhantes
-para criar um atalho para Azure Data Lake Storage Gen2.
+   **Observação:** no laboratório anterior, seguimos etapas semelhantes para criar um atalho para Azure Data Lake Storage Gen2.
 
     ![](../media/lab-04/image35.png)
 
-4. **Selecione Criar nova conexão (1)**. A caixa de diálogo
-    Configurações de conexão é aberta. Insira
-    **org6c18814a.crm.dynamics.com (2)** como **Domínio de ambiente**.
+4. **Selecione Criar nova conexão (1)**. A caixa de diálogo Configurações de conexão é aberta. Insira **org6c18814a.crm.dynamics.com (2)** como **Domínio de ambiente**.
 
 5. Deixe **Tipo de autenticação** como **Conta organizacional (3)**.
 
@@ -449,19 +426,19 @@ para criar um atalho para Azure Data Lake Storage Gen2.
 8. Selecione **Próximo** na caixa de diálogo Configurações de conexão.
 
     Você irá para uma caixa de diálogo para escolher o bucket/diretório
-diferente do Dataverse. Observe que há muitas opções de buckets
-disponíveis. Podemos escolher os buckets que precisamos e seguir o
-processo como o Laboratório 3 (usar consulta visual para transformar
-dados e criar exibições). Também podemos usar o Fluxo de dados Gen2 como
-usamos anteriormente neste laboratório para nos conectarmos ao
-SharePoint. No entanto, não temos acesso a esses **bucket/diretórios**.
+    diferente do Dataverse. Observe que há muitas opções de buckets
+    disponíveis. Podemos escolher os buckets que precisamos e seguir o
+    processo como o Laboratório 3 (usar consulta visual para transformar
+    dados e criar exibições). Também podemos usar o Fluxo de dados Gen2 como
+    usamos anteriormente neste laboratório para nos conectarmos ao
+    SharePoint. No entanto, não temos acesso a esses **bucket/diretórios**.
 
     Em nosso cenário, a equipe de TI já estabeleceu um link para o Dataverse
-e aplicou as transformações de dados necessárias, espelhando-as no
-arquivo do Power BI Desktop. Eles ingeriram esses dados no Lakehouse do
-workspace Admin e nos deram acesso às tabelas. Como nossa equipe de TI
-fez todo o trabalho árduo, podemos criar um atalho para esse Lakehouse
-no workspace Admin.
+    e aplicou as transformações de dados necessárias, espelhando-as no
+    arquivo do Power BI Desktop. Eles ingeriram esses dados no Lakehouse do
+    workspace Admin e nos deram acesso às tabelas. Como nossa equipe de TI
+    fez todo o trabalho árduo, podemos criar um atalho para esse Lakehouse
+    no workspace Admin.
 
 9. Selecione **Cancelar** na caixa de diálogo Novo atalho para voltar
     ao Lakehouse.
@@ -512,8 +489,7 @@ no workspace Admin.
 
     Criamos com sucesso um atalho para outro lakehouse.
 
-    Agora ingerimos todos os dados no Lakehouse. No próximo laboratório,
-agendaremos a atualização do Fluxo de Dados.
+    Agora ingerimos todos os dados no Lakehouse. No próximo laboratório, agendaremos a atualização do Fluxo de Dados.
 
     No próximo laboratório, vamos configurar atualizações de agendamentos.
 
