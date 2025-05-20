@@ -499,10 +499,10 @@ variável varCounter é igual a 3.
 
 23. Sua expressão deve ser:
 
-        ```
-         @or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
-         variables(\'varSuccess\')))
-        ```
+     ```
+       @or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
+       variables(\'varSuccess\')))
+     ```
 
 24. Selecione **OK**.
 
