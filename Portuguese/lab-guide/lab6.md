@@ -34,8 +34,7 @@ Ao final deste laboratório, você terá aprendido:
 
 ## Tarefa 1: Consultar dados usando SQL
 
-1. Vamos voltar ao workspace do Fabric, **FAIAD_<nome de usuário>,**
-    que você criou no Laboratório 2, Tarefa 8.
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>,** que você criou no Laboratório 2, Tarefa 8.
 
 2. Você pode escolher **Minimizar o fluxo de tarefas** para exibir toda
     a lista de itens.
@@ -50,21 +49,21 @@ Ao final deste laboratório, você terá aprendido:
 
     ![](../media/lab-06/image6.png)
 
-   Se desejar explorar os dados antes de criar um modelo de dados, você
-poderá usar SQL para fazer isso. Há duas opções para usar o SQL. A
-primeira opção é a consulta visual, que usamos no laboratório anterior.
-A opção 2 é escrever código TSQL. É uma opção conveniente para
-desenvolvedores. Vamos explorar isso.
+    Se desejar explorar os dados antes de criar um modelo de dados, você
+    poderá usar SQL para fazer isso. Há duas opções para usar o SQL. A
+    primeira opção é a consulta visual, que usamos no laboratório anterior.
+    A opção 2 é escrever código TSQL. É uma opção conveniente para
+    desenvolvedores. Vamos explorar isso.
 
-   Vamos supor que você queira descobrir rapidamente as Units vendidas por
-Fornecedor usando SQL.
+    Vamos supor que você queira descobrir rapidamente as Units vendidas por
+    Fornecedor usando SQL.
 
-   No lakehouse, ponto de extremidade da análise SQL, observe que no painel
-esquerdo você pode exibir as Tabelas. Se você expandir as tabelas,
-poderá visualizar as Colunas que compõem a tabela. Além disso, existem
-opções para criar Visualizações, Funções e Procedimentos Armazenados de
-SQL. Se você tiver experiência em SQL, fique à vontade para explorar
-essas opções. Vamos tentar escrever uma consulta SQL simples.
+    No lakehouse, ponto de extremidade da análise SQL, observe que no painel
+    esquerdo você pode exibir as Tabelas. Se você expandir as tabelas,
+    poderá visualizar as Colunas que compõem a tabela. Além disso, existem
+    opções para criar Visualizações, Funções e Procedimentos Armazenados de
+    SQL. Se você tiver experiência em SQL, fique à vontade para explorar
+    essas opções. Vamos tentar escrever uma consulta SQL simples.
 
 4. No menu superior, selecione **Nova consulta SQL** ou, no centro da
     tela, clique em **Nova consulta SQL**. Você será direcionado à
@@ -75,12 +74,13 @@ essas opções. Vamos tentar escrever uma consulta SQL simples.
 5. Cole a **consulta SQL abaixo** na **janela de consultas**. Essa
     consulta retornará as unidades por Nome do Fornecedor. Para
     conseguir isso, una tabela Sales com as tabelas Product e Supplier.
+
     ```
-     SELECT su.SupplierName, SUM(Quantity) as Units
-     FROM dbo.Sales s
-     JOIN dbo.Product p on p.StockItemID = s.StockItemID
-     JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
-     GROUP BY su.SupplierName
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
     ``` 
 
 6. Clique em **Executar** no menu do editor SQL para exibir os
@@ -97,7 +97,7 @@ essas opções. Vamos tentar escrever uma consulta SQL simples.
     compartilhadas**.
 
     **Observação:** as consultas visuais que você criou em laboratórios
-anteriores também estão disponíveis na pasta My queries.
+    anteriores também estão disponíveis na pasta My queries.
 
     ![](../media/lab-06/image8.png)
 
@@ -114,11 +114,11 @@ anteriores também estão disponíveis na pasta My queries.
 3. A caixa de diálogo **Visualizar resultados** é aberta. Selecione
     **Continuar**.
 
-   **A caixa de diálogo** Visualizar resultados é aberta e se parece com a
-exibição de relatório do Power BI Desktop. Ela tem todos os recursos
-disponíveis na exibição de relatório do Power BI Desktop. Você pode
-formatar a página, selecionar diferentes visuais, formatar visuais,
-adicionar filtros etc. Não vamos explorar essas opções neste curso.
+    **A caixa de diálogo** Visualizar resultados é aberta e se parece com a
+    exibição de relatório do Power BI Desktop. Ela tem todos os recursos
+    disponíveis na exibição de relatório do Power BI Desktop. Você pode
+    formatar a página, selecionar diferentes visuais, formatar visuais,
+    adicionar filtros etc. Não vamos explorar essas opções neste curso.
 
 4. Expanda o painel **Dados** e expanda **Consulta SQL 1**.
 
@@ -139,7 +139,7 @@ adicionar filtros etc. Não vamos explorar essas opções neste curso.
     Fornecedor** na caixa de texto **Inserir um nome para o relatório**.
 
 9. Certifique-se de que o workspace de destino seja seu workspace do
-    Fabric, **FAIAD_<nome de usuário>**.
+    Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 10. Selecione **Salvar**.
 
@@ -160,11 +160,11 @@ adicionar filtros etc. Não vamos explorar essas opções neste curso.
     ![](../media/lab-06/image13.png)
 
     Esse é o modelo padrão que o lakehouse cria. No entanto, há algumas
-limitações com o modelo padrão (como capacidade de formatar medidas
-etc). Além disso, precisamos apenas de um subconjunto das tabelas em
-nosso modelo. Então vamos criar um novo modelo semântico.
+    limitações com o modelo padrão (como capacidade de formatar medidas
+    etc). Além disso, precisamos apenas de um subconjunto das tabelas em
+    nosso modelo. Então vamos criar um novo modelo semântico.
 
-3. No menu**,** no canto superior direito, **selecione a seta ao lado
+3. No menu, no canto superior direito, **selecione a seta ao lado
     do ponto de extremidade da análise SQL**.
 
 4. Selecione **Lakehouse** para acessar a exibição Lakehouse.
@@ -283,15 +283,15 @@ Query.
     **Observação:** todas as nossas atualizações são salvas automaticamente.
 
     **Ponto de verificação:** seu modelo deve ter os três relacionamentos
-entre as tabelas Sales e Reseller, Sales e Date e Sales e Product,
-conforme mostrado na captura de tela abaixo:
+    entre as tabelas Sales e Reseller, Sales e Date e Sales e Product,
+    conforme mostrado na captura de tela abaixo:
 
     ![](../media/lab-06/image25.png)
 
     Por uma questão de tempo, não criaremos todos os relacionamentos. Se o
-tempo permitir, você poderá concluir a seção opcional no fim do
-laboratório. A seção opcional percorre as etapas para criar os
-relacionamentos restantes.
+    tempo permitir, você poderá concluir a seção opcional no fim do
+    laboratório. A seção opcional percorre as etapas para criar os
+    relacionamentos restantes.
 
 ## Tarefa 5: Criar medidas
 
@@ -372,12 +372,12 @@ Sales.
     ![](../media/lab-06/image29.png)
 
     Novamente, por uma questão de tempo, não criaremos todas as medidas. Se
-o tempo permitir, você poderá concluir a seção opcional no fim do
-laboratório. A seção opcional percorre as etapas para criar as medidas
-restantes.
+    o tempo permitir, você poderá concluir a seção opcional no fim do
+    laboratório. A seção opcional percorre as etapas para criar as medidas
+    restantes.
 
     Criamos um modelo semântico. A próxima etapa é criar um relatório.
-Faremos isso no próximo laboratório.
+    Faremos isso no próximo laboratório.
 
 ## Tarefa 6: Seção Opcional -- Criar relacionamentos
 
@@ -454,7 +454,7 @@ Vamos adicionar os relacionamentos restantes.
 25. Selecione **Salvar**.
 
     **Ponto de verificação:** Gerenciar relacionamentos deve ser semelhante
-à captura de tela abaixo.
+    à captura de tela abaixo.
 
     ![](../media/lab-06/image34.png)
 
@@ -474,7 +474,7 @@ Vamos adicionar os relacionamentos restantes.
     relacionamentos. Terminamos de criar todos os relacionamentos.
 
     **Ponto de verificação:** Seu modelo deve ser semelhante à captura de
-tela abaixo.
+    tela abaixo.
 
     ![](../media/lab-06/image35.png)
 
@@ -503,15 +503,11 @@ Vamos adicionar as medidas restantes.
 
 8. Siga as etapas semelhantes para adicionar as seguintes medidas:
 
-    a. Na tabela **Sales, GM = SUM('Sales'[LineProfit])** está
-        formatada como **Moeda com 0 casas decimais**.
+    a. Na tabela **Sales, GM = SUM('Sales'[LineProfit])** está formatada como **Moeda com 0 casas decimais**.
 
-    b. Na tabela **Sales** , **GM% = DIVIDE([GM], [Sales])** está
-        formatada como **Porcentagem com 0 casas decimais**.
+    b. Na tabela **Sales** , **GM% = DIVIDE([GM], [Sales])** está formatada como **Porcentagem com 0 casas decimais**.
 
-    c. Na tabela **Customer , No of Customers = COUNTROWS(Customer)**
-        formatado como **Número Inteiro com separador de milhares
-        habilitado**.
+    c. Na tabela **Customer , No of Customers = COUNTROWS(Customer)** formatado como **Número Inteiro com separador de milhares habilitado**.
 
 # Referências
 
