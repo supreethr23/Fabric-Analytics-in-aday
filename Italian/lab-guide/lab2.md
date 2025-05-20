@@ -1,6 +1,8 @@
 
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 2
 
+![](../media/lab-02/Lab2Image.png)
+
 # Sommario	
 - Introduzione	
 - Licenza di Fabric	
