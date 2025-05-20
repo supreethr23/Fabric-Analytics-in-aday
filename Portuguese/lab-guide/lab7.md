@@ -47,7 +47,7 @@ Vamos começar usando a opção de criação automática de relatório. E, mais
 adiante no laboratório, recriaremos o relatório que temos no Power BI.
 
 1. Vamos voltar ao **workspace do Fabric** que você criou no
-    laboratório 2, denominado **FAIAD\_\<nome de usuário\>.**
+    laboratório 2, denominado **FAIAD_<nome de usuário>.**
 
 2. Na parte inferior esquerda da tela,
     selecione o ícone **Fabric experience selector**.
@@ -115,15 +115,15 @@ explorar essas opções.
     - **Observação:** estamos prefixando o nome do relatório com rpt, que
     é a abreviação de relatório.
 
-11. Verifique se o relatório está salvo no workspace, **FAIAD\_\<nome de
-    usuário\>**.
+11. Verifique se o relatório está salvo no workspace, **FAIAD_<nome de
+    usuário>**.
 
 12. Selecione **Salvar**.
 
     ![](../media/lab-07/image12.png)
 
     - **Observação:** A aparência do relatório criado automaticamente pode ser
-diferente para você, pois ele é \"criado automaticamente\". Depende
+diferente para você, pois ele é "criado automaticamente". Depende
 também dos relacionamento e das medidas que você criou no laboratório
 anterior (Laboratório 6).
 
@@ -142,10 +142,10 @@ e medidas opcionais (Laboratório 6).
 Vamos criar um novo relatório usando uma tela em branco.
 
 1. No **painel esquerdo**, selecione o nome do seu workspace,
-    **FAIAD\_\<nome de usuário\>** para ser direcionado para o
+    **FAIAD_<nome de usuário>** para ser direcionado para o
     workspace.
 
-2. No menu superior, selecione **Novo item -\> Relatório.** Você será
+2. No menu superior, selecione **Novo item -> Relatório.** Você será
     direcionado para criar sua primeira página de relatório.
 
     ![](../media/lab-07/image14.png)
@@ -278,8 +278,8 @@ visuais no Power BI Desktop, não criaremos todos os visuais.
 18. **Copie** o visual pressionando **Ctrl+V** no teclado. O visual é
     colado na tela.
 
-19. Com o **novo visual realçado**, no **painel Visualizações -\> Criar
-    visual -\> seção Campos**, remova a medida **Sales**.
+19. Com o **novo visual realçado**, no **painel Visualizações -> Criar
+    visual -> seção Campos**, remova a medida **Sales**.
 
 20. Na seção **Dados**, expanda a tabela **Sales** e selecione a medida
     **Units**.
@@ -311,7 +311,7 @@ tempo por Reseller Company.
 
 Para fazer as alterações no modelo, salve o relatório antes de sair.
 
-1. No menu, selecione **Arquivo -\> Salvar**.
+1. No menu, selecione **Arquivo -> Salvar**.
 
 2. A caixa de diálogo Salvar seu relatório é aberta. Nomeie o relatório
     como **rpt_Sales_Report**.
@@ -319,8 +319,8 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
     - **Observação:** estamos prefixando o nome do relatório com rpt, que
     é a abreviação de relatório.
 
-3. Verifique se o relatório está salvo no workspace **FAIAD\_\<nome de
-    usuário\>.**
+3. Verifique se o relatório está salvo no workspace **FAIAD_<nome de
+    usuário>.**
 
 4. Selecione **Salvar**.
 
@@ -375,12 +375,12 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 2. Selecione as **reticências (...)** no canto superior direito do
     visual.
 
-3. Selecione **Classificar eixo -\> Year Short_Month_Name**.
+3. Selecione **Classificar eixo -> Year Short_Month_Name**.
 
 4. Selecione as **reticências (...)** no canto superior direito do
     visual.
 
-5. Selecione **Classificar eixo -\> Classificar em ordem crescente**.
+5. Selecione **Classificar eixo -> Classificar em ordem crescente**.
 
     ![](../media/lab-07/image30.png)
 
@@ -416,13 +416,13 @@ Desktop.
 1. Com o **Visual de gráfico de linhas selecionado**, na seção
     **Dados**, expanda a tabela **Reseller**.
 
-2. Arraste o campo **Reseller -\> Reseller Company** na seção
+2. Arraste o campo **Reseller -> Reseller Company** na seção
     **Legenda**.
 
     ![](../media/lab-07/image34.png)
 
 3. Com o **Visual de gráfico de linhas selecionado**, na seção
-    **Visualizações**, selecione o **ícone Formatar visual -\> Geral**.
+    **Visualizações**, selecione o **ícone Formatar visual -> Geral**.
 
 4. Expanda a seção **Título**.
 
@@ -435,19 +435,19 @@ Desktop.
 
     ![](../media/lab-07/image35.png)
 
-8. Na seção **Visualizações**, selecione o **ícone Formatar visual -\>
+8. Na seção **Visualizações**, selecione o **ícone Formatar visual ->
     Visual**.
 
 9. Expanda a seção **Linhas**.
 
-10. Na lista suspensa **Aplicar configurações a -\> Série -\>,**
+10. Na lista suspensa **Aplicar configurações a -> Série ->,**
     selecione **Tailspin Toys.**
 
 11. Expanda a seção **Cores**.
 
 12. Defina **cor** como **#F17925**
 
-13. Na lista suspensa **Aplicar configurações a -\> Série -\>,**
+13. Na lista suspensa **Aplicar configurações a -> Série ->,**
     selecione **Wingtip Toys.**
 
 14. Defina **cor** como **#004753**
@@ -460,7 +460,7 @@ Desktop.
 
     ![](../media/lab-07/image36.png)
 
-17. Vamos salvar o relatório. No menu, selecione **Arquivo \> Salvar**.
+17. Vamos salvar o relatório. No menu, selecione **Arquivo > Salvar**.
 
     Conforme mencionado anteriormente, não criaremos todos os visuais neste
 laboratório. Quando quiser, fique à vontade para criar mais visuais.
@@ -473,8 +473,8 @@ semântico e criar visuais.
 1. Abra o arquivo **FAIADTemplate.pbix** que está na pasta **Reports**
     na **área de trabalho** do seu ambiente de laboratório.
 
-2. Na faixa de opções, selecione **Página Inicial -\> OneLake data hub
-    -\> Modelos semânticos do Power BI**.
+2. Na faixa de opções, selecione **Página Inicial -> OneLake data hub
+    -> Modelos semânticos do Power BI**.
 
     ![](../media/lab-07/image37.png)
 
@@ -500,13 +500,13 @@ semântico e criar visuais.
 
 8. Selecione o **visual título do relatório**.
 
-9. Na faixa de opções, selecione **Página Inicial -\> Copiar**.
+9. Na faixa de opções, selecione **Página Inicial -> Copiar**.
 
     ![](../media/lab-07/image40.png)
 
 10. Acesse **FAIADTemplate.pbix** e selecione a tela do relatório.
 
-11. Na faixa de opções, selecione **Página Inicial -\> Colar**.
+11. Na faixa de opções, selecione **Página Inicial -> Colar**.
 
     ![](../media/lab-07/image41.png)
 
@@ -524,11 +524,11 @@ você poderá receber um erro, mas isso pode ser fácil de resolver.
 13. Acesse **FAIAD.pbix** e selecione Sales ao longo do gráfico de
     linhas do tempo.
 
-14. Na faixa de opções, selecione **Página Inicial -\> Copiar**.
+14. Na faixa de opções, selecione **Página Inicial -> Copiar**.
 
 15. Acesse **FAIADTemplate.pbix** e selecione a tela do relatório.
 
-16. Na faixa de opções, selecione **Página Inicial -\> Colar**. Observe
+16. Na faixa de opções, selecione **Página Inicial -> Colar**. Observe
     que o visual não é renderizado. Isso ocorre porque o modelo
     semântico atualmente não cria hierarquia a partir do campo Date.
 
@@ -545,7 +545,7 @@ você poderá receber um erro, mas isso pode ser fácil de resolver.
     ![](../media/lab-07/image44.png)
 
 20. Vamos salvar o relatório. Na faixa de opções, selecione **Arquivo
-    -\> Salvar**.
+    -> Salvar**.
 
 ### Tarefa 11: Adicionar novos dados para simular o modo Direct Lake
 
@@ -570,7 +570,7 @@ e atualizando a exibição Sales.
 
 1. Volte para o **navegador**.
 
-2. Selecione **FAIAD\_\<nome de usuário\>** na barra de menus à
+2. Selecione **FAIAD_<nome de usuário>** na barra de menus à
     esquerda a fim de navegar até a home page do workspace.
 
 3. Selecione **lh_FAIAD** para acessar o Lakehouse.
@@ -596,7 +596,7 @@ e atualizando a exibição Sales.
 8. Se você não criou essa conexão anteriormente no curso, clique em
     Criar nova conexão e conclua as seguintes etapas:
 
-9. Em Configurações de conexão -\> URL, insira este link:
+9. Em Configurações de conexão -> URL, insira este link:
     <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
 
 10. Selecione **Próximo**.
@@ -627,12 +627,12 @@ e atualizando a exibição Sales.
     Observe no **painel Explorer** à esquerda, agora temos a tabela
 InvoicesMay. Agora precisamos atualizar a exibição Sales.
 
-18. No **canto superior direito** da tela, selecione **Lakehouse -\>
+18. No **canto superior direito** da tela, selecione **Lakehouse ->
     ponto de extremidade do SQL Analytics**.
 
     ![](../media/lab-07/image51.png)
 
-19. No menu superior, selecione **Página Inicial -\> Nova consulta
+19. No menu superior, selecione **Página Inicial -> Nova consulta
     SQL**. Um painel de nova consulta SQL é aberto.
 
 20. **Copie** o código abaixo e **cole-o** no painel da consulta
@@ -851,7 +851,7 @@ software em nossos desktops.
 Quando você estiver pronto para limpar o ambiente do laboratório, siga
 as etapas abaixo.
 
-1. Selecione o workspace **FAIAD\_\<nome de usuário\>** no painel
+1. Selecione o workspace **FAIAD_<nome de usuário>** no painel
     esquerdo para navegar até a home page do workspace.
 
 2. No menu superior, selecione **Configurações do Workspace**.
@@ -935,64 +935,64 @@ Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 - [Blog de integração do Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos os direitos reservados.
->
-> Ao usar esta demonstração/este laboratório, você concorda com os
-> seguintes termos:
->
-> A tecnologia/funcionalidade descrita nesta demonstração/neste
-> laboratório é fornecida pela Microsoft Corporation para obter seus
-> comentários e oferecer uma experiência de aprendizado. Você pode usar
-> a demonstração/o laboratório somente para avaliar tais funcionalidades
-> e recursos de tecnologia e fornecer comentários à Microsoft. Você não
-> pode usá-los para nenhuma outra finalidade. Você não pode modificar,
-> copiar, distribuir, transmitir, exibir, executar, reproduzir,
-> publicar, licenciar, criar obras derivadas, transferir nem vender esta
-> demonstração/este laboratório ou qualquer parte deles.
->
-> A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
-> PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
-> REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
->
-> ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
-> FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
-> RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
-> CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA.
-> A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
-> LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS
-> RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL.
-> ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU
-> CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS
-> E FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
->
-> **COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
-> tecnologia, as funcionalidades e/ou os conceitos descritos nesta
-> demonstração/neste laboratório à Microsoft, você concederá à
-> Microsoft, sem encargos, o direito de usar, compartilhar e
-> comercializar seus comentários de qualquer forma e para qualquer
-> finalidade. Você também concede a terceiros, sem encargos, quaisquer
-> direitos de patente necessários para que seus produtos, suas
-> tecnologias e seus serviços usem ou interajam com partes específicas
-> de um software ou um serviço da Microsoft que inclua os comentários.
-> Você não fornecerá comentários que estejam sujeitos a uma licença que
-> exija que a Microsoft licencie seu software ou sua documentação para
-> terceiros em virtude da inclusão de seus comentários neles. Esses
-> direitos continuarão em vigor após o término do contrato.
->
-> POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS
-> GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO,
-> INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM
-> ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA
-> FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA
-> NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA
-> DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS
-> NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
->
-> **AVISO DE ISENÇÃO DE RESPONSABILIDADE**
->
-> Esta demonstração/este laboratório contém apenas uma parte dos novos
-> recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
-> podem ser alterados em versões futuras do produto. Nesta
-> demonstração/neste laboratório, você aprenderá sobre alguns dos novos
-> recursos, mas não todos.
+© 2025 Microsoft Corporation. Todos os direitos reservados.
+
+Ao usar esta demonstração/este laboratório, você concorda com os
+seguintes termos:
+
+A tecnologia/funcionalidade descrita nesta demonstração/neste
+laboratório é fornecida pela Microsoft Corporation para obter seus
+comentários e oferecer uma experiência de aprendizado. Você pode usar a
+demonstração/o laboratório somente para avaliar tais funcionalidades e
+recursos de tecnologia e fornecer comentários à Microsoft. Você não pode
+usá-los para nenhuma outra finalidade. Você não pode modificar, copiar,
+distribuir, transmitir, exibir, executar, reproduzir, publicar,
+licenciar, criar obras derivadas, transferir nem vender esta
+demonstração/este laboratório ou qualquer parte deles.
+
+A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
+PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
+REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
+
+ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
+FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
+RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
+CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA. A
+TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
+LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS RECURSOS
+E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL. ALÉM DISSO,
+PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU CONCEITOS. SUA
+EXPERIÊNCIA COM O USO DE TAIS RECURSOS E FUNCIONALIDADES EM UM AMBIENTE
+FÍSICO TAMBÉM PODE SER DIFERENTE.
+
+**COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
+tecnologia, as funcionalidades e/ou os conceitos descritos nesta
+demonstração/neste laboratório à Microsoft, você concederá à Microsoft,
+sem encargos, o direito de usar, compartilhar e comercializar seus
+comentários de qualquer forma e para qualquer finalidade. Você também
+concede a terceiros, sem encargos, quaisquer direitos de patente
+necessários para que seus produtos, suas tecnologias e seus serviços
+usem ou interajam com partes específicas de um software ou um serviço da
+Microsoft que inclua os comentários. Você não fornecerá comentários que
+estejam sujeitos a uma licença que exija que a Microsoft licencie seu
+software ou sua documentação para terceiros em virtude da inclusão de
+seus comentários neles. Esses direitos continuarão em vigor após o
+término do contrato.
+
+POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS GARANTIAS
+E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO, INCLUINDO TODAS AS
+GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS,
+IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA,
+TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO
+DOS RESULTADOS DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM
+A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A
+QUALQUER FINALIDADE.
+
+**AVISO DE ISENÇÃO DE RESPONSABILIDADE**
+
+Esta demonstração/este laboratório contém apenas uma parte dos novos
+recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
+podem ser alterados em versões futuras do produto. Nesta
+demonstração/neste laboratório, você aprenderá sobre alguns dos novos
+recursos, mas não todos.
 

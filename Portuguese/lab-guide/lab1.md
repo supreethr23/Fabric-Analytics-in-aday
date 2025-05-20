@@ -12,7 +12,6 @@
    - Tarefa 3: Revisar Power Queries
 - Referências
 
-
 # Estrutura do documento
 
 O laboratório inclui etapas a serem seguidas pelo usuário juntamente com
@@ -104,31 +103,25 @@ atual no Power BI Desktop para entender as transformações e o modelo.
 
    ![](../media/lab-01/image6.png)
 
-2. Insira seu endereço de email na caixa de diálogo aberta. Navegue até
-    a guia **Environment Details** no painel direito do ambiente de
-    laboratório.
+2. Quando a caixa de diálogo "Insira seu endereço de email" for
+    exibida, copie o **Nome de usuário** e cole-o no campo **Email** da
+    caixa de diálogo e selecione **Continuar**.
 
-3. Copie os dados de **Username** e cole na caixa de texto **Email** da
-    caixa de diálogo.
+    - Email/Nome de usuário: <inject key="AzureAdUserEmail"></inject>
 
-4. Selecione **Continue**.
+3. Na guia Entrar no Microsoft Azure, você verá a tela de login. Nessa
+    tela, insira o seguinte Email/Nome de usuário e clique em Próximo.
 
-   ![](../media/lab-01/image7.png)
+    - Email/Nome de usuário: <inject key="AzureAdUserEmail"></inject>
 
-5. A caixa de diálogo Sign in é aberta. Insira novamente os dados de
-    **Username** copiando-os da guia **Environment Details**.
+4. Agora, insira a seguinte **Senha** e clique em **Entrar**.
 
-6. Selecione Próximo.
-
-7. Na próxima caixa de diálogo, insira os dados de **Password
-    Credentials** copiando-os da guia **Environment Details**.
-
-8. Selecione **Sign in**.
+    - Insira a senha: <inject key="AzureAdUserPassword"></inject>
 
    ![](../media/lab-01/image8.png)
 
 9. A caixa de diálogo **Continuar conectado a todos os aplicativos** é
-    aberta. Selecione **OK**.
+    aberta. Selecione **Sim, todos os aplicativos**.
 
    ![](../media/lab-01/image9.png)
 
@@ -188,7 +181,7 @@ o relatório e passar para as próximas etapas.
     visual do gráfico de barras Sales por Product Group e Reseller
     Company, **clique com o botão direito na barra Packaging Materials
     para Tailspin Toys** e, na caixa de diálogo, selecione **Drill
-    through -\> Product Detail**.
+    through -> Product Detail**.
 
    ![](../media/lab-01/image14.png)
 
@@ -209,33 +202,36 @@ o relatório e passar para as próximas etapas.
 
 10. Observe que existem duas tabelas de fatos, **Sales** e **PO**.
 
-    a\. A granularidade dos dados de Sales é por Date, Reseller, Product e
-        People. Date, Reseller, Product e People conectam-se a Sales.
-    b\. A granularidade dos dados de PO é por Date, Product e People. Date,
-        Product e People conectam-se a PO.
-    c\. Temos dados de Supplier por Product. Supplier conecta-se a Product.
-    d\. Temos os dados de localização de Reseller por Geo. Geo conecta-se a
-         Reseller.
-    e\. Temos informações de Customer por Reseller. Customer conecta-se a
-         Reseller.
+    a. A granularidade dos dados de Sales é por Date, Reseller, Product e People. Date, Reseller, Product e People conectam-se a Sales.
+    
+    b. A granularidade dos dados de PO é por Date, Product e People. Date, Product e People conectam-se a PO.
+    
+    c. Temos dados de Supplier por Product. Supplier conecta-se a Product.
+    
+    d. Temos os dados de localização de Reseller por Geo. Geo conecta-se a Reseller.
+    
+    e. Temos informações de Customer por Reseller. Customer conecta-se a Reseller.
 
 ### Tarefa 3: Revisar Power Queries
 
 1. Vamos analisar o Power Query para entender as fontes de dados. Na
-    faixa de opções, selecione **Página Inicial -\> Transformar dados**.
+    faixa de opções, selecione **Página Inicial -> Transformar dados**.
 
    ![](../media/lab-01/image17.png)
 
 2. A janela do Power Query é aberta. Na faixa de opções, selecione
-    **Página Inicial -\> Configurações da fonte de dados**. A caixa de
+    **Página Inicial -> Configurações da fonte de dados**. A caixa de
     diálogo Configurações da fonte de dados é aberta. Ao percorrer
     a lista, você notará que existem quatro fontes de dados, conforme
     mencionado na declaração do problema:
 
-    -   Snowflake
-    -   SharePoint
-    -   ADLS Gen2
-    -   Dataverse
+    - Snowflake
+    
+    - SharePoint
+    
+    - ADLS Gen2
+    
+    - Dataverse
 
 3. Selecione **Fechar** para fechar a caixa de diálogo Configurações da
     fonte de dados.
@@ -262,8 +258,9 @@ o relatório e passar para as próximas etapas.
 
 8. Você pode inserir as credenciais para a fonte de dados do Dataverse inserindo o **Nome de usuário** e a **Senha**. As credenciais são fornecidas abaixo. Selecione **Conectar**.
 
-    -   Email/Nome de usuário: **encontrado na guia Ambiente**
-    -   Senha: **encontrada na guia Ambiente**
+    - **Email/Nome de usuário:** <inject key="AzureAdUserEmail"></inject>
+    
+    - **Senha:** <inject key="AzureAdUserPassword"></inject>
 
 9. Clique na Consulta **ADLS Base Folder** na janela Consultas. Para
     selecionar essa consulta, forneça as credenciais. Clique em **Editar
@@ -275,26 +272,23 @@ o relatório e passar para as próximas etapas.
     acesso compartilhado)** e insira o **token SAS** fornecido abaixo.
     Em seguida, selecione **Conectar**.
 
-    -   **Token SAS:** encontrado na guia Ambiente
+    - **Token SAS:** <inject key="Sas token"></inject>
 
-    ![](../media/lab-01/image22.png)
+        ![](../media/lab-01/image22.png)
 
 11. Observe que a pasta **ADLSData** tem múltiplas dimensões: Geo,
     Product, Reseller e Date. Também tem o fato Sales.
 
-    -   **Dimensão Geo** é criada mesclando dados da consulta Cities,
-        Countries e States.
+    - **Dimensão Geo** é criada mesclando dados da consulta Cities, Countries e States.
 
-    -   **Dimensão Product** é criada mesclando dados da consulta
-        Product Groups e Product Item Group.
+    - **Dimensão Product** é criada mesclando dados da consulta Product Groups e Product Item Group.
 
-    -   **Dimensão Reseller** é filtrada usando a consulta BuyingGroup.
+    - **Dimensão Reseller** é filtrada usando a consulta BuyingGroup.
 
-    -   **Fato Sales** é criado mesclando InvoiceLineItems com a
-        consulta Invoice.
+    - **Fato Sales** é criado mesclando InvoiceLineItems com a consulta Invoice.
 
 12. Para a fonte de dados Snowflake, selecione a consulta
-    **SupplierCategories** na janela Consultas.\
+    **SupplierCategories** na janela Consultas.
     A seleção dessa consulta solicitará que você forneça as credenciais.
     Clique em **Editar Credenciais**.
 
@@ -304,18 +298,21 @@ o relatório e passar para as próximas etapas.
     fornecidos abaixo. Use essas credenciais para conectar todas as
     tabelas do Snowflake ao Snowflake e selecione Conectar.
 
-    -   **Nome de usuário do Snowflake:** TE_SNOWFLAKE1
-    -   **Senha do Snowflake:** 8UpfRpExVDXv2AC1
+    - **Nome de usuário do Snowflake:** <inject key="SnowFlake Username"></inject>
+    
+    - **Senha do Snowflake:** <inject key="SnowFlake Password"></inject>
 
     *Observação: Se você encontrar problemas para se conectar ao Snowflake usando as credenciais dos detalhes do ambiente, use as credenciais de backup fornecidas na guia Ambiente.*
 
-14. A pasta SnowflakeData tem a dimensão Supplier e o fato PO
-    (Order/Spend).
+    - **Nome de usuário do Snowflake:** SNOWFLAKE_BACKUP
 
-   -   A **dimensão Supplier** é criada mesclando a consulta Suppliers com
-       a consulta SupplierCategories.
+    - **Senha do Snowflake:** 8UpfRpExVDXv2AC1
+
+14. A pasta SnowflakeData tem a dimensão Supplier e o fato PO (Order/Spend).
+
+    - A **dimensão Supplier** é criada mesclando a consulta Suppliers com a consulta SupplierCategories.
    
-   -   O **fato PO** é criado mesclando PO com a consulta PO Line Items.
+    - O **fato PO** é criado mesclando PO com a consulta PO Line Items.
 
 15. Para a fonte de dados SharePoint, selecione a consulta **People** na
     janela Consultas. A seleção dessa consulta solicitará que você
@@ -327,11 +324,11 @@ o relatório e passar para as próximas etapas.
     Insira o Nome de usuário e a Senha fornecidos abaixo e selecione
     Conectar.
 
-    - **Email/Nome de usuário:** encontrado na guia Ambiente
-   
-    - **Senha:** encontrada na guia Ambiente
+    - **Email/Nome de usuário:** <inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/lab-01/image25.png)
+    - **Senha:** <inject key="AzureAdUserPassword"></inject>
+
+      ![](../media/lab-01/image25.png)
 
 17. Observe que a pasta **SharepointData** tem a dimensão People.
 
@@ -347,66 +344,66 @@ O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais
 funções disponíveis no Microsoft Fabric. No menu do serviço, a seção
 Ajuda (?) tem links para ótimos recursos.
 
-   ![](../media/lab-01/image27.png)
+![](../media/lab-01/image27.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas
 do Microsoft Fabric.
 
--   Veja a postagem do blog para ler o [anúncio completo da GA do
+- Veja a postagem do blog para ler o [anúncio completo da GA do
     Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
--   Explore o Fabric por meio do [Tour
+- Explore o Fabric por meio do [Tour
     Guiado](https://aka.ms/Fabric-GuidedTour)
 
--   Inscreva-se para a [avaliação gratuita do Microsoft
+- Inscreva-se para a [avaliação gratuita do Microsoft
     Fabric](https://aka.ms/try-fabric)
 
--   Visite o [site do Microsoft Fabric](https://aka.ms/microsoft-fabric)
+- Visite o [site do Microsoft Fabric](https://aka.ms/microsoft-fabric)
 
--   Aprenda novas habilidades explorando os [módulos de Aprendizagem do
+- Aprenda novas habilidades explorando os [módulos de Aprendizagem do
     Fabric](https://aka.ms/learn-fabric)
 
--   Explore a [documentação técnica do
+- Explore a [documentação técnica do
     Fabric](https://aka.ms/fabric-docs)
 
--   Leia o [livro eletrônico gratuito sobre como começar a usar o
+- Leia o [livro eletrônico gratuito sobre como começar a usar o
     Fabric](https://aka.ms/fabric-get-started-ebook)
 
--   Participe da [comunidade do Fabric](https://aka.ms/fabric-community)
+- Participe da [comunidade do Fabric](https://aka.ms/fabric-community)
     para postar suas perguntas, compartilhar seus comentários e aprender
     com outras pessoas
 
 Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 
--   [Experiência do Data Factory no blog do
+- [Experiência do Data Factory no blog do
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
--   [Experiência do Synapse Data Engineering no blog do
+- [Experiência do Synapse Data Engineering no blog do
     Fabric](https://aka.ms/Fabric-DE-Blog)
 
--   [Experiência do Synapse Data Science no blog do
+- [Experiência do Synapse Data Science no blog do
     Fabric](https://aka.ms/Fabric-DS-Blog)
 
--   [Experiência do Synapse Data Warehousing no blog do
+- [Experiência do Synapse Data Warehousing no blog do
     Fabric](https://aka.ms/Fabric-DW-Blog)
 
--   [Experiência do Synapse Real-Time Analytics no blog do
+- [Experiência do Synapse Real-Time Analytics no blog do
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Blog de comunicado do Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog de comunicado do Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Experiência do Data Activator no blog do
+- [Experiência do Data Activator no blog do
     Fabric](https://aka.ms/Fabric-DA-Blog)
 
--   [Administração e governança no blog do
+- [Administração e governança no blog do
     Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [OneLake no blog do Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [OneLake no blog do Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Blog de integração do Dataverse e Microsoft
+- [Blog de integração do Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Todos os direitos reservados.
+© 2025 Microsoft Corporation. Todos os direitos reservados.
 
 Ao usar esta demonstração/este laboratório, você concorda com os
 seguintes termos:

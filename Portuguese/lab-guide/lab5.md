@@ -64,7 +64,7 @@ Ao final deste laboratório, você terá aprendido:
 Vamos começar configurando uma atualização agendada do Fluxo de dados
 Supplier.
 
-1. Voltamos ao workspace do Fabric, **FAIAD\_\<nome de usuário\>**
+1. Voltamos ao workspace do Fabric, **FAIAD_<nome de usuário>**
     selecionando-o no painel esquerdo.
 
 2. Para maximizar o painel com a lista de artefatos, selecione a seta
@@ -169,10 +169,10 @@ resolver isso.
 
 ### Tarefa 2: Criar Pipeline de dados
 
-1. Voltamos ao workspace do Fabric, **FAIAD\_\<nome de usuário\>**
+1. Voltamos ao workspace do Fabric, **FAIAD_<nome de usuário>**
     selecionando-o no painel esquerdo.
 
-2. No menu superior, selecione **+ Novo item (1) -\> Pipeline de dados
+2. No menu superior, selecione **+ Novo item (1) -> Pipeline de dados
     (2)**.
 
     ![](../media/lab-05/image14.png)
@@ -225,7 +225,7 @@ Vamos começar a criar o pipeline. Precisamos de uma atividade para
 atualizar o Fluxo de dados. Vamos encontrar uma atividade que possamos
 usar.
 
-1. No menu superior, selecione **Atividades -\> Fluxo de dados**. A
+1. No menu superior, selecione **Atividades -> Fluxo de dados**. A
     atividade Fluxo de dados é adicionada ao painel central de design.
     Observe que o painel inferior agora tem opções de configuração da
     atividade Fluxo de dados.
@@ -235,7 +235,7 @@ usar.
     **Configurações**.
 
 3. Certifique-se de que o **Workspace** esteja definido como seu
-    workspace do Fabric, **FAIAD\<nome de usuário\>**.
+    workspace do Fabric, **FAIAD<nome de usuário>**.
 
 4. Na lista suspensa **Fluxo de dados**, selecione
     **df_People_SharePoint**. Quando esta atividade Fluxo de dados for
@@ -272,7 +272,7 @@ vezes. Se falhar também na terceira tentativa, será reportada uma falha.
 
 12. Defina **Intervalo de repetição segundos** como **600**.
 
-13. No menu, selecione **Página Inicial -\> Salvar** para salvar o
+13. No menu, selecione **Página Inicial -> Salvar** para salvar o
     pipeline.
 
     ![](../media/lab-05/image20.png)
@@ -296,7 +296,7 @@ levará 15 minutos para que o arquivo fique disponível. Queremos agendar
 as novas tentativas para 5 e 15 minutos. Vamos ver como isso pode ser
 alcançado criando um novo Pipeline de dados.
 
-1. No painel esquerdo, clique em **FAIAD\_\<nome de usuário\>** para
+1. No painel esquerdo, clique em **FAIAD_<nome de usuário>** para
     navegar até a página inicial do workspace.
 
 2. No menu superior, clique em **+ Novo item (1)** e, na janela popout,
@@ -441,25 +441,25 @@ nome da variável.
 9. Clique em **Funções** no menu inferior.
 
 10. Na seção **Funções Lógicas**, selecione a função **or**. O aviso
-    **\@or()** é adicionado à caixa de texto da expressão dinâmica. A
-    função \"or\" tem dois parâmetros. Estamos trabalhando no primeiro
+    **@or()** é adicionado à caixa de texto da expressão dinâmica. A
+    função "or" tem dois parâmetros. Estamos trabalhando no primeiro
     parâmetro.
 
     ![](../media/lab-05/image29.png)
 
-11. Coloque o cursor **entre os parênteses** da função **\@or**.
+11. Coloque o cursor **entre os parênteses** da função **@or**.
 
 12. Na seção **Funções Lógicas**, selecione a função **equals**. Observe
     que isso é adicionado à caixa de texto da expressão dinâmica.
 
-    - **Observação:** Sua função deve ser semelhante a **\@or(equals())**. A
+    - **Observação:** Sua função deve ser semelhante a **@or(equals())**. A
 função equals também aceita dois parâmetros. Estaremos verificando se a
 variável varCounter é igual a 3.
 
     ![](../media/lab-05/image30.png)
 
 13. Agora, coloque o cursor **entre os parênteses** da função
-    **\@equals** para adicionar os parâmetros.
+    **@equals** para adicionar os parâmetros.
 
 14. No menu inferior, selecione **Variáveis**.
 
@@ -467,11 +467,11 @@ variável varCounter é igual a 3.
 
 16. Insira **3** como o segundo parâmetro da função equals. Como na
     captura de tela abaixo, sua expressão será
-    **\@or(equals(variables(\'varCounter\'),3))**.
+    **@or(equals(variables('varCounter'),3))**.
 
     ![](../media/lab-05/image31.png)
 
-17. Precisamos adicionar o segundo parâmetro à função \"or\". **Adicione
+17. Precisamos adicionar o segundo parâmetro à função "or". **Adicione
     uma vírgula** entre os dois parênteses finais. Desta vez, tentaremos
     digitar o nome da função. Comece a digitar **que** e você verá uma
     lista suspensa das funções disponíveis (isso é chamado de
@@ -485,13 +485,13 @@ variável varCounter é igual a 3.
 19. Comece a digitar **variables(**
 
 20. Com a ajuda do IntelliSense, selecione
-    **variables(\'varIsSuccess\')**.
+    **variables('varIsSuccess')**.
 
 21. Após a vírgula, vamos inserir o segundo parâmetro. Comece a digitar
     **variables(**
 
 22. Com a ajuda do IntelliSense, selecione
-    **variables(\'varSuccess\')**. Aqui estamos comparando o valor de
+    **variables('varSuccess')**. Aqui estamos comparando o valor de
     varIsSuccess com o valor de varSuccess (Sim é o valor por padrão de
     varSuccess).
 
@@ -500,8 +500,8 @@ variável varCounter é igual a 3.
 23. Sua expressão deve ser:
 
      ```
-       @or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
-       variables(\'varSuccess\')))
+       @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
+       variables('varSuccess')))
      ```
 
 24. Selecione **OK**.
@@ -520,7 +520,7 @@ variável varCounter é igual a 3.
 
     ![](../media/lab-05/image35.png)
 
-3. No menu superior, selecione **Atividades -\> Fluxo de dados**. A
+3. No menu superior, selecione **Atividades -> Fluxo de dados**. A
     atividade Fluxo de dados é adicionada ao painel de design.
 
 4. Com **atividade Fluxo de dados selecionada**, no painel inferior,
@@ -537,7 +537,7 @@ variável varCounter é igual a 3.
 7. Selecione **Configurações** no painel inferior.
 
 8. Certifique-se de que o **Workspace** esteja definido como seu
-    workspace **FAIAD\_\<nome de usuário\>**.
+    workspace **FAIAD_<nome de usuário>**.
 
 9. Na lista suspensa **Fluxo de dados**, selecione
     **df_People_SharePoint**.
@@ -552,7 +552,7 @@ fluxo de dados for bem-sucedida, precisaremos sair do iterador Until.
 Lembre-se de que uma das condições para a existência do iterador é
 definir o valor da variável varIsSuccess como Sim.
 
-1. No menu superior, selecione **Atividades -\> Definir variável**. A
+1. No menu superior, selecione **Atividades -> Definir variável**. A
     atividade Definir variável é adicionada à tela de design.
 
 2. Com a **atividade Definir variável** selecionada, no painel
@@ -607,9 +607,9 @@ atividade:
     usando qualquer combinação de expressões, funções e variáveis do
     sistema (1).**
 
-11. No menu inferior, clique nas **reticências(\...) (2)** e selecione
-    **Variáveis (3) -\> varSuccess (4)**. Observe que
-    **\@variables('varSuccess')** é inserido na área de texto Adicionar
+11. No menu inferior, clique nas **reticências(...) (2)** e selecione
+    **Variáveis (3) -> varSuccess (4)**. Observe que
+    **@variables('varSuccess')** é inserido na área de texto Adicionar
     conteúdo dinâmico abaixo. Lembre-se de que quando criamos variáveis,
     predefinimos o valor da variável varSuccess como Sim. Portanto,
     estamos atribuindo o valor Sim à variável varIsSuccess.
@@ -627,7 +627,7 @@ atividade:
 
 ### Tarefa 10: Configurar 2ª atividade Set variable
 
-1. No menu superior, selecione **Atividades -\> Definir variável**. A
+1. No menu superior, selecione **Atividades -> Definir variável**. A
     atividade Definir variável é adicionada à tela de design.
 
 2. Com a **atividade Definir variável** selecionada, no painel
@@ -658,7 +658,7 @@ atividade:
     **Adicionar conteúdo dinâmico**.
 
 10. A caixa de diálogo Construtor de expressões de pipeline é aberta.
-    Insira **\@add(variables(\'varCounter\'),1)**.
+    Insira **@add(variables('varCounter'),1)**.
 
     - **Observação:** Sinta-se à vontade para digitar esta expressão, usar o
 menu para selecionar as funções ou copiá-la e colá-la. Esta função
@@ -672,7 +672,7 @@ varTempCounter.
 
 ### Tarefa 11: Configurar 3ª atividade Set variable
 
-1. No menu superior, selecione **Atividades -\> Definir variável**. A
+1. No menu superior, selecione **Atividades -> Definir variável**. A
     atividade Definir variável é adicionada à tela de design.
 
 2. Com a **atividade Definir variável** selecionada, no painel
@@ -702,7 +702,7 @@ varTempCounter.
     **Adicionar conteúdo dinâmico**.
 
 10. A caixa de diálogo Construtor de expressões de pipeline é aberta.
-    Insira **\@variables(\'varTempCounter\')**. Sinta-se à vontade para
+    Insira **@variables('varTempCounter')**. Sinta-se à vontade para
     digitar esta expressão, usar o menu para selecionar as funções ou
     copiá-la e colá-la.
 
@@ -722,7 +722,7 @@ atualização do fluxo de dados falhar pela segunda vez, precisaremos
 esperar 15 minutos/900 segundos e tentar novamente. Usaremos a atividade
 Wait e a variável varWaitTime para definir o tempo de espera.
 
-1. No menu superior, selecione **Atividades -\> reticências (...) -\>
+1. No menu superior, selecione **Atividades -> reticências (...) ->
     Wait**. A atividade Wait é adicionada à tela de design.
 
 2. Com a atividade Wait selecionada, no painel inferior, selecione
@@ -780,12 +780,12 @@ da variável varCounter é maior que 1.
     Se for verdadeiro, ela define o tempo de espera para varWaitTime vezes
 
 15. Lembre-se, definimos como padrão o valor de varWaitTime para 60.
-Isso seria 60\*15 = 900 segundos. Se o valor da variável varCounter não
+Isso seria 60*15 = 900 segundos. Se o valor da variável varCounter não
 for 2 (for maior que 2, o que significa que a atualização do fluxo de
 dados falhou 3 vezes, terminamos a iteração. Não precisamos mais
-esperar), o tempo de espera é definido como varWaitTime \* 0. Portanto,
+esperar), o tempo de espera é definido como varWaitTime * 0. Portanto,
 como 0. Se o valor da variável varCounter for 1, multiplicaremos
-varWaitTime \* 5. Isso seria 60 \* 5 = 300 segundos.
+varWaitTime * 5. Isso seria 60 * 5 = 300 segundos.
 
 9. Selecione **OK**.
 
@@ -801,14 +801,14 @@ captura de tela abaixo.
     ![](../media/lab-05/image48.png)
 
 11. Terminamos de criar o pipeline de dados. No menu superior, selecione
-    **Página Inicial -\> ícone de Salvar** para salvar o pipeline de
+    **Página Inicial -> ícone de Salvar** para salvar o pipeline de
     dados.
 
     ![](../media/lab-05/image49.png)
 
 ### Tarefa 13: Configurar atualização de agenda para o Pipeline de dados
 
-1. Podemos testar o pipeline de dados selecionando **Página Inicial -\>
+1. Podemos testar o pipeline de dados selecionando **Página Inicial ->
     Executar.**
 
    - **Observação:** Pode levar alguns minutos para que o pipeline de dados
@@ -817,7 +817,7 @@ no SharePoint está sempre disponível. Consequentemente, o pipeline de
 dados nunca falhará.
 
 2. Podemos definir o pipeline de dados para ser executado de acordo com
-    uma agenda. No menu superior, selecione **Página Inicial \>
+    uma agenda. No menu superior, selecione **Página Inicial >
     Agenda**. A caixa de diálogo Agenda é aberta.
 
 3. Defina o botão de opção **Execução agendada** como **Ativado**.
@@ -844,7 +844,7 @@ fonte de dados.
 
     ![](../media/lab-05/image50.png)
 
-11. Selecione seu workspace do Fabric **FAIAD\_\<nome de usuário\>** no
+11. Selecione seu workspace do Fabric **FAIAD_<nome de usuário>** no
     painel esquerdo para navegar até o workspace.
 
     - **Observação:** Na tela Agendamento, não há opção de notificação sobre
@@ -920,63 +920,63 @@ Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 - [Blog de integração do Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos os direitos reservados.
->
-> Ao usar esta demonstração/este laboratório, você concorda com os
-> seguintes termos:
->
-> A tecnologia/funcionalidade descrita nesta demonstração/neste
-> laboratório é fornecida pela Microsoft Corporation para obter seus
-> comentários e oferecer uma experiência de aprendizado. Você pode usar
-> a demonstração/o laboratório somente para avaliar tais funcionalidades
-> e recursos de tecnologia e fornecer comentários à Microsoft. Você não
-> pode usá-los para nenhuma outra finalidade. Você não pode modificar,
-> copiar, distribuir, transmitir, exibir, executar, reproduzir,
-> publicar, licenciar, criar obras derivadas, transferir nem vender esta
-> demonstração/este laboratório ou qualquer parte deles.
->
-> A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
-> PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
-> REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
->
-> ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
-> FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
-> RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
-> CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA.
-> A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
-> LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS
-> RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL.
-> ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU
-> CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS
-> E FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
->
-> **COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
-> tecnologia, as funcionalidades e/ou os conceitos descritos nesta
-> demonstração/neste laboratório à Microsoft, você concederá à
-> Microsoft, sem encargos, o direito de usar, compartilhar e
-> comercializar seus comentários de qualquer forma e para qualquer
-> finalidade. Você também concede a terceiros, sem encargos, quaisquer
-> direitos de patente necessários para que seus produtos, suas
-> tecnologias e seus serviços usem ou interajam com partes específicas
-> de um software ou um serviço da Microsoft que inclua os comentários.
-> Você não fornecerá comentários que estejam sujeitos a uma licença que
-> exija que a Microsoft licencie seu software ou sua documentação para
-> terceiros em virtude da inclusão de seus comentários neles. Esses
-> direitos continuarão em vigor após o término do contrato.
->
-> POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS
-> GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO,
-> INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM
-> ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA
-> FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA
-> NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA
-> DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS
-> NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
->
-> **AVISO DE ISENÇÃO DE RESPONSABILIDADE**
->
-> Esta demonstração/este laboratório contém apenas uma parte dos novos
-> recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
-> podem ser alterados em versões futuras do produto. Nesta
-> demonstração/neste laboratório, você aprenderá sobre alguns dos novos
-> recursos, mas não todos.
+© 2025 Microsoft Corporation. Todos os direitos reservados.
+
+Ao usar esta demonstração/este laboratório, você concorda com os
+seguintes termos:
+
+A tecnologia/funcionalidade descrita nesta demonstração/neste
+laboratório é fornecida pela Microsoft Corporation para obter seus
+comentários e oferecer uma experiência de aprendizado. Você pode usar a
+demonstração/o laboratório somente para avaliar tais funcionalidades e
+recursos de tecnologia e fornecer comentários à Microsoft. Você não pode
+usá-los para nenhuma outra finalidade. Você não pode modificar, copiar,
+distribuir, transmitir, exibir, executar, reproduzir, publicar,
+licenciar, criar obras derivadas, transferir nem vender esta
+demonstração/este laboratório ou qualquer parte deles.
+
+A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
+PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
+REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
+
+ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
+FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
+RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
+CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA. A
+TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
+LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS RECURSOS
+E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL. ALÉM DISSO,
+PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU CONCEITOS. SUA
+EXPERIÊNCIA COM O USO DE TAIS RECURSOS E FUNCIONALIDADES EM UM AMBIENTE
+FÍSICO TAMBÉM PODE SER DIFERENTE.
+
+**COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
+tecnologia, as funcionalidades e/ou os conceitos descritos nesta
+demonstração/neste laboratório à Microsoft, você concederá à Microsoft,
+sem encargos, o direito de usar, compartilhar e comercializar seus
+comentários de qualquer forma e para qualquer finalidade. Você também
+concede a terceiros, sem encargos, quaisquer direitos de patente
+necessários para que seus produtos, suas tecnologias e seus serviços
+usem ou interajam com partes específicas de um software ou um serviço da
+Microsoft que inclua os comentários. Você não fornecerá comentários que
+estejam sujeitos a uma licença que exija que a Microsoft licencie seu
+software ou sua documentação para terceiros em virtude da inclusão de
+seus comentários neles. Esses direitos continuarão em vigor após o
+término do contrato.
+
+POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS GARANTIAS
+E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO, INCLUINDO TODAS AS
+GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS,
+IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA,
+TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO
+DOS RESULTADOS DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM
+A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A
+QUALQUER FINALIDADE.
+
+**AVISO DE ISENÇÃO DE RESPONSABILIDADE**
+
+Esta demonstração/este laboratório contém apenas uma parte dos novos
+recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
+podem ser alterados em versões futuras do produto. Nesta
+demonstração/neste laboratório, você aprenderá sobre alguns dos novos
+recursos, mas não todos.

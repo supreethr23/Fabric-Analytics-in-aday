@@ -124,7 +124,7 @@ tenha a licença do Fabric atribuída. Vamos configurar tudo.
     Ambiente).
 
    - ***Observação:** O nome do workspace deve ser exclusivo. Verifique se há
-uma marca de seleção verde em \"Este nome está disponível\", abaixo do
+uma marca de seleção verde em "Este nome está disponível", abaixo do
 campo Nome.*
 
 5. Se preferir, você poderá inserir uma Descrição para o workspace.
@@ -162,7 +162,7 @@ dados do Lakehouse para criar nosso modelo e relatá-lo. A primeira etapa
 3. Uma caixa de diálogo Novo lakehouse será exibida. Insira
     **lh_FAIAD** na caixa de texto Nome.
 
-   - ***Observação:** \"lh\" refere-se a Lakehouse. Estamos prefixando \"lh\"
+   - ***Observação:** "lh" refere-se a Lakehouse. Estamos prefixando "lh"
 para que seja fácil de identificar e pesquisar.*
 
    - ***Observação:** A versão prévia do recurso de **Esquemas de Lakehouse**
@@ -331,30 +331,30 @@ opções nos laboratórios a seguir.
         necessidade crítica de transformar com eficiência os dados de saúde
         em um formato adequado para análise.
 
-    > **Introdução:**\
+    > **Introdução:**
     > Para começar a usar o Industry Solutions, siga estas etapas:
 
     a)  **Saiba mais sobre soluções de dados de saúde:** clique no botão
-        \"Saiba mais\" para ler sobre soluções de dados de saúde e entender
+        "Saiba mais" para ler sobre soluções de dados de saúde e entender
         como elas podem ser usadas em seus projetos.
 
     b)  **Implantar soluções de dados de saúde:** clique no botão
-        \"Implantar\" para começar a implantar soluções de dados de saúde e
+        "Implantar" para começar a implantar soluções de dados de saúde e
         implementá-las em seus projetos.
 
     c)  **Saiba mais sobre soluções de sustentabilidade:** clique no botão
-        \"Saiba mais\" para ler sobre soluções de sustentabilidade e
+        "Saiba mais" para ler sobre soluções de sustentabilidade e
         entender como elas podem ser usadas em seus projetos.
 
     d)  **Implantar soluções de sustentabilidade:** clique no botão
-        \"Implantar\" para começar a implantar soluções de sustentabilidade
+        "Implantar" para começar a implantar soluções de sustentabilidade
         e implementá-las em seus projetos.
 
-    e)  **Saiba mais sobre soluções de varejo:** clique no botão \"Saiba
-        mais\" para ler sobre soluções de varejo e entender como elas podem
+    e)  **Saiba mais sobre soluções de varejo:** clique no botão "Saiba
+        mais" para ler sobre soluções de varejo e entender como elas podem
         ser usadas em seus projetos.
 
-    f)  **Implantar soluções de varejo:** clique no botão \"Implantar\" para
+    f)  **Implantar soluções de varejo:** clique no botão "Implantar" para
         começar a implantar soluções de varejo e implementá-las em seus
         projetos.
 
@@ -388,47 +388,47 @@ opções nos laboratórios a seguir.
 
     **Tipos de item:**
 
-    a\) **Eventhouse:** usado para criar um workspace de um ou vários bancos
+    a) **Eventhouse:** usado para criar um workspace de um ou vários bancos
     de dados KQL, que podem ser compartilhados entre projetos.
 
-    b\) **Conjunto de consultas KQL:** usado para executar consultas nos
+    b) **Conjunto de consultas KQL:** usado para executar consultas nos
     dados para produzir tabelas e visuais compartilháveis.
 
-    c\) **Painel em Tempo Real:** usado para visualizar dashboards em tempo
+    c) **Painel em Tempo Real:** usado para visualizar dashboards em tempo
     real em segundos após a ingestão de dados.
 
-    d\) **Eventstream:** usado para capturar, transformar e rotear fluxo de
+    d) **Eventstream:** usado para capturar, transformar e rotear fluxo de
     eventos em tempo real.
 
-    e\) **Ativador:** usado para monitorar conjuntos de dados, consultas e
+    e) **Ativador:** usado para monitorar conjuntos de dados, consultas e
     fluxos de eventos quanto a padrões.
 
     > **Introdução:**
     >
     > Para começar a usar o Real-Time Intelligence, siga estas etapas:
     >
-    > a\. **Explorar exemplo de Real-Time Intelligence:** clique no botão
-    > \"Abrir\" para explorar a análise de dados em tempo real com um
+    > a. **Explorar exemplo de Real-Time Intelligence:** clique no botão
+    > "Abrir" para explorar a análise de dados em tempo real com um
     > exemplo.
 
-    b\. **Explorar um exemplo:** clique no botão \"Selecionar\" para usar um
+    b. **Explorar um exemplo:** clique no botão "Selecionar" para usar um
     exemplo e aprender sobre o Real-Time Intelligence.
 
-    c\. **Introdução ao Real-Time Intelligence:** clique no botão \"Abrir\"
+    c. **Introdução ao Real-Time Intelligence:** clique no botão "Abrir"
     para obter uma visão geral do Real-Time Intelligence e começar a usar a
     ferramenta de forma eficaz.
 
-    d\. **Aprender KQL com dados de exemplo:** clique no botão \"Abrir\"
+    d. **Aprender KQL com dados de exemplo:** clique no botão "Abrir"
     para aprender KQL usando dados de exemplo.
 
-    e\. **O que é um Hub em Tempo Real:** clique no botão \"Abrir\" para
+    e. **O que é um Hub em Tempo Real:** clique no botão "Abrir" para
     saber o que é um Hub em Tempo Real e como ele pode ser usado.
 
-    f\. **Explorar um ativador de amostra:** clique no botão \"Abrir\" para
+    f. **Explorar um ativador de amostra:** clique no botão "Abrir" para
     usar um ativador de amostra e entender os recursos e as capacidades do
     Real-Time Intelligence.
 
-    g\. **Introdução ao ativador:** clique no botão \"Abrir\" para começar a
+    g. **Introdução ao ativador:** clique no botão "Abrir" para começar a
     usar os conceitos do ativador e a ferramenta de forma eficaz.
 
     ![](../media/lab-02/image25.png)
@@ -461,24 +461,24 @@ opções nos laboratórios a seguir.
 
     **Tipos de item:**
 
-    a\. **Lakehouse:** usado para armazenar Big Data para limpeza, consulta,
+    a. **Lakehouse:** usado para armazenar Big Data para limpeza, consulta,
     relatórios e compartilhamento.
 
-    b\. **Notebook:** usado para ingestão, preparação, análise e outras
+    b. **Notebook:** usado para ingestão, preparação, análise e outras
     tarefas relacionadas a dados usando várias linguagens, como Python e
     Scala.
 
-    c\. **Ambiente:** usado para configurar bibliotecas compartilhadas,
+    c. **Ambiente:** usado para configurar bibliotecas compartilhadas,
     configurações de computação do Spark e recursos para notebooks e
     definições de trabalho do Spark.
 
-    d\. **Definição de Trabalho do Spark:** usada para definir, agendar e
+    d. **Definição de Trabalho do Spark:** usada para definir, agendar e
     gerenciar trabalhos do Apache.
 
-    e\. **Funções de dados do usuário (versão preliminar):** plataforma que
+    e. **Funções de dados do usuário (versão preliminar):** plataforma que
     permite hospedar e executar aplicativos no Fabric.
 
-    f\. **API for GraphQL:** é a API para consultar várias fontes de dados.
+    f. **API for GraphQL:** é a API para consultar várias fontes de dados.
 
     g**. Importar notebook:** usado para importar notebooks de um computador
     local.
@@ -487,37 +487,37 @@ opções nos laboratórios a seguir.
 
     Para começar a usar o Data Engineering, siga estas etapas:
 
-    a\. **Explorar um exemplo:** clique no botão \"Selecionar\" para usar um
+    a. **Explorar um exemplo:** clique no botão "Selecionar" para usar um
     exemplo e aprender sobre o Data Engineering.
 
-    b\. **O que é um Lakehouse?:** clique no botão \"Abrir\" para saber mais
+    b. **O que é um Lakehouse?:** clique no botão "Abrir" para saber mais
     sobre lakehouses e como eles podem ser usados.
 
-    c\. **Obter experiência de dados no Lakehouse:** clique no botão
-    \"Abrir\" para começar a trabalhar com a engenharia de dados usando
+    c. **Obter experiência de dados no Lakehouse:** clique no botão
+    "Abrir" para começar a trabalhar com a engenharia de dados usando
     Lakehouses.
 
-    d\. **Introdução às Definições de Trabalho do Spark:** clique no botão
-    \"Abrir\" para saber como usar as Definições de Trabalho do Spark para
+    d. **Introdução às Definições de Trabalho do Spark:** clique no botão
+    "Abrir" para saber como usar as Definições de Trabalho do Spark para
     processamento de dados.
 
-    e\. **Desenvolver e executar notebooks:** clique no botão \"Abrir\" para
+    e. **Desenvolver e executar notebooks:** clique no botão "Abrir" para
     saber como desenvolver e executar notebooks para análise de dados.
 
-    f\. **Como usar o NotebookUtils:** clique no botão \"Abrir\" para saber
+    f. **Como usar o NotebookUtils:** clique no botão "Abrir" para saber
     como usar o NotebookUtils para uma análise de dados aprimorada.
 
-    g\. **Aproveitar notebooks para seu lakehouse**: clique no botão
-    \"Abrir\" para saber como aproveitar os notebooks para seu lakehouse.
+    g. **Aproveitar notebooks para seu lakehouse**: clique no botão
+    "Abrir" para saber como aproveitar os notebooks para seu lakehouse.
 
-    h\. **Aproveitar conjuntos de dados para seu lakehouse:** clique no
-    botão \"Abrir\" para saber como aproveitar os conjuntos de dados para
+    h. **Aproveitar conjuntos de dados para seu lakehouse:** clique no
+    botão "Abrir" para saber como aproveitar os conjuntos de dados para
     seu lakehouse.
 
-    i\. **Criar suas primeiras funções de dados do usuário:** clique no
-    botão \"Abrir\" para saber como criar funções de dados do usuário.\
-    \
-    j. **Criar sua primeira API for GraphQL:** clique no botão \"Abrir\"
+    i. **Criar suas primeiras funções de dados do usuário:** clique no
+    botão "Abrir" para saber como criar funções de dados do usuário.
+    
+    j. **Criar sua primeira API for GraphQL:** clique no botão "Abrir"
     para saber como criar uma API for GraphQL.
 
     ![](../media/lab-02/image27.png)
@@ -550,43 +550,43 @@ opções nos laboratórios a seguir.
 
     **Tipos de item:**
 
-    a\. **Modelo de ML:** usado para criar modelos de machine learning.
+    a. **Modelo de ML:** usado para criar modelos de machine learning.
 
-    b\. **Experimento:** usado para criar, executar e acompanhar o
+    b. **Experimento:** usado para criar, executar e acompanhar o
     desenvolvimento de vários modelos.
 
-    c\. **Notebook:** usado para explorar dados e criar soluções de machine
+    c. **Notebook:** usado para explorar dados e criar soluções de machine
     learning.
 
     d**. Ambiente:** usado para configurar bibliotecas compartilhadas,
     configurações de computação do Spark e recursos para notebooks e
     definições de trabalho do Spark.
 
-    e\. **Agente de dados (versão preliminar):** usado para criar
+    e. **Agente de dados (versão preliminar):** usado para criar
     experiências de IA conversacional que respondem a perguntas sobre dados
     armazenados em lakehouses, depósitos, modelos semânticos de Power BI e
     bancos de dados KQL
 
-    f\. **Notebook Python:** usado para importar notebooks Python de um
+    f. **Notebook Python:** usado para importar notebooks Python de um
     computador local.
 
     **Introdução:**
 
     Para começar a usar o Data Science, siga estas etapas
 
-    a\. **Explorar um exemplo:** clique no botão \"Selecionar\" para usar um
+    a. **Explorar um exemplo:** clique no botão "Selecionar" para usar um
     exemplo e aprender sobre o Data Science.
 
-    b\. **Introdução aos Modelos de ML:** clique no botão \"Abrir\" para
+    b. **Introdução aos Modelos de ML:** clique no botão "Abrir" para
     saber como começar a usar os modelos de machine learning.
 
-    c\. **Introdução aos Experimentos de ML:** clique no botão \"Abrir\"
+    c. **Introdução aos Experimentos de ML:** clique no botão "Abrir"
     para saber como conduzir experimentos de machine learning.
 
-    d\. **Desenvolver e executar notebooks:** clique no botão \"Abrir\" para
+    d. **Desenvolver e executar notebooks:** clique no botão "Abrir" para
     saber como desenvolver e executar notebooks para análise de dados.
 
-    e\. **Introdução aos Notebooks:** clique no botão \"Abrir\" para saber
+    e. **Introdução aos Notebooks:** clique no botão "Abrir" para saber
     como começar a usar os notebooks.
 
     ![](../media/lab-02/image29.png)
@@ -619,36 +619,36 @@ opções nos laboratórios a seguir.
 
     **Tipos de item:**
 
-    a\. **Warehouse:** usado para criar um Data Warehouse.
+    a. **Warehouse:** usado para criar um Data Warehouse.
 
-    b\. **Depósito de exemplo:** usado para explorar e testar recursos de
+    b. **Depósito de exemplo:** usado para explorar e testar recursos de
     armazenamento de dados com conjuntos de dados e modelos
     pré-configurados.
 
-    c\. **Notebook:** usado para criar e compartilhar tarefas interativas de
+    c. **Notebook:** usado para criar e compartilhar tarefas interativas de
     visualização e análise de dados.
 
-    d\. **Banco de Dados SQL do Azure espelhado:** usado para espelhar o
+    d. **Banco de Dados SQL do Azure espelhado:** usado para espelhar o
     Banco de Dados SQL do Azure.
 
-    e\. **Catálogo espelhado do Azure Databricks:** usado para espelhar os
+    e. **Catálogo espelhado do Azure Databricks:** usado para espelhar os
     dados do Azure Databricks para integração e análise aprimoradas.
 
-    f\. **Snowflake espelhado:** usado para espelhar o banco de dados
+    f. **Snowflake espelhado:** usado para espelhar o banco de dados
     Snowflake.
 
-    g\. **Azure Cosmos DB espelhado:** usado para espelhar o Azure Cosmos
+    g. **Azure Cosmos DB espelhado:** usado para espelhar o Azure Cosmos
     DB.
 
-    h\. **Banco de Dados do Azure para PostgreSQL espelhado (versão
+    h. **Banco de Dados do Azure para PostgreSQL espelhado (versão
     preliminar):** usado para espelhar seu Banco de Dados do Azure para
     PostgreSQL existente.
 
-    i\. **Banco de dados gerenciado SQL do Azure espelhado:** usado para
+    i. **Banco de dados gerenciado SQL do Azure espelhado:** usado para
     espelhar Bancos de dados gerenciados SQL do Azure para alta
     disponibilidade e recuperação de desastres.
 
-    j\. **Banco de dados espelhado (versão preliminar):** usado para
+    j. **Banco de dados espelhado (versão preliminar):** usado para
     replicar bancos de dados para alta disponibilidade e recuperação de
     desastres.
 
@@ -656,10 +656,10 @@ opções nos laboratórios a seguir.
 
     Para começar a usar o Data Warehouse, siga as etapas abaixo:
 
-    a\. **Explorar um warehouse de exemplo:** inicie um novo warehouse com
+    a. **Explorar um warehouse de exemplo:** inicie um novo warehouse com
     dados de exemplo já carregados.
 
-    b\. **Introdução ao warehouse:** clique no botão \"Abrir\" para saber
+    b. **Introdução ao warehouse:** clique no botão "Abrir" para saber
     como usar um warehouse para analisar dados.
 
     ![](../media/lab-02/image31.png)
@@ -675,8 +675,8 @@ opções nos laboratórios a seguir.
     seguir, está uma visão geral detalhada de suas seções, desenvolvidas
     para ajudar você a usar Bancos de Dados de forma eficaz.
 
-    **O que é um Fabric Database?**\
-    \
+    **O que é um Fabric Database?**
+    
     O banco de dados SQL no Microsoft Fabric é um banco de dados
     transacional fácil de usar para desenvolvedores, baseado no Banco de
     Dados SQL do Azure, que permite criar facilmente seu banco de dados
@@ -685,7 +685,7 @@ opções nos laboratórios a seguir.
     
     **Tipos de item:**
     
-    a\. **SQL database (preview):** o banco de dados SQL no Fabric faz parte
+    a. **SQL database (preview):** o banco de dados SQL no Fabric faz parte
     da carga de trabalho Banco de Dados, e os dados podem ser acessados de
     outros itens no Fabric. Seus dados de banco de dados SQL também são
     mantidos atualizados em um formato consultável no OneLake, para que você
@@ -697,13 +697,13 @@ opções nos laboratórios a seguir.
     
     Para começar a usar Bancos de Dados, siga as etapas abaixo:
     
-    a\. **Explorar:** clique em \"Abrir\" para explorar um banco de dados de
-    exemplo.\
+    a. **Explorar:** clique em "Abrir" para explorar um banco de dados de
+    exemplo.
     b. **Database concepts:** explica termos e conceitos comuns em torno do
     banco de dados transacional para que você possa se familiarizar com como
     trabalhar com o Banco de Dados SQL.
     
-    c\. **Database templates:** examine uma biblioteca de modelos
+    c. **Database templates:** examine uma biblioteca de modelos
     pré-criados de designs de banco de dados comuns.
     
        ![](../media/lab-02/image33.png)
@@ -731,116 +731,116 @@ Ajuda (?) tem links para ótimos recursos.
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas
 do Microsoft Fabric.
 
--   Veja a postagem no blog para ler na íntegra
+- Veja a postagem no blog para ler na íntegra
 
--   Explore o Fabric por meio do [Tour
+- Explore o Fabric por meio do [Tour
     Guiado](https://aka.ms/Fabric-GuidedTour)
 
--   Inscreva-se para a [avaliação gratuita do Microsoft
+- Inscreva-se para a [avaliação gratuita do Microsoft
     Fabric](https://aka.ms/try-fabric)
 
--   Visite o [site do Microsoft Fabric](https://aka.ms/microsoft-fabric)
+- Visite o [site do Microsoft Fabric](https://aka.ms/microsoft-fabric)
 
--   Aprenda novas habilidades explorando os [módulos de Aprendizagem do
+- Aprenda novas habilidades explorando os [módulos de Aprendizagem do
     Fabric](https://aka.ms/learn-fabric)
 
--   Explore a [documentação técnica do
+- Explore a [documentação técnica do
     Fabric](https://aka.ms/fabric-docs)
 
--   Leia o [livro eletrônico gratuito sobre como começar a usar o
+- Leia o [livro eletrônico gratuito sobre como começar a usar o
     Fabric](https://aka.ms/fabric-get-started-ebook)
 
--   Participe da [comunidade do Fabric](https://aka.ms/fabric-community)
+- Participe da [comunidade do Fabric](https://aka.ms/fabric-community)
     para postar suas perguntas, compartilhar seus comentários e aprender
     com outras pessoas
 
 Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 
--   [Experiência do Data Factory no blog do
+- [Experiência do Data Factory no blog do
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Experiência do Synapse Data Engineering no blog do
+- [Experiência do Synapse Data Engineering no blog do
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
--   [Experiência do Synapse Data Science no blog do
+- [Experiência do Synapse Data Science no blog do
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
--   [Experiência do Synapse Data Warehousing no blog do
+- [Experiência do Synapse Data Warehousing no blog do
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
--   [Experiência do Synapse Real-Time Analytics no blog do
+- [Experiência do Synapse Real-Time Analytics no blog do
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Blog de comunicado do Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog de comunicado do Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Experiência do Data Activator no blog do
+- [Experiência do Data Activator no blog do
     Fabric](https://aka.ms/Fabric-DA-Blog) 
 
--   [Administração e governança no blog do
+- [Administração e governança no blog do
     Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [OneLake no blog do Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [OneLake no blog do Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Blog de integração do Dataverse e Microsoft
+- [Blog de integração do Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos os direitos reservados.
->
-> Ao usar esta demonstração/este laboratório, você concorda com os
-> seguintes termos:
->
-> A tecnologia/funcionalidade descrita nesta demonstração/neste
-> laboratório é fornecida pela Microsoft Corporation para obter seus
-> comentários e oferecer uma experiência de aprendizado. Você pode usar
-> a demonstração/o laboratório somente para avaliar tais funcionalidades
-> e recursos de tecnologia e fornecer comentários à Microsoft. Você não
-> pode usá-los para nenhuma outra finalidade. Você não pode modificar,
-> copiar, distribuir, transmitir, exibir, executar, reproduzir,
-> publicar, licenciar, criar obras derivadas, transferir nem vender esta
-> demonstração/este laboratório ou qualquer parte deles.
->
-> A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
-> PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
-> REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
->
-> ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
-> FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
-> RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
-> CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA.
-> A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
-> LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS
-> RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL.
-> ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU
-> CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E
-> FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
->
-> **COMENTÁRIOS.** Caso você forneça comentários sobre os recursos de
-> tecnologia, as funcionalidades e/ou os conceitos descritos nesta
-> demonstração/neste laboratório à Microsoft, você concederá à
-> Microsoft, sem encargos, o direito de usar, compartilhar e
-> comercializar seus comentários de qualquer forma e para qualquer
-> finalidade. Você também concede a terceiros, sem encargos, quaisquer
-> direitos de patente necessários para que seus produtos, suas
-> tecnologias e seus serviços usem ou interajam com partes específicas
-> de um software ou um serviço da Microsoft que inclua os comentários.
-> Você não fornecerá comentários que estejam sujeitos a uma licença que
-> exija que a Microsoft licencie seu software ou sua documentação para
-> terceiros em virtude da inclusão de seus comentários neles. Esses
-> direitos continuarão em vigor após o término do contrato.
->
-> POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS
-> GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO,
-> INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM
-> ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA
-> FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA
-> NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA
-> DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS
-> NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
->
-> **AVISO DE ISENÇÃO DE RESPONSABILIDADE**
->
-> Esta demonstração/este laboratório contém apenas uma parte dos novos
-> recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
-> podem ser alterados em versões futuras do produto. Nesta
-> demonstração/neste laboratório, você aprenderá sobre alguns dos novos
-> recursos, mas não todos.
+© 2025 Microsoft Corporation. Todos os direitos reservados.
+
+Ao usar esta demonstração/este laboratório, você concorda com os
+seguintes termos:
+
+A tecnologia/funcionalidade descrita nesta demonstração/neste
+laboratório é fornecida pela Microsoft Corporation para obter seus
+comentários e oferecer uma experiência de aprendizado. Você pode usar a
+demonstração/o laboratório somente para avaliar tais funcionalidades e
+recursos de tecnologia e fornecer comentários à Microsoft. Você não pode
+usá-los para nenhuma outra finalidade. Você não pode modificar, copiar,
+distribuir, transmitir, exibir, executar, reproduzir, publicar,
+licenciar, criar obras derivadas, transferir nem vender esta
+demonstração/este laboratório ou qualquer parte deles.
+
+A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
+PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
+REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
+
+ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
+FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
+RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
+CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA. A
+TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
+LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS RECURSOS
+E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL. ALÉM DISSO,
+PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU CONCEITOS. SUA
+EXPERIÊNCIA COM O USO DE TAIS RECURSOS E FUNCIONALIDADES EM UM AMBIENTE
+FÍSICO TAMBÉM PODE SER DIFERENTE.
+
+**COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
+tecnologia, as funcionalidades e/ou os conceitos descritos nesta
+demonstração/neste laboratório à Microsoft, você concederá à Microsoft,
+sem encargos, o direito de usar, compartilhar e comercializar seus
+comentários de qualquer forma e para qualquer finalidade. Você também
+concede a terceiros, sem encargos, quaisquer direitos de patente
+necessários para que seus produtos, suas tecnologias e seus serviços
+usem ou interajam com partes específicas de um software ou um serviço da
+Microsoft que inclua os comentários. Você não fornecerá comentários que
+estejam sujeitos a uma licença que exija que a Microsoft licencie seu
+software ou sua documentação para terceiros em virtude da inclusão de
+seus comentários neles. Esses direitos continuarão em vigor após o
+término do contrato.
+
+POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS GARANTIAS
+E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO, INCLUINDO TODAS AS
+GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS,
+IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA,
+TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO
+DOS RESULTADOS DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM
+A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A
+QUALQUER FINALIDADE.
+
+**AVISO DE ISENÇÃO DE RESPONSABILIDADE**
+
+Esta demonstração/este laboratório contém apenas uma parte dos novos
+recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
+podem ser alterados em versões futuras do produto. Nesta
+demonstração/neste laboratório, você aprenderá sobre alguns dos novos
+recursos, mas não todos.

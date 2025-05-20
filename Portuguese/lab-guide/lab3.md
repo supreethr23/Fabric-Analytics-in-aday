@@ -23,21 +23,21 @@ usá-los em nosso modelo.
 
 Há várias maneiras de ingerir esses dados.
 
--   **Atalhos:** cria um link com os dados e podemos usar modos de
+- **Atalhos:** cria um link com os dados e podemos usar modos de
     exibição de consulta Visual para transformá-los. Usaremos os Atalhos
     neste laboratório.
 
--   **Notebooks:** isso exige que escrevamos código. É uma abordagem
+- **Notebooks:** isso exige que escrevamos código. É uma abordagem
     para desenvolvedores.
 
--   **Fluxo de Dados Gen2:** você provavelmente conhece o Power Query ou
+- **Fluxo de Dados Gen2:** você provavelmente conhece o Power Query ou
     o Fluxo de Dados Gen1. O Fluxo de Dados Gen2, como o nome indica, é
     a versão mais recente do Fluxo de Dados. Ele oferece todos os
     recursos do Power Query/Fluxo de Dados Gen1 com o recurso adicional
     de transformar e ingerir dados em diversas fontes de dados.
     Apresentaremos isso nos próximos laboratórios.
 
--   **Pipeline de Dados:** é uma ferramenta de orquestração. As
+- **Pipeline de Dados:** é uma ferramenta de orquestração. As
     atividades podem ser orquestradas para extrair, transformar e
     ingerir dados. Usaremos o Pipeline de Dados para executar a
     atividade do Fluxo de Dados Gen2 que, por sua vez, realizará a
@@ -49,9 +49,9 @@ de consulta Visual para transformá-los.
 
 Ao final deste laboratório, você terá aprendido a:
 
--   Como criar atalhos no Lakehouse
+- Como criar atalhos no Lakehouse
 
--   Como transformar dados usando um recurso de consulta Visual
+- Como transformar dados usando um recurso de consulta Visual
 
 ## Atalho para o ADLS Gen2
 
@@ -189,7 +189,7 @@ modelo semântico. Vamos criar exibições para transformar os dados.
 
 1. Podemos acessar o lakehouse usando um ponto de extremidade SQL. Isso
     possibilita consultar os dados e criar exibições. No **canto
-    superior direito** da tela, selecione **Lakehouse (1) -\> Ponto
+    superior direito** da tela, selecione **Lakehouse (1) -> Ponto
     de extremidade de análise de SQL (2)**.
 
     ![](../media/lab-03/image13.png)
@@ -229,8 +229,8 @@ a guia de consulta de visual se você não vir imediatamente esse ícone.*
    ![](../media/lab-03/image16.png)
 
 6. Com a consulta **Cities(1)** selecionada, na faixa de opções do
-    Editor do Power Query, selecione **Página Inicial (2) -\>
-    Combinar (3) -\> menu suspenso Mesclar consultas (4) -\> Mesclar
+    Editor do Power Query, selecione **Página Inicial (2) ->
+    Combinar (3) -> menu suspenso Mesclar consultas (4) -> Mesclar
     consultas como novas (5).** A caixa de diálogo Mesclar consultas é
     aberta.
 
@@ -272,7 +272,7 @@ de algumas colunas de States.
      Precisamos mesclar a consulta Countries agora.
 
 15. Com a consulta Merge selecionada (1), selecione **Página Inicial (2)
-    -\> Combinar (3) -\> menu suspenso Mesclar consultas (4) -\> Mesclar
+    -> Combinar (3) -> menu suspenso Mesclar consultas (4) -> Mesclar
     consultas (5)**.
 
     ![](../media/lab-03/image20.png)
@@ -320,7 +320,7 @@ de algumas colunas de States.
 selecionar apenas as colunas que precisamos.
 
 23. Com a consulta **Merge** selecionada (1), selecione **Página
-    Inicial (2) -\> Escolher colunas (3) -\> Escolher colunas (4)** na
+    Inicial (2) -> Escolher colunas (3) -> Escolher colunas (4)** na
     faixa de opções.
 
     > **Observação:** se a opção Escolher colunas não estiver visível, você
@@ -421,7 +421,7 @@ Visual sem abrir a opção Power Query.
 
 <!-- -->
 
-5. No menu Consulta de Visual, selecione **Combinar -\> Mesclar
+5. No menu Consulta de Visual, selecione **Combinar -> Mesclar
     consultas**.
 
    ![](../media/lab-03/image30.png)
@@ -453,7 +453,7 @@ tabela superior.
     Não precisamos de todas as colunas na tabela Customer. Vamos selecionar
 apenas aquelas de que precisamos.
 
-13. No menu de consulta de Visual, selecione **Gerenciar colunas -\>
+13. No menu de consulta de Visual, selecione **Gerenciar colunas ->
     Escolher colunas**.
 
     ![](../media/lab-03/image33.png)
@@ -547,13 +547,13 @@ consulta Visual. Vamos testar esse método.
 
     ![](../media/lab-03/image40.png)
 
-2. Na seção **Explorer -\> Table**, precisamos adicionar as tabelas ao
+2. Na seção **Explorer -> Table**, precisamos adicionar as tabelas ao
     painel de Consulta Visual. Clique nas reticências ao lado da tabela
     **InvoiceLineItems** e selecione **Inserir na tela**.
 
 3. Repita as mesmas etapas para a tabela **Invoices**.
 
-4. Na seção **Explorer -\> Views**, precisamos adicionar as tabelas ao
+4. Na seção **Explorer -> Views**, precisamos adicionar as tabelas ao
     painel de Consulta Visual. Clique nas reticências ao lado da tabela
     **Reseller** e selecione **Inserir na tela**.
 
@@ -563,8 +563,8 @@ consulta Visual. Vamos testar esse método.
     ![](../media/lab-03/image41.png)
 
 6. Com a consulta **InvoiceLineItems** selecionada, na faixa de opções,
-    selecione **Página Inicial (2) -\> Combinar (3) -\> menu suspenso
-    Mesclar consultas (4) -\> Mesclar consultas como novas (5).**
+    selecione **Página Inicial (2) -> Combinar (3) -> menu suspenso
+    Mesclar consultas (4) -> Mesclar consultas como novas (5).**
     A caixa de diálogo Mesclar consultas é aberta.
 
     ![](../media/lab-03/image42.png)
@@ -590,7 +590,7 @@ Avançado.
     está na pasta **Reports** na área de trabalho do seu ambiente de
     laboratório.
 
-13. Na faixa de opções, selecione **Página Inicial -\> Transformar
+13. Na faixa de opções, selecione **Página Inicial -> Transformar
     dados**. A janela do Power Query é aberta. Como você observou no
     laboratório anterior, as consultas no painel esquerdo são
     organizadas por fonte de dados.
@@ -600,15 +600,15 @@ Avançado.
 14. No painel esquerdo **Consultas**, na pasta **ADLSData** **(1)**,
     selecione a consulta **Sales (2).**
 
-15. Na faixa de opções, selecione **Página Inicial -\> Editor Avançado
+15. Na faixa de opções, selecione **Página Inicial -> Editor Avançado
     (3)**. A caixa de diálogo Editor Avançado é aberta.
 
     ![](../media/lab-03/image45.png)
 
     - **Observação:** se você não conseguir encontrar o Editor Avançado,
-poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
+poderá acessá-lo em **Início -> Consulta -> Editor Avançado**.
 
-16. **Selecione código da Linha 3** (#\"Expanded Invoice\"\...) até a
+16. **Selecione código da Linha 3** (#"Expanded Invoice"...) até a
     última linha de código.
 
 17. **Clique com o botão direito do mouse** e selecione **Copy**.
@@ -622,14 +622,14 @@ poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
 
 20. Verifique se você tem a consulta **Merge** selecionada.
 
-21. Na faixa de opções, selecione **Página Inicial -\> Editor
+21. Na faixa de opções, selecione **Página Inicial -> Editor
     Avançado**. A caixa de diálogo Editor Avançado é aberta.
 
      ![](../media/lab-03/image47.png)
 
 22. No **fim da linha 2, adicione uma vírgula** (Source =
-    Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"}, Invoices,
-    {\"InvoiceID\"}, \"Invoices\", JoinKind.Inner),
+    Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices,
+    {"InvoiceID"}, "Invoices", JoinKind.Inner),
 
 23. Pressione **Enter** para começar uma nova linha.
 
@@ -725,8 +725,8 @@ código no Editor Avançado.
    ![](../media/lab-03/image56.png)
 
 5. Com a consulta **ProductItem** selecionada **(1)**, na faixa de
-    opções, selecione **Página Inicial (2) -\> Combinar (3) -\> menu
-    suspenso Mesclar consultas (4) -\> Mesclar consultas como novas
+    opções, selecione **Página Inicial (2) -> Combinar (3) -> menu
+    suspenso Mesclar consultas (4) -> Mesclar consultas como novas
     (5).** A caixa de diálogo Mesclar é aberta.
 
     ![](../media/lab-03/image57.png)
@@ -745,14 +745,14 @@ código no Editor Avançado.
 
      ![](../media/lab-03/image58.png)
 
-11. Com a consulta Merge selecionada, selecione **Página Inicial - \>
+11. Com a consulta Merge selecionada, selecione **Página Inicial - >
     Editor Avançado** na faixa de opções. A caixa de diálogo Editor
     Avançado é aberta.
 
     ![](../media/lab-03/image59.png)
 
     - **Observação:** se você não conseguir encontrar o Editor Avançado,
-poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
+poderá acessá-lo em **Início -> Consulta -> Editor Avançado**.
 
 12. **Selecione todo o código** no Editor Avançado e **exclua-o**.
 
@@ -822,118 +822,118 @@ Ajuda (?) tem links para ótimos recursos.
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas
 do Microsoft Fabric.
 
--   Veja a postagem do blog para ler o [anúncio completo de GA do
+- Veja a postagem do blog para ler o [anúncio completo de GA do
     Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
--   Explore o Fabric por meio do [Tour
+- Explore o Fabric por meio do [Tour
     Guiado](https://aka.ms/Fabric-GuidedTour)
 
--   Inscreva-se para a [avaliação gratuita do Microsoft
+- Inscreva-se para a [avaliação gratuita do Microsoft
     Fabric](https://aka.ms/try-fabric)
 
--   Visite o [site do Microsoft Fabric](https://aka.ms/microsoft-fabric)
+- Visite o [site do Microsoft Fabric](https://aka.ms/microsoft-fabric)
 
--   Aprenda novas habilidades explorando os [módulos de Aprendizagem do
+- Aprenda novas habilidades explorando os [módulos de Aprendizagem do
     Fabric](https://aka.ms/learn-fabric)
 
--   Explore a [documentação técnica do
+- Explore a [documentação técnica do
     Fabric](https://aka.ms/fabric-docs)
 
--   Leia o [livro eletrônico gratuito sobre como começar a usar o
+- Leia o [livro eletrônico gratuito sobre como começar a usar o
     Fabric](https://aka.ms/fabric-get-started-ebook)
 
--   Participe da [comunidade do Fabric](https://aka.ms/fabric-community)
+- Participe da [comunidade do Fabric](https://aka.ms/fabric-community)
     para postar suas perguntas, compartilhar seus comentários e aprender
     com outras pessoas
 
 Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 
--   [Experiência do Data Factory no blog do
+- [Experiência do Data Factory no blog do
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Experiência do Synapse Data Engineering no blog do
+- [Experiência do Synapse Data Engineering no blog do
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
--   [Experiência do Synapse Data Science no blog do
+- [Experiência do Synapse Data Science no blog do
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
--   [Experiência do Synapse Data Warehousing no blog do
+- [Experiência do Synapse Data Warehousing no blog do
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
--   [Experiência do Synapse Real-Time Analytics no blog do
+- [Experiência do Synapse Real-Time Analytics no blog do
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Blog de comunicado do Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog de comunicado do Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Experiência do Data Activator no blog do
+- [Experiência do Data Activator no blog do
     Fabric](https://aka.ms/Fabric-DA-Blog) 
 
--   [Administração e governança no blog do
+- [Administração e governança no blog do
     Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [OneLake no blog do Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [OneLake no blog do Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Blog de integração do Dataverse e Microsoft
+- [Blog de integração do Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos os direitos reservados.
->
-> Ao usar esta demonstração/este laboratório, você concorda com os
-> seguintes termos:
->
-> A tecnologia/funcionalidade descrita nesta demonstração/neste
-> laboratório é fornecida pela Microsoft Corporation para obter seus
-> comentários e oferecer uma experiência de aprendizado. Você pode usar
-> a demonstração/o laboratório somente para avaliar tais funcionalidades
-> e recursos de tecnologia e fornecer comentários à Microsoft. Você não
-> pode usá-los para nenhuma outra finalidade. Você não pode modificar,
-> copiar, distribuir, transmitir, exibir, executar, reproduzir,
-> publicar, licenciar, criar obras derivadas, transferir nem vender esta
-> demonstração/este laboratório ou qualquer parte deles.
->
-> A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
-> PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
-> REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
->
-> ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
-> FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
-> RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
-> CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA.
-> A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
-> LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS
-> RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL.
-> ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU
-> CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E
-> FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
->
-> **COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
-> tecnologia, as funcionalidades e/ou os conceitos descritos nesta
-> demonstração/neste laboratório à Microsoft, você concederá à
-> Microsoft, sem encargos, o direito de usar, compartilhar e
-> comercializar seus comentários de qualquer forma e para qualquer
-> finalidade. Você também concede a terceiros, sem encargos, quaisquer
-> direitos de patente necessários para que seus produtos, suas
-> tecnologias e seus serviços usem ou interajam com partes específicas
-> de um software ou um serviço da Microsoft que inclua os comentários.
-> Você não fornecerá comentários que estejam sujeitos a uma licença que
-> exija que a Microsoft licencie seu software ou sua documentação para
-> terceiros em virtude da inclusão de seus comentários neles. Esses
-> direitos continuarão em vigor após o término do contrato.
->
-> POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS
-> GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO,
-> INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM
-> ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA
-> FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA
-> NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA
-> DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS
-> NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
->
-> **AVISO DE ISENÇÃO DE RESPONSABILIDADE**
->
-> Esta demonstração/este laboratório contém apenas uma parte dos novos
-> recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
-> podem ser alterados em versões futuras do produto. Nesta
-> demonstração/neste laboratório, você aprenderá sobre alguns dos novos
-> recursos, mas não todos.
+© 2025 Microsoft Corporation. Todos os direitos reservados.
+
+Ao usar esta demonstração/este laboratório, você concorda com os
+seguintes termos:
+
+A tecnologia/funcionalidade descrita nesta demonstração/neste
+laboratório é fornecida pela Microsoft Corporation para obter seus
+comentários e oferecer uma experiência de aprendizado. Você pode usar a
+demonstração/o laboratório somente para avaliar tais funcionalidades e
+recursos de tecnologia e fornecer comentários à Microsoft. Você não pode
+usá-los para nenhuma outra finalidade. Você não pode modificar, copiar,
+distribuir, transmitir, exibir, executar, reproduzir, publicar,
+licenciar, criar obras derivadas, transferir nem vender esta
+demonstração/este laboratório ou qualquer parte deles.
+
+A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
+PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
+REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
+
+ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
+FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
+RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
+CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA. A
+TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
+LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS RECURSOS
+E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL. ALÉM DISSO,
+PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU CONCEITOS. SUA
+EXPERIÊNCIA COM O USO DE TAIS RECURSOS E FUNCIONALIDADES EM UM AMBIENTE
+FÍSICO TAMBÉM PODE SER DIFERENTE.
+
+**COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
+tecnologia, as funcionalidades e/ou os conceitos descritos nesta
+demonstração/neste laboratório à Microsoft, você concederá à Microsoft,
+sem encargos, o direito de usar, compartilhar e comercializar seus
+comentários de qualquer forma e para qualquer finalidade. Você também
+concede a terceiros, sem encargos, quaisquer direitos de patente
+necessários para que seus produtos, suas tecnologias e seus serviços
+usem ou interajam com partes específicas de um software ou um serviço da
+Microsoft que inclua os comentários. Você não fornecerá comentários que
+estejam sujeitos a uma licença que exija que a Microsoft licencie seu
+software ou sua documentação para terceiros em virtude da inclusão de
+seus comentários neles. Esses direitos continuarão em vigor após o
+término do contrato.
+
+POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS GARANTIAS
+E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO, INCLUINDO TODAS AS
+GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS,
+IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA,
+TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO
+DOS RESULTADOS DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM
+A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A
+QUALQUER FINALIDADE.
+
+**AVISO DE ISENÇÃO DE RESPONSABILIDADE**
+
+Esta demonstração/este laboratório contém apenas uma parte dos novos
+recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
+podem ser alterados em versões futuras do produto. Nesta
+demonstração/neste laboratório, você aprenderá sobre alguns dos novos
+recursos, mas não todos.
 

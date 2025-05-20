@@ -34,7 +34,7 @@ Ao final deste laboratório, você terá aprendido:
 
 ### Tarefa 1: Consultar dados usando SQL
 
-1. Vamos voltar ao workspace do Fabric, **FAIAD\_\<nome de usuário\>,**
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<nome de usuário>,**
     que você criou no Laboratório 2, Tarefa 8.
 
 2. Você pode escolher **Minimizar o fluxo de tarefas** para exibir toda
@@ -107,7 +107,7 @@ anteriores também estão disponíveis na pasta My queries.
     consulta** no painel de consultas
 
 2. No menu do painel Resultados, selecione **Explorar estes dados
-    (versão preliminar) -\> Visualizar resultados**.
+    (versão preliminar) -> Visualizar resultados**.
 
     ![](../media/lab-06/image9.png)
 
@@ -139,7 +139,7 @@ adicionar filtros etc. Não vamos explorar essas opções neste curso.
     Fornecedor** na caixa de texto **Inserir um nome para o relatório**.
 
 9. Certifique-se de que o workspace de destino seja seu workspace do
-    Fabric, **FAIAD\_\<nome de usuário\>**.
+    Fabric, **FAIAD_<nome de usuário>**.
 
 10. Selecione **Salvar**.
 
@@ -251,7 +251,7 @@ Query.
 7. Verifique se a tabela **To** é **Reseller** e **Coluna** é
     **ResellerID**.
 
-8. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+8. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 9. Verifique se **Direção de filtro cruzada** é **Única**.
 
@@ -268,7 +268,7 @@ Query.
 
 13. Verifique se a tabela **To** é **Date** e **Coluna** é **Date**.
 
-14. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+14. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 15. Verifique se **Direção de filtro cruzada** é **Única**.
 
@@ -301,10 +301,10 @@ Sales.
 1. Selecione a tabela **Sales** na visualização do modelo. Queremos
     adicionar as medidas à tabela Sales.
 
-2. No menu superior, selecione **Página Inicial -\> Nova medida**.
+2. No menu superior, selecione **Página Inicial -> Nova medida**.
     Observe que a barra de fórmulas é exibida.
 
-3. Insira **Sales = SUM('Sales'\[Sales Amount\])** na **barra de
+3. Insira **Sales = SUM('Sales'[Sales Amount])** na **barra de
     fórmula**.
 
 4. Clique na **marca de seleção** à esquerda da barra de fórmulas ou
@@ -321,10 +321,10 @@ Sales.
     ![](../media/lab-06/image26.png)
 
 9. Com a tabela **Sales** selecionada no menu superior, selecione
-    **Página Inicial -\> Nova medida**. Observe que a barra de fórmulas
+    **Página Inicial -> Nova medida**. Observe que a barra de fórmulas
     é exibida.
 
-10. Insira **Units = SUM('Sales'\[Quantity\])** na **barra de
+10. Insira **Units = SUM('Sales'[Quantity])** na **barra de
     fórmulas**.
 
 11. Clique na **marca de seleção** à esquerda da barra de fórmulas ou
@@ -341,10 +341,10 @@ Sales.
     ![](../media/lab-06/image27.png)
 
 15. Com a tabela **Sales** selecionada no menu superior, selecione
-    **Página Inicial -\> Nova medida**. Observe que a barra de fórmulas
+    **Página Inicial -> Nova medida**. Observe que a barra de fórmulas
     é exibida.
 
-16. Insira **Sales Orders = DISTINCTCOUNT('Sales'\[InvoiceID\])** na
+16. Insira **Sales Orders = DISTINCTCOUNT('Sales'[InvoiceID])** na
     **barra de fórmulas**.
 
 17. Clique na **marca de seleção** à esquerda da barra de fórmulas ou
@@ -363,7 +363,7 @@ Sales.
     isso fornece uma exibição que ajudará a organizar todos os itens no
     modelo semântico.
 
-22. Expanda **Modelo semântico -\> Medidas** para exibir todas as
+22. Expanda **Modelo semântico -> Medidas** para exibir todas as
     medidas que você acabou de criar.
 
 23. Você também pode **expandir Tabelas individuais** para exibir
@@ -383,7 +383,7 @@ Faremos isso no próximo laboratório.
 
 Vamos adicionar os relacionamentos restantes.
 
-1. No menu, selecione Página **Inicial -\> Gerenciar relacionamentos**.
+1. No menu, selecione Página **Inicial -> Gerenciar relacionamentos**.
 
 2. A caixa de diálogo Gerenciar relacionamentos será aberta. Selecione
     **+ Novo relacionamento**.
@@ -396,7 +396,7 @@ Vamos adicionar os relacionamentos restantes.
 4. Verifique se a tabela **To** é **People** e **Coluna** é
     **PersonID**.
 
-5. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+5. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 6. Verifique se **Direção do filtro cruzado** é **Única**.
 
@@ -414,7 +414,7 @@ Vamos adicionar os relacionamentos restantes.
 10. Verifique se a tabela **To** é **Supplier** e **Coluna** é
     **SupplierID**.
 
-11. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+11. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 12. Verifique se **Direção do filtro cruzado** é **Ambas**.
 
@@ -430,7 +430,7 @@ Vamos adicionar os relacionamentos restantes.
 
 16. Verifique se a tabela **To** é **Geo** e **Coluna** é **CityID**.
 
-17. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+17. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 18. Verifique se **Direção do filtro cruzado** é **Ambas**.
 
@@ -447,7 +447,7 @@ Vamos adicionar os relacionamentos restantes.
 22. Verifique se a tabela **To** é **Reseller** e **Coluna** é
     **ResellerID**.
 
-23. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+23. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 24. Verifique se **Direção do filtro cruzado** é **Única**.
 
@@ -483,9 +483,9 @@ tela abaixo.
 Vamos adicionar as medidas restantes.
 
 1. Selecione a tabela **Sales** e, no menu superior, selecione **Página
-    Inicial -\> Nova medida**.
+    Inicial -> Nova medida**.
 
-2. Insira **Avg Order** = **DIVIDE(\[Sales\], \[Sales Orders\])** na
+2. Insira **Avg Order** = **DIVIDE([Sales], [Sales Orders])** na
     barra de fórmulas.
 
 3. Clique na **marca de seleção** na barra de fórmulas ou clique no
@@ -503,10 +503,10 @@ Vamos adicionar as medidas restantes.
 
 8. Siga as etapas semelhantes para adicionar as seguintes medidas:
 
-    a. Na tabela **Sales, GM = SUM('Sales'\[LineProfit\])** está
+    a. Na tabela **Sales, GM = SUM('Sales'[LineProfit])** está
         formatada como **Moeda com 0 casas decimais**.
 
-    b. Na tabela **Sales** , **GM% = DIVIDE(\[GM\], \[Sales\])** está
+    b. Na tabela **Sales** , **GM% = DIVIDE([GM], [Sales])** está
         formatada como **Porcentagem com 0 casas decimais.**
 
     c. Na tabela **Customer , No of Customers = COUNTROWS(Customer)**
@@ -578,63 +578,63 @@ Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 - [Blog de integração do Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos os direitos reservados.
->
-> Ao usar esta demonstração/este laboratório, você concorda com os
-> seguintes termos:
->
-> A tecnologia/funcionalidade descrita nesta demonstração/neste
-> laboratório é fornecida pela Microsoft Corporation para obter seus
-> comentários e oferecer uma experiência de aprendizado. Você pode usar
-> a demonstração/o laboratório somente para avaliar tais funcionalidades
-> e recursos de tecnologia e fornecer comentários à Microsoft. Você não
-> pode usá-los para nenhuma outra finalidade. Você não pode modificar,
-> copiar, distribuir, transmitir, exibir, executar, reproduzir,
-> publicar, licenciar, criar obras derivadas, transferir nem vender esta
-> demonstração/este laboratório ou qualquer parte deles.
->
-> A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
-> PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
-> REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
->
-> ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
-> FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
-> RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
-> CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA.
-> A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
-> LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS
-> RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL.
-> ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU
-> CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E
-> FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
->
-> **COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
-> tecnologia, as funcionalidades e/ou os conceitos descritos nesta
-> demonstração/neste laboratório à Microsoft, você concederá à
-> Microsoft, sem encargos, o direito de usar, compartilhar e
-> comercializar seus comentários de qualquer forma e para qualquer
-> finalidade. Você também concede a terceiros, sem encargos, quaisquer
-> direitos de patente necessários para que seus produtos, suas
-> tecnologias e seus serviços usem ou interajam com partes específicas
-> de um software ou um serviço da Microsoft que inclua os comentários.
-> Você não fornecerá comentários que estejam sujeitos a uma licença que
-> exija que a Microsoft licencie seu software ou sua documentação para
-> terceiros em virtude da inclusão de seus comentários neles. Esses
-> direitos continuarão em vigor após o término do contrato.
->
-> POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS
-> GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO,
-> INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM
-> ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA
-> FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA
-> NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA
-> DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS
-> NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
->
-> **AVISO DE ISENÇÃO DE RESPONSABILIDADE**
->
-> Esta demonstração/este laboratório contém apenas uma parte dos novos
-> recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
-> podem ser alterados em versões futuras do produto. Nesta
-> demonstração/neste laboratório, você aprenderá sobre alguns dos novos
-> recursos, mas não todos.
+© 2025 Microsoft Corporation. Todos os direitos reservados.
+
+Ao usar esta demonstração/este laboratório, você concorda com os
+seguintes termos:
+
+A tecnologia/funcionalidade descrita nesta demonstração/neste
+laboratório é fornecida pela Microsoft Corporation para obter seus
+comentários e oferecer uma experiência de aprendizado. Você pode usar a
+demonstração/o laboratório somente para avaliar tais funcionalidades e
+recursos de tecnologia e fornecer comentários à Microsoft. Você não pode
+usá-los para nenhuma outra finalidade. Você não pode modificar, copiar,
+distribuir, transmitir, exibir, executar, reproduzir, publicar,
+licenciar, criar obras derivadas, transferir nem vender esta
+demonstração/este laboratório ou qualquer parte deles.
+
+A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
+PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
+REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
+
+ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
+FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
+RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
+CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA. A
+TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
+LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS RECURSOS
+E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL. ALÉM DISSO,
+PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU CONCEITOS. SUA
+EXPERIÊNCIA COM O USO DE TAIS RECURSOS E FUNCIONALIDADES EM UM AMBIENTE
+FÍSICO TAMBÉM PODE SER DIFERENTE.
+
+**COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
+tecnologia, as funcionalidades e/ou os conceitos descritos nesta
+demonstração/neste laboratório à Microsoft, você concederá à Microsoft,
+sem encargos, o direito de usar, compartilhar e comercializar seus
+comentários de qualquer forma e para qualquer finalidade. Você também
+concede a terceiros, sem encargos, quaisquer direitos de patente
+necessários para que seus produtos, suas tecnologias e seus serviços
+usem ou interajam com partes específicas de um software ou um serviço da
+Microsoft que inclua os comentários. Você não fornecerá comentários que
+estejam sujeitos a uma licença que exija que a Microsoft licencie seu
+software ou sua documentação para terceiros em virtude da inclusão de
+seus comentários neles. Esses direitos continuarão em vigor após o
+término do contrato.
+
+POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS GARANTIAS
+E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO, INCLUINDO TODAS AS
+GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS,
+IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA,
+TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO
+DOS RESULTADOS DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM
+A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A
+QUALQUER FINALIDADE.
+
+**AVISO DE ISENÇÃO DE RESPONSABILIDADE**
+
+Esta demonstração/este laboratório contém apenas uma parte dos novos
+recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
+podem ser alterados em versões futuras do produto. Nesta
+demonstração/neste laboratório, você aprenderá sobre alguns dos novos
+recursos, mas não todos.

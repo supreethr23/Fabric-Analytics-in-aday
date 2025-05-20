@@ -51,7 +51,7 @@ Ao final deste laboratório, você terá aprendido:
 
 ### Tarefa 1: Copiar consultas do SharePoint para o Fluxo de dados
 
-1. Vamos voltar ao workspace do Fabric, **FAIAD\_\<nome de usuário\>
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<nome de usuário>
     (1),** que você criou no Laboratório 2, Tarefa 8.
 
 2. Selecione a opção **+ Novo item (2)** disponível no canto superior
@@ -70,7 +70,7 @@ Vamos testar.
     está na pasta **Reports** na área de trabalho do seu ambiente de
     laboratório.
 
-5. Na faixa de opções, selecione **Página Inicial -\> Transformar
+5. Na faixa de opções, selecione **Página Inicial -> Transformar
     dados**. A janela do Power Query é aberta. Como você observou nos
     laboratórios anteriores, as consultas no painel esquerdo são
     organizadas por fonte de dados.
@@ -129,8 +129,8 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 
 1. Selecione a consulta **People (1)**.
 
-2. Na faixa de opções, selecione **Página Inicial -\> Consulta (2) -\>
-    Adicionar destino de dados (3) -\>** **Lakehouse (4)**.
+2. Na faixa de opções, selecione **Página Inicial -> Consulta (2) ->
+    Adicionar destino de dados (3) ->** **Lakehouse (4)**.
 
     ![](../media/lab-04/image12.png)
 
@@ -147,8 +147,8 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
     criando uma nova tabela.
 
 5. Queremos criar a tabela no Lakehouse que criamos anteriormente. No
-    painel esquerdo, navegue para **Lakehouse -\> FAIAD\_\<nome de
-    usuário\>.**
+    painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de
+    usuário>.**
 
 6. Selecione **lh_FAIAD**.
 
@@ -159,11 +159,11 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
     ![](../media/lab-04/image14.png)
 
 9. A caixa de diálogo Escolher configurações de destino é aberta.
-    Habilite \"**Usar configurações automáticas**\".
+    Habilite "**Usar configurações automáticas**".
 
    - **Observação:** você pode desativar as configurações automáticas e notar
 que tem opções para definir o método Update e as opções de esquema.
-Depois de explorar, habilite \"**Usar configurações automáticas**\".
+Depois de explorar, habilite "**Usar configurações automáticas**".
 
 10. Selecione **Salvar configurações**.
 
@@ -180,12 +180,12 @@ Depois de explorar, habilite \"**Usar configurações automáticas**\".
     ![](../media/lab-04/image16.png)
 
     - **Observação:** você será direcionado de volta para o **workspace
-FAIAD\_\<nome de usuário\>**. Pode levar alguns instantes para que Fluxo
+FAIAD_<nome de usuário>**. Pode levar alguns instantes para que Fluxo
 de Dados seja publicado.
 
 3. **Fluxo de dados 1** é o fluxo de dados no qual estávamos
     trabalhando. Vamos renomeá-lo antes de continuar. Clique nas
-    **reticências (\...)** ao lado de Fluxo de dados 1. Selecione
+    **reticências (...)** ao lado de Fluxo de dados 1. Selecione
     **Propriedades** (enquanto o fluxo de dados está em execução, não é
     possível acessar as propriedades).
 
@@ -201,8 +201,8 @@ de Dados seja publicado.
 
     ![](../media/lab-04/image18.png)
 
-    Você será direcionado de volta para o **workspace FAIAD\_\<nome de
-usuário\>**.
+    Você será direcionado de volta para o **workspace FAIAD_<nome de
+usuário>**.
 
 7. Selecione **lh_FAIAD** para acessar o lakehouse.
 
@@ -219,7 +219,7 @@ tabelas.
 
 ### Tarefa 5: Copiar consultas do Snowflake para o Fluxo de Dados
 
-1. Vamos voltar ao workspace do Fabric, **FAIAD\_\<nome de usuário\>
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<nome de usuário>
     (1)**.
 
 2. Selecione a opção **+ Novo item (2)** disponível no canto superior
@@ -237,7 +237,7 @@ consultas do Power BI Desktop no Fluxo de Dados.
     está na pasta **Reports** na área de trabalho do seu ambiente de
     laboratório.
 
-5. Na faixa de opções, selecione **Página Inicial -\> Transformar
+5. Na faixa de opções, selecione **Página Inicial -> Transformar
     dados**. A janela do Power Query é aberta. Como você observou no
     laboratório anterior, as consultas no painel esquerdo são
     organizadas por fonte de dados.
@@ -325,8 +325,8 @@ Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
 1. Selecione a consulta **Supplier (1)**.
 
-2. Na faixa de opções, selecione **Página Inicial (2) -\> Adicionar
-    destino de dados (3) -\> Lakehouse (4).**
+2. Na faixa de opções, selecione **Página Inicial (2) -> Adicionar
+    destino de dados (3) -> Lakehouse (4).**
 
     ![](../media/lab-04/image25.png)
 
@@ -342,8 +342,8 @@ Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
     criando uma nova tabela.
 
 6. Queremos criar a tabela no Lakehouse que criamos anteriormente. No
-    painel esquerdo, navegue para **Lakehouse -\> FAIAD\_\<nome de
-    usuário\>.**
+    painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de
+    usuário>.**
 
 7. Selecione **lh_FAIAD**.
 
@@ -385,8 +385,8 @@ Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
     ![](../media/lab-04/image31.png)
 
-    Você será direcionado de volta para o **workspace FAIAD\_\<nome de
-usuário\>**. Pode levar alguns instantes para que Fluxo de Dados seja
+    Você será direcionado de volta para o **workspace FAIAD_<nome de
+usuário>**. Pode levar alguns instantes para que Fluxo de Dados seja
 publicado.
 
 5. Selecione **lh_FAIAD** para acessar o lakehouse.
@@ -488,7 +488,7 @@ no workspace Admin.
 
     ![](../media/lab-04/image40.png)
 
-6. No painel esquerdo, expanda **lh_dataverse -\> Tables**. Observe que
+6. No painel esquerdo, expanda **lh_dataverse -> Tables**. Observe que
     o administrador de TI forneceu acesso à tabela Customer.
 
 7. Selecione **Customer**.
@@ -582,63 +582,63 @@ Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 - [Blog de integração do Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos os direitos reservados.
->
-> Ao usar esta demonstração/este laboratório, você concorda com os
-> seguintes termos:
->
-> A tecnologia/funcionalidade descrita nesta demonstração/neste
-> laboratório é fornecida pela Microsoft Corporation para obter seus
-> comentários e oferecer uma experiência de aprendizado. Você pode usar
-> a demonstração/o laboratório somente para avaliar tais funcionalidades
-> e recursos de tecnologia e fornecer comentários à Microsoft. Você não
-> pode usá-los para nenhuma outra finalidade. Você não pode modificar,
-> copiar, distribuir, transmitir, exibir, executar, reproduzir,
-> publicar, licenciar, criar obras derivadas, transferir nem vender esta
-> demonstração/este laboratório ou qualquer parte deles.
->
-> A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
-> PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
-> REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
->
-> ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
-> FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
-> RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
-> CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA.
-> A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
-> LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS
-> RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL.
-> ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU
-> CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E
-> FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
->
-> **COMENTÁRIOS.** Caso você forneça comentários sobre os recursos de
-> tecnologia, as funcionalidades e/ou os conceitos descritos nesta
-> demonstração/neste laboratório à Microsoft, você concederá à
-> Microsoft, sem encargos, o direito de usar, compartilhar e
-> comercializar seus comentários de qualquer forma e para qualquer
-> finalidade. Você também concede a terceiros, sem encargos, quaisquer
-> direitos de patente necessários para que seus produtos, suas
-> tecnologias e seus serviços usem ou interajam com partes específicas
-> de um software ou um serviço da Microsoft que inclua os comentários.
-> Você não fornecerá comentários que estejam sujeitos a uma licença que
-> exija que a Microsoft licencie seu software ou sua documentação para
-> terceiros em virtude da inclusão de seus comentários neles. Esses
-> direitos continuarão em vigor após o término do contrato.
->
-> POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS
-> GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO,
-> INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM
-> ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA
-> FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA
-> NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA
-> DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS
-> NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
->
-> **AVISO DE ISENÇÃO DE RESPONSABILIDADE**
->
-> Esta demonstração/este laboratório contém apenas uma parte dos novos
-> recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
-> podem ser alterados em versões futuras do produto. Nesta
-> demonstração/neste laboratório, você aprenderá sobre alguns dos novos
-> recursos, mas não todos.
+© 2025 Microsoft Corporation. Todos os direitos reservados.
+
+Ao usar esta demonstração/este laboratório, você concorda com os
+seguintes termos:
+
+A tecnologia/funcionalidade descrita nesta demonstração/neste
+laboratório é fornecida pela Microsoft Corporation para obter seus
+comentários e oferecer uma experiência de aprendizado. Você pode usar a
+demonstração/o laboratório somente para avaliar tais funcionalidades e
+recursos de tecnologia e fornecer comentários à Microsoft. Você não pode
+usá-los para nenhuma outra finalidade. Você não pode modificar, copiar,
+distribuir, transmitir, exibir, executar, reproduzir, publicar,
+licenciar, criar obras derivadas, transferir nem vender esta
+demonstração/este laboratório ou qualquer parte deles.
+
+A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
+PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
+REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
+
+ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
+FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
+RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
+CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA. A
+TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
+LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS RECURSOS
+E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL. ALÉM DISSO,
+PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU CONCEITOS. SUA
+EXPERIÊNCIA COM O USO DE TAIS RECURSOS E FUNCIONALIDADES EM UM AMBIENTE
+FÍSICO TAMBÉM PODE SER DIFERENTE.
+
+**COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
+tecnologia, as funcionalidades e/ou os conceitos descritos nesta
+demonstração/neste laboratório à Microsoft, você concederá à Microsoft,
+sem encargos, o direito de usar, compartilhar e comercializar seus
+comentários de qualquer forma e para qualquer finalidade. Você também
+concede a terceiros, sem encargos, quaisquer direitos de patente
+necessários para que seus produtos, suas tecnologias e seus serviços
+usem ou interajam com partes específicas de um software ou um serviço da
+Microsoft que inclua os comentários. Você não fornecerá comentários que
+estejam sujeitos a uma licença que exija que a Microsoft licencie seu
+software ou sua documentação para terceiros em virtude da inclusão de
+seus comentários neles. Esses direitos continuarão em vigor após o
+término do contrato.
+
+POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS GARANTIAS
+E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO, INCLUINDO TODAS AS
+GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS,
+IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA,
+TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO
+DOS RESULTADOS DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM
+A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A
+QUALQUER FINALIDADE.
+
+**AVISO DE ISENÇÃO DE RESPONSABILIDADE**
+
+Esta demonstração/este laboratório contém apenas uma parte dos novos
+recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
+podem ser alterados em versões futuras do produto. Nesta
+demonstração/neste laboratório, você aprenderá sobre alguns dos novos
+recursos, mas não todos.
