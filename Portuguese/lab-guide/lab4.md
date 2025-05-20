@@ -79,7 +79,7 @@ Vamos testar.
 
 7. **Clique com o botão direito do mouse** e selecione **Copiar**.
 
-    ![](images4/media/image7.png)
+     ![](images4/media/image7.png)
 
 8. Volte para a tela **Fluxo de Dados** no navegador.
 
