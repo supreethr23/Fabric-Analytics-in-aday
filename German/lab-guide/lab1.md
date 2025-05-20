@@ -10,8 +10,8 @@
     - Aufgabe 2: Power BI Desktop-Bericht analysieren
     - Aufgabe 3: Power Query-Abfragen überprüfen
 - Referenzen
-# Dokumentstruktur
 
+# Dokumentstruktur
 Die Übung enthält die Schritte, die der Benutzer durchführen muss, sowie
 zugehörige Screenshots zur visuellen Unterstützung. Wichtige Abschnitte
 sind in den Screenshots mit einem orangefarbenen Kasten gekennzeichnet.
@@ -232,7 +232,7 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
 ## Aufgabe 3: Power Query-Abfragen überprüfen
 
 1. Beschäftigen wir uns in Power Query mit den Datenquellen. Wählen Sie
-    im Menüband **Start > Daten transformieren** aus.
+    im Menüband **Start -> Daten transformieren** aus.
 
     ![](../media/lab-01/image17.png)
 
@@ -334,6 +334,10 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben,
     verwenden Sie die auf der Registerkarte „Umgebung" angegebenen
     Backup-Anmeldeinformationen.
+
+      - Snowflake-Benutzername: SNOWFLAKE_BACKUP
+      
+      - Snowflake-Kennwort: 8UpfRpExVDXv2AC1
 
 14. Beachten Sie, dass der Ordner **SnowflakeData** die Dimension
     „Supplier" und das Element „PO(Order / Spend)" enthält.
