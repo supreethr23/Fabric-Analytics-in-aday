@@ -1,4 +1,3 @@
-
 #  Microsoft Fabric - Microsoft Fabric Fabric Analyst in a Day - Laboratório 4
 
 # Sumário
@@ -79,7 +78,7 @@ Vamos testar.
 
 7. **Clique com o botão direito do mouse** e selecione **Copiar**.
 
-     ![](images4/media/image7.png)
+    ![](../media/lab-04/image7.png)
 
 8. Volte para a tela **Fluxo de Dados** no navegador.
 
@@ -95,7 +94,7 @@ controle deslizante para **habilitar** **VM Native Clipboard**.
 Selecione OK na caixa de diálogo. Depois que terminar de colar as
 consultas, você poderá desabilitar essa opção.
 
-     ![](images4/media/image9.png)
+     ![](../media/lab-04/image9.png)
 
      Observe se a consulta foi colada e se está disponível no painel
 esquerdo. Como não temos uma conexão criada para o SharePoint, você verá
@@ -118,7 +117,7 @@ uma mensagem de aviso solicitando que configure a conexão.
     - **Observação:** você vai se conectar usando suas credenciais. Elas serão
 diferentes da captura de tela abaixo.
 
-    ![](images4/media/image11.png)
+    ![](../media/lab-04/image11.png)
 
 ### Tarefa 3: Configurar destino de dados para a consulta People
 
@@ -272,7 +271,7 @@ consultas do Power BI Desktop no Fluxo de Dados.
 > Native Clipboard**. Selecione OK na caixa de diálogo. Depois que
 > terminar de colar as consultas, você poderá desabilitar essa opção.
 
-   ![](images4/media/image22.png)
+   ![](../media/lab-04/image22.png)
 
 ### Tarefa 6: Criar conexão com o Snowflake
 
@@ -309,7 +308,7 @@ credenciais fornecidas abaixo.
 
 5. Selecione **Conectar**.
 
-   ![](images4/media/image24.png)
+   ![](../media/lab-04/image24.png)
 
    A conexão é estabelecida e você pode exibir os dados no painel de
 visualização. Fique à vontade para navegar pelas Etapas aplicadas das
@@ -358,7 +357,7 @@ Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
     serão renomeadas conforme necessário. Selecione **Salvar
     configurações**.
 
-    ![](images4/media/image28.png)
+    ![](../media/lab-04/image28.png)
 
 11. Você será direcionado de volta à **janela Power Query**. No **canto
     inferior direito, Destino de dados** está definido como
@@ -443,7 +442,7 @@ para criar um atalho para Azure Data Lake Storage Gen2.
     conta é aberta. **Escolha sua conta** para entrar. **Observação:**
     sua conta será diferente da captura de tela abaixo.
 
-    ![](images4/media/image37.png)
+    ![](../media/lab-04/image37.png)
 
 8. Selecione **Próximo** na caixa de diálogo Configurações de conexão.
 
@@ -522,7 +521,7 @@ O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais
 funções disponíveis no Microsoft Fabric. No menu do serviço, a seção
 Ajuda (?) tem links para ótimos recursos.
 
-![](images4/media/image44.png)
+![](../media/lab-04/image44.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas
 do Microsoft Fabric.
