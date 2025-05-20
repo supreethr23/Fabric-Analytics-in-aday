@@ -38,7 +38,7 @@ Ao final deste laboratório, você terá aprendido a:
 
 ## Licença do Fabric
 
-### Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric
+## Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric
 
 1. Abra o **navegador** e acesse [Portal do Microsoft Power
     BI](https://app.powerbi.com/). Você será direcionado para a página
@@ -56,7 +56,7 @@ privado/anônimo.*
 
     - **Email/Nome de usuário:** encontrado na guia Ambiente
 
-    ![](../media/lab-02/image6.png)
+      ![](../media/lab-02/image6.png)
 
 3. Na guia **Entrar no Microsoft Azure**, você verá a tela de login.
     Nessa tela, insira o seguinte **Email/Nome de usuário** e clique em
@@ -64,13 +64,13 @@ privado/anônimo.*
 
     - **Email/Nome de usuário:** encontrado na guia Ambiente
 
-    ![](../media/lab-02/image7.png)
+      ![](../media/lab-02/image7.png)
 
 4. Agora, insira a seguinte **Senha** e clique em **Entrar**.
 
     - **Senha:** encontrada na guia Ambiente
 
-    ![](../media/lab-02/image8.png)
+      ![](../media/lab-02/image8.png)
 
 5. Você será direcionado à conhecida **Página Inicial de Serviço do
     Power BI**.
@@ -106,13 +106,13 @@ tenha a licença do Fabric atribuída. Vamos configurar tudo.
 
 ## Workspace do Fabric
 
-### Tarefa 2: Criar um workspace do Fabric
+## Tarefa 2: Criar um workspace do Fabric
 
 1. Agora vamos criar um workspace com uma licença do Fabric. Selecione
-    **Workspaces** (1) na barra de navegação esquerda. Uma caixa de
+    **Workspaces** **(1)** na barra de navegação esquerda. Uma caixa de
     diálogo é aberta.
 
-2. Clique em **+ Novo workspace** (2) encontrado na parte inferior do
+2. Clique em **+ Novo workspace** **(2)** encontrado na parte inferior do
     menu pop-out.
 
    ![](../media/lab-02/image13.png)
@@ -146,7 +146,7 @@ dados de diferentes fontes de dados para um Lakehouse e usaremos os
 dados do Lakehouse para criar nosso modelo e relatá-lo. A primeira etapa
 é criar um Lakehouse.
 
-### Tarefa 3: Criar um Lakehouse
+## Tarefa 3: Criar um Lakehouse
 
 1. No workspace recém-criado **FAIAD_Username**, localize o botão **+
     Novo item (1)** no painel de navegação esquerdo. É aqui que você
@@ -190,7 +190,7 @@ opções nos laboratórios a seguir.
 
 ## Visão geral das experiências do Fabric
 
-### Tarefa 4: Experiência do Data Factory
+## Tarefa 4: Experiência do Data Factory
 
 1. Selecione o ícone Cargas de trabalho no lado esquerdo da tela. Uma
     caixa de diálogo com a lista de experiências do Fabric será aberta.
@@ -219,36 +219,36 @@ opções nos laboratórios a seguir.
 
     **Tipos de item:**
 
-    a) **Fluxos de dados:** são como receitas para transformar dados. Eles
+    a. **Fluxos de dados:** são como receitas para transformar dados. Eles
         oferecem mais de 300 transformações diferentes que você pode aplicar
         aos seus dados. Isso significa que você pode limpar, combinar e
         alterar os dados de várias maneiras para atender às suas
         necessidades.
 
-    b) **Pipelines:** são fluxos de trabalho que ajudam a automatizar
+    b. **Pipelines:** são fluxos de trabalho que ajudam a automatizar
         processos de dados. Eles permitem que você crie fluxos de trabalho
         de dados flexíveis que podem ser adaptados às suas necessidades
         específicas. Isso facilita o gerenciamento e o processamento de
         dados de forma estruturada.
 
-    c) **Azure Data Factory:** é um serviço de integração de dados baseado
+    c. **Azure Data Factory:** é um serviço de integração de dados baseado
         em nuvem que permite criar fluxos de trabalho controlados por dados
         para orquestrar e automatizar a movimentação e a transformação de
         dados.
 
-    d) **Trabalho do Apache Airflow:** o Apache Airflow é uma plataforma de
+    d. **Trabalho do Apache Airflow:** o Apache Airflow é uma plataforma de
         código aberto usada para criar, agendar e monitorar fluxos de
         trabalho de forma programática. No Data Factory, ele permite criar,
         agendar e gerenciar fluxos de trabalho de dados complexos.
 
-    e) **Copiar Trabalho:** é um recurso que permite copiar dados de uma
+    e. **Copiar Trabalho:** é um recurso que permite copiar dados de uma
         fonte para outra. Ele fornece uma maneira simples e eficiente de
         mover dados entre diferentes armazenamentos.
 
-    f) **Espelhado:** um recurso para criar versões espelhadas de bancos de
+    f. **Espelhado:** um recurso para criar versões espelhadas de bancos de
         dados para backup, teste ou acesso somente leitura.
 
-    g) **Biblioteca de variáveis (versão preliminar):** contém uma lista de
+    g. **Biblioteca de variáveis (versão preliminar):** contém uma lista de
         variáveis e seus valores padrão. Ela também pode conter outros
         conjuntos de valores com valores alternativos.
 
@@ -256,32 +256,32 @@ opções nos laboratórios a seguir.
 
     Para começar a usar o Data Factory, você pode seguir estas etapas:
 
-    a) **Saiba como usar Data Factory:** essa seção ajuda você a começar a
+    a. **Saiba como usar Data Factory:** essa seção ajuda você a começar a
         usar o Data Factory. Ela fornece orientação sobre como começar a
         usar a ferramenta de forma eficaz.
 
-    b) **Crie seu primeiro fluxo de dados:** aqui, você pode aprender como
+    b. **Crie seu primeiro fluxo de dados:** aqui, você pode aprender como
         criar seu primeiro fluxo de dados. Os fluxos de dados são essenciais
         para transformar os dados de acordo com suas necessidades.
 
-    c) **Crie seu primeiro pipeline de dados:** essa seção orienta você
+    c. **Crie seu primeiro pipeline de dados:** essa seção orienta você
         sobre como criar seu primeiro pipeline de dados. Os pipelines ajudam
         a automatizar e gerenciar os processos de dados de forma eficaz.
 
-    d) **Aprenda a monitorar o Data Factory:** o monitoramento é crucial
+    d. **Aprenda a monitorar o Data Factory:** o monitoramento é crucial
         para garantir que os processos de dados estejam funcionando sem
         problemas. Essa seção ensina como monitorar as atividades do Data
         Factory.
 
-    e) **Aprenda a transformar dados com fluxos de dados:** essa seção
+    e. **Aprenda a transformar dados com fluxos de dados:** essa seção
         ajuda você a entender como usar fluxos de dados para transformar os
         dados de forma eficaz.
 
-    f) **Crie sua primeira API para o GraphQL:** se você estiver
+    f. **Crie sua primeira API para o GraphQL:** se você estiver
         interessado em usar APIs com o GraphQL, essa seção orientará você
         sobre como começar.
 
-    g) **Crie suas primeiras funções de dados do usuário:** essa seção
+    g. **Crie suas primeiras funções de dados do usuário:** essa seção
         ajuda você a criar funções de dados do usuário, que são úteis para
         gerenciar e transformar dados do usuário.
 
@@ -294,7 +294,7 @@ opções nos laboratórios a seguir.
 
    ![](../media/lab-02/image22.png)
 
-### Tarefa 5: Experiência do Industry Solutions 
+## Tarefa 5: Experiência do Industry Solutions 
 
 1. Na **página de cargas de trabalho**, clique em **Industry
     Solutions** para prosseguir.
@@ -316,49 +316,47 @@ opções nos laboratórios a seguir.
 
     **Tipos de item:**
 
-    a)  **Soluções de sustentabilidade:** oferece suporte à ingestão,
+    a.  **Soluções de sustentabilidade:** oferece suporte à ingestão,
         padronização e análise de dados de ESG (governança ambiental, social
         e corporativa).
 
-    b)  **Soluções de varejo:** ajuda no gerenciamento de grandes volumes de
+    b.  **Soluções de varejo:** ajuda no gerenciamento de grandes volumes de
         dados, integrando dados de várias fontes e fornecendo análises em
         tempo real para tomada rápida de decisões. Os varejistas podem usar
         essas soluções para otimização de estoque, segmentação de clientes,
         previsão de vendas, preços dinâmicos e detecção de fraudes.
 
-    c)  **Soluções de serviços de saúde:** são estrategicamente projetadas
+    c.  **Soluções de serviços de saúde:** são estrategicamente projetadas
         para acelerar o tempo de retorno para os clientes, atendendo à
         necessidade crítica de transformar com eficiência os dados de saúde
         em um formato adequado para análise.
 
-    > **Introdução:**
-    > Para começar a usar o Industry Solutions, siga estas etapas:
+    **Introdução:**
+    Para começar a usar o Industry Solutions, siga estas etapas:
 
-    a)  **Saiba mais sobre soluções de dados de saúde:** clique no botão
+    a.  **Saiba mais sobre soluções de dados de saúde:** clique no botão
         "Saiba mais" para ler sobre soluções de dados de saúde e entender
         como elas podem ser usadas em seus projetos.
 
-    b)  **Implantar soluções de dados de saúde:** clique no botão
+    b.  **Implantar soluções de dados de saúde:** clique no botão
         "Implantar" para começar a implantar soluções de dados de saúde e
         implementá-las em seus projetos.
 
-    c)  **Saiba mais sobre soluções de sustentabilidade:** clique no botão
+    c.  **Saiba mais sobre soluções de sustentabilidade:** clique no botão
         "Saiba mais" para ler sobre soluções de sustentabilidade e
         entender como elas podem ser usadas em seus projetos.
 
-    d)  **Implantar soluções de sustentabilidade:** clique no botão
+    d.  **Implantar soluções de sustentabilidade:** clique no botão
         "Implantar" para começar a implantar soluções de sustentabilidade
         e implementá-las em seus projetos.
 
-    e)  **Saiba mais sobre soluções de varejo:** clique no botão "Saiba
+    e.  **Saiba mais sobre soluções de varejo:** clique no botão "Saiba
         mais" para ler sobre soluções de varejo e entender como elas podem
         ser usadas em seus projetos.
 
-    f)  **Implantar soluções de varejo:** clique no botão "Implantar" para
+    f.  **Implantar soluções de varejo:** clique no botão "Implantar" para
         começar a implantar soluções de varejo e implementá-las em seus
         projetos.
-
-    <!-- -->
 
 3. Clique em Retornar às cargas de trabalho no canto superior esquerdo
     da tela. Essa ação levará você para a página principal de cargas de
@@ -366,7 +364,7 @@ opções nos laboratórios a seguir.
 
    ![](../media/lab-02/image22.png)
 
-### Tarefa 6: Experiência do Real-Time Intelligence
+## Tarefa 6: Experiência do Real-Time Intelligence
 
 1. Na **página de** cargas **de trabalho**, clique em **Real-Time
     Intelligence** para prosseguir.
@@ -388,28 +386,27 @@ opções nos laboratórios a seguir.
 
     **Tipos de item:**
 
-    a) **Eventhouse:** usado para criar um workspace de um ou vários bancos
+    a. **Eventhouse:** usado para criar um workspace de um ou vários bancos
     de dados KQL, que podem ser compartilhados entre projetos.
 
-    b) **Conjunto de consultas KQL:** usado para executar consultas nos
+    b. **Conjunto de consultas KQL:** usado para executar consultas nos
     dados para produzir tabelas e visuais compartilháveis.
 
-    c) **Painel em Tempo Real:** usado para visualizar dashboards em tempo
+    c. **Painel em Tempo Real:** usado para visualizar dashboards em tempo
     real em segundos após a ingestão de dados.
 
-    d) **Eventstream:** usado para capturar, transformar e rotear fluxo de
+    d. **Eventstream:** usado para capturar, transformar e rotear fluxo de
     eventos em tempo real.
 
-    e) **Ativador:** usado para monitorar conjuntos de dados, consultas e
+    e. **Ativador:** usado para monitorar conjuntos de dados, consultas e
     fluxos de eventos quanto a padrões.
 
-    > **Introdução:**
-    >
-    > Para começar a usar o Real-Time Intelligence, siga estas etapas:
-    >
-    > a. **Explorar exemplo de Real-Time Intelligence:** clique no botão
-    > "Abrir" para explorar a análise de dados em tempo real com um
-    > exemplo.
+    **Introdução:**
+    Para começar a usar o Real-Time Intelligence, siga estas etapas:
+    
+    a. **Explorar exemplo de Real-Time Intelligence:** clique no botão
+    "Abrir" para explorar a análise de dados em tempo real com um
+    exemplo.
 
     b. **Explorar um exemplo:** clique no botão "Selecionar" para usar um
     exemplo e aprender sobre o Real-Time Intelligence.
@@ -439,7 +436,7 @@ opções nos laboratórios a seguir.
 
    ![](../media/lab-02/image22.png)
 
-### Tarefa 7: Experiência do Data Engineering
+## Tarefa 7: Experiência do Data Engineering
 
 1. Na **página de** cargas **de trabalho**, clique em Data Engineering
     para prosseguir.
@@ -480,7 +477,7 @@ opções nos laboratórios a seguir.
 
     f. **API for GraphQL:** é a API para consultar várias fontes de dados.
 
-    g**. Importar notebook:** usado para importar notebooks de um computador
+    g. **Importar notebook:** usado para importar notebooks de um computador
     local.
 
     **Introdução:**
@@ -529,7 +526,7 @@ opções nos laboratórios a seguir.
 
    ![](../media/lab-02/image22.png)
 
-### Tarefa 8: Experiência do Data Science
+## Tarefa 8: Experiência do Data Science
 
 1. Na **página de** cargas **de trabalho**, clique em **Data Science**
     para prosseguir.
@@ -598,7 +595,7 @@ opções nos laboratórios a seguir.
 
    ![](../media/lab-02/image22.png)
 
-### Tarefa 9: Experiência do Data Warehouse
+## Tarefa 9: Experiência do Data Warehouse
 
 1. Na **página de** cargas **de trabalho**, clique em **Data
     Warehouse** para prosseguir.
@@ -664,7 +661,14 @@ opções nos laboratórios a seguir.
 
     ![](../media/lab-02/image31.png)
 
-### Tarefa 10: Experiência de Bancos de Dados
+4. Clique em **Retornar às cargas de trabalho** no canto superior
+    esquerdo da tela. Essa ação levará você para a página principal de
+    cargas de trabalho, na qual você poderá explorar outras ferramentas
+    ou seções.
+
+   ![](../media/lab-02/image22.png)
+   
+## Tarefa 10: Experiência de Bancos de Dados
 
 1. Na **página de** cargas **de trabalho**, clique em **Databases**
     para prosseguir.
@@ -722,9 +726,9 @@ como transformar esses dados usando exibições.
 
 # Referências
 
-O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais
+O Fabric Analyst in a Day (FAIAD. apresenta algumas das principais
 funções disponíveis no Microsoft Fabric. No menu do serviço, a seção
-Ajuda (?) tem links para ótimos recursos.
+Ajuda (?. tem links para ótimos recursos.
 
    ![](../media/lab-02/image34.png)
 
@@ -800,7 +804,7 @@ licenciar, criar obras derivadas, transferir nem vender esta
 demonstração/este laboratório ou qualquer parte deles.
 
 A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
-PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
+PARTE DELES. EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
 REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
 
 ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E

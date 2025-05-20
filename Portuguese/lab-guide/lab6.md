@@ -32,7 +32,7 @@ Ao final deste laboratório, você terá aprendido:
 
 # Lakehouse - Analisar dados
 
-### Tarefa 1: Consultar dados usando SQL
+## Tarefa 1: Consultar dados usando SQL
 
 1. Vamos voltar ao workspace do Fabric, **FAIAD_<nome de usuário>,**
     que você criou no Laboratório 2, Tarefa 8.
@@ -149,7 +149,7 @@ adicionar filtros etc. Não vamos explorar essas opções neste curso.
 
 # Lakehouse -- Modelagem semântica
 
-### Tarefa 3: Criar um modelo semântico
+## Tarefa 3: Criar um modelo semântico
 
 1. Abra o **ponto de extremidade de análise SQL** no seu lakehouse.
 
@@ -209,7 +209,7 @@ nosso modelo. Então vamos criar um novo modelo semântico.
 
     ![](../media/lab-06/image17.png)
 
-### Tarefa 4: Criar relacionamentos
+## Tarefa 4: Criar relacionamentos
 
 Você navegará até o novo modelo semântico com as tabelas selecionadas.
 Você pode **reorganizar** as tabelas conforme necessário. Observe que
@@ -293,7 +293,7 @@ tempo permitir, você poderá concluir a seção opcional no fim do
 laboratório. A seção opcional percorre as etapas para criar os
 relacionamentos restantes.
 
-### Tarefa 5: Criar medidas
+## Tarefa 5: Criar medidas
 
 Vamos adicionar algumas medidas necessárias para criar o dashboard
 Sales.
@@ -379,7 +379,7 @@ restantes.
     Criamos um modelo semântico. A próxima etapa é criar um relatório.
 Faremos isso no próximo laboratório.
 
-### Tarefa 6: Seção Opcional -- Criar relacionamentos
+## Tarefa 6: Seção Opcional -- Criar relacionamentos
 
 Vamos adicionar os relacionamentos restantes.
 
@@ -478,7 +478,7 @@ tela abaixo.
 
     ![](../media/lab-06/image35.png)
 
-### Tarefa 7: Seção Opcional -- Criar medidas
+## Tarefa 7: Seção Opcional -- Criar medidas
 
 Vamos adicionar as medidas restantes.
 
