@@ -861,7 +861,7 @@ O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais
 funções disponíveis no Microsoft Fabric. No menu do serviço, a seção
 Ajuda (?) tem links para ótimos recursos.
 
-    ![](../media/lab-05/image51.png)
+![](../media/lab-05/image51.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas
 do Microsoft Fabric.
