@@ -1,6 +1,8 @@
 
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 4
 
+![](../media/lab-04/Lab4Image.png)
+
 # Sommario
 - Introduzione	
 - Flusso di dati Gen2
