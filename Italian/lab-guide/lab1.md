@@ -57,7 +57,7 @@ seguenti origini:
     un file di esportazione in una cartella di SharePoint. Vengono
     aggiornati ogni mattina alle 9.00.
 
-![](../media/lab-01/image6.jpeg)
+   ![](../media/lab-01/image6.jpeg)
 
 Attualmente è in fase di creazione un modello semantico in Power BI
 Premium che estrae i dati dai precedenti sistemi di origine per
