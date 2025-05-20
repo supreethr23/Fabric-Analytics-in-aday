@@ -54,7 +54,7 @@ privado/anônimo.*
 2. Copie o Nome de usuário e cole-o no campo Email da caixa de texto e
     selecione Enviar.
 
-    - **Email/Nome de usuário:** encontrado na guia Ambiente
+    - **Email/Nome de usuário:** <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/lab-02/image6.png)
 
@@ -62,13 +62,13 @@ privado/anônimo.*
     Nessa tela, insira o seguinte **Email/Nome de usuário** e clique em
     **Avançar**.
 
-    - **Email/Nome de usuário:** encontrado na guia Ambiente
+    - **Email/Nome de usuário:** <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/lab-02/image7.png)
 
 4. Agora, insira a seguinte **Senha** e clique em **Entrar**.
 
-    - **Senha:** encontrada na guia Ambiente
+    - **Senha:** <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/lab-02/image8.png)
 
@@ -120,12 +120,9 @@ tenha a licença do Fabric atribuída. Vamos configurar tudo.
 3. A caixa de diálogo **Criar um workspace** é aberta no lado direito
     do navegador.
 
-4. No campo **Nome**, insira FAIAD_UserID (encontrado na guia
-    Ambiente).
+4. No campo **Nome**, insira **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** (encontrado na guia Ambiente).
 
-   - ***Observação:** O nome do workspace deve ser exclusivo. Verifique se há
-uma marca de seleção verde em "Este nome está disponível", abaixo do
-campo Nome.*
+   - ***Observação:** O nome do workspace deve ser exclusivo. Verifique se há uma marca de seleção verde em "Este nome está disponível", abaixo do campo Nome.*
 
 5. Se preferir, você poderá inserir uma Descrição para o workspace.
     Esse campo é opcional.
@@ -148,7 +145,7 @@ dados do Lakehouse para criar nosso modelo e relatá-lo. A primeira etapa
 
 ## Tarefa 3: Criar um Lakehouse
 
-1. No workspace recém-criado **FAIAD_Username**, localize o botão **+
+1. No workspace recém-criado **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, localize o botão **+
     Novo item (1)** no painel de navegação esquerdo. É aqui que você
     pode começar a criar novos itens em seu workspace.
 
@@ -209,7 +206,7 @@ opções nos laboratórios a seguir.
     para guiar você passo a passo no uso eficaz do Data Factory. Fluxo
     de Dados Gen2 é a próxima geração de Fluxo de Dados.
 
-    **O que é o Data Factory?**
+    ### O que é o Data Factory?
 
     O Data Factory é uma ferramenta que ajuda a gerenciar e organizar dados
     de fontes diferentes. Ele permite que você colete, prepare e transforme
@@ -217,7 +214,7 @@ opções nos laboratórios a seguir.
     iniciante ou um especialista, o Data Factory fornece ferramentas para
     tornar a transformação de dados mais fácil e eficiente.
 
-    **Tipos de item:**
+    ### Tipos de item:
 
     a. **Fluxos de dados:** são como receitas para transformar dados. Eles
         oferecem mais de 300 transformações diferentes que você pode aplicar
@@ -252,7 +249,7 @@ opções nos laboratórios a seguir.
         variáveis e seus valores padrão. Ela também pode conter outros
         conjuntos de valores com valores alternativos.
 
-    **Introdução:**
+    ### Introdução:
 
     Para começar a usar o Data Factory, você pode seguir estas etapas:
 
@@ -306,7 +303,7 @@ opções nos laboratórios a seguir.
     desenvolvidas para ajudar você a usar o Industry Solutions de forma
     eficaz e passo a passo.
 
-    **O que são Industry Solutions?**
+    ### O que são Industry Solutions?
 
     Industry Solutions são soluções de dados prontas para uso no Microsoft
     Fabric que fornecem soluções e recursos para vários setores. As Industry
@@ -314,47 +311,48 @@ opções nos laboratórios a seguir.
     negócios usando modelos de dados, conectores, transformações, relatórios
     e outros ativos relacionados ao setor.
 
-    **Tipos de item:**
+    ### Tipos de item:
 
-    a.  **Soluções de sustentabilidade:** oferece suporte à ingestão,
+    a. **Soluções de sustentabilidade:** oferece suporte à ingestão,
         padronização e análise de dados de ESG (governança ambiental, social
         e corporativa).
 
-    b.  **Soluções de varejo:** ajuda no gerenciamento de grandes volumes de
+    b. **Soluções de varejo:** ajuda no gerenciamento de grandes volumes de
         dados, integrando dados de várias fontes e fornecendo análises em
         tempo real para tomada rápida de decisões. Os varejistas podem usar
         essas soluções para otimização de estoque, segmentação de clientes,
         previsão de vendas, preços dinâmicos e detecção de fraudes.
 
-    c.  **Soluções de serviços de saúde:** são estrategicamente projetadas
+    c. **Soluções de serviços de saúde:** são estrategicamente projetadas
         para acelerar o tempo de retorno para os clientes, atendendo à
         necessidade crítica de transformar com eficiência os dados de saúde
         em um formato adequado para análise.
 
-    **Introdução:**
+    ### Introdução:
+
     Para começar a usar o Industry Solutions, siga estas etapas:
 
-    a.  **Saiba mais sobre soluções de dados de saúde:** clique no botão
+    a. **Saiba mais sobre soluções de dados de saúde:** clique no botão
         "Saiba mais" para ler sobre soluções de dados de saúde e entender
         como elas podem ser usadas em seus projetos.
 
-    b.  **Implantar soluções de dados de saúde:** clique no botão
+    b. **Implantar soluções de dados de saúde:** clique no botão
         "Implantar" para começar a implantar soluções de dados de saúde e
         implementá-las em seus projetos.
 
-    c.  **Saiba mais sobre soluções de sustentabilidade:** clique no botão
+    c. **Saiba mais sobre soluções de sustentabilidade:** clique no botão
         "Saiba mais" para ler sobre soluções de sustentabilidade e
         entender como elas podem ser usadas em seus projetos.
 
-    d.  **Implantar soluções de sustentabilidade:** clique no botão
+    d. **Implantar soluções de sustentabilidade:** clique no botão
         "Implantar" para começar a implantar soluções de sustentabilidade
         e implementá-las em seus projetos.
 
-    e.  **Saiba mais sobre soluções de varejo:** clique no botão "Saiba
+    e. **Saiba mais sobre soluções de varejo:** clique no botão "Saiba
         mais" para ler sobre soluções de varejo e entender como elas podem
         ser usadas em seus projetos.
 
-    f.  **Implantar soluções de varejo:** clique no botão "Implantar" para
+    f. **Implantar soluções de varejo:** clique no botão "Implantar" para
         começar a implantar soluções de varejo e implementá-las em seus
         projetos.
 
@@ -376,7 +374,7 @@ opções nos laboratórios a seguir.
     seções, desenvolvidas para ajudar você a usar o Real-Time
     Intelligence de forma eficaz e passo a passo.
 
-    **O que é o Real-Time Intelligence?**
+    ### O que é o Real-Time Intelligence?
 
     O Real-Time Intelligence é uma ferramenta que ajuda você a gerenciar e
     analisar dados de alto volume e alta granularidade de várias fontes. Ele
@@ -384,7 +382,7 @@ opções nos laboratórios a seguir.
     melhorando as operações de negócios com tomadas de decisões e ações em
     tempo hábil.
 
-    **Tipos de item:**
+    ### Tipos de item:
 
     a. **Eventhouse:** usado para criar um workspace de um ou vários bancos
     de dados KQL, que podem ser compartilhados entre projetos.
@@ -401,7 +399,8 @@ opções nos laboratórios a seguir.
     e. **Ativador:** usado para monitorar conjuntos de dados, consultas e
     fluxos de eventos quanto a padrões.
 
-    **Introdução:**
+    ### Introdução:
+
     Para começar a usar o Real-Time Intelligence, siga estas etapas:
     
     a. **Explorar exemplo de Real-Time Intelligence:** clique no botão
@@ -448,7 +447,7 @@ opções nos laboratórios a seguir.
     desenvolvidas para ajudar você a usar o **Data Engineering** de
     forma eficaz e passo a passo.
 
-    **O que é o Data Engineering?**
+    ### O que é o Data Engineering?
 
     O Data Engineering é uma ferramenta que ajuda a projetar, criar e manter
     infraestruturas e sistemas para coleta, armazenamento, processamento e
@@ -456,7 +455,7 @@ opções nos laboratórios a seguir.
     operacionalizar o fluxo de trabalho para criar, transformar
     e compartilhar o patrimônio de dados.
 
-    **Tipos de item:**
+    ### Tipos de item:
 
     a. **Lakehouse:** usado para armazenar Big Data para limpeza, consulta,
     relatórios e compartilhamento.
@@ -480,7 +479,7 @@ opções nos laboratórios a seguir.
     g. **Importar notebook:** usado para importar notebooks de um computador
     local.
 
-    **Introdução:**
+    ### Introdução:
 
     Para começar a usar o Data Engineering, siga estas etapas:
 
@@ -537,7 +536,7 @@ opções nos laboratórios a seguir.
     seguir, está uma visão geral detalhada de suas seções, desenvolvidas
     para ajudar você a usar o **Data Science** de forma eficaz.
 
-    **O que é o Data Science?**
+    ### O que é o Data Science?
 
     O Data Science é uma ferramenta que ajuda você a revelar insights
     avançados usando IA e tecnologia de aprendizado de máquina. Ele fornece
@@ -545,7 +544,7 @@ opções nos laboratórios a seguir.
     trabalho de ciência de dados em grande escala e aproveitar a IA para
     enriquecimento de dados e insights de negócios.
 
-    **Tipos de item:**
+    ### Tipos de item:
 
     a. **Modelo de ML:** usado para criar modelos de machine learning.
 
@@ -555,7 +554,7 @@ opções nos laboratórios a seguir.
     c. **Notebook:** usado para explorar dados e criar soluções de machine
     learning.
 
-    d**. Ambiente:** usado para configurar bibliotecas compartilhadas,
+    d. **Ambiente:** usado para configurar bibliotecas compartilhadas,
     configurações de computação do Spark e recursos para notebooks e
     definições de trabalho do Spark.
 
@@ -567,7 +566,7 @@ opções nos laboratórios a seguir.
     f. **Notebook Python:** usado para importar notebooks Python de um
     computador local.
 
-    **Introdução:**
+    ### Introdução:
 
     Para começar a usar o Data Science, siga estas etapas
 
@@ -607,14 +606,14 @@ opções nos laboratórios a seguir.
     para ajudar você a usar o Data Warehouse de forma eficaz e passo a
     passo.
 
-    **O que é o Data Warehouse?**
+    ### O que é o Data Warehouse?
 
     O Data Warehouse é uma ferramenta que ajuda a armazenar e analisar dados
     em um depósito SQL seguro. Ele permite que você escale verticalmente
     seus insights beneficiando-se do desempenho de nível superior em escala
     de petabytes em um formato de dados abertos.
 
-    **Tipos de item:**
+    ### Tipos de item:
 
     a. **Warehouse:** usado para criar um Data Warehouse.
 
@@ -649,7 +648,7 @@ opções nos laboratórios a seguir.
     replicar bancos de dados para alta disponibilidade e recuperação de
     desastres.
 
-    **Introdução:**
+    ### Introdução:
 
     Para começar a usar o Data Warehouse, siga as etapas abaixo:
 
@@ -679,7 +678,7 @@ opções nos laboratórios a seguir.
     seguir, está uma visão geral detalhada de suas seções, desenvolvidas
     para ajudar você a usar Bancos de Dados de forma eficaz.
 
-    **O que é um Fabric Database?**
+    ### O que é um Fabric Database?
     
     O banco de dados SQL no Microsoft Fabric é um banco de dados
     transacional fácil de usar para desenvolvedores, baseado no Banco de
@@ -687,7 +686,7 @@ opções nos laboratórios a seguir.
     operacional no Fabric. Um banco de dados SQL no Fabric usa o mesmo
     Mecanismo de Banco de Dados SQL que o Banco de Dados SQL do Azure.
     
-    **Tipos de item:**
+    ### Tipos de item:
     
     a. **SQL database (preview):** o banco de dados SQL no Fabric faz parte
     da carga de trabalho Banco de Dados, e os dados podem ser acessados de
@@ -697,22 +696,21 @@ opções nos laboratórios a seguir.
     análises com o Spark, executar notebooks, engenharia de dados,
     visualizar por meio de Relatórios do Power BI e muito mais.
     
-    **Introdução:**
+    ### Introdução:
     
     Para começar a usar Bancos de Dados, siga as etapas abaixo:
     
     a. **Explorar:** clique em "Abrir" para explorar um banco de dados de
     exemplo.
-    b. **Database concepts:** explica termos e conceitos comuns em torno do
-    banco de dados transacional para que você possa se familiarizar com como
-    trabalhar com o Banco de Dados SQL.
+    
+    b. **Database concepts:** explica termos e conceitos comuns em torno do banco de dados transacional para que você possa se familiarizar com como trabalhar com o Banco de Dados SQL.
     
     c. **Database templates:** examine uma biblioteca de modelos
     pré-criados de designs de banco de dados comuns.
     
-       ![](../media/lab-02/image33.png)
+    ![](../media/lab-02/image33.png)
 
-3.  Clique em Retornar às cargas de
+3. Clique em Retornar às cargas de
     trabalho no canto superior esquerdo da tela. Essa ação levará você
     para a página principal de cargas de trabalho, na qual você poderá
     explorar outras ferramentas ou seções.

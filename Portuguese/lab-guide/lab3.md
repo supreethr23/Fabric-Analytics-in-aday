@@ -419,8 +419,6 @@ Visual sem abrir a opção Power Query.
     "**+**" depois da tabela, talvez tenha selecionado uma etapa
     diferente. Selecione Table e pronto.)
 
-<!-- -->
-
 5. No menu Consulta de Visual, selecione **Combinar -> Mesclar
     consultas**.
 
