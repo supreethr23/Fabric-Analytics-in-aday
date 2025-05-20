@@ -107,7 +107,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 1. Erstellen wir jetzt einen Arbeitsbereich mit einer Fabric-Lizenz.
     Wählen Sie in der Navigationsleiste links die Option
-    **Arbeitsbereiche** aus. Ein Dialogfeld wird geöffnet.
+    **Arbeitsbereiche (1)** aus. Ein Dialogfeld wird geöffnet.
 
 2. Klicken Sie auf **+ Neuer Arbeitsbereich** **(2)** unten im Popup-Menü.
 
