@@ -114,7 +114,7 @@ anteriores também estão disponíveis na pasta My queries.
 3. A caixa de diálogo **Visualizar resultados** é aberta. Selecione
     **Continuar**.
 
-**A caixa de diálogo** Visualizar resultados é aberta e se parece com a
+   **A caixa de diálogo** Visualizar resultados é aberta e se parece com a
 exibição de relatório do Power BI Desktop. Ela tem todos os recursos
 disponíveis na exibição de relatório do Power BI Desktop. Você pode
 formatar a página, selecionar diferentes visuais, formatar visuais,
@@ -218,7 +218,7 @@ no canto superior direito da tabela. Isso porque são exibições. Todos os
 elementos visuais criados com campos dessas exibições estarão no modo
 Direct Query e não no modo Direct Lake.
 
-    - **Observação:** o modo Direct Lake é mais rápido do que o modo Direct
+- **Observação:** o modo Direct Lake é mais rápido do que o modo Direct
 Query.
 
 1. Vamos voltar ao **workspace do Fabric** e selecione o modelo
@@ -282,13 +282,13 @@ Query.
 
     - **Observação:** todas as nossas atualizações são salvas automaticamente.
 
-**Ponto de verificação:** seu modelo deve ter os três relacionamentos
+    **Ponto de verificação:** seu modelo deve ter os três relacionamentos
 entre as tabelas Sales e Reseller, Sales e Date e Sales e Product,
 conforme mostrado na captura de tela abaixo:
 
     ![](../media/lab-06/image25.png)
 
-Por uma questão de tempo, não criaremos todos os relacionamentos. Se o
+    Por uma questão de tempo, não criaremos todos os relacionamentos. Se o
 tempo permitir, você poderá concluir a seção opcional no fim do
 laboratório. A seção opcional percorre as etapas para criar os
 relacionamentos restantes.
