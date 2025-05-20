@@ -233,7 +233,7 @@ modelo semántico. Vamos a crear vistas para transformar los datos.
     ![](../media/lab-03/image16.png)
 
 6. Con la consulta **Cities (1)** seleccionada, en la cinta del Editor
-    de Power Query, seleccione **Inicio (2) - > Combinar (3) -> Menú
+    de Power Query, seleccione **Inicio (2) -> Combinar (3) -> Menú
     desplegable Combinar consultas (4) -> Combinar consultas como
     nuevas (5)**. Se abrirá el cuadro de diálogo Combinar consultas.
 
@@ -735,7 +735,7 @@ Para avanzar en las cosas, copiaremos el código en el Editor avanzado.
     ![](../media/lab-03/image56.png)
 
 5. Con la consulta **ProductItem** seleccionada **(1)**, en la cinta de
-    opciones, seleccione **Inicio (2) - > Combinar (3) -> Menú
+    opciones, seleccione **Inicio (2) -> Combinar (3) -> Menú
     desplegable Combinar consultas (4) -> Combinar consultas como
     nuevas (5)**. Se abrirá el cuadro de diálogo Combinar.
 

@@ -845,9 +845,9 @@ Wartezeit festzulegen.
     Aktivität in der Datenpipeline erfolgen. Wir führen diesen Schritt nicht
     in dieser Übung durch, weil es sich um eine Übungsumgebung handelt.
 
-Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant.
-In der nächsten Übung werden wir ein semantisches Modell mit
-Beziehungen, Kennzahlen und anderen Modellierungsvorgängen durchführen.
+    Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant.
+    In der nächsten Übung werden wir ein semantisches Modell mit
+    Beziehungen, Kennzahlen und anderen Modellierungsvorgängen durchführen.
 
 # Referenzen
 

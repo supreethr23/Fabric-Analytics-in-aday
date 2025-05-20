@@ -71,7 +71,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 4. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop
     Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
 
-5. Wählen Sie im Menüband **Start > Daten transformieren** aus. Das
+5. Wählen Sie im Menüband **Start -> Daten transformieren** aus. Das
     Power Query-Fenster wird geöffnet. Wie Sie in den vorherigen Übungen
     festgestellt haben, sind die Abfragen im linken Bereich nach
     Datenquelle organisiert.
@@ -133,7 +133,7 @@ Lakehouse erfasst werden.
 
 1. Wählen Sie die Abfrage **People (1)** aus.
 
-2. Klicken Sie im Menüband auf **Start > Abfrage (2) -> Datenziel
+2. Klicken Sie im Menüband auf **Start -> Abfrage (2) -> Datenziel
     hinzufügen (3) -> Lakehouse (4)**.
 
     ![](../media/lab-04/image12.png)
@@ -332,7 +332,7 @@ müssen die Daten von „Supplier" und „PO" im Lakehouse erfasst werden.
 
 1. Wählen Sie die Abfrage **Supplier (1)** aus.
 
-2. Klicken Sie im Menüband auf **Start (2) > Datenziel hinzufügen (3)
+2. Klicken Sie im Menüband auf **Start (2) -> Datenziel hinzufügen (3)
     -> Lakehouse (4)**.
 
     ![](../media/lab-04/image25.png)

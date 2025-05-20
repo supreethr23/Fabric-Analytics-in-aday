@@ -617,7 +617,7 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
 12. Öffnen Sie **FAIAD.pbix** im Ordner **Report** auf dem Desktop Ihrer
     Übungsumgebung, falls dies noch nicht erfolgt ist.
 
-13. Wählen Sie im Menüband **Start > Daten transformieren** aus. Das
+13. Wählen Sie im Menüband **Start -> Daten transformieren** aus. Das
     Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung
     festgestellt haben, sind die Abfragen im linken Bereich nach
     Datenquelle organisiert.
@@ -634,7 +634,7 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
     ![](../media/lab-03/image45.png)
 
     **Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können
-    Sie unter **Start-> Abfrage -> Erweiterter Editor** darauf zugreifen.
+    Sie unter **Start -> Abfrage -> Erweiterter Editor** darauf zugreifen.
 
 16. **Wählen Sie Code aus Zeile 3** (#"Expanded Invoice" ...) bis zur
     letzten Codezeile aus.
@@ -764,7 +764,7 @@ Editor".
     ![](../media/lab-03/image56.png)
 
 5. Wählen Sie bei ausgewählter Abfrage **ProductItem (1)** im Menüband
-    **Start (2)-> Kombinieren (3) -> Abfragen zusammenführen (4) ->
+    **Start (2) -> Kombinieren (3) -> Abfragen zusammenführen (4) ->
     Abfragen als neue Abfrage zusammenführen (5)**. Das Dialogfeld zum
     Zusammenführen wird geöffnet.
 
@@ -793,7 +793,7 @@ Editor".
     ![](../media/lab-03/image59.png)
 
     **Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können
-    Sie unter **Start-> Abfrage -> Erweiterter Editor** darauf zugreifen.
+    Sie unter **Start -> Abfrage -> Erweiterter Editor** darauf zugreifen.
 
 12. **Wählen Sie den gesamten Code** in „Erweiterter Editor" aus, und
     **löschen** Sie ihn.

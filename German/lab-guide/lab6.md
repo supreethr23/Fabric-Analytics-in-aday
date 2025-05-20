@@ -390,7 +390,7 @@ besteht darin, einen Bericht zu erstellen. Dies erfolgt in der nächsten
 
 Ergänzen wir die restlichen Beziehungen.
 
-1. Wählen Sie im **Menü Start > Beziehungen verwalten** aus.
+1. Wählen Sie im **Menü Start -> Beziehungen verwalten** aus.
 
 2. Das Dialogfeld „Beziehungen verwalten" wird geöffnet. Wählen Sie +
     **Neue Beziehung** aus.

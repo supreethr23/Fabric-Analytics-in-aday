@@ -141,7 +141,7 @@ Lassen Sie uns einen neuen Bericht mit einer leeren Canvas erstellen.
 1. Wählen Sie im **linken Bereich** den Namen Ihres Arbeitsbereichs,
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, aus, um zum Arbeitsbereich zu gelangen.
 
-2. Wählen Sie im oberen Menü **Neues Element -> Bericht** aus. Sie
+2. Wählen Sie im oberen Menü **+ Neues Element -> Bericht** aus. Sie
     werden zur Seite „Erstellen Sie Ihren ersten Bericht"
     weitergeleitet.
 
@@ -621,7 +621,7 @@ aktualisieren.
     Namen bearbeiten können. Wählen Sie das **Symbol „Bearbeiten"**
     unter Aktionen für **Sales.Invoices_May** aus.
 
-15. Benennen Sie**Sales.Invoices_May nach InvoicesMay** um.
+15. Benennen Sie **Sales.Invoices_May nach InvoicesMay** um.
 
 16. Aktivieren Sie das **Häkchen** neben dem Namen, um die Änderung zu
     speichern.
