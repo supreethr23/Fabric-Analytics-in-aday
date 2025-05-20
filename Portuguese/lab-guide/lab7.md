@@ -462,7 +462,7 @@ Desktop.
 
 17. Vamos salvar o relatório. No menu, selecione **Arquivo \> Salvar**.
 
-Conforme mencionado anteriormente, não criaremos todos os visuais neste
+    Conforme mencionado anteriormente, não criaremos todos os visuais neste
 laboratório. Quando quiser, fique à vontade para criar mais visuais.
 
 ### Tarefa 10: Conectar o Power BI Desktop ao modelo semântico
@@ -808,7 +808,7 @@ problema:
     por dia para acomodar os diferentes horários de atualização para as
     diferentes fontes de dados.**
 
-    Resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é
+     Resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é
 atualizado em sua agenda. Os conjuntos de dados e os relatórios não
 precisam ser atualizados.
 
@@ -816,7 +816,7 @@ precisam ser atualizados.
     necessário fazer uma atualização completa para capturar tudo o que
     foi atualizado nos sistemas de origem.**
 
-    Novamente, resolvemos isso usando Direct Lake. Cada Fluxo de Dados
+     Novamente, resolvemos isso usando Direct Lake. Cada Fluxo de Dados
 individual é atualizado em sua agenda. Os conjuntos de dados e os
 relatórios não precisam ser atualizados, portanto não precisamos nos
 preocupar com a atualização completa.
@@ -827,7 +827,7 @@ preocupar com a atualização completa.
     prazo, resultando na interrupção da atualização do conjunto de
     dados.**
 
-    Os Pipelines de Dados ajudam a resolver esse problema, oferecendo o
+     Os Pipelines de Dados ajudam a resolver esse problema, oferecendo o
 recurso de tentar novamente a atualização em caso de falha e em
 intervalos diferentes.
 
@@ -835,14 +835,14 @@ intervalos diferentes.
     Query leva tempo para atualizar as versões preliminares devido aos
     tamanhos de dados grandes e às transformações complexas.**
 
-    Percebemos que os Fluxos de Dados e o Lakehouses são eficientes e fáceis
+     Percebemos que os Fluxos de Dados e o Lakehouses são eficientes e fáceis
 de alterar. Geralmente, a pré-visualização em Fluxos de Dados e
 Lakehouses não demora muito para carregar.
 
    - **Você precisa de um computador com Windows para usar o Power BI
     Desktop mesmo que o padrão corporativo seja Mac.**
 
-   O Microsoft Fabric é uma oferta de SaaS. Tudo o que precisamos é de um
+     O Microsoft Fabric é uma oferta de SaaS. Tudo o que precisamos é de um
 navegador para acessar o serviço. Não precisamos instalar nenhum
 software em nossos desktops.
 
