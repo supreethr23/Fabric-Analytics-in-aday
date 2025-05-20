@@ -296,10 +296,10 @@ vistas estarán en modo Direct Query y no en modo Direct Lake.
 
     ![](../media/lab-06/image25.png)
 
-Por razones de tiempo, no crearemos todas las relaciones. Si el tiempo
-lo permite, puede completar la sección opcional al final de la práctica
-de laboratorio. La sección opcional recorre los pasos para crear las
-relaciones restantes.
+    Por razones de tiempo, no crearemos todas las relaciones. Si el tiempo
+    lo permite, puede completar la sección opcional al final de la práctica
+    de laboratorio. La sección opcional recorre los pasos para crear las
+    relaciones restantes.
 
 ## Tarea 5: Crear medidas
 
@@ -384,8 +384,8 @@ Agreguemos algunas medidas que necesitamos para crear el panel de Sales.
     práctica de laboratorio. La sección opcional recorre los pasos para
     crear las medidas restantes.
 
-Hemos creado un modelo semántico, el siguiente paso es crear un informe.
-Lo haremos en el siguiente laboratorio.
+    Hemos creado un modelo semántico, el siguiente paso es crear un informe.
+    Lo haremos en el siguiente laboratorio.
 
 ## Tarea 6: Sección opcional: crear relaciones
 

@@ -145,7 +145,7 @@ Al final de este laboratorio, habrá aprendido:
 
 ## Tarea 3: Crear un Lakehouse
 
-1. En el espacio de trabajo **FAIAD_Username** recién creado, localice
+1. En el espacio de trabajo **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** recién creado, localice
     el botón **+ Nuevo elemento (1)** en el panel de navegación de la
     izquierda. Aquí es donde puede comenzar a crear nuevos elementos en
     su área de trabajo.
@@ -221,73 +221,37 @@ Al final de este laboratorio, habrá aprendido:
 
     **Tipos de elementos:**
 
-    a. **Flujos de datos**: los flujos de datos son como recetas para
-        transformar datos. Ofrecen más de 300 transformaciones diferentes
-        que puede aplicar a sus datos. Esto significa que puede limpiar,
-        combinar y cambiar los datos de muchas maneras para adaptarlos a sus
-        necesidades.
+    a. **Flujos de datos**: los flujos de datos son como recetas para transformar datos. Ofrecen más de 300 transformaciones diferentes que puede aplicar a sus datos. Esto significa que puede limpiar, combinar y cambiar los datos de muchas maneras para adaptarlos a sus necesidades.
 
-    b. **Canalizaciones**: las canalizaciones son flujos de trabajo que le
-        ayudan a automatizar los procesos de datos. Le permiten crear flujos
-        de trabajo de datos flexibles que se pueden adaptar a sus requisitos
-        específicos. Esto facilita la gestión y el procesamiento de datos de
-        forma estructurada.
+    b. **Canalizaciones**: las canalizaciones son flujos de trabajo que le ayudan a automatizar los procesos de datos. Le permiten crear flujos de trabajo de datos flexibles que se pueden adaptar a sus requisitos específicos. Esto facilita la gestión y el procesamiento de datos de forma estructurada.
 
-    c. **Azure Data Factory**: Azure Data Factory es un servicio de
-        integración de datos basado en la nube que le permite crear flujos
-        de trabajo basados en datos para orquestar y automatizar el
-        movimiento y la transformación de datos.
+    c. **Azure Data Factory**: Azure Data Factory es un servicio de integración de datos basado en la nube que le permite crear flujos de trabajo basados en datos para orquestar y automatizar el movimiento y la transformación de datos.
 
-    d. **Trabajo de Apache Airflow**: Apache Airflow es una plataforma de
-        código abierto que se utiliza para crear, programar y supervisar
-        flujos de trabajo mediante programación. En Data Factory, le permite
-        crear, programar y administrar flujos de trabajo de datos complejos.
+    d. **Trabajo de Apache Airflow**: Apache Airflow es una plataforma de código abierto que se utiliza para crear, programar y supervisar flujos de trabajo mediante programación. En Data Factory, le permite crear, programar y administrar flujos de trabajo de datos complejos.
 
-    e. **Copiar trabajo**: Copiar trabajo es una característica que le
-        permite copiar datos de un origen a otro. Proporciona una forma
-        sencilla y eficaz de mover datos entre diferentes almacenes de
-        datos.
+    e. **Copiar trabajo**: Copiar trabajo es una característica que le permite copiar datos de un origen a otro. Proporciona una forma sencilla y eficaz de mover datos entre diferentes almacenes de datos.
 
-    f. **Base de datos reflejada**: característica para crear versiones
-        duplicadas de bases de datos para copia de seguridad, prueba o
-        acceso de solo lectura.
+    f. **Base de datos reflejada**: característica para crear versiones duplicadas de bases de datos para copia de seguridad, prueba o acceso de solo lectura.
 
-    g. **Biblioteca de variables (versión preliminar)**: contiene una lista
-        de variables y sus valores predeterminados. También puede contener
-        otros conjuntos de valores que contengan valores alternativos.
+    g. **Biblioteca de variables (versión preliminar)**: contiene una lista de variables y sus valores predeterminados. También puede contener otros conjuntos de valores que contengan valores alternativos.
 
     **Introducción:**
 
     Para empezar a usar Data Factory, puede seguir estos pasos:
 
-    a. **Aprender a usar Data Factory**: en esta sección encontrará ayuda
-        para empezar a utilizar Data Factory. Proporciona orientación sobre
-        cómo comenzar a usar la herramienta de manera efectiva.
+    a. **Aprender a usar Data Factory**: en esta sección encontrará ayuda para empezar a utilizar Data Factory. Proporciona orientación sobre cómo comenzar a usar la herramienta de manera efectiva.
 
-    b. **Crear su primer flujo de datos**: aquí puede aprender a crear su
-        primer flujo de datos. Los flujos de datos son esenciales para
-        transformar sus datos de acuerdo con sus necesidades.
+    b. **Crear su primer flujo de datos**: aquí puede aprender a crear su primer flujo de datos. Los flujos de datos son esenciales para transformar sus datos de acuerdo con sus necesidades.
 
-    c. **Crear la primera canalización de datos**: esta sección le guía
-        sobre cómo crear su primera canalización de datos. Las
-        canalizaciones ayudan a automatizar y administrar sus procesos
-        de datos de manera eficiente.
+    c. **Crear la primera canalización de datos**: esta sección le guía sobre cómo crear su primera canalización de datos. Las canalizaciones ayudan a automatizar y administrar sus procesos de datos de manera eficiente.
 
-    d. **Aprenda a supervisar Data Factory**: la supervisión es fundamental
-        para garantizar que sus procesos de datos funcionen sin problemas.
-        En esta sección se aprende a supervisar las actividades de Data
-        Factory.
+    d. **Aprenda a supervisar Data Factory**: la supervisión es fundamental para garantizar que sus procesos de datos funcionen sin problemas. En esta sección se aprende a supervisar las actividades de Data Factory.
 
-    e. **Aprender a transformar datos con flujos de datos**: esta sección
-        le ayuda a comprender cómo usar los flujos de datos para transformar
-        sus datos de manera efectiva.
+    e. **Aprender a transformar datos con flujos de datos**: esta sección le ayuda a comprender cómo usar los flujos de datos para transformar sus datos de manera efectiva.
 
-    f. **Crear su primera API para GraphQL**: si le interesa utilizar API
-        con GraphQL, esta sección le guiará sobre cómo empezar.
+    f. **Crear su primera API para GraphQL**: si le interesa utilizar API con GraphQL, esta sección le guiará sobre cómo empezar.
 
-    g. **Crear sus primeras funciones de datos de usuario**: esta sección
-        le ayuda a crear funciones de datos de usuario, que son útiles para
-        administrar y transformar los datos del usuario.
+    g. **Crear sus primeras funciones de datos de usuario**: esta sección le ayuda a crear funciones de datos de usuario, que son útiles para administrar y transformar los datos del usuario.
 
     ![](../media/lab-02/image21.png)
 
@@ -320,56 +284,27 @@ Al final de este laboratorio, habrá aprendido:
 
     **Tipos de elementos**:
 
-    a. **Soluciones de sostenibilidad**: admiten la ingesta, la
-        estandarización y el análisis de datos ambientales, sociales y de
-        gobernanza (ASG).
+    a. **Soluciones de sostenibilidad**: admiten la ingesta, la estandarización y el análisis de datos ambientales, sociales y de gobernanza (ASG).
 
-    b. Las **soluciones de datos de comercio minorista**: ayudan a
-        administrar grandes volúmenes de datos, a integrar datos de diversos
-        orígenes y a proporcionar análisis en tiempo real para una toma de
-        decisiones rápida. Los minoristas pueden utilizar estas soluciones
-        para la optimización del inventario, la segmentación de clientes, la
-        previsión de ventas, la fijación de precios dinámicos y la detección
-        de fraude.
+    b. Las **soluciones de datos de comercio minorista**: ayudan a administrar grandes volúmenes de datos, a integrar datos de diversos orígenes y a proporcionar análisis en tiempo real para una toma de decisiones rápida. Los minoristas pueden utilizar estas soluciones para la optimización del inventario, la segmentación de clientes, la previsión de ventas, la fijación de precios dinámicos y la detección de fraude.
 
-    c. Las **soluciones de atención sanitaria**: están diseñadas
-        estratégicamente para acelerar el tiempo de creación de valor para
-        los clientes al abordar la necesidad crítica de transformar de
-        manera eficiente los datos sanitarios en un formato adecuado para el
-        análisis.
+    c. Las **soluciones de atención sanitaria**: están diseñadas estratégicamente para acelerar el tiempo de creación de valor para los clientes al abordar la necesidad crítica de transformar de manera eficiente los datos sanitarios en un formato adecuado para el análisis.
 
-    > **Introducción:** Para empezar a usar Industry Solutions, siga estos pasos:
+    **Introducción:** Para empezar a usar Industry Solutions, siga estos pasos:
 
-    a. **Obtener información sobre las soluciones de datos de atención
-        sanitaria**: haga clic en el botón "Más información" para leer sobre
-        las soluciones de datos de atención sanitaria y comprender cómo se
-        pueden utilizar en sus proyectos.
+    a. **Obtener información sobre las soluciones de datos de atención sanitaria**: haga clic en el botón "Más información" para leer sobre las soluciones de datos de atención sanitaria y comprender cómo se pueden utilizar en sus proyectos.
 
-    b. **Implementar soluciones de datos de atención sanitaria**: haga clic
-        en el botón "Implementar" para empezar a implementar soluciones de
-        datos de atención sanitaria e implementarlas en sus proyectos.
+    b. **Implementar soluciones de datos de atención sanitaria**: haga clic en el botón "Implementar" para empezar a implementar soluciones de datos de atención sanitaria e implementarlas en sus proyectos.
 
-    c. **Obtener información sobre las soluciones de sostenibilidad**: haga
-        clic en el botón "Más información" para leer sobre las soluciones de
-        sostenibilidad y comprender cómo se pueden utilizar en sus
-        proyectos.
+    c. **Obtener información sobre las soluciones de sostenibilidad**: haga clic en el botón "Más información" para leer sobre las soluciones de sostenibilidad y comprender cómo se pueden utilizar en sus proyectos.
 
-    d. **Implementar soluciones de sostenibilidad**: haga clic en el botón
-        "Implementar" para comenzar a implementar soluciones de
-        sostenibilidad e implementarlas en sus proyectos.
+    d. **Implementar soluciones de sostenibilidad**: haga clic en el botón "Implementar" para comenzar a implementar soluciones de sostenibilidad e implementarlas en sus proyectos.
 
-    e. **Obtener información sobre la solución minorista**: haga clic en el
-        botón "Más información" para leer sobre las soluciones de comercio
-        minorista y comprender cómo se pueden utilizar en sus proyectos.
+    e. **Obtener información sobre la solución minorista**: haga clic en el botón "Más información" para leer sobre las soluciones de comercio minorista y comprender cómo se pueden utilizar en sus proyectos.
 
-    f. **Implementar soluciones de comercio minorista**: haga clic en el
-        botón "Implementar" para comenzar a utilizar soluciones de comercio
-        minorista e implementarlas en sus proyectos.
+    f. **Implementar soluciones de comercio minorista**: haga clic en el botón "Implementar" para comenzar a utilizar soluciones de comercio minorista e implementarlas en sus proyectos.
 
-3. Haga clic en Volver a las cargas de trabajo en la esquina superior
-    izquierda de la pantalla. Esta acción le llevará a la página
-    principal de cargas de trabajo, donde puede explorar otras
-    herramientas o secciones.
+3. Haga clic en Volver a las cargas de trabajo en la esquina superior izquierda de la pantalla. Esta acción le llevará a la página principal de cargas de trabajo, donde puede explorar otras herramientas o secciones.
 
     ![](../media/lab-02/image22.png)
 
@@ -472,28 +407,19 @@ Al final de este laboratorio, habrá aprendido:
 
     **Tipos de elementos:**
 
-    a. **Lakehouse**: se utiliza para almacenar macrodatos para limpiar,
-        consultar, generar informes y compartir.
+    a. **Lakehouse**: se utiliza para almacenar macrodatos para limpiar, consultar, generar informes y compartir.
 
-    b. **Bloc de notas**: se utiliza para la ingesta de datos, la
-        preparación, el análisis y otras tareas relacionadas con los datos
-        utilizando varios lenguajes como Python y Scala.
+    b. **Bloc de notas**: se utiliza para la ingesta de datos, la preparación, el análisis y otras tareas relacionadas con los datos utilizando varios lenguajes como Python y Scala.
 
-    c. **Entorno**: se utiliza para configurar bibliotecas compartidas,
-        configuraciones y recursos informáticos de Spark para portátiles y
-        definiciones de trabajos de Spark.
+    c. **Entorno**: se utiliza para configurar bibliotecas compartidas, configuraciones y recursos informáticos de Spark para portátiles y definiciones de trabajos de Spark.
 
-    d. **Definición de trabajo de Spark**: se utiliza para definir,
-        programar y administrar trabajos de Apache.
+    d. **Definición de trabajo de Spark**: se utiliza para definir, programar y administrar trabajos de Apache.
 
-    e. **Funciones de datos de usuario (versión preliminar)**: plataforma
-        que le permite hospedar y ejecutar aplicaciones en Fabric.
+    e. **Funciones de datos de usuario (versión preliminar)**: plataforma que le permite hospedar y ejecutar aplicaciones en Fabric.
 
-    f. **API para GraphQL**: es una API para consultar varios orígenes de
-        datos.
+    f. **API para GraphQL**: es una API para consultar varios orígenes de datos.
 
-    g. **Importar bloc de notas**: se usa para importar blocs de notas
-        desde la máquina local.
+    g. **Importar bloc de notas**: se usa para importar blocs de notas desde la máquina local.
 
     **Introducción:**
 

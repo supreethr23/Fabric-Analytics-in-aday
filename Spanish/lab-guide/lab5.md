@@ -761,18 +761,9 @@ establecer el tiempo de espera.
     - **mul:** esta es una función de multiplicación, necesita dos
     parámetros para multiplicar.
 
-    La expresión es una declaración if anidada. Está comprobando si el valor
-    de la variable varCounter es mayor que 1.
+    La expresión es una declaración if anidada. Está comprobando si el valor de la variable varCounter es mayor que 1.
 
-    Si es true, comprueba si el valor de la variable varCounter es 2. Si es
-    true, establece el tiempo de espera en varWaitTime multiplicado por 15.
-    Recuerde, habíamos establecido el valor predeterminado de varWaitTime a
-    60. Eso sería 60*15 = 900 segundos. Si el valor de la variable
-    varCounter no es 2 (es mayor que 2, lo que significa que la
-    actualización del flujo de datos ha fallado 3 veces, hemos terminado de
-    iterar. No tenemos que esperar más), el tiempo de espera se establece en
-    varWaitTime *0. O sea, 0. Si el valor de la variable varCounter es 1,
-    entonces multiplicamos varWaitTime *5. Eso sería 60*5 = 300 segundos.
+    Si es true, comprueba si el valor de la variable varCounter es 2. Si es true, establece el tiempo de espera en varWaitTime multiplicado por 15. Recuerde, habíamos establecido el valor predeterminado de varWaitTime a 60. Eso sería 60*15 = 900 segundos. Si el valor de la variable varCounter no es 2 (es mayor que 2, lo que significa que la actualización del flujo de datos ha fallado 3 veces, hemos terminado de iterar. No tenemos que esperar más), el tiempo de espera se establece en varWaitTime *0. O sea, 0. Si el valor de la variable varCounter es 1, entonces multiplicamos varWaitTime *5. Eso sería 60*5 = 300 segundos.
 
 9. Seleccione **Aceptar**.
 
@@ -839,9 +830,9 @@ establecer el tiempo de espera.
     la canalización de datos. No lo haremos en este laboratorio, ya que es
     un entorno de laboratorio.
 
-Hemos programado actualizaciones para los distintos orígenes de datos.
-Crearemos un modelo semántico con relaciones, medidas y otras
-operaciones de modelado en el próximo laboratorio.
+    Hemos programado actualizaciones para los distintos orígenes de datos.
+    Crearemos un modelo semántico con relaciones, medidas y otras
+    operaciones de modelado en el próximo laboratorio.
 
 # Referencias
 
