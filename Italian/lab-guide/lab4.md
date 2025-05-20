@@ -13,10 +13,10 @@
   - Attività 5: Copia di query di Snowflake nel flusso di dati	
   - Attività 6: Creazione della connessione a Snowflake	
   - Attività 7: Configurazione della destinazione dei dati per le query Supplier e PO	
-  - ttività 8 - Ridenominazione e pubblicazione del flusso di dati Snowflake	
+  - Attività 8: Ridenominazione e pubblicazione del flusso di dati Snowflake	
 - Collegamento ad ADLS Gen2	
   - Attività 9: Come creare un collegamento a Dataverse	
-  - Attività 10 - Creazione di un collegamento a un lakehouse	
+  - Attività 10: Creazione di un collegamento a un lakehouse	
 - Riferimenti	
 
 # Introduzione 
@@ -89,7 +89,7 @@ copiare le query da Power BI Desktop a Flusso di dati Gen2. Proviamo.
 
     ![](../media/lab-04/image8.png)
 
-    - **Nota:** se si lavora in un ambiente lab, selezionare i puntini di
+    **Nota:** se si lavora in un ambiente lab, selezionare i puntini di
 sospensione in alto a destra della schermata. Usare il dispositivo di
 scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
 di dialogo selezionare OK. Dopo aver incollato le query è possibile
@@ -115,7 +115,7 @@ messaggio di avviso che chiede di configurare la connessione.
 
 4. Selezionare **Connetti**.
 
-   - **Nota:** l'accesso verrà eseguito usando le proprie credenziali.
+   **Nota:** l'accesso verrà eseguito usando le proprie credenziali.
 Saranno diverse rispetto allo screenshot qui sotto.
 
      ![](../media/lab-04/image11.png)
@@ -160,7 +160,7 @@ dobbiamo inserire i dati di People nel lakehouse.
     destinazione. Assicurarsi che l'opzione "**Usa impostazioni
     automatiche**" sia **abilitata**.
 
-   - **Nota:** se si disabilitano le impostazioni automatiche, si potrà
+   **Nota:** se si disabilitano le impostazioni automatiche, si potrà
 notare che sono disponibili opzioni per impostare il metodo di
 aggiornamento e opzioni dello schema. Dopo aver vagliato le possibilità
 offerte, assicurarsi che l'opzione "**Usa impostazioni automatiche**"
@@ -180,7 +180,7 @@ sia **abilitata**.
 
     ![](../media/lab-04/image16.png)
 
-    - **Nota:** si tornerà all **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. La
+    **Nota:** si tornerà all **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. La
 pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
 
 3. **Dataflow 1** è il flusso di dati utilizzato. Rinominiamolo prima
@@ -211,7 +211,7 @@ pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
 
    ![](../media/lab-04/image19.png)
 
-   - **Nota:** se le tabelle appena create non sono visibili, selezionare i
+   **Nota:** se le tabelle appena create non sono visibili, selezionare i
 puntini di sospensione accanto a Tables e selezionare Aggiorna per
 aggiornare le tabelle.
 
@@ -264,7 +264,7 @@ Power BI Desktop a Flusso di dati.
     destro non è attualmente supportata). Se si usa un dispositivo MAC,
     usare Cmd+V per incollare.
 
-    - **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di
+    **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di
 sospensione (...)** in alto a destra nello schermo. Usare il dispositivo
 di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
 di dialogo selezionare OK. Dopo aver incollato le query è possibile
@@ -294,17 +294,17 @@ configurare la connessione.
     forniti di seguito. Usare queste credenziali per connettere tutte le
     tabelle in Snowflake a Snowflake, quindi selezionare **Connetti**.
 
-    * **Snowflake Username:** <inject key="SnowFlake Username"></inject>
+    - **Nome utente Snowflake:** <inject key="SnowFlake Username"></inject>
 
-    * **Snowflake Password:** <inject key="SnowFlake Password"></inject>
+    - **Password Snowflake:** <inject key="SnowFlake Password"></inject>
 
-   > **Nota:** se si verificano problemi di connessione a Snowflake usando le
-credenziali dei dettagli dell'ambiente, usare le credenziali fornite di
-seguito.
+    **Nota:** se si verificano problemi di connessione a Snowflake usando le
+    credenziali dei dettagli dell'ambiente, usare le credenziali fornite di
+    seguito.
 
-   - **Nome utente Snowflake:** SNOWFLAKE_BACKUP
+    - **Nome utente Snowflake:** SNOWFLAKE_BACKUP
 
-   - **Password Snowflake:** 8UpfRpExVDXv2AC1.
+    - **Password Snowflake:** 8UpfRpExVDXv2AC1.
 
 5. Selezionare **Connetti**.
 
@@ -394,7 +394,7 @@ Supplier e PO nel lakehouse.
 
    ![](../media/lab-04/image32.png)
 
-   - **Nota:** se le tabelle appena create non sono visibili, selezionare i
+   **Nota:** se le tabelle appena create non sono visibili, selezionare i
 puntini di sospensione accanto a Tables e selezionare Aggiorna per
 aggiornare le tabelle.
 
@@ -419,7 +419,7 @@ nella vista Lakehouse (non nell'endpoint di Analisi SQL).
 3. Viene visualizzata la finestra di dialogo Nuovo collegamento. In
     **Origini esterne** selezionare **Dataverse**.
 
-   - **Nota:** nel lab precedente abbiamo seguito passaggi simili per creare
+   **Nota:** nel lab precedente abbiamo seguito passaggi simili per creare
 un collegamento a Azure Data Lake Storage Gen2.
 
     ![](../media/lab-04/image35.png)
@@ -436,7 +436,7 @@ un collegamento a Azure Data Lake Storage Gen2.
 
 7. Nella finestra di dialogo per l'accesso selezionare l'**account
     utente** usato per i lab. 
-    - **Nota:** l'account sarà diverso rispetto
+    **Nota:** l'account sarà diverso rispetto
     allo screenshot di seguito.
 
     ![](../media/lab-04/image37.png)
@@ -582,7 +582,7 @@ Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
 - [Blog sull'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+© 2025 Microsoft Corporation. Tutti i diritti sono riservati.
 
 L'uso della demo/del lab implica l'accettazione delle seguenti
 condizioni:
