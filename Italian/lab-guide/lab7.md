@@ -1,8 +1,9 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 7
 
-# Sommario {#sommario .TOC-Heading}
+![](../media/lab-07/Lab7Image.png)
 
-- Sommario
+# Sommario
+
 - Introduzione	
 - Power BI	
   - Attività 1 - Creazione automatica del report	
