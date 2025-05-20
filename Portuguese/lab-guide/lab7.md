@@ -1,5 +1,7 @@
 # Microsoft Fabric - Microsoft Fabric Fabric Analyst in a Day - Laboratório 7
 
+![](../media/lab-07/Lab7Image.png)
+
 # Sumário
 
 - Introdução
