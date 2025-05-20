@@ -729,7 +729,7 @@ código no Editor Avançado.
 
      ![](../media/lab-03/image58.png)
 
-11. Com a consulta Merge selecionada, selecione **Página Inicial - >
+11. Com a consulta Merge selecionada, selecione **Página Inicial ->
     Editor Avançado** na faixa de opções. A caixa de diálogo Editor
     Avançado é aberta.
 

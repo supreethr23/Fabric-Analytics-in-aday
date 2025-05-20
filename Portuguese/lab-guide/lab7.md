@@ -57,7 +57,7 @@ adiante no laboratório, recriaremos o relatório que temos no Power BI.
 
     ![](../media/lab-07/image7.png)
 
-4. No menu superior, selecione **Novo relatório**.
+4. No menu superior, selecione **+ Novo relatório**.
 
     ![](../media/lab-07/image8.png)
 

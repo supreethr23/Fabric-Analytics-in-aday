@@ -216,71 +216,37 @@ opções nos laboratórios a seguir.
 
     ### Tipos de item:
 
-    a. **Fluxos de dados:** são como receitas para transformar dados. Eles
-        oferecem mais de 300 transformações diferentes que você pode aplicar
-        aos seus dados. Isso significa que você pode limpar, combinar e
-        alterar os dados de várias maneiras para atender às suas
-        necessidades.
+    a. **Fluxos de dados:** são como receitas para transformar dados. Eles oferecem mais de 300 transformações diferentes que você pode aplicar aos seus dados. Isso significa que você pode limpar, combinar e alterar os dados de várias maneiras para atender às suas necessidades.
 
-    b. **Pipelines:** são fluxos de trabalho que ajudam a automatizar
-        processos de dados. Eles permitem que você crie fluxos de trabalho
-        de dados flexíveis que podem ser adaptados às suas necessidades
-        específicas. Isso facilita o gerenciamento e o processamento de
-        dados de forma estruturada.
+    b. **Pipelines:** são fluxos de trabalho que ajudam a automatizar processos de dados. Eles permitem que você crie fluxos de trabalho de dados flexíveis que podem ser adaptados às suas necessidades específicas. Isso facilita o gerenciamento e o processamento de dados de forma estruturada.
 
-    c. **Azure Data Factory:** é um serviço de integração de dados baseado
-        em nuvem que permite criar fluxos de trabalho controlados por dados
-        para orquestrar e automatizar a movimentação e a transformação de
-        dados.
+    c. **Azure Data Factory:** é um serviço de integração de dados baseado em nuvem que permite criar fluxos de trabalho controlados por dados para orquestrar e automatizar a movimentação e a transformação de dados.
 
-    d. **Trabalho do Apache Airflow:** o Apache Airflow é uma plataforma de
-        código aberto usada para criar, agendar e monitorar fluxos de
-        trabalho de forma programática. No Data Factory, ele permite criar,
-        agendar e gerenciar fluxos de trabalho de dados complexos.
+    d. **Trabalho do Apache Airflow:** o Apache Airflow é uma plataforma de código aberto usada para criar, agendar e monitorar fluxos de trabalho de forma programática. No Data Factory, ele permite criar, agendar e gerenciar fluxos de trabalho de dados complexos.
 
-    e. **Copiar Trabalho:** é um recurso que permite copiar dados de uma
-        fonte para outra. Ele fornece uma maneira simples e eficiente de
-        mover dados entre diferentes armazenamentos.
+    e. **Copiar Trabalho:** é um recurso que permite copiar dados de uma fonte para outra. Ele fornece uma maneira simples e eficiente de mover dados entre diferentes armazenamentos.
 
-    f. **Espelhado:** um recurso para criar versões espelhadas de bancos de
-        dados para backup, teste ou acesso somente leitura.
+    f. **Espelhado:** um recurso para criar versões espelhadas de bancos de dados para backup, teste ou acesso somente leitura.
 
-    g. **Biblioteca de variáveis (versão preliminar):** contém uma lista de
-        variáveis e seus valores padrão. Ela também pode conter outros
-        conjuntos de valores com valores alternativos.
+    g. **Biblioteca de variáveis (versão preliminar):** contém uma lista de variáveis e seus valores padrão. Ela também pode conter outros conjuntos de valores com valores alternativos.
 
     ### Introdução:
 
     Para começar a usar o Data Factory, você pode seguir estas etapas:
 
-    a. **Saiba como usar Data Factory:** essa seção ajuda você a começar a
-        usar o Data Factory. Ela fornece orientação sobre como começar a
-        usar a ferramenta de forma eficaz.
+    a. **Saiba como usar Data Factory:** essa seção ajuda você a começar a usar o Data Factory. Ela fornece orientação sobre como começar a usar a ferramenta de forma eficaz.
 
-    b. **Crie seu primeiro fluxo de dados:** aqui, você pode aprender como
-        criar seu primeiro fluxo de dados. Os fluxos de dados são essenciais
-        para transformar os dados de acordo com suas necessidades.
+    b. **Crie seu primeiro fluxo de dados:** aqui, você pode aprender como criar seu primeiro fluxo de dados. Os fluxos de dados são essenciais para transformar os dados de acordo com suas necessidades.
 
-    c. **Crie seu primeiro pipeline de dados:** essa seção orienta você
-        sobre como criar seu primeiro pipeline de dados. Os pipelines ajudam
-        a automatizar e gerenciar os processos de dados de forma eficaz.
+    c. **Crie seu primeiro pipeline de dados:** essa seção orienta você sobre como criar seu primeiro pipeline de dados. Os pipelines ajudam a automatizar e gerenciar os processos de dados de forma eficaz.
 
-    d. **Aprenda a monitorar o Data Factory:** o monitoramento é crucial
-        para garantir que os processos de dados estejam funcionando sem
-        problemas. Essa seção ensina como monitorar as atividades do Data
-        Factory.
+    d. **Aprenda a monitorar o Data Factory:** o monitoramento é crucial para garantir que os processos de dados estejam funcionando sem problemas. Essa seção ensina como monitorar as atividades do Data Factory.
 
-    e. **Aprenda a transformar dados com fluxos de dados:** essa seção
-        ajuda você a entender como usar fluxos de dados para transformar os
-        dados de forma eficaz.
+    e. **Aprenda a transformar dados com fluxos de dados:** essa seção ajuda você a entender como usar fluxos de dados para transformar os dados de forma eficaz.
 
-    f. **Crie sua primeira API para o GraphQL:** se você estiver
-        interessado em usar APIs com o GraphQL, essa seção orientará você
-        sobre como começar.
+    f. **Crie sua primeira API para o GraphQL:** se você estiver interessado em usar APIs com o GraphQL, essa seção orientará você sobre como começar.
 
-    g. **Crie suas primeiras funções de dados do usuário:** essa seção
-        ajuda você a criar funções de dados do usuário, que são úteis para
-        gerenciar e transformar dados do usuário.
+    g. **Crie suas primeiras funções de dados do usuário:** essa seção ajuda você a criar funções de dados do usuário, que são úteis para gerenciar e transformar dados do usuário.
 
     ![](../media/lab-02/image21.png)
 
@@ -313,48 +279,27 @@ opções nos laboratórios a seguir.
 
     ### Tipos de item:
 
-    a. **Soluções de sustentabilidade:** oferece suporte à ingestão,
-        padronização e análise de dados de ESG (governança ambiental, social
-        e corporativa).
+    a. **Soluções de sustentabilidade:** oferece suporte à ingestão, padronização e análise de dados de ESG (governança ambiental, social e corporativa).
 
-    b. **Soluções de varejo:** ajuda no gerenciamento de grandes volumes de
-        dados, integrando dados de várias fontes e fornecendo análises em
-        tempo real para tomada rápida de decisões. Os varejistas podem usar
-        essas soluções para otimização de estoque, segmentação de clientes,
-        previsão de vendas, preços dinâmicos e detecção de fraudes.
+    b. **Soluções de varejo:** ajuda no gerenciamento de grandes volumes de dados, integrando dados de várias fontes e fornecendo análises em tempo real para tomada rápida de decisões. Os varejistas podem usar essas soluções para otimização de estoque, segmentação de clientes, previsão de vendas, preços dinâmicos e detecção de fraudes.
 
-    c. **Soluções de serviços de saúde:** são estrategicamente projetadas
-        para acelerar o tempo de retorno para os clientes, atendendo à
-        necessidade crítica de transformar com eficiência os dados de saúde
-        em um formato adequado para análise.
+    c. **Soluções de serviços de saúde:** são estrategicamente projetadas para acelerar o tempo de retorno para os clientes, atendendo à necessidade crítica de transformar com eficiência os dados de saúde em um formato adequado para análise.
 
     ### Introdução:
 
     Para começar a usar o Industry Solutions, siga estas etapas:
 
-    a. **Saiba mais sobre soluções de dados de saúde:** clique no botão
-        "Saiba mais" para ler sobre soluções de dados de saúde e entender
-        como elas podem ser usadas em seus projetos.
+    a. **Saiba mais sobre soluções de dados de saúde:** clique no botão "Saiba mais" para ler sobre soluções de dados de saúde e entender como elas podem ser usadas em seus projetos.
 
-    b. **Implantar soluções de dados de saúde:** clique no botão
-        "Implantar" para começar a implantar soluções de dados de saúde e
-        implementá-las em seus projetos.
+    b. **Implantar soluções de dados de saúde:** clique no botão "Implantar" para começar a implantar soluções de dados de saúde e implementá-las em seus projetos.
 
-    c. **Saiba mais sobre soluções de sustentabilidade:** clique no botão
-        "Saiba mais" para ler sobre soluções de sustentabilidade e
-        entender como elas podem ser usadas em seus projetos.
+    c. **Saiba mais sobre soluções de sustentabilidade:** clique no botão "Saiba mais" para ler sobre soluções de sustentabilidade e entender como elas podem ser usadas em seus projetos.
 
-    d. **Implantar soluções de sustentabilidade:** clique no botão
-        "Implantar" para começar a implantar soluções de sustentabilidade
-        e implementá-las em seus projetos.
+    d. **Implantar soluções de sustentabilidade:** clique no botão "Implantar" para começar a implantar soluções de sustentabilidade e implementá-las em seus projetos.
 
-    e. **Saiba mais sobre soluções de varejo:** clique no botão "Saiba
-        mais" para ler sobre soluções de varejo e entender como elas podem
-        ser usadas em seus projetos.
+    e. **Saiba mais sobre soluções de varejo:** clique no botão "Saiba mais" para ler sobre soluções de varejo e entender como elas podem ser usadas em seus projetos.
 
-    f. **Implantar soluções de varejo:** clique no botão "Implantar" para
-        começar a implantar soluções de varejo e implementá-las em seus
-        projetos.
+    f. **Implantar soluções de varejo:** clique no botão "Implantar" para começar a implantar soluções de varejo e implementá-las em seus projetos.
 
 3. Clique em Retornar às cargas de trabalho no canto superior esquerdo
     da tela. Essa ação levará você para a página principal de cargas de
