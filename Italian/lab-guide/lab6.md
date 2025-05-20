@@ -292,9 +292,9 @@ Query.
     **Sales** e **Product**. Selezionare **StockItemID** dalla tabella
     **Sales** e **StockItemID** dalla tabella **Product**.
 
-   - **Nota:** tutti i nostri aggiornamenti vengono salvati automaticamente.
+    - **Nota:** tutti i nostri aggiornamenti vengono salvati automaticamente.
 
-   - **Checkpoint:** il modello dovrebbe avere le tre relazioni tra le
+    - **Checkpoint:** il modello dovrebbe avere le tre relazioni tra le
 tabelle Sales e Reseller e le tabelle Sales e Date e Sales e Product
 come mostrato nello screenshot seguente:
 
