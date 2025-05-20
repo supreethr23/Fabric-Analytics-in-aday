@@ -267,13 +267,13 @@ consultas do Power BI Desktop no Fluxo de Dados.
     mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V
     para colar.
 
-> **Observação:** se você estiver trabalhando no ambiente de
-> laboratório, selecione as **reticências(...)** no canto superior
-> direito da tela. Use o controle deslizante para **habilitar** **VM
-> Native Clipboard**. Selecione OK na caixa de diálogo. Depois que
-> terminar de colar as consultas, você poderá desabilitar essa opção.
+    > **Observação:** se você estiver trabalhando no ambiente de
+    > laboratório, selecione as **reticências(...)** no canto superior
+    > direito da tela. Use o controle deslizante para **habilitar** **VM
+    > Native Clipboard**. Selecione OK na caixa de diálogo. Depois que
+    > terminar de colar as consultas, você poderá desabilitar essa opção.
 
-   ![](../media/lab-04/image22.png)
+    ![](../media/lab-04/image22.png)
 
 ### Tarefa 6: Criar conexão com o Snowflake
 
@@ -300,7 +300,7 @@ conexão.
 
      - Senha do Snowflake: 8UpfRpExVDXv2AC1
 
-     **Observação:** Se você encontrar problemas para se conectar ao
+     - **Observação:** Se você encontrar problemas para se conectar ao
 Snowflake usando as credenciais dos detalhes do ambiente, use as
 credenciais fornecidas abaixo.
 
