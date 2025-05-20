@@ -22,13 +22,13 @@
 
 Abbiamo inserito dati provenienti da diverse origini dati in Lakehouse.
 In questo lab si lavorerà con il modello semantico. In genere, eseguiamo
-attività di modellazione quali la creazione di relazioni, l\'aggiunta di
+attività di modellazione quali la creazione di relazioni, l'aggiunta di
 misure, ecc. in Power BI Desktop. Qui impareremo a eseguire queste
 attività di modellazione nel servizio.
 
 In questo lab si apprenderà quanto segue:
 
-- Uso della vista SQL nell\'endpoint di Analisi SQL
+- Uso della vista SQL nell'endpoint di Analisi SQL
 
 - Come creare un modello semantico
 
@@ -36,15 +36,15 @@ In questo lab si apprenderà quanto segue:
 
 ## Attività 1: Query sui dati mediante SQL
 
-1. Torniamo all\'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** creata nel Lab 2, Attività 2.
+1. Torniamo all'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** creata nel Lab 2, Attività 2.
 
 2. Se si preferisce, è possibile **ridurre a icona il flusso di
-    attività** per visualizzare l\'elenco completo degli elementi.
+    attività** per visualizzare l'elenco completo degli elementi.
 
 3. Saranno visibili tre elementi associati a lh_FAIAD, ovvero il
-    lakehouse, il modello semantico e l\'endpoint SQL. In un lab
+    lakehouse, il modello semantico e l'endpoint SQL. In un lab
     precedente abbiamo esaminato il lakehouse e creato query visive
-    usando l\'endpoint di Analisi SQL. Selezionare **lh_FAIAD - Endpoint
+    usando l'endpoint di Analisi SQL. Selezionare **lh_FAIAD - Endpoint
     di Analisi SQL** per continuare a esplorare questa opzione. Si
     aprirà la **vista SQL** di Explorer.
 
@@ -54,12 +54,12 @@ In questo lab si apprenderà quanto segue:
 possibile usare SQL a questo fine. Sono disponibili due opzioni per
 usare SQL. La prima opzione è la query visiva, che abbiamo usato nel lab
 precedente. La seconda opzione è la scrittura di codice TSQL. Si tratta
-di un\'opzione pensata per gli sviluppatori. Esaminiamola assieme.
+di un'opzione pensata per gli sviluppatori. Esaminiamola assieme.
 
    Supponiamo di voler conoscere rapidamente le unità Units dal fornitore
 mediante SQL.
 
-   Nell\'endpoint di Analisi SQL del lakehouse, come indicato nel pannello
+   Nell'endpoint di Analisi SQL del lakehouse, come indicato nel pannello
 di sinistra, è possibile visualizzare le tabelle. Espandendo le tabelle,
 si possono visualizzare le colonne che compongono la tabella. Vi sono
 inoltre opzioni per la creazione di viste SQL, funzioni e stored
@@ -85,17 +85,17 @@ opzioni. Proviamo a scrivere una semplice query SQL.
    GROUP BY su.SupplierName
    ```
 
-6. Fare clic su **Esegui** nel menu dell\'editor SQL per visualizzare i
+6. Fare clic su **Esegui** nel menu dell'editor SQL per visualizzare i
     risultati.
 
-7. Notare che è disponibile un\'opzione per salvare questa query come
+7. Notare che è disponibile un'opzione per salvare questa query come
     vista selezionando **Salva come visualizzazione**.
 
 8. Nel pannello di **sinistra** **Explorer**, nella sezione **Query**
     notare che questa query è salvata in **Query personali** come **SQL
-    query 1**. Ciò consente di rinominare la query e salvarla per l\'uso
-    futuro. È inoltre presente un\'opzione per visualizzare le query
-    condivise con l\'utente corrente mediante la cartella **Query
+    query 1**. Ciò consente di rinominare la query e salvarla per l'uso
+    futuro. È inoltre presente un'opzione per visualizzare le query
+    condivise con l'utente corrente mediante la cartella **Query
     condivise**.
 
    - **Nota:** le query visive create nei lab precedenti sono disponibili
@@ -109,7 +109,7 @@ anche nella cartella My queries.
     **Evidenziare la query** nel riquadro delle query
 
 2. Nel menu del riquadro Risultati, selezionare **Esplorare questi dati
-    (anteprima) -\> Visualizza risultati**.
+    (anteprima) -> Visualizza risultati**.
 
     ![](../media/lab-06/image9.png)
 
@@ -131,7 +131,7 @@ queste opzioni in questo corso.
     ![](../media/lab-06/image10.png)
 
 6. Nella sezione **Visualizzazioni** cambiare il tipo di oggetto visivo
-    selezionando l\'**istogramma in pila**.
+    selezionando l'**istogramma in pila**.
 
 7. Selezionare **Salvare come report** in basso a destra della
     schermata.
@@ -142,7 +142,7 @@ queste opzioni in questo corso.
     fornitore** nella casella di testo **Immettere un nome per il
     report**.
 
-9. Assicurarsi che l\'area di lavoro di destinazione sia l\'area di
+9. Assicurarsi che l'area di lavoro di destinazione sia l'area di
     lavoro di Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 10. Selezionare **Salva**.
@@ -155,7 +155,7 @@ queste opzioni in questo corso.
 
 ## Attività 3: Creazione di un modello semantico
 
-1. Aprire **l\'endpoint di Analisi SQL** dal lakehouse.
+1. Aprire **l'endpoint di Analisi SQL** dal lakehouse.
 
 2. Nel riquadro Explorer scorrere verso in basso e selezionare **Layout
     modelli**. Il riquadro centrale è simile alla vista del modello
@@ -170,7 +170,7 @@ abbiamo bisogno solo di un sottoinsieme delle tabelle. Quindi
 procederemo alla creazione di un nuovo modello semantico.
 
 3. Dal menu in alto a destra **selezionare la freccia accanto
-    all\'endpoint di Analisi SQL**.
+    all'endpoint di Analisi SQL**.
 
 4. Selezionare **Lakehouse** per passare alla vista Lakehouse.
 
@@ -228,7 +228,7 @@ Direct Lake.
 **Nota:** la modalità Direct Lake è più veloce della modalità Direct
 Query.
 
-1. Torniamo all\'area di lavoro di **Fabric e** selezionare il modello
+1. Torniamo all'area di lavoro di **Fabric e** selezionare il modello
     semantico **sm_FAIAD**.
 
     ![](../media/lab-06/image18.png)
@@ -237,7 +237,7 @@ Query.
 
     ![](../media/lab-06/image19.png)
 
-3. Nell\'angolo in alto a destra verificare di essere nella modalità
+3. Nell'angolo in alto a destra verificare di essere nella modalità
     **Modifica**.
 
    ![](../media/lab-06/image20.png)
@@ -259,7 +259,7 @@ Query.
     **Colonna** sia **ResellerID.**
 
 8. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a
-    uno (\*:1)**.
+    uno (*:1)**.
 
 9. Assicurarsi che il campo **Direzione filtro incrociato** sia
     impostato su **Singola**.
@@ -279,7 +279,7 @@ Query.
     sia **Date.**
 
 14. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a
-    uno (\*:1)**.
+    uno (*:1)**.
 
 15. Assicurarsi che il campo **Direzione filtro incrociato** sia
     impostato su **Singola**.
@@ -312,10 +312,10 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 1. Selezionare la tabella **Sales** dalla vista del modello. Vogliamo
     aggiungere le misure alla tabella Sales.
 
-2. Nel menu in alto selezionare **Home -\> Nuova misura**. Notare che
+2. Nel menu in alto selezionare **Home -> Nuova misura**. Notare che
     viene visualizzata la barra della formula.
 
-3. Immettere **Sales = SUM('Sales'\[Sales Amount\])** nella **barra
+3. Immettere **Sales = SUM('Sales'[Sales Amount])** nella **barra
     della formula**.
 
 4. Fare clic sul **segno di spunta** a sinistra della barra della
@@ -332,10 +332,10 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
     ![](../media/lab-06/image26.png)
 
 9. Con la tabella **Sales** selezionata nel menu in alto, selezionare
-    **Home -\> Nuova misura**. Notare che viene visualizzata la barra
+    **Home -> Nuova misura**. Notare che viene visualizzata la barra
     della formula.
 
-10. Immettere **Units = SUM('Sales'\[Quantity\])** nella **barra della
+10. Immettere **Units = SUM('Sales'[Quantity])** nella **barra della
     formula**.
 
 11. Fare clic sul **segno di spunta** a sinistra della barra della
@@ -345,7 +345,7 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
     **Formattazione** (il caricamento del pannello Proprietà potrebbe
     richiedere alcuni istanti).
 
-13. Nell\'elenco a discesa **Formato** selezionare **Numero intero**.
+13. Nell'elenco a discesa **Formato** selezionare **Numero intero**.
 
 14. Usare il dispositivo di scorrimento per impostare il **Separatore
     delle migliaia** su **Sì**.
@@ -353,10 +353,10 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
     ![](../media/lab-06/image27.png)
 
 15. Con la tabella **Sales** selezionata nel menu in alto, selezionare
-    **Home -\> Nuova misura**. Notare che viene visualizzata la barra
+    **Home -> Nuova misura**. Notare che viene visualizzata la barra
     della formula.
 
-16. Immettere **Sales Orders = DISTINCTCOUNT('Sales'\[InvoiceID\])**
+16. Immettere **Sales Orders = DISTINCTCOUNT('Sales'[InvoiceID])**
     nella **barra della formula**.
 
 17. Fare clic sul **segno di spunta** a sinistra della barra della
@@ -365,7 +365,7 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 18. Nel pannello Proprietà a destra espandere la sezione
     **Formattazione**.
 
-19. Nell\'elenco a discesa **Formato** selezionare **Numero intero**.
+19. Nell'elenco a discesa **Formato** selezionare **Numero intero**.
 
 20. Usare il dispositivo di scorrimento per impostare il **Separatore
     delle migliaia** su **Sì**.
@@ -374,9 +374,9 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
 21. Nel **pannello dati** (a destra) selezionare **Modello**. Notare che
     questa operazione fornisce una vista che semplificherà
-    l\'organizzazione di tutti gli elementi nel modello semantico.
+    l'organizzazione di tutti gli elementi nel modello semantico.
 
-22. Espandere **Modello semantico -\> Misure** per visualizzare tutte le
+22. Espandere **Modello semantico -> Misure** per visualizzare tutte le
     misure appena create.
 
 23. È anche possibile **espandere le singole tabelle** per visualizzare
@@ -396,7 +396,7 @@ report. Ce ne occuperemo nel prossimo lab.
 
 Aggiungiamo le relazioni rimanenti.
 
-1. Nel menu in alto selezionare **Home -\> Gestisci relazioni**.
+1. Nel menu in alto selezionare **Home -> Gestisci relazioni**.
 
 2. Si apre la finestra di dialogo Gestisci relazioni. Selezionare **+
     Nuova relazione**.
@@ -411,7 +411,7 @@ Aggiungiamo le relazioni rimanenti.
     **Colonna** sia **PersonID.**
 
 5. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a
-    uno (\*:1)**.
+    uno (*:1)**.
 
 6. Assicurarsi che la **direzione filtro incrociato** sia **Singola**.
 
@@ -430,7 +430,7 @@ Aggiungiamo le relazioni rimanenti.
     **Colonna** sia **SupplierID.**
 
 11. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a
-    uno (\*:1)**.
+    uno (*:1)**.
 
 12. Assicurarsi che la **direzione filtro incrociato** sia **Entrambe**.
 
@@ -449,7 +449,7 @@ Aggiungiamo le relazioni rimanenti.
     sia **CityID.**
 
 17. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a
-    uno (\*:1)**.
+    uno (*:1)**.
 
 18. Assicurarsi che la **direzione filtro incrociato** sia **Entrambe**.
 
@@ -467,7 +467,7 @@ Aggiungiamo le relazioni rimanenti.
     **Colonna** sia **ResellerID.**
 
 23. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a
-    uno (\*:1)**.
+    uno (*:1)**.
 
 24. Assicurarsi che la **direzione filtro incrociato** sia **Singola**.
 
@@ -503,9 +503,9 @@ screenshot seguente.
 Aggiungiamo le misure rimanenti.
 
 1. Selezionare la tabella **Sales** e nel menu in alto selezionare
-    **Home -\> Nuova misura**.
+    **Home -> Nuova misura**.
 
-2. Immettere **Avg Order** = **DIVIDE(\[Sales\], \[Sales Orders\])**
+2. Immettere **Avg Order** = **DIVIDE([Sales], [Sales Orders])**
     nella barra della formula.
 
 3. Fare clic sul **segno di spunta** nella barra della formula o
@@ -523,10 +523,10 @@ Aggiungiamo le misure rimanenti.
 
 8. Seguire passaggi analoghi per aggiungere le seguenti misure:
 
-    a. Nella tabella **Sales GM = SUM('Sales'\[LineProfit\])**
+    a. Nella tabella **Sales GM = SUM('Sales'[LineProfit])**
         formattata come **Valuta con 0 posizioni decimali**.
 
-    b. Nella tabella **Sales**, **GM% = DIVIDE(\[GM\], \[Sales\])**
+    b. Nella tabella **Sales**, **GM% = DIVIDE([GM], [Sales])**
         formattato come **Percentuale con 0 posizioni decimali.**
 
     c. Nella tabella **Customer, No of Customers =
@@ -542,9 +542,9 @@ Guida (?) include collegamenti ad alcune risorse utili.
 ![](../media/lab-06/image37.png)
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di
-progredire nell\'uso di Microsoft Fabric.
+progredire nell'uso di Microsoft Fabric.
 
-- Vedere il post di blog per leggere l\'[annuncio completo sulla
+- Vedere il post di blog per leggere l'[annuncio completo sulla
     disponibilità generale di Microsoft
     Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
@@ -563,32 +563,32 @@ progredire nell\'uso di Microsoft Fabric.
 - Consultare la [documentazione tecnica di
     Fabric](https://aka.ms/fabric-docs)
 
-- Leggere l\'[e-book gratuito introduttivo a
+- Leggere l'[e-book gratuito introduttivo a
     Fabric](https://aka.ms/fabric-get-started-ebook)
 
 - Unirsi alla [community di Fabric](https://aka.ms/fabric-community)
     per pubblicare domande, condividere feedback e imparare dagli altri
 
-Leggere i blog di annunci più approfonditi sull\'esperienza Fabric:
+Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
 
-- [Blog sull\'esperienza Data Factory in
+- [Blog sull'esperienza Data Factory in
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
-- [Blog sull\'esperienza Synapse Data Engineering in
+- [Blog sull'esperienza Synapse Data Engineering in
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
-- [Blog sull\'esperienza Synapse Data Science in
+- [Blog sull'esperienza Synapse Data Science in
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
-- [Blog sull\'esperienza Synapse Data Warehousing in
+- [Blog sull'esperienza Synapse Data Warehousing in
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
-- [Blog sull\'esperienza Synapse Real-Time Analytics in
+- [Blog sull'esperienza Synapse Real-Time Analytics in
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
 - [Blog di annunci di Power BI](https://aka.ms/Fabric-PBI-Blog)
 
-- [Blog sull\'esperienza Data Activator in
+- [Blog sull'esperienza Data Activator in
     Fabric](https://aka.ms/Fabric-DA-Blog) 
 
 - [Blog su amministrazione e governance in
@@ -596,20 +596,20 @@ Leggere i blog di annunci più approfonditi sull\'esperienza Fabric:
 
 - [Blog su OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
-- [Blog sull\'integrazione di Dataverse e Microsoft
+- [Blog sull'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
 
-L\'uso della demo/del lab implica l\'accettazione delle seguenti
+L'uso della demo/del lab implica l'accettazione delle seguenti
 condizioni:
 
 La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite
-da Microsoft Corporation allo scopo di ottenere feedback dall\'utente e
-offrire un\'esperienza di apprendimento. L\'utilizzo della demo/del lab
+da Microsoft Corporation allo scopo di ottenere feedback dall'utente e
+offrire un'esperienza di apprendimento. L'utilizzo della demo/del lab
 è consentito solo per la valutazione delle caratteristiche e delle
-funzionalità di tale tecnologia e per l\'invio di feedback a Microsoft.
-L\'utilizzo per qualsiasi altro scopo non è consentito. È vietato
+funzionalità di tale tecnologia e per l'invio di feedback a Microsoft.
+L'utilizzo per qualsiasi altro scopo non è consentito. È vietato
 modificare, copiare, distribuire, trasmettere, visualizzare, eseguire,
 riprodurre, pubblicare, concedere in licenza, usare per la creazione di
 lavori derivati, trasferire o vendere questa demo/questo lab o parte di
@@ -622,16 +622,16 @@ QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
 QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
 SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
 NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
-UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
+UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
 SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN
 QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
 COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
 VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
-FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
+FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI
 TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ RISULTARE DIVERSA IN UN AMBIENTE
 FISICO.
 
-**FEEDBACK**. L\'invio a Microsoft di feedback sulle caratteristiche,
+**FEEDBACK**. L'invio a Microsoft di feedback sulle caratteristiche,
 sulle funzionalità e/o sui concetti della tecnologia descritti in questa
 demo/questo lab implica la concessione a Microsoft, a titolo gratuito,
 del diritto di utilizzare, condividere e commercializzare tale feedback
@@ -639,8 +639,8 @@ in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a
 titolo gratuito a terze parti del diritto di utilizzo di eventuali
 brevetti necessari per i loro prodotti, le loro tecnologie e i loro
 servizi al fine di utilizzare o interfacciarsi ai componenti software o
-ai servizi Microsoft specifici che includono il feedback. L\'utente si
-impegna a non inviare feedback la cui inclusione all\'interno di
+ai servizi Microsoft specifici che includono il feedback. L'utente si
+impegna a non inviare feedback la cui inclusione all'interno di
 software o documentazione Microsoft imponga a Microsoft di concedere in
 licenza a terze parti tale software o documentazione. Questi diritti
 sussisteranno anche dopo la scadenza del presente contratto.
@@ -650,8 +650,8 @@ CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
 CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE
 DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON
 VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN
-RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E DELL\'OUTPUT DERIVANTI
-DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA DELLE INFORMAZIONI
+RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI
+DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI
 CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
 
 **CLAUSOLA DI RESPONSABILITÀ**

@@ -38,12 +38,12 @@ Esistono più modi per inserire questi dati.
 
 - **Pipeline di dati:** questo è uno strumento di orchestrazione. Le
     attività possono essere orchestrate per estrarre, trasformare e
-    acquisire dati. Useremo Pipeline di dati per eseguire l\'attività di
-    Dataflow Gen2 che a sua volta eseguirà l\'estrazione, la
-    trasformazione e l\'acquisizione.
+    acquisire dati. Useremo Pipeline di dati per eseguire l'attività di
+    Dataflow Gen2 che a sua volta eseguirà l'estrazione, la
+    trasformazione e l'acquisizione.
 
 Inizieremo creando un collegamento per inserire dati in un lakehouse
-dall\'origine dati ADLS Gen2. Una volta inseriti i dati, useremo le
+dall'origine dati ADLS Gen2. Una volta inseriti i dati, useremo le
 viste delle query visive per trasformarli.
 
 In questo lab si imparerà a:
@@ -56,16 +56,16 @@ In questo lab si imparerà a:
 
 ## Attività 1 - Creazione di un collegamento
 
-I collegamenti sono usati per creare un collegamento all\'ubicazione di
+I collegamenti sono usati per creare un collegamento all'ubicazione di
 destinazione e permettono di accedere ai dati senza la necessità di
 spostarli fisicamente nel lakehouse. È come creare collegamenti
 nel desktop di Windows.
 
-1. Torniamo all\'**area di lavoro di Fabric** **(1)** creata nel Lab 2,
+1. Torniamo all'**area di lavoro di Fabric** **(1)** creata nel Lab 2,
     Attività 8.
 
 2. Se non si è usciti dopo il lab precedente, ci si trova nella
-    schermata Lakehouse. Se si è usciti, non c\'è problema. Selezionare
+    schermata Lakehouse. Se si è usciti, non c'è problema. Selezionare
     **lh_FAIAD** (**2)** per spostarsi nel lakehouse.
 
 3. Nel pannello **Explorer** selezionare i **puntini di sospensione
@@ -129,13 +129,13 @@ nel desktop di Windows.
 
     k. Warehouse.StockItems
 
-    - **Nota:** Sales.Invoices_May è l\'unica directory **non** selezionata.
+    - **Nota:** Sales.Invoices_May è l'unica directory **non** selezionata.
 
     ![](../media/lab-03/image9.png)
 
 14. Si verrà indirizzati alla finestra di dialogo successiva, dove si ha
-    la possibilità di modificare\
-    i nomi. Selezionare l\'**icona Modifica (1)** in Azioni per
+    la possibilità di modificare
+    i nomi. Selezionare l'**icona Modifica (1)** in Azioni per
     **Application.Cities**.
 
 15. Rinominare **Application.Cities in Cities (2).**
@@ -177,7 +177,7 @@ causare errori durante il lab.
 
 19. Notare che tutti i collegamenti vengono creati come tabelle.
     Selezionare la tabella **BuyingGroups**; è possibile vedere
-    un\'anteprima dei dati nel pannello dati.
+    un'anteprima dei dati nel pannello dati.
 
     ![](../media/lab-03/image12.png)
 
@@ -191,14 +191,14 @@ i dati.
 
 1. Possiamo accedere al lakehouse usando un endpoint SQL. Questo
     permette di eseguire query sui dati e creare viste. In **alto a
-    destra** della schermata selezionare **Lakehouse (1) -\> Endpoint di
+    destra** della schermata selezionare **Lakehouse (1) -> Endpoint di
     Analisi SQL (2)**.
 
    ![](../media/lab-03/image13.png)
 
-   Si verrà indirizzati all\'endpoint di Analisi SQL. Il pannello Explorer
+   Si verrà indirizzati all'endpoint di Analisi SQL. Il pannello Explorer
 è cambiato. Ora è possibile creare viste, stored procedure, query e
-altro ancora. Creeremo una query visiva poiché fornisce un\'interfaccia
+altro ancora. Creeremo una query visiva poiché fornisce un'interfaccia
 con poco codice, come Power Query. Salveremo il risultato come vista.
 
    Inizieremo creando una vista Geo. Per creare la vista Geo, dobbiamo
@@ -211,7 +211,7 @@ unire i dati delle tabelle Cities, States e Countries.
 
 3. Per creare una query, dobbiamo aggiungere tabelle nel pannello Query
     visiva. Fare clic sui puntini di sospensione accanto alla tabella
-    **Cities (1)** e selezionare **Inserisci nell\'area di disegno
+    **Cities (1)** e selezionare **Inserisci nell'area di disegno
     (2).**
 
    ![](../media/lab-03/image15.png)
@@ -219,12 +219,12 @@ unire i dati delle tabelle Cities, States e Countries.
 4. Ripetere gli stessi passaggi per le tabelle **States** e
     **Countries**.
 
-   Ora dobbiamo unire queste query. L\'editor di query visive include
-un\'opzione che permette di usare l\'editor di Power Query. Lo
+   Ora dobbiamo unire queste query. L'editor di query visive include
+un'opzione che permette di usare l'editor di Power Query. Lo
 conosciamo, quindi lo useremo.
 
-5. Nel menu dell\'editor di query visive selezionare l\'icona **Apri in
-    popup** (verso destra). Si apre l\'editor di Power Query.
+5. Nel menu dell'editor di query visive selezionare l'icona **Apri in
+    popup** (verso destra). Si apre l'editor di Power Query.
 
    ***Nota:** potrebbe essere necessario scorrere verso destra o riaprire
 la scheda della query visiva se questa icona non viene visualizzata
@@ -233,19 +233,19 @@ immediatamente*
    ![](../media/lab-03/image16.png)
 
 6. Con la query **Cities(1)** selezionata, nella barra multifunzione
-    dell\'editor di Power Query selezionare **Home (2) -\> Combina (3)
-    -\> Elenco a discesa Esegui merge di query (4) -\> Esegui merge di
+    dell'editor di Power Query selezionare **Home (2) -> Combina (3)
+    -> Elenco a discesa Esegui merge di query (4) -> Esegui merge di
     query come nuova (5)**. Si apre la finestra di dialogo Esegui merge
     di query.
 
    ![](../media/lab-03/image17.png)
 
-7. Nella **tabella di sinistra per l\'unione** selezionare **Cities**.
+7. Nella **tabella di sinistra per l'unione** selezionare **Cities**.
 
-8. Nella **tabella di destra per l\'unione** selezionare **States**.
+8. Nella **tabella di destra per l'unione** selezionare **States**.
 
 9. Selezionare le colonne **StateProvinceID** da entrambe le tabelle.
-    Useremo questa colonna\
+    Useremo questa colonna
     per creare un join.
 
 10. Selezionare **Inner** come **Tipo di join**.
@@ -255,11 +255,11 @@ immediatamente*
     ![](../media/lab-03/image18.png)
 
     Notare che è stata creata una nuova query denominata **Merge**. Abbiamo
-bisogno di alcune\
+bisogno di alcune
 colonne da States.
 
 12. Nella **vista dati** (pannello inferiore) fare clic sulla **freccia
-    doppia** accanto alla colonna **States**\
+    doppia** accanto alla colonna **States**
     (ultima colonna a destra).
 
 13. Si apre un pannello. **Selezionare** le colonne seguenti:
@@ -278,18 +278,18 @@ colonne da States.
 
     Ora dobbiamo unire la query Countries.
 
-15. Con la query di unione selezionata (1) selezionare **Home (2) -\>
-    Combina (3) -\> Elenco a discesa Esegui merge di query (4) -\>
+15. Con la query di unione selezionata (1) selezionare **Home (2) ->
+    Combina (3) -> Elenco a discesa Esegui merge di query (4) ->
     Esegui merge di query (5)**.
 
     ![](../media/lab-03/image20.png)
 
 16. Si apre la finestra di dialogo Esegui merge di query. Nella
-    **tabella di destra per l\'unione**\
+    **tabella di destra per l'unione**
     selezionare **Countries**.
 
 17. Selezionare le colonne **ICountryID** da entrambe le tabelle.
-    Useremo questa colonna\
+    Useremo questa colonna
     per creare un join.
 
 18. Selezionare **Inner** come **Tipo di join**.
@@ -329,10 +329,10 @@ colonne da States.
 Assicurarsi di selezionare solo quelle necessarie.
 
 23. Con la query **Merge** selezionata (1), nella barra multifunzione
-    selezionare **Home (2) -\> Scegli colonne (3) -\> Scegli colonne
+    selezionare **Home (2) -> Scegli colonne (3) -> Scegli colonne
     (4)**.
 
-    ***Nota:** se l\'opzione Scegli colonne non è visibile, cercarla in
+    ***Nota:** se l'opzione Scegli colonne non è visibile, cercarla in
 Gestisci colonne.
 
     ![](../media/lab-03/image23.png)
@@ -372,15 +372,15 @@ caricamento, in modo da caricare i dati da questa query.
 28. Assicurarsi che le query Cities, States e Countries siano
     **disabilitate**.
 
-29. Selezionare **Salva** in basso a destra nell\'editor di Power Query.
+29. Selezionare **Salva** in basso a destra nell'editor di Power Query.
 
     ![](../media/lab-03/image25.png)
 
-    Verremo indirizzati all\'editor di query visive. Ora salviamo la query
+    Verremo indirizzati all'editor di query visive. Ora salviamo la query
 come vista.
 
-    * **Nota**: tutti i passaggi eseguiti mediante l\'editor di Power Query
-possono anche essere eseguiti usando l\'editor di query visive.
+    * **Nota**: tutti i passaggi eseguiti mediante l'editor di Power Query
+possono anche essere eseguiti usando l'editor di query visive.
 
 30. Dal menu Editor di query visive selezionare **Salva come
     visualizzazione**.
@@ -407,15 +407,15 @@ rivedere la query se si desidera verificare il codice SQL.
 
 Ora creeremo la vista Reseller unendo la tabella Customers alla tabella
 BuyingGroups. Questa volta creeremo la vista usando una query visiva
-senza aprire l\'opzione Power Query.
+senza aprire l'opzione Power Query.
 
 1. Nel menu in alto fare clic sul menu a discesa accanto a **Nuova
-    query SQL (1)**, quindi selezionare\
+    query SQL (1)**, quindi selezionare
     **Nuova query visiva (2)**.
 
 2. Per creare una query, dobbiamo aggiungere tabelle nel pannello Query
     visiva. Fare clic sui puntini di sospensione accanto alla tabella
-    **BuyingGroups (1)** e selezionare **Inserisci nell\'area di disegno
+    **BuyingGroups (1)** e selezionare **Inserisci nell'area di disegno
     (2)**.
 
    ![](../media/lab-03/image29.png)
@@ -423,13 +423,13 @@ senza aprire l\'opzione Power Query.
 3. Ripetere gli stessi passaggi per la tabella **Customers**.
 
 4. **Selezionare la query Customers**. Dopo la selezione, Customers
-    avrà un segno \"**+**\" dopo Table\
+    avrà un segno "**+**" dopo Table
     (ciò indica che si aggiunge un passaggio dopo Table). Se dopo Table
-    non è visibile alcun segno **\"+\"**, è possibile che si sia
+    non è visibile alcun segno **"+"**, è possibile che si sia
     selezionato un passaggio diverso. Selezionare Table e il problema
     è risolto).
 
-5. Nel menu Query visiva selezionare **Combina -\> Esegui merge di
+5. Nel menu Query visiva selezionare **Combina -> Esegui merge di
     query**.
 
    ![](../media/lab-03/image30.png)
@@ -437,11 +437,11 @@ senza aprire l\'opzione Power Query.
    Si apre la finestra di dialogo Unione con Customers selezionato come
 tabella superiore.
 
-6. Nella **tabella di destra per l\'unione** selezionare
+6. Nella **tabella di destra per l'unione** selezionare
     **BuyingGroups**.
 
 7. Selezionare le colonne **BuyingGroupID** da entrambe le tabelle.
-    Useremo questa colonna\
+    Useremo questa colonna
     per creare un join.
 
 8. Selezionare **Inner** come **Tipo di join**.
@@ -451,7 +451,7 @@ tabella superiore.
    ![](../media/lab-03/image31.png)
 
 10. Nella **vista dati** (pannello inferiore) fare clic sulla **freccia
-    doppia** accanto alla colonna\
+    doppia** accanto alla colonna
     **BuyingGroups** (ultima colonna a destra) per selezionare le
     colonne necessarie da BuyingGroups.
 
@@ -464,7 +464,7 @@ tabella superiore.
     Non sono necessarie tutte le colonne della tabella Customer.
 Selezioniamo solo quelle di cui abbiamo bisogno.
 
-13. Dal menu della query visiva selezionare **Gestisci colonne -\>
+13. Dal menu della query visiva selezionare **Gestisci colonne ->
     Scegli colonne**.
 
     ![](../media/lab-03/image33.png)
@@ -503,7 +503,7 @@ Selezioniamo solo quelle di cui abbiamo bisogno.
     ![](../media/lab-03/image34.png)
 
 16. Rinominiamo la colonna BuyingGroupName. Nella **vista Dati fare
-    doppio clic sull\'intestazione della colonna BuyingGroupName** per
+    doppio clic sull'intestazione della colonna BuyingGroupName** per
     renderla modificabile.
 
 17. **Rinominare** la colonna in **ResellerCompany**.
@@ -521,7 +521,7 @@ la vista.
 
     ![](../media/lab-03/image36.png)
 
-    - **Nota**: se l\'opzione Abilita caricamento è selezionata, la casella **Customer** deve avere un bordo blu.
+    - **Nota**: se l'opzione Abilita caricamento è selezionata, la casella **Customer** deve avere un bordo blu.
 
 20. Dal menu Query visiva selezionare **Salva come visualizzazione**.
 
@@ -547,7 +547,7 @@ la vista.
 
 Ora creeremo la vista Sales, unendo le tabelle InvoiceLineItems e
 Invoices e la vista Reseller. Abbiamo questa query in Power BI Desktop.
-Copieremo il codice dall\'Editor avanzato. Ma prima di copiare
+Copieremo il codice dall'Editor avanzato. Ma prima di copiare
 il codice, dobbiamo creare una tabella di unione usando Query visiva,
 poiché in Query visiva non è possibile creare una query vuota. Proviamo
 a usare questo metodo.
@@ -557,34 +557,34 @@ a usare questo metodo.
 
    ![](../media/lab-03/image40.png)
 
-2. Nella sezione **Explorer -\> Tabella** è necessario aggiungere
+2. Nella sezione **Explorer -> Tabella** è necessario aggiungere
     tabelle nel pannello Query visiva. Fare clic sui puntini di
     sospensione accanto alla tabella **InvoiceLineItems** e selezionare
-    **Inserisci nell\'area di disegno**.
+    **Inserisci nell'area di disegno**.
 
 3. Ripetere gli stessi passaggi per la tabella **Invoices**.
 
-4. Nella sezione **Explorer -\> Viste** è necessario aggiungere tabelle
+4. Nella sezione **Explorer -> Viste** è necessario aggiungere tabelle
     nel pannello Query visiva. Fare clic sui puntini di sospensione
     accanto alla tabella **Reseller** e selezionare **Inserisci
-    nell\'area di disegno**.
+    nell'area di disegno**.
 
-5. Nell\'editor di query visive selezionare l\'icona **Apri in popup**
-    per aprire l\'editor di Power Query.
+5. Nell'editor di query visive selezionare l'icona **Apri in popup**
+    per aprire l'editor di Power Query.
 
    ![](../media/lab-03/image41.png)
 
 6. Con la query **InvoiceLineItems** selezionata, nella barra
-    multifunzione selezionare **Home (2) -\> Combina (3) -\> Elenco a
-    discesa Esegui merge di query (4) -\> Esegui merge di query come
+    multifunzione selezionare **Home (2) -> Combina (3) -> Elenco a
+    discesa Esegui merge di query (4) -> Esegui merge di query come
     nuova (5).** Si apre la finestra di dialogo Esegui merge di query.
 
    ![](../media/lab-03/image42.png)
 
-7. Nella **tabella di sinistra per l\'unione** selezionare
+7. Nella **tabella di sinistra per l'unione** selezionare
     **InvoiceLineItems**.
 
-8. Nella **tabella di destra per l\'unione** selezionare **Invoices**.
+8. Nella **tabella di destra per l'unione** selezionare **Invoices**.
 
 9. Selezionare le colonne **InvoiceID** da entrambe le tabelle. Useremo
     questa colonna per creare un join.
@@ -595,13 +595,13 @@ a usare questo metodo.
 
     ![](../media/lab-03/image43.png)
 
-    Copiamo il codice da Power BI Desktop e lo incolliamo usando l\'Editor
+    Copiamo il codice da Power BI Desktop e lo incolliamo usando l'Editor
 avanzato.
 
 12. Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** nella
-    cartella **Reports** sul desktop dell\'ambiente lab.
+    cartella **Reports** sul desktop dell'ambiente lab.
 
-13. Nella barra multifunzione selezionare **Home -\> Trasforma dati**.
+13. Nella barra multifunzione selezionare **Home -> Trasforma dati**.
     Si apre la finestra Power Query. Come si è notato nel lab
     precedente, le query nel pannello di sinistra sono organizzate per
     origine dati.
@@ -611,39 +611,39 @@ avanzato.
 14. Nel pannello di sinistra **Query**, nella cartella **ADLSData**
     **(1)** selezionare la query **Sales (2).**
 
-15. Nella barra multifunzione selezionare **Home - \> Editor avanzato
-    (3)**. Si apre la finestra di dialogo dell\'Editor avanzato.
+15. Nella barra multifunzione selezionare **Home - > Editor avanzato
+    (3)**. Si apre la finestra di dialogo dell'Editor avanzato.
 
     ![](../media/lab-03/image45.png)
 
-    - **Nota:** se non si riesce a trovare l\'Editor avanzato, è possibile
-accedervi in \
-**Home -\> Query -\> Editor avanzato**.
+    - **Nota:** se non si riesce a trovare l'Editor avanzato, è possibile
+accedervi in 
+**Home -> Query -> Editor avanzato**.
 
-16. **Selezionare li codice dalla riga 3** (#\"Expanded Invoice\" ...)
-    fino all\'ultima riga di codice.
+16. **Selezionare li codice dalla riga 3** (#"Expanded Invoice" ...)
+    fino all'ultima riga di codice.
 
 17. **Fare clic con il pulsante destro del mouse** e selezionare
     **Copy**.
 
-18. Selezionare **Annulla** per chiudere l\'Editor avanzato.
+18. Selezionare **Annulla** per chiudere l'Editor avanzato.
 
     ![](../media/lab-03/image46.png)
 
 19. **Tornare alla finestra/scheda del browser** in cui è aperto
-    l\'editor di Power Query.
+    l'editor di Power Query.
 
 20. Accertarsi di aver selezionato la query **Merge**.
 
-21. Nella barra multifunzione selezionare **Home -\> Editor avanzato**.
-    Viene visualizzata\
-    la finestra di dialogo dell\'editor avanzato.
+21. Nella barra multifunzione selezionare **Home -> Editor avanzato**.
+    Viene visualizzata
+    la finestra di dialogo dell'editor avanzato.
 
     ![](../media/lab-03/image47.png)
 
 22. Alla **fine della riga 2 aggiungere una virgola** (Source =
-    Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"}, Invoices,
-    {\"InvoiceID\"}, \"Invoices\", JoinKind.Inner),
+    Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices,
+    {"InvoiceID"}, "Invoices", JoinKind.Inner),
 
 23. Fare clic su **INVIO** per iniziare una nuova riga.
 
@@ -667,7 +667,7 @@ disabilitare questa opzione.
 
     ![](../media/lab-03/image50.png)
 
-    Se è più semplice, eliminare tutto il codice nell\'editor avanzato e
+    Se è più semplice, eliminare tutto il codice nell'editor avanzato e
 incollare il codice sottostante.
 
       ```
@@ -684,7 +684,7 @@ incollare il codice sottostante.
           #"Removed Columns"
       ```
 
-27. Si tornerà all\'editor di Power Query. A sinistra, nel pannello
+27. Si tornerà all'editor di Power Query. A sinistra, nel pannello
     Query, **fare doppio clic sulla query Merge** per rinominarla.
 
 28. **Rinominare** la query Merge in **Sales**.
@@ -696,7 +696,7 @@ incollare il codice sottostante.
     ![](../media/lab-03/image51.png)
 
 30. Selezionare **Salva** per salvare e chiudere la finestra di dialogo
-    Power Query. Verremo indirizzati all\'editor di query visive.
+    Power Query. Verremo indirizzati all'editor di query visive.
 
 31. Dal menu Query visiva selezionare **Salva come visualizzazione**. Si
     apre la finestra di dialogo Salva come visualizzazione. La query SQL
@@ -719,17 +719,17 @@ incollare il codice sottostante.
 
 Ora creeremo la vista Product unendo le tabelle **ProductItem**,
 **ProductItemGroup** e **ProductGroups**. Per procedere, copieremo il
-codice nell\'Editor avanzato.
+codice nell'Editor avanzato.
 
 1. Nel menu in alto fare clic sul menu a discesa accanto a **Nuova
-    query SQL (1)**, quindi selezionare\
+    query SQL (1)**, quindi selezionare
     **Nuova query visiva (2).**
 
    ![](../media/lab-03/image54.png)
 
 2. Nella sezione Explorer dobbiamo aggiungere tabelle nel pannello
     Query visiva. Fare clic sui puntini di sospensione accanto alla
-    tabella **ProductItem (1)** e selezionare **Inserisci nell\'area di
+    tabella **ProductItem (1)** e selezionare **Inserisci nell'area di
     disegno (2)**.
 
    ![](../media/lab-03/image55.png)
@@ -737,26 +737,26 @@ codice nell\'Editor avanzato.
 3. Ripetere gli stessi passaggi per le tabelle **ProductItemGroup** e
     **ProductGroups**.
 
-4. Nell\'editor di query visive selezionare l\'**icona Modalità messa a
-    fuoco** per aprire l\'editor di Power Query.
+4. Nell'editor di query visive selezionare l'**icona Modalità messa a
+    fuoco** per aprire l'editor di Power Query.
 
    ![](../media/lab-03/image56.png)
 
 5. Con la query **ProductItem** selezionata **(1),** nella barra
-    multifunzione selezionare **Home (2) -\> Combina (3) -\> Elenco a
-    discesa Esegui merge di query (4)** **-\> Esegui merge di query come
+    multifunzione selezionare **Home (2) -> Combina (3) -> Elenco a
+    discesa Esegui merge di query (4)** **-> Esegui merge di query come
     nuova (5)**. Si apre la finestra di dialogo Unione.
 
    ![](../media/lab-03/image57.png)
 
-6. Nella **tabella di sinistra per l\'unione** selezionare
+6. Nella **tabella di sinistra per l'unione** selezionare
     **ProductItem**.
 
-7. Nella **tabella di destra per l\'unione** selezionare
+7. Nella **tabella di destra per l'unione** selezionare
     **ProductItemGroup**.
 
 8. Selezionare le colonne **StockItemID** da entrambe le tabelle.
-    Useremo questa colonna\
+    Useremo questa colonna
     per creare un join.
 
 9. Selezionare **Left outer** come **Tipo di join**.
@@ -766,18 +766,18 @@ codice nell\'Editor avanzato.
     ![](../media/lab-03/image58.png)
 
 11. Con la query Merge selezionata, nella barra multifunzione
-    selezionare **Home -\> Editor avanzato**. Si apre la finestra di
-    dialogo dell\'Editor avanzato.
+    selezionare **Home -> Editor avanzato**. Si apre la finestra di
+    dialogo dell'Editor avanzato.
 
     ![](../media/lab-03/image59.png)
 
-    - **Nota:** se non si riesce a trovare l\'Editor avanzato, è possibile
-accedervi in **Home -\> Query -\> Editor avanzato**.
+    - **Nota:** se non si riesce a trovare l'Editor avanzato, è possibile
+accedervi in **Home -> Query -> Editor avanzato**.
 
-12. **Selezionare tutto il codice** nell\'Editor avanzato ed
+12. **Selezionare tutto il codice** nell'Editor avanzato ed
     **eliminarlo**.
 
-13. **Incollare** il codice di seguito nell\'Editor avanzato.
+13. **Incollare** il codice di seguito nell'Editor avanzato.
 
     ```
     let
@@ -790,8 +790,8 @@ accedervi in **Home -\> Query -\> Editor avanzato**.
        #"Choose columns"
     ```
 
-14. Selezionare **OK** per chiudere l\'Editor avanzato. Si aprirà
-    nuovamente l\'editor di Power Query.
+14. Selezionare **OK** per chiudere l'Editor avanzato. Si aprirà
+    nuovamente l'editor di Power Query.
 
     ![](../media/lab-03/image60.png)
 
@@ -827,13 +827,13 @@ accedervi in **Home -\> Query -\> Editor avanzato**.
 
     ![](../media/lab-03/image63.png)
 
-    Abbiamo trasformato i dati dall\'origine dati ADLS Gen2. In questo
+    Abbiamo trasformato i dati dall'origine dati ADLS Gen2. In questo
 laboratorio è stato spiegato come creare collegamenti e sono state
-illustrate varie opzioni per usare le viste di query visive per\
+illustrate varie opzioni per usare le viste di query visive per
 trasformare i dati.
 
     Nel prossimo lab verrà descritto come usare Dataflow Gen2 e creare un
-collegamento\
+collegamento
 a un altro lakehouse.
 
 # Riferimenti
@@ -845,9 +845,9 @@ Guida (?) include collegamenti ad alcune risorse utili.
 ![](../media/lab-03/image64.png)
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di
-progredire nell\'uso di Microsoft Fabric.
+progredire nell'uso di Microsoft Fabric.
 
-- Vedere il post di blog per leggere l\'[annuncio completo sulla
+- Vedere il post di blog per leggere l'[annuncio completo sulla
     disponibilità generale
     di Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
@@ -866,33 +866,33 @@ progredire nell\'uso di Microsoft Fabric.
 - Consultare la [documentazione tecnica di
     Fabric](https://aka.ms/fabric-docs)
 
-- Leggere l\'[e-book gratuito introduttivo a
+- Leggere l'[e-book gratuito introduttivo a
     Fabric](https://aka.ms/fabric-get-started-ebook)
 
 - Unirsi alla [community di Fabric](https://aka.ms/fabric-community)
-    per pubblicare domande, condividere feedback\
+    per pubblicare domande, condividere feedback
     e imparare dagli altri
 
-Leggere i blog di annunci più approfonditi sull\'esperienza Fabric:
+Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
 
-- [Blog sull\'esperienza Data Factory in
+- [Blog sull'esperienza Data Factory in
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
-- [Blog sull\'esperienza Synapse Data Engineering in
+- [Blog sull'esperienza Synapse Data Engineering in
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
-- [Blog sull\'esperienza Synapse Data Science in
+- [Blog sull'esperienza Synapse Data Science in
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
-- [Blog sull\'esperienza Synapse Data Warehousing in
+- [Blog sull'esperienza Synapse Data Warehousing in
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
-- [Blog sull\'esperienza Synapse Real-Time Analytics in
+- [Blog sull'esperienza Synapse Real-Time Analytics in
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
 - [Blog di annunci di Power BI](https://aka.ms/Fabric-PBI-Blog)
 
-- [Blog sull\'esperienza Data Activator in
+- [Blog sull'esperienza Data Activator in
     Fabric](https://aka.ms/Fabric-DA-Blog) 
 
 - [Blog su amministrazione e governance in
@@ -900,20 +900,20 @@ Leggere i blog di annunci più approfonditi sull\'esperienza Fabric:
 
 - [Blog su OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
-- [Blog sull\'integrazione di Dataverse e Microsoft
+- [Blog sull'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
 
-L\'uso della demo/del lab implica l\'accettazione delle seguenti
+L'uso della demo/del lab implica l'accettazione delle seguenti
 condizioni:
 
 La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite
-da Microsoft Corporation allo scopo di ottenere feedback dall\'utente e
-offrire un\'esperienza di apprendimento. L\'utilizzo della demo/del lab
+da Microsoft Corporation allo scopo di ottenere feedback dall'utente e
+offrire un'esperienza di apprendimento. L'utilizzo della demo/del lab
 è consentito solo per la valutazione delle caratteristiche e delle
-funzionalità di tale tecnologia e per l\'invio di feedback a Microsoft.
-L\'utilizzo per qualsiasi altro scopo non è consentito. È vietato
+funzionalità di tale tecnologia e per l'invio di feedback a Microsoft.
+L'utilizzo per qualsiasi altro scopo non è consentito. È vietato
 modificare, copiare, distribuire, trasmettere, visualizzare, eseguire,
 riprodurre, pubblicare, concedere in licenza, usare per la creazione di
 lavori derivati, trasferire o vendere questa demo/questo lab o parte di
@@ -926,16 +926,16 @@ QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
 QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
 SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
 NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
-UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
+UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
 SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN
 QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
 COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
 VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
-FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
+FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI
 TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ RISULTARE DIVERSA IN UN AMBIENTE
 FISICO.
 
-**FEEDBACK**. L\'invio a Microsoft di feedback sulle caratteristiche,
+**FEEDBACK**. L'invio a Microsoft di feedback sulle caratteristiche,
 sulle funzionalità e/o sui concetti della tecnologia descritti in questa
 demo/questo lab implica la concessione a Microsoft, a titolo gratuito,
 del diritto di utilizzare, condividere e commercializzare tale feedback
@@ -943,8 +943,8 @@ in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a
 titolo gratuito a terze parti del diritto di utilizzo di eventuali
 brevetti necessari per i loro prodotti, le loro tecnologie e i loro
 servizi al fine di utilizzare o interfacciarsi ai componenti software o
-ai servizi Microsoft specifici che includono il feedback. L\'utente si
-impegna a non inviare feedback la cui inclusione all\'interno di
+ai servizi Microsoft specifici che includono il feedback. L'utente si
+impegna a non inviare feedback la cui inclusione all'interno di
 software o documentazione Microsoft imponga a Microsoft di concedere in
 licenza a terze parti tale software o documentazione. Questi diritti
 sussisteranno anche dopo la scadenza del presente contratto.
@@ -954,8 +954,8 @@ CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
 CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE
 DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON
 VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN
-RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E DELL\'OUTPUT DERIVANTI
-DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA DELLE INFORMAZIONI
+RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI
+DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI
 CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
 
 **CLAUSOLA DI RESPONSABILITÀ**
