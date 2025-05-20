@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 1
 
+![](../media/lab-01/Lab1Image.jpeg)
+
 # Sommario	
 - Struttura del documento	
 - Scenario/Esposizione del problema	
