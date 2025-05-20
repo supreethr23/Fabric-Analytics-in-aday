@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 3
 
+![](../media/lab-03/Lab3Image.png)
+
 # Sommario
 - Introduzione	
 - Collegamento ad ADLS Gen2	
