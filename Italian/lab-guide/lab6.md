@@ -36,8 +36,7 @@ In questo lab si apprenderà quanto segue:
 
 ### Attività 1: Query sui dati mediante SQL
 
-1. Torniamo all\'area di lavoro di Fabric FAIAD\_\<nome utente\> creata
-    nel Lab 2, Attività 8.
+1. Torniamo all\'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** creata nel Lab 2, Attività 2.
 
 2. Se si preferisce, è possibile **ridurre a icona il flusso di
     attività** per visualizzare l\'elenco completo degli elementi.
@@ -144,7 +143,7 @@ queste opzioni in questo corso.
     report**.
 
 9. Assicurarsi che l\'area di lavoro di destinazione sia l\'area di
-    lavoro di Fabric, **FAIAD\_\<nome utente\>**
+    lavoro di Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 10. Selezionare **Salva**.
 

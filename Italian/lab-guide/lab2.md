@@ -34,24 +34,24 @@ In questo lab si apprenderà quanto segue:
 
 - Creare un lakehouse
 
-## Licenza di Fabric
+# Licenza di Fabric
 
 ### Attività 1 - Abilitazione di una licenza di valutazione per Microsoft Fabric
 
 1. Aprire il **browser** e andare al [portale di Microsoft Power
     BI](https://app.powerbi.com/). Si aprirà la pagina di accesso.
 
-    ***Nota:** se si usa l\'ambiente lab, si può effettuare l\'accesso
+    >**Nota:** se si usa l\'ambiente lab, si può effettuare l\'accesso
     direttamente.*
 
-    ***Nota:** se non si usa l\'ambiente lab e si dispone di un account
+    >**Nota:** se non si usa l\'ambiente lab e si dispone di un account
     Power BI esistente, potrebbe essere opportuno usare il browser in
     modalità privata o in incognito.*
 
 2. Copiare il nome utente e incollarlo nel campo Posta elettronica
     della finestra di dialogo, quindi selezionare Invia.
 
-    - **E-mail/Nome utente:** disponibili nella scheda Ambiente
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/lab-02/image6.png)
 
@@ -59,13 +59,13 @@ In questo lab si apprenderà quanto segue:
     accesso visualizzata nella scheda **Accedi a Microsoft Azure**,
     quindi fare clic su **Avanti**.
 
-    - **E-mail/Nome utente:** disponibili nella scheda Ambiente
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/lab-02/image7.png)
 
 4. Immettere la **Password** seguente e fare clic su **Accedi**.
 
-    - **Password:** disponibile nella scheda Ambiente
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/lab-02/image8.png)
 
@@ -117,10 +117,9 @@ Avviare la configurazione.
 3. Si apre la finestra di dialogo **Crea un\'area di lavoro** sul lato
     destro del browser.
 
-4. Nel campo **Nome** immettere FAIAD_UserID (disponibile nella scheda
-    Ambiente)
+4. Nel campo **Nome** immettere **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
-   ***Nota:** il nome dell\'area di lavoro deve essere univoco. Assicurarsi
+    >**Nota:** il nome dell\'area di lavoro deve essere univoco. Assicurarsi
 che sotto il campo Nome sia presente un segno di spunta verde e che sia
 indicato \"Questo nome è disponibile\".*
 
@@ -146,10 +145,7 @@ passaggio consiste nel creare un lakehouse.
 
 ### Attività 3 - Creazione di un lakehouse
 
-1. Nella nuova area di lavoro **FAIAD_Username** individuare il
-    pulsante **+ Nuovo elemento (1)** nel riquadro di spostamento a
-    sinistra. Qui è possibile iniziare a creare nuovi elementi
-    nell\'area di lavoro.
+1. Nella nuova area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** individuare il pulsante **+ Nuovo elemento (1)** nel riquadro di spostamento a sinistra. Qui è possibile iniziare a creare nuovi elementi nell\'area di lavoro.
 
 2. Nella casella di ricerca digitare **Lakehouse (2)** e, dai risultati
     della ricerca, selezionare l\'opzione **Lakehouse (3)**. Si creerà

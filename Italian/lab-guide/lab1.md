@@ -91,7 +91,7 @@ modello.
 Si è sentito parlare di Microsoft Fabric e si è deciso di provarlo per
 verificare se può risolvere queste problematiche.
 
-### **Panoramica del report di Power BI Desktop**
+# Panoramica del report di Power BI Desktop
 
 Prima di iniziare con Fabric, esaminiamo l\'attuale report in Power BI
 Desktop per comprendere le trasformazioni e il modello.
@@ -111,6 +111,8 @@ Desktop per comprendere le trasformazioni e il modello.
 3. Copiare il **nome utente** e incollarlo nella casella di testo
     **E-mail** della finestra di dialogo.
 
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+
 4. Selezionare **Continua**.
 
    ![](../media/lab-01/image8.png)
@@ -118,10 +120,14 @@ Desktop per comprendere le trasformazioni e il modello.
 5. Si apre la finestra di dialogo Accedi. Immettere nuovamente il
     **nome utente** copiandolo nella scheda **Dettagli ambiente**.
 
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+
 6. Selezionare **Avanti**.
 
 7. Nella finestra di dialogo successiva immettere le **Credenziali** e
     la **Password** copiandole dalla scheda **Dettagli ambiente**.
+
+    * Password: <inject key="AzureAdUserPassword"></inject>
 
 8. Selezionare **Accedi**.
 
@@ -276,9 +282,9 @@ passaggi successivi.
     immettendo **Nome utente** e **Password**. Le credenziali sono
     fornite di seguito. Selezionare **Connetti**.
 
-    - **E-mail/Nome utente**: disponibili nella scheda Ambiente
+    - Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-    - **Password:** disponibile nella scheda Ambiente
+    - Password: <inject key="AzureAdUserPassword"></inject>
 
 9. Fare clic sulla query **ADLS Base Folder** nella finestra Query.
     Alla selezione di questa query verranno richieste le credenziali.
@@ -290,7 +296,7 @@ passaggi successivi.
     **condiviso (SAS)** e immettere il **token SAS** fornito in
     precedenza. Selezionare **Connetti**.
 
-    - **Token SAS:** disponibile nella scheda Ambiente
+    - **SAS token:** <inject key="Sas token"></inject>
 
     ![](../media/lab-01/image23.png)
 
@@ -320,11 +326,11 @@ passaggi successivi.
     forniti di seguito. Usare queste credenziali per connettere tutte le
     tabelle in Snowflake a Snowflake, quindi selezionare Connetti.
 
-    - **Nome utente Snowflake:** TE_SNOWFLAKE1
+    * **Snowflake Username:** <inject key="SnowFlake Username"></inject>
+    
+    * **Snowflake Password:** <inject key="SnowFlake Password"></inject>
 
-    - **Password Snowflake:** 8UpfRpExVDXv2AC1
-
-    - ***Nota**: se si verificano problemi di connessione a Snowflake usando le credenziali dei dettagli dell\'ambiente, usare le credenziali di backup fornite nella scheda Ambiente.
+    - **Nota**: se si verificano problemi di connessione a Snowflake usando le credenziali dei dettagli dell\'ambiente, usare le credenziali di backup fornite nella scheda Ambiente.
 
 14. Notare che la cartella SnowflakeData include la dimensione Supplier
     e il fatto PO (ordine/spesa).
@@ -344,9 +350,9 @@ passaggi successivi.
     **Accedi**. Immettere il nome utente e la password forniti di
     seguito, quindi selezionare Connetti.
 
-    - **E-mail/Nome utente:** disponibili nella scheda Ambiente
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-    - **Password:** disponibile nella scheda Ambiente
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
     ![](../media/lab-01/image26.png)
 

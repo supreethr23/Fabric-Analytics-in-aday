@@ -46,7 +46,7 @@ Iniziamo usando l\'opzione di creazione automatica del report. Più
 avanti nel lab, creeremo nuovamente il report presente in Power BI.
 
 1. Torniamo **all\'area di lavoro di Fabric** creata nel Lab 2, di nome
-    **FAIAD\_\<nome utente\>**.
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 2. Nella parte inferiore del pannello di sinistra selezionare l\'icona
     **selettore esperienza in Fabric**.
@@ -114,13 +114,13 @@ liberamente queste opzioni.
     rpt, ovvero l\'abbreviazione di report.
 
 11. Assicurarsi che il report sia salvato nell\'area di lavoro
-    **FAIAD\_\<nome utente\>.**
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
 12. Selezionare **Salva.**
 
     ![](../media/lab-07/image12.png)
 
-    - **Nota:** il report creato automaticamente potrebbe avere un aspetto
+    >**Nota:** il report creato automaticamente potrebbe avere un aspetto
 diverso poiché è stato \"creato automaticamente\". Dipende anche dalle
 relazioni e dalle misure create nel lab precedente (Lab 6).
 
@@ -139,7 +139,7 @@ facoltative (Lab 6).
 Creiamo un nuovo report usando un\'area di disegno vuota.
 
 1. Nel **pannello di sinistra** selezionare il nome dell\'area di
-    lavoro, **FAIAD\_\<nome utente\>**, per tornare a essa.
+    lavoro, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, per tornare a essa.
 
 2. Nel menu in alto selezionare **Nuovo elemento** -\> **Report**. Si
     aprirà la pagina per creare il primo report.
@@ -320,7 +320,7 @@ modello.
     rpt, ovvero l\'abbreviazione di report.
 
 3. Assicurarsi che il report sia salvato nell\'area di lavoro
-    **FAIAD\_\<nome utente\>.**
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (2)**
 
 4. Selezionare **Salva.** Notare che il report è stato salvato ed è
     attiva la modalità di visualizzazione.
@@ -573,7 +573,7 @@ al file di maggio 2024 in ADLS Gen2 e aggiornando la vista Sales.
 
 1. Tornare al **browser**.
 
-2. Selezionare **FAIAD\_\<nome utente\>** nella barra dei menu di
+2. Selezionare **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** nella barra dei menu di
     sinistra per andare alla home page dell\'area di lavoro.
 
 3. Selezionare **lh_FAIAD** per spostarsi nel lakehouse.
@@ -856,7 +856,7 @@ software nei nostri desktop.
 Quando si è pronti a eseguire la pulizia dell\'ambiente lab, effettuare
 i passaggi seguenti.
 
-1. Selezionare l\'area di lavoro **FAIAD\_\<nome utente\>** nel
+1. Selezionare l\'area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** nel
     pannello di sinistra per andare alla home page dell\'area di lavoro.
 
 2. Dal menu in alto selezionare **Area di lavoro e impostazioni**.

@@ -66,7 +66,7 @@ In questo lab si imparerà a:
 Iniziamo con la configurazione di un aggiornamento pianificato del
 flusso di dati dei fornitori.
 
-1. Torniamo all\'area di lavoro Fabric, **FAIAD\_\<username\>**
+1. Torniamo all\'area di lavoro Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     selezionando l\'area di lavoro nel pannello a sinistra.
 
 2. Per ingrandire il pannello con l\'elenco degli artefatti,
@@ -173,8 +173,7 @@ per risolvere questo problema.
 
 ### Attività 2 - Creazione di una pipeline di dati
 
-1. Torniamo all\'area di lavoro di Fabric, **FAIAD\_\<nome utente\>**
-    selezionandola nel pannello di sinistra.
+1. Torniamo all\'area di lavoro di Fabric,  **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** selezionandola nel pannello di sinistra.
 
 2. Nel menu in alto selezionare **+ Nuovo elemento (1) -\> Pipeline di
     dati (2)**.
@@ -239,7 +238,7 @@ aggiornare il flusso di dati. Troviamo un\'attività che possiamo usare.
     **Impostazioni**.
 
 3. Assicurarsi che l\'**Area di lavoro** sia impostata sull\'area di
-    lavoro di Fabric **FAIAD\_\<nomeutente\>.**
+    lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 4. Nel menu a discesa **Flusso di dati** selezionare
     **df_People_SharePoint**. Quando questa attività Flusso di dati
@@ -304,8 +303,7 @@ saranno necessari 15 minuti affinché il file sia disponibile. Vogliamo
 pianificare i nuovi tentativi a cinque e 15 minuti. Vediamo come è
 possibile ottenere questo risultato creando una nuova pipeline di dati.
 
-1. Nel pannello di sinistra fare clic su **FAIAD\_\<nome utente\>** per
-    andare alla home page dell\'area di lavoro.
+1. Nel pannello di sinistra fare clic su **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** per andare alla home page dell\'area di lavoro.
 
 2. Nel menu in alto fare clic su **+ Nuovo elemento (1)** e nella
     finestra popup fare clic su **Pipeline di dati (2)**.
@@ -548,7 +546,7 @@ varCounter è uguale a 3.
 7. Selezionare **Impostazioni** nel riquadro inferiore.
 
 8. Assicurarsi che l\'**Area di lavoro** sia impostata sulla propria
-    area di lavoro **FAIAD\_\<nomeutente\>**.
+    area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 9. Nel menu a discesa **Flusso di dati** selezionare
     **df_People_SharePoint**.
@@ -865,18 +863,12 @@ o all\'ubicazione dell\'origine dati.
 
     ![](../media/lab-05/image50.png)
 
-11. Selezionare l\'area di lavoro di Fabric **FAIAD\_\<nome utente\>**
+11. Selezionare l\'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     nel pannello di sinistra per andare all\'area di lavoro**.**
 
-    - **Nota:** nella schermata Pianificazione non vi è un\'opzione per la
-notifica dell\'esito positivo o negativo (come nella pianificazione del
-flusso di dati). È possibile impostare la notifica aggiungendo
-un\'attività nella pipeline di dati. Non effettueremo questa
-impostazione in questo lab poiché si tratta di un ambiente lab.
+    >**Nota:** nella schermata Pianificazione non vi è un\'opzione per la notifica dell\'esito positivo o negativo (come nella pianificazione del flusso di dati). È possibile impostare la notifica aggiungendo un\'attività nella pipeline di dati. Non effettueremo questa impostazione in questo lab poiché si tratta di un ambiente lab.
 
-Abbiamo pianificato gli aggiornamenti per le diverse origini dati. Nel
-prossimo lab creeremo un modello semantico con relazioni, misure e altre
-operazioni di modellazione.
+    Abbiamo pianificato gli aggiornamenti per le diverse origini dati. Nel prossimo lab creeremo un modello semantico con relazioni, misure e altre operazioni di modellazione.
 
 # Riferimenti
 
