@@ -177,7 +177,7 @@ selecionado.
 
     ![](../media/lab-03/image12.png)
 
-A próxima etapa é transformar os dados, para que possamos criar um
+    A próxima etapa é transformar os dados, para que possamos criar um
 modelo semântico. Vamos criar exibições para transformar os dados.
 
 # Transformar dados usando uma consulta Visual
