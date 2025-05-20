@@ -624,7 +624,7 @@ e atualizando a exibição Sales.
 
     ![](../media/lab-07/image50.png)
 
-Observe no **painel Explorer** à esquerda, agora temos a tabela
+    Observe no **painel Explorer** à esquerda, agora temos a tabela
 InvoicesMay. Agora precisamos atualizar a exibição Sales.
 
 18. No **canto superior direito** da tela, selecione **Lakehouse -\>
