@@ -124,13 +124,10 @@ liberamente queste opzioni.
 diverso poiché è stato \"creato automaticamente\". Dipende anche dalle
 relazioni e dalle misure create nel lab precedente (Lab 6).
 
-Lo screenshot precedente mostra come **potrebbe** apparire il report
+    Lo screenshot precedente mostra come **potrebbe** apparire il report
 creato automaticamente se si fossero create tutte le relazioni e le
 misure, incluse le relazioni facoltative (Lab 6).
 
-Lo screenshot seguente mostra come **potrebbe** apparire il report
-creato automaticamente se non si fossero create le relazioni e le misure
-facoltative (Lab 6).
 
     ![](../media/lab-07/image13.png)
 
