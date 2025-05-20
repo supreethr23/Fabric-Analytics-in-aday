@@ -34,7 +34,7 @@ In questo lab si apprenderà quanto segue:
 
 # Lakehouse: analisi di dati
 
-### Attività 1: Query sui dati mediante SQL
+## Attività 1: Query sui dati mediante SQL
 
 1. Torniamo all\'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** creata nel Lab 2, Attività 2.
 
@@ -103,7 +103,7 @@ anche nella cartella My queries.
 
     ![](../media/lab-06/image8.png)
 
-### Attività 2: Visualizzazione del risultato T-SQL
+## Attività 2: Visualizzazione del risultato T-SQL
 
 1. Possiamo anche visualizzare il risultato di questa query.
     **Evidenziare la query** nel riquadro delle query
@@ -153,7 +153,7 @@ queste opzioni in questo corso.
 
 # Lakehouse: modellazione semantica
 
-### Attività 3: Creazione di un modello semantico
+## Attività 3: Creazione di un modello semantico
 
 1. Aprire **l\'endpoint di Analisi SQL** dal lakehouse.
 
@@ -215,7 +215,7 @@ procederemo alla creazione di un nuovo modello semantico.
 
     ![](../media/lab-06/image17.png)
 
-### Attività 4: Creazione di relazioni
+## Attività 4: Creazione di relazioni
 
 Verrà visualizzato il nuovo modello semantico con le tabelle
 selezionate. È possibile **ridisporre** liberamente le tabelle in base
@@ -305,7 +305,7 @@ consente, è possibile completare la sezione facoltativa alla fine del
 laboratorio. La sezione facoltativa illustra i passaggi per creare le
 relazioni rimanenti.
 
-### Attività 5: Creazione delle misure
+## Attività 5: Creazione delle misure
 
 Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
@@ -392,7 +392,7 @@ per creare le misure rimanenti.
     Abbiamo creato un modello semantico, il passaggio successivo è creare un
 report. Ce ne occuperemo nel prossimo lab.
 
-### Attività 6: Sezione facoltativa: creazione delle relazioni
+## Attività 6: Sezione facoltativa: creazione delle relazioni
 
 Aggiungiamo le relazioni rimanenti.
 
@@ -498,7 +498,7 @@ screenshot seguente.
 
     ![](../media/lab-06/image35.png)
 
-### Attività 7: Sezione facoltativa: creazione delle misure
+## Attività 7: Sezione facoltativa: creazione delle misure
 
 Aggiungiamo le misure rimanenti.
 
@@ -599,67 +599,66 @@ Leggere i blog di annunci più approfonditi sull\'esperienza Fabric:
 - [Blog sull\'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
->
-> L\'uso della demo/del lab implica l\'accettazione delle seguenti
-> condizioni:
->
-> La tecnologia/le funzionalità descritte nella demo/nel lab sono
-> fornite da Microsoft Corporation allo scopo di ottenere feedback
-> dall\'utente e offrire un\'esperienza di apprendimento. L\'utilizzo
-> della demo/del lab è consentito solo per la valutazione delle
-> caratteristiche e delle funzionalità di tale tecnologia e per l\'invio
-> di feedback a Microsoft. L\'utilizzo per qualsiasi altro scopo non
-> è consentito. È vietato modificare, copiare, distribuire, trasmettere,
-> visualizzare, eseguire, riprodurre, pubblicare, concedere in licenza,
-> usare per la creazione di lavori derivati, trasferire o vendere questa
-> demo/questo lab o parte di essi.
->
-> SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
-> LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
-> QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O
-> RIDISTRIBUZIONE.
->
-> QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
-> SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
-> NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
-> UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
-> SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI
-> IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
-> COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
-> VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
-> FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
-> TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN
-> UN AMBIENTE FISICO.
->
-> **FEEDBACK**. L\'invio a Microsoft di feedback sulle caratteristiche,
-> sulle funzionalità e/o sui concetti della tecnologia descritti in
-> questa demo/questo lab implica la concessione a Microsoft, a titolo
-> gratuito, del diritto di utilizzare, condividere e commercializzare
-> tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche
-> la concessione a titolo gratuito a terze parti del diritto di utilizzo
-> di eventuali brevetti necessari per i loro prodotti, le loro
-> tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai
-> componenti software o ai servizi Microsoft specifici che includono il
-> feedback. L\'utente si impegna a non inviare feedback la cui
-> inclusione all\'interno di software o documentazione Microsoft imponga
-> a Microsoft di concedere in licenza a terze parti tale software o
-> documentazione. Questi diritti sussisteranno anche dopo la scadenza
-> del presente contratto.
->
-> CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O
-> CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
-> CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O
-> PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO,
-> TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O
-> RAPPRESENTAZIONI IN RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E
-> DELL\'OUTPUT DERIVANTI DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA
-> DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
->
-> **CLAUSOLA DI RESPONSABILITÀ**
->
-> Questa demo/questo lab contiene solo una parte delle nuove
-> funzionalità e dei miglioramenti in Microsoft Power BI. Alcune
-> funzionalità potrebbero cambiare nelle versioni future del prodotto.
-> In questa demo/in questo lab si apprendono alcune delle nuove
-> funzionalità, ma non tutte.
+© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+
+L\'uso della demo/del lab implica l\'accettazione delle seguenti
+condizioni:
+
+La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite
+da Microsoft Corporation allo scopo di ottenere feedback dall\'utente e
+offrire un\'esperienza di apprendimento. L\'utilizzo della demo/del lab
+è consentito solo per la valutazione delle caratteristiche e delle
+funzionalità di tale tecnologia e per l\'invio di feedback a Microsoft.
+L\'utilizzo per qualsiasi altro scopo non è consentito. È vietato
+modificare, copiare, distribuire, trasmettere, visualizzare, eseguire,
+riprodurre, pubblicare, concedere in licenza, usare per la creazione di
+lavori derivati, trasferire o vendere questa demo/questo lab o parte di
+essi.
+
+SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
+LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
+QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
+
+QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
+SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
+NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
+UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
+SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN
+QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
+COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
+VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
+FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
+TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ RISULTARE DIVERSA IN UN AMBIENTE
+FISICO.
+
+**FEEDBACK**. L\'invio a Microsoft di feedback sulle caratteristiche,
+sulle funzionalità e/o sui concetti della tecnologia descritti in questa
+demo/questo lab implica la concessione a Microsoft, a titolo gratuito,
+del diritto di utilizzare, condividere e commercializzare tale feedback
+in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a
+titolo gratuito a terze parti del diritto di utilizzo di eventuali
+brevetti necessari per i loro prodotti, le loro tecnologie e i loro
+servizi al fine di utilizzare o interfacciarsi ai componenti software o
+ai servizi Microsoft specifici che includono il feedback. L\'utente si
+impegna a non inviare feedback la cui inclusione all\'interno di
+software o documentazione Microsoft imponga a Microsoft di concedere in
+licenza a terze parti tale software o documentazione. Questi diritti
+sussisteranno anche dopo la scadenza del presente contratto.
+
+CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O
+CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
+CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE
+DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON
+VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN
+RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E DELL\'OUTPUT DERIVANTI
+DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA DELLE INFORMAZIONI
+CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
+
+**CLAUSOLA DI RESPONSABILITÀ**
+
+Questa demo/questo lab contiene solo una parte delle nuove funzionalità
+e dei miglioramenti in Microsoft Power BI. Alcune funzionalità
+potrebbero cambiare nelle versioni future del prodotto. In questa
+demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non
+tutte.
+

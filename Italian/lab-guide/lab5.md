@@ -61,7 +61,7 @@ In questo lab si imparerà a:
 
 # Flusso di dati Gen2
 
-### Attività 1 - Configurazione dell\'aggiornamento pianificato per il flusso di dati del fornitore
+## Attività 1 - Configurazione dell\'aggiornamento pianificato per il flusso di dati del fornitore
 
 Iniziamo con la configurazione di un aggiornamento pianificato del
 flusso di dati dei fornitori.
@@ -169,9 +169,9 @@ personalizzata per gestire lo scenario in cui il file Employee in
 SharePoint non viene consegnato in tempo. Usiamo la pipeline di dati
 per risolvere questo problema.
 
-## Pipeline di dati
+# Pipeline di dati
 
-### Attività 2 - Creazione di una pipeline di dati
+## Attività 2 - Creazione di una pipeline di dati
 
 1. Torniamo all\'area di lavoro di Fabric,  **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** selezionandola nel pannello di sinistra.
 
@@ -223,7 +223,7 @@ può anche essere scritta in JSON.
 
     ![](../media/lab-05/image18.png)
 
-### Attività 3 - Creazione di una pipeline di dati semplice
+## Attività 3 - Creazione di una pipeline di dati semplice
 
 Iniziamo a creare la pipeline. Abbiamo bisogno di un\'attività per
 aggiornare il flusso di dati. Troviamo un\'attività che possiamo usare.
@@ -294,7 +294,7 @@ all\'impostazione del flusso di  dati su un aggiornamento pianificato
         pochi secondi mentre l\'aggiornamento pianificato del flusso di dati
         avviene ogni 30 minuti.
 
-### Attività 4 - Creazione di una nuova pipeline di dati
+## Attività 4 - Creazione di una nuova pipeline di dati
 
 Aggiungiamo un po\' più di complessità al nostro scenario. Abbiamo
 notato che se i dati non sono disponibili alle 09:00, in genere lo sono
@@ -316,7 +316,7 @@ possibile ottenere questo risultato creando una nuova pipeline di dati.
 
     ![](../media/lab-05/image22.png)
 
-### Attività 5 - Creazione di un\'attività Until
+## Attività 5 - Creazione di un\'attività Until
 
 1. Si aprirà la schermata di Pipeline di dati. Nel menu selezionare
     **Attività**.
@@ -333,7 +333,7 @@ non avrà esito positivo o finché non avremo provato tre volte.
 
     ![](../media/lab-05/image23.png)
 
-### Attività 6 - Creazione di variabili
+## Attività 6 - Creazione di variabili
 
 1. Dobbiamo creare variabili che verranno usate per l\'iterazione e
     l\'impostazione dello stato. Selezionare l\'**area vuota** nel
@@ -387,7 +387,7 @@ renderne più agevole la ricerca.
 
     ![](../media/lab-05/image25.png)
 
-### Attività 7 - Configurazione di un\'attività Until
+## Attività 7 - Configurazione di un\'attività Until
 
 1. Selezionare l\'attività **Fino a**.
 
@@ -516,7 +516,7 @@ varCounter è uguale a 3.
 
     ![](../media/lab-05/image34.png)
 
-### Attività 8 - Configurazione di un\'attività Flusso di dati
+## Attività 8 - Configurazione di un\'attività Flusso di dati
 
 1. Si aprirà nuovamente la schermata di progettazione. Con
     l\'**attività Fino a** selezionata, nel **riquadro inferiore**
@@ -553,7 +553,7 @@ varCounter è uguale a 3.
 
     ![](../media/lab-05/image37.png)
 
-### Attività 9 - Configurazione della prima attività Imposta variabile
+## Attività 9 - Configurazione della prima attività Imposta variabile
 
 Abbiamo configurato l\'attività Flusso di dati come abbiamo fatto in
 precedenza nel lab. Ora aggiungeremo nuova logica. Se l\'aggiornamento
@@ -637,7 +637,7 @@ riferimento a se stessa. Pertanto non possiamo incrementare la variabile
 contatore varCounter aggiungendo uno al suo valore (varCounter =
 varCounter + 1). Usiamo quindi la variabile varTempCounter.
 
-### Attività 10 - Configurazione della seconda attività Imposta variabile
+## Attività 10 - Configurazione della seconda attività Imposta variabile
 
 1. Nel menu in alto selezionare **Attività -\> Imposta variabile**.
     L\'attività Imposta variabile viene aggiunta al canvas di
@@ -685,7 +685,7 @@ valore della variabile varCounter più uno (varTempCounter = varCounter +
     Ora dobbiamo impostare il valore della variabile varCounter sul valore
 di varTempCounter.
 
-### Attività 11 - Configurazione della terza attività Imposta variabile
+## Attività 11 - Configurazione della terza attività Imposta variabile
 
 1. Nel menu in alto selezionare **Attività -\> Imposta variabile**.
     L\'attività Imposta variabile viene aggiunta al canvas di
@@ -732,7 +732,7 @@ sul valore della variabile varTempCounter (varCounter = varTempCounter).
 Alla fine di ogni iterazione varCounter e varTempCounter hanno lo stesso
 valore.
 
-### Attività 12 - Configurazione di un\'attività Attesa
+## Attività 12 - Configurazione di un\'attività Attesa
 
 Quindi, dovremo impostare un\'attesa di 5 minuti/300 secondi in caso di
 un primo esito negativo dell\'aggiornamento del flusso di dati, prima di
@@ -827,7 +827,7 @@ nello screenshot seguente.
 
     ![](../media/lab-05/image49.png)
 
-### Attività 13 - Configurazione dell\'aggiornamento pianificato per la pipeline di dati
+## Attività 13 - Configurazione dell\'aggiornamento pianificato per la pipeline di dati
 
 1. Possiamo testare la pipeline di dati selezionando **Home -\>
     Esegui.**
@@ -936,67 +936,66 @@ Leggere i blog di annunci più approfonditi sull\'esperienza in Fabric:
 - [Blog sull\'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
->
-> L\'uso della demo/del lab implica l\'accettazione delle seguenti
-> condizioni:
->
-> La tecnologia/le funzionalità descritte nella demo/nel lab sono
-> fornite da Microsoft Corporation allo scopo di ottenere feedback
-> dall\'utente e offrire un\'esperienza di apprendimento. L\'utilizzo
-> della demo/del lab è consentito solo per la valutazione delle
-> caratteristiche e delle funzionalità di tale tecnologia e per l\'invio
-> di feedback a Microsoft. L\'utilizzo per qualsiasi altro scopo non è
-> consentito. È vietato modificare, copiare, distribuire, trasmettere,
-> visualizzare, eseguire, riprodurre, pubblicare, concedere in licenza,
-> usare per la creazione di lavori derivati, trasferire o vendere questa
-> demo/questo lab o parte di essi.
->
-> SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
-> LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
-> QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O
-> RIDISTRIBUZIONE.
->
-> QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
-> SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
-> NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
-> UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
-> SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI
-> IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
-> COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
-> VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
-> FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
-> TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN
-> UN AMBIENTE FISICO.
->
-> **FEEDBACK**. L\'invio a Microsoft di feedback sulle caratteristiche,
-> sulle funzionalità e/o sui concetti della tecnologia descritti in
-> questa demo/questo lab implica la concessione a Microsoft, a titolo
-> gratuito, del diritto di utilizzare, condividere e commercializzare
-> tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche
-> la concessione a titolo gratuito a terze parti del diritto di utilizzo
-> di eventuali brevetti necessari per i loro prodotti, le loro
-> tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai
-> componenti software o ai servizi Microsoft specifici che includono
-> il feedback. L\'utente si impegna a non inviare feedback la cui
-> inclusione all\'interno di software o documentazione Microsoft imponga
-> a Microsoft di concedere in licenza a terze parti tale software o
-> documentazione. Questi diritti sussisteranno anche dopo la scadenza
-> del presente contratto.
->
-> CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O
-> CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
-> CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O
-> PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO,
-> TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE
-> O RAPPRESENTAZIONI IN RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E
-> DELL\'OUTPUT DERIVANTI DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA
-> DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
->
-> **CLAUSOLA DI RESPONSABILITÀ**
->
-> Questa demo/questo lab contiene solo una parte delle nuove
-> funzionalità e dei miglioramenti in Microsoft Power BI. Alcune
-> funzionalità potrebbero cambiare nelle versioni future del prodotto.
-> In questa demo/in questo lab si apprendono alcune delle nuove
-> funzionalità, ma non tutte.
+© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+
+L\'uso della demo/del lab implica l\'accettazione delle seguenti
+condizioni:
+
+La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite
+da Microsoft Corporation allo scopo di ottenere feedback dall\'utente e
+offrire un\'esperienza di apprendimento. L\'utilizzo della demo/del lab
+è consentito solo per la valutazione delle caratteristiche e delle
+funzionalità di tale tecnologia e per l\'invio di feedback a Microsoft.
+L\'utilizzo per qualsiasi altro scopo non è consentito. È vietato
+modificare, copiare, distribuire, trasmettere, visualizzare, eseguire,
+riprodurre, pubblicare, concedere in licenza, usare per la creazione di
+lavori derivati, trasferire o vendere questa demo/questo lab o parte di
+essi.
+
+SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
+LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
+QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
+
+QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
+SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
+NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
+UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
+SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN
+QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
+COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
+VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
+FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
+TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ RISULTARE DIVERSA IN UN AMBIENTE
+FISICO.
+
+**FEEDBACK**. L\'invio a Microsoft di feedback sulle caratteristiche,
+sulle funzionalità e/o sui concetti della tecnologia descritti in questa
+demo/questo lab implica la concessione a Microsoft, a titolo gratuito,
+del diritto di utilizzare, condividere e commercializzare tale feedback
+in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a
+titolo gratuito a terze parti del diritto di utilizzo di eventuali
+brevetti necessari per i loro prodotti, le loro tecnologie e i loro
+servizi al fine di utilizzare o interfacciarsi ai componenti software o
+ai servizi Microsoft specifici che includono il feedback. L\'utente si
+impegna a non inviare feedback la cui inclusione all\'interno di
+software o documentazione Microsoft imponga a Microsoft di concedere in
+licenza a terze parti tale software o documentazione. Questi diritti
+sussisteranno anche dopo la scadenza del presente contratto.
+
+CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O
+CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
+CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE
+DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON
+VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN
+RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E DELL\'OUTPUT DERIVANTI
+DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA DELLE INFORMAZIONI
+CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
+
+**CLAUSOLA DI RESPONSABILITÀ**
+
+Questa demo/questo lab contiene solo una parte delle nuove funzionalità
+e dei miglioramenti in Microsoft Power BI. Alcune funzionalità
+potrebbero cambiare nelle versioni future del prodotto. In questa
+demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non
+tutte.
+

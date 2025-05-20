@@ -50,7 +50,7 @@ In questo lab si apprenderà quanto segue:
 
 # Flusso di dati Gen2
 
-### Attività 1: Copia di query SharePoint nel flusso di dati
+## Attività 1: Copia di query SharePoint nel flusso di dati
 
 1. Torneremo quindi all\'area di lavoro di Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)** creata nel Lab 2, Attività 2.
 
@@ -101,7 +101,7 @@ disabilitare questa opzione.
 Poiché non abbiamo creato una connessione a SharePoint, compare un
 messaggio di avviso che chiede di configurare la connessione.
 
-### Attività 2: Creazione della connessione a SharePoint
+## Attività 2: Creazione della connessione a SharePoint
 
 1. Selezionare **Configura connessione**.
 
@@ -120,7 +120,7 @@ Saranno diverse rispetto allo screenshot qui sotto.
 
      ![](../media/lab-04/image11.png)
 
-### Attività 3: Configurazione della destinazione dei dati per la query People
+## Attività 3: Configurazione della destinazione dei dati per la query People
 
 Viene stabilita la connessione ed è possibile visualizzare i dati nel
 pannello di anteprima. Esplorare i Passaggi applicati delle query. Ora
@@ -170,7 +170,7 @@ sia **abilitata**.
 
     ![](../media/lab-04/image15.png)
 
-### Attività 4: Pubblicazione e ridenominazione del flusso di dati SharePoint
+## Attività 4: Pubblicazione e ridenominazione del flusso di dati SharePoint
 
 1. Si apre nuovamente la **finestra di Power Query**. Nell\'**angolo in
     basso a destra** notare che la Destinazione dati è impostata su
@@ -215,7 +215,7 @@ pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
 puntini di sospensione accanto a Tables e selezionare Aggiorna per
 aggiornare le tabelle.
 
-### Attività 5: Copia di query di Snowflake nel flusso di dati
+## Attività 5: Copia di query di Snowflake nel flusso di dati
 
 1. Ora torniamo all\'area di lavoro di Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
 
@@ -272,7 +272,7 @@ disabilitare questa opzione.
 
     ![](../media/lab-04/image22.png)
 
-### Attività 6: Creazione della connessione a Snowflake
+## Attività 6: Creazione della connessione a Snowflake
 
 Notare che le cinque query vengono incollate e sulla sinistra è
 visualizzato il pannello Query. Poiché non abbiamo creato una
@@ -319,7 +319,7 @@ dimensione Supplier, con le colonne necessarie. Analogamente, uniremo PO
 Line Items e PO per creare il fatto PO. Ora dobbiamo inserire i dati di
 Supplier e PO nel lakehouse.
 
-### Attività 7: Configurazione della destinazione dei dati per le query Supplier e PO
+## Attività 7: Configurazione della destinazione dei dati per le query Supplier e PO
 
 1. Selezionare la query **Supplier (1)**.
 
@@ -366,7 +366,7 @@ Supplier e PO nel lakehouse.
 
     ![](../media/lab-04/image29.png)
 
-### Attività 8 - Ridenominazione e pubblicazione del flusso di dati Snowflake
+## Attività 8 - Ridenominazione e pubblicazione del flusso di dati Snowflake
 
 1. Nella parte superiore dello schermo selezionare la **freccia accanto
     a Dataflow 1** per rinominarlo.
@@ -400,9 +400,9 @@ aggiornare le tabelle.
 
 Ora creiamo un collegamento per importare i dati da Dataverse.
 
-## Collegamento ad ADLS Gen2
+# Collegamento ad ADLS Gen2
 
-### Attività 9: Come creare un collegamento a Dataverse
+## Attività 9: Come creare un collegamento a Dataverse
 
 Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere
 nella vista Lakehouse (non nell\'endpoint di Analisi SQL).
@@ -466,7 +466,7 @@ nell\'area di lavoro Amministrazione.
 
     ![](../media/lab-04/image38.png)
 
-### Attività 10 - Creazione di un collegamento a un lakehouse
+## Attività 10 - Creazione di un collegamento a un lakehouse
 
 1. Nel pannello **Explorer** selezionare i **puntini di sospensione**
     accanto a **Tables**.
@@ -582,67 +582,66 @@ Leggere i blog di annunci più approfonditi sull\'esperienza Fabric:
 - [Blog sull\'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
->
-> L\'uso della demo/del lab implica l\'accettazione delle seguenti
-> condizioni:
->
-> La tecnologia/le funzionalità descritte nella demo/nel lab sono
-> fornite da Microsoft Corporation allo scopo di ottenere feedback
-> dall\'utente e offrire un\'esperienza di apprendimento. L\'utilizzo
-> della demo/del lab è consentito solo per la valutazione delle
-> caratteristiche e delle funzionalità di tale tecnologia e per l\'invio
-> di feedback a Microsoft. L\'utilizzo per qualsiasi altro scopo non
-> è consentito. È vietato modificare, copiare, distribuire, trasmettere,
-> visualizzare, eseguire, riprodurre, pubblicare, concedere in licenza,
-> usare per la creazione di lavori derivati, trasferire o vendere questa
-> demo/questo lab o parte di essi.
->
-> SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
-> LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
-> QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O
-> RIDISTRIBUZIONE.
->
-> QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
-> SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
-> NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
-> UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
-> SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI
-> IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
-> COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
-> VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
-> FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
-> TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA
-> IN UN AMBIENTE FISICO.
->
-> **FEEDBACK.** L\'invio a Microsoft di feedback sulle caratteristiche,
-> sulle funzionalità e/o sui concetti della tecnologia descritti in
-> questa demo/questo lab implica la concessione a Microsoft, a titolo
-> gratuito, del diritto di utilizzare, condividere e commercializzare
-> tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche
-> la concessione a titolo gratuito a terze parti del diritto di utilizzo
-> di eventuali brevetti necessari per i loro prodotti, le loro
-> tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai
-> componenti software o ai servizi Microsoft specifici che includono il
-> feedback. L\'utente si impegna a non inviare feedback la cui
-> inclusione all\'interno di software o documentazione Microsoft imponga
-> a Microsoft di concedere in licenza a terze parti tale software o
-> documentazione. Questi diritti sussisteranno anche dopo la scadenza
-> del presente contratto.
->
-> CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O
-> CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
-> CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O
-> PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO,
-> TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O
-> RAPPRESENTAZIONI IN RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E
-> DELL\'OUTPUT DERIVANTI DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA
-> DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
->
-> **CLAUSOLA DI RESPONSABILITÀ**
->
-> Questa demo/questo lab contiene solo una parte delle nuove
-> funzionalità e dei miglioramenti in Microsoft Power BI. Alcune
-> funzionalità potrebbero cambiare nelle versioni future del prodotto.
-> In questa demo/in questo lab si apprendono alcune delle nuove
-> funzionalità, ma non tutte.
+© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+
+L\'uso della demo/del lab implica l\'accettazione delle seguenti
+condizioni:
+
+La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite
+da Microsoft Corporation allo scopo di ottenere feedback dall\'utente e
+offrire un\'esperienza di apprendimento. L\'utilizzo della demo/del lab
+è consentito solo per la valutazione delle caratteristiche e delle
+funzionalità di tale tecnologia e per l\'invio di feedback a Microsoft.
+L\'utilizzo per qualsiasi altro scopo non è consentito. È vietato
+modificare, copiare, distribuire, trasmettere, visualizzare, eseguire,
+riprodurre, pubblicare, concedere in licenza, usare per la creazione di
+lavori derivati, trasferire o vendere questa demo/questo lab o parte di
+essi.
+
+SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
+LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
+QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
+
+QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
+SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
+NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
+UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
+SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN
+QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
+COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
+VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
+FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
+TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ RISULTARE DIVERSA IN UN AMBIENTE
+FISICO.
+
+**FEEDBACK**. L\'invio a Microsoft di feedback sulle caratteristiche,
+sulle funzionalità e/o sui concetti della tecnologia descritti in questa
+demo/questo lab implica la concessione a Microsoft, a titolo gratuito,
+del diritto di utilizzare, condividere e commercializzare tale feedback
+in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a
+titolo gratuito a terze parti del diritto di utilizzo di eventuali
+brevetti necessari per i loro prodotti, le loro tecnologie e i loro
+servizi al fine di utilizzare o interfacciarsi ai componenti software o
+ai servizi Microsoft specifici che includono il feedback. L\'utente si
+impegna a non inviare feedback la cui inclusione all\'interno di
+software o documentazione Microsoft imponga a Microsoft di concedere in
+licenza a terze parti tale software o documentazione. Questi diritti
+sussisteranno anche dopo la scadenza del presente contratto.
+
+CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O
+CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
+CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE
+DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON
+VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN
+RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E DELL\'OUTPUT DERIVANTI
+DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA DELLE INFORMAZIONI
+CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
+
+**CLAUSOLA DI RESPONSABILITÀ**
+
+Questa demo/questo lab contiene solo una parte delle nuove funzionalità
+e dei miglioramenti in Microsoft Power BI. Alcune funzionalità
+potrebbero cambiare nelle versioni future del prodotto. In questa
+demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non
+tutte.
+

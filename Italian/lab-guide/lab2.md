@@ -36,7 +36,7 @@ In questo lab si apprenderà quanto segue:
 
 # Licenza di Fabric
 
-### Attività 1 - Abilitazione di una licenza di valutazione per Microsoft Fabric
+## Attività 1 - Abilitazione di una licenza di valutazione per Microsoft Fabric
 
 1. Aprire il **browser** e andare al [portale di Microsoft Power
     BI](https://app.powerbi.com/). Si aprirà la pagina di accesso.
@@ -101,9 +101,9 @@ Avviare la configurazione.
 
     ![](../media/lab-02/image12.png)
 
-## Area di lavoro di Fabric
+# Area di lavoro di Fabric
 
-### Attività 2 - Creazione di un\'area di lavoro di Fabric
+## Attività 2 - Creazione di un\'area di lavoro di Fabric
 
 1. Ora creeremo un\'area di lavoro con una licenza di Fabric.
     Selezionare **Aree di lavoro** (1) nella barra di spostamento a
@@ -143,7 +143,7 @@ Importeremo dati da diverse origini dati in un lakehouse e useremo i
 dati dal lakehouse per creare il modello e il report relativi. Il primo
 passaggio consiste nel creare un lakehouse.
 
-### Attività 3 - Creazione di un lakehouse
+## Attività 3 - Creazione di un lakehouse
 
 1. Nella nuova area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** individuare il pulsante **+ Nuovo elemento (1)** nel riquadro di spostamento a sinistra. Qui è possibile iniziare a creare nuovi elementi nell\'area di lavoro.
 
@@ -186,9 +186,9 @@ lab seguenti.
 
     ![](../media/lab-02/image18.png)
 
-## Panoramica delle esperienze in Fabric
+# Panoramica delle esperienze in Fabric
 
-### Attività 4 - Esperienza Data Factory
+## Attività 4 - Esperienza Data Factory
 
 1. Selezionare l\'icona Carichi di lavoro a sinistra della schermata.
     Si apre una finestra di dialogo contenente l\'elenco delle
@@ -217,35 +217,35 @@ lab seguenti.
 
     **Tipi di elemento**
 
-    a)  **Flussi di dati:** i flussi di dati sono modalità di trasformazione
+    a) **Flussi di dati:** i flussi di dati sono modalità di trasformazione
         dei dati. Offrono oltre 300 trasformazioni diverse da applicare ai
         dati. Ciò significa che è possibile pulire, combinare e modificare i
         dati in molti modi in base alle diverse esigenze.
 
-    b)  **Pipeline:** le pipeline sono flussi di lavoro per automatizzare i
+    b) **Pipeline:** le pipeline sono flussi di lavoro per automatizzare i
         processi di dati. Permettono di creare flussi di lavoro di dati
         flessibili e personalizzabili in base ai requisiti specifici. In
         questo modo, è possibile gestire ed elaborare più agevolmente i dati
         in modo strutturato.
 
-    c)  **Azure Data Factory:** Azure Data Factory è un servizio di
+    c) **Azure Data Factory:** Azure Data Factory è un servizio di
         integrazione dei dati basato sul cloud che consente di creare flussi
         di lavoro basati sui dati per l\'orchestrazione e l\'automazione
         dello spostamento e della trasformazione dei dati.
 
-    d)  **Processo Apache Airflow:** Apache Airflow è una piattaforma open
+    d) **Processo Apache Airflow:** Apache Airflow è una piattaforma open
         source usata per creare, pianificare e monitorare i flussi di lavoro
         a livello programmatico. In Data Factory permette di creare,
         pianificare e gestire flussi di lavoro di dati complessi.
 
-    e)  **Processo di copia:** si tratta di una funzionalità che permette di
+    e) **Processo di copia:** si tratta di una funzionalità che permette di
         copiare i dati da un\'origine a un\'altra. È un modo semplice ed
         efficiente di spostare i dati tra archivi dati diversi.
 
-    f)  **Con mirroring:** funzionalità per la creazione di versioni con
+    f) **Con mirroring:** funzionalità per la creazione di versioni con
         mirroring di database per backup, test o accesso in sola lettura.
 
-    g)  **Variable library (Preview):** contiene un elenco di variabili e i
+    g) **Variable library (Preview):** contiene un elenco di variabili e i
         relativi valori predefiniti. Può contenere anche altri set di valori
         che includono valori alternativi.
 
@@ -253,31 +253,31 @@ lab seguenti.
 
     Per iniziare a usare Data Factory, vedere le sezioni seguenti.
 
-    a)  **Informazioni su come usare Data Factory:** questa sezione spiega
+    a) **Informazioni su come usare Data Factory:** questa sezione spiega
         come iniziare a usare Data Factory. Fornisce indicazioni su come
         iniziare a usare lo strumento in modo efficace.
 
-    b)  **Creazione del primo flusso di dati:** contiene informazioni su
+    b) **Creazione del primo flusso di dati:** contiene informazioni su
         come creare il primo flusso di dati. I flussi di dati sono
         essenziali per trasformare i dati in base alle esigenze.
 
-    c)  **Creazione della prima pipeline:** contiene indicazioni per la
+    c) **Creazione della prima pipeline:** contiene indicazioni per la
         creazione della prima pipeline di dati. Le pipeline permettono di
         automatizzare e gestire i processi di dati in modo efficiente.
 
-    d)  **Informazioni su come monitorare Data Factory:** il monitoraggio è
+    d) **Informazioni su come monitorare Data Factory:** il monitoraggio è
         fondamentale per garantire un funzionamento fluido dei processi di
         dati. Questa sezione illustra come monitorare le attività di Data
         Factory.
 
-    e)  **Informazioni su come trasformare i dati con i flussi di dati:**
+    e) **Informazioni su come trasformare i dati con i flussi di dati:**
         descrive come usare i flussi di dati per trasformare i dati in modo
         efficace.
 
-    f)  **Creazione della prima API per GraphQL:** illustra le operazioni
+    f) **Creazione della prima API per GraphQL:** illustra le operazioni
         iniziali per l\'uso di API con GraphQL.
 
-    g)  **Creazione delle prime funzioni per i dati utente:** descrive come
+    g) **Creazione delle prime funzioni per i dati utente:** descrive come
         creare funzioni per i dati utente, utili per la gestione e la
         trasformazione dei dati utente.
 
@@ -289,7 +289,7 @@ lab seguenti.
 
     ![](../media/lab-02/image22.png)
 
-### Attività 5 - Esperienza Industry Solutions 
+## Attività 5 - Esperienza Industry Solutions 
 
 1. Nella pagina **Carichi di lavoro personali** fare clic su
     **Industry** Solutions per procedere.
@@ -310,11 +310,11 @@ lab seguenti.
 
     **Tipi di elemento**
 
-    a)  **Soluzioni di sostenibilità:** supporta l\'inserimento, la
+    a) **Soluzioni di sostenibilità:** supporta l\'inserimento, la
         standardizzazione e l\'analisi di dati ambientali, sociali e di
         governance (ESG).
 
-    b)  **Soluzioni per la vendita al dettaglio:** permette di gestire
+    b) **Soluzioni per la vendita al dettaglio:** permette di gestire
         grandi volumi di dati, di integrare dati provenienti da origini
         varie e di fornire analisi in tempo reale per un processo
         decisionale rapido e tempestivo. I rivenditori possono usare queste
@@ -322,7 +322,7 @@ lab seguenti.
         clienti, la previsione delle vendite, la determinazione dinamica dei
         prezzi e il rilevamento delle frodi.
 
-    c)  **Soluzioni per il settore sanitario:** sono progettate
+    c) **Soluzioni per il settore sanitario:** sono progettate
         strategicamente per accelerare il time-to-value per i clienti
         rispondendo all\'esigenza critica di trasformare in modo efficiente
         i dati sanitari in un formato adatto per l\'analisi.
@@ -330,33 +330,31 @@ lab seguenti.
     > **Per iniziare**\
     > Per iniziare a usare Industry Solutions, vedere le sezioni seguenti.
 
-    a)  **Informazioni sulle soluzioni per i dati sanitari:** fare clic sul
+    a) **Informazioni sulle soluzioni per i dati sanitari:** fare clic sul
         pulsante \"Altre informazioni\" per informazioni sulle soluzioni per
         i dati sanitari e su come usarle nei propri progetti.
 
-    b)  **Distribuzione delle soluzioni per i dati sanitari:** fare clic sul
+    b) **Distribuzione delle soluzioni per i dati sanitari:** fare clic sul
         pulsante \"Distribuisci\" per iniziare a distribuire le soluzioni
         per i dati sanitari e implementarle nei propri progetti.
 
-    c)  **Informazioni sulle soluzioni per la sostenibilità:** fare clic sul
+    c) **Informazioni sulle soluzioni per la sostenibilità:** fare clic sul
         pulsante \"Altre informazioni\" per informazioni sulle soluzioni per
         la sostenibilità e su come usarle nei propri progetti.
 
-    d)  **Distribuzione delle soluzioni per la sostenibilità:** fare clic
+    d) **Distribuzione delle soluzioni per la sostenibilità:** fare clic
         sul pulsante \"Distribuisci\" per iniziare a distribuire le
         soluzioni per la sostenibilità e implementarle nei propri progetti.
 
-    e)  **Informazioni sulle soluzioni per la vendita al dettaglio:** fare
+    e) **Informazioni sulle soluzioni per la vendita al dettaglio:** fare
         clic sul pulsante \"Altre informazioni\" per informazioni sulle
         soluzioni per la vendita al dettaglio e su come usarle nei propri
         progetti.
 
-    f)  **Distribuzione delle soluzioni per la vendita al dettaglio:** fare
+    f) **Distribuzione delle soluzioni per la vendita al dettaglio:** fare
         clic sul pulsante \"Distribuisci\" per iniziare a distribuire le
         soluzioni per la vendita al dettaglio e implementarle nei propri
         progetti.
-
-    <!-- -->
 
 3. Fare clic su Torna ai carichi di lavoro nell\'angolo in alto a
     sinistra della schermata. Si apre la pagina principale dei carichi
@@ -364,7 +362,7 @@ lab seguenti.
 
     ![](../media/lab-02/image22.png)
 
-### Attività 6 - Esperienza Real-Time Intelligence
+## Attività 6 - Esperienza Real-Time Intelligence
 
 1. Nella pagina **Carichi di lavoro personali** fare clic su
     **Real-Time Intelligence** per procedere.
@@ -438,7 +436,7 @@ lab seguenti.
 
     ![](../media/lab-02/image22.png)
 
-### Attività 7 - Esperienza Data Engineering
+## Attività 7 - Esperienza Data Engineering
 
 1. Nella pagina **Carichi di lavoro personali** fare clic su Data
     Engineering per procedere.
@@ -530,7 +528,7 @@ lab seguenti.
 
     ![](../media/lab-02/image22.png)
 
-### Attività 8 - Esperienza Data Science
+## Attività 8 - Esperienza Data Science
 
 1. Nella pagina **Carichi di lavoro personali** fare clic su **Data
     Science** per procedere.
@@ -601,7 +599,7 @@ lab seguenti.
 
     ![](../media/lab-02/image22.png)
 
-### Attività 9 - Esperienza Data Warehouse
+## Attività 9 - Esperienza Data Warehouse
 
 1. Nella pagina **Carichi di lavoro personali** fare clic su **Data
     Warehouse** per procedere.
@@ -666,7 +664,7 @@ lab seguenti.
 
     ![](../media/lab-02/image31.png)
 
-### Attività 10 - Esperienza Databases
+## Attività 10 - Esperienza Databases
 
 1. Nella pagina **Carichi di lavoro personali** fare clic su
     **Databases** per procedere.
@@ -786,67 +784,65 @@ Leggere i blog di annunci più approfonditi sull\'esperienza Fabric:
 - [Blog sull\'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
->
-> L\'uso della demo/del lab implica l\'accettazione delle seguenti
-> condizioni:
->
-> La tecnologia/le funzionalità descritte nella demo/nel lab sono
-> fornite da Microsoft Corporation allo scopo di ottenere feedback
-> dall\'utente e offrire un\'esperienza di apprendimento. L\'utilizzo
-> della demo/del lab è consentito solo per la valutazione delle
-> caratteristiche e delle funzionalità di tale tecnologia e per l\'invio
-> di feedback a Microsoft. L\'utilizzo per qualsiasi altro scopo non
-> è consentito. È vietato modificare, copiare, distribuire, trasmettere,
-> visualizzare, eseguire, riprodurre, pubblicare, concedere in licenza,
-> usare per la creazione di lavori derivati, trasferire o vendere questa
-> demo/questo lab o parte di essi.
->
-> SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
-> LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
-> QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O
-> RIDISTRIBUZIONE.
->
-> QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
-> SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
-> NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
-> UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
-> SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI
-> IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
-> COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
-> VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
-> FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
-> TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ RISULTARE DIVERSA IN UN
-> AMBIENTE FISICO.
->
-> **FEEDBACK.** L\'invio a Microsoft di feedback sulle caratteristiche,
-> sulle funzionalità e/o sui concetti della tecnologia descritti in
-> questa demo/questo lab implica la concessione a Microsoft, a titolo
-> gratuito, del diritto di utilizzare, condividere e commercializzare
-> tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche
-> la concessione a titolo gratuito a terze parti del diritto di utilizzo
-> di eventuali brevetti necessari per i loro prodotti, le loro
-> tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai
-> componenti software o ai servizi Microsoft specifici che includono
-> il feedback. L\'utente si impegna a non inviare feedback la cui
-> inclusione all\'interno di software o documentazione Microsoft imponga
-> a Microsoft di concedere in licenza a terze parti tale software o
-> documentazione. Questi diritti sussisteranno anche dopo la scadenza
-> del presente contratto.
->
-> CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA
-> O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE
-> E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O
-> PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO,
-> TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O
-> RAPPRESENTAZIONI IN RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E
-> DELL\'OUTPUT DERIVANTI DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA
-> DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
->
-> **CLAUSOLA DI RESPONSABILITÀ**
->
-> Questa demo/questo lab contiene solo una parte delle nuove
-> funzionalità e dei miglioramenti in Microsoft Power BI. Alcune
-> funzionalità potrebbero cambiare nelle versioni future del prodotto.
-> In questa demo/in questo lab si apprendono alcune delle nuove
-> funzionalità, ma non tutte.
+© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+
+L\'uso della demo/del lab implica l\'accettazione delle seguenti
+condizioni:
+
+La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite
+da Microsoft Corporation allo scopo di ottenere feedback dall\'utente e
+offrire un\'esperienza di apprendimento. L\'utilizzo della demo/del lab
+è consentito solo per la valutazione delle caratteristiche e delle
+funzionalità di tale tecnologia e per l\'invio di feedback a Microsoft.
+L\'utilizzo per qualsiasi altro scopo non è consentito. È vietato
+modificare, copiare, distribuire, trasmettere, visualizzare, eseguire,
+riprodurre, pubblicare, concedere in licenza, usare per la creazione di
+lavori derivati, trasferire o vendere questa demo/questo lab o parte di
+essi.
+
+SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
+LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
+QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
+
+QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
+SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
+NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
+UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
+SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN
+QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
+COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
+VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
+FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
+TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ RISULTARE DIVERSA IN UN AMBIENTE
+FISICO.
+
+**FEEDBACK**. L\'invio a Microsoft di feedback sulle caratteristiche,
+sulle funzionalità e/o sui concetti della tecnologia descritti in questa
+demo/questo lab implica la concessione a Microsoft, a titolo gratuito,
+del diritto di utilizzare, condividere e commercializzare tale feedback
+in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a
+titolo gratuito a terze parti del diritto di utilizzo di eventuali
+brevetti necessari per i loro prodotti, le loro tecnologie e i loro
+servizi al fine di utilizzare o interfacciarsi ai componenti software o
+ai servizi Microsoft specifici che includono il feedback. L\'utente si
+impegna a non inviare feedback la cui inclusione all\'interno di
+software o documentazione Microsoft imponga a Microsoft di concedere in
+licenza a terze parti tale software o documentazione. Questi diritti
+sussisteranno anche dopo la scadenza del presente contratto.
+
+CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O
+CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
+CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE
+DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON
+VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN
+RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E DELL\'OUTPUT DERIVANTI
+DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA DELLE INFORMAZIONI
+CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
+
+**CLAUSOLA DI RESPONSABILITÀ**
+
+Questa demo/questo lab contiene solo una parte delle nuove funzionalità
+e dei miglioramenti in Microsoft Power BI. Alcune funzionalità
+potrebbero cambiare nelle versioni future del prodotto. In questa
+demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non
+tutte.

@@ -38,9 +38,9 @@ In questo lab si imparerà a:
 - Usare la modalità Direct Lake che comporta l\'aggiornamento
     automatico dei dati
 
-## Power BI
+# Power BI
 
-### Attività 1 - Creazione automatica del report
+## Attività 1 - Creazione automatica del report
 
 Iniziamo usando l\'opzione di creazione automatica del report. Più
 avanti nel lab, creeremo nuovamente il report presente in Power BI.
@@ -134,7 +134,7 @@ facoltative (Lab 6).
 
     ![](../media/lab-07/image13.png)
 
-### Attività 2 - Configurazione dello sfondo per un nuovo report
+## Attività 2 - Configurazione dello sfondo per un nuovo report
 
 Creiamo un nuovo report usando un\'area di disegno vuota.
 
@@ -193,7 +193,7 @@ visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
 
     ![](../media/lab-07/image18.png)
 
-### Attività 3 - Aggiunta dell\'intestazione al report
+## Attività 3 - Aggiunta dell\'intestazione al report
 
 1. Aggiungiamo l\'intestazione nel margine superiore. Nel **menu**
     selezionare **Casella di testo**.
@@ -220,7 +220,7 @@ visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
 
     ![](../media/lab-07/image19.png)
 
-### Attività 4 - Aggiunta di KPI al report
+## Attività 4 - Aggiunta di KPI al report
 
 1. Aggiungiamo l\'indicatore KPI delle vendite. Selezionare lo **spazio
     vuoto** nell\'area di disegno per spostare lo stato attivo fuori
@@ -290,7 +290,7 @@ visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
 
     ![](../media/lab-07/image24.png)
 
-### Attività 5 - Aggiunta di un grafico a linee al report
+## Attività 5 - Aggiunta di un grafico a linee al report
 
 Creiamo un grafico a linee per visualizzare le vendite nel tempo per
 azienda rivenditrice.
@@ -307,7 +307,7 @@ azienda rivenditrice.
 
     ![](../media/lab-07/image25.png)
 
-### Attività 6 - Salvataggio del report
+## Attività 6 - Salvataggio del report
 
 Salviamo il report prima di uscire da esso per apportare modifiche al
 modello.
@@ -327,7 +327,7 @@ modello.
 
     ![](../media/lab-07/image26.png)
 
-### Attività 7 - Configurazione della colonna Year nella tabella Date
+## Attività 7 - Configurazione della colonna Year nella tabella Date
 
 1. Dal **menu in alto** selezionare **Modifica** per tornare alla
     modalità di modifica.
@@ -366,7 +366,7 @@ modello.
 
     ![](../media/lab-07/image29.png)
 
-### Attività 8 - Configurazione della colonna Month Name nella tabella Date
+## Attività 8 - Configurazione della colonna Month Name nella tabella Date
 
 1. Aggiungiamo il mese al grafico. Nella tabella Date trascinare il
     campo **MonthNameShort** sotto **Year** sull\'**asse** **X**. Notare
@@ -408,7 +408,7 @@ modello.
 
     ![](../media/lab-07/image33.png)
 
-### Attività 9 -- Formattazione del grafico a linee
+## Attività 9 -- Formattazione del grafico a linee
 
 È molto semplice aggiornare il modello semantico durante la creazione
 dei report. Ciò fornisce un\'interazione fluida come Power BI Desktop.
@@ -466,7 +466,7 @@ dei report. Ciò fornisce un\'interazione fluida come Power BI Desktop.
     Come indicato in precedenza, non creeremo tutti gli oggetti visivi in
 questo lab. Se si desidera, aggiungere ulteriori oggetti visivi.
 
-### Attività 10: Connessione di Power BI Desktop al modello semantico
+## Attività 10: Connessione di Power BI Desktop al modello semantico
 
 Vediamo ora quanto è semplice connettere Power BI Desktop al modello
 semantico e creare oggetti visivi.
@@ -550,7 +550,7 @@ semplice.
 20. Per salvare il report, nella barra multifunzione selezionare **File
     -\> Salva**.
 
-### Attività 11 - Aggiunta di nuovi dati per simulare la modalità Direct Lake
+## Attività 11 - Aggiunta di nuovi dati per simulare la modalità Direct Lake
 
 In genere, in modalità Import, dopo aver aggiornato i dati nell\'origine
 è necessario aggiornare il modello di Power BI dopodiché vengono
@@ -851,7 +851,7 @@ flussi di dati e nei lakehouse non richiede molto tempo.
 un browser per accedere al servizio. Non dobbiamo installare alcun
 software nei nostri desktop.
 
-## Pulizia dell\'ambiente lab
+# Pulizia dell\'ambiente lab
 
 Quando si è pronti a eseguire la pulizia dell\'ambiente lab, effettuare
 i passaggi seguenti.
@@ -942,68 +942,67 @@ Leggere i blog di annunci più approfonditi sull\'esperienza in Fabric:
 - [Blog sull\'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
->
-> L\'uso della demo/del lab implica l\'accettazione delle seguenti
-> condizioni:
->
-> La tecnologia/le funzionalità descritte nella demo/nel lab sono
-> fornite da Microsoft Corporation allo scopo di ottenere feedback
-> dall\'utente e offrire un\'esperienza di apprendimento. L\'utilizzo
-> della demo/del lab è consentito solo per la valutazione delle
-> caratteristiche e delle funzionalità di tale tecnologia e per l\'invio
-> di feedback a Microsoft. L\'utilizzo per qualsiasi altro scopo non
-> è consentito. È vietato modificare, copiare, distribuire, trasmettere,
-> visualizzare, eseguire, riprodurre, pubblicare, concedere in licenza,
-> usare per la creazione di lavori derivati, trasferire o vendere questa
-> demo/questo lab o parte di essi.
->
-> SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
-> LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
-> QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O
-> RIDISTRIBUZIONE.
->
-> QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
-> SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
-> NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
-> UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
-> SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI
-> IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
-> COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
-> VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
-> FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
-> TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN
-> UN AMBIENTE FISICO.
->
-> **FEEDBACK**. L\'invio a Microsoft di feedback sulle caratteristiche,
-> sulle funzionalità e/o sui concetti della tecnologia descritti in
-> questa demo/questo lab implica la concessione a Microsoft, a titolo
-> gratuito, del diritto di utilizzare, condividere e commercializzare
-> tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche
-> la concessione a titolo gratuito a terze parti del diritto di utilizzo
-> di eventuali brevetti necessari per i loro prodotti, le loro
-> tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai
-> componenti software o ai servizi Microsoft specifici che includono
-> il feedback. L\'utente si impegna a non inviare feedback la cui
-> inclusione all\'interno di software o documentazione Microsoft imponga
-> a Microsoft di concedere in licenza a terze parti tale software o
-> documentazione. Questi diritti sussisteranno anche dopo la scadenza
-> del presente contratto.
->
-> CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O
-> CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
-> CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O
-> PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO,
-> TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE
-> O RAPPRESENTAZIONI IN RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E
-> DELL\'OUTPUT DERIVANTI DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA
-> DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
->
-> **CLAUSOLA DI RESPONSABILITÀ**
->
-> Questa demo/questo lab contiene solo una parte delle nuove
-> funzionalità e dei miglioramenti in Microsoft Power BI. Alcune
-> funzionalità potrebbero cambiare nelle versioni future del prodotto.
-> In questa demo/in questo lab si apprendono alcune delle nuove
-> funzionalità, ma non tutte.
+© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+
+L\'uso della demo/del lab implica l\'accettazione delle seguenti
+condizioni:
+
+La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite
+da Microsoft Corporation allo scopo di ottenere feedback dall\'utente e
+offrire un\'esperienza di apprendimento. L\'utilizzo della demo/del lab
+è consentito solo per la valutazione delle caratteristiche e delle
+funzionalità di tale tecnologia e per l\'invio di feedback a Microsoft.
+L\'utilizzo per qualsiasi altro scopo non è consentito. È vietato
+modificare, copiare, distribuire, trasmettere, visualizzare, eseguire,
+riprodurre, pubblicare, concedere in licenza, usare per la creazione di
+lavori derivati, trasferire o vendere questa demo/questo lab o parte di
+essi.
+
+SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
+LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
+QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
+
+QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
+SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
+NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
+UN\'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
+SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN
+QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
+COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
+VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
+FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L\'ESPERIENZA D\'USO DI
+TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ RISULTARE DIVERSA IN UN AMBIENTE
+FISICO.
+
+**FEEDBACK**. L\'invio a Microsoft di feedback sulle caratteristiche,
+sulle funzionalità e/o sui concetti della tecnologia descritti in questa
+demo/questo lab implica la concessione a Microsoft, a titolo gratuito,
+del diritto di utilizzare, condividere e commercializzare tale feedback
+in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a
+titolo gratuito a terze parti del diritto di utilizzo di eventuali
+brevetti necessari per i loro prodotti, le loro tecnologie e i loro
+servizi al fine di utilizzare o interfacciarsi ai componenti software o
+ai servizi Microsoft specifici che includono il feedback. L\'utente si
+impegna a non inviare feedback la cui inclusione all\'interno di
+software o documentazione Microsoft imponga a Microsoft di concedere in
+licenza a terze parti tale software o documentazione. Questi diritti
+sussisteranno anche dopo la scadenza del presente contratto.
+
+CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O
+CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
+CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE
+DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON
+VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN
+RELAZIONE ALL\'ACCURATEZZA DEI RISULTATI E DELL\'OUTPUT DERIVANTI
+DALL\'USO DELLA DEMO/DEL LAB O ALL\'ADEGUATEZZA DELLE INFORMAZIONI
+CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
+
+**CLAUSOLA DI RESPONSABILITÀ**
+
+Questa demo/questo lab contiene solo una parte delle nuove funzionalità
+e dei miglioramenti in Microsoft Power BI. Alcune funzionalità
+potrebbero cambiare nelle versioni future del prodotto. In questa
+demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non
+tutte.
+
 
