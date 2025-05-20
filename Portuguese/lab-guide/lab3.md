@@ -92,7 +92,7 @@ Windows.
 9. Selecione **Assinatura de Acesso Compartilhado (SAS) (4)** no menu
     suspenso Tipo de autenticação.
 
-10. Copie o token SAS e cole-o no campo Token SAS (5).
+10. Copie o token SAS e cole-o no campo Token SAS **(5)**.
 
     - **Token SAS:** <inject key="Sas token"></inject>
 
@@ -167,8 +167,7 @@ selecionado.
 
     j. Warehouse.StockItems para **ProductItem**
 
-    > **Observação:** confira novamente os nomes. Um erro de digitação pode
-    > causar erros durante o laboratório.
+    > **Observação:** confira novamente os nomes. Um erro de digitação pode causar erros durante o laboratório.
 
 18. Selecione **Criar** para criar o atalho.
 
@@ -316,15 +315,13 @@ de algumas colunas de States.
 
      ![](../media/lab-03/image22.png)
 
-      Não precisamos de todas as colunas na tabela **Merge**. Certifique-se de
-selecionar apenas as colunas que precisamos.
+      Não precisamos de todas as colunas na tabela **Merge**. Certifique-se de selecionar apenas as colunas que precisamos.
 
 23. Com a consulta **Merge** selecionada **(1)**, selecione **Página
     Inicial (2) -> Escolher colunas (3) -> Escolher colunas (4)** na
     faixa de opções.
 
-    > **Observação:** se a opção Escolher colunas não estiver visível, você
-    > poderá encontrá-la em Gerenciar colunas.
+    > **Observação:** se a opção Escolher colunas não estiver visível, você poderá encontrá-la em Gerenciar colunas.
 
     ![](../media/lab-03/image23.png)
 
@@ -368,20 +365,16 @@ dados sejam carregados a partir dessa consulta.
 
     ![](../media/lab-03/image25.png)
 
-    Navegaremos até o Editor de consulta de visual. Agora vamos salvar essa
-consulta como uma exibição.
+    Navegaremos até o Editor de consulta de visual. Agora vamos salvar essa consulta como uma exibição.
 
-    **Observação:** todas as etapas que executamos usando o editor do Power
-Query podem ser executadas usando o editor de consulta Visual também.
+    **Observação:** todas as etapas que executamos usando o editor do Power Query podem ser executadas usando o editor de consulta Visual também.
 
 30. No menu Editor de consultas Visual, selecione **Salvar como
     exibição**.
 
     ![](../media/lab-03/image26.png)
 
-    A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta
-SQL está disponível. Você pode revisá-la, se quiser revisar o código
-SQL.
+    A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revisá-la, se quiser revisar o código SQL.
 
 31. Insira **Geo** como **Nome da exibição**.
 
@@ -448,8 +441,7 @@ tabela superior.
 
     ![](../media/lab-03/image32.png)
 
-    Não precisamos de todas as colunas na tabela Customer. Vamos selecionar
-apenas aquelas de que precisamos.
+    Não precisamos de todas as colunas na tabela Customer. Vamos selecionar apenas aquelas de que precisamos.
 
 13. No menu de consulta de Visual, selecione **Gerenciar colunas ->
     Escolher colunas**.
@@ -508,15 +500,13 @@ salvar esta exibição.
 
     ![](../media/lab-03/image36.png)
 
-    - **Observação:** A caixa **Customer** deve ter uma borda azul se a opção
-Habilitar carga estiver marcada.
+    **Observação:** A caixa **Customer** deve ter uma borda azul se a opção Habilitar carga estiver marcada.
 
 20. No menu de consultas Visual, selecione **Salvar como exibição**.
 
     ![](../media/lab-03/image37.png)
 
-    A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta
-SQL está disponível. Você pode revê-la, se selecioná-la.
+    A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revê-la, se selecioná-la.
 
 21. Insira **Reseller** como **Nome da exibição**.
 
@@ -634,11 +624,7 @@ poderá acessá-lo em **Início -> Consulta -> Editor Avançado**.
 24. Digite **Ctrl+V** no teclado para colar o código copiado do Power BI
     Desktop.
 
-    **Observação:** se você estiver trabalhando no ambiente de laboratório,
-selecione as **reticências(...)** no canto superior direito da tela. Use
-o controle deslizante para **habilitar** **Área de Transferência Nativa
-da VM**. Selecione OK na caixa de diálogo. Depois que terminar de colar
-as consultas, você poderá desabilitar essa opção.
+    **Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as **reticências(...)** no canto superior direito da tela. Use o controle deslizante para **habilitar** **Área de Transferência Nativa da VM**. Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
 
     ![](../media/lab-03/image48.png)
 
