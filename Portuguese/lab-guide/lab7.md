@@ -1,4 +1,4 @@
-# Microsoft Fabric - Microsoft Fabric Fabric Analyst in a Day - Laboratório 7
+# Microsoft Fabric - Fabric Analyst in a Day - Laboratório 7
 
 ![](../media/lab-07/Lab7Image.png)
 
@@ -103,7 +103,7 @@ tela abaixo. Existem alguns KPIs e alguns visuais de tendências. Este é
 um bom começo se você estiver analisando um novo modelo e precisar de um
 impulso inicial.
 
-   - **Observação:** No menu superior, você tem a opção de editar o relatório
+   **Observação:** No menu superior, você tem a opção de editar o relatório
 ou visualizar alguns dos dados como tabelas. Fique à vontade para
 explorar essas opções.
 
@@ -112,7 +112,7 @@ explorar essas opções.
 10. A caixa de diálogo Salvar seu relatório é aberta. Nomeie o relatório
     como **rpt_Sales_Auto_Report**.
 
-    - **Observação:** estamos prefixando o nome do relatório com rpt, que
+    **Observação:** estamos prefixando o nome do relatório com rpt, que
     é a abreviação de relatório.
 
 11. Verifique se o relatório está salvo no workspace, **FAIAD_<nome de
@@ -122,7 +122,7 @@ explorar essas opções.
 
     ![](../media/lab-07/image12.png)
 
-    - **Observação:** A aparência do relatório criado automaticamente pode ser
+    **Observação:** A aparência do relatório criado automaticamente pode ser
 diferente para você, pois ele é "criado automaticamente". Depende
 também dos relacionamento e das medidas que você criou no laboratório
 anterior (Laboratório 6).
@@ -316,7 +316,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 2. A caixa de diálogo Salvar seu relatório é aberta. Nomeie o relatório
     como **rpt_Sales_Report**.
 
-    - **Observação:** estamos prefixando o nome do relatório com rpt, que
+    **Observação:** estamos prefixando o nome do relatório com rpt, que
     é a abreviação de relatório.
 
 3. Verifique se o relatório está salvo no workspace **FAIAD_<nome de
@@ -384,7 +384,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 
     ![](../media/lab-07/image30.png)
 
-    - **Observação:** Os meses são classificados em ordem alfabética. Vamos
+    **Observação:** Os meses são classificados em ordem alfabética. Vamos
 corrigir isso.
 
     ![](../media/lab-07/image31.png)

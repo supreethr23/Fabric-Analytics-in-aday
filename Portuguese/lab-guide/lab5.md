@@ -1,4 +1,4 @@
-# Microsoft Fabric - Microsoft Fabric Fabric Analyst in a Day - Laboratório 5
+# Microsoft Fabric - Fabric Analyst in a Day - Laboratório 5
 
 ![](../media/lab-05/Lab5Image.png)
 
@@ -64,8 +64,7 @@ Ao final deste laboratório, você terá aprendido:
 Vamos começar configurando uma atualização agendada do Fluxo de dados
 Supplier.
 
-1. Voltamos ao workspace do Fabric, **FAIAD_<nome de usuário>**
-    selecionando-o no painel esquerdo.
+1. Voltamos ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** selecionando-o no painel esquerdo.
 
 2. Para maximizar o painel com a lista de artefatos, selecione a seta
     dupla no canto superior direito do painel.
@@ -89,8 +88,8 @@ Supplier.
 
     ![](../media/lab-05/image8.png)
 
-    - **Observação:** A página Configurações é aberta. No painel esquerdo,
-você encontrará todos os Fluxos de Dados listados.
+    **Observação:** A página Configurações é aberta. No painel esquerdo,
+    você encontrará todos os Fluxos de Dados listados.
 
 6. No painel central, selecione o link **Histórico de atualização**.
 
@@ -100,15 +99,15 @@ você encontrará todos os Fluxos de Dados listados.
     quando o fluxo de dados foi publicado. Selecione o link **Hora de
     início**.
 
-    - **Observação:** A hora de início será diferente para você.
+    **Observação:** A hora de início será diferente para você.
 
     ![](../media/lab-05/image10.png)
 
     A tela Detalhes será aberta. Ela fornecerá detalhes da atualização,
-listando o horário de início, de término e a duração. Ela também lista
-as tabelas/atividades que foram atualizadas. Caso haja uma falha, você
-pode clicar no nome da tabela/atividade para investigar mais
-detalhadamente.
+    listando o horário de início, de término e a duração. Ela também lista
+    as tabelas/atividades que foram atualizadas. Caso haja uma falha, você
+    pode clicar no nome da tabela/atividade para investigar mais
+    detalhadamente.
 
     ![](../media/lab-05/image11.png)
 
@@ -120,11 +119,9 @@ detalhadamente.
     Uma lista de conexões usadas no fluxo de dados é exibida. Neste
     caso, Lakehouse e Snowflake.
 
-    a. **Lakehouse:** esta é a conexão para ingerir dados do Fluxo de
-        dados.
+    a. **Lakehouse:** esta é a conexão para ingerir dados do Fluxo de dados.
 
-    b. **Snowflake:** esta é a conexão com os dados de origem do
-        Snowflake.
+    b. **Snowflake:** esta é a conexão com os dados de origem do Snowflake.
 
     ![](../media/lab-05/image12.png)
 
@@ -132,10 +129,10 @@ detalhadamente.
 
 11. Defina **Fuso horário** como o seu fuso horário preferencial.
 
-    - **Observação:** Como este é um ambiente de laboratório, você pode
-definir o fuso horário de sua preferência. Em um cenário real, você
-definirá o fuso horário com base em sua localização ou na localização da
-fonte de dados.
+    **Observação:** Como este é um ambiente de laboratório, você pode
+    definir o fuso horário de sua preferência. Em um cenário real, você
+    definirá o fuso horário com base em sua localização ou na localização da
+    fonte de dados.
 
 12. Defina o controle deslizante **Configurar um agendamento** **de
     atualização** como **Ativado**.
@@ -152,25 +149,22 @@ fonte de dados.
 
 16. Selecione **Aplicar** para salvar essa configuração.
 
-    - **Observação:** Ao clicar no link Adicionar outra hora, você pode
-    - adicionar vários horários de atualização.
+    **Observação:** Ao clicar no link Adicionar outra hora, você pode adicionar vários horários de atualização.
 
-    Você também pode enviar notificações de falha para o proprietário do
-fluxo de dados e outros contatos.
+    Você também pode enviar notificações de falha para o proprietário do fluxo de dados e outros contatos.
 
     ![](../media/lab-05/image13.png)
 
     Conforme mencionado anteriormente, precisamos criar uma lógica
-personalizada para lidar com o cenário em que o arquivo Employee no
-SharePoint não é fornecido no prazo. Vamos usar o Pipeline de dados para
-resolver isso.
+    personalizada para lidar com o cenário em que o arquivo Employee no
+    SharePoint não é fornecido no prazo. Vamos usar o Pipeline de dados para
+    resolver isso.
 
 # Pipeline de dados
 
 ## Tarefa 2: Criar Pipeline de dados
 
-1. Voltamos ao workspace do Fabric, **FAIAD_<nome de usuário>**
-    selecionando-o no painel esquerdo.
+1. Voltamos ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** selecionando-o no painel esquerdo.
 
 2. No menu superior, selecione **+ Novo item (1) -> Pipeline de dados
     (2)**.
@@ -178,19 +172,19 @@ resolver isso.
     ![](../media/lab-05/image14.png)
 
 3. Uma nova caixa de diálogo de pipeline é aberta. Nomeie o pipeline
-    como **pl_Refresh_People_SharePoint** (3) e selecione **Criar** (4).
+    como **pl_Refresh_People_SharePoint** **(3)** e selecione **Criar** **(4)**.
 
     ![](../media/lab-05/image15.png)
 
     Você é direcionado para a **página Pipeline de dados**. Se você
-trabalhou com o Azure Data Factory, esta tela será familiar. Vamos obter
-uma visão geral rápida do layout.
+    trabalhou com o Azure Data Factory, esta tela será familiar. Vamos obter
+    uma visão geral rápida do layout.
 
     Você está na tela **Página Inicial**. Se você olhar o menu superior,
-encontrará opções para adicionar as atividades comumente usadas: validar
-e executar um pipeline e visualizar o histórico de execuções. Além
-disso, no painel central, você encontrará opções rápidas para começar
-a criar o pipeline.
+    encontrará opções para adicionar as atividades comumente usadas: validar
+    e executar um pipeline e visualizar o histórico de execuções. Além
+    disso, no painel central, você encontrará opções rápidas para começar
+    a criar o pipeline.
 
     ![](../media/lab-05/image16.png)
 
@@ -212,10 +206,10 @@ a criar o pipeline.
     para visualizar o código no formato JSON. Você também encontrará
     opções para alinhar automaticamente as atividades.
 
-    - **Observação:** Se você tiver um histórico de JSON, no fim do
-laboratório, fique à vontade para selecionar Exibir código JSON. Aqui
-você observará que toda a orquestração que está fazendo usando a
-visualização de design também pode ser escrita em JSON.
+    **Observação:** Se você tiver um histórico de JSON, no fim do
+    laboratório, fique à vontade para selecionar Exibir código JSON. Aqui
+    você observará que toda a orquestração que está fazendo usando a
+    visualização de design também pode ser escrita em JSON.
 
     ![](../media/lab-05/image18.png)
 
@@ -235,15 +229,14 @@ usar.
     **Configurações**.
 
 3. Certifique-se de que o **Workspace** esteja definido como seu
-    workspace do Fabric, **FAIAD<nome de usuário>**.
+    workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 4. Na lista suspensa **Fluxo de dados**, selecione
     **df_People_SharePoint**. Quando esta atividade Fluxo de dados for
     executada, ela atualizará **df_People_SharePoint**. Isso foi fácil,
     certo?
 
-   Em nosso cenário, os Dados do Funcionário não são atualizados em uma
-agenda. Às vezes, há um atraso. Vamos ver se podemos acomodar isso.
+   Em nosso cenário, os Dados do Funcionário não são atualizados em uma agenda. Às vezes, há um atraso. Vamos ver se podemos acomodar isso.
 
     ![](../media/lab-05/image19.png)
 
@@ -262,9 +255,9 @@ agenda. Às vezes, há um atraso. Vamos ver se podemos acomodar isso.
     padrão** como está, o que deve dar tempo suficiente para a
     atualização do fluxo de dados.
 
-    - **Observação:** Se os dados não estiverem disponíveis na agenda, vamos
-definir a atividade para ser executada novamente a cada 10 minutos, três
-vezes. Se falhar também na terceira tentativa, será reportada uma falha.
+    **Observação:** Se os dados não estiverem disponíveis na agenda, vamos
+    definir a atividade para ser executada novamente a cada 10 minutos, três
+    vezes. Se falhar também na terceira tentativa, será reportada uma falha.
 
 10. Defina **Tentar novamente** como **3**.
 
@@ -296,8 +289,7 @@ levará 15 minutos para que o arquivo fique disponível. Queremos agendar
 as novas tentativas para 5 e 15 minutos. Vamos ver como isso pode ser
 alcançado criando um novo Pipeline de dados.
 
-1. No painel esquerdo, clique em **FAIAD_<nome de usuário>** para
-    navegar até a página inicial do workspace.
+1. No painel esquerdo, clique em **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** para navegar até a página inicial do workspace.
 
 2. No menu superior, clique em **+ Novo item (1)** e, na janela popout,
     clique em **Pipeline de dados (2)**.
@@ -344,8 +336,7 @@ bem-sucedido ou tentamos três vezes.
 
 6. Insira **Valor padrão** igual a **0**.
 
-   - **Observação:** estamos acrescentando var aos nomes das variáveis, por
-isso é fácil encontrá-las e é uma boa prática.
+   **Observação:** estamos acrescentando var aos nomes das variáveis, por isso é fácil encontrá-las e é uma boa prática.
 
     ![](../media/lab-05/image24.png)
 
@@ -361,21 +352,13 @@ isso é fácil encontrá-las e é uma boa prática.
 
 11. Siga etapas semelhantes para adicionar mais três variáveis:
 
-    a. **varIsSuccess** do tipo **String** e valor padrão **Não**. Essa
-        variável será usada para indicar se a atualização do fluxo de
-        dados foi bem-sucedida.
+    a. **varIsSuccess** do tipo **String** e valor padrão **Não**. Essa variável será usada para indicar se a atualização do fluxo de dados foi bem-sucedida.
 
-    b. **varSuccess** do tipo **String** e valor padrão **Sim**. Essa
-        variável será usada para definir o valor de varIsSuccess se a
-        atualização do fluxo de dados for bem-sucedida.
+    b. **varSuccess** do tipo **String** e valor padrão **Sim**. Essa variável será usada para definir o valor de varIsSuccess se a atualização do fluxo de dados for bem-sucedida.
 
-    c. **varWaitTime** do tipo **Integer** e valor padrão **60**. Essa
-        variável será usada para definir o tempo de espera se o fluxo de
-        dados falhar (5 minutos/300 segundos ou 15 minutos/900
-        segundos).
+    c. **varWaitTime** do tipo **Integer** e valor padrão **60**. Essa variável será usada para definir o tempo de espera se o fluxo de dados falhar (5 minutos/300 segundos ou 15 minutos/900 segundos).
 
-    - **Observação:** certifique-se de que não haja espaço antes ou depois do
-nome da variável.
+    **Observação:** certifique-se de que não haja espaço antes ou depois do nome da variável.
 
     ![](../media/lab-05/image25.png)
 
@@ -406,35 +389,20 @@ nome da variável.
 
     ![](../media/lab-05/image27.png)
 
-    Precisamos escrever uma expressão que seja executada até que o valor de
-**varCounter seja 3** ou** **o valor **de varIsSuccess seja Sim**.
-(varCounter e varIsSuccess são as variáveis que acabamos de criar.)
+    Precisamos escrever uma expressão que seja executada até que o valor de **varCounter seja 3** ou o valor **de varIsSuccess seja Sim**. (varCounter e varIsSuccess são as variáveis que acabamos de criar.)
 
 8. A caixa de diálogo **Construtor de expressão de pipeline** é aberta.
     Na metade inferior da caixa de diálogo, você terá um menu:
 
-    a. **Parâmetros:** constantes em um data factory que podem ser
-        consumidas por um pipeline em qualquer expressão.
+    a. **Parâmetros:** constantes em um data factory que podem ser consumidas por um pipeline em qualquer expressão.
 
-    b. **Variáveis do sistema:** podem ser usadas em expressões ao
-        definir entidades em qualquer serviço. Por exemplo, ID do
-        pipeline, nome do pipeline, nome do gatilho, etc.
+    b. **Variáveis do sistema:** podem ser usadas em expressões ao definir entidades em qualquer serviço. Por exemplo, ID do pipeline, nome do pipeline, nome do gatilho, etc.
 
-    c. **Parâmetros de gatilho:** parâmetros que acionaram o pipeline.
-        Por exemplo, Nome do Arquivo ou Caminho da Pasta.
+    c. **Parâmetros de gatilho:** parâmetros que acionaram o pipeline. Por exemplo, Nome do Arquivo ou Caminho da Pasta.
 
-    d. **Funções:** você pode chamar funções dentro de expressão. As
-        funções são categorizadas em Collection, Conversion, Date,
-        Logical, Math e String. Por exemplo, concat é  uma função
-        String, add é uma função Math, etc.
+    d. **Funções:** você pode chamar funções dentro de expressão. As funções são categorizadas em Collection, Conversion, Date, Logical, Math e String. Por exemplo, concat é  uma função String, add é uma função Math, etc.
 
-    e. **Variáveis:** variáveis de pipeline são valores que podem ser
-        definidos e modificados durante a execução de um pipeline. Ao
-        contrário dos parâmetros do pipeline, que são definidos no nível
-        do pipeline e não podem ser alterados durante a execução de
-        pipeline, as variáveis do pipeline podem ser definidas e
-        modificadas dentro de um pipeline usando uma atividade Definir
-        Variável. Usaremos a atividade Definir Variável em breve.
+    e. **Variáveis:** variáveis de pipeline são valores que podem ser definidos e modificados durante a execução de um pipeline. Ao contrário dos parâmetros do pipeline, que são definidos no nível do pipeline e não podem ser alterados durante a execução de pipeline, as variáveis do pipeline podem ser definidas e modificadas dentro de um pipeline usando uma atividade Definir Variável. Usaremos a atividade Definir Variável em breve.
 
      ![](../media/lab-05/image28.png)
 
@@ -452,9 +420,7 @@ nome da variável.
 12. Na seção **Funções Lógicas**, selecione a função **equals**. Observe
     que isso é adicionado à caixa de texto da expressão dinâmica.
 
-    - **Observação:** Sua função deve ser semelhante a **@or(equals())**. A
-função equals também aceita dois parâmetros. Estaremos verificando se a
-variável varCounter é igual a 3.
+    **Observação:** Sua função deve ser semelhante a **@or(equals())**. A função equals também aceita dois parâmetros. Estaremos verificando se a variável varCounter é igual a 3.
 
     ![](../media/lab-05/image30.png)
 
@@ -465,9 +431,7 @@ variável varCounter é igual a 3.
 
 15. Selecione a variável **varCounter** que será o primeiro parâmetro.
 
-16. Insira **3** como o segundo parâmetro da função equals. Como na
-    captura de tela abaixo, sua expressão será
-    **@or(equals(variables('varCounter'),3))**.
+16. Insira **3** como o segundo parâmetro da função equals. Como na captura de tela abaixo, sua expressão será **@or(equals(variables('varCounter'),3))**.
 
     ![](../media/lab-05/image31.png)
 
@@ -499,10 +463,9 @@ variável varCounter é igual a 3.
 
 23. Sua expressão deve ser:
 
-     ```
-       @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
-       variables('varSuccess')))
-     ```
+    ```
+    @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))
+    ```
 
 24. Selecione **OK**.
 
@@ -537,7 +500,7 @@ variável varCounter é igual a 3.
 7. Selecione **Configurações** no painel inferior.
 
 8. Certifique-se de que o **Workspace** esteja definido como seu
-    workspace **FAIAD_<nome de usuário>**.
+    workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 9. Na lista suspensa **Fluxo de dados**, selecione
     **df_People_SharePoint**.
@@ -564,21 +527,18 @@ definir o valor da variável varIsSuccess como Sim.
 4. No campo **Descrição**, insira **Definir variável varIsSuccess como
     Sim**.
 
-   - **Observação:** Passe o mouse sobre **atividade Fluxo de dados**. À
-direita da caixa de atividades existem quatro ícones. Eles podem ser
-usados para conectar-se à próxima atividade com base no resultado da
-atividade:
+    **Observação:** Passe o mouse sobre **atividade Fluxo de dados**. À
+    direita da caixa de atividades existem quatro ícones. Eles podem ser
+    usados para conectar-se à próxima atividade com base no resultado da
+    atividade:
 
-        a. O ícone de **seta curvada cinza** é usado para pular a atividade.
+    a. O ícone de **seta curvada cinza** é usado para pular a atividade.
         
-        b. O ícone de **marca de seleção verde** é usado no sucesso da
-            atividade.
+    b. O ícone de **marca de seleção verde** é usado no sucesso da atividade.
         
-        c. O ícone de **marca x vermelho** é usado na falha da atividade.
+    c. O ícone de **marca x vermelho** é usado na falha da atividade.
         
-        d. O ícone de **seta reta azul** é usado na conclusão da atividade.
-        
-        <!-- -->
+    d. O ícone de **seta reta azul** é usado na conclusão da atividade.
 
 5. Clique na **marca de seleção verde** da atividade de Fluxo de dados
     dfactivity_People_SharePoint e arraste para se conectar à nova
@@ -660,15 +620,15 @@ atividade:
 10. A caixa de diálogo Construtor de expressões de pipeline é aberta.
     Insira **@add(variables('varCounter'),1)**.
 
-    - **Observação:** Sinta-se à vontade para digitar esta expressão, usar o
-menu para selecionar as funções ou copiá-la e colá-la. Esta função
-define o valor da variável varTempCounter como o valor da variável
-varCounter mais um, (varTempCounter = varCounter + 1).
+    **Observação:** Sinta-se à vontade para digitar esta expressão, usar o
+    menu para selecionar as funções ou copiá-la e colá-la. Esta função
+    define o valor da variável varTempCounter como o valor da variável
+    varCounter mais um, (varTempCounter = varCounter + 1).
 
     ![](../media/lab-05/image42.png)
 
     Agora, precisamos definir o valor da variável varCounter como o valor de
-varTempCounter.
+    varTempCounter.
 
 ## Tarefa 11: Configurar 3ª atividade Set variable
 
@@ -710,9 +670,9 @@ varTempCounter.
 
     ![](../media/lab-05/image44.png)
 
-    - **Observação:** Esta função define o valor da variável varCounter como o
-valor da variável varTempCounter (varCounter = varTempCounter). No final
-de cada iteração, varCounter e varTempCounter têm o mesmo valor.
+    **Observação:** Esta função define o valor da variável varCounter como o
+    valor da variável varTempCounter (varCounter = varTempCounter). No final
+    de cada iteração, varCounter e varTempCounter têm o mesmo valor.
 
 ## Tarefa 12: Configurar atividade Wait
 
@@ -759,22 +719,18 @@ Wait e a variável varWaitTime para definir o tempo de espera.
     )
    ``` 
 
-
-   Sinta-se à vontade para digitar esta expressão, usar o menu para
-selecionar as funções ou copiá la e colá-la.
+    Sinta-se à vontade para digitar esta expressão, usar o menu para
+    selecionar as funções ou copiá la e colá-la.
 
     ![](../media/lab-05/image46.png)
 
    Estamos usando duas novas funções aqui:
 
-    - **greater:** usa dois números como parâmetros e compara qual deles é
-        maior.
+    - **greater:** usa dois números como parâmetros e compara qual deles é maior.
 
-    - **mul:** esta é uma função de multiplicação; ela usa dois parâmetros
-        para multiplicar.
+    - **mul:** esta é uma função de multiplicação; ela usa dois parâmetros para multiplicar.
 
-    A expressão é uma instrução if aninhada. Ela está verificando se o valor
-da variável varCounter é maior que 1.
+    A expressão é uma instrução if aninhada. Ela está verificando se o valor da variável varCounter é maior que 1.
 
     Se for verdadeiro, ela verifica se o valor da variável varCounter é 2.
     Se for verdadeiro, ela define o tempo de espera para varWaitTime vezes
@@ -789,32 +745,26 @@ varWaitTime * 5. Isso seria 60 * 5 = 300 segundos.
 
 9. Selecione **OK**.
 
-   **Ponto de verificação:** o iterador **Until** deve ser semelhante à
-captura de tela abaixo.
+   **Ponto de verificação:** o iterador **Until** deve ser semelhante à captura de tela abaixo.
 
     ![](../media/lab-05/image47.png)
 
-10. Na parte superior esquerda da tela de design, selecione
-    **pl_Refresh_People_Sharepoint_Option2** ou **Main Canvas** para
-    sair do iterador Until.
+10. Na parte superior esquerda da tela de design, selecione **pl_Refresh_People_Sharepoint_Option2** ou **Main Canvas** para sair do iterador Until.
 
     ![](../media/lab-05/image48.png)
 
-11. Terminamos de criar o pipeline de dados. No menu superior, selecione
-    **Página Inicial -> ícone de Salvar** para salvar o pipeline de
-    dados.
+11. Terminamos de criar o pipeline de dados. No menu superior, selecione **Página Inicial -> ícone de Salvar** para salvar o pipeline de dados.
 
     ![](../media/lab-05/image49.png)
 
 ## Tarefa 13: Configurar atualização de agenda para o Pipeline de dados
 
-1. Podemos testar o pipeline de dados selecionando **Página Inicial ->
-    Executar**.
+1. Podemos testar o pipeline de dados selecionando **Página Inicial -> Executar**.
 
-   - **Observação:** Pode levar alguns minutos para que o pipeline de dados
-seja atualizado. Este é um ambiente de treinamento, portanto o arquivo
-no SharePoint está sempre disponível. Consequentemente, o pipeline de
-dados nunca falhará.
+   **Observação:** Pode levar alguns minutos para que o pipeline de dados
+    seja atualizado. Este é um ambiente de treinamento, portanto o arquivo
+    no SharePoint está sempre disponível. Consequentemente, o pipeline de
+    dados nunca falhará.
 
 2. Podemos definir o pipeline de dados para ser executado de acordo com
     uma agenda. No menu superior, selecione **Página Inicial >
@@ -832,10 +782,10 @@ dados nunca falhará.
 
 8. Defina seu **Fuso horário**.
 
-   - **Observação:** Como este é um ambiente de laboratório, você pode
-definir o fuso horário de sua preferência. Em um cenário real, você
-definirá o fuso horário com base em sua localização ou na localização da
-fonte de dados.
+    **Observação:** Como este é um ambiente de laboratório, você pode
+    definir o fuso horário de sua preferência. Em um cenário real, você
+    definirá o fuso horário com base em sua localização ou na localização da
+    fonte de dados.
 
 9. Selecione **Aplicar**.
 
@@ -844,14 +794,13 @@ fonte de dados.
 
     ![](../media/lab-05/image50.png)
 
-11. Selecione seu workspace do Fabric **FAIAD_<nome de usuário>** no
-    painel esquerdo para navegar até o workspace.
+11. Selecione seu workspace do Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** no painel esquerdo para navegar até o workspace.
 
-    - **Observação:** Na tela Agendamento, não há opção de notificação sobre
-sucesso ou falha (como Agendamento do Fluxo de dados). A notificação
-pode ser feita adicionando uma atividade no Pipeline de dados. Não
-estamos fazendo isso neste laboratório, pois este é um ambiente
-de laboratório.
+    **Observação:** Na tela Agendamento, não há opção de notificação sobre
+    sucesso ou falha (como Agendamento do Fluxo de dados). A notificação
+    pode ser feita adicionando uma atividade no Pipeline de dados. Não
+    estamos fazendo isso neste laboratório, pois este é um ambiente
+    de laboratório.
 
     Agendamos atualizações para as diversas fontes de dados. Criaremos um modelo semântico com relacionamentos, medidas e outras operações de modelagem no próximo laboratório.
 

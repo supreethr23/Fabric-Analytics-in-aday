@@ -593,7 +593,7 @@ Avançado.
 
     ![](../media/lab-03/image45.png)
 
-    - **Observação:** se você não conseguir encontrar o Editor Avançado,
+    **Observação:** se você não conseguir encontrar o Editor Avançado,
 poderá acessá-lo em **Início -> Consulta -> Editor Avançado**.
 
 16. **Selecione código da Linha 3** (#"Expanded Invoice"...) até a

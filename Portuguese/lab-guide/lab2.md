@@ -1,5 +1,5 @@
 
-# Microsoft Fabric - Microsoft Fabric Fabric Analyst in a Day - Laboratório 2
+# Microsoft Fabric - Fabric Analyst in a Day - Laboratório 2
 
 ![](../media/lab-02/Lab2Image.png)
 

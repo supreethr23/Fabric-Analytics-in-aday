@@ -1,4 +1,4 @@
-# Microsoft Fabric - Microsoft Fabric Fabric Analyst in a Day - Laboratório 6
+# Microsoft Fabric - Fabric Analyst in a Day - Laboratório 6
 
 ![](../media/lab-06/Lab6Image.png)
 
@@ -96,7 +96,7 @@ essas opções. Vamos tentar escrever uma consulta SQL simples.
     consultas compartilhadas com você usando a pasta **Consultas
     compartilhadas**.
 
-    - **Observação:** as consultas visuais que você criou em laboratórios
+    **Observação:** as consultas visuais que você criou em laboratórios
 anteriores também estão disponíveis na pasta My queries.
 
     ![](../media/lab-06/image8.png)
@@ -218,7 +218,7 @@ no canto superior direito da tabela. Isso porque são exibições. Todos os
 elementos visuais criados com campos dessas exibições estarão no modo
 Direct Query e não no modo Direct Lake.
 
-- **Observação:** o modo Direct Lake é mais rápido do que o modo Direct
+**Observação:** o modo Direct Lake é mais rápido do que o modo Direct
 Query.
 
 1. Vamos voltar ao **workspace do Fabric** e selecione o modelo
@@ -280,7 +280,7 @@ Query.
     as tabelas **Sales** e **Product**. Selecione **StockItemID** na
     tabela **Sales** e **StockItemID** na tabela **Product**.
 
-    - **Observação:** todas as nossas atualizações são salvas automaticamente.
+    **Observação:** todas as nossas atualizações são salvas automaticamente.
 
     **Ponto de verificação:** seu modelo deve ter os três relacionamentos
 entre as tabelas Sales e Reseller, Sales e Date e Sales e Product,
