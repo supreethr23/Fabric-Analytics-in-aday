@@ -66,7 +66,7 @@ Windows.
     criou no Laboratório 2, Tarefa 8.
 
 2. Se você não saiu do laboratório anterior, estará na tela Lakehouse.
-    Caso contrário, não tem problema. Selecione **lh_FAIAD** (**2)**
+    Caso contrário, não tem problema. Selecione **lh_FAIAD** **(2)**
     para acessar o Lakehouse.
 
 3. No painel **Explorer**, selecione as **reticências (3)** ao lado de
@@ -83,9 +83,7 @@ Windows.
 
 6. Selecione **Criar nova conexão (1)**.
 
-7. Insira o seguinte link para a propriedade **URL:**
-    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
-    **(2):**
+7. Insira o seguinte link para a propriedade **URL:** https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2):**
 
 8. Clique em Criar Nova Conexão (3) na seção Conexão
 
@@ -227,7 +225,7 @@ a guia de consulta de visual se você não vir imediatamente esse ícone.*
 
      ![](../media/lab-03/image16.png)
 
-6. Com a consulta **Cities(1)** selecionada, na faixa de opções do
+6. Com a consulta **Cities (1)** selecionada, na faixa de opções do
     Editor do Power Query, selecione **Página Inicial (2) ->
     Combinar (3) -> menu suspenso Mesclar consultas (4) -> Mesclar
     consultas como novas (5)**. A caixa de diálogo Mesclar consultas é
