@@ -281,10 +281,10 @@ vezes. Se falhar também na terceira tentativa, será reportada uma falha.
 configuração do fluxo de dados na atualização agendada (como fizemos
 para os fluxos de dados anteriores):
 
-   - O pipeline oferece a opção de tentar novamente várias vezes antes de
+    - O pipeline oferece a opção de tentar novamente várias vezes antes de
     a atualização falhar.
 
-   - O pipeline oferece o recurso de atualizar em segundos, enquanto com
+    - O pipeline oferece o recurso de atualizar em segundos, enquanto com
     o fluxo de dados, a atualização agendada ocorre a cada 30 minutos.
 
 ### Tarefa 4: Criar novo Pipeline de dados
@@ -499,10 +499,10 @@ variável varCounter é igual a 3.
 
 23. Sua expressão deve ser:
 
-    ```
-     @or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
-variables(\'varSuccess\')))
-    ```
+        ```
+         @or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
+         variables(\'varSuccess\')))
+        ```
 
 24. Selecione **OK**.
 
@@ -569,16 +569,16 @@ direita da caixa de atividades existem quatro ícones. Eles podem ser
 usados para conectar-se à próxima atividade com base no resultado da
 atividade:
 
-a. O ícone de **seta curvada cinza** é usado para pular a atividade.
-
-b. O ícone de **marca de seleção verde** é usado no sucesso da
-    atividade.
-
-c. O ícone de **marca x vermelho** é usado na falha da atividade.
-
-d. O ícone de **seta reta azul** é usado na conclusão da atividade.
-
-<!-- -->
+        a. O ícone de **seta curvada cinza** é usado para pular a atividade.
+        
+        b. O ícone de **marca de seleção verde** é usado no sucesso da
+            atividade.
+        
+        c. O ícone de **marca x vermelho** é usado na falha da atividade.
+        
+        d. O ícone de **seta reta azul** é usado na conclusão da atividade.
+        
+        <!-- -->
 
 5. Clique na **marca de seleção verde** da atividade de Fluxo de dados
     dfactivity_People_SharePoint e arraste para se conectar à nova
@@ -847,15 +847,13 @@ fonte de dados.
 11. Selecione seu workspace do Fabric **FAIAD\_\<nome de usuário\>** no
     painel esquerdo para navegar até o workspace.
 
-   - **Observação:** Na tela Agendamento, não há opção de notificação sobre
+    - **Observação:** Na tela Agendamento, não há opção de notificação sobre
 sucesso ou falha (como Agendamento do Fluxo de dados). A notificação
 pode ser feita adicionando uma atividade no Pipeline de dados. Não
 estamos fazendo isso neste laboratório, pois este é um ambiente
 de laboratório.
 
-    Agendamos atualizações para as diversas fontes de dados. Criaremos um
-modelo semântico com relacionamentos, medidas e outras operações de
-modelagem no próximo laboratório.
+    Agendamos atualizações para as diversas fontes de dados. Criaremos um modelo semântico com relacionamentos, medidas e outras operações de modelagem no próximo laboratório.
 
 # Referências
 
