@@ -46,17 +46,14 @@ Ao final deste laboratório, você terá aprendido:
 Vamos começar usando a opção de criação automática de relatório. E, mais
 adiante no laboratório, recriaremos o relatório que temos no Power BI.
 
-1. Vamos voltar ao **workspace do Fabric** que você criou no
-    laboratório 2, denominado **FAIAD_<nome de usuário>**.
+1. Vamos voltar ao **workspace do Fabric** que você criou no laboratório 2, denominado **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
-2. Na parte inferior esquerda da tela,
-    selecione o ícone **Fabric experience selector**.
+2. Na parte inferior esquerda da tela, selecione o ícone **Fabric experience selector**.
 
     ![](../media/lab-07/image6.png)
 
 3. A caixa de diálogo de experiência do Fabric é aberta. Selecione
-    **Power BI**. Você será direcionado a uma **Página Inicial do Power
-    BI**.
+    **Power BI**. Você será direcionado a uma **Página Inicial do Power BI**.
 
     ![](../media/lab-07/image7.png)
 
@@ -76,13 +73,11 @@ adiante no laboratório, recriaremos o relatório que temos no Power BI.
 6. Escolha um conjunto de dados para usar no relatório quando a página
     for aberta. Observe que temos várias opções. Selecione **sm_FAIAD**.
 
-    a. **sm_FAIAD:** é o modelo semântico que criamos e queremos usar
-        para criar o relatório.
+    a. **sm_FAIAD:** é o modelo semântico que criamos e queremos usar para criar o relatório.
 
     b. **lh_FAIAD:** é o lakehouse em que ingerimos todos os dados.
 
-    c. **Units by Supplier:** é o conjunto de dados que criamos usando
-        T-SQL.
+    c. **Units by Supplier:** é o conjunto de dados que criamos usando T-SQL.
 
 7. Clique na **seta ao lado do botão Relatório de criação automática**.
     Existem duas opções: Criar relatório automaticamente e Criar um
@@ -99,13 +94,13 @@ adiante no laboratório, recriaremos o relatório que temos no Power BI.
     ![](../media/lab-07/image11.png)
 
     **Ponto de verificação:** você terá um relatório semelhante à captura de
-tela abaixo. Existem alguns KPIs e alguns visuais de tendências. Este é
-um bom começo se você estiver analisando um novo modelo e precisar de um
-impulso inicial.
+    tela abaixo. Existem alguns KPIs e alguns visuais de tendências. Este é
+    um bom começo se você estiver analisando um novo modelo e precisar de um
+    impulso inicial.
 
-   **Observação:** No menu superior, você tem a opção de editar o relatório
-ou visualizar alguns dos dados como tabelas. Fique à vontade para
-explorar essas opções.
+    **Observação:** No menu superior, você tem a opção de editar o relatório
+    ou visualizar alguns dos dados como tabelas. Fique à vontade para
+    explorar essas opções.
 
 9. Vamos salvar este relatório. No menu superior, selecione **Salvar**.
 
@@ -115,25 +110,24 @@ explorar essas opções.
     **Observação:** estamos prefixando o nome do relatório com rpt, que
     é a abreviação de relatório.
 
-11. Verifique se o relatório está salvo no workspace, **FAIAD_<nome de
-    usuário>**.
+11. Verifique se o relatório está salvo no workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 12. Selecione **Salvar**.
 
     ![](../media/lab-07/image12.png)
 
     **Observação:** A aparência do relatório criado automaticamente pode ser
-diferente para você, pois ele é "criado automaticamente". Depende
-também dos relacionamento e das medidas que você criou no laboratório
-anterior (Laboratório 6).
+    diferente para você, pois ele é "criado automaticamente". Depende
+    também dos relacionamento e das medidas que você criou no laboratório
+    anterior (Laboratório 6).
 
     A captura de tela acima mostra como o relatório criado automaticamente
-**poderá** ser exibido se você tiver criado todos os relacionamentos e
-medidas, incluindo os relacionamentos opcionais (Laboratório 6).
+    **poderá** ser exibido se você tiver criado todos os relacionamentos e
+    medidas, incluindo os relacionamentos opcionais (Laboratório 6).
 
     A captura de tela abaixo mostra como o relatório criado automaticamente
-**poderá** ser exibido se você tiver pulado a criação de relacionamentos
-e medidas opcionais (Laboratório 6).
+    **poderá** ser exibido se você tiver pulado a criação de relacionamentos
+    e medidas opcionais (Laboratório 6).
 
     ![](../media/lab-07/image13.png)
 
@@ -142,10 +136,10 @@ e medidas opcionais (Laboratório 6).
 Vamos criar um novo relatório usando uma tela em branco.
 
 1. No **painel esquerdo**, selecione o nome do seu workspace,
-    **FAIAD_<nome de usuário>** para ser direcionado para o
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** para ser direcionado para o
     workspace.
 
-2. No menu superior, selecione **Novo item -> Relatório**. Você será
+2. No menu superior, selecione **+ Novo item -> Relatório**. Você será
     direcionado para criar sua primeira página de relatório.
 
     ![](../media/lab-07/image14.png)
@@ -170,10 +164,10 @@ Vamos criar um novo relatório usando uma tela em branco.
     de laboratório.
 
     Usaremos este relatório como referência. Começaremos adicionando o plano
-de fundo da tela. Criaremos o cabeçalho do relatório, adicionaremos
-alguns KPIs e criaremos o gráfico de linhas Sales over time. Por uma
-questão de tempo e sabendo que você tem experiência com a criação de
-visuais no Power BI Desktop, não criaremos todos os visuais.
+    de fundo da tela. Criaremos o cabeçalho do relatório, adicionaremos
+    alguns KPIs e criaremos o gráfico de linhas Sales over time. Por uma
+    questão de tempo e sabendo que você tem experiência com a criação de
+    visuais no Power BI Desktop, não criaremos todos os visuais.
 
     ![](../media/lab-07/image17.png)
 
@@ -319,8 +313,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
     **Observação:** estamos prefixando o nome do relatório com rpt, que
     é a abreviação de relatório.
 
-3. Verifique se o relatório está salvo no workspace **FAIAD_<nome de
-    usuário>**.
+3. Verifique se o relatório está salvo no workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 4. Selecione **Salvar**.
 
@@ -385,7 +378,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
     ![](../media/lab-07/image30.png)
 
     **Observação:** Os meses são classificados em ordem alfabética. Vamos
-corrigir isso.
+    corrigir isso.
 
     ![](../media/lab-07/image31.png)
 
@@ -463,7 +456,7 @@ Desktop.
 17. Vamos salvar o relatório. No menu, selecione **Arquivo > Salvar**.
 
     Conforme mencionado anteriormente, não criaremos todos os visuais neste
-laboratório. Quando quiser, fique à vontade para criar mais visuais.
+    laboratório. Quando quiser, fique à vontade para criar mais visuais.
 
 ## Tarefa 10: Conectar o Power BI Desktop ao modelo semântico
 
@@ -516,10 +509,10 @@ semântico e criar visuais.
     ![](../media/lab-07/image42.png)
 
     Observe que é fácil copiar elementos visuais de um relatório existente e
-colá-los em um relatório que se conecta ao modelo semântico. Os nomes de
-tabelas, nomes de colunas e nomes de medidas devem ser os mesmos para
-que a função de copiar e colar funcione. Se não forem iguais,
-você poderá receber um erro, mas isso pode ser fácil de resolver.
+    colá-los em um relatório que se conecta ao modelo semântico. Os nomes de
+    tabelas, nomes de colunas e nomes de medidas devem ser os mesmos para
+    que a função de copiar e colar funcione. Se não forem iguais,
+    você poderá receber um erro, mas isso pode ser fácil de resolver.
 
 13. Acesse **FAIAD.pbix** e selecione Sales ao longo do gráfico de
     linhas do tempo.
@@ -544,8 +537,7 @@ você poderá receber um erro, mas isso pode ser fácil de resolver.
 
     ![](../media/lab-07/image44.png)
 
-20. Vamos salvar o relatório. Na faixa de opções, selecione **Arquivo
-    -> Salvar**.
+20. Vamos salvar o relatório. Na faixa de opções, selecione **Arquivo -> Salvar**.
 
 ## Tarefa 11: Adicionar novos dados para simular o modo Direct Lake
 
@@ -570,15 +562,13 @@ e atualizando a exibição Sales.
 
 1. Volte para o **navegador**.
 
-2. Selecione **FAIAD_<nome de usuário>** na barra de menus à
-    esquerda a fim de navegar até a home page do workspace.
+2. Selecione **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** na barra de menus à esquerda a fim de navegar até a home page do workspace.
 
 3. Selecione **lh_FAIAD** para acessar o Lakehouse.
 
     ![](../media/lab-07/image45.png)
 
-4. No **painel Explorer**, à esquerda, selecione as **reticências** ao
-    lado de **Tabelas**.
+4. No **painel Explorer**, à esquerda, selecione as **reticências** ao lado de **Tabelas**.
 
 5. Selecione **Novo atalho**.
 
@@ -596,8 +586,7 @@ e atualizando a exibição Sales.
 8. Se você não criou essa conexão anteriormente no curso, clique em
     Criar nova conexão e conclua as seguintes etapas:
 
-9. Em Configurações de conexão -> URL, insira este link:
-    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
+9. Em Configurações de conexão -> URL, insira este link: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 10. Selecione **Próximo**.
 
@@ -625,18 +614,17 @@ e atualizando a exibição Sales.
     ![](../media/lab-07/image50.png)
 
     Observe no **painel Explorer** à esquerda, agora temos a tabela
-InvoicesMay. Agora precisamos atualizar a exibição Sales.
+    InvoicesMay. Agora precisamos atualizar a exibição Sales.
 
 18. No **canto superior direito** da tela, selecione **Lakehouse ->
     ponto de extremidade do SQL Analytics**.
 
     ![](../media/lab-07/image51.png)
 
-19. No menu superior, selecione **Página Inicial -> Nova consulta
-    SQL**. Um painel de nova consulta SQL é aberto.
+19. No menu superior, selecione **Página Inicial -> Nova consulta SQL**. Um painel de nova consulta SQL é aberto.
 
 20. **Copie** o código abaixo e **cole-o** no painel da consulta
-    SQL****.
+    SQL.
 
      ```
         ALTER VIEW [dbo].[Sales] AS (
@@ -785,7 +773,7 @@ InvoicesMay. Agora precisamos atualizar a exibição Sales.
     código.
 
     Depois que o código é executado, atualizamos a tabela Sales para incluir
-dados de maio de 2024.
+    dados de maio de 2024.
 
     ![](../media/lab-07/image52.png)
 
@@ -799,27 +787,27 @@ dados de maio de 2024.
     ![](../media/lab-07/image53.png)
 
     Não precisamos atualizar o modelo de dados e o relatório quando os dados
-mudam. Esta é a vantagem do Direct Lake e do Direct query.
+    mudam. Esta é a vantagem do Direct Lake e do Direct query.
 
     Vamos verificar novamente os desafios listados na declaração do
-problema:
+    problema:
 
    - **Você precisa atualizar seu conjunto de dados pelo menos três vezes
     por dia para acomodar os diferentes horários de atualização para as
     diferentes fontes de dados**.
 
      Resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é
-atualizado em sua agenda. Os conjuntos de dados e os relatórios não
-precisam ser atualizados.
+    atualizado em sua agenda. Os conjuntos de dados e os relatórios não
+    precisam ser atualizados.
 
    - **As operações de atualização podem demorar, pois é sempre
     necessário fazer uma atualização completa para capturar tudo o que
     foi atualizado nos sistemas de origem**.
 
      Novamente, resolvemos isso usando Direct Lake. Cada Fluxo de Dados
-individual é atualizado em sua agenda. Os conjuntos de dados e os
-relatórios não precisam ser atualizados, portanto não precisamos nos
-preocupar com a atualização completa.
+    individual é atualizado em sua agenda. Os conjuntos de dados e os
+    relatórios não precisam ser atualizados, portanto não precisamos nos
+    preocupar com a atualização completa.
 
    - **Os erros detectados em qualquer uma das fontes das quais você está
     extraindo dados resultarão na interrupção da atualização do conjunto
@@ -828,31 +816,26 @@ preocupar com a atualização completa.
     dados**.
 
      Os Pipelines de Dados ajudam a resolver esse problema, oferecendo o
-recurso de tentar novamente a atualização em caso de falha e em
-intervalos diferentes.
+    recurso de tentar novamente a atualização em caso de falha e em
+    intervalos diferentes.
 
    - **As alterações no modelo de dados demoram muito tempo, pois o Power
     Query leva tempo para atualizar as versões preliminares devido aos
     tamanhos de dados grandes e às transformações complexas**.
 
-     Percebemos que os Fluxos de Dados e o Lakehouses são eficientes e fáceis
-de alterar. Geralmente, a pré-visualização em Fluxos de Dados e
-Lakehouses não demora muito para carregar.
+     Percebemos que os Fluxos de Dados e o Lakehouses são eficientes e fáceis de alterar. Geralmente, a pré-visualização em Fluxos de Dados e Lakehouses não demora muito para carregar.
 
    - **Você precisa de um computador com Windows para usar o Power BI
     Desktop mesmo que o padrão corporativo seja Mac**.
 
-     O Microsoft Fabric é uma oferta de SaaS. Tudo o que precisamos é de um
-navegador para acessar o serviço. Não precisamos instalar nenhum
-software em nossos desktops.
+     O Microsoft Fabric é uma oferta de SaaS. Tudo o que precisamos é de um navegador para acessar o serviço. Não precisamos instalar nenhum software em nossos desktops.
 
 # Limpar o ambiente do laboratório
 
 Quando você estiver pronto para limpar o ambiente do laboratório, siga
 as etapas abaixo.
 
-1. Selecione o workspace **FAIAD_<nome de usuário>** no painel
-    esquerdo para navegar até a home page do workspace.
+1. Selecione o workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** no painel esquerdo para navegar até a home page do workspace.
 
 2. No menu superior, selecione **Configurações do Workspace**.
 
@@ -863,8 +846,7 @@ as etapas abaixo.
 
 4. Selecione **Remover este workspace**.
 
-5. A caixa de diálogo Excluir workspace será aberta. Selecione
-    **Excluir**.
+5. A caixa de diálogo Excluir workspace será aberta. Selecione **Excluir**.
 
    Isso excluirá o workspace e todos os itens nele contidos.
 
