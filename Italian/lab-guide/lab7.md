@@ -14,8 +14,8 @@
   - Attività 6 - Salvataggio del report	
   - Attività 7 - Configurazione della colonna Year nella tabella Date	
   - Attività 8 - Configurazione della colonna Month Name nella tabella Date	
-  - Attività 9 – Formattazione del grafico a linee	
-  - Attività 10: Connessione di Power BI Desktop al modello semantico	
+  - Attività 9 - Formattazione del grafico a linee	
+  - Attività 10 - Connessione di Power BI Desktop al modello semantico	
   - Attività 11 - Aggiunta di nuovi dati per simulare la modalità Direct Lake	
 - Pulizia dell'ambiente lab	
 - Riferimenti	
@@ -58,7 +58,7 @@ avanti nel lab, creeremo nuovamente il report presente in Power BI.
 
     ![](../media/lab-07/image7.png)
 
-4. Selezionare **Nuovo report** dal menu in alto.
+4. Selezionare **+ Nuovo report** dal menu in alto.
 
     ![](../media/lab-07/image8.png)
 
@@ -382,7 +382,7 @@ modello.
 
     ![](../media/lab-07/image30.png)
 
-   - **Nota:** i mesi sono ordinati in ordine alfabetico. Correggiamo.
+   **Nota:** i mesi sono ordinati in ordine alfabetico. Correggiamo.
 
     ![](../media/lab-07/image31.png)
 
@@ -597,8 +597,7 @@ al file di maggio 2024 in ADLS Gen2 e aggiornando la vista Sales.
     **Crea nuova connessione** e completare i passaggi seguenti:
 
 9. In Impostazioni **connessione -> URL** immettere il seguente
-    collegamento
-    <https://stvnextblobstorage.dfs.core.windows.net/>fabrikam-sales
+    collegamento https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 10. Selezionare **Avanti**.
 
@@ -939,7 +938,7 @@ Leggere i blog di annunci più approfonditi sull'esperienza in Fabric:
 - [Blog sull'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+© 2025 Microsoft Corporation. Tutti i diritti sono riservati.
 
 L'uso della demo/del lab implica l'accettazione delle seguenti
 condizioni:

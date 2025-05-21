@@ -92,7 +92,7 @@ flusso di dati dei fornitori.
 
     ![](../media/lab-05/image8.png)
 
-    - **Nota:** si apre la pagina Impostazioni. Nel pannello di sinistra sono
+    **Nota:** si apre la pagina Impostazioni. Nel pannello di sinistra sono
 elencati tutti i flussi di dati.
 
 6. Nel riquadro centrale selezionare il collegamento **Cronologia
@@ -137,7 +137,7 @@ tabella/attività per indagare ulteriormente.
 
 11. Impostare **Fuso orario** sul fuso orario preferito.
 
-    - **Nota:** poiché si tratta di un ambiente lab, è possibile impostare il
+    **Nota:** poiché si tratta di un ambiente lab, è possibile impostare il
 fuso orario sul fuso orario preferito. In uno scenario reale, si
 imposterà il fuso orario in base alla propria ubicazione
 o all'ubicazione dell'origine dati.
@@ -180,9 +180,7 @@ per risolvere questo problema.
 
     ![](../media/lab-05/image14.png)
 
-3. Si apre la finestra di dialogo Nuova pipeline. Assegnare alla
-    pipeline il nome **pl_Refresh_People_SharePoint** (3) e selezionare
-    **Crea** (4).
+3. Si apre la finestra di dialogo Nuova pipeline. Assegnare alla pipeline il nome **pl_Refresh_People_SharePoint** **(3)** e selezionare **Crea** **(4)**.
 
     ![](../media/lab-05/image15.png)
 
@@ -216,7 +214,7 @@ opzioni rapide per iniziare a creare la pipeline.
     opzioni per visualizzare il codice in formato JSON. Si troveranno
     anche le opzioni per allineare automaticamente le attività.
 
-   - **Nota:** Se si ha familiarità con JSON,   alla fine del lab è possibile
+   **Nota:** Se si ha familiarità con JSON,   alla fine del lab è possibile
 selezionare Visualizza codice JSON. Qui si può notare che tutta
 l'orchestrazione effettuata usando la visualizzazione di progettazione
 può anche essere scritta in JSON.
@@ -245,7 +243,7 @@ aggiornare il flusso di dati. Troviamo un'attività che possiamo usare.
     viene eseguita, aggiornerà **df_People_SharePoint.** Questa
     procedura è molto semplice.
 
-    - Nel nostro scenario i dati dipendenti non vengono aggiornati nei tempi
+    Nel nostro scenario i dati dipendenti non vengono aggiornati nei tempi
 previsti. Talvolta si verifica un ritardo. Ora vedremo come risolvere
 questo problema.
 
@@ -267,7 +265,7 @@ questo problema.
     **valore predefinito** poiché dovrebbe fornire tempo sufficiente per
     l'aggiornamento del flusso di dati.
 
-   - **Nota:** se i dati non sono disponibili nei tempi previsti, impostiamo
+   **Nota:** se i dati non sono disponibili nei tempi previsti, impostiamo
 l'attività in modo che venga eseguita nuovamente ogni 10 minuti, per
 tre volte. Se anche al terzo tentativo non riesce, verrà segnalato un
 esito negativo.
@@ -352,7 +350,7 @@ non avrà esito positivo o finché non avremo provato tre volte.
 
 6. Immettere il **Valore predefinito** di **0**.
 
-   - **Nota:** aggiungiamo var all'inizio dei nomi delle variabili per
+   **Nota:** aggiungiamo var all'inizio dei nomi delle variabili per
 renderne più agevole la ricerca.
 
     ![](../media/lab-05/image24.png)
@@ -464,7 +462,7 @@ varIsSuccess sono le variabili che abbiamo appena creato).
     **equals**. Notare che questo viene aggiunto nella casella di testo
     dell'espressione dinamica.
 
-    - **Nota:** La funzione dovrebbe essere **@or(equals())**. Anche la
+    **Nota:** La funzione dovrebbe essere **@or(equals())**. Anche la
 funzione equals accetta due parametri  . Controlleremo se la variabile
 varCounter è uguale a 3.
 
@@ -575,7 +573,7 @@ Sì.
 4. Nel campo **Descrizione** immettere **Impostare la variabile
     varIsSuccess su Sì.**
 
-   - **Nota:** passare il puntatore del mouse sull'**attività Flusso di
+   **Nota:** passare il puntatore del mouse sull'**attività Flusso di
 dati**. A destra del riquadro dell'attività sono presenti quattro
 icone. Tali icone si possono usare per la connessione all'attività
 successiva in base al risultato dell'attività:
@@ -674,7 +672,7 @@ varCounter + 1). Usiamo quindi la variabile varTempCounter.
 10. Si apre la finestra di dialogo Generatore di espressioni della
     pipeline. Immettere **@add(variables('varCounter'),1)**
 
-    - **Nota:** è possibile digitare l'espressione, usare il menu per
+    **Nota:** è possibile digitare l'espressione, usare il menu per
 selezionare le funzioni o copiare e incollare l'espressione. questa
 funzione imposta il valore della variabile varTempCounter sul
 valore della variabile varCounter più uno (varTempCounter = varCounter +
@@ -727,7 +725,7 @@ di varTempCounter.
 
     ![](../media/lab-05/image44.png)
 
-    - **Nota:** questa funzione imposta il valore della variabile varCounter
+    **Nota:** questa funzione imposta il valore della variabile varCounter
 sul valore della variabile varTempCounter (varCounter = varTempCounter).
 Alla fine di ogni iterazione varCounter e varTempCounter hanno lo stesso
 valore.
@@ -851,7 +849,7 @@ nello screenshot seguente.
 
 8. Impostare il proprio **Fuso orario**.
 
-   - **Nota:** poiché si tratta di un ambiente lab, è possibile impostare il
+   **Nota:** poiché si tratta di un ambiente lab, è possibile impostare il
 fuso orario sul fuso orario preferito. In uno scenario reale, si
 imposterà il fuso orario in base alla propria ubicazione
 o all'ubicazione dell'origine dati.
@@ -863,8 +861,7 @@ o all'ubicazione dell'origine dati.
 
     ![](../media/lab-05/image50.png)
 
-11. Selezionare l'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
-    nel pannello di sinistra per andare all'area di lavoro**.**
+11. Selezionare l'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** nel pannello di sinistra per andare all'area di lavoro.
 
     >**Nota:** nella schermata Pianificazione non vi è un'opzione per la notifica dell'esito positivo o negativo (come nella pianificazione del flusso di dati). È possibile impostare la notifica aggiungendo un'attività nella pipeline di dati. Non effettueremo questa impostazione in questo lab poiché si tratta di un ambiente lab.
 
@@ -936,7 +933,7 @@ Leggere i blog di annunci più approfonditi sull'esperienza in Fabric:
 - [Blog sull'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+© 2025 Microsoft Corporation. Tutti i diritti sono riservati.
 
 L'uso della demo/del lab implica l'accettazione delle seguenti
 condizioni:

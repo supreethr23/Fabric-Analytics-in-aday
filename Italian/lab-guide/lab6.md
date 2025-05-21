@@ -98,7 +98,7 @@ opzioni. Proviamo a scrivere una semplice query SQL.
     condivise con l'utente corrente mediante la cartella **Query
     condivise**.
 
-   - **Nota:** le query visive create nei lab precedenti sono disponibili
+   **Nota:** le query visive create nei lab precedenti sono disponibili
 anche nella cartella My queries.
 
     ![](../media/lab-06/image8.png)
@@ -292,9 +292,9 @@ Query.
     **Sales** e **Product**. Selezionare **StockItemID** dalla tabella
     **Sales** e **StockItemID** dalla tabella **Product**.
 
-    - **Nota:** tutti i nostri aggiornamenti vengono salvati automaticamente.
+    **Nota:** tutti i nostri aggiornamenti vengono salvati automaticamente.
 
-    - **Checkpoint:** il modello dovrebbe avere le tre relazioni tra le
+    **Checkpoint:** il modello dovrebbe avere le tre relazioni tra le
 tabelle Sales e Reseller e le tabelle Sales e Date e Sales e Product
 come mostrato nello screenshot seguente:
 
@@ -473,7 +473,7 @@ Aggiungiamo le relazioni rimanenti.
 
 25. Selezionare **Salva**.
 
-    - **Checkpoint:** le relazioni del modello dovrebbero presentarsi come
+    **Checkpoint:** le relazioni del modello dovrebbero presentarsi come
 illustrato nello screenshot seguente.
 
     ![](../media/lab-06/image34.png)
@@ -493,7 +493,7 @@ illustrato nello screenshot seguente.
 29. Selezionare **Chiudi** per chiudere la finestra di dialogo Gestisci
     relazioni. Abbiamo creato tutte le relazioni.
 
-    - **Checkpoint:** il modello dovrebbe presentarsi come illustrato nello
+    **Checkpoint:** il modello dovrebbe presentarsi come illustrato nello
 screenshot seguente.
 
     ![](../media/lab-06/image35.png)
@@ -523,15 +523,11 @@ Aggiungiamo le misure rimanenti.
 
 8. Seguire passaggi analoghi per aggiungere le seguenti misure:
 
-    a. Nella tabella **Sales GM = SUM('Sales'[LineProfit])**
-        formattata come **Valuta con 0 posizioni decimali**.
+    a. Nella tabella **Sales GM = SUM('Sales'[LineProfit])** formattata come **Valuta con 0 posizioni decimali**.
 
-    b. Nella tabella **Sales**, **GM% = DIVIDE([GM], [Sales])**
-        formattato come **Percentuale con 0 posizioni decimali.**
+    b. Nella tabella **Sales**, **GM% = DIVIDE([GM], [Sales])** formattato come **Percentuale con 0 posizioni decimali.**
 
-    c. Nella tabella **Customer, No of Customers =
-        COUNTROWS(Customer)** formattato come **Numero intero con
-        separatore delle migliaia abilitato.**
+    c. Nella tabella **Customer, No of Customers = COUNTROWS(Customer)** formattato come **Numero intero con separatore delle migliaia abilitato.**
 
 # Riferimenti
 
@@ -599,7 +595,7 @@ Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
 - [Blog sull'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+© 2025 Microsoft Corporation. Tutti i diritti sono riservati.
 
 L'uso della demo/del lab implica l'accettazione delle seguenti
 condizioni:
