@@ -17,7 +17,6 @@
   - Attività 7: Sezione facoltativa: creazione delle misure	
 - Riferimenti
 
-
 # Introduzione 
 
 Abbiamo inserito dati provenienti da diverse origini dati in Lakehouse.

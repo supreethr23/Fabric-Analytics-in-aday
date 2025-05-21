@@ -166,7 +166,7 @@ nel desktop di Windows.
 
     j. Warehouse.StockItems in **ProductItem**
 
-    ***Nota:** ricontrollare i nomi. Un errore di digitazione potrebbe
+    **Nota:** ricontrollare i nomi. Un errore di digitazione potrebbe
 causare errori durante il lab.
 
 18. Selezionare **Crea** per creare il collegamento.
@@ -202,8 +202,7 @@ con poco codice, come Power Query. Salveremo il risultato come vista.
    Inizieremo creando una vista Geo. Per creare la vista Geo, dobbiamo
 unire i dati delle tabelle Cities, States e Countries.
 
-2. Nel menu in alto fare clic sul menu a discesa accanto a **Nuova
-    query SQL (1)**, quindi selezionare **Nuova query visiva (2)**.
+2. Nel menu in alto fare clic sul menu a discesa accanto a **Nuova query SQL (1)**, quindi selezionare **Nuova query visiva (2)**.
 
    ![](../media/lab-03/image14.png)
 
@@ -230,7 +229,7 @@ immediatamente*
 
    ![](../media/lab-03/image16.png)
 
-6. Con la query **Cities(1)** selezionata, nella barra multifunzione
+6. Con la query **Cities (1)** selezionata, nella barra multifunzione
     dell'editor di Power Query selezionare **Home (2) -> Combina (3)
     -> Elenco a discesa Esegui merge di query (4) -> Esegui merge di
     query come nuova (5)**. Si apre la finestra di dialogo Esegui merge
@@ -252,9 +251,7 @@ immediatamente*
 
     ![](../media/lab-03/image18.png)
 
-    Notare che è stata creata una nuova query denominata **Merge**. Abbiamo
-bisogno di alcune
-colonne da States.
+    Notare che è stata creata una nuova query denominata **Merge**. Abbiamo bisogno di alcune colonne da States.
 
 12. Nella **vista dati** (pannello inferiore) fare clic sulla **freccia
     doppia** accanto alla colonna **States**
@@ -276,7 +273,7 @@ colonne da States.
 
     Ora dobbiamo unire la query Countries.
 
-15. Con la query di unione selezionata (1) selezionare **Home (2) ->
+15. Con la query di unione selezionata **(1)** selezionare **Home (2) ->
     Combina (3) -> Elenco a discesa Esegui merge di query (4) ->
     Esegui merge di query (5)**.
 
@@ -286,7 +283,7 @@ colonne da States.
     **tabella di destra per l'unione**
     selezionare **Countries**.
 
-17. Selezionare le colonne **ICountryID** da entrambe le tabelle.
+17. Selezionare le colonne **CountryID** da entrambe le tabelle.
     Useremo questa colonna
     per creare un join.
 
@@ -326,7 +323,7 @@ colonne da States.
     Non sono necessarie tutte le colonne della tabella **Merge**.
 Assicurarsi di selezionare solo quelle necessarie.
 
-23. Con la query **Merge** selezionata (1), nella barra multifunzione
+23. Con la query **Merge** selezionata **(1)**, nella barra multifunzione
     selezionare **Home (2) -> Scegli colonne (3) -> Scegli colonne
     (4)**.
 
@@ -609,14 +606,12 @@ avanzato.
 14. Nel pannello di sinistra **Query**, nella cartella **ADLSData**
     **(1)** selezionare la query **Sales (2).**
 
-15. Nella barra multifunzione selezionare **Home - > Editor avanzato
+15. Nella barra multifunzione selezionare **Home -> Editor avanzato
     (3)**. Si apre la finestra di dialogo dell'Editor avanzato.
 
     ![](../media/lab-03/image45.png)
 
-    **Nota:** se non si riesce a trovare l'Editor avanzato, è possibile
-accedervi in 
-**Home -> Query -> Editor avanzato**.
+    **Nota:** se non si riesce a trovare l'Editor avanzato, è possibile accedervi in **Home -> Query -> Editor avanzato**.
 
 16. **Selezionare li codice dalla riga 3** (#"Expanded Invoice" ...)
     fino all'ultima riga di codice.

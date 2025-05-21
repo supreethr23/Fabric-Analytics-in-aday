@@ -217,75 +217,41 @@ lab seguenti.
 
     **Tipi di elemento**
 
-    a. **Flussi di dati:** i flussi di dati sono modalità di trasformazione
-        dei dati. Offrono oltre 300 trasformazioni diverse da applicare ai
-        dati. Ciò significa che è possibile pulire, combinare e modificare i
-        dati in molti modi in base alle diverse esigenze.
+    a. **Flussi di dati:** i flussi di dati sono modalità di trasformazione dei dati. Offrono oltre 300 trasformazioni diverse da applicare ai dati. Ciò significa che è possibile pulire, combinare e modificare i dati in molti modi in base alle diverse esigenze.
 
-    b. **Pipeline:** le pipeline sono flussi di lavoro per automatizzare i
-        processi di dati. Permettono di creare flussi di lavoro di dati
-        flessibili e personalizzabili in base ai requisiti specifici. In
-        questo modo, è possibile gestire ed elaborare più agevolmente i dati
-        in modo strutturato.
+    b. **Pipeline:** le pipeline sono flussi di lavoro per automatizzare i processi di dati. Permettono di creare flussi di lavoro di dati flessibili e personalizzabili in base ai requisiti specifici. In questo modo, è possibile gestire ed elaborare più agevolmente i dati in modo strutturato.
 
-    c. **Azure Data Factory:** Azure Data Factory è un servizio di
-        integrazione dei dati basato sul cloud che consente di creare flussi
-        di lavoro basati sui dati per l'orchestrazione e l'automazione
-        dello spostamento e della trasformazione dei dati.
+    c. **Azure Data Factory:** Azure Data Factory è un servizio di integrazione dei dati basato sul cloud che consente di creare flussi di lavoro basati sui dati per l'orchestrazione e l'automazione dello spostamento e della trasformazione dei dati.
 
-    d. **Processo Apache Airflow:** Apache Airflow è una piattaforma open
-        source usata per creare, pianificare e monitorare i flussi di lavoro
-        a livello programmatico. In Data Factory permette di creare,
-        pianificare e gestire flussi di lavoro di dati complessi.
+    d. **Processo Apache Airflow:** Apache Airflow è una piattaforma open source usata per creare, pianificare e monitorare i flussi di lavoro a livello programmatico. In Data Factory permette di creare, pianificare e gestire flussi di lavoro di dati complessi.
 
-    e. **Processo di copia:** si tratta di una funzionalità che permette di
-        copiare i dati da un'origine a un'altra. È un modo semplice ed
-        efficiente di spostare i dati tra archivi dati diversi.
+    e. **Processo di copia:** si tratta di una funzionalità che permette di copiare i dati da un'origine a un'altra. È un modo semplice ed efficiente di spostare i dati tra archivi dati diversi.
 
-    f. **Con mirroring:** funzionalità per la creazione di versioni con
-        mirroring di database per backup, test o accesso in sola lettura.
+    f. **Con mirroring:** funzionalità per la creazione di versioni con mirroring di database per backup, test o accesso in sola lettura.
 
-    g. **Variable library (Preview):** contiene un elenco di variabili e i
-        relativi valori predefiniti. Può contenere anche altri set di valori
-        che includono valori alternativi.
+    g. **Variable library (Preview):** contiene un elenco di variabili e i relativi valori predefiniti. Può contenere anche altri set di valori che includono valori alternativi.
 
     **Per iniziare**
 
     Per iniziare a usare Data Factory, vedere le sezioni seguenti.
 
-    a. **Informazioni su come usare Data Factory:** questa sezione spiega
-        come iniziare a usare Data Factory. Fornisce indicazioni su come
-        iniziare a usare lo strumento in modo efficace.
+    a. **Informazioni su come usare Data Factory:** questa sezione spiega come iniziare a usare Data Factory. Fornisce indicazioni su come iniziare a usare lo strumento in modo efficace.
 
-    b. **Creazione del primo flusso di dati:** contiene informazioni su
-        come creare il primo flusso di dati. I flussi di dati sono
-        essenziali per trasformare i dati in base alle esigenze.
+    b. **Creazione del primo flusso di dati:** contiene informazioni su come creare il primo flusso di dati. I flussi di dati sono essenziali per trasformare i dati in base alle esigenze.
 
-    c. **Creazione della prima pipeline:** contiene indicazioni per la
-        creazione della prima pipeline di dati. Le pipeline permettono di
-        automatizzare e gestire i processi di dati in modo efficiente.
+    c. **Creazione della prima pipeline:** contiene indicazioni per la creazione della prima pipeline di dati. Le pipeline permettono di automatizzare e gestire i processi di dati in modo efficiente.
 
-    d. **Informazioni su come monitorare Data Factory:** il monitoraggio è
-        fondamentale per garantire un funzionamento fluido dei processi di
-        dati. Questa sezione illustra come monitorare le attività di Data
-        Factory.
+    d. **Informazioni su come monitorare Data Factory:** il monitoraggio è fondamentale per garantire un funzionamento fluido dei processi di dati. Questa sezione illustra come monitorare le attività di Data Factory.
 
-    e. **Informazioni su come trasformare i dati con i flussi di dati:**
-        descrive come usare i flussi di dati per trasformare i dati in modo
-        efficace.
+    e. **Informazioni su come trasformare i dati con i flussi di dati:** descrive come usare i flussi di dati per trasformare i dati in modo efficace.
 
-    f. **Creazione della prima API per GraphQL:** illustra le operazioni
-        iniziali per l'uso di API con GraphQL.
+    f. **Creazione della prima API per GraphQL:** illustra le operazioni iniziali per l'uso di API con GraphQL.
 
-    g. **Creazione delle prime funzioni per i dati utente:** descrive come
-        creare funzioni per i dati utente, utili per la gestione e la
-        trasformazione dei dati utente.
+    g. **Creazione delle prime funzioni per i dati utente:** descrive come creare funzioni per i dati utente, utili per la gestione e la trasformazione dei dati utente.
 
     ![](../media/lab-02/image21.png)
 
-4. Fare clic su **Torna ai carichi di lavoro** nell'angolo in alto a
-    sinistra della schermata. Si apre la pagina principale dei carichi
-    di lavoro, in cui è possibile esplorare altri strumenti o sezioni.
+4. Fare clic su **Torna ai carichi di lavoro** nell'angolo in alto a sinistra della schermata. Si apre la pagina principale dei carichi di lavoro, in cui è possibile esplorare altri strumenti o sezioni.
 
     ![](../media/lab-02/image22.png)
 
@@ -310,52 +276,27 @@ lab seguenti.
 
     **Tipi di elemento**
 
-    a. **Soluzioni di sostenibilità:** supporta l'inserimento, la
-        standardizzazione e l'analisi di dati ambientali, sociali e di
-        governance (ESG).
+    a. **Soluzioni di sostenibilità:** supporta l'inserimento, la standardizzazione e l'analisi di dati ambientali, sociali e di governance (ESG).
 
-    b. **Soluzioni per la vendita al dettaglio:** permette di gestire
-        grandi volumi di dati, di integrare dati provenienti da origini
-        varie e di fornire analisi in tempo reale per un processo
-        decisionale rapido e tempestivo. I rivenditori possono usare queste
-        soluzioni per l'ottimizzazione delle scorte, la segmentazione dei
-        clienti, la previsione delle vendite, la determinazione dinamica dei
-        prezzi e il rilevamento delle frodi.
+    b. **Soluzioni per la vendita al dettaglio:** permette di gestire grandi volumi di dati, di integrare dati provenienti da origini varie e di fornire analisi in tempo reale per un processo decisionale rapido e tempestivo. I rivenditori possono usare queste soluzioni per l'ottimizzazione delle scorte, la segmentazione dei clienti, la previsione delle vendite, la determinazione dinamica dei prezzi e il rilevamento delle frodi.
 
-    c. **Soluzioni per il settore sanitario:** sono progettate
-        strategicamente per accelerare il time-to-value per i clienti
-        rispondendo all'esigenza critica di trasformare in modo efficiente
-        i dati sanitari in un formato adatto per l'analisi.
+    c. **Soluzioni per il settore sanitario:** sono progettate strategicamente per accelerare il time-to-value per i clienti rispondendo all'esigenza critica di trasformare in modo efficiente i dati sanitari in un formato adatto per l'analisi.
 
     **Per iniziare**
     
     Per iniziare a usare Industry Solutions, vedere le sezioni seguenti.
 
-    a. **Informazioni sulle soluzioni per i dati sanitari:** fare clic sul
-        pulsante "Altre informazioni" per informazioni sulle soluzioni per
-        i dati sanitari e su come usarle nei propri progetti.
+    a. **Informazioni sulle soluzioni per i dati sanitari:** fare clic sul pulsante "Altre informazioni" per informazioni sulle soluzioni per i dati sanitari e su come usarle nei propri progetti.
 
-    b. **Distribuzione delle soluzioni per i dati sanitari:** fare clic sul
-        pulsante "Distribuisci" per iniziare a distribuire le soluzioni
-        per i dati sanitari e implementarle nei propri progetti.
+    b. **Distribuzione delle soluzioni per i dati sanitari:** fare clic sul pulsante "Distribuisci" per iniziare a distribuire le soluzioni per i dati sanitari e implementarle nei propri progetti.
 
-    c. **Informazioni sulle soluzioni per la sostenibilità:** fare clic sul
-        pulsante "Altre informazioni" per informazioni sulle soluzioni per
-        la sostenibilità e su come usarle nei propri progetti.
+    c. **Informazioni sulle soluzioni per la sostenibilità:** fare clic sul pulsante "Altre informazioni" per informazioni sulle soluzioni per la sostenibilità e su come usarle nei propri progetti.
 
-    d. **Distribuzione delle soluzioni per la sostenibilità:** fare clic
-        sul pulsante "Distribuisci" per iniziare a distribuire le
-        soluzioni per la sostenibilità e implementarle nei propri progetti.
+    d. **Distribuzione delle soluzioni per la sostenibilità:** fare clic sul pulsante "Distribuisci" per iniziare a distribuire le soluzioni per la sostenibilità e implementarle nei propri progetti.
 
-    e. **Informazioni sulle soluzioni per la vendita al dettaglio:** fare
-        clic sul pulsante "Altre informazioni" per informazioni sulle
-        soluzioni per la vendita al dettaglio e su come usarle nei propri
-        progetti.
+    e. **Informazioni sulle soluzioni per la vendita al dettaglio:** fare clic sul pulsante "Altre informazioni" per informazioni sulle soluzioni per la vendita al dettaglio e su come usarle nei propri progetti.
 
-    f. **Distribuzione delle soluzioni per la vendita al dettaglio:** fare
-        clic sul pulsante "Distribuisci" per iniziare a distribuire le
-        soluzioni per la vendita al dettaglio e implementarle nei propri
-        progetti.
+    f. **Distribuzione delle soluzioni per la vendita al dettaglio:** fare clic sul pulsante "Distribuisci" per iniziare a distribuire le soluzioni per la vendita al dettaglio e implementarle nei propri progetti.
 
 3. Fare clic su Torna ai carichi di lavoro nell'angolo in alto a
     sinistra della schermata. Si apre la pagina principale dei carichi

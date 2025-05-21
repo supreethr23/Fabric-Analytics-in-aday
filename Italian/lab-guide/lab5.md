@@ -125,11 +125,9 @@ tabella/attività per indagare ulteriormente.
     Viene visualizzato un elenco delle connessioni usate nel flusso di
     dati. In questo caso, Lakehouse e Snowflake.
 
-    a. **Lakehouse:** questa è la connessione per importare dati dal
-        flusso di dati.
+    a. **Lakehouse:** questa è la connessione per importare dati dal flusso di dati.
 
-    b. **Snowflake:** questa è la connessione ai dati dell'origine
-        Snowflake.
+    b. **Snowflake:** questa è la connessione ai dati dell'origine Snowflake.
 
     ![](../media/lab-05/image12.png)
 
@@ -367,19 +365,11 @@ renderne più agevole la ricerca.
 
 11. Eseguire passaggi analoghi per aggiungere altre tre variabili:
 
-    a. **varIsSuccess** di tipo **String** con valore predefinito
-        **No**. Questa variabile verrà usata per indicare se
-        l'aggiornamento del flusso di dati ha avuto esito positivo.
+    a. **varIsSuccess** di tipo **String** con valore predefinito **No**. Questa variabile verrà usata per indicare se l'aggiornamento del flusso di dati ha avuto esito positivo.
 
-    b. **varSuccess** di tipo **String** con valore predefinito **Sì**.
-        Questa variabile verrà usata per impostare il valore di
-        varIsSuccess se l'aggiornamento del flusso di dati ha esito
-        positivo.
+    b. **varSuccess** di tipo **String** con valore predefinito **Sì**. Questa variabile verrà usata per impostare il valore di varIsSuccess se l'aggiornamento del flusso di dati ha esito positivo.
 
-    c. **varWaitTime** di tipo **Integer** con valore predefinito
-        **60**. Questa variabile verrà usata per impostare il tempo di
-        attesa in caso il flusso di dati non riesca
-        (5 minuti/300 secondi oppure 15 minuti/900 secondi).
+    c. **varWaitTime** di tipo **Integer** con valore predefinito **60**. Questa variabile verrà usata per impostare il tempo di attesa in caso il flusso di dati non riesca (5 minuti/300 secondi oppure 15 minuti/900 secondi).
 
     > **Nota:** accertarsi che non ci siano spazi prima o dopo il nome della variabile.
 
@@ -412,38 +402,21 @@ renderne più agevole la ricerca.
 
     ![](../media/lab-05/image27.png)
 
-    Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di
-**varCounter è 3** o il valore **di varIsSuccess è Sì** (varCounter e
-varIsSuccess sono le variabili che abbiamo appena creato).
+    Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di **varCounter è 3** o il valore **di varIsSuccess è Sì** (varCounter e varIsSuccess sono le variabili che abbiamo appena creato).
 
 8. Si apre la finestra di dialogo **Generatore di espressioni della
     pipeline**. Nella metà inferiore della  finestra di dialogo è
     presente un menu:
 
-    a. **Parametri:** costanti in una data factory che una pipeline può
-        usare in qualsiasi espressione.
+    a. **Parametri:** costanti in una data factory che una pipeline può usare in qualsiasi espressione.
 
-    b. **Variabili di sistema:** è possibile usarle nelle espressioni
-        per definire entità all'interno di uno dei servizi, ad esempio
-        ID pipeline, nome pipeline, nome trigger e così via.
+    b. **Variabili di sistema:** è possibile usarle nelle espressioni per definire entità all'interno di uno dei servizi, ad esempio ID pipeline, nome pipeline, nome trigger e così via.
 
-    c. **Parametri trigger:** parametri che hanno attivato la pipeline.
-        Ad esempio, nome file o percorso cartella.
+    c. **Parametri trigger:** parametri che hanno attivato la pipeline. Ad esempio, nome file o percorso cartella.
 
-    d. **Funzioni:** è possibile chiamare funzioni all'interno delle
-        espressioni. Le funzioni sono classificate in funzioni Raccolta,
-        Conversione, Data, Logica, Matematica e Stringa. Ad esempio,
-        concat è una funzione Stringa, add è una funzione Matematica e
-        così via.
+    d. **Funzioni:** è possibile chiamare funzioni all'interno delle espressioni. Le funzioni sono classificate in funzioni Raccolta, Conversione, Data, Logica, Matematica e Stringa. Ad esempio, concat è una funzione Stringa, add è una funzione Matematica e così via.
 
-    e. **Variabili:** le variabili della pipeline sono valori che è
-        possibile impostare e modificare durante l'esecuzione della
-        pipeline. A differenza dei parametri della pipeline, che sono
-        definiti a livello di pipeline e non possono essere modificati
-        durante l'esecuzione della pipeline, le variabili della
-        pipeline possono essere impostate e modificate all'interno di
-        una pipeline usando un'attività Imposta variabile. Useremo a
-        breve l'attività Imposta variabile.
+    e. **Variabili:** le variabili della pipeline sono valori che è possibile impostare e modificare durante l'esecuzione della pipeline. A differenza dei parametri della pipeline, che sono definiti a livello di pipeline e non possono essere modificati durante l'esecuzione della pipeline, le variabili della pipeline possono essere impostate e modificate all'interno di una pipeline usando un'attività Imposta variabile. Useremo a breve l'attività Imposta variabile.
 
      ![](../media/lab-05/image28.png)
 
@@ -573,21 +546,15 @@ Sì.
 4. Nel campo **Descrizione** immettere **Impostare la variabile
     varIsSuccess su Sì.**
 
-   **Nota:** passare il puntatore del mouse sull'**attività Flusso di
-dati**. A destra del riquadro dell'attività sono presenti quattro
-icone. Tali icone si possono usare per la connessione all'attività
-successiva in base al risultato dell'attività:
+   **Nota:** passare il puntatore del mouse sull'**attività Flusso di dati**. A destra del riquadro dell'attività sono presenti quattro icone. Tali icone si possono usare per la connessione all'attività successiva in base al risultato dell'attività:
 
     a. L'icona **freccia curva grigia** si usa per saltare l'attività.
 
-    b. L'icona **segno di spunta verde** si usa in caso di esito positivo
-        dell'attività.
+    b. L'icona **segno di spunta verde** si usa in caso di esito positivo dell'attività.
 
-    c. L'icona **segno X rosso** si usa in caso di esito negativo
-        dell'attività.
+    c. L'icona **segno X rosso** si usa in caso di esito negativo dell'attività.
 
-    d. L'icona **freccia dritta blu** si usa al completamento
-        dell'attività.
+    d. L'icona **freccia dritta blu** si usa al completamento dell'attività.
 
 5. Fare clic sul **segno di spunta verde** dall'attività Flusso di
     dati dfactivity_People_SharePoint e trascinare per connettere la
@@ -669,19 +636,13 @@ varCounter + 1). Usiamo quindi la variabile varTempCounter.
 9. Nel campo **Valore** selezionare la **casella di testo**.
     Selezionare il collegamento **Aggiungi contenuto dinamico**.
 
-10. Si apre la finestra di dialogo Generatore di espressioni della
-    pipeline. Immettere **@add(variables('varCounter'),1)**
+10. Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere **@add(variables('varCounter'),1)**
 
-    **Nota:** è possibile digitare l'espressione, usare il menu per
-selezionare le funzioni o copiare e incollare l'espressione. questa
-funzione imposta il valore della variabile varTempCounter sul
-valore della variabile varCounter più uno (varTempCounter = varCounter +
-1).
+    **Nota:** è possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione. questa funzione imposta il valore della variabile varTempCounter sul valore della variabile varCounter più uno (varTempCounter = varCounter + 1).
 
     ![](../media/lab-05/image42.png)
 
-    Ora dobbiamo impostare il valore della variabile varCounter sul valore
-di varTempCounter.
+    Ora dobbiamo impostare il valore della variabile varCounter sul valore di varTempCounter.
 
 ## Attività 11 - Configurazione della terza attività Imposta variabile
 
@@ -795,21 +756,11 @@ funzioni o copiare e incollare l'espressione.
     L'espressione è un'istruzione if annidata. Controlla se il valore
 della variabile varCounter è maggiore di 1.
 
-   Se è true, controlla se il valore della variabile varCounter è 2. Se è
-true, imposta il tempo di attesa su varWaitTime per 15. Ricordare che
-abbiamo impostato il valore predefinito di 60 per la variabile
-varWaitTime. Il risultato sarebbe 60*15 = 900 secondi. Se il valore
-della variabile varCounter è diverso da 2 (è maggiore di 2, ossia
-l'aggiornamento del flusso di dati non è riuscito
-per 3 volte e l'iterazione si conclude, non occorre attendere oltre),
-il tempo di attesa è impostato su varWaitTime * 0. Pertanto è pari a 0.
-Se il valore della variabile varCounter è 1, moltiplicheremo varWaitTime
-* 5. Il risultato sarebbe 60*5 = 300 secondi.
+    Se è true, controlla se il valore della variabile varCounter è 2. Se è true, imposta il tempo di attesa su varWaitTime per 15. Ricordare che abbiamo impostato il valore predefinito di 60 per la variabile varWaitTime. Il risultato sarebbe 60*15 = 900 secondi. Se il valore della variabile varCounter è diverso da 2 (è maggiore di 2, ossia l'aggiornamento del flusso di dati non è riuscito per 3 volte e l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è impostato su varWaitTime * 0. Pertanto è pari a 0. Se il valore della variabile varCounter è 1, moltiplicheremo varWaitTime * 5. Il risultato sarebbe 60*5 = 300 secondi.
 
 9. Selezionare **OK**.
 
-   **Checkpoint:** l'iteratore Fino a dovrebbe presentarsi come illustrato
-nello screenshot seguente.
+   **Checkpoint:** l'iteratore Fino a dovrebbe presentarsi come illustrato nello screenshot seguente.
 
     ![](../media/lab-05/image47.png)
 

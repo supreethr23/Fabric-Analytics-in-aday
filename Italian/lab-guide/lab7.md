@@ -74,14 +74,11 @@ avanti nel lab, creeremo nuovamente il report presente in Power BI.
 6. Scegliere un set di dati nel report quando si apre la pagina. Notare
     che sono presenti più opzioni. **Selezionare sm_FAIAD**.
 
-    a. **sm_FAIAD:** questo è il modello semantico che abbiamo creato e
-        che vogliamo usare per creare il report.
+    a. **sm_FAIAD:** questo è il modello semantico che abbiamo creato e che vogliamo usare per creare il report.
 
-    b. **lh_FAIAD:** questo è il lakehouse in cui abbiamo inserito
-        tutti i dati.
+    b. **lh_FAIAD:** questo è il lakehouse in cui abbiamo inserito tutti i dati.
 
-    c. **Units by Supplier:** questo è il set di dati che abbiamo
-        creato mediante T-SQL.
+    c. **Units by Supplier:** questo è il set di dati che abbiamo creato mediante T-SQL.
 
 7. Fare clic sulla **freccia accanto al pulsante Crea automaticamente
     il report**. Notare che vi sono due opzioni: Crea automaticamente il
@@ -120,14 +117,9 @@ liberamente queste opzioni.
 
     ![](../media/lab-07/image12.png)
 
-    >**Nota:** il report creato automaticamente potrebbe avere un aspetto
-diverso poiché è stato "creato automaticamente". Dipende anche dalle
-relazioni e dalle misure create nel lab precedente (Lab 6).
+    > **Nota:** il report creato automaticamente potrebbe avere un aspetto diverso poiché è stato "creato automaticamente". Dipende anche dalle relazioni e dalle misure create nel lab precedente (Lab 6).
 
-    Lo screenshot precedente mostra come **potrebbe** apparire il report
-creato automaticamente se si fossero create tutte le relazioni e le
-misure, incluse le relazioni facoltative (Lab 6).
-
+    Lo screenshot precedente mostra come **potrebbe** apparire il report creato automaticamente se si fossero create tutte le relazioni e le misure, incluse le relazioni facoltative (Lab 6).
 
     ![](../media/lab-07/image13.png)
 
@@ -135,16 +127,13 @@ misure, incluse le relazioni facoltative (Lab 6).
 
 Creiamo un nuovo report usando un'area di disegno vuota.
 
-1. Nel **pannello di sinistra** selezionare il nome dell'area di
-    lavoro, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, per tornare a essa.
+1. Nel **pannello di sinistra** selezionare il nome dell'area di lavoro, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, per tornare a essa.
 
-2. Nel menu in alto selezionare **Nuovo elemento** -> **Report**. Si
-    aprirà la pagina per creare il primo report.
+2. Nel menu in alto selezionare **+ Nuovo elemento** -> **Report**. Si aprirà la pagina per creare il primo report.
 
     ![](../media/lab-07/image14.png)
 
-3. Fare clic su **Selezionare un modello semantico pubblicato** per
-    poter scegliere il modello creato.
+3. Fare clic su **Selezionare un modello semantico pubblicato** per poter scegliere il modello creato.
 
     ![](../media/lab-07/image15.png)
 
@@ -161,11 +150,7 @@ Creiamo un nuovo report usando un'area di disegno vuota.
     contenuto nella cartella **Reports** sul **desktop** dell'ambiente
     lab.
 
-    Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo
-del canvas. Creeremo l'intestazione del report, aggiungeremo un paio di
-KPI e creeremo il grafico a linee Sales over time. Per risparmiare
-tempo, presupponendo che si abbia esperienza nella creazione di oggetti
-visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
+    Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del canvas. Creeremo l'intestazione del report, aggiungeremo un paio di KPI e creeremo il grafico a linee Sales over time. Per risparmiare tempo, presupponendo che si abbia esperienza nella creazione di oggetti visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
 
     ![](../media/lab-07/image17.png)
 
