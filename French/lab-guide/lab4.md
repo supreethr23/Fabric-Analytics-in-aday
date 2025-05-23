@@ -425,7 +425,7 @@ Vous devriez être dans la lakehouse **lh_FAIAD**. Vérifiez que vous vous
 trouvez dans la vue Lakehouse (et non dans le point de terminaison
 analytique SQL).
 
-    ![](../media/lab-04/image33.png)
+![](../media/lab-04/image33.png)
 
 1. Dans le volet **Explorateur**, cliquez sur les **points de
     suspension** en regard de **Tables**.
