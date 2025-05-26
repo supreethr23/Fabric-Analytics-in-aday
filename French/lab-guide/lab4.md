@@ -108,7 +108,7 @@ l'équipe informatique Lakehouse a créée(s).
 
 1. Cliquez sur **Configurer la connexion**.
 
-    ![](../media/lab-04/image10.png)
+   ![](../media/lab-04/image10.png)
 
 2. La boîte de dialogue Connexion à une source de données s'ouvre
     alors. Dans la liste déroulante **Connexion**, assurez-vous que
