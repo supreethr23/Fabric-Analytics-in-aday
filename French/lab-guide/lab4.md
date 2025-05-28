@@ -57,7 +57,7 @@ l'équipe informatique Lakehouse a créée(s).
     à gauche de l'écran.
 
 3. Sous la section **Obtenir des données (3),** sélectionnez
-    **Dataflow Gen2 (4).**
+    **Dataflow Gen2 (4)**.
 
     ![](../media/lab-04/image6.png)
 
@@ -132,7 +132,7 @@ volet d'aperçu. N'hésitez pas à parcourir les étapes appliquées des
 requêtes. Nous devons maintenant ingérer les données People dans
 Lakehouse.
 
-1. Sélectionnez la requête **People (1).**
+1. Sélectionnez la requête **People (1)**.
 
 2. Dans le ruban, cliquez sur **Accueil -> Requête (2) -> Ajouter une
     destination de données (3) -> Lakehouse (4)**.
@@ -192,7 +192,7 @@ Lakehouse.
 3. **Dataflow 1** est le flux de données sur lequel nous travaillions.
     Renommons-le avant de continuer. Cliquez sur les points de
     **suspension (...)** en regard de Dataflow 1. Sélectionnez
-    **Propriétés.** (Pendant l'exécution du flux de données, vous ne
+    **Propriétés**. (Pendant l'exécution du flux de données, vous ne
     pouvez pas accéder aux propriétés.)
 
     ![](../media/lab-04/image17.png)
@@ -331,10 +331,10 @@ données Supplier et PO dans Lakehouse.
 
 ## Tâche 7 : configurer la destination des données pour les requêtes Supplier et PO
 
-1. Sélectionnez la requête **Supplier (1).**
+1. Sélectionnez la requête **Supplier (1)**.
 
 2. Dans le ruban, cliquez sur **Accueil (2) -> Ajouter une destination
-    de données (3) -> Lakehouse (4).**
+    de données (3) -> Lakehouse (4)**.
 
     ![](../media/lab-04/image25.png)
 
@@ -445,7 +445,7 @@ analytique SQL).
 4. **Sélectionnez Créer une connexion (1)** pour afficher la boîte de
     dialogue Paramètres de connexion. Saisissez
     **org6c18814a.crm.dynamics.com (2)** dans le champ **Domaine de
-    l'environnement.**
+    l'environnement**.
 
 5. Laissez le champ **Type d'authentification** défini sur **Compte
     professionnel (3)**.

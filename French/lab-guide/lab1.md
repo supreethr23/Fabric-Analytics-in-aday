@@ -124,7 +124,7 @@ Desktop pour comprendre les transformations et le modèle.
     - **Adresse e-mail/nom d'utilisateur:** <inject key="AzureAdUserEmail"></inject>
 
 4. Saisissez maintenant le **Mot de passe** suivant et cliquez sur **Se
-    connecter.**
+    connecter**.
 
     - **Mot de passe:** <inject key="AzureAdUserPassword"></inject>
 

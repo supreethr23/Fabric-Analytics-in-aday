@@ -445,7 +445,7 @@ Ajoutons les relations restantes.
     ![](../media/lab-06/image32.png)
 
 14. Créons maintenant une relation entre les tables Reseller et Geo.
-    Cliquez sur **+ Nouvelle relation.**
+    Cliquez sur **+ Nouvelle relation**.
 
 15. La boîte de dialogue Nouvelle relation s'ouvre alors. Assurez-vous
     que le champ **À partir de la table** est défini sur **Reseller** et

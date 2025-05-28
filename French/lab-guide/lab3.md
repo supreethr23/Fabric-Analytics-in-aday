@@ -100,7 +100,7 @@ de raccourcis sur le bureau Windows.
     ![](../media/lab-03/image8.png)
 
 12. connecté(e) à ADLS Gen2 avec la structure de répertoires s'affichant
-    dans le volet gauche. Développez **Delta-Parquet-Format-FY25 (1).**
+    dans le volet gauche. Développez **Delta-Parquet-Format-FY25 (1)**.
 
 13. **Sélectionnez** les répertoires suivants **(2),** puis cliquez sur **Suivant (3) :**
 
@@ -136,7 +136,7 @@ de raccourcis sur le bureau Windows.
     Modifier (1)** sous Actions pour **Application.Cities**.
 
 15. Redéfinissez le nom du répertoire **Application.Cities sur Cities
-    (2).**
+    (2)**.
 
 16. Cliquez sur la coche en regard du nom pour enregistrer la
     modification **(3)**.
@@ -211,7 +211,7 @@ de raccourcis sur le bureau Windows.
 
 3. Pour construire une requête, nous devons ajouter des tables au volet
     Visual Query. Cliquez sur les points de suspension à côté de la
-    table **Cities (1)** et sélectionnez **Insérer dans canevas (2).**
+    table **Cities (1)** et sélectionnez **Insérer dans canevas (2)**.
 
     ![](../media/lab-03/image15.png)
 
@@ -584,7 +584,7 @@ pas possible dans la requête visuelle. Essayons cette méthode.
 6. Avec la requête **InvoiceLineItems** sélectionnée, cliquez sur
     **Accueil (2) -> Combiner (3) -> Menu déroulant Fusionner les
     requêtes (4) -> Fusionner les requêtes comme nouvelles (5) sur le
-    ruban.** La boîte de dialogue Fusionner des requêtes s'ouvre alors.
+    ruban**. La boîte de dialogue Fusionner des requêtes s'ouvre alors.
 
     ![](../media/lab-03/image42.png)
 
@@ -618,7 +618,7 @@ pas possible dans la requête visuelle. Essayons cette méthode.
     ![](../media/lab-03/image44.png)
 
 14. Dans le volet gauche **Requêtes** sous **ADLSData** **(1)**,
-    sélectionnez la requête **Sales (2).**
+    sélectionnez la requête **Sales (2)**.
 
 15. Dans le ruban, cliquez sur **Accueil - > Éditeur avancé (3)**. La
     boîte de dialogue Éditeur avancé s'ouvre alors.
@@ -769,7 +769,7 @@ choses, nous allons copier le code dans l'Éditeur avancé.
 
 9. Sélectionnez **Externe gauche** dans le champ **Type de jointure**.
 
-10. Cliquez sur **OK.** Une requête Merge est alors créée.
+10. Cliquez sur **OK**. Une requête Merge est alors créée.
 
     ![](../media/lab-03/image58.png)
 

@@ -80,7 +80,7 @@ Fournisseur.
 
     ![](../media/lab-05/image7.png)
 
-4. Survolez la ligne **df_Supplier_Snowflake.** Notez que les icônes
+4. Survolez la ligne **df_Supplier_Snowflake**. Notez que les icônes
     familières **Actualiser** et **Planifier l'actualisation** sont
     disponibles. Cliquez sur les **points de suspension (...)**.
 
@@ -177,7 +177,7 @@ Fournisseur.
     cliquant sur l'espace de travail dans le volet gauche.
 
 2. Dans le menu supérieur, cliquez sur **+ Nouvel élément (1) ->
-    Pipeline de données (2).**
+    Pipeline de données (2)**.
 
     ![](../media/lab-05/image14.png)
 
@@ -413,7 +413,7 @@ en créant un pipeline de données.
     ![](../media/lab-05/image27.png)
 
     Nous devons écrire une expression qui s'exécute jusqu'à ce que la valeur
-    de **varCounter soit 3** ou la valeur **de varIsSuccess soit Oui.**
+    de **varCounter soit 3** ou la valeur **de varIsSuccess soit Oui**.
     (varCounter et varIsSuccess sont les variables que nous venons de
     créer.)
 
@@ -583,7 +583,7 @@ varIsSuccess sur Oui.
 7. Dans le volet inférieur, assurez-vous que le paramètre **Type de
     variable** est défini sur **Variable de pipeline**.
 
-8. Dans le champ **Nom**, sélectionnez **varIsSuccess.** Il s'agit de
+8. Dans le champ **Nom**, sélectionnez **varIsSuccess**. Il s'agit de
     la variable dont nous allons définir la valeur.
 
 9. Dans le champ **Valeur**, cliquez sur la **zone de texte**. Cliquez
@@ -809,7 +809,7 @@ activity](../media/lab-05/image47.png)
 ## Tâche 13 : configurer l'actualisation planifiée pour le pipeline de données
 
 1. Nous pouvons tester le pipeline de données en cliquant sur **Accueil
-    -> Exécuter.**
+    -> Exécuter**.
 
     **Remarque :** l'actualisation du pipeline de données peut prendre
     quelques minutes. Il s'agit d'un environnement de formation, donc le
