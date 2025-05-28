@@ -45,8 +45,7 @@ Commençons par utiliser l'option de création automatique d'un état. Plus
 tard dans le labo, nous allons recréer l'état dont nous disposons dans
 Power BI.
 
-1. Revenons à **l'espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** que
-    vous avez créé dans le labo 2, dénommé **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
+1. Revenons à **l'espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** que vous avez créé dans le labo 2, dénommé **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 2. Cliquez sur l'icône du **sélecteur de l'expérience Fabric** dans la
     partie inférieure du volet gauche.
@@ -604,8 +603,7 @@ mai 2024 dans ADLS Gen2 et en mettant à jour la vue Sales.
 8. Si vous n'avez pas encore créé cette connexion, cliquez sur Créer
     une connexion et procédez comme suit :
 
-9. Sous Paramètres de connexion -> URL, saisissez ce lien :
-    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>.
+9. Sous Paramètres de connexion -> URL, saisissez ce lien : https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 10. Cliquez sur **Suivant**.
 
