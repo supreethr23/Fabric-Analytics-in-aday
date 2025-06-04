@@ -46,7 +46,7 @@
 
 # ADLS Gen2 的快捷方式
 
-### 任务 1：创建快捷方式
+## 任务 1：创建快捷方式
 
 快捷方式用于创建指向目标位置的链接。快捷方式提供对数据的访问权限，而无需将数据实际移动到湖屋中。这就像在 Windows 桌面中创建快捷方式一样。
 
@@ -66,7 +66,7 @@
 
 6. 选择**新建连接 (1)**。
 
-7. 针对 **URL** 属性输入以下链接：<https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales> **(2)：**
+7. 针对 **URL** 属性输入以下链接：https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2)：**
 
 8. 单击"连接"部分下的创建新连接 (3)
 
@@ -74,7 +74,7 @@
 
 10. 复制 SAS 令牌并将其粘贴到 SAS 令牌 (5) 字段中。
 
-    - **SAS 令牌：**
+    - **SAS 令牌：** <inject key="Sas token"></inject>
 
 11. 选择屏幕右下角的**下一步 (6)**。
 
@@ -106,7 +106,7 @@
 
     k. Warehouse.StockItems
 
-**注意：** Sales.Invoices_May 是唯一**未**选择的目录。
+    **注意：** Sales.Invoices_May 是唯一**未**选择的目录。
 
    ![](../media/lab-03/image9.png)
 
@@ -150,19 +150,19 @@
 
     ![](../media/lab-03/image12.png)
 
-下一步是转换数据，我们可以创建语义模型。我们将创建视图以转换数据。
+    下一步是转换数据，我们可以创建语义模型。我们将创建视图以转换数据。
 
 # 使用视觉对象查询转换数据
 
-### 任务 2：使用视觉对象查询创建 Geo 视图
+## 任务 2：使用视觉对象查询创建 Geo 视图
 
 1. 我们可以使用 SQL 终结点访问湖屋。这提供查询数据和创建视图的功能。在屏幕的**右上角**，选择**Lakehouse (1) -> SQL 分析终结点 (2)**。
 
    ![](../media/lab-03/image13.png)
 
-系统会将您导航到 SQL 分析终结点。请注意，"资源管理器"面板已更改。现在，您可以创建视图、存储过程、查询等。我们将创建一个可提供低代码界面的视觉对象查询，例如 Power Query。我们将结果另存为视图。
+    系统会将您导航到 SQL 分析终结点。请注意，"资源管理器"面板已更改。现在，您可以创建视图、存储过程、查询等。我们将创建一个可提供低代码界面的视觉对象查询，例如 Power Query。我们将结果另存为视图。
 
-我们将首先创建 Geo 视图。我们需要合并 Cities、States 和 Countries 表的数据来创建 Geo 视图。
+    我们将首先创建 Geo 视图。我们需要合并 Cities、States 和 Countries 表的数据来创建 Geo 视图。
 
 2. 从顶部菜单中，单击**新建 SQL 查询 (1)** 旁边的下拉列表，然后选择**新建视觉对象查询 (2)**。
 
@@ -174,7 +174,7 @@
 
 4. 针对 **States** 和 **Countries** 表重复相同步骤。
 
-接下来，我们需要合并这些查询。视觉对象查询编辑器附带使用 Power Query 编辑器的选项。让我们来使用此选项，因为我们对此很熟悉。
+    接下来，我们需要合并这些查询。视觉对象查询编辑器附带使用 Power Query 编辑器的选项。让我们来使用此选项，因为我们对此很熟悉。
 
 5. 从视觉对象查询编辑器的菜单中，选择**在弹出窗口中打开**图标（位于右侧）。系统会将您导航到 Power Query 编辑器。
 
@@ -198,7 +198,7 @@
 
     ![](../media/lab-03/image18.png)
 
-请注意，已创建名为"**Merge**"的新查询。我们需要"States"中的几列。
+    请注意，已创建名为"**Merge**"的新查询。我们需要"States"中的几列。
 
 12. 在**数据视图**（底部面板）中，单击 **States** 列（右侧最后一列）旁边的**双箭头**。
 
@@ -216,7 +216,7 @@
 
     ![](../media/lab-03/image19.png)
 
-现在，我们需要合并 Countries 查询。
+    现在，我们需要合并 Countries 查询。
 
 15. 选择合并 (1) 查询后，选择**主页 (2) -> 合并 (3) -> 合并查询下拉列表 (4) -> 合并查询 (5)**。
 
@@ -232,7 +232,7 @@
 
     ![](../media/lab-03/image21.png)
 
-我们需要"Countries"中的几列。
+    我们需要"Countries"中的几列。
 
 20. 在**数据视图**（底部面板）中，单击 **Countries** 列旁边的**双箭头**。
 
@@ -258,13 +258,13 @@
 
     ![](../media/lab-03/image22.png)
 
-我们不需要 **Merge** 表中的所有列。确保仅选择所需的列。
+    我们不需要 **Merge** 表中的所有列。确保仅选择所需的列。
 
 23. 选择**合并** (1) 查询后，从功能区中选择**主页 (2) -> 选择列 (3) -> 选择列 (4)**。
 
-**注意：** 如果"选择列"选项不可见，您可以在"管理列"下找到它。
+    **注意：** 如果"选择列"选项不可见，您可以在"管理列"下找到它。
 
-![](../media/lab-03/image23.png)
+    ![](../media/lab-03/image23.png)
 
 24. "选择列"对话框随即打开。**取消选中**以下列。
 
@@ -284,7 +284,7 @@
 
     ![](../media/lab-03/image24.png)
 
-请注意，该流程与 Power Query 类似，我们将所有步骤记录在右侧"已应用步骤"面板中和视觉对象视图中。让我们重命名 Merge 查询并选择"启用加载"，以便从此查询中加载数据。
+    请注意，该流程与 Power Query 类似，我们将所有步骤记录在右侧"已应用步骤"面板中和视觉对象视图中。让我们重命名 Merge 查询并选择"启用加载"，以便从此查询中加载数据。
 
 26. **右键单击**查询（左侧）面板中的 **Merge** 查询。选择**重命名**并将查询重命名为 **Geo**。
 
@@ -296,15 +296,15 @@
 
     ![](../media/lab-03/image25.png)
 
-系统会将我们导航到视觉对象查询编辑器。现在，让我们将此查询另存为视图。
+    系统会将我们导航到视觉对象查询编辑器。现在，让我们将此查询另存为视图。
 
-**注意**：我们使用 Power Query 编辑器执行的所有步骤也可以使用视觉对象查询编辑器执行。
+    **注意**：我们使用 Power Query 编辑器执行的所有步骤也可以使用视觉对象查询编辑器执行。
 
 30. 从"视觉对象查询编辑器"菜单中，选择**另存为视图**。
 
     ![](../media/lab-03/image26.png)
 
-"另存为视图"对话框随即打开。请注意，SQL 查询可用。如果您想要验证 SQL 代码，可以进行查看。
+    "另存为视图"对话框随即打开。请注意，SQL 查询可用。如果您想要验证 SQL 代码，可以进行查看。
 
 31. 输入 **Geo** 作为**视图名称**。
 
@@ -312,13 +312,13 @@
 
     ![](../media/lab-03/image27.png)
 
-保存视图后，您将收到警报。
+    保存视图后，您将收到警报。
 
 33. 在资源管理器（左侧）面板中，展开**Views**。我们有新创建的 Geo 视图。
 
     ![](../media/lab-03/image28.png)
 
-### 任务 3：使用视觉对象查询创建 Reseller 视图
+## 任务 3：使用视觉对象查询创建 Reseller 视图
 
 让我们创建 Reseller 视图，该视图可通过合并"Customers"表与"BuyingGroups"表来创建。这次我们将使用视觉对象查询创建视图，而不打开 Power Query 选项。
 
@@ -336,7 +336,7 @@
 
    ![](../media/lab-03/image30.png)
 
-"合并"对话框随即打开，其中已选择"Customers"作为顶部表。
+    "合并"对话框随即打开，其中已选择"Customers"作为顶部表。
 
 6. 在**用于合并的右表**中，选择 **BuyingGroups**。
 
@@ -356,7 +356,7 @@
 
     ![](../media/lab-03/image32.png)
 
-我们不需要 Customer 表中的所有列。让我们仅选择所需列。
+    我们不需要 Customer 表中的所有列。让我们仅选择所需列。
 
 13. 从"视觉对象查询"菜单中，选择**管理列 -> 选择列**。
 
@@ -400,7 +400,7 @@
 
     ![](../media/lab-03/image35.png)
 
-请注意，"Customer"表已记录所有步骤。现在，让我们保存此视图。
+    请注意，"Customer"表已记录所有步骤。现在，让我们保存此视图。
 
 18. 我们需要保存 Customer 查询，因为它包含所有步骤。我们需要启用加载。在 **Customer** 查询框中选择**省略号**。
 
@@ -414,8 +414,7 @@
 
     ![](../media/lab-03/image37.png)
 
-"另存为视图"对话框随即打开。请注意，SQL
-查询可用。您可以通过选择它来进行查看。
+    "另存为视图"对话框随即打开。请注意，SQL 查询可用。您可以通过选择它来进行查看。
 
 21. 输入 **Reseller** 作为**视图名称**。
 
@@ -423,13 +422,13 @@
 
     ![](../media/lab-03/image38.png)
 
-保存视图后，您将收到警报。
+    保存视图后，您将收到警报。
 
 23. 在资源管理器（左侧）面板中，展开**Views**。我们有新创建的 Reseller 视图。
 
     ![](../media/lab-03/image39.png)
 
-### 任务 4：使用视觉对象查询创建 Sales 视图
+## 任务 4：使用视觉对象查询创建 Sales 视图
 
 让我们创建 Sales 视图，该视图可通过合并"InvoiceLineItems"和"Invoices"表与"Reseller"视图来创建。我们在 Power BI Desktop 中有此查询。我们将从"高级编辑器"复制代码。但在复制代码之前，我们需要使用视觉对象查询创建一个合并表，因为无法在视觉对象查询中创建空白查询。让我们试一下此方法。
 
@@ -463,7 +462,7 @@
 
     ![](../media/lab-03/image43.png)
 
-我们将从 Power BI Desktop 中复制代码并使用"高级编辑器"粘贴它。
+    我们将从 Power BI Desktop 中复制代码并使用"高级编辑器"粘贴它。
 
 12. 如果您尚未打开 **FAIAD.pbix**，请打开它。它位于您的实验室环境的桌面的 **Reports** 文件夹中。
 
@@ -477,8 +476,7 @@
 
     ![](../media/lab-03/image45.png)
 
-    > **注意：** 如果找不到高级编辑器，可以在**主页 -> 查询 ->
-高级编辑器**下访问它。
+    > **注意：** 如果找不到高级编辑器，可以在**主页 -> 查询 -> 高级编辑器**下访问它。
 
 16. **选择行 3 中的代码** (#"Expanded Invoice" ...) 一直到最后一行代码。
 
@@ -502,13 +500,11 @@
 
 24. 在键盘上按 **Ctrl+V** 以粘贴从 Power BI Desktop 复制的代码。
 
-**注意**：如果您在实验室环境中工作，请选择屏幕右上角的**省略号 (...)**。使用滑块**启用** **VM 本机剪贴板**。在对话框中选择"确定"。粘贴查询后，您可以禁用此选项。
+    **注意**：如果您在实验室环境中工作，请选择屏幕右上角的**省略号 (...)**。使用滑块**启用** **VM 本机剪贴板**。在对话框中选择"确定"。粘贴查询后，您可以禁用此选项。
 
-![A screenshot of a computer Description automatically
-generated](../media/lab-03/image48.png)
+    ![(../media/lab-03/image48.png)
 
-![A close up of a text Description automatically
-generated](../media/lab-03/image49.png)
+    ![](../media/lab-03/image49.png)
 
 25. 突出显示最后两行代码（在源中），然后将其**删除**。
 
@@ -516,21 +512,21 @@ generated](../media/lab-03/image49.png)
 
     ![](../media/lab-03/image50.png)
 
-为了更方便起见，请删除"高级编辑器"中的所有代码，并将以下代码粘贴到"高级编辑器"中。
+    为了更方便起见，请删除"高级编辑器"中的所有代码，并将以下代码粘贴到"高级编辑器"中。
 
-```
-let
-  Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
-    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
-    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
-    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
-    #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
-    #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
-    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
-    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
-in
-    #"Removed Columns"
-```
+    ```
+    let
+      Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+        #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+        #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
+        #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+        #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+        #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
+    in
+        #"Removed Columns"
+    ```
 
 27. 系统会将您导航回 Power Query 编辑器。在左侧的"查询"面板中，双击 **Merge** 查询以对其重命名。
 
@@ -550,13 +546,13 @@ in
 
     ![](../media/lab-03/image52.png)
 
-保存视图后，您将收到警报。
+    保存视图后，您将收到警报。
 
 34. 在资源管理器（左侧）面板中，展开**Views**。我们有新创建的 Sales 视图。
 
     ![](../media/lab-03/image53.png)
 
-### 任务 5：使用视觉对象查询创建 Product 视图
+## 任务 5：使用视觉对象查询创建 Product 视图
 
 让我们创建 Product 视图，该视图可通过合并
 **ProductItem**、**ProductItemGroup** 和 **ProductGroups**
@@ -596,8 +592,8 @@ in
 
     ![](../media/lab-03/image59.png)
 
-**注意：** 如果找不到高级编辑器，可以在**主页 -> 查询 ->
-高级编辑器**下访问它。
+    **注意：** 如果找不到高级编辑器，可以在**主页 -> 查询 ->
+    高级编辑器**下访问它。
 
 12. 在"高级编辑器"中**选择全部代码**，然后将其**删除**。
 
@@ -605,14 +601,13 @@ in
 
     ```
     let
-    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
-    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
-    #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
-    #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
-    #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+       Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+       #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+       #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+       #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+       #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
     in
-    #"Choose columns"
-
+       #"Choose columns"
     ```
 
 14. 选择**确定**以关闭"高级编辑器"。系统会将您导航回 Power Query 编辑器。
@@ -637,13 +632,13 @@ in
 
     ![](../media/lab-03/image62.png)
 
-保存视图后，您将收到警报。
+    保存视图后，您将收到警报。
 
 22. 在资源管理器（左侧）面板中，展开**视图**。我们有新创建的 Product 视图。
 
     ![](../media/lab-03/image63.png)
 
-我们已转换来自 ADLS Gen2 数据源的数据。在本实验室中，我们了解了如何创建快捷方式，并探索了使用视觉对象查询视图转换数据的各种选项。
+    我们已转换来自 ADLS Gen2 数据源的数据。在本实验室中，我们了解了如何创建快捷方式，并探索了使用视觉对象查询视图转换数据的各种选项。
 
 在下一个实验室中，我们将了解如何使用数据流 Gen2 以及如何创建另一个湖屋的快捷方式。
 

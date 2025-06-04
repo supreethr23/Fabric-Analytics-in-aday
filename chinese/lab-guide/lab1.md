@@ -72,7 +72,7 @@ Power Query 更新模型。
 中的当前报表，以了解转换\
 和模型。
 
-### 任务 1：在实验室环境中设置 Power BI Desktop
+## 任务 1：在实验室环境中设置 Power BI Desktop
 
 1. 打开 **FAIAD.pbix，**它位于您的实验室环境的**桌面**上的 **Reports** 文件夹中。该文件将在\ Power BI Desktop 中打开。
 
@@ -102,7 +102,7 @@ Power Query 更新模型。
 
 Power BI Desktop 现在将打开。
 
-### 任务 2：分析 Power BI Desktop 报表
+## 任务 2：分析 Power BI Desktop 报表
 
 下面的报表分析 Fabrikam 的销售情况。页面左上角列出了
 KPI。其余的视觉对象突出显示了按区域、产品组和经销商公司划分的一段时间内的销售情况。
@@ -153,7 +153,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
     e. 我们有按 Reseller 划分的 Customer 信息。Customer 连接到 Reseller。
 
-### 任务 3：查看 Power Queries
+## 任务 3：查看 Power Queries
 
 1. 让我们查看 Power Query 来了解数据源。从功能区中选择**主页 -\> 转换数据**。
 
