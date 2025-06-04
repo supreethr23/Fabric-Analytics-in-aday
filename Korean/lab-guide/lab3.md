@@ -123,13 +123,14 @@
 
 **참고**: Sales.Invoices_May는 선택되지 **않은** 유일한 디렉터리입니다.
 
+
 ![](../media/lab-03/image9.png)
 
 14. 이름을 편집할 수 있는 다음 대화 상자로 이동합니다.
     **Application.Cities**에 대한 작업에서 **편집 아이콘 (1)**을
     선택합니다.
 
-15. **Application.Cities를 Cities (2)**로 이름을 변경합니다.
+15. **Application.Cities를 Cities (2)** 로 이름을 변경합니다.
 
 16. 이름 옆의 확인 표시를 선택하여 변경 사항을 저장합니다 **(3)**.
 
@@ -160,9 +161,10 @@
         j.  Warehouse.StockItems에서 **ProductItem** 로
 
 > **참고**: 이름을 다시 확인하세요. 랩 도중 오타로 인해 오류가 발생할 수
+
 > 있습니다.
 
-18. **만들기**를 선택하여 바로 가기를 만듭니다.
+18. **만들기** 를 선택하여 바로 가기를 만듭니다.
 
     ![](../media/lab-03/image11.png)
 
@@ -218,7 +220,7 @@ Query 편집기를 사용할 수 있는 옵션이 있습니다. 익숙한 기능
 ***참고:** 이 아이콘이 즉시 표시되지 않으면 오른쪽으로 스크롤하거나
 시각적 쿼리 탭을 다시 열어야 할 수 있습니다*
 
-    ![](../media/lab-03/image16.png)
+![](../media/lab-03/image16.png)
 
 6.  **Cities (1)** 쿼리를 선택한 상태에서 Power Query 편집기 리본
     메뉴에서 **홈 (2) -\> 결합 (3) -\> 쿼리 병합 드롭다운 (4) -\> 쿼리를
@@ -255,7 +257,7 @@ Query 편집기를 사용할 수 있는 옵션이 있습니다. 익숙한 기능
 
     d.  SalesTerritory
 
-14. **확인**을 선택합니다.
+14. **확인** 을 선택합니다.
 
     ![](../media/lab-03/image19.png)
 
@@ -314,7 +316,7 @@ Countries에서 열이 몇 개 필요합니다.
 **참고:** 열 선택 옵션이 보이지 않는 경우 열 관리 항목 하단에서 찾을 수
 있습니다.
 
-    ![](../media/lab-03/image23.png)
+![](../media/lab-03/image23.png)
 
 24. 열 선택 대화 상자가 열립니다. 다음 열을 **선택 취소**합니다.
 
@@ -612,10 +614,10 @@ Power BI Desktop에서 코드를 복사하여 고급 편집기를 사용하여 �
 클립보드**를 **활성화**합니다. 대화 상자에서 확인을 선택합니다. 쿼리
 붙여 넣기가 완료되면 이 옵션을 비활성화할 수 있습니다.
 
-    ![A screen shot of a phone Description automatically
+![A screen shot of a phone Description automatically
 generated](../media/lab-03/image48.png)
 
-    ![](../media/lab-03/image49.png)
+![](../media/lab-03/image49.png)
 
 25. 소스에서 마지막 두 줄의 코드를 강조 표시하고 **삭제**합니다.
 
