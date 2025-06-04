@@ -547,7 +547,7 @@ Fabric Analyst in a Day (FAIAD) 介绍了 Microsoft Fabric 中提供的一些主
 
 - [Dataverse 和 Microsoft Fabric 集成博客](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation。保留所有权利。
+© 2025 Microsoft Corporation。保留所有权利。
 
 使用此演示/实验即表示您已同意以下条款：
 

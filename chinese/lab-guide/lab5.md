@@ -1,11 +1,37 @@
+# Microsoft Fabric - Fabric Analyst in a Day - 实验室 5
+
+![](../media/lab-05/main5.png)
+
+# 目录
+- 简介
+- 数据流 Gen2
+    - 任务 1：为供应商数据流配置计划刷新
+- 数据管道
+    - 任务 2：创建数据管道
+    - 任务 3：生成简单的数据管道
+    - 任务 4：创建新数据管道
+    - 任务 5：创建 Until 活动
+    - 任务 6：创建变量
+    - 任务 7：配置 Until 活动
+    - 任务 8：配置数据流活动
+    - 任务 9：配置第 1 个设置变量活动
+    - 任务 10：配置第 2 个设置变量活动
+    - 任务 11：配置第 3 个设置变量活动
+    - 任务 12：配置等待活动
+    - 任务 13：为数据管道配置计划刷新
+- 参考
+
 # 简介
 
 我们已将来自不同数据源的数据引入到湖屋中。在本实验中，您将为数据源设置刷新计划。
 简单回顾一下要求：
 
 - **供应商数据：** 存储在 Snowflake 中，每天半夜/凌晨 12 点更新。
+
 - **员工数据：** 存储在 SharePoint 中，每天上午 9 点更新。但我们注意到有时会有 5 至 15 分钟的延迟。我们需要创建一个刷新计划来进行调整。
+
 - **客户数据：** 存储在 Dataverse 中，随时更新。之前我们每天刷新四次，分别在半夜/凌晨 12 点、上午 6 点、中午 12 点和下午 6 点。现在，IT 团队创建了一个指向 Dataverse 的链接，可将此数据引入到管理员湖屋。他们还转换了此数据。我们不需要设置刷新，因为我们要链接到 IT 团队提供的湖屋。
+
 - **销售数据：** 存储在 ADLS 中，每天中午 12 点更新。我们不需要为此设置刷新，因为我们已经创建了一个快捷方式。数据一旦在 ADLS 中更新，便可使用。"
 
 本实验结束后，您将学会：
@@ -20,36 +46,37 @@
 
 我们首先为供应商数据流配置计划刷新。
 
-1. 让我们通过在左侧面板中选择 Fabric 工作区 **FAIAD_<username>**，导航回该工作区。
+1. 让我们通过在左侧面板中选择 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，导航回该工作区。
+
 2. 若要最大化包含项目列表的面板，请选择面板右上角的双箭头。
 
-    ![](images1/media/image6.png)
+    ![](../media/lab-05/image6.png)
 
 3. 此处列出了您创建的所有项目。在屏幕右侧的**搜索框**中，输入**df**。这会将项目筛选到数据流。
 
-    ![](images1/media/image7.png)
+    ![](../media/lab-05/image7.png)
 
 4. 将鼠标悬停在 **df_Supplier_Snowflake** 行上。请注意，这里显示熟悉的**刷新**和**计划刷新图标**。选择**省略号 (...)**。
 
 5. 请注意，有"删除"、"编辑"和"导出数据流"选项。我们可以使用"属性"来更新数据流的名称和描述。我们稍后会查看刷新历史记录。选择**设置**。
 
-    ![](images1/media/image8.png)
+    ![](../media/lab-05/image8.png)
 
     **注意：** 设置页面打开。在左侧面板中，您将看到所有列出的数据流。
 
 6. 在中间窗格中，选择**刷新历史记录**链接。
 
-    ![](images1/media/image9.png)
+    ![](../media/lab-05/image9.png)
 
 7. 会列出一项刷新。这是发布数据流时发生的刷新。选择**开始**时间链接。
 
     **注意：** 您的开始时间会有所不同。
 
-    ![](images1/media/image10.png)
+    ![](../media/lab-05/image10.png)
 
     详细信息屏幕将打开。这将提供刷新的详细信息，其中列出了开始时间、结束时间和持续时间。还列出了刷新的表/活动。如果出现故障，您可以点击表/活动的名称进一步调查。
 
-    ![](images1/media/image11.png)
+    ![](../media/lab-05/image11.png)
 
 8. 我们点击右上角的 **X** 离开此页面。您将导航回到**数据流设置页面**。
 
@@ -59,7 +86,7 @@
     
     b. **Snowflake**：这是与 Snowflake 源数据的连接。
 
-    ![](images1/media/image12.png)
+    ![](../media/lab-05/image12.png)
 
 10. 展开**刷新。**
 
@@ -81,36 +108,37 @@
 
     您还可以向数据流所有者和其他联系人发送失败通知
 
-    ![](images1/media/image13.png)
+    ![](../media/lab-05/image13.png)
 
-如前所述，我们需要生成自定义逻辑来处理 SharePoint
-中的员工文件未按时送达的应用场景。我们使用数据管道来解决此问题。
+    如前所述，我们需要生成自定义逻辑来处理 SharePoint
+    中的员工文件未按时送达的应用场景。我们使用数据管道来解决此问题。
 
 # 数据管道
 
 ## 任务 2：创建数据管道
 
-1. 让我们通过在左侧面板中选择 Fabric 工作区 **FAIAD_<username>**，导航回该工作区。
+1. 让我们通过在左侧面板中选择 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，导航回该工作区。
+
 2. 从顶部菜单中，选择 **+ 新建项目 (1) -> 数据管道 (2)**。
 
-    ![](images1/media/image14.png)
+    ![](../media/lab-05/image14.png)
 
 3. "新建管道"对话框随即打开。将管道命名为 **pl_Refresh_People_SharePoint** (3)，然后选择**创建** (4)。
 
-    ![](images1/media/image15.png)
+    ![](../media/lab-05/image15.png)
 
     您将导航到**数据管道页面**。如果您使用过 Azure
     数据工厂，您会熟悉此屏幕。让我们快速了解一下布局。
 
     您位于**主页**屏幕。在顶部菜单上，您会看到添加常用活动的选项：验证、运行管道以及查看运行历史记录。此外，在中间窗格中，您会看到开始生成管道的快速选项。
 
-    ![](images1/media/image16.png)
+    ![](../media/lab-05/image16.png)
 
 4. 从顶部菜单中选择**活动**。现在，您会在菜单中看到常用活动的列表。
 
 5. 选择菜单右侧的**省略号 (...)**，以查看所有其他可用的活动。我们将在实验中使用其中一些活动。
 
-    ![](images1/media/image17.png)
+    ![](../media/lab-05/image17.png)
 
 6. 点击顶部菜单中的**运行**。您将找到运行和计划管道执行的选项。还可以找到使用"查看运行历史记录"来查看执行历史记录的选项。
 
@@ -118,7 +146,7 @@
 
     > **注意：** 如果您在完成本实验后掌握了一些 JSON 背景知识，请自行选择"查看 JSON 代码"。在这里，您会注意到使用设计视图进行的所有编排也可以用 JSON 编写。
 
-    ![](images1/media/image18.png)
+    ![](../media/lab-05/image18.png)
 
 ## 任务 3：生成简单的数据管道
 
@@ -129,13 +157,13 @@
 2. 我们将配置该活动以连接到 df_People_SharePoint
     活动。在**底部窗格**中选择**设置**。
 
-3. 确保将**工作区**设置为您的 Fabric 工作区 **FAIAD_<username>。**
+3. 确保将**工作区**设置为您的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 4. 从**数据流下拉列表**中，选择 **df_People_SharePoint**。执行此数据流活动时，它将刷新**df_People_SharePoint。** 这很容易，对吧？
 
     在我们的应用场景中，员工数据未按计划更新。有时会有延迟。让我们来看看如何调整。
 
-    ![](images1/media/image19.png)
+    ![](../media/lab-05/image19.png)
 
 5. 在**底部窗格**中选择**常规**。我们为活动指定名称和说明。
 
@@ -157,7 +185,7 @@
 
 13. 从菜单中选择**主页 -> 保存**图标以保存管道。
 
-    ![](images1/media/image20.png)
+    ![](../media/lab-05/image20.png)
 
 请注意，与将数据流设置为按计划刷新相比（如同我们对早期数据流所做的那样），使用数据管道具有以下优势：
 
@@ -169,17 +197,17 @@
 我们为应用场景加大难度。我们注意到，如果在上午 9 点还未提供数据，那么通常在五分钟内会提供。如果错过该时段，则需要 15 分钟后才能获得文件。我们希望将重试时间安排在 5 分钟和 15
 分钟。让我们看看如何通过创建新的数据管道来实现这一点。
 
-1. 从左侧面板中，点击 **FAIAD_<username>**，以导航到工作区主页。
+1. 从左侧面板中，点击 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，以导航到工作区主页。
 
 2. 从顶部菜单中，单击 **+ 新建项目
     (1)**，然后从弹出窗口中，单击**数据管道 (2)**。
 
-    ![](images1/media/image21.png)
+    ![](../media/lab-05/image21.png)
 
 3. "新建管道"对话框随即打开。将管道**命名**为
     **pl_Refresh_People_SharePoint_Option2 (3)**，然后选择**创建 (4)**。
 
-    ![](images1/media/image22.png)
+    ![](../media/lab-05/image22.png)
 
 ## 任务 5：创建 Until 活动
 
@@ -193,7 +221,7 @@
 
     在我们的应用场景中，我们将迭代并刷新数据流，直到成功或者已经尝试三次。
 
-    ![](images1/media/image23.png)
+    ![](../media/lab-05/image23.png)
 
 ## 任务 6：创建变量
 
@@ -213,7 +241,7 @@
     **注意：** 我们在变量名称前面加上 var
     是为了方便查找，这是一个有用的做法。
 
-    ![](images1/media/image24.png)
+    ![](../media/lab-05/image24.png)
 
 7. 选择 **+ 新建**以添加另一个新的变量。
 
@@ -234,7 +262,7 @@
 
     > **注意：** 请确保变量名称之前或之后没有空格。
 
-    ![](images1/media/image25.png)
+    ![](../media/lab-05/image25.png)
 
 ## 任务 7：配置 Until 活动
 
@@ -247,7 +275,7 @@
 4. 在**说明**中输入 **Iterator to refresh dataflow. It will retry up to
     3 times**。
 
-    ![](images1/media/image26.png)
+    ![](../media/lab-05/image26.png)
 
 5. 从顶部窗格中，选择**设置 (1)**。
 
@@ -259,7 +287,7 @@
 
 7. 选择文本框下方显示的**添加动态内容 (3)** 链接。
 
-    ![](images1/media/image27.png)
+    ![](../media/lab-05/image27.png)
 
     我们需要编写一个表达式，该表达式的执行截止条件为值 **varCounter 为 3**
     或者值 **varIsSuccess 为"Yes"。**（varCounter 和 varIsSuccess
@@ -277,7 +305,7 @@
 
     e. **变量：** 管道变量是在管道运行期间可以设置和修改的值。它与管道参数不同，管道参数在管道级别定义，且在管道运行期间无法更改，而管道变量可以通过"设置变量"活动在管道内进行设置和修改。我们稍后将使用"设置变量"活动。
 
-    ![](images1/media/image28.png)
+    ![](../media/lab-05/image28.png)
 
 9. 在底部菜单中点击**函数**。
 
@@ -285,7 +313,7 @@
     已添加到动态表达式文本框中。
     or 函数有两个参数，我们现在使用的是第一个参数。
 
-    ![](images1/media/image29.png)
+    ![](../media/lab-05/image29.png)
 
 11. 将光标置于 **@or** 函数的**括号之间**。
 
@@ -295,7 +323,7 @@
     **注意：** 您的函数应类似于 **@or(equals())**。equals
     函数也有两个参数。我们将检查变量 varCounter 是否等于 3。
 
-    ![](images1/media/image30.png)
+    ![](../media/lab-05/image30.png)
 
 13. 现在将光标置于 **@equals** 函数的**括号之间**以添加参数。
 
@@ -306,14 +334,14 @@
 16. 输入 **3** 作为 equals 函数的第二个参数。您的表达式将为
     **@or(equals(variables('varCounter'),3))**，类似于下面的屏幕截图所示
 
-    ![](images1/media/image31.png)
+    ![](../media/lab-05/image31.png)
 
 17. 我们需要将第二个参数添加到 or
     函数中。在结尾的两个括号之间**添加逗号**。这次我们将尝试输入函数名称。首先输入
     **equ**，您将看到可用函数的下拉列表（称为 IntelliSense）。选择
     **equals** 函数。
 
-    ![](images1/media/image32.png)
+    ![](../media/lab-05/image32.png)
 
 18. equals 函数的第一个参数是一个变量。将**光标置于逗号之前**。
 
@@ -327,7 +355,7 @@
     **variables('varSuccess')**。这里我们将 varIsSuccess 的值与
     varSuccess 的值进行比较。（varSuccess 默认为"Yes"。）
 
-    ![](images1/media/image33.png)
+    ![](../media/lab-05/image33.png)
 
 23. 您的表达式应该是：
 
@@ -336,7 +364,7 @@
 
 24. 选择**确定**。
 
-    ![](images1/media/image34.png)
+    ![](../media/lab-05/image34.png)
 
 ## 任务 8：配置数据流活动
 
@@ -344,7 +372,7 @@
 
 2. 选择第一行中的**编辑图标**。您将导航到空白迭代程序设计屏幕。
 
-    ![](images1/media/image35.png)
+    ![](../media/lab-05/image35.png)
 
 3. 在顶部菜单中，选择**活动 -> 数据流**。数据流活动已添加到设计窗格中。
 
@@ -355,15 +383,15 @@
 6. 在**说明**字段中，输入 **Dataflow activity to refresh
     df_People_Sharepoint dataflow**。
 
-    ![](images1/media/image36.png)
+    ![](../media/lab-05/image36.png)
 
 7. 从底部窗格中选择**设置**。
 
-8. 确保将**工作区**设置为您的工作区 **FAIAD_<username>。**
+8. 确保将**工作区**设置为您的工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 9. 从**数据流下拉列表**中，选择 **df_People_SharePoint**。
 
-    ![](images1/media/image37.png)
+    ![](../media/lab-05/image37.png)
 
 ## 任务 9：配置第 1 个设置变量活动
 
@@ -393,7 +421,7 @@ varIsSuccess 变量的值设置为"Yes"。
     **set_varIsSuccess**
     **设置变量活动**。因此，在数据流刷新成功后，我们要执行"设置变量"活动。
 
-    ![](images1/media/image38.png)
+    ![](../media/lab-05/image38.png)
 
 6. 选择**设置变量活动**后，点击底部菜单中的**设置**。
 
@@ -403,7 +431,7 @@ varIsSuccess 变量的值设置为"Yes"。
 
 9. 在**值**字段中，选择**文本框**。选择**添加动态内容**链接。
 
-    ![](images1/media/image39.png)
+    ![](../media/lab-05/image39.png)
 
 10. 管道表达式生成器对话框随即打开。选择**使用表达式、函数和系统变量文本区域的任意组合在下面添加动态内容 (1)**。
 
@@ -415,7 +443,7 @@ varIsSuccess 变量的值设置为"Yes"。
 
 12. 选择**确定**。您将导航回到**迭代程序设计窗格**。
 
-    ![](images1/media/image40.png)
+    ![](../media/lab-05/image40.png)
 
 现在，如果数据流活动失败，我们需要设置计数器。在数据管道中，我们不能自引用变量。这意味着我们不能通过将计数器变量
 varCounter 的值加 1 (varCounter = varCounter + 1)
@@ -434,7 +462,7 @@ varCounter 的值加 1 (varCounter = varCounter + 1)
 5. 点击数据流活动中的**红色 x
     标记**前往新的设置变量活动。因此，在数据流刷新失败后，我们要执行此"设置变量"活动。
 
-    ![](images1/media/image41.png)
+    ![](../media/lab-05/image41.png)
 
 6. 选择**设置变量活动**后，选择底部菜单中的**设置**。
 
@@ -452,7 +480,7 @@ varCounter 的值加 1 (varCounter = varCounter + 1)
     varTempCounter 的值设置为变量 varCounter 的值加 1，(varTempCounter =
     varCounter + 1)。
 
-    ![](images1/media/image42.png)
+    ![](../media/lab-05/image42.png)
 
     现在我们需要将 varCounter 变量的值设置为 varTempCounter 的值。
 
@@ -468,7 +496,7 @@ varCounter 的值加 1 (varCounter = varCounter + 1)
 
 5. 点击 set_varTempCounter 设置变量活动中的**绿色复选标记**，并拖动以连接到新的**set_varCounter 设置变量活动**。
 
-    ![](images1/media/image43.png)
+    ![](../media/lab-05/image43.png)
 
 6. 选择**set_varCounter 设置变量活动**后，点击底部菜单中的**设置**。
 
@@ -482,7 +510,7 @@ varCounter 的值加 1 (varCounter = varCounter + 1)
 
 11. 单击"确定"。
 
-    ![](images1/media/image44.png)
+    ![](../media/lab-05/image44.png)
 
     **注意：** 该函数将变量 varCounter 的值设置为变量 varTempCounter 的值
     (varCounter = varTempCounter)。每次迭代结束时，varCounter 和
@@ -507,7 +535,7 @@ varCounter 的值加 1 (varCounter = varCounter + 1)
     设置变量活动中的**绿色复选标记**，并拖动以连接到新的
     **wait_onFailure 等待活动**。
 
-    ![](images1/media/image45.png)
+    ![](../media/lab-05/image45.png)
 
 6. 选择**等待活动**后，点击底部菜单中的**设置**。
 
@@ -515,31 +543,26 @@ varCounter 的值加 1 (varCounter = varCounter + 1)
 
 8. 管道表达式生成器对话框随即打开。输入
 
-> **@if(**
->
-> **greater(variables('varCounter'), 1),**
->
-> **if(equals(variables('varCounter'), 2),**
->
-> **mul(variables('varWaitTime'),15 ),**
->
-> **mul(variables('varWaitTime'), 0)**
->
-> **),**
->
-> **mul(variables('varWaitTime'),5 )**
->
-> **)**
+   ```
+   @if(
+       greater(variables('varCounter'), 1),
+       if(equals(variables('varCounter'), 2),
+           mul(variables('varWaitTime'),15 ), 
+           mul(variables('varWaitTime'), 0)
+       ),
+       mul(variables('varWaitTime'),5 )
+   )
+   ```
 
     自由输入此表达式，使用菜单选择函数，或者复制并粘贴它。
 
-        ![](images1/media/image46.png)
+    ![](../media/lab-05/image46.png)
 
     我们在这里使用两个新函数：
 
-    - **greater：**以两个数字为参数，比较哪个数字更大。
+    - **greater：** 以两个数字为参数，比较哪个数字更大。
 
-    - **mul：**这是一个乘法函数，它使用两个参数相乘。
+    - **mul：** 这是一个乘法函数，它使用两个参数相乘。
 
     该表达式是一个嵌套的 if 语句。它检查 varCounter 变量的值是否大于 1。
 
@@ -555,17 +578,17 @@ varCounter 的值加 1 (varCounter = varCounter + 1)
 
     **检查点：** 您的 **Until** 迭代程序应类似于下面的屏幕截图。
 
-    ![](images1/media/image47.png)
+    ![](../media/lab-05/image47.png)
 
 10. 从设计画布的左上角，选择 **pl_Refresh_People_Sharepoint_Option2**
     或**主画布以离开** Until 迭代程序。
 
-    ![](images1/media/image48.png)
+    ![](../media/lab-05/image48.png)
 
 11. 我们已经完成了数据管道的创建。从顶部菜单中，选择**主页 ->
     保存图标**以保存数据管道。
 
-    ![](images1/media/image49.png)
+    ![](../media/lab-05/image49.png)
 
 ## 任务 13：为数据管道配置计划刷新
 
@@ -595,9 +618,9 @@ varCounter 的值加 1 (varCounter = varCounter + 1)
 
 10. 选择对话框右上角的 **X** 标记将其关闭。
 
-    ![](images1/media/image50.png)
+    ![](../media/lab-05/image50.png)
 
-11. 从左侧面板中选择您的 Fabric 工作区 **FAIAD_<username>**，以导航到工作区。
+11. 从左侧面板中选择您的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，以导航到工作区。
 
     > **注意：** 在计划屏幕中，没有通知成功或失败的选项（和数据流计划一样）。可以通过在数据管道中添加活动来提供通知。我们不在本实验室中进行此操作，因为这是实验室环境。
 
@@ -605,16 +628,13 @@ varCounter 的值加 1 (varCounter = varCounter + 1)
 
 # 参考
 
-Fabric Analyst in a Day (FAIAD) 介绍了 Microsoft Fabric
-中提供的一些主要功能。在服务菜单中，"帮助
-(?)"部分包含指向一些优质资源的链接。
+Fabric Analyst in a Day (FAIAD) 介绍了 Microsoft Fabric 中提供的一些主要功能。在服务菜单中，"帮助 (?)"部分包含指向一些优质资源的链接。
 
-![](images1/media/image51.png)
+![](../media/lab-03/image64.png)
 
 以下更多参考资源可帮助您进行与 Microsoft Fabric 相关的后续步骤。
 
-- 请参阅博客文章以阅读完整的 [Microsoft Fabric GA
-  公告](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+- 请参阅博客文章以阅读完整的 [Microsoft Fabric GA 公告](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
 - 通过[引导式教程](https://aka.ms/Fabric-GuidedTour)探索 Fabric
 
@@ -626,65 +646,45 @@ Fabric Analyst in a Day (FAIAD) 介绍了 Microsoft Fabric
 
 - 探索 [Fabric 技术文档](https://aka.ms/fabric-docs)
 
-- 阅读[有关 Fabric
-  入门指南的免费电子书](https://aka.ms/fabric-get-started-ebook)
+- 阅读有关 [Fabric 入门的免费电子书](https://aka.ms/fabric-get-started-ebook)
 
-- 加入 [Fabric
-  社区](https://aka.ms/fabric-community)发布问题、分享反馈并向他人学习
+- 加入 [Fabric 社区](https://aka.ms/fabric-community)发布问题、共享反馈并向他人学习 阅读更多深度 Fabric 体验公告博客：
 
-阅读更多深度 Fabric 体验公告博客：
+- [Fabric 中的 Data Factory 体验博客](https://aka.ms/Fabric-Data-Factory-Blog)
 
-- [Fabric 中的 Data Factory
-  体验博客](https://aka.ms/Fabric-Data-Factory-Blog) 
+- [Fabric 中的 Synapse Data Engineering 体验博客](https://aka.ms/Fabric-DE-Blog)
 
-- [Fabric 中的 Synapse Data Engineering
-  体验博客](https://aka.ms/Fabric-DE-Blog) 
+- [Fabric 中的 Synapse Data Science 体验博客](https://aka.ms/Fabric-DS-Blog)
 
-- [Fabric 中的 Synapse Data Science
-  体验博客](https://aka.ms/Fabric-DS-Blog) 
+- [Fabric 中的 Synapse Data Warehousing 体验博客](https://aka.ms/Fabric-DW-Blog)
 
-- [Fabric 中的 Synapse Data Warehousing
-  体验博客](https://aka.ms/Fabric-DW-Blog) 
-
-- [Fabric 中的 Synapse Real-Time Analytics
-  体验博客](https://aka.ms/Fabric-RTA-Blog)
+- [Fabric 中的 Synapse Real-Time Analytics 体验博客](https://aka.ms/Fabric-RTA-Blog)
 
 - [Power BI 公告博客](https://aka.ms/Fabric-PBI-Blog)
 
-- [Fabric 中的 Data Activator 博客](https://aka.ms/Fabric-DA-Blog) 
+- [Fabric 中的 Data Activator 体验博客](https://aka.ms/Fabric-DA-Blog)
 
 - [Fabric 中的管理和治理博客](https://aka.ms/Fabric-Admin-Gov-Blog)
 
 - [Fabric 中的 OneLake 博客](https://aka.ms/Fabric-OneLake-Blog)
 
-- [Dataverse 和 Microsoft Fabric
-  集成博客](https://aka.ms/Dataverse-Fabric-Blog)
+- [Dataverse 和 Microsoft Fabric 集成博客](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation.保留所有权利。
->
-> 使用此演示/实验即表示您已同意以下条款：
->
-> 本演示/实验中的技术/功能由 Microsoft Corporation
-> 出于获取反馈和提供学习体验的目的提供。只能将本演示/实验用于评估这些技术特性和功能以及向
-> Microsoft
-> 提供反馈。不得用于任何其他用途。不得对此演示/实验或其任何部分进行修改、复制、分发、传送、显示、执行、复制、公布、许可、转让、销售或基于以上内容创建衍生作品。
->
-> 严禁将本演示/实验（或其任何部分）复制到任何其他服务器或位置以便进一步复制或再分发。
->
-> 本演示/实验出于上述目的，在不涉及复杂设置或安装操作的模拟环境中提供特定软件技术/产品特性和功能，包括潜在的新功能和概念。本演示/实验中展示的技术/概念可能不是完整的功能，可能会以不同于最终版本的工作方式工作。我们也可能不会发布此类功能或概念的最终版本。在物理环境中使用此类特性和功能的体验可能也有所不同。
->
-> **反馈**。如您针对本演示/实验中所述的技术特性、功能和/或概念向
-> Microsoft 提供反馈，则意味着您向 Microsoft
-> 无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的
-> Microsoft
-> 软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，Microsoft
-> 由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可，请不要提供这样的反馈。这些权利在本协议终止后继续有效。
->
-> 对于本演示/实验，Microsoft Corporation
-> 不提供任何明示、暗示或法定的保证和条件，包括有关适销性、针对特定目的的适用性、所有权和不侵权的所有保证和条件。对于使用本演示/实验产生的结果或输出内容的准确性，或者出于任何目的包含本演示/实验中的信息的适用性，Microsoft
-> 不做任何保证或陈述。
->
-> **免责声明**
->
-> 本演示/实验仅包含 Microsoft Power BI
-> 的部分新功能和增强功能。在产品的后续版本中，部分功能可能有所更改。在本演示/实验中，可了解部分新功能，但并非全部新功能。
+© 2025 Microsoft Corporation。保留所有权利。
+
+使用此演示/实验即表示您已同意以下条款：
+
+本演示/实验室中的技术/功能由 Microsoft Corporation 出于获取反馈和提供学习体验的目的提供。只能将本演示/实验室用于评估这些技术特性和功能以及向 Microsoft 提供反馈。不得用于任何其他用途。不得对此演示/实验或其任何部分进行修改、复制、分发、传送、显示、执行、复制、公布、许可、转让、销售或基于以上内容创建衍生作品。
+
+严禁将本演示/实验（或其任何部分）复制到任何其他服务器或位置以便进一步复制或再分发。
+
+本演示/实验出于上述目的，在不涉及复杂设置或安装操作的模拟环境中提供特定软件技术/产品特性和功能，包括潜在的新功能和概念。本演示/实验中展示的技术/概念可能不是完整的功能，可能会以不同于最终版本的工作方式工作。我们也可能不会发布此类功能或概念的最终版本。在物理环境中使用此类特性和功能的体验可能也有所不同。
+
+**反馈**。如您针对本演示/实验中所述的技术特性、功能和/或概念向 Microsoft 提供反馈，则意味着您向 Microsoft 无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的 Microsoft 软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，Microsoft 由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可，请不要提供这样的反馈。这些权利在本协议终止后继续有效。
+
+对于本演示/实验，Microsoft Corporation 不提供任何明示、暗示或法定的保证和条件，包括有关适销性、针对特定目的的适用性、所有权和不侵权的所有保证和条件。对于使用本演示/实验产生的结果或输出内容的准确性，或者出于任何目的包含本演示/实验中的信息的适用性，Microsoft
+不做任何保证或陈述。
+
+**免责声明**
+
+本演示/实验仅包含 Microsoft Power BI 的部分新功能和增强功能。在产品的后续版本中，部分功能可能有所更改。在本演示/实验中，可了解部分新功能，但并非全部新功能。

@@ -50,9 +50,9 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
 # 数据流 Gen2
 
-### 任务 1：将 SharePoint 查询复制到数据流
+## 任务 1：将 SharePoint 查询复制到数据流
 
-1. 让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区 **FAIAD_<username> (1)**。
+1. 让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** (1)。
 
 2. 选择左上角提供的 + **新建项目 (2)** 选项。
 
@@ -60,7 +60,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
    ![](../media/lab-04/image6.png)
 
-系统会将您导航到**数据流页面**。数据流 Gen2 界面类似于 Power BI Desktop 中的 Power Query。我们可以将 Power BI Desktop 中的查询复制到数据流 Gen2 中。让我们试一下此方法。
+   系统会将您导航到**数据流页面**。数据流 Gen2 界面类似于 Power BI Desktop 中的 Power Query。我们可以将 Power BI Desktop 中的查询复制到数据流 Gen2 中。让我们试一下此方法。
 
 4. 如果您尚未打开 **FAIAD.pbix**，请打开它。它位于您的实验室环境的桌面的 **Reports** 文件夹中。
 
@@ -84,7 +84,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
    请注意，查询已粘贴并在左侧面板中可用。由于我们没有为 SharePoint 创建连接，因此您将看到一条警告消息，要求您配置连接。
 
-### 任务 2：创建 SharePoint 连接
+## 任务 2：创建 SharePoint 连接
 
 1. 选择**配置连接**。
 
@@ -100,7 +100,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
    ![](../media/lab-04/image11.png)
 
-### 任务 3：为 People 查询配置数据目标
+## 任务 3：为 People 查询配置数据目标
 
 连接已建立，您可以在预览面板中查看数据。请随意浏览查询的"已应用步骤"。现在，我们需要将
 People 数据引入到湖屋中。
@@ -117,7 +117,7 @@ People 数据引入到湖屋中。
 
 4. "选择目标"对话框随即打开。确保选中**新建表单选按钮**，因为我们要创建一个新表。
 
-5. 我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -> FAIAD_<username>。**
+5. 我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>。**
 
 6. 选择 **lh_FAIAD**
 
@@ -134,9 +134,7 @@ People 数据引入到湖屋中。
 
     ![](../media/lab-04/image15.png)
 
-### 
-
-### 任务 4：发布并重命名 SharePoint 数据流
+## 任务 4：发布并重命名 SharePoint 数据流
 
 1. 系统会将您导航回 **Power Query 窗口**。请注意，**右下角**的数据目标设置为**湖屋**。
 
@@ -144,7 +142,7 @@ People 数据引入到湖屋中。
 
    ![](../media/lab-04/image16.png)
 
-   **注意：** 系统会将您导航回 **FAIAD_<username> 工作区**。发布数据流可 能需要一些时间。
+   **注意：** 系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> 工作区**。发布数据流可 能需要一些时间。
 
 3. **数据流 1** 是我们正在处理的数据流。让我们先将其重命名，然后再继续。单击"数据流 1"旁边的**省略号 (...)。**选择**属性**（在数据流运行时，您无法访问属性）。
 
@@ -158,7 +156,7 @@ People 数据引入到湖屋中。
 
    ![](../media/lab-04/image18.png)
 
-系统会将您导航回 **FAIAD_<username> 工作区**。
+   系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> 工作区**。
 
 7. 选择 **lh_FAIAD** 以导航到湖屋。
 
@@ -171,9 +169,9 @@ People 数据引入到湖屋中。
    **注意：** 如果您没有看到新创建的表，请选择"表"旁边的省略号，然后选择刷新
 以刷新"表"。
 
-### 任务 5：将 Snowflake 查询复制到数据流
+## 任务 5：将 Snowflake 查询复制到数据流
 
-1. 让我们导航回 Fabric 工作区 **FAIAD_<username> (1)**。
+1. 让我们导航回 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**。
 
 2. 选择左上角提供的 **+ 新建项目 (2)** 选项。
 
@@ -213,7 +211,7 @@ Desktop 复制查询到数据流。
 
    ![](../media/lab-04/image22.png)
 
-### 任务 6：创建与 Snowflake 的连接
+## 任务 6：创建与 Snowflake 的连接
 
 请注意，五个查询已粘贴，现在左侧显示"查询"面板。由于我们没有为 Snowflake 创建连接，因此您将看到一条警告消息，要求您配置连接。
 
@@ -227,12 +225,11 @@ Desktop 复制查询到数据流。
 
 4. 输入下面提供的 **Snowflake 用户名**和 **Snowflake 密码**。使用这些凭据将 Snowflake 下的所有表连接到 Snowflake，然后选择**连接。**
 
-   - Snowflake 用户名：TE_SNOWFLAKE1
+   - Snowflake 用户名：<inject key="SnowFlake Username"></inject>
 
-   - Snowflake 密码：8UpfRpExVDXv2AC1
+   - Snowflake 密码：<inject key="SnowFlake Password"></inject>
 
-   **注意：** 如果您在使用环境详细信息中的凭据连接到 Snowflake
-时遇到任何问题，请使用下面提供的凭据。
+   **注意：** 如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的凭据。
 
    - **Snowflake 用户名：** SNOWFLAKE_BACKUP
 
@@ -244,7 +241,7 @@ Desktop 复制查询到数据流。
 
 连接已建立，您可以在预览面板中查看数据。请随意浏览查询的"应用的步骤"。Suppliers 查询基本上包含供应商的详细信息，SupplierCategories 顾名思义包含所有供应商类别。Suppliers 查询基本上包含供应商的详细信息，SupplierCategories 表顾名思义包含所有供应商类别。 同样，我们将 PO Line Items 与 PO 合并，以创建 PO 事实。现在，我们需要将 Supplier 和 PO 数据引入到湖屋中。
 
-### 任务 7：为 Supplier 和 PO 查询配置数据目标
+## 任务 7：为 Supplier 和 PO 查询配置数据目标
 
 1. 选择 **Supplier (1)** 查询。
 
@@ -260,7 +257,7 @@ Desktop 复制查询到数据流。
 
 5. "选择目标"对话框随即打开。务必**选中新建表**单选按钮，因为我们要创建一个新表。
 
-6. 我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -> FAIAD_<username>。**
+6. 我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>。**
 
 7. 选择 **lh_FAIAD**
 
@@ -278,7 +275,7 @@ Desktop 复制查询到数据流。
 
     ![](../media/lab-04/image29.png)
 
-### 任务 8：重命名并发布 Snowflake 数据流
+## 任务 8：重命名并发布 Snowflake 数据流
 
 1. 从屏幕顶部，选择 **Dataflow 1 旁边的箭头**以进行重命名。
 
@@ -292,7 +289,7 @@ Desktop 复制查询到数据流。
 
    ![](../media/lab-04/image31.png)
 
-   系统会将您导航回 **FAIAD_<username> 工作区**。发布数据流可能需要一些时间。
+   系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> 工作区**。发布数据流可能需要一些时间。
 
 5. 选择 **lh_FAIAD** 以导航到湖屋。
 
@@ -308,7 +305,7 @@ Desktop 复制查询到数据流。
 
 # ADLS Gen2 的快捷方式
 
-### 任务 9：如何创建 Dataverse 的快捷方式
+## 任务 9：如何创建 Dataverse 的快捷方式
 
 您应该在湖屋 **lh_FAIAD** 中。确保您处于湖屋视图（而不是 SQL
 分析终结点）中。
@@ -349,7 +346,7 @@ Desktop 复制查询到数据流。
 
    ![](../media/lab-04/image38.png)
 
-### 任务 10：创建湖屋的快捷方式
+## 任务 10：创建湖屋的快捷方式
 
 1. 在**资源管理器**面板中，选择**表**旁边的**省略号**。
 
@@ -394,7 +391,7 @@ Desktop 复制查询到数据流。
 
 Fabric Analyst in a Day (FAIAD) 介绍了 Microsoft Fabric 中提供的一些主要功能。在服务菜单中，"帮助 (?)"部分包含指向一些优质资源的链接。
 
-   ![](../media/lab-03/image64.png)
+![](../media/lab-03/image64.png)
 
 以下更多参考资源可帮助您进行与 Microsoft Fabric 相关的后续步骤。
 
@@ -434,7 +431,7 @@ Fabric Analyst in a Day (FAIAD) 介绍了 Microsoft Fabric 中提供的一些主
 
 - [Dataverse 和 Microsoft Fabric 集成博客](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation。保留所有权利。
+© 2025 Microsoft Corporation。保留所有权利。
 
 使用此演示/实验即表示您已同意以下条款：
 
