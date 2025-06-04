@@ -1,4 +1,4 @@
-  ![](../media/lab-01/image29.jpeg)
+  ![](../media/lab-01/image29.png)
 
 랩 1
 
