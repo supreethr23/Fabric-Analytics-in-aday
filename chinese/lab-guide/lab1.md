@@ -85,6 +85,7 @@ Power Query 更新模型。
 4. 选择**继续**。
 
     ![](../media/lab-01/image7.png)
+
 5. "登录"对话框随即打开。通过从**环境详细信息**选项卡中复制**用户名**来重新输入用户名。
 
 6. 选择下一步。
@@ -98,6 +99,7 @@ Power Query 更新模型。
 9. **保持登录到您的所有应用**对话框随即打开。选择**确定**。
 
     ![](../media/lab-01/image9.png)
+
 10. **您已完成所有设置!** 对话框随即打开。选择**完成**。
 
 Power BI Desktop 现在将打开。
@@ -162,8 +164,11 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 2. Power Query 窗口随即打开。从功能区中选择**主页 -\> 数据源设置**。"数据源设置"对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
 
     - Snowflake
+    
     - SharePoint
+    
     - ADLS Gen2
+    
     - Dataverse
 
 3. 选择**关闭**以关闭"数据源设置"对话框。
@@ -184,9 +189,9 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 8. 您可以通过输入**用户名**和**密码**来输入 Dataverse 数据源的凭据。下面提供了凭据，\ 选择**连接**。
 
-    - 电子邮件/用户名：**在"环境"选项卡中找到**
+    - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
-    - 密码：**在"环境"选项卡中找到**
+    - 密码：<inject key="AzureAdUserPassword"></inject>
 
 9. 单击"查询"窗口中的 **ADLS Base Folder** 查询。选择本查询后，您将需要输入凭据。\ 单击**编辑凭据**。
 
@@ -194,15 +199,18 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 10. 对于 ADLS 数据源，选择**共享访问签名 (SAS)** 选项，然后输入下面提供的 **SAS 令牌**。然后，选择**连接**。
 
-    - **SAS 令牌：** 在"环境"选项卡中找到
+    - **SAS 令牌：** <inject key="Sas token"></inject>
 
       ![](../media/lab-01/image22.png)
 
 11. 请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和 Date。还具有\ Sales 事实。
 
     - **Geo 维度**是通过合并 Cities、Countries 和 States     查询的数据而创建的。
+    
     - **Product 维度**是通过合并 Product Groups 和 Product Item Group     查询中的数据而创建的。
+    
     - **Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
+    
     - **Sales 事实**是通过合并 InvoiceLineItems 与 Invoice     查询而创建的。
 
 12. 对于 Snowflake 数据源，选择"查询"窗口中的 **SupplierCategories** 查询。选择本查询后，系统将提示您输入凭据。单击**编辑凭据**。
@@ -211,12 +219,17 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 13. 输入下面提供的 **Snowflake 用户名**和 **Snowflake 密码**。使用这些凭据将 Snowflake 下的所有表连接到 Snowflake，然后选择"连接"。
 
-    - **Snowflake 用户名：** TE_SNOWFLAKE1
+    - **Snowflake 用户名：** <inject key="SnowFlake Username"></inject>
 
-    - **Snowflake 密码：** 8UpfRpExVDXv2AC1
+    - **Snowflake 密码：** <inject key="SnowFlake Password"></inject>
 
-*注意：如果您在使用环境详细信息中的凭据连接到 Snowflake
-时遇到任何问题，请使用"环境"选项卡中提供的备份凭据。*
+    *注意：如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用"环境"选项卡中提供的备份凭据。*
+
+    - **Snowflake 用户名**：SNOWFLAKE_BACKUP
+
+    - **Snowflake 密码**：8UpfRpExVDXv2AC1
+
+    >**注意**：请勿输入错误的用户名或密码超过三次，否则所有用户的 Snowflake 帐户将被锁定。如果您登录时遇到问题，请联系 `cloudlabs-support@spektrasystems.com`，无需多次尝试。
 
 14. 请注意，**SnowflakeData** 文件夹包含 Supplier 维度和 PO（订单/支出）事实。
 
