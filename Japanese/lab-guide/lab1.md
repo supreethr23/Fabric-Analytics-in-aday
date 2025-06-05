@@ -264,7 +264,7 @@ Power BI Desktop のレポートを見てみましょう。
 
     - **SAS** トークン: <inject key="Sas token"></inject>
 
-    ![](../media/lab-01/image22.png)
+        ![](../media/lab-01/image22.png)
 
 11. **ADLSData** フォルダーには複数のディメンション
     (Geo、Product、Reseller、Date) があることがわかります。Sales
@@ -298,12 +298,13 @@ Power BI Desktop のレポートを見てみましょう。
 
     - **Snowflake パスワード**: <inject key="SnowFlake Password"></inject>
 
-    >**注**: 環境の詳細にある資格情報を使用して Snowflake
-に接続する際に問題が発生した場合は、環境
-タブに示されているバックアップの資格情報を使用してください。
+    >**注**: 環境の詳細にある資格情報を使用して Snowflake に接続する際に問題が発生した場合は、環境 タブに示されているバックアップの資格情報を使用してください。
+
     - **Snowflake ユーザー名**: SNOWFLAKE_BACKUP
+    
     - **Snowflake パスワード**: 8UpfRpExVDXv2AC1
-     >**注**: ユーザー名またはパスワードを3回以上間違えて入力しないでください。すべてのユーザーの Snowflake アカウントがロックされてしまいます。ログインに問題がある場合は、複数回試すのではなく、cloudlabs-support@spektrasystems.com までご連絡ください。
+     
+    >**注**: ユーザー名またはパスワードを3回以上間違えて入力しないでください。すべてのユーザーの Snowflake アカウントがロックされてしまいます。ログインに問題がある場合は、複数回試すのではなく、cloudlabs-support@spektrasystems.com までご連絡ください。
 
 14. **SnowflakeData** フォルダーには、Supplier ディメンションと PO
     (Order / Spend) ファクトが含まれていることがわかります。
@@ -327,7 +328,7 @@ Power BI Desktop のレポートを見てみましょう。
 
     - **パスワード:** <inject key="AzureAdUserPassword"></inject>
 
-     ![](../media/lab-01/image25.png)
+        ![](../media/lab-01/image25.png)
 
 17. **SharepointData** フォルダーには People
     ディメンションが含まれていることがわかります。
@@ -402,7 +403,7 @@ Microsoft Fabric
 - [Dataverse と Microsoft Fabric
     の統合に関するブログ](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation.All rights reserved.
+© 2025 Microsoft Corporation. All rights reserved.
 
 このデモ/ラボを使用すると、次の条件に同意したことになります。
 
@@ -417,7 +418,7 @@ Corporation によって提供されます。
 このデモ/ラボは、前に説明した目的のために複雑なセットアップまたはインストールを必要としないシミュレーション環境で潜在的な新機能や概念などの特定のソフトウェア
 テクノロジ/製品の機能を提供します。このデモ/ラボで表されるテクノロジ/概念は、フル機能を表していない可能性があり、最終バージョンと動作が異なることがあります。また、そのような機能や概念の最終版がリリースされない場合があります。物理環境でこのような機能を使用するエクスペリエンスが異なる場合もあります。
 
-**フィードバック。**このデモ/ラボで説明されているテクノロジ、機能、概念に関するフィードバックを
+**フィードバック。** このデモ/ラボで説明されているテクノロジ、機能、概念に関するフィードバックを
 Microsoft
 に提供する場合、ユーザーは任意の方法および目的でユーザーのフィードバックを使用、共有、および商品化する権利を無償で
 Microsoft に提供するものとします。また、ユーザーは、フィードバックを含む
