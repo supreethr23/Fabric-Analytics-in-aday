@@ -664,45 +664,22 @@ generated](images3/media/image49.png)
 
     ![](../media/lab-03image50.png)
 
-簡単に行うには、詳細エディターですべてのコードを削除し、次のコードを詳細エディ\
+    簡単に行うには、詳細エディターですべてのコードを削除し、次のコードを詳細エディ\
 ターに貼り付けます。
 
-[let]{.mark}
-
-[  Source = Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"},
-Invoices, {\"InvoiceID\"}, \"Invoices\", JoinKind.Inner),]{.mark}
-
-[    #\"Expanded Invoice\" = Table.ExpandTableColumn(Source,
-\"Invoices\", {\"CustomerID\", \"BillToCustomerID\",
-\"SalespersonPersonID\", \"InvoiceDate\"}, {\"CustomerID\",
-\"BillToCustomerID\", \"SalespersonPersonID\",
-\"InvoiceDate\"}),]{.mark}
-
-[    #\"Removed Other Columns\" = Table.SelectColumns(#\"Expanded
-Invoice\",{\"InvoiceLineID\", \"InvoiceID\", \"StockItemID\",
-\"Quantity\", \"UnitPrice\", \"TaxRate\", \"TaxAmount\", \"LineProfit\",
-\"ExtendedPrice\", \"CustomerID\", \"SalespersonPersonID\",
-\"InvoiceDate\"}),]{.mark}
-
-[    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Other
-Columns\",{{\"CustomerID\", \"ResellerID\"}}),]{.mark}
-
-[    #\"Merged Queries\" = Table.NestedJoin(#\"Renamed Columns\",
-{\"ResellerID\"}, Reseller, {\"ResellerID\"}, \"Customer\",
-JoinKind.Inner),]{.mark}
-
-[    #\"Added Custom\" = Table.AddColumn(#\"Merged Queries\", \"Sales
-Amount\", each \[ExtendedPrice\] - \[TaxAmount\]),]{.mark}
-
-[    #\"Changed Type\" = Table.TransformColumnTypes(#\"Added
-Custom\",{{\"Sales Amount\", type number}}),]{.mark}
-
-[    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed
-Type\",{\"Customer\"})]{.mark}
-
-[in]{.mark}
-
-[    #\"Removed Columns\"]{.mark}
+    ```
+    let
+      Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+        #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+        #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
+        #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+        #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+        #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
+    in
+        #"Removed Columns"
+    ```
 
 27. Power Query エディターに戻ります。左側の \[クエリ\]
     パネルで、**マージ クエリをダブルクリック**して、名前を変更します。
@@ -794,32 +771,16 @@ Type\",{\"Customer\"})]{.mark}
 
 13. 次のコードを詳細エディターに**貼り付けます**。
 
-[let]{.mark}
-
-[Source = Table.NestedJoin(ProductItem, {\"StockItemID\"},
-ProductItemGroup, {\"StockItemID\"}, \"ProductItemGroup\",
-JoinKind.LeftOuter),]{.mark}
-
-[#\"Expanded ProductItemGroup\" = Table.ExpandTableColumn(Source,
-\"ProductItemGroup\", {\"StockGroupID\"}, {\"StockGroupID\"}),]{.mark}
-
-[#\"Merged queries\" = Table.NestedJoin(#\"Expanded ProductItemGroup\",
-{\"StockGroupID\"}, ProductGroups, {\"StockGroupID\"},
-\"ProductGroups\", JoinKind.LeftOuter),]{.mark}
-
-[#\"Expanded ProductGroups\" = Table.ExpandTableColumn(#\"Merged
-queries\", \"ProductGroups\", {\"StockGroupName\"},
-{\"StockGroupName\"}),]{.mark}
-
-[#\"Choose columns\" = Table.SelectColumns(#\"Expanded ProductGroups\",
-{\"StockItemID\", \"StockItemName\", \"SupplierID\", \"Size\",
-\"IsChillerStock\", \"TaxRate\", \"UnitPrice\",
-\"RecommendedRetailPrice\", \"TypicalWeightPerUnit\",
-\"StockGroupName\"})]{.mark}
-
-[in]{.mark}
-
-[#\"Choose columns\"]{.mark}
+    ```
+    let
+       Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+       #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+       #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+       #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+       #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+    in
+       #"Choose columns"
+    ```
 
 14. **OK** を選択して詳細エディターを閉じます。Power Query
     エディターに戻ります。
