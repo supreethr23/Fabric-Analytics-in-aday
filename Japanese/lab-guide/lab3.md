@@ -1,6 +1,8 @@
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 3
 
-# 目次 概要	3
+![A diagram of data flow](../media/lab-03/image3.png)
+
+# 目次 概要	3\
 - ADLS Gen2 へのショートカット	
     - タスク 1: ショートカットを作成する	
 - ビジュアル クエリを使用してデータを変換する	
