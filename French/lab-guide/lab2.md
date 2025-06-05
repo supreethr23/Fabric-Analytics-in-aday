@@ -148,20 +148,13 @@ en rendre compte. La première étape consiste à créer une lakehouse.
 
 ## Tâche 3 : créer une lakehouse
 
-1. Dans l'espace de travail **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** venant d'être créé,
-    recherchez le bouton **+ Nouvel élément (1)** dans le volet de
-    navigation gauche. C'est dans cette section que vous pouvez
-    commencer à créer des éléments dans votre espace de travail.
+1. Dans l'espace de travail **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** venant d'être créé,crecherchez le bouton **+ Nouvel élément (1)** dans le volet de navigation gauche. C'est dans cette section que vous pouvez commencer à créer des éléments dans votre espace de travail.
 
-2. Dans la zone de recherche, saisissez **Lakehouse (2)** puis, dans
-    les résultats de la recherche, sélectionnez l'option **Lakehouse
-    (3)**. Vous pourrez alors créer une lakehouse pour stocker,
-    interroger et gérer votre Big Data.
+2. Dans la zone de recherche, saisissez **Lakehouse (2)** puis, dans les résultats de la recherche, sélectionnez l'option **Lakehouse (3)**. Vous pourrez alors créer une lakehouse pour stocker, interroger et gérer votre Big Data.
 
     ![](../media/lab-02/image16.png)
 
-3. Une boîte de dialogue Nouvelle lakehouse s'affiche alors. Saisissez
-    **lh_FAIAD** dans la zone de texte Nom.
+3. Une boîte de dialogue Nouvelle lakehouse s'affiche alors. Saisissez **lh_FAIAD** dans la zone de texte Nom.
 
     ***Remarque :** lh fait ici référence à Lakehouse. Nous ajoutons le
     préfixe lh afin de faciliter l'identification et la recherche.*
