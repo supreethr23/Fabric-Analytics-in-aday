@@ -72,15 +72,13 @@ SQL クエリを記述してみましょう。
     テーブルを Product テーブルおよび Supplier
     テーブルと結合して、これを実現します。
 
-[SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
-
-[FROM dbo.Sales s]{.mark}
-
-[JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
-
-[JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
-
-[GROUP BY su.SupplierName]{.mark}
+   ```
+   SELECT su.SupplierName, SUM(Quantity) as Units
+   FROM dbo.Sales s
+   JOIN dbo.Product p on p.StockItemID = s.StockItemID
+   JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+   GROUP BY su.SupplierName
+   ```
 
 6. 結果を見るには、SQL エディター メニューで **Run** をクリックします。
 
