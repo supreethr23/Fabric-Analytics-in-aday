@@ -48,16 +48,16 @@
 
 2.  왼쪽 패널의 아래쪽에서 **Fabric 환경 선택기** 아이콘을 선택합니다.
 
-![](../media/lab-07/image6.png)
+    ![](../media/lab-07/image6.png)
 
 3.  Fabric 환경 대화 상자가 열립니다. **Power BI**를 선택합니다. **Power
     BI 홈 페이지**로 이동합니다.
 
-![](../media/lab-07/image7.png)
+    ![](../media/lab-07/image7.png)
 
 4.  상단 메뉴에서 **새 보고서**를 선택합니다.
 
-![](../media/lab-07/image8.png)
+    ![](../media/lab-07/image8.png)
 
 5.  **첫 번째 보고서 화면 만들기**로 이동됩니다. Excel, CSV를 사용하여
     보고서를 작성하거나 데이터를 수동으로 입력하거나 게시된 의미 체계
@@ -65,7 +65,7 @@
     모델을 만들었으므로 이를 사용하겠습니다. **게시된 의미 체계 모델
     선택** 옵션을 선택합니다.
 
-![](../media/lab-07/image9.png)
+    ![](../media/lab-07/image9.png)
 
 6.  보고서 페이지에서 사용할 데이터 세트를 선택합니다. 다양한 옵션이
     있다는 사실을 알아 두십시오. **sm_FAIAD**를 선택합니다.
@@ -82,13 +82,13 @@
     자동 만들기와 빈 보고서 만들기라는 두 가지 옵션이 있습니다. 자동
     만들기를 해보겠습니다. **보고서 자동 만들기**를 선택합니다.
 
-![](../media/lab-07/image10.png)
+    ![](../media/lab-07/image10.png)
 
 8.  Power BI가 보고서 자동 만들기를 시작합니다. 보고서가 준비되면 화면
     오른쪽 상단에 대화 상자가 나타납니다. **지금 보고서를 보거나 몇 초
     후에 자동으로 로드**를 선택합니다.
 
-![](../media/lab-07/image11.png)
+    ![](../media/lab-07/image11.png)
 
 **체크포인트:** 아래 스크린샷과 같은 보고서가 생성됩니다. 몇 가지 KPI와
 몇 가지 추세 시각적 개체가 있습니다. 새 모델을 분석하고 빠른 시작이
@@ -108,7 +108,7 @@
 
 12. **저장**을 선택합니다.
 
-![](../media/lab-07/image12.png)
+    ![](../media/lab-07/image12.png)
 
 **참고:** 자동 생성된 보고서는 \"자동 생성\"되므로 다르게 보일 수
 있습니다. 또한 이전 랩(랩 6)에서 생성한 관계 및 측정값에 따라
@@ -132,12 +132,12 @@
 2.  상단 메뉴에서 **홈 - \> 보고서**를 선택합니다. 첫 번째 보고서 페이지
     만들기로 이동됩니다.
 
-![](../media/lab-07/image14.png)
+    ![](../media/lab-07/image14.png)
 
 3.  **게시된 의미 체계 모델 선택**을 선택하면 우리가 만든 모델을 선택할
     수 있습니다.
 
-![](../media/lab-07/image15.png)
+    ![](../media/lab-07/image15.png)
 
 4.  보고서에서 사용할 의미 체계 모델을 선택하면 대화 상자가 열립니다.
     **sm_FAIAD**를 선택합니다.
@@ -146,7 +146,7 @@
     보고서 만들기를**을 선택합니다. 보고서 페이지와 비슷한 모양의 Power
     BI Desktop 보고서 페이지로 이동합니다.
 
-![](../media/lab-07/image16.png)
+    ![](../media/lab-07/image16.png)
 
 6.  아직 열지 않았다면, 랩 환경의 **바탕 화면**에서 **Reports** 폴더에
     있는 **FAIAD.pbix**를 엽니다.
@@ -176,7 +176,7 @@
 
 14. 투명도를 **0%**로 설정합니다.
 
-![](../media/lab-07/image18.png)
+    ![](../media/lab-07/image18.png)
 
 ### 작업 3: 보고서에 헤더 추가
 
@@ -200,7 +200,7 @@
 
 8.  **텍스트 상자의 크기를 상단 여백에 맞게 조정합니다**.
 
-![](../media/lab-07/image19.png)
+    ![](../media/lab-07/image19.png)
 
 ### 작업 4: 보고서에 KPI 추가
 
@@ -213,7 +213,7 @@
 
 4.  **Sales 측정값**을 선택합니다.
 
-![](../media/lab-07/image20.png)
+    ![](../media/lab-07/image20.png)
 
 5.  **다중행 카드 시각적 개체가 선택된** 상태에서 시각화 섹션에서
     **시각적 개체 서식 지정** **아이콘**을 선택합니다.
@@ -228,13 +228,13 @@
 
 10. 헥스 값을 **#004753**으로 설정합니다.
 
-![](../media/lab-07/image21.png)
+    ![](../media/lab-07/image21.png)
 
 11. **카드** 섹션을 확장합니다.
 
 12. **악센트 바** 슬라이더를 **끄기**로 설정합니다.
 
-![](../media/lab-07/image22.png)
+    ![](../media/lab-07/image22.png)
 
 13. 시각화 창에서 **일반**을 선택합니다.
 
@@ -245,7 +245,7 @@
 16. **시각적 개체**의 크기를 조정하고 **스크린샷과 같이 왼쪽 상자**로
     옮깁니다.
 
-![](../media/lab-07/image23.png)
+    ![](../media/lab-07/image23.png)
 
 17. 또 다른 KPI를 추가해 보겠습니다. 방금 만든 **Sales 다중 행 카드**를
     선택합니다. 키보드에서 **Ctrl+C**를 선택하여 시각적 개체를
@@ -263,7 +263,7 @@
 21. **시각적 개체**의 크기를 조정하고 **Sales 시각적 개체 아래의
     상자에** 넣습니다.
 
-![](../media/lab-07/image24.png)
+    ![](../media/lab-07/image24.png)
 
 ### 작업 5: 보고서에 꺾은선형 차트 추가
 
@@ -280,7 +280,7 @@
 4.  **Year** 필드를 선택합니다. Year가 기본 설정으로 합산되어 Y축에
     추가되어 있습니다. 이 문제를 해결해보겠습니다.
 
-![](../media/lab-07/image25.png)
+    ![](../media/lab-07/image25.png)
 
 ### 작업 6: 보고서 저장
 
@@ -299,7 +299,7 @@
 4.  **저장**을 선택합니다. 보고서가 저장되고 보기 모드가 된 것을 확인할
     수 있습니다.
 
-![](../media/lab-07/image26.png)
+    ![](../media/lab-07/image26.png)
 
 ### 작업 7: Date 테이블의 Year 열 구성
 
@@ -308,7 +308,7 @@
 2.  **상단 메뉴**에서 **데이터 모델 열기**를 선택합니다. 새 브라우저
     창/탭에서 공지사항 의미 체계 모델이 열립니다.
 
-![](../media/lab-07/image27.png)
+    ![](../media/lab-07/image27.png)
 
 3.  오른쪽 위 모서리에서 **편집** 모드로 전환합니다.
 
@@ -322,7 +322,7 @@
 
 8.  **요약 기준** 드롭다운에서 **없음**을 선택합니다.
 
-![](../media/lab-07/image28.png)
+    ![](../media/lab-07/image28.png)
 
 9.  브라우저의 **보고서 창/탭**으로 다시 이동합니다.
 
@@ -336,7 +336,7 @@
 
 13. **Sales** 테이블을 확장하고 **Sales 측정값**을 선택합니다.
 
-![](../media/lab-07/image29.png)
+    ![](../media/lab-07/image29.png)
 
 ### 작업 8: Date 테이블의 Month Name 열 구성
 
@@ -352,7 +352,7 @@
 
 5.  **축 정렬 -\> 오름차순 정렬**을 선택합니다.
 
-![](../media/lab-07/image30.png)
+    ![](../media/lab-07/image30.png)
 
 **참고:** 월이 알파벳순으로 정렬되어 있습니다. 이를 수정해 보겠습니다.
 
@@ -368,12 +368,12 @@
 
 10. **열 기준 정렬** 드롭다운에서 **Month**를 선택합니다.
 
-![](../media/lab-07/image32.png)
+    ![](../media/lab-07/image32.png)
 
 11. 브라우저의 **보고서 창/탭**으로 다시 이동합니다. 이제 월이 올바르게
     정렬되어 있습니다.
 
-![](../media/lab-07/image33.png)
+    ![](../media/lab-07/image33.png)
 
 ### 작업 9: 꺾은선형 차트 형식 지정
 
@@ -387,7 +387,7 @@
 2.  **Reseller -\> Reseller Company** 필드를 **범례** 섹션으로
     드래그합니다.
 
-![](../media/lab-07/image34.png)
+    ![](../media/lab-07/image34.png)
 
 3.  **꺾은선형 차트 시각적 개체를 선택한** 상태에서 **시각화** 섹션에서
     **시각적 개체 서식 지정 아이콘 -\> 일반**을 선택합니다.
@@ -400,7 +400,7 @@
 
 7.  **배경** 슬라이더를 사용하여 **끄기**로 설정합니다.
 
-![](../media/lab-07/image35.png)
+    ![](../media/lab-07/image35.png)
 
 8.  **시각화** 섹션에서 **시각적 개체 서식 지정 아이콘 - \> 시각적
     개체**를 선택합니다.
@@ -423,7 +423,7 @@
 16. 시각적 개체에서 오른쪽으로 스크롤하면 **2024년 4월까지의 데이터를
     확인할 수 있습니다**.
 
-![](../media/lab-07/image36.png)
+    ![](../media/lab-07/image36.png)
 
 17. 보고서를 저장하겠습니다. 메뉴에서 **파일 -\> 저장**을 선택합니다.
 
@@ -441,7 +441,7 @@
 2.  리본 메뉴에서 **홈 -\> OneLake 데이터 허브 -\> Power BI 의미 체계
     모델**을 선택합니다.
 
-![](../media/lab-07/image37.png)
+    ![](../media/lab-07/image37.png)
 
 3.  OneLake 데이터 허브 대화 상자가 열립니다. 생성한 의미 체계 모델인
     **sm_FAIAD**를 선택합니다.
@@ -449,12 +449,12 @@
 4.  **연결**을 선택합니다. 데이터 창에 의미 체계 모델의 테이블이 있는
     것을 볼 수 있습니다.
 
-![](../media/lab-07/image38.png)
+    ![](../media/lab-07/image38.png)
 
 5.  **왼쪽 패널**에서 **모델 보기** 아이콘을 선택합니다. 테이블 간의
     관계를 볼 수 있습니다.
 
-![](../media/lab-07/image39.png)
+    ![](../media/lab-07/image39.png)
 
 6.  **왼쪽 패널**에서 **보고서 보기**를 선택하여 보고서 보기로 다시
     이동합니다.
@@ -466,18 +466,18 @@
 
 9.  리본 메뉴에서 **홈 -\> 복사**를 선택합니다.
 
-![](../media/lab-07/image40.png)
+    ![](../media/lab-07/image40.png)
 
 10. **FAIADTemplate.pbix**로 이동하여 보고서 캔버스를 선택합니다.
 
 11. 리본 메뉴에서 **홈 -\> 붙여넣기**를 선택합니다.
 
-![](../media/lab-07/image40.png)
+    ![](../media/lab-07/image40.png)
 
 12. 마찬가지로 **Sales 및 Units KPI**를 복사하여 붙여넣습니다. 참고 -
     여러 시각적 개체를 복사하여 함께 붙여넣을 수 있습니다.
 
-![](../media/lab-07/image41.png)
+    ![](../media/lab-07/image41.png)
 
 기존 보고서에서 시각적 개체를 복사하여 의미 체계 모델에 연결되는
 보고서에 붙여넣기하는 것이 쉽습니다. 복사 및 붙여넣기가 작동하려면
@@ -498,14 +498,14 @@
 17. 이를 수정해 보겠습니다. **시각화** 패널의 **X축** 아래에서
     **StartOfMonth**를 삭제합니다.
 
-![](../media/lab-07/image42.png)
+    ![](../media/lab-07/image42.png)
 
 18. **데이터 창**에서 **Date** 테이블을 확장합니다.
 
 19. **StartOfMonth** 필드를 **X축**으로 끌어옵니다. 이렇게 하면 시각적
     개체가 수정됩니다. 시각적 개체의 형식을 지정해야 할 수도 있습니다.
 
-![](../media/lab-07/image43.png)
+    ![](../media/lab-07/image43.png)
 
 20. 리본 메뉴에서 **파일 -\> 저장**을 선택하여 보고서를 저장해
     보겠습니다.
@@ -535,18 +535,18 @@ ADLS Gen2에서 2024년 5월 파일에 대한 바로 가기를 만들고 Sales �
 
 3.  **lh_FAIAD**를 선택하여 레이크하우스로 이동합니다.
 
-![](../media/lab-07/image44.png)
+    ![](../media/lab-07/image44.png)
 
 4.  **왼쪽 탐색기 창**에서 **테이블** 옆의 **줄임표**를 선택합니다.
 
 5.  **새 바로 가기**를 선택합니다.
 
-![](../media/lab-07/image45.png)
+    ![](../media/lab-07/image45.png)
 
 6.  새 바로 가기 대화 상자가 열립니다. **외부 소스**에서 **Azure Data
     Lake Storage Gen2**를 선택합니다.
 
-![](../media/lab-07/image46.png)
+    ![](../media/lab-07/image46.png)
 
 7.  랩에서 앞서 연결을 생성했으므로 새 연결을 생성하지 않아도 되며, 기존
     연결에서 ADLS 연결을 확인할 수 있습니다.
@@ -559,7 +559,7 @@ ADLS Gen2에서 2024년 5월 파일에 대한 바로 가기를 만들고 Sales �
 
 10. **다음**을 선택합니다.
 
-![](../media/lab-07/image47.png)
+    ![](../media/lab-07/image47.png)
 
 11. 왼쪽 패널에 디렉터리 구조가 표시된 ADLS Gen2에 연결됩니다.
     **Delta-Parquet-Format-FY25**를 확장합니다.
@@ -568,7 +568,7 @@ ADLS Gen2에서 2024년 5월 파일에 대한 바로 가기를 만들고 Sales �
 
 13. **다음**을 선택합니다.
 
-![](../media/lab-07/image48.png)
+    ![](../media/lab-07/image48.png)
 
 14. 이름을 편집할 수 있는 다음 대화 상자로 이동합니다.
     **Sales.Invoices_May**에 대한 작업에서 **편집 아이콘**을 선택합니다.
@@ -579,7 +579,7 @@ ADLS Gen2에서 2024년 5월 파일에 대한 바로 가기를 만들고 Sales �
 
 17. **만들기**를 선택합니다.
 
-![](../media/lab-07/image49.png)
+    ![](../media/lab-07/image49.png)
 
 왼쪽 **탐색기 창**에 InvoicesMay 테이블이 있습니다. 이제 Sales 보기를
 업데이트해야 합니다.
@@ -587,311 +587,158 @@ ADLS Gen2에서 2024년 5월 파일에 대한 바로 가기를 만들고 Sales �
 18. 화면 **오른쪽 상단**에서 **레이크하우스 -\> SQL 분석 엔드포인트**를
     선택합니다.
 
-![](../media/lab-07/image50.png)
+    ![](../media/lab-07/image50.png)
 
 19. 상단 메뉴에서 **홈 - \> 새 SQL 쿼리**를 선택합니다. 새 SQL 쿼리 창이
     열립니다.
 
 20. 아래 코드를 **복사**하여 SQL 쿼리 창에 **붙여넣습니다**.
 
-> [ALTER VIEW \[dbo\].\[Sales\] AS (]{.mark}
->
-> [select \[\$Outer\].\[InvoiceLineID\] as \[InvoiceLineID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Outer\].\[StockItemID\] as \[StockItemID\],]{.mark}
->
-> [\[\$Outer\].\[Quantity\] as \[Quantity\],]{.mark}
->
-> [\[\$Outer\].\[UnitPrice\] as \[UnitPrice\],]{.mark}
->
-> [\[\$Outer\].\[TaxRate\] as \[TaxRate\],]{.mark}
->
-> [\[\$Outer\].\[TaxAmount\] as \[TaxAmount\],]{.mark}
->
-> [\[\$Outer\].\[LineProfit\] as \[LineProfit\],]{.mark}
->
-> [\[\$Outer\].\[ExtendedPrice\] as \[ExtendedPrice\],]{.mark}
->
-> [\[\$Outer\].\[CustomerID\] as \[ResellerID\],]{.mark}
->
-> [\[\$Outer\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Outer\].\[t0_0\] as \[Sales Amount\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\_\].\[InvoiceLineID\] as \[InvoiceLineID\],]{.mark}
->
-> [\[\_\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\_\].\[StockItemID\] as \[StockItemID\],]{.mark}
->
-> [\[\_\].\[Quantity\] as \[Quantity\],]{.mark}
->
-> [\[\_\].\[UnitPrice\] as \[UnitPrice\],]{.mark}
->
-> [\[\_\].\[TaxRate\] as \[TaxRate\],]{.mark}
->
-> [\[\_\].\[TaxAmount\] as \[TaxAmount\],]{.mark}
->
-> [\[\_\].\[LineProfit\] as \[LineProfit\],]{.mark}
->
-> [\[\_\].\[ExtendedPrice\] as \[ExtendedPrice\],]{.mark}
->
-> [\[\_\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\],]{.mark}
->
-> [\[\_\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\_\].\[ExtendedPrice\] - \[\_\].\[TaxAmount\] as \[t0_0\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\$Outer\].\[InvoiceLineID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceID\],]{.mark}
->
-> [\[\$Outer\].\[StockItemID\],]{.mark}
->
-> [\[\$Outer\].\[Quantity\],]{.mark}
->
-> [\[\$Outer\].\[UnitPrice\],]{.mark}
->
-> [\[\$Outer\].\[TaxRate\],]{.mark}
->
-> [\[\$Outer\].\[TaxAmount\],]{.mark}
->
-> [\[\$Outer\].\[LineProfit\],]{.mark}
->
-> [\[\$Outer\].\[ExtendedPrice\],]{.mark}
->
-> [\[\$Inner\].\[CustomerID\],]{.mark}
->
-> [\[\$Inner\].\[SalespersonPersonID\],]{.mark}
->
-> [\[\$Inner\].\[InvoiceDate\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[InvoiceLineItems\] as \[\$Outer\]]{.mark}
->
-> [inner join]{.mark}
->
-> [(]{.mark}
->
-> [select \[\_\].\[InvoiceID\] as \[InvoiceID2\],]{.mark}
->
-> [\[\_\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\_\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\_\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\_\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\_\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\_\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\],]{.mark}
->
-> [\[\_\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\_\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\_\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\_\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\_\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\_\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\_\].\[DeliveryInstructions\] as \[DeliveryInstructions\],]{.mark}
->
-> [\[\_\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\_\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\_\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\_\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\_\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\_\].\[ReturnedDeliveryData\] as \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\_\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\_\].\[ConfirmedReceivedBy\] as \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\_\].\[LastEditedBy\] as \[LastEditedBy2\],]{.mark}
->
-> [\[\_\].\[LastEditedWhen\] as \[LastEditedWhen2\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\$Table\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Table\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\$Table\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\$Table\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\$Table\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\$Table\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\$Table\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Table\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\$Table\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\$Table\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\$Table\].\[DeliveryInstructions\] as
-> \[DeliveryInstructions\],]{.mark}
->
-> [\[\$Table\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\$Table\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\$Table\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\$Table\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\$Table\].\[ReturnedDeliveryData\] as
-> \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedReceivedBy\] as
-> \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedBy\] as \[LastEditedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[Invoices\] as \[\$Table\]]{.mark}
->
-> [union all select \[\$Table\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Table\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\$Table\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\$Table\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\$Table\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\$Table\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\$Table\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Table\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\$Table\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\$Table\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\$Table\].\[DeliveryInstructions\] as
-> \[DeliveryInstructions\],]{.mark}
->
-> [\[\$Table\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\$Table\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\$Table\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\$Table\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\$Table\].\[ReturnedDeliveryData\] as
-> \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedReceivedBy\] as
-> \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedBy\] as \[LastEditedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[InvoicesMay\] as \[\$Table\]]{.mark}
->
-> [) as \[\_\]]{.mark}
->
-> [) as \[\$Inner\] on (\[\$Outer\].\[InvoiceID\] =
-> \[\$Inner\].\[InvoiceID2\] or \[\$Outer\].\[InvoiceID\] is null and
-> \[\$Inner\].\[InvoiceID2\] is null)]{.mark}
->
-> [) as \[\_\]]{.mark}
->
-> [) as \[\$Outer\]]{.mark}
->
-> [where exists]{.mark}
->
-> [(]{.mark}
->
-> [select 1]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[ResellerID\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[Reseller\] as \[\$Table\]]{.mark}
->
-> [) as \[\$Inner\]]{.mark}
->
-> [where \[\$Outer\].\[CustomerID\] = \[\$Inner\].\[ResellerID\] or
-> \[\$Outer\].\[CustomerID\] is null and \[\$Inner\].\[ResellerID\] is
-> null]{.mark}
->
-> [)]{.mark}
->
-> [)]{.mark}
+```
+ALTER VIEW [dbo].[Sales] AS (
+select [$Outer].[InvoiceLineID] as [InvoiceLineID],
+ [$Outer].[InvoiceID] as [InvoiceID],
+ [$Outer].[StockItemID] as [StockItemID],
+ [$Outer].[Quantity] as [Quantity],
+ [$Outer].[UnitPrice] as [UnitPrice],
+ [$Outer].[TaxRate] as [TaxRate],
+ [$Outer].[TaxAmount] as [TaxAmount],
+ [$Outer].[LineProfit] as [LineProfit],
+[$Outer].[ExtendedPrice] as [ExtendedPrice],
+ [$Outer].[CustomerID] as [ResellerID],
+ [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
+ [$Outer].[InvoiceDate] as [InvoiceDate],
+ [$Outer].[t0_0] as [Sales Amount]
+from 
+(
+ select [_].[InvoiceLineID] as [InvoiceLineID],
+ [_].[InvoiceID] as [InvoiceID],
+ [_].[StockItemID] as [StockItemID],
+ [_].[Quantity] as [Quantity],
+ [_].[UnitPrice] as [UnitPrice],
+ [_].[TaxRate] as [TaxRate],
+ [_].[TaxAmount] as [TaxAmount],
+ [_].[LineProfit] as [LineProfit],
+ [_].[ExtendedPrice] as [ExtendedPrice],
+ [_].[CustomerID] as [CustomerID],
+ [_].[SalespersonPersonID] as [SalespersonPersonID],
+ [_].[InvoiceDate] as [InvoiceDate],
+ [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
+ from 
+ (
+ select [$Outer].[InvoiceLineID],
+ [$Outer].[InvoiceID],
+ [$Outer].[StockItemID],
+ [$Outer].[Quantity],
+ [$Outer].[UnitPrice],
+ [$Outer].[TaxRate],
+ [$Outer].[TaxAmount],
+ [$Outer].[LineProfit],
+ [$Outer].[ExtendedPrice],
+ [$Inner].[CustomerID],
+ [$Inner].[SalespersonPersonID],
+ [$Inner].[InvoiceDate]
+ from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
+ inner join 
+ (
+ select [_].[InvoiceID] as [InvoiceID2],
+ [_].[CustomerID] as [CustomerID],
+ [_].[BillToResellerID] as [BillToResellerID],
+ [_].[OrderID] as [OrderID],
+ [_].[DeliveryMethodID] as [DeliveryMethodID],
+ [_].[ContactPersonID] as [ContactPersonID],
+ [_].[AccountsPersonID] as [AccountsPersonID],
+ [_].[SalespersonPersonID] as [SalespersonPersonID],
+ [_].[PackedByPersonID] as [PackedByPersonID],
+ [_].[InvoiceDate] as [InvoiceDate],
+ [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+ [_].[IsCreditNote] as [IsCreditNote],
+ [_].[CreditNoteReason] as [CreditNoteReason],
+ [_].[Comments] as [Comments],
+ [_].[DeliveryInstructions] as [DeliveryInstructions],
+ [_].[InternalComments] as [InternalComments],
+ [_].[TotalDryItems] as [TotalDryItems],
+ [_].[TotalChillerItems] as [TotalChillerItems],
+ [_].[DeliveryRun] as [DeliveryRun],
+ [_].[RunPosition] as [RunPosition],
+
+[_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+ [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+ [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+ [_].[LastEditedBy] as [LastEditedBy2],
+ [_].[LastEditedWhen] as [LastEditedWhen2]
+ from 
+ (
+ select [$Table].[InvoiceID] as [InvoiceID],
+ [$Table].[CustomerID] as [CustomerID],
+ [$Table].[BillToResellerID] as [BillToResellerID],
+ [$Table].[OrderID] as [OrderID],
+ [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+ [$Table].[ContactPersonID] as [ContactPersonID],
+ [$Table].[AccountsPersonID] as [AccountsPersonID],
+ [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+ [$Table].[PackedByPersonID] as [PackedByPersonID],
+ [$Table].[InvoiceDate] as [InvoiceDate],
+ [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+ [$Table].[IsCreditNote] as [IsCreditNote],
+ [$Table].[CreditNoteReason] as [CreditNoteReason],
+ [$Table].[Comments] as [Comments],
+ [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+ [$Table].[InternalComments] as [InternalComments],
+ [$Table].[TotalDryItems] as [TotalDryItems],
+ [$Table].[TotalChillerItems] as [TotalChillerItems],
+ [$Table].[DeliveryRun] as [DeliveryRun],
+ [$Table].[RunPosition] as [RunPosition],
+ [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+ [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+ [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+ [$Table].[LastEditedBy] as [LastEditedBy],
+ [$Table].[LastEditedWhen] as [LastEditedWhen]
+ from [lh_FAIAD].[dbo].[Invoices] as [$Table]
+ union all select [$Table].[InvoiceID] as [InvoiceID],
+ [$Table].[CustomerID] as [CustomerID],
+ [$Table].[BillToResellerID] as [BillToResellerID],
+ [$Table].[OrderID] as [OrderID],
+ [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+ [$Table].[ContactPersonID] as [ContactPersonID],
+ [$Table].[AccountsPersonID] as [AccountsPersonID],
+ [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+ [$Table].[PackedByPersonID] as [PackedByPersonID],
+ [$Table].[InvoiceDate] as [InvoiceDate],
+ [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+ [$Table].[IsCreditNote] as [IsCreditNote],
+ [$Table].[CreditNoteReason] as [CreditNoteReason],
+ [$Table].[Comments] as [Comments],
+ [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+ [$Table].[InternalComments] as [InternalComments],
+ [$Table].[TotalDryItems] as [TotalDryItems],
+ [$Table].[TotalChillerItems] as [TotalChillerItems],
+ [$Table].[DeliveryRun] as [DeliveryRun],
+ [$Table].[RunPosition] as [RunPosition],
+ [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+ [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+ [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+ [$Table].[LastEditedBy] as [LastEditedBy],
+[$Table].[LastEditedWhen] as [LastEditedWhen]
+ from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
+ ) as [_]
+ ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and 
+[$Inner].[InvoiceID2] is null)
+ ) as [_]
+) as [$Outer]
+where exists 
+(
+ select 1
+ from 
+ (
+ select [ResellerID]
+ from [lh_FAIAD].[dbo].[Reseller] as [$Table]
+ ) as [$Inner]
+ where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and 
+[$Inner].[ResellerID] is null
+)
+)
+
 
 21. 시각적 개체 쿼리 메뉴에서 **실행**을 선택하여 코드를 실행합니다.
 
@@ -907,7 +754,7 @@ ADLS Gen2에서 2024년 5월 파일에 대한 바로 가기를 만들고 Sales �
     2024년 5월의 데이터가 표시됩니다. 또한 판매 금액과 판매 단위가
     증가한 것을 확인할 수 있습니다.
 
-![](../media/lab-07/image52.png)
+    ![](../media/lab-07/image52.png)
 
 데이터가 변경될 때 데이터 모델을 새로 고치고 보고할 필요가 없습니다.
 이것이 바로 Direct Lake와 Direct query의 장점입니다.
@@ -959,7 +806,7 @@ Microsoft Fabric은 SaaS 제품입니다. 필요한 것은 서비스에 액세�
 
 2.  메뉴에서 **작업 영역 설정**을 선택합니다.
 
-![](../media/lab-07/image53.png)
+    ![](../media/lab-07/image53.png)
 
 3.  작업 영역 설정 대화 상자가 열립니다. **일반** 섹션에서 아래로
     스크롤합니다.
