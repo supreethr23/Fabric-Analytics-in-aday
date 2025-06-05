@@ -85,7 +85,7 @@ Microsoft Fabric에 대해 들어봤기 때문에 그것이 문제를 해결할 
 Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보고 변환과
 모델을 이해해 보겠습니다.
 
-### 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
+## 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
 
 1.  랩 환경에서 바탕 화면의 **Reports** 폴더에 있는 **FAIAD.pbix**를 엽니다. 파일이 Power BI Desktop에 열립니다.
 
@@ -120,7 +120,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 이제 Power BI Desktop이 열립니다.
 
-### 작업 2: Power BI Desktop 보고서 분석
+## 작업 2: Power BI Desktop 보고서 분석
 
 아래 보고서는 Fabrikam의 매출을 분석합니다. KPI는 페이지 왼쪽 상단에
 나열됩니다. 나머지 시각적 개체는 지역, 제품 그룹, 재판매사별 시간 경과에
@@ -197,7 +197,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     e. Reseller별 Customer 정보가 있습니다. Customer가 Reseller에
     연결됩니다.
 
-### 작업 3: Power Query 검토
+## 작업 3: Power Query 검토
 
 1.  Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서
     **홈 -> 데이터 변환**을 선택합니다.
