@@ -233,7 +233,7 @@
 
     **注意：** 我们在报表名称前加上 rpt（报表的缩写）作为前缀。
 
-3. 确保将报表保存在 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 工作区 ** 。**
+3. 确保将报表保存在 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 工作区
 
 4. 选择**保存。**请**注意**，报表已保存，并且您处于视图模式。
 
@@ -653,7 +653,7 @@ where exists
 
     ![](../media/lab-07/image52.png)
 
-22. 从左侧菜单栏选择 **rpt_Sales_Report**，以导航回到报表 ** 。**
+22. 从左侧菜单栏选择 **rpt_Sales_Report**，以导航回到报表
 
 23. 从顶部菜单中选择**刷新** 。请注意，折线图中现在有 2024 年 5
     月的数据。此外还要注意，销售额和单位数有所增加。
