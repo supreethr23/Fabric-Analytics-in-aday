@@ -220,85 +220,41 @@ en rendre compte. La première étape consiste à créer une lakehouse.
 
     **Types d'éléments :**
 
-    a. **Flux de données :** les flux de données sont comme des recettes de
-        transformation des données. Ils proposent plus de
-        300 transformations différentes à appliquer à vos données. Autrement
-        dit, vous pouvez nettoyer, combiner et modifier vos données de
-        plusieurs manières, selon vos besoins.
+    a. **Flux de données :** les flux de données sont comme des recettes de transformation des données. Ils proposent plus de 300 transformations différentes à appliquer à vos données. Autrement dit, vous pouvez nettoyer, combiner et modifier vos données de plusieurs manières, selon vos besoins.
 
-    b. **Pipelines :** les pipelines sont des flux de travail qui vous
-        aident à automatiser les processus de données. Ils vous permettent
-        de créer des flux de travail de données flexibles qui peuvent être
-        adaptés à vos besoins spécifiques. Cela facilite la gestion et le
-        traitement des données d'une manière structurée.
+    b. **Pipelines :** les pipelines sont des flux de travail qui vous aident à automatiser les processus de données. Ils vous permettent de créer des flux de travail de données flexibles qui peuvent être adaptés à vos besoins spécifiques. Cela facilite la gestion et le traitement des données d'une manière structurée.
 
-    c. **Azure Data Factory** **:** Azure Data Factory est un service
-        d'intégration de données informatique, qui vous permet de créer des
-        flux de travail pilotés par les données pour orchestrer et
-        automatiser le déplacement et la transformation des données.
+    c. **Azure Data Factory** **:** Azure Data Factory est un service d'intégration de données informatique, qui vous permet de créer des flux de travail pilotés par les données pour orchestrer et automatiser le déplacement et la transformation des données.
 
-    d. **Tâche Apache Airflow** **:** Apache Airflow est une plateforme
-        open source permettant de créer, planifier et surveiller par
-        programme des flux de travail. Dans Data Factory, elle vous permet
-        de créer, planifier et gérer des flux de travail de données
-        complexes.
+    d. **Tâche Apache Airflow** **:** Apache Airflow est une plateforme open source permettant de créer, planifier et surveiller par programme des flux de travail. Dans Data Factory, elle vous permet de créer, planifier et gérer des flux de travail de données complexes.
 
-    e. **Copier la tâche** **:** copier la tâche est une fonctionnalité qui
-        vous permet de copier des données d'une source vers une autre. Elle
-        fournit ainsi un moyen simple et efficace de déplacer des données
-        entre différentes banques de données.
+    e. **Copier la tâche** **:** copier la tâche est une fonctionnalité qui vous permet de copier des données d'une source vers une autre. Elle fournit ainsi un moyen simple et efficace de déplacer des données entre différentes banques de données.
 
-    f. **Mise en miroir** **:** fonctionnalité permettant de créer des
-        versions en miroir de bases de données pour la sauvegarde, les tests
-        ou un accès en lecture seule.
+    f. **Mise en miroir** **:** fonctionnalité permettant de créer des versions en miroir de bases de données pour la sauvegarde, les tests ou un accès en lecture seule.
 
-    g. **Bibliothèque de variables (version préliminaire)** **:** comporte
-        une liste de variables et leurs valeurs par défaut. Elle peut
-        également comporter d'autres ensembles de valeurs contenant des
-        valeurs alternatives.
+    g. **Bibliothèque de variables (version préliminaire)** **:** comporteune liste de variables et leurs valeurs par défaut. Elle peut également comporter d'autres ensembles de valeurs contenant des valeurs alternatives.
 
     **Prise en main :**
 
     Pour commencer à utiliser Data Factory, procédez comme suit :
 
-    a. **Apprendre à utiliser Data Factory** **:** cette section vous aide
-        à prendre en main Data Factory. Vous y trouverez des conseils afin
-        d'utiliser efficacement l'outil.
+    a. **Apprendre à utiliser Data Factory** **:** cette section vous aide à prendre en main Data Factory. Vous y trouverez des conseils afin d'utiliser efficacement l'outil.
 
-    b. **Créez votre premier flux de données** **:** ici, vous pouvez
-        découvrir comment créer votre premier flux de données. Les flux de
-        données sont essentiels pour transformer vos données selon vos
-        besoins.
+    b. **Créez votre premier flux de données** **:** ici, vous pouvez découvrir comment créer votre premier flux de données. Les flux de données sont essentiels pour transformer vos données selon vosbesoins.
 
-    c. **Créer votre premier pipeline de données** **:** cette section vous
-        guide afin de vous aider à créer votre premier pipeline de données.
-        Les pipelines permettent d'automatiser et de gérer efficacement vos
-        processus de traitement de données.
+    c. **Créer votre premier pipeline de données** **:** cette section vous guide afin de vous aider à créer votre premier pipeline de données. Les pipelines permettent d'automatiser et de gérer efficacement vos processus de traitement de données.
 
-    d. **Apprendre à surveiller les Data Factory** **:** la surveillance
-        est essentielle pour garantir le bon fonctionnement de vos processus
-        de traitement des données. Cette section explique comment surveiller
-        vos activités dans Data Factory.
+    d. **Apprendre à surveiller les Data Factory** **:** la surveillance est essentielle pour garantir le bon fonctionnement de vos processus de traitement des données. Cette section explique comment surveiller vos activités dans Data Factory.
 
-    e. **Apprendre à transformer les données avec des flux de
-        données** **:** cette section vous explique comment transformer
-        efficacement vos données à l'aide de flux de données.
+    e. **Apprendre à transformer les données avec des flux de données** **:** cette section vous explique comment transformer efficacement vos données à l'aide de flux de données.
 
-    f. **Créer votre première API pour GraphQL** **:** si vous souhaitez
-        utiliser des API avec GraphQL, cette section vous explique comment
-        démarrer.
+    f. **Créer votre première API pour GraphQL** **:** si vous souhaitez utiliser des API avec GraphQL, cette section vous explique comment démarrer.
 
-    g. **Créer vos premières fonctions de données utilisateur** **:** cette
-        section vous permet de créer des fonctions de données utilisateur,
-        lesquelles sont utiles pour gérer et transformer les données
-        utilisateur.
+    g. **Créer vos premières fonctions de données utilisateur** **:** cette section vous permet de créer des fonctions de données utilisateur, lesquelles sont utiles pour gérer et transformer les données utilisateur.
 
     ![](../media/lab-02/image21.png)
 
-4. Cliquez sur **Revenir aux charges de travail** dans le coin
-    supérieur gauche de l'écran. Vous êtes alors redirigé(e) vers la
-    page principale des charges de travail, où vous pouvez explorer
-    d'autres outils ou sections.
+4. Cliquez sur **Revenir aux charges de travail** dans le coin supérieur gauche de l'écran. Vous êtes alors redirigé(e) vers la page principale des charges de travail, où vous pouvez explorer d'autres outils ou sections.
 
     ![](../media/lab-02/image22.png)
 
@@ -325,55 +281,27 @@ en rendre compte. La première étape consiste à créer une lakehouse.
 
     **Types d'éléments :**
 
-    a. **Solutions de développement durable** **:** prennent en charge
-        l'ingestion, la standardisation et l'analyse des données
-        environnementales, sociales et de gouvernance (ESG).
+    a. **Solutions de développement durable** **:** prennent en charge l'ingestion, la standardisation et l'analyse des données environnementales, sociales et de gouvernance (ESG).
 
-    b. **Solutions de vente au détail** **:** aident à gérer de gros
-        volumes de données, intégrer des données provenant de diverses
-        sources et fournir des analyses en temps réel pour une prise de
-        décision rapide. Les détaillants peuvent utiliser ces solutions pour
-        l'optimisation des stocks, la segmentation des clients, la prévision
-        des ventes, la tarification dynamique et la détection des fraudes.
+    b. **Solutions de vente au détail** **:** aident à gérer de gros volumes de données, intégrer des données provenant de diverses sources et fournir des analyses en temps réel pour une prise de décision rapide. Les détaillants peuvent utiliser ces solutions pour l'optimisation des stocks, la segmentation des clients, la prévision des ventes, la tarification dynamique et la détection des fraudes.
 
-    c. **Solutions de santé :** sont stratégiquement conçues pour accélérer
-        le délai de création de valeur ajoutée pour les clients en répondant
-        au besoin crucial visant à transformer efficacement les données de
-        santé dans un format approprié pour l'analyse.
+    c. **Solutions de santé :** sont stratégiquement conçues pour accélérerle délai de création de valeur ajoutée pour les clients en répondant au besoin crucial visant à transformer efficacement les données de santé dans un format approprié pour l'analyse.
 
     **Prise en main :** Pour commencer à utiliser Industry Solutions, procédez comme suit :
 
-    a. **Découvrir les solutions de données de santé** **:** cliquez sur
-        « En savoir plus » pour en apprendre davantage sur les solutions de
-        données de santé et comprendre comment les utiliser dans vos
-        projets.
+    a. **Découvrir les solutions de données de santé** **:** cliquez sur « En savoir plus » pour en apprendre davantage sur les solutions de données de santé et comprendre comment les utiliser dans vos projets.
 
-    b. **Déployer les solutions de données de santé** **:** cliquez sur le
-        bouton « Déployer » pour commencer à déployer les solutions de
-        données de santé et les implémenter dans vos projets.
+    b. **Déployer les solutions de données de santé** **:** cliquez sur le bouton « Déployer » pour commencer à déployer les solutions de données de santé et les implémenter dans vos projets.
 
-    c. **Découvrir les solutions de développement durable** **:** cliquez
-        sur « En savoir plus » pour en apprendre davantage sur les solutions
-        de développement durable et comprendre comment les utiliser dans vos
-        projets.
+    c. **Découvrir les solutions de développement durable** **:** cliquez sur « En savoir plus » pour en apprendre davantage sur les solutions de développement durable et comprendre comment les utiliser dans vos projets.
 
-    d. **Déployer les solutions de développement durable** **:** cliquez
-        sur le bouton « Déployer » pour commencer à déployer les solutions
-        de développement durable et les implémenter dans vos projets.
+    d. **Déployer les solutions de développement durable** **:** cliquezsur le bouton « Déployer » pour commencer à déployer les solutions de développement durable et les implémenter dans vos projets.
 
-    e. **Découvrir les solutions de vente au détail** **:** cliquez sur le
-        bouton « En savoir plus » pour en apprendre davantage sur les
-        solutions de vente au détail et comprendre comment les utiliser dans
-        vos projets.
+    e. **Découvrir les solutions de vente au détail** **:** cliquez sur le bouton « En savoir plus » pour en apprendre davantage sur les solutions de vente au détail et comprendre comment les utiliser dans vos projets.
 
-    f. **Déployer les solutions de vente au détail** **:** cliquez sur le
-        bouton « Déployer » pour commencer à déployer les solutions de vente
-        au détail et les implémenter dans vos projets.
+    f. **Déployer les solutions de vente au détail** **:** cliquez sur le bouton « Déployer » pour commencer à déployer les solutions de vente au détail et les implémenter dans vos projets.
 
-3. Cliquez sur Revenir aux charges de travail dans le coin supérieur
-    gauche de l'écran. Vous êtes alors redirigé(e) vers la page
-    principale des charges de travail, où vous pouvez explorer d'autres
-    outils ou sections.
+3. Cliquez sur Revenir aux charges de travail dans le coin supérieur gauche de l'écran. Vous êtes alors redirigé(e) vers la page principale des charges de travail, où vous pouvez explorer d'autres outils ou sections.
 
     ![](../media/lab-02/image22.png)
 
@@ -419,41 +347,25 @@ en rendre compte. La première étape consiste à créer une lakehouse.
 
     **Démarrer :**
 
-      Pour commencer à utiliser Real-Time Intelligence, procédez comme suit :
+    Pour commencer à utiliser Real-Time Intelligence, procédez comme suit :
 
-    a. **Échantillons de Real-Time Intelligence** **:** cliquez sur le
-        bouton « Ouvrir » pour explorer l'analyse des données en temps réel
-        avec un exemple.
+    a. **Échantillons de Real-Time Intelligence** **:** cliquez sur le bouton « Ouvrir » pour explorer l'analyse des données en temps réel avec un exemple.
 
-    b. **xplorer un exemple Real-Time Intelligence** **:** cliquez sur le
-        bouton « Sélectionner » pour utiliser un exemple et découvrir
-        Real-Time Intelligence.
+    b. **xplorer un exemple Real-Time Intelligence** **:** cliquez sur le bouton « Sélectionner » pour utiliser un exemple et découvrir Real-Time Intelligence.
 
-    c. **Présentation de Real-Time Intelligence** **:** cliquez sur le
-        bouton « Ouvrir » pour bénéficier d'une présentation de Real-Time
-        Intelligence et commencer à utiliser efficacement l'outil.
+    c. **Présentation de Real-Time Intelligence** **:** cliquez sur le bouton « Ouvrir » pour bénéficier d'une présentation de Real-Time Intelligence et commencer à utiliser efficacement l'outil.
 
-    d. **Découvrir KQL avec des exemples de données** **:** cliquez sur le
-        bouton « Ouvrir » pour découvrir KQL à l'aide d'exemples de données.
+    d. **Découvrir KQL avec des exemples de données** **:** cliquez sur le bouton « Ouvrir » pour découvrir KQL à l'aide d'exemples de données.
 
-    e. **Nature d'un hub en temps réel** **:** cliquez sur le bouton
-        « Ouvrir » pour découvrir en quoi consiste un hub en temps réel et
-        comment l'utiliser.
+    e. **Nature d'un hub en temps réel** **:** cliquez sur le bouton « Ouvrir » pour découvrir en quoi consiste un hub en temps réel et comment l'utiliser.
 
-    f. **Explorer un exemple d'activateur** **:** cliquez sur le bouton
-        « Ouvrir » pour utiliser un exemple d'activateur et comprendre en
-        quoi consistent les fonctionnalités de Real-Time Intelligence.
+    f. **Explorer un exemple d'activateur** **:** cliquez sur le bouton « Ouvrir » pour utiliser un exemple d'activateur et comprendre en quoi consistent les fonctionnalités de Real-Time Intelligence.
 
-    g. **Prise en main de l'activateur** **:** cliquez sur le bouton
-        « Ouvrir » pour prendre en main les concepts d'activateur et
-        commencer à utiliser efficacement l'outil.
+    g. **Prise en main de l'activateur** **:** cliquez sur le bouton « Ouvrir » pour prendre en main les concepts d'activateur et commencer à utiliser efficacement l'outil.
 
     ![](../media/lab-02/image25.png)
 
-3. Cliquez sur Revenir aux charges de travail dans le coin supérieur
-    gauche de l'écran. Vous êtes alors redirigé(e) vers la page
-    principale des charges de travail, où vous pouvez explorer d'autres
-    outils ou sections.
+3. Cliquez sur Revenir aux charges de travail dans le coin supérieur gauche de l'écran. Vous êtes alors redirigé(e) vers la page principale des charges de travail, où vous pouvez explorer d'autres outils ou sections.
 
     ![](../media/lab-02/image22.png)
 
