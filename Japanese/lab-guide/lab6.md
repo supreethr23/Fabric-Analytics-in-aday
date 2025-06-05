@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 6
 
-![A diagram of data flow](../media/lab-06/image6.png)
+![A diagram of data flow](../media/lab-06/image06.png)
 
 # 目次 
 
