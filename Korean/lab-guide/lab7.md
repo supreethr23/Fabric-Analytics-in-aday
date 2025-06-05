@@ -1,4 +1,5 @@
 # Microsoft Fabric Analyst in a Day - 랩 7
+
 ![](../media/lab-07/image56.png)
 
 # 목차
@@ -42,8 +43,7 @@
 보고서 자동 생성 옵션을 사용해 시작해 보겠습니다. 그리고 본 랩의
 후반에서 Power BI에 있는 보고서를 다시 작성해 보겠습니다.
 
-1. 다시 랩 2에서 만든 **Fabric 작업 영역, FAIAD_<username>**으로
-    되돌아가 보겠습니다.
+1. 다시 랩 2에서 만든 **Fabric 작업 영역, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 으로 되돌아가 보겠습니다.
 
 2. 왼쪽 패널의 아래쪽에서 **Fabric 환경 선택기** 아이콘을 선택합니다.
 
@@ -54,7 +54,7 @@
 
     ![](../media/lab-07/image7.png)
 
-4. 상단 메뉴에서 **새 보고서**를 선택합니다.
+4. 상단 메뉴에서 **+ 새 보고서**를 선택합니다.
 
     ![](../media/lab-07/image8.png)
 
@@ -69,13 +69,11 @@
 6. 보고서 페이지에서 사용할 데이터 세트를 선택합니다. 다양한 옵션이
     있다는 사실을 알아 두십시오. **sm_FAIAD**를 선택합니다.
 
-    a. **sm_FAIAD**: 이것은 우리가 만든 의미 체계 모델이며 보고서를
-        작성하는 데 사용하고자 합니다.
+    a. **sm_FAIAD**: 이것은 우리가 만든 의미 체계 모델이며 보고서를 작성하는 데 사용하고자 합니다.
 
     b. **lh_FAIAD**: 모든 데이터를 수집한 레이크하우스입니다.
 
-    c. **Units by Supplier:** 이것은 T-SQL을 사용하여 생성한 데이터
-        세트입니다.
+    c. **Units by Supplier:** 이것은 T-SQL을 사용하여 생성한 데이터 세트입니다.
 
 7. **보고서 자동 만들기 버튼** 옆에 있는 화살표를 클릭합니다. 보고서
     자동 만들기와 빈 보고서 만들기라는 두 가지 옵션이 있습니다. 자동
@@ -89,12 +87,12 @@
 
     ![](../media/lab-07/image11.png)
 
-**체크포인트:** 아래 스크린샷과 같은 보고서가 생성됩니다. 몇 가지 KPI와
-몇 가지 추세 시각적 개체가 있습니다. 새 모델을 분석하고 빠른 시작이
-필요한 경우 이것이 좋은 방법입니다.
+    **체크포인트:** 아래 스크린샷과 같은 보고서가 생성됩니다. 몇 가지 KPI와
+    몇 가지 추세 시각적 개체가 있습니다. 새 모델을 분석하고 빠른 시작이
+    필요한 경우 이것이 좋은 방법입니다.
 
-**참고:** 상단 메뉴에는 보고서를 편집하거나 일부 데이터를 표로 볼 수
-있는 옵션이 있습니다. 이들 옵션을 자유롭게 탐색해보십시오.
+    **참고:** 상단 메뉴에는 보고서를 편집하거나 일부 데이터를 표로 볼 수
+    있는 옵션이 있습니다. 이들 옵션을 자유롭게 탐색해보십시오.
 
 9. 이 보고서를 저장해 보겠습니다. 상단 메뉴에서 **저장**을 선택합니다.
 
@@ -102,31 +100,29 @@
     **rpt_Sales_Auto_Report**로 지정합니다.
     **참고:** 보고서 이름 앞에는 보고서의 약자인 rpt가 붙습니다.
 
-11. 보고서가 작업 영역, **FAIAD_<username>**에 저장되어 있는지
-    확인합니다.
+11. 보고서가 작업 영역, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**에 저장되어 있는지 확인합니다.
 
 12. **저장**을 선택합니다.
 
     ![](../media/lab-07/image12.png)
 
-**참고:** 자동 생성된 보고서는 "자동 생성"되므로 다르게 보일 수
-있습니다. 또한 이전 랩(랩 6)에서 생성한 관계 및 측정값에 따라
-달라집니다.
+    **참고:** 자동 생성된 보고서는 "자동 생성"되므로 다르게 보일 수
+    있습니다. 또한 이전 랩(랩 6)에서 생성한 관계 및 측정값에 따라
+    달라집니다.
 
-위 스크린샷은 선택적 관계(랩 6)를 포함하여 모든 관계와 측정값을 생성한
-경우 자동 생성된 보고서가 **어떻게** 표시되는지 보여줍니다.
+    위 스크린샷은 선택적 관계(랩 6)를 포함하여 모든 관계와 측정값을 생성한
+    경우 자동 생성된 보고서가 **어떻게** 표시되는지 보여줍니다.
 
-아래 스크린샷은 선택적 관계(랩 6)와 측정값 생성을 건너뛴 경우 자동
-생성된 보고서가 **어떻게** 표시되는지 보여줍니다.
+    아래 스크린샷은 선택적 관계(랩 6)와 측정값 생성을 건너뛴 경우 자동
+    생성된 보고서가 **어떻게** 표시되는지 보여줍니다.
 
-![](../media/lab-07/image13.png)
+    ![](../media/lab-07/image13.png)
 
 ## 작업 2: 새 보고서의 배경 구성
 
 빈 캔버스를 사용하여 새 보고서를 생성해 보겠습니다.
 
-1. **왼쪽 패널**에서 작업 영역 이름 **FAIAD_<username>**을 선택하여
-    작업 영역으로 다시 이동합니다.
+1. **왼쪽 패널**에서 작업 영역 이름 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**을 선택하여 작업 영역으로 다시 이동합니다.
 
 2. 상단 메뉴에서 **홈 - > 보고서**를 선택합니다. 첫 번째 보고서 페이지
     만들기로 이동됩니다.
@@ -150,13 +146,13 @@
 6. 아직 열지 않았다면, 랩 환경의 **바탕 화면**에서 **Reports** 폴더에
     있는 **FAIAD.pbix**를 엽니다.
 
-이 보고서를 기준으로 사용하겠습니다. 캔버스 배경을 추가하는 것부터
-시작하겠습니다. 보고서 머리글을 만들고, 몇 가지 KPI를 추가하고, 시간별
-매출 선 차트를 만듭니다. 시간 관계상 Power BI Desktop에서 시각적 개체를
-구축한 경험이 있다고 가정하고 모든 시각적 개체를 생성하지는 않을
-것입니다.
+    이 보고서를 기준으로 사용하겠습니다. 캔버스 배경을 추가하는 것부터
+    시작하겠습니다. 보고서 머리글을 만들고, 몇 가지 KPI를 추가하고, 시간별
+    매출 선 차트를 만듭니다. 시간 관계상 Power BI Desktop에서 시각적 개체를
+    구축한 경험이 있다고 가정하고 모든 시각적 개체를 생성하지는 않을
+    것입니다.
 
-![](../media/lab-07/image17.png)
+    ![](../media/lab-07/image17.png)
 
 7. 브라우저에서 **Power BI 캔버스**로 되돌아갑니다.
 
@@ -292,8 +288,7 @@
     **rpt_Sales_Report**로 지정합니다.
     **참고:** 보고서 이름 앞에는 보고서의 약자인 rpt가 붙습니다.
 
-3. 보고서가 **FAIAD_<username>** 작업 영역에 저장되어 있는지
-    확인합니다**.**
+3. 보고서가 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 작업 영역에 저장되어 있는지 확인합니다
 
 4. **저장**을 선택합니다. 보고서가 저장되고 보기 모드가 된 것을 확인할
     수 있습니다.
@@ -353,9 +348,9 @@
 
     ![](../media/lab-07/image30.png)
 
-**참고:** 월이 알파벳순으로 정렬되어 있습니다. 이를 수정해 보겠습니다.
+    **참고:** 월이 알파벳순으로 정렬되어 있습니다. 이를 수정해 보겠습니다.
 
-![](../media/lab-07/image31.png)
+    ![](../media/lab-07/image31.png)
 
 6. 의미 체계 모델이 열려 있는 **브라우저 창/탭**으로 다시 이동합니다.
 
@@ -426,8 +421,8 @@
 
 17. 보고서를 저장하겠습니다. 메뉴에서 **파일 -> 저장**을 선택합니다.
 
-앞서 언급했듯이 본 랩에서는 모든 시각적 개체를 빌드하지는 않습니다.
-시간이 있다면 자유롭게 더 많은 시각적 요소를 빌드해보십시오.
+    앞서 언급했듯이 본 랩에서는 모든 시각적 개체를 빌드하지는 않습니다.
+    시간이 있다면 자유롭게 더 많은 시각적 요소를 빌드해보십시오.
 
 ## 작업 10: 의미 체계 모델에 Power BI Desktop 연결
 
@@ -478,10 +473,10 @@
 
     ![](../media/lab-07/image41.png)
 
-기존 보고서에서 시각적 개체를 복사하여 의미 체계 모델에 연결되는
-보고서에 붙여넣기하는 것이 쉽습니다. 복사 및 붙여넣기가 작동하려면
-테이블 이름, 열 이름, 측정값 이름이 동일해야 합니다. 동일하지 않은 경우
-오류가 있을 수 있지만 쉽게 해결할 수 있습니다.
+    기존 보고서에서 시각적 개체를 복사하여 의미 체계 모델에 연결되는
+    보고서에 붙여넣기하는 것이 쉽습니다. 복사 및 붙여넣기가 작동하려면
+    테이블 이름, 열 이름, 측정값 이름이 동일해야 합니다. 동일하지 않은 경우
+    오류가 있을 수 있지만 쉽게 해결할 수 있습니다.
 
 13. **FAIAD.pbix**로 이동하여 시간대별 판매량 꺾은선형 차트를
     선택합니다.
@@ -529,8 +524,7 @@ ADLS Gen2에서 2024년 5월 파일에 대한 바로 가기를 만들고 Sales �
 
 1. **브라우저**로 돌아갑니다.
 
-2. 왼쪽 메뉴 모음에서 **FAIAD_<username>**을 선택하여 작업 영역
-    홈으로 이동합니다.
+2. 왼쪽 메뉴 모음에서 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**을 선택하여 작업 영역 홈으로 이동합니다.
 
 3. **lh_FAIAD**를 선택하여 레이크하우스로 이동합니다.
 
@@ -553,8 +547,7 @@ ADLS Gen2에서 2024년 5월 파일에 대한 바로 가기를 만들고 Sales �
 8. 이 과정에서 앞서 연결을 생성하지 않았다면 **새 연결 생성**을
     클릭하고 다음 과정을 완료하십시오.
 
-9. **연결 설정 -> URL**에서 다음 링크를 입력합니다.
-    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
+9. **연결 설정 -> URL**에서 다음 링크를 입력합니다 `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 10. **다음**을 선택합니다.
 
@@ -580,8 +573,8 @@ ADLS Gen2에서 2024년 5월 파일에 대한 바로 가기를 만들고 Sales �
 
     ![](../media/lab-07/image49.png)
 
-왼쪽 **탐색기 창**에 InvoicesMay 테이블이 있습니다. 이제 Sales 보기를
-업데이트해야 합니다.
+    왼쪽 **탐색기 창**에 InvoicesMay 테이블이 있습니다. 이제 Sales 보기를
+    업데이트해야 합니다.
 
 18. 화면 **오른쪽 상단**에서 **레이크하우스 -> SQL 분석 엔드포인트**를
     선택합니다.
@@ -593,158 +586,158 @@ ADLS Gen2에서 2024년 5월 파일에 대한 바로 가기를 만들고 Sales �
 
 20. 아래 코드를 **복사**하여 SQL 쿼리 창에 **붙여넣습니다**.
 
-```
-ALTER VIEW [dbo].[Sales] AS (
-select [$Outer].[InvoiceLineID] as [InvoiceLineID],
- [$Outer].[InvoiceID] as [InvoiceID],
- [$Outer].[StockItemID] as [StockItemID],
- [$Outer].[Quantity] as [Quantity],
- [$Outer].[UnitPrice] as [UnitPrice],
- [$Outer].[TaxRate] as [TaxRate],
- [$Outer].[TaxAmount] as [TaxAmount],
- [$Outer].[LineProfit] as [LineProfit],
-[$Outer].[ExtendedPrice] as [ExtendedPrice],
- [$Outer].[CustomerID] as [ResellerID],
- [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
- [$Outer].[InvoiceDate] as [InvoiceDate],
- [$Outer].[t0_0] as [Sales Amount]
-from 
-(
- select [_].[InvoiceLineID] as [InvoiceLineID],
- [_].[InvoiceID] as [InvoiceID],
- [_].[StockItemID] as [StockItemID],
- [_].[Quantity] as [Quantity],
- [_].[UnitPrice] as [UnitPrice],
- [_].[TaxRate] as [TaxRate],
- [_].[TaxAmount] as [TaxAmount],
- [_].[LineProfit] as [LineProfit],
- [_].[ExtendedPrice] as [ExtendedPrice],
- [_].[CustomerID] as [CustomerID],
- [_].[SalespersonPersonID] as [SalespersonPersonID],
- [_].[InvoiceDate] as [InvoiceDate],
- [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
- from 
- (
- select [$Outer].[InvoiceLineID],
- [$Outer].[InvoiceID],
- [$Outer].[StockItemID],
- [$Outer].[Quantity],
- [$Outer].[UnitPrice],
- [$Outer].[TaxRate],
- [$Outer].[TaxAmount],
- [$Outer].[LineProfit],
- [$Outer].[ExtendedPrice],
- [$Inner].[CustomerID],
- [$Inner].[SalespersonPersonID],
- [$Inner].[InvoiceDate]
- from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
- inner join 
- (
- select [_].[InvoiceID] as [InvoiceID2],
- [_].[CustomerID] as [CustomerID],
- [_].[BillToResellerID] as [BillToResellerID],
- [_].[OrderID] as [OrderID],
- [_].[DeliveryMethodID] as [DeliveryMethodID],
- [_].[ContactPersonID] as [ContactPersonID],
- [_].[AccountsPersonID] as [AccountsPersonID],
- [_].[SalespersonPersonID] as [SalespersonPersonID],
- [_].[PackedByPersonID] as [PackedByPersonID],
- [_].[InvoiceDate] as [InvoiceDate],
- [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
- [_].[IsCreditNote] as [IsCreditNote],
- [_].[CreditNoteReason] as [CreditNoteReason],
- [_].[Comments] as [Comments],
- [_].[DeliveryInstructions] as [DeliveryInstructions],
- [_].[InternalComments] as [InternalComments],
- [_].[TotalDryItems] as [TotalDryItems],
- [_].[TotalChillerItems] as [TotalChillerItems],
- [_].[DeliveryRun] as [DeliveryRun],
- [_].[RunPosition] as [RunPosition],
+    ```
+    ALTER VIEW [dbo].[Sales] AS (
+    select [$Outer].[InvoiceLineID] as [InvoiceLineID],
+    [$Outer].[InvoiceID] as [InvoiceID],
+    [$Outer].[StockItemID] as [StockItemID],
+    [$Outer].[Quantity] as [Quantity],
+    [$Outer].[UnitPrice] as [UnitPrice],
+    [$Outer].[TaxRate] as [TaxRate],
+    [$Outer].[TaxAmount] as [TaxAmount],
+    [$Outer].[LineProfit] as [LineProfit],
+    [$Outer].[ExtendedPrice] as [ExtendedPrice],
+    [$Outer].[CustomerID] as [ResellerID],
+    [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
+    [$Outer].[InvoiceDate] as [InvoiceDate],
+    [$Outer].[t0_0] as [Sales Amount]
+    from 
+    (
+    select [_].[InvoiceLineID] as [InvoiceLineID],
+    [_].[InvoiceID] as [InvoiceID],
+    [_].[StockItemID] as [StockItemID],
+    [_].[Quantity] as [Quantity],
+    [_].[UnitPrice] as [UnitPrice],
+    [_].[TaxRate] as [TaxRate],
+    [_].[TaxAmount] as [TaxAmount],
+    [_].[LineProfit] as [LineProfit],
+    [_].[ExtendedPrice] as [ExtendedPrice],
+    [_].[CustomerID] as [CustomerID],
+    [_].[SalespersonPersonID] as [SalespersonPersonID],
+    [_].[InvoiceDate] as [InvoiceDate],
+    [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
+    from 
+    (
+    select [$Outer].[InvoiceLineID],
+    [$Outer].[InvoiceID],
+    [$Outer].[StockItemID],
+    [$Outer].[Quantity],
+    [$Outer].[UnitPrice],
+    [$Outer].[TaxRate],
+    [$Outer].[TaxAmount],
+    [$Outer].[LineProfit],
+    [$Outer].[ExtendedPrice],
+    [$Inner].[CustomerID],
+    [$Inner].[SalespersonPersonID],
+    [$Inner].[InvoiceDate]
+    from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
+    inner join 
+    (
+    select [_].[InvoiceID] as [InvoiceID2],
+    [_].[CustomerID] as [CustomerID],
+    [_].[BillToResellerID] as [BillToResellerID],
+    [_].[OrderID] as [OrderID],
+    [_].[DeliveryMethodID] as [DeliveryMethodID],
+    [_].[ContactPersonID] as [ContactPersonID],
+    [_].[AccountsPersonID] as [AccountsPersonID],
+    [_].[SalespersonPersonID] as [SalespersonPersonID],
+    [_].[PackedByPersonID] as [PackedByPersonID],
+    [_].[InvoiceDate] as [InvoiceDate],
+    [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+    [_].[IsCreditNote] as [IsCreditNote],
+    [_].[CreditNoteReason] as [CreditNoteReason],
+    [_].[Comments] as [Comments],
+    [_].[DeliveryInstructions] as [DeliveryInstructions],
+    [_].[InternalComments] as [InternalComments],
+    [_].[TotalDryItems] as [TotalDryItems],
+    [_].[TotalChillerItems] as [TotalChillerItems],
+    [_].[DeliveryRun] as [DeliveryRun],
+    [_].[RunPosition] as [RunPosition],
 
-[_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
- [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
- [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
- [_].[LastEditedBy] as [LastEditedBy2],
- [_].[LastEditedWhen] as [LastEditedWhen2]
- from 
- (
- select [$Table].[InvoiceID] as [InvoiceID],
- [$Table].[CustomerID] as [CustomerID],
- [$Table].[BillToResellerID] as [BillToResellerID],
- [$Table].[OrderID] as [OrderID],
- [$Table].[DeliveryMethodID] as [DeliveryMethodID],
- [$Table].[ContactPersonID] as [ContactPersonID],
- [$Table].[AccountsPersonID] as [AccountsPersonID],
- [$Table].[SalespersonPersonID] as [SalespersonPersonID],
- [$Table].[PackedByPersonID] as [PackedByPersonID],
- [$Table].[InvoiceDate] as [InvoiceDate],
- [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
- [$Table].[IsCreditNote] as [IsCreditNote],
- [$Table].[CreditNoteReason] as [CreditNoteReason],
- [$Table].[Comments] as [Comments],
- [$Table].[DeliveryInstructions] as [DeliveryInstructions],
- [$Table].[InternalComments] as [InternalComments],
- [$Table].[TotalDryItems] as [TotalDryItems],
- [$Table].[TotalChillerItems] as [TotalChillerItems],
- [$Table].[DeliveryRun] as [DeliveryRun],
- [$Table].[RunPosition] as [RunPosition],
- [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
- [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
- [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
- [$Table].[LastEditedBy] as [LastEditedBy],
- [$Table].[LastEditedWhen] as [LastEditedWhen]
- from [lh_FAIAD].[dbo].[Invoices] as [$Table]
- union all select [$Table].[InvoiceID] as [InvoiceID],
- [$Table].[CustomerID] as [CustomerID],
- [$Table].[BillToResellerID] as [BillToResellerID],
- [$Table].[OrderID] as [OrderID],
- [$Table].[DeliveryMethodID] as [DeliveryMethodID],
- [$Table].[ContactPersonID] as [ContactPersonID],
- [$Table].[AccountsPersonID] as [AccountsPersonID],
- [$Table].[SalespersonPersonID] as [SalespersonPersonID],
- [$Table].[PackedByPersonID] as [PackedByPersonID],
- [$Table].[InvoiceDate] as [InvoiceDate],
- [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
- [$Table].[IsCreditNote] as [IsCreditNote],
- [$Table].[CreditNoteReason] as [CreditNoteReason],
- [$Table].[Comments] as [Comments],
- [$Table].[DeliveryInstructions] as [DeliveryInstructions],
- [$Table].[InternalComments] as [InternalComments],
- [$Table].[TotalDryItems] as [TotalDryItems],
- [$Table].[TotalChillerItems] as [TotalChillerItems],
- [$Table].[DeliveryRun] as [DeliveryRun],
- [$Table].[RunPosition] as [RunPosition],
- [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
- [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
- [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
- [$Table].[LastEditedBy] as [LastEditedBy],
-[$Table].[LastEditedWhen] as [LastEditedWhen]
- from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
- ) as [_]
- ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and 
-[$Inner].[InvoiceID2] is null)
- ) as [_]
-) as [$Outer]
-where exists 
-(
- select 1
- from 
- (
- select [ResellerID]
- from [lh_FAIAD].[dbo].[Reseller] as [$Table]
- ) as [$Inner]
- where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and 
-[$Inner].[ResellerID] is null
-)
-)
-```
+    [_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+    [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+    [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+    [_].[LastEditedBy] as [LastEditedBy2],
+    [_].[LastEditedWhen] as [LastEditedWhen2]
+    from 
+    (
+    select [$Table].[InvoiceID] as [InvoiceID],
+    [$Table].[CustomerID] as [CustomerID],
+    [$Table].[BillToResellerID] as [BillToResellerID],
+    [$Table].[OrderID] as [OrderID],
+    [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+    [$Table].[ContactPersonID] as [ContactPersonID],
+    [$Table].[AccountsPersonID] as [AccountsPersonID],
+    [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+    [$Table].[PackedByPersonID] as [PackedByPersonID],
+    [$Table].[InvoiceDate] as [InvoiceDate],
+    [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+    [$Table].[IsCreditNote] as [IsCreditNote],
+    [$Table].[CreditNoteReason] as [CreditNoteReason],
+    [$Table].[Comments] as [Comments],
+    [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+    [$Table].[InternalComments] as [InternalComments],
+    [$Table].[TotalDryItems] as [TotalDryItems],
+    [$Table].[TotalChillerItems] as [TotalChillerItems],
+    [$Table].[DeliveryRun] as [DeliveryRun],
+    [$Table].[RunPosition] as [RunPosition],
+    [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+    [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+    [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+    [$Table].[LastEditedBy] as [LastEditedBy],
+    [$Table].[LastEditedWhen] as [LastEditedWhen]
+    from [lh_FAIAD].[dbo].[Invoices] as [$Table]
+    union all select [$Table].[InvoiceID] as [InvoiceID],
+    [$Table].[CustomerID] as [CustomerID],
+    [$Table].[BillToResellerID] as [BillToResellerID],
+    [$Table].[OrderID] as [OrderID],
+    [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+    [$Table].[ContactPersonID] as [ContactPersonID],
+    [$Table].[AccountsPersonID] as [AccountsPersonID],
+    [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+    [$Table].[PackedByPersonID] as [PackedByPersonID],
+    [$Table].[InvoiceDate] as [InvoiceDate],
+    [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+    [$Table].[IsCreditNote] as [IsCreditNote],
+    [$Table].[CreditNoteReason] as [CreditNoteReason],
+    [$Table].[Comments] as [Comments],
+    [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+    [$Table].[InternalComments] as [InternalComments],
+    [$Table].[TotalDryItems] as [TotalDryItems],
+    [$Table].[TotalChillerItems] as [TotalChillerItems],
+    [$Table].[DeliveryRun] as [DeliveryRun],
+    [$Table].[RunPosition] as [RunPosition],
+    [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+    [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+    [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+    [$Table].[LastEditedBy] as [LastEditedBy],
+    [$Table].[LastEditedWhen] as [LastEditedWhen]
+    from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
+    ) as [_]
+    ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and 
+    [$Inner].[InvoiceID2] is null)
+    ) as [_]
+    ) as [$Outer]
+    where exists 
+    (
+    select 1
+    from 
+    (
+    select [ResellerID]
+    from [lh_FAIAD].[dbo].[Reseller] as [$Table]
+    ) as [$Inner]
+    where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and 
+    [$Inner].[ResellerID] is null
+    )
+    )
+    ```
 
 21. 시각적 개체 쿼리 메뉴에서 **실행**을 선택하여 코드를 실행합니다.
 
-코드가 실행되면 2024년 5월 데이터를 포함하도록 Sales 테이블이
-업데이트됩니다.
+    코드가 실행되면 2024년 5월 데이터를 포함하도록 Sales 테이블이
+    업데이트됩니다.
 
-![](../media/lab-07/image51.png)
+    ![](../media/lab-07/image51.png)
 
 22. 왼쪽 메뉴 모음에서 **rpt_Sales_Report**를 선택하여 보고서로 다시
     이동합니다**.**
@@ -755,43 +748,43 @@ where exists
 
     ![](../media/lab-07/image52.png)
 
-데이터가 변경될 때 데이터 모델을 새로 고치고 보고할 필요가 없습니다.
-이것이 바로 Direct Lake와 Direct query의 장점입니다.
+    데이터가 변경될 때 데이터 모델을 새로 고치고 보고할 필요가 없습니다.
+    이것이 바로 Direct Lake와 Direct query의 장점입니다.
 
-문제 설명에 나열된 과제를 다시 살펴보겠습니다.
+    문제 설명에 나열된 과제를 다시 살펴보겠습니다.
 
-- **서로 다른 데이터 원본에 대한 서로 다른 업데이트 시간을 설정하려면
-  데이터 세트를 적어도 하루에 세 번 이상 새로 고쳐야 합니다.**
+    - **서로 다른 데이터 원본에 대한 서로 다른 업데이트 시간을 설정하려면
+    데이터 세트를 적어도 하루에 세 번 이상 새로 고쳐야 합니다.**
 
-Direct Lake를 사용하여 이 문제를 해결했습니다. 각 개별 데이터 흐름은
-해당 일정에 따라 새로 고침됩니다. 데이터세트와 보고서는 새로 고침할
-필요가 없습니다.
+    Direct Lake를 사용하여 이 문제를 해결했습니다. 각 개별 데이터 흐름은
+    해당 일정에 따라 새로 고침됩니다. 데이터세트와 보고서는 새로 고침할
+    필요가 없습니다.
 
-- **원본 시스템에서 수행된 모든 업데이트를 기록하려면 매번 전체 시스템을
-  새로 고침해야 하므로 새로 고침 작업에 너무 많은 시간이 소요됩니다.**
+    - **원본 시스템에서 수행된 모든 업데이트를 기록하려면 매번 전체 시스템을
+    새로 고침해야 하므로 새로 고침 작업에 너무 많은 시간이 소요됩니다.**
 
-다시 한번 Direct Lake를 사용하여 이 문제를 해결했습니다. 각 개별 데이터
-흐름은 해당 일정에 따라 새로 고침됩니다. 데이터세트와 보고서는 새로
-고침할 필요가 없으므로 전체 시스템을 새로 고침해야 한다는 부담이
-없습니다.
+    다시 한번 Direct Lake를 사용하여 이 문제를 해결했습니다. 각 개별 데이터
+    흐름은 해당 일정에 따라 새로 고침됩니다. 데이터세트와 보고서는 새로
+    고침할 필요가 없으므로 전체 시스템을 새로 고침해야 한다는 부담이
+    없습니다.
 
-- **가져오는 데이터 원본에 오류가 있으면 데이터 세트 새로 고침이
-  중단됩니다. 직원 파일이 제 시간에 업로드되지 않아 데이터 세트 새로
-  고침이 중단되는 경우가 많습니다.**
+    - **가져오는 데이터 원본에 오류가 있으면 데이터 세트 새로 고침이
+    중단됩니다. 직원 파일이 제 시간에 업로드되지 않아 데이터 세트 새로
+    고침이 중단되는 경우가 많습니다.**
 
-데이터 파이프라인은 새로 고침에 실패하더라도 이를 재시도하고 다양한 시간
-간격에 따라 시도하는 기능을 제공하여 이러한 문제를 해결하도록 돕습니다.
+    데이터 파이프라인은 새로 고침에 실패하더라도 이를 재시도하고 다양한 시간
+    간격에 따라 시도하는 기능을 제공하여 이러한 문제를 해결하도록 돕습니다.
 
-- **데이터 크기가 크고 변환이 복잡한 것을 감안하면, Power Query가 미리
-  보기를 새로 고치는 데 오랜 시간이 걸리는 만큼 데이터 모델을 변경하는
-  데 매우 오랜 시간이 소요됩니다.**
+    - **데이터 크기가 크고 변환이 복잡한 것을 감안하면, Power Query가 미리
+    보기를 새로 고치는 데 오랜 시간이 걸리는 만큼 데이터 모델을 변경하는
+    데 매우 오랜 시간이 소요됩니다.**
 
-우리는 Dataflow와 레이크하우스가 효율적이고 쉽게 변경할 수 있다는 사실을
-배웠습니다. 일반적으로 Dataflow와 레이크하우스의 미리 보기는 로드하는 데
-오랜 시간이 소요되지 않습니다.
+    우리는 Dataflow와 레이크하우스가 효율적이고 쉽게 변경할 수 있다는 사실을
+    배웠습니다. 일반적으로 Dataflow와 레이크하우스의 미리 보기는 로드하는 데
+    오랜 시간이 소요되지 않습니다.
 
-- **회사 표준은 Mac이지만 Power BI Desktop을 사용하려면 Windows PC가
-  필요합니다.**
+    - **회사 표준은 Mac이지만 Power BI Desktop을 사용하려면 Windows PC가
+    필요합니다.**
 
 Microsoft Fabric은 SaaS 제품입니다. 필요한 것은 서비스에 액세스하기 위한
 브라우저뿐입니다. 데스크톱에 소프트웨어를 설치할 필요가 없습니다.
@@ -800,8 +793,7 @@ Microsoft Fabric은 SaaS 제품입니다. 필요한 것은 서비스에 액세�
 
 랩 환경을 정리할 준비가 되면 아래 단계를 따릅니다.
 
-1. 왼쪽 패널에서 **FAIAD_<username>** 작업 영역을 선택하여 작업 영역
-    홈으로 이동합니다.
+1. 왼쪽 패널에서 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 작업 영역을 선택하여 작업 영역 홈으로 이동합니다.
 
 2. 메뉴에서 **작업 영역 설정**을 선택합니다.
 
@@ -814,9 +806,9 @@ Microsoft Fabric은 SaaS 제품입니다. 필요한 것은 서비스에 액세�
 
 5. 작업 영역 삭제 대화 상자가 열립니다. **삭제**를 클릭합니다.
 
-이렇게 하면 작업 영역과 작업 영역에 포함된 모든 항목이 삭제됩니다.
+    이렇게 하면 작업 영역과 작업 영역에 포함된 모든 항목이 삭제됩니다.
 
-![](../media/lab-07/image54.png)
+    ![](../media/lab-07/image54.png)
 
 # 참조
 
@@ -824,7 +816,7 @@ Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 �
 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는
 유용한 리소스로 연결되는 링크가 있습니다.
 
-  ![](../media/lab-01/image28.png)
+![](../media/lab-01/image28.png)
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가
 자료입니다.
