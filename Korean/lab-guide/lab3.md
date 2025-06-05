@@ -59,34 +59,34 @@
 데이터에 액세스할 수 있습니다. 이것은 Windows 바탕 화면에 바로 가기를
 만드는 것과 같습니다.
 
-1.  이제 랩 2의 작업 8에서 생성한 **Fabric 작업 영역 (1)** 으로
+1. 이제 랩 2의 작업 8에서 생성한 **Fabric 작업 영역 (1)** 으로
     돌아갑니다.
 
-2.  이전 랩에서 다른 곳으로 이동하지 않은 경우 레이크하우스 화면이
+2. 이전 랩에서 다른 곳으로 이동하지 않은 경우 레이크하우스 화면이
     표시됩니다. 다른 곳으로 이동해도 괜찮습니다. **lh_FAIAD** (**2**)를
     선택하여 레이크하우스로 이동합니다.
 
-3.  **탐색기** 창에서 **Tables** 옆의 **말줄임표 (3)** 를 선택합니다.
+3. **탐색기** 창에서 **Tables** 옆의 **말줄임표 (3)** 를 선택합니다.
 
-4.  **새 바로 가기 (4)** 를 선택합니다.
+4. **새 바로 가기 (4)** 를 선택합니다.
 
     ![](../media/lab-03/image6.png)
 
-5.  **새 바로 가기** 대화 상자가 열립니다. **외부 원본** 에서 **Azure
+5. **새 바로 가기** 대화 상자가 열립니다. **외부 원본** 에서 **Azure
     Data Lake Storage Gen2** 를 선택합니다.
 
     ![](../media/lab-03/image7.png)
 
-6.  **새 연결 만들기 (1)** 을 선택합니다.
+6. **새 연결 만들기 (1)** 을 선택합니다.
 
-7.  **URL** 속성에 다음 링크를 입력합니다.
+7. **URL** 속성에 다음 링크를 입력합니다.
     <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
     **(2):**
 
-8.  Connection(연결) 섹션에서 Create New Connection(새 연결 만들기)(3)을
+8. Connection(연결) 섹션에서 Create New Connection(새 연결 만들기)(3)을
     클릭합니다.
 
-9.  인증 종류 드롭다운에서 **SAS(공유 액세스 서명) (4)** 을 선택합니다.
+9. 인증 종류 드롭다운에서 **SAS(공유 액세스 서명) (4)** 을 선택합니다.
 
 10. SAS 토큰을 복사하여 SAS 토큰 (5) 필드에 붙여넣습니다.
 
@@ -101,27 +101,27 @@
 
 13. 다음 디렉터리 **(2)** 를 **선택** 한 후 **다음 (3)** 을 클릭합니다.
 
-    a.  Application.Cities
+    a. Application.Cities
 
-    b.  Application.Countries
+    b. Application.Countries
 
-    c.  Application.StateProvinces
+    c. Application.StateProvinces
 
-    d.  DateDim
+    d. DateDim
 
-    e.  Sales.BuyingGroups
+    e. Sales.BuyingGroups
 
-    f.  Sales.Customers
+    f. Sales.Customers
 
-    g.  Sales.InvoiceLines
+    g. Sales.InvoiceLines
 
-    h.  Sales.Invoices
+    h. Sales.Invoices
 
-    i.  Warehouse.StockGroups
+    i. Warehouse.StockGroups
 
-    j.  Warehouse.StockItemStockGroups
+    j. Warehouse.StockItemStockGroups
 
-    k.  Warehouse.StockItems
+    k. Warehouse.StockItems
 
 **참고**: Sales.Invoices_May는 선택되지 **않은** 유일한 디렉터리입니다.
 
@@ -142,25 +142,25 @@
 
 <!-- -->
 
-        a.  Application.Countries에서 **Countries** 로
+        a. Application.Countries에서 **Countries** 로
 
-        b.  Application.StateProvinces에서 **States** 로
+        b. Application.StateProvinces에서 **States** 로
 
-        c.  DateDim에서 **Date** 로
+        c. DateDim에서 **Date** 로
 
-        d.  Sales.BuyingGroups에서 **BuyingGroups** 로
+        d. Sales.BuyingGroups에서 **BuyingGroups** 로
 
-        e.  Sales.Customers에서 **Customers** 로
+        e. Sales.Customers에서 **Customers** 로
 
-        f.  Sales.InvoiceLines에서 **InvoiceLineItems** 로
+        f. Sales.InvoiceLines에서 **InvoiceLineItems** 로
 
-        g.  Sales.Invoices에서 **Invoices** 로
+        g. Sales.Invoices에서 **Invoices** 로
 
-        h.  Warehouse.StockGroups에서 **ProductGroups** 로
+        h. Warehouse.StockGroups에서 **ProductGroups** 로
 
-        i.  Warehouse.StockItemStockGroups에서 **ProductItemGroup** 로
+        i. Warehouse.StockItemStockGroups에서 **ProductItemGroup** 로
 
-        j.  Warehouse.StockItems에서 **ProductItem** 로
+        j. Warehouse.StockItems에서 **ProductItem** 로
 
 > **참고**: 이름을 다시 확인하세요. 랩 도중 오타로 인해 오류가 발생할 수
 
@@ -183,7 +183,7 @@
 
 ## 작업 2: 시각적 쿼리를 사용하여 Geo 뷰 만들기
 
-1.  SQL 엔드포인트를 사용하여 레이크하우스에 액세스할 수 있습니다. 이를
+1. SQL 엔드포인트를 사용하여 레이크하우스에 액세스할 수 있습니다. 이를
     통해 데이터를 쿼리하고 뷰를 만들 수 있습니다. 화면 **오른쪽
     상단 **에서 **Lakehouse (1) -> SQL 분석 엔드포인트 (2)** 를
     선택합니다.
@@ -198,25 +198,25 @@ Query와 같은 로우 코드 인터페이스를 제공하는 시각적 쿼리�
 먼저 Geo 뷰를 생성하겠습니다. Geo 뷰를 생성하기 위해 Cities, States,
 Countries 테이블의 데이터를 병합해야 합니다.
 
-2.  상단 메뉴에서 **새 SQL 쿼리 (1)** 옆의 드롭다운을 클릭하고 **새
+2. 상단 메뉴에서 **새 SQL 쿼리 (1)** 옆의 드롭다운을 클릭하고 **새
     시각적 쿼리 (2)**를 선택합니다.
 
     ![](../media/lab-03/image14.png)
 
-3.  쿼리를 작성하려면 시각적 쿼리 패널에 테이블을 추가해야 합니다.
+3. 쿼리를 작성하려면 시각적 쿼리 패널에 테이블을 추가해야 합니다.
     **Cities (1)** 테이블 옆의 말줄임표를 클릭하고 **캔버스에
     삽입(2)**을 선택합니다.
 
     ![](../media/lab-03/image15.png)
 
-4.  **States**와 **Countries** 테이블에 대해서도 동일한 단계를
+4. **States**와 **Countries** 테이블에 대해서도 동일한 단계를
     반복합니다.
 
 다음으로, 이 쿼리들을 병합해야 합니다. 시각적 쿼리 편집기에는 Power
 Query 편집기를 사용할 수 있는 옵션이 있습니다. 익숙한 기능이니 이 기능을
 사용해보겠습니다.
 
-5.  시각적 쿼리 편집기 메뉴 오른쪽의 **팝업으로 열기** 아이콘을
+5. 시각적 쿼리 편집기 메뉴 오른쪽의 **팝업으로 열기** 아이콘을
     선택합니다. Power Query 편집기로 이동합니다.
 
 ***참고:** 이 아이콘이 즉시 표시되지 않으면 오른쪽으로 스크롤하거나
@@ -224,17 +224,17 @@ Query 편집기를 사용할 수 있는 옵션이 있습니다. 익숙한 기능
 
 ![](../media/lab-03/image16.png)
 
-6.  **Cities (1)** 쿼리를 선택한 상태에서 Power Query 편집기 리본
+6. **Cities (1)** 쿼리를 선택한 상태에서 Power Query 편집기 리본
     메뉴에서 **홈 (2) -> 결합 (3) -> 쿼리 병합 드롭다운 (4) -> 쿼리를
     새 항목으로 병합 (5)을 선택합니다.** 쿼리 병합 대화 상자가 열립니다.
 
     ![](../media/lab-03/image17.png)
 
-7.  **병합할 왼쪽 테이블**에서 **Cities**를 선택합니다.
+7. **병합할 왼쪽 테이블**에서 **Cities**를 선택합니다.
 
-8.  **병합할 오른쪽 테이블**에서 **States**를 선택합니다.
+8. **병합할 오른쪽 테이블**에서 **States**를 선택합니다.
 
-9.  두 테이블에서 **StateProvinceID** 열을 선택합니다. 이 열을 사용하여
+9. 두 테이블에서 **StateProvinceID** 열을 선택합니다. 이 열을 사용하여
     조인할 것입니다.
 
 10. **조인 종류**로 **안쪽**을 선택합니다.
@@ -251,13 +251,13 @@ Query 편집기를 사용할 수 있는 옵션이 있습니다. 익숙한 기능
 
 13. 패널이 열립니다. 다음 열을 **선택**합니다.
 
-    a.  StateProvinceCode
+    a. StateProvinceCode
 
-    b.  StateProvinceName
+    b. StateProvinceName
 
-    c.  CountryID
+    c. CountryID
 
-    d.  SalesTerritory
+    d. SalesTerritory
 
 14. **확인** 을 선택합니다.
 
@@ -289,21 +289,21 @@ Countries에서 열이 몇 개 필요합니다.
 
 21. 패널이 열립니다. 다음 열을 **선택**합니다.
 
-    a.  CountryName
+    a. CountryName
 
-    b.  FormalName
+    b. FormalName
 
-    c.  IsoAlpha3Code
+    c. IsoAlpha3Code
 
-    d.  IsoNumericCode
+    d. IsoNumericCode
 
-    e.  CountryType
+    e. CountryType
 
-    f.  Continent
+    f. Continent
 
-    g.  Region
+    g. Region
 
-    h.  Subregion
+    h. Subregion
 
 22. **확인**을 선택합니다.
 
@@ -322,17 +322,17 @@ Countries에서 열이 몇 개 필요합니다.
 
 24. 열 선택 대화 상자가 열립니다. 다음 열을 **선택 취소**합니다.
 
-    a.  StateProvinceID
+    a. StateProvinceID
 
-    b.  Location
+    b. Location
 
-    c.  LastEditedBy
+    c. LastEditedBy
 
-    d.  ValidFrom
+    d. ValidFrom
 
-    e.  ValidTo
+    e. ValidTo
 
-    f.  CountryID
+    f. CountryID
 
 25. **확인**을 선택합니다.
 
@@ -387,18 +387,18 @@ Customers 테이블과 BuyingGroups 테이블을 병합하여 생성되는 Resel
 만들어 보겠습니다. 이번에는 Power Query 옵션을 열지 않고 시각적 쿼리를
 사용하여 뷰를 만들어 보겠습니다.
 
-1.  상단 메뉴에서 **새 SQL 쿼리 (1)** 옆의 드롭다운을 클릭하고 **새
+1. 상단 메뉴에서 **새 SQL 쿼리 (1)** 옆의 드롭다운을 클릭하고 **새
     시각적 쿼리 (2)**를 선택합니다.
 
-2.  쿼리를 작성하려면 시각적 쿼리 패널에 테이블을 추가해야 합니다.
+2. 쿼리를 작성하려면 시각적 쿼리 패널에 테이블을 추가해야 합니다.
     **BuyingGroups (1)** 테이블 옆의 말줄임표를 클릭하고 **캔버스에
     삽입(2)**을를 선택합니다.
 
     ![](../media/lab-03/image29.png)
 
-3.  **Customers** 테이블에 대해 동일한 단계를 반복합니다.
+3. **Customers** 테이블에 대해 동일한 단계를 반복합니다.
 
-4.  **Customers** 쿼리를 선택합니다. 선택하면 Customers에 파란색
+4. **Customers** 쿼리를 선택합니다. 선택하면 Customers에 파란색
     테두리가 생기고 테이블 뒤에 **"+"** 기호가 표시됩니다(이는 테이블
     뒤에 단계를 추가하고 있음을 나타냅니다). 테이블 뒤에 '**+**'
     기호가 표시되지 않으면 다른 단계를 선택했을 수 있습니다. Table을
@@ -406,20 +406,20 @@ Customers 테이블과 BuyingGroups 테이블을 병합하여 생성되는 Resel
 
 <!-- -->
 
-5.  시각적 쿼리 메뉴에서 **결합 -> 쿼리 병합**을 선택합니다.
+5. 시각적 쿼리 메뉴에서 **결합 -> 쿼리 병합**을 선택합니다.
 
     ![](../media/lab-03/image30.png)
 
 병합 대화 상자가 열리고 Customers가 맨 위 테이블로 선택되어 있습니다.
 
-6.  **병합할 오른쪽 테이블**에서 **BuyingGroups**를 선택합니다.
+6. **병합할 오른쪽 테이블**에서 **BuyingGroups**를 선택합니다.
 
-7.  두 테이블에서 **BuyingGroupID** 열을 선택합니다. 이 열을 사용하여
+7. 두 테이블에서 **BuyingGroupID** 열을 선택합니다. 이 열을 사용하여
     조인할 것입니다.
 
-8.  **조인 종류**로 **안쪽**을 선택합니다.
+8. **조인 종류**로 **안쪽**을 선택합니다.
 
-9.  **확인**을 선택합니다.
+9. **확인**을 선택합니다.
 
     ![](../media/lab-03/image31.png)
 
@@ -442,31 +442,31 @@ Customer 테이블의 모든 열이 필요한 것은 아닙니다. 필요한 것
 
 14. 열 선택 대화 상자가 열립니다. 다음 열을 **선택**합니다.
 
-    a.  ResellerID
+    a. ResellerID
 
-    b.  ResellerName
+    b. ResellerName
 
-    c.  PostalCityID
+    c. PostalCityID
 
-    d.  PhoneNumber
+    d. PhoneNumber
 
-    e.  FaxNumber
+    e. FaxNumber
 
-    f.  WebsiteURL
+    f. WebsiteURL
 
-    g.  DeliveryAddressLine1
+    g. DeliveryAddressLine1
 
-    h.  DeliveryAddressLine2
+    h. DeliveryAddressLine2
 
-    i.  DeliveryPostalCode
+    i. DeliveryPostalCode
 
-    j.  PostalAddressLine1
+    j. PostalAddressLine1
 
-    k.  PostalAddressLine2
+    k. PostalAddressLine2
 
-    l.  PostalPostalCode
+    l. PostalPostalCode
 
-    m.  BuyingGroupName
+    m. BuyingGroupName
 
 15. **확인**을 선택합니다.
 
@@ -522,37 +522,37 @@ InvoiceLineItems 테이블과 Invoices 테이블을 Reseller 뷰에 병합하여
 전에 시각적 쿼리에서는 빈 쿼리를 만들 수 없으므로 시각적 쿼리를 사용하여
 병합 테이블을 만들어야 합니다. 이 방법을 시도해 보겠습니다.
 
-1.  상단 메뉴에서 **새 SQL 쿼리** 옆의 드롭다운을 클릭하고 **새 시각적
+1. 상단 메뉴에서 **새 SQL 쿼리** 옆의 드롭다운을 클릭하고 **새 시각적
     쿼리**를 선택합니다.
 
     ![](../media/lab-03/image40.png)
 
-2.  **탐색기** 섹션에서 시각적 쿼리 패널에 테이블을 추가해야 합니다.
+2. **탐색기** 섹션에서 시각적 쿼리 패널에 테이블을 추가해야 합니다.
     **InvoiceLineItems** 테이블 옆의 말줄임표를 클릭하고 **Insert into
     canvas**를 선택합니다.
 
-3.  **Invoices** 테이블에 대해 동일한 단계를 반복합니다.
+3. **Invoices** 테이블에 대해 동일한 단계를 반복합니다.
 
-4.  **탐색기 -> Views** 섹션에서 시각적 쿼리 패널에 테이블을 추가해야
+4. **탐색기 -> Views** 섹션에서 시각적 쿼리 패널에 테이블을 추가해야
     합니다. **Reseller** 테이블 옆의 말줄임표를 클릭하고 **캔버스에
     삽입**을 선택합니다.
 
-5.  시각적 쿼리 편집기에서 **팝업으로 열기** 아이콘을 선택하여 Power
+5. 시각적 쿼리 편집기에서 **팝업으로 열기** 아이콘을 선택하여 Power
     Query 편집기를 엽니다.
 
     ![](../media/lab-03/image41.png)
 
-6.  **InvoiceLineItems** 쿼리를 선택한 상태에서 리본 메뉴에서 **홈 (2)
+6. **InvoiceLineItems** 쿼리를 선택한 상태에서 리본 메뉴에서 **홈 (2)
     -> 결합 (3) -> 쿼리 병합 드롭다운 (4) -> 쿼리를 새 항목으로 병합
     (5)**을 선택합니다**.** 쿼리 병합 대화 상자가 열립니다.
 
     ![](../media/lab-03/image42.png)
 
-7.  **병합할 왼쪽 테이블**에서 **InvoiceLineItems**를 선택합니다.
+7. **병합할 왼쪽 테이블**에서 **InvoiceLineItems**를 선택합니다.
 
-8.  **병합할 오른쪽 테이블**에서 **Invoices**를 선택합니다.
+8. **병합할 오른쪽 테이블**에서 **Invoices**를 선택합니다.
 
-9.  두 테이블에서 **InvoiceID** 열을 선택합니다. 이 열을 사용하여 조인할
+9. 두 테이블에서 **InvoiceID** 열을 선택합니다. 이 열을 사용하여 조인할
     것입니다.
 
 10. **조인 종류**로 **안쪽**을 선택합니다.
@@ -690,39 +690,39 @@ in
 병합하여 생성되는 제품 보기를 만들어 보겠습니다. 작업을 진행하기 위해
 고급 편집기에 코드를 복사하겠습니다.
 
-1.  상단 메뉴에서 **새 SQL 쿼리 (1)** 옆의 드롭다운을 클릭하고 **새
+1. 상단 메뉴에서 **새 SQL 쿼리 (1)** 옆의 드롭다운을 클릭하고 **새
     시각적 쿼리 (2)**를 선택합니다.
 
     ![](../media/lab-03/image54.png)
 
-2.  탐색기 -> Views 섹션에서 시각적 쿼리 패널에 테이블을 추가해야
+2. 탐색기 -> Views 섹션에서 시각적 쿼리 패널에 테이블을 추가해야
     합니다. **ProductItem (1)** 테이블 옆의 줄임표를 클릭하고 **캔버스에
     삽입(2)**을 선택합니다.
 
     ![](../media/lab-03/image55.png)
 
-3.  **ProductItemGroup** 및 **ProductGroups** 테이블에 대해서도 동일한
+3. **ProductItemGroup** 및 **ProductGroups** 테이블에 대해서도 동일한
     단계를 반복합니다.
 
-4.  시각적 쿼리 편집기에서 **포커스 모드 아이콘**을 선택하여 Power Query
+4. 시각적 쿼리 편집기에서 **포커스 모드 아이콘**을 선택하여 Power Query
     편집기를 엽니다.
 
     ![](../media/lab-03/image56.png)
 
-5.  **ProductItem** 쿼리를 선택한 상태**(1)**에서 리본 메뉴에서 홈 **(2)
+5. **ProductItem** 쿼리를 선택한 상태**(1)**에서 리본 메뉴에서 홈 **(2)
     -> 결합 (3) -> 쿼리 병합 드롭다운 (4) -> 쿼리를 새 항목으로 병합
     (5)**을 선택합니다.
 
     ![](../media/lab-03/image57.png)
 
-6.  **병합할 왼쪽 테이블**에서 **ProductItem**을 선택합니다.
+6. **병합할 왼쪽 테이블**에서 **ProductItem**을 선택합니다.
 
-7.  **병합할 오른쪽 테이블**에서 **ProductItemGroup**을 선택합니다.
+7. **병합할 오른쪽 테이블**에서 **ProductItemGroup**을 선택합니다.
 
-8.  두 테이블에서 **StockItemID** 열을 선택합니다. 이 열을 사용하여
+8. 두 테이블에서 **StockItemID** 열을 선택합니다. 이 열을 사용하여
     조인할 것입니다.
 
-9.  **조인 종류**로 **왼쪽 우선 외부**를 선택합니다.
+9. **조인 종류**로 **왼쪽 우선 외부**를 선택합니다.
 
 10. **확인**을 선택합니다. 새 병합 쿼리가 만들어집니다.
 
