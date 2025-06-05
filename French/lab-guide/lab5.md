@@ -374,8 +374,7 @@ en créant un pipeline de données.
 
 11. Procédez de même pour ajouter trois variables supplémentaires :
 
-    a. **varIsSuccess** de type **String** avec la valeur par défaut **Non**. Cette variable permet d'indiquer si l'actualisation du
-        flux de données a réussi.
+    a. **varIsSuccess** de type **String** avec la valeur par défaut **Non**. Cette variable permet d'indiquer si l'actualisation du flux de données a réussi.
 
     b. **varSuccess** de type **String** avec la valeur par défaut **Oui**. Cette variable permet de définir la valeur de varIsSuccess si l'actualisation du flux de données réussit.
 
@@ -615,7 +614,7 @@ une variable. Autrement dit, nous ne pouvons pas incrémenter la variable
 de compteur varCounter en ajoutant un à sa valeur (varCounter =
 varCounter + 1). Nous utilisons donc la variable varTempCounter.
 
-## Tâche 10 : configurer une 2^e^ activité Définir une variable
+## Tâche 10 : configurer une 2e activité Définir une variable
 
 1. Dans le menu supérieur, cliquez sur **Activités -> Définir une
     variable**. L'activité Définir une variable est alors ajoutée au
@@ -662,7 +661,7 @@ varCounter + 1). Nous utilisons donc la variable varTempCounter.
 Nous devons maintenant définir la valeur de la variable varCounter sur
 la valeur de varTempCounter.
 
-## Tâche 11 : configurer une 3^e^ activité Définir une variable
+## Tâche 11 : configurer une 3e activité Définir une variable
 
 1. Dans le menu supérieur, cliquez sur **Activités -> Définir une
     variable**. L'activité Définir une variable est alors ajoutée au

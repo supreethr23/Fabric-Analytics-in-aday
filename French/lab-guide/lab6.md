@@ -224,7 +224,7 @@ sélectionnées. N'hésitez pas à **réorganiser** les tables si nécessaire.
 Notez que certaines tables (Geo, Reseller, Sales et Product) comportent
 un symbole d'avertissement en haut de la table à droite. En effet, il
 s'agit de vues. Tous les visuels créés avec des champs provenant de ces
-vues sont en mode DirectQuery et non en mode Direct Lake. w
+vues sont en mode DirectQuery et non en mode Direct Lake.
 
 **Remarque** **:** le mode Direct Lake est plus rapide que le mode
 DirectQuery.
