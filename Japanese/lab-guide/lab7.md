@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 7
 
+![A diagram of data flow](../media/lab-07/image7.png)
+
 # 目次 
 
 - 概要	
