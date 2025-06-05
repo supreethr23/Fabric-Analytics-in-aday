@@ -738,7 +738,7 @@ where exists
 [$Inner].[ResellerID] is null
 )
 )
-
+```
 
 21. 시각적 개체 쿼리 메뉴에서 **실행**을 선택하여 코드를 실행합니다.
 

@@ -2,7 +2,7 @@
 
 # 목차
 
-소개
+- 소개
 - Fabric 라이선스
     - 작업 1: Microsoft Fabric 평가판 라이선스 활성화
 - Fabric 작업 영역
