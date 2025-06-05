@@ -20,13 +20,13 @@
 
 # Fabric ライセンス
 
-### タスク 1: Microsoft Fabric 試用版ライセンスを有効にする
+## タスク 1: Microsoft Fabric 試用版ライセンスを有効にする
 
 1. **ブラウザー**を開いて、[Microsoft Power BI
     ポータル](https://app.powerbi.com/)に移動します。ログイン
     ページが表示されます。
 
-    >**注:** ラボ環境を使用している場合は、自動的にサインインできます。*
+    >**注:** ラボ環境を使用している場合は、自動的にサインインできます。
     
     >**注:** ラボ環境を使用しておらず、Power BI アカウントを既にお持ちの場合は、ブラウザーをプライベート モードまたはシークレット モードで使用することをお勧めします。*
 
@@ -77,7 +77,7 @@
 
 # Fabric ワークスペース
 
-### タスク 2: Fabric ワークスペースを作成する
+## タスク 2: Fabric ワークスペースを作成する
 
 1. 次は、Fabric
     ライセンスを使用してワークスペースを作成しましょう。左ナビゲーション
@@ -113,7 +113,7 @@
 
     新しいワークスペースが作成されて、そのワークスペースに移動できます。さまざまなデータ ソースからレイクハウスにデータを取り込み、そのレイクハウスからのデータを使用してモデルを構築し、レポートを作成します。最初のステップでは、レイクハウスを作成 します。
 
-### タスク 3: レイクハウスを作成する
+## タスク 3: レイクハウスを作成する
 
 1. 新しく作成したワークスペース **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     で、左側のナビゲーション ウィンドウの **+ 新しい項目 (1)**
@@ -151,7 +151,7 @@ Tables
 
 # Fabric のエクスペリエンスの概要
 
-### タスク 4: Data Factory のエクスペリエンス
+## タスク 4: Data Factory のエクスペリエンス
 
 1. 画面左側のワークロード アイコンを選択します。ダイアログが開き、Fabric のエクスペリエンスの一覧が表示されます。このエクスペリエンスのリストには、Power BI、Data Factory、Industry Solutions、Real-Time Intelligence、Data Engineering、Data Science、Data Warehouse が含まれます。詳しく見ていきましょう。
     
@@ -217,7 +217,7 @@ Tables
 
     ![](../media/lab-02/image22.png)
 
-### タスク 5: Industry Solutions のエクスペリエンス 
+## タスク 5: Industry Solutions のエクスペリエンス 
 
 1. **ワークロード ページ**で、**Industry** Solutions
     をクリックして先に進みます。
@@ -264,7 +264,7 @@ Tables
 
     ![](../media/lab-02/image22.png)
 
-### タスク 6: Real-Time Intelligence エクスペリエンス
+## タスク 6: Real-Time Intelligence エクスペリエンス
 
 1. **ワークロード** ページで、**Real-Time Intelligence**
     をクリックして先に進みます。
@@ -313,7 +313,7 @@ Tables
 
     ![](../media/lab-02/image22.png)
 
-### タスク 7: Data Engineering のエクスペリエンス
+## タスク 7: Data Engineering のエクスペリエンス
 
 1. **ワークロード** ページで、Data Engineering をクリックして先に進みます。
 
@@ -387,7 +387,7 @@ Tables
 
     ![](../media/lab-02/image22.png)
 
-### タスク 8: Data Science のエクスペリエンス
+## タスク 8: Data Science のエクスペリエンス
 
 1. **ワークロード** ページで、**Data Science**
     をクリックして先に進みます。
@@ -440,7 +440,7 @@ Tables
 
    ![](../media/lab-02/image22.png)
 
-### タスク 9: Data Warehouse のエクスペリエンス
+## タスク 9: Data Warehouse のエクスペリエンス
 
 1. **ワークロード** ページで、**Data Warehouse**
     をクリックして先に進みます。
@@ -492,7 +492,7 @@ Tables
 
    ![](../media/lab-02/image22.png)
 
-### タスク 10: データベースのエクスペリエンス
+## タスク 10: データベースのエクスペリエンス
 
 1. **ワークロード** ページで、**Databases**
     をクリックして先に進みます。
