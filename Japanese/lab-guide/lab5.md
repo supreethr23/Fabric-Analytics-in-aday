@@ -719,21 +719,16 @@ varWaitTime を使って待機時間を設定します。
 
 8. パイプライン式ビルダー ダイアログが開きます。以下を入力します
 
-> **\@if(**
->
-> **greater(variables(\'varCounter\'), 1),**
->
-> **if(equals(variables(\'varCounter\'), 2),**
->
-> **mul(variables(\'varWaitTime\'),15 ),**
->
-> **mul(variables(\'varWaitTime\'), 0)**
->
-> **),**
->
-> **mul(variables(\'varWaitTime\'),5 )**
->
-> **)**
+   ```
+   @if(
+       greater(variables('varCounter'), 1),
+       if(equals(variables('varCounter'), 2),
+           mul(variables('varWaitTime'),15 ), 
+           mul(variables('varWaitTime'), 0)
+       ),
+       mul(variables('varWaitTime'),5 )
+   )
+   ```
 
 この式を入力しても、メニューを使って関数を選択しても、またはコピーして貼り付けても構いません。
 
