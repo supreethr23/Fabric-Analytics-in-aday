@@ -54,7 +54,7 @@ BI にあるレポートを作成し直します。
 
    ![](../media/lab-07/image7.png)
 
-4. 上部のメニューから**新しいレポート**を選択します。
+4. 上部のメニューから **+新しいレポート**を選択します。
 
    ![](../media/lab-07/image8.png)
 
@@ -111,7 +111,7 @@ BI にあるレポートを作成し直します。
 
     ![](../media/lab-07/image12.png)
 
-   >**注:** 自動作成レポートは、"自動作成"
+    > **注:** 自動作成レポートは、"自動作成"
     されるのでユーザーによって外観が異なる場合があります。また、前のラボ
     (ラボ 6) で作成したリレーションシップとメジャーにも依存します。
 
@@ -122,7 +122,7 @@ BI にあるレポートを作成し直します。
     6)
     の作成をスキップした場合に、自動作成レポートがどのように表示される**可能性があるか**を示したものです。
 
-   ![](../media/lab-07/image13.png)
+    ![](../media/lab-07/image13.png)
 
 ## タスク 2: 新しいレポートの背景を構成する
 
@@ -235,7 +235,7 @@ BI にあるレポートを作成し直します。
 
 10. [16 進] の値を **#004753** に設定します。
 
-   ![](../media/lab-07/image21.png)
+    ![](../media/lab-07/image21.png)
 
 11. **カード** セクションを展開します。
 
@@ -299,7 +299,7 @@ BI にあるレポートを作成し直します。
     >**注:** レポート名の前に report の省略形である rpt を付けています。
 
 3. レポートが **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (2)**
-    ワークスペースに保存されることを確認します**。**
+    ワークスペースに保存されることを確認します。
 
 4. **保存**を選択します。レポートが保存され、ビューモードになったことが通知されます。
 
@@ -342,7 +342,7 @@ BI にあるレポートを作成し直します。
 
 13. **Sales** テーブルを展開し、**Sales メジャー**を選択します。
 
-   ![](../media/lab-07/image29.png)
+    ![](../media/lab-07/image29.png)
 
 ## タスク 8: Date テーブルの Month Name 列を構成する
 
@@ -377,12 +377,12 @@ BI にあるレポートを作成し直します。
 
 10. **列で並べ替え**ドロップダウンで **Month** を選択します。
 
-   ![](../media/lab-07/image32.png)
+    ![](../media/lab-07/image32.png)
 
 11. ブラウザーの**レポート
     ウィンドウ/タブ**に戻ります。これで、月が正しく並べ替えられました。
 
-   ![](../media/lab-07/image33.png)
+    ![](../media/lab-07/image33.png)
 
 ## タスク 9: 折れ線グラフを書式設定する
 
@@ -433,7 +433,7 @@ Power BI Desktop のようなシームレスな対話型操作が実現します
 16. ビジュアルの右までスクロールして、**2024 年 4
     月までのデータがあることを確認します**。
 
-   ![](../media/lab-07/image36.png)
+    ![](../media/lab-07/image36.png)
 
 17. レポートを保存しましょう。メニューで**ファイル ->
     保存**を選択します。
@@ -482,12 +482,12 @@ Power BI Desktop のようなシームレスな対話型操作が実現します
 
 11. リボンから**ホーム -> 貼り付け**を選択します。
 
-   ![](../media/lab-07/image41.png)
+    ![](../media/lab-07/image41.png)
 
 12. 同様に、**Sales と Units の KPI** をコピーして貼り付けます。参考 -
     複数のビジュアルを一緒にコピーして貼り付けることができます。
 
-   ![](../media/lab-07/image42.png)
+    ![](../media/lab-07/image42.png)
 
     既存のレポートからビジュアルをコピーし、セマンティック
     モデルに接続されているレポートに貼り付ける操作は簡単です。コピーと貼り付けを行う場合は、テーブル名、列名、メジャー名が同じであることが必要です。これらの名前が異なる場合は、エラーが発生する可能性があります。ただし、この問題は簡単に解決できます。
@@ -567,7 +567,7 @@ ADLS Gen2 でデータが更新され、更新を実行せずに変更が Power 
 
 10. **次へ**を選択します。
 
-   ![](../media/lab-07/image48.png)
+    ![](../media/lab-07/image48.png)
 
 11. ADLS Gen2
     に接続され、左パネルにディレクトリ構造が表示されます。Delta-Parquet-Format-FY25
@@ -577,7 +577,7 @@ ADLS Gen2 でデータが更新され、更新を実行せずに変更が Power 
 
 13. **次へ**を選択します。
 
-   ![](../media/lab-07/image49.png)
+    ![](../media/lab-07/image49.png)
 
 14. 名前を編集できる次のダイアログが表示されます。 Sales.Invoices_May の
     [アクション] の下にある**編集アイコン**を選択します。
@@ -588,163 +588,161 @@ ADLS Gen2 でデータが更新され、更新を実行せずに変更が Power 
 
 17. **作成**を選択します。
 
-   ![](../media/lab-07/image50.png)
+    ![](../media/lab-07/image50.png)
 
-    これで、左側の**エクスプローラー ペイン**に InvoicesMay
-    テーブルが表示されます。次に、Sales ビューを更新する必要があります。
+    これで、左側の**エクスプローラー ペイン**に InvoicesMay テーブルが表示されます。次に、Sales ビューを更新する必要があります。
 
-18. 画面の**右上**で、**レイクハウス -> SQL
-    分析エンドポイント**を選択します。
+18. 画面の**右上**で、**レイクハウス -> SQL 分析エンドポイント**を選択します。
 
-   ![](../media/lab-07/image51.png)
+    ![](../media/lab-07/image51.png)
 
 19. 上部のメニューから**ホーム -> 新規 SQL クエリ**を選択します。新しい
     SQL クエリ ペインが開きます。
 
 20. 次のコードを**コピー**して、SQL クエリ ペインに**貼り付け**ます。
 
-```
-ALTER VIEW [dbo].[Sales] AS (
-select [$Outer].[InvoiceLineID] as [InvoiceLineID],
-    [$Outer].[InvoiceID] as [InvoiceID],
-    [$Outer].[StockItemID] as [StockItemID],
-    [$Outer].[Quantity] as [Quantity],
-    [$Outer].[UnitPrice] as [UnitPrice],
-    [$Outer].[TaxRate] as [TaxRate],
-    [$Outer].[TaxAmount] as [TaxAmount],
-    [$Outer].[LineProfit] as [LineProfit],
-    [$Outer].[ExtendedPrice] as [ExtendedPrice],
-    [$Outer].[CustomerID] as [ResellerID],
-    [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
-    [$Outer].[InvoiceDate] as [InvoiceDate],
-    [$Outer].[t0_0] as [Sales Amount]
-from 
-(
-    select [_].[InvoiceLineID] as [InvoiceLineID],
-        [_].[InvoiceID] as [InvoiceID],
-        [_].[StockItemID] as [StockItemID],
-        [_].[Quantity] as [Quantity],
-        [_].[UnitPrice] as [UnitPrice],
-        [_].[TaxRate] as [TaxRate],
-        [_].[TaxAmount] as [TaxAmount],
-        [_].[LineProfit] as [LineProfit],
-        [_].[ExtendedPrice] as [ExtendedPrice],
-        [_].[CustomerID] as [CustomerID],
-        [_].[SalespersonPersonID] as [SalespersonPersonID],
-        [_].[InvoiceDate] as [InvoiceDate],
-        [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
+    ```
+    ALTER VIEW [dbo].[Sales] AS (
+    select [$Outer].[InvoiceLineID] as [InvoiceLineID],
+        [$Outer].[InvoiceID] as [InvoiceID],
+        [$Outer].[StockItemID] as [StockItemID],
+        [$Outer].[Quantity] as [Quantity],
+        [$Outer].[UnitPrice] as [UnitPrice],
+        [$Outer].[TaxRate] as [TaxRate],
+        [$Outer].[TaxAmount] as [TaxAmount],
+        [$Outer].[LineProfit] as [LineProfit],
+        [$Outer].[ExtendedPrice] as [ExtendedPrice],
+        [$Outer].[CustomerID] as [ResellerID],
+        [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
+        [$Outer].[InvoiceDate] as [InvoiceDate],
+        [$Outer].[t0_0] as [Sales Amount]
     from 
     (
-        select [$Outer].[InvoiceLineID],
-            [$Outer].[InvoiceID],
-            [$Outer].[StockItemID],
-            [$Outer].[Quantity],
-            [$Outer].[UnitPrice],
-            [$Outer].[TaxRate],
-            [$Outer].[TaxAmount],
-            [$Outer].[LineProfit],
-            [$Outer].[ExtendedPrice],
-            [$Inner].[CustomerID],
-            [$Inner].[SalespersonPersonID],
-            [$Inner].[InvoiceDate]
-        from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
-        inner join 
+        select [_].[InvoiceLineID] as [InvoiceLineID],
+            [_].[InvoiceID] as [InvoiceID],
+            [_].[StockItemID] as [StockItemID],
+            [_].[Quantity] as [Quantity],
+            [_].[UnitPrice] as [UnitPrice],
+            [_].[TaxRate] as [TaxRate],
+            [_].[TaxAmount] as [TaxAmount],
+            [_].[LineProfit] as [LineProfit],
+            [_].[ExtendedPrice] as [ExtendedPrice],
+            [_].[CustomerID] as [CustomerID],
+            [_].[SalespersonPersonID] as [SalespersonPersonID],
+            [_].[InvoiceDate] as [InvoiceDate],
+            [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
+        from 
         (
-            select [_].[InvoiceID] as [InvoiceID2],
-                [_].[CustomerID] as [CustomerID],
-                [_].[BillToResellerID] as [BillToResellerID],
-                [_].[OrderID] as [OrderID],
-                [_].[DeliveryMethodID] as [DeliveryMethodID],
-                [_].[ContactPersonID] as [ContactPersonID],
-                [_].[AccountsPersonID] as [AccountsPersonID],
-                [_].[SalespersonPersonID] as [SalespersonPersonID],
-                [_].[PackedByPersonID] as [PackedByPersonID],
-                [_].[InvoiceDate] as [InvoiceDate],
-                [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
-                [_].[IsCreditNote] as [IsCreditNote],
-                [_].[CreditNoteReason] as [CreditNoteReason],
-                [_].[Comments] as [Comments],
-                [_].[DeliveryInstructions] as [DeliveryInstructions],
-                [_].[InternalComments] as [InternalComments],
-                [_].[TotalDryItems] as [TotalDryItems],
-                [_].[TotalChillerItems] as [TotalChillerItems],
-                [_].[DeliveryRun] as [DeliveryRun],
-                [_].[RunPosition] as [RunPosition],
-                [_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
-                [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
-                [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
-                [_].[LastEditedBy] as [LastEditedBy2],
-                [_].[LastEditedWhen] as [LastEditedWhen2]
-            from 
+            select [$Outer].[InvoiceLineID],
+                [$Outer].[InvoiceID],
+                [$Outer].[StockItemID],
+                [$Outer].[Quantity],
+                [$Outer].[UnitPrice],
+                [$Outer].[TaxRate],
+                [$Outer].[TaxAmount],
+                [$Outer].[LineProfit],
+                [$Outer].[ExtendedPrice],
+                [$Inner].[CustomerID],
+                [$Inner].[SalespersonPersonID],
+                [$Inner].[InvoiceDate]
+            from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
+            inner join 
             (
-                select [$Table].[InvoiceID] as [InvoiceID],
-                    [$Table].[CustomerID] as [CustomerID],
-                    [$Table].[BillToResellerID] as [BillToResellerID],
-                    [$Table].[OrderID] as [OrderID],
-                    [$Table].[DeliveryMethodID] as [DeliveryMethodID],
-                    [$Table].[ContactPersonID] as [ContactPersonID],
-                    [$Table].[AccountsPersonID] as [AccountsPersonID],
-                    [$Table].[SalespersonPersonID] as [SalespersonPersonID],
-                    [$Table].[PackedByPersonID] as [PackedByPersonID],
-                    [$Table].[InvoiceDate] as [InvoiceDate],
-                    [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
-                    [$Table].[IsCreditNote] as [IsCreditNote],
-                    [$Table].[CreditNoteReason] as [CreditNoteReason],
-                    [$Table].[Comments] as [Comments],
-                    [$Table].[DeliveryInstructions] as [DeliveryInstructions],
-                    [$Table].[InternalComments] as [InternalComments],
-                    [$Table].[TotalDryItems] as [TotalDryItems],
-                    [$Table].[TotalChillerItems] as [TotalChillerItems],
-                    [$Table].[DeliveryRun] as [DeliveryRun],
-                    [$Table].[RunPosition] as [RunPosition],
-                    [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
-                    [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
-                    [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
-                    [$Table].[LastEditedBy] as [LastEditedBy],
-                    [$Table].[LastEditedWhen] as [LastEditedWhen]
-                from [lh_FAIAD].[dbo].[Invoices] as [$Table]
-                union all select [$Table].[InvoiceID] as [InvoiceID],
-                    [$Table].[CustomerID] as [CustomerID],
-                    [$Table].[BillToResellerID] as [BillToResellerID],
-                    [$Table].[OrderID] as [OrderID],
-                    [$Table].[DeliveryMethodID] as [DeliveryMethodID],
-                    [$Table].[ContactPersonID] as [ContactPersonID],
-                    [$Table].[AccountsPersonID] as [AccountsPersonID],
-                    [$Table].[SalespersonPersonID] as [SalespersonPersonID],
-                    [$Table].[PackedByPersonID] as [PackedByPersonID],
-                    [$Table].[InvoiceDate] as [InvoiceDate],
-                    [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
-                    [$Table].[IsCreditNote] as [IsCreditNote],
-                    [$Table].[CreditNoteReason] as [CreditNoteReason],
-                    [$Table].[Comments] as [Comments],
-                    [$Table].[DeliveryInstructions] as [DeliveryInstructions],
-                    [$Table].[InternalComments] as [InternalComments],
-                    [$Table].[TotalDryItems] as [TotalDryItems],
-                    [$Table].[TotalChillerItems] as [TotalChillerItems],
-                    [$Table].[DeliveryRun] as [DeliveryRun],
-                    [$Table].[RunPosition] as [RunPosition],
-                    [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
-                    [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
-                    [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
-                    [$Table].[LastEditedBy] as [LastEditedBy],
-                    [$Table].[LastEditedWhen] as [LastEditedWhen]
-                from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
-            ) as [_]
-        ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and [$Inner].[InvoiceID2] is null)
-    ) as [_]
-) as [$Outer]
-where exists 
-(
-    select 1
-    from 
+                select [_].[InvoiceID] as [InvoiceID2],
+                    [_].[CustomerID] as [CustomerID],
+                    [_].[BillToResellerID] as [BillToResellerID],
+                    [_].[OrderID] as [OrderID],
+                    [_].[DeliveryMethodID] as [DeliveryMethodID],
+                    [_].[ContactPersonID] as [ContactPersonID],
+                    [_].[AccountsPersonID] as [AccountsPersonID],
+                    [_].[SalespersonPersonID] as [SalespersonPersonID],
+                    [_].[PackedByPersonID] as [PackedByPersonID],
+                    [_].[InvoiceDate] as [InvoiceDate],
+                    [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                    [_].[IsCreditNote] as [IsCreditNote],
+                    [_].[CreditNoteReason] as [CreditNoteReason],
+                    [_].[Comments] as [Comments],
+                    [_].[DeliveryInstructions] as [DeliveryInstructions],
+                    [_].[InternalComments] as [InternalComments],
+                    [_].[TotalDryItems] as [TotalDryItems],
+                    [_].[TotalChillerItems] as [TotalChillerItems],
+                    [_].[DeliveryRun] as [DeliveryRun],
+                    [_].[RunPosition] as [RunPosition],
+                    [_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                    [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                    [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                    [_].[LastEditedBy] as [LastEditedBy2],
+                    [_].[LastEditedWhen] as [LastEditedWhen2]
+                from 
+                (
+                    select [$Table].[InvoiceID] as [InvoiceID],
+                        [$Table].[CustomerID] as [CustomerID],
+                        [$Table].[BillToResellerID] as [BillToResellerID],
+                        [$Table].[OrderID] as [OrderID],
+                        [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                        [$Table].[ContactPersonID] as [ContactPersonID],
+                        [$Table].[AccountsPersonID] as [AccountsPersonID],
+                        [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                        [$Table].[PackedByPersonID] as [PackedByPersonID],
+                        [$Table].[InvoiceDate] as [InvoiceDate],
+                        [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                        [$Table].[IsCreditNote] as [IsCreditNote],
+                        [$Table].[CreditNoteReason] as [CreditNoteReason],
+                        [$Table].[Comments] as [Comments],
+                        [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                        [$Table].[InternalComments] as [InternalComments],
+                        [$Table].[TotalDryItems] as [TotalDryItems],
+                        [$Table].[TotalChillerItems] as [TotalChillerItems],
+                        [$Table].[DeliveryRun] as [DeliveryRun],
+                        [$Table].[RunPosition] as [RunPosition],
+                        [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                        [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                        [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                        [$Table].[LastEditedBy] as [LastEditedBy],
+                        [$Table].[LastEditedWhen] as [LastEditedWhen]
+                    from [lh_FAIAD].[dbo].[Invoices] as [$Table]
+                    union all select [$Table].[InvoiceID] as [InvoiceID],
+                        [$Table].[CustomerID] as [CustomerID],
+                        [$Table].[BillToResellerID] as [BillToResellerID],
+                        [$Table].[OrderID] as [OrderID],
+                        [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                        [$Table].[ContactPersonID] as [ContactPersonID],
+                        [$Table].[AccountsPersonID] as [AccountsPersonID],
+                        [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                        [$Table].[PackedByPersonID] as [PackedByPersonID],
+                        [$Table].[InvoiceDate] as [InvoiceDate],
+                        [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                        [$Table].[IsCreditNote] as [IsCreditNote],
+                        [$Table].[CreditNoteReason] as [CreditNoteReason],
+                        [$Table].[Comments] as [Comments],
+                        [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                        [$Table].[InternalComments] as [InternalComments],
+                        [$Table].[TotalDryItems] as [TotalDryItems],
+                        [$Table].[TotalChillerItems] as [TotalChillerItems],
+                        [$Table].[DeliveryRun] as [DeliveryRun],
+                        [$Table].[RunPosition] as [RunPosition],
+                        [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                        [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                        [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                        [$Table].[LastEditedBy] as [LastEditedBy],
+                        [$Table].[LastEditedWhen] as [LastEditedWhen]
+                    from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
+                ) as [_]
+            ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and [$Inner].[InvoiceID2] is null)
+        ) as [_]
+    ) as [$Outer]
+    where exists 
     (
-        select [ResellerID]
-        from [lh_FAIAD].[dbo].[Reseller] as [$Table]
-    ) as [$Inner]
-    where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is null
-)
-)
-```
+        select 1
+        from 
+        (
+            select [ResellerID]
+            from [lh_FAIAD].[dbo].[Reseller] as [$Table]
+        ) as [$Inner]
+        where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is null
+    )
+    )
+    ```
 
 21. ビジュアル
     クエリのメニューから**実行**を選択してコードを実行します。
@@ -752,7 +750,7 @@ where exists
     コードが実行されると、Sales テーブルが更新され、2024 年 5
     月のデータが含まれます。
 
-   ![](../media/lab-07/image52.png)
+    ![](../media/lab-07/image52.png)
 
 22. 左メニュー バーから **rpt_Sales_Report**
     を選択して、レポートに戻ります。
@@ -902,7 +900,7 @@ Corporation によって提供されます。
 このデモ/ラボは、前に説明した目的のために複雑なセットアップまたはインストールを必要としないシミュレーション環境で潜在的な新機能や概念などの特定のソフトウェア
 テクノロジ/製品の機能を提供します。このデモ/ラボで表されるテクノロジ/概念は、フル機能を表していない可能性があり、最終バージョンと動作が異なることがあります。また、そのような機能や概念の最終版がリリースされない場合があります。物理環境でこのような機能を使用するエクスペリエンスが異なる場合もあります。
 
-**フィードバック。**このデモ/ラボで説明されているテクノロジ、機能、概念に関するフィードバックを
+**フィードバック。** このデモ/ラボで説明されているテクノロジ、機能、概念に関するフィードバックを
 Microsoft
 に提供する場合、ユーザーは任意の方法および目的でユーザーのフィードバックを使用、共有、および商品化する権利を無償で
 Microsoft に提供するものとします。また、ユーザーは、フィードバックを含む
