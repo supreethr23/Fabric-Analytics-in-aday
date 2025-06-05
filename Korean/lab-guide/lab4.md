@@ -1,4 +1,6 @@
- ![](../media/lab-04/image45.png)
+# Microsoft Fabric Analyst in a Day - 랩 4
+ 
+![](../media/lab-04/image45.png)
 
 # 목차
 - 소개

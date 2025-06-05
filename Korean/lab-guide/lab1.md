@@ -1,5 +1,6 @@
-  ![](../media/lab-01/image29.png)
+# Microsoft Fabric Analyst in a Day - 랩 1
 
+![](../media/lab-01/image29.png)
 
 # 목차
 - 문서 구조
@@ -9,7 +10,6 @@
     - 작업 2: Power BI Desktop 보고서 분석
     - 작업 3: Power Query 검토
 - 참조 
-
 
 # 문서 구조
 
@@ -87,23 +87,19 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 ### 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
 
-1.  랩 환경에서 바탕 화면의 **Reports** 폴더에 있는 **FAIAD.pbix**를
-    엽니다. 파일이 Power BI Desktop에 열립니다.
+1.  랩 환경에서 바탕 화면의 **Reports** 폴더에 있는 **FAIAD.pbix**를 엽니다. 파일이 Power BI Desktop에 열립니다.
 
     ![](../media/lab-01/image7.png)
 
-2.  이메일 주소 입력 대화 상자가 열립니다. 랩 환경의 오른쪽 패널에 있는
-    **환경 세부 정보** 탭으로 이동합니다.
+2.  이메일 주소 입력 대화 상자가 열립니다. 랩 환경의 오른쪽 패널에 있는 **환경 세부 정보** 탭으로 이동합니다.
 
-3.  **사용자 이름**을 복사하여 대화 상자의 **이메일** 텍스트 상자에
-    붙여넣습니다.
+3.  **사용자 이름**을 복사하여 대화 상자의 **이메일** 텍스트 상자에 붙여넣습니다.
 
 4.  **계속**을 선택합니다.
 
     ![](../media/lab-01/image8.png)
 
-5.  로그인 대화 상자가 열립니다. **환경 세부 정보** 탭에서 복사하여
-    **사용자 이름**을 다시 입력합니다.
+5.  로그인 대화 상자가 열립니다. **환경 세부 정보** 탭에서 복사하여 **사용자 이름**을 다시 입력합니다.
 
 6.  **다음**을 선택합니다.
 
@@ -167,7 +163,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 6.  Product Group 및 Reseller별 제품 상세 정보를 살펴보겠습니다. Product
     Group 및 Reseller별 매출 막대 그래프에서 **Tailspin Toys의 Packaging
-    Materials 막대를 마우스 우클릭하고** 대화 상자에서 **드릴스루 -\>
+    Materials 막대를 마우스 우클릭하고** 대화 상자에서 **드릴스루 ->
     Product Detail을** 선택합니다.
 
     ![](../media/lab-01/image15.png)
@@ -204,11 +200,11 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 ### 작업 3: Power Query 검토
 
 1.  Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서
-    **홈 -\> 데이터 변환**을 선택합니다.
+    **홈 -> 데이터 변환**을 선택합니다.
 
     ![](../media/lab-01/image18.png)
 
-2.  Power Query 창이 열립니다. 리본 메뉴에서 **홈 -\> 데이터 원본
+2.  Power Query 창이 열립니다. 리본 메뉴에서 **홈 -> 데이터 원본
     설정**을 선택합니다. 데이터 원본 설정 대화 상자가 열립니다. 목록을
     스크롤하면 문제 설명에 언급된 대로 네 가지 데이터 원본이 있음을 알
     수 있습니다.
@@ -246,9 +242,9 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     자격 증명 정보를 입력할 수 있습니다. 아래에 제공된 자격 증명 정보를
     입력하고 **연결**을 선택합니다.
 
-    - 이메일/사용자 이름: **환경 탭에서 찾을 수 있습니다.**
+    - 이메일/사용자 이름: <inject key="AzureAdUserEmail"></inject>
 
-    - 암호: **환경 탭에서 찾을 수 있습니다.**
+    - 암호: <inject key="AzureAdUserPassword"></inject>
 
 9.  **ADLS Base Folder** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를
     선택하면 자격 증명을 입력해야 합니다. **자격 증명 편집**을
@@ -257,12 +253,12 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     ![](../media/lab-01/image22.png)
 
 10. ADLS 데이터 원본의 경우 **SAS(공유 액세스 서명)** 옵션을 선택하고
-    아래에 제공된 **\
+    아래에 제공된 **
     SAS** 토큰을 입력합니다. 그런 다음 **연결**을 선택합니다.
 
-- **SAS 토큰:** 환경 탭에서 찾을 수 있습니다.
+    - **SAS 토큰:** <inject key="Sas token"></inject>
 
-    ![](../media/lab-01/image23.png)
+      ![](../media/lab-01/image23.png)
 
 11. **ADLSData** 폴더에는 Geo, Product, Reseller, Date 등 다양한
     차원(dimension)이 있습니다. Sales 팩트도 있습니다.
@@ -288,13 +284,17 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     입력합니다. 이 자격 증명을 사용하여 Snowflake 아래의 모든 테이블을
     Snowflake에 연결한 다음 연결을 선택합니다.
 
-    - **Snowflake 사용자 이름:** TE_SNOWFLAKE1
+    - **Snowflake 사용자 이름:** <inject key="SnowFlake Username"></inject>
 
-    - **Snowflake 암호:** 8UpfRpExVDXv2AC1
+    - **Snowflake 암호:** <inject key="SnowFlake Password"></inject>
 
-*참고: 환경 세부 정보의 자격 증명을 사용하여 Snowflake에 연결하는 데
-문제가 있는 경우, 환경 탭에 제공된 백업 자격 증명을 사용하시기
-바랍니다.*
+    *참고: 환경 세부 정보의 자격 증명을 사용하여 Snowflake에 연결하는 데 문제가 있는 경우, 환경 탭에 제공된 백업 자격 증명을 사용하시기 바랍니다.*
+
+    - **Snowflake 사용자 이름:** SNOWFLAKE_BACKUP
+
+    - **Snowflake 비밀번호:** 8UpfRpExVDXv2AC1
+
+    >**참고:** 잘못된 사용자 이름이나 비밀번호를 세 번 이상 입력하지 마십시오. 모든 사용자의 Snowflake 계정이 잠깁니다. 로그인에 문제가 있는 경우 여러 번 시도하는 대신 `cloudlabs-support@spektrasystems.com`으로 문의해 주세요.
 
 14. **SnowflakeData** 폴더에는 Supplier 차원과 PO(주문/지출) 팩트가
     있습니다.
@@ -313,11 +313,11 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 16. **Microsoft 계정** 옵션을 선택한 다음 **로그인**을 클릭합니다.
     아래에 입력한 사용자 이름과 암호를 입력한 다음 연결을 선택합니다.
 
-    - **이메일/사용자 이름:** 환경 탭에서 찾을 수 있습니다.
+    - **이메일/사용자 이름:** <inject key="AzureAdUserEmail"></inject>
 
-    - **암호:** 환경 탭에서 찾을 수 있습니다.
+    - **암호:** <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/lab-01/image26.png)
+      ![](../media/lab-01/image26.png)
 
 17. **SharepointData** 폴더에는 People 차원이 있습니다.
 
@@ -355,7 +355,7 @@ Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 �
   읽기
 
 - [Fabric 커뮤니티](https://aka.ms/fabric-community)에 가입하여 질문을
-  게시하고 피드백을 공유하며 다른 사람들로\
+  게시하고 피드백을 공유하며 다른 사람들로
   부터 배우기
 
 다음에서 더 심층적인 Fabric 경험 발표 블로그를 읽어보세요.

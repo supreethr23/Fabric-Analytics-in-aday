@@ -1,3 +1,4 @@
+# Microsoft Fabric Analyst in a Day - 랩 7
 ![](../media/lab-07/image56.png)
 
 # 목차
@@ -16,8 +17,6 @@
     - 작업 11: Direct Lake 모드를 시뮬레이션하기 위해 새 데이터 추가
 - 랩 환경 정리
 - 참조 
-
-
 
 # 소개 
 

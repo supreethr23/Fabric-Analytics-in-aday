@@ -1,3 +1,5 @@
+# Microsoft Fabric Analyst in a Day - 랩 5
+
 ![](../media/lab-05/image52.png)
 
 # 목차
@@ -19,7 +21,6 @@
     - 작업 12: 대기 작업 구성
     - 작업 13: 데이터 파이프라인에 대한 예약 새로 고침 구성
 - 참조 
-
 
 # 서문 
 

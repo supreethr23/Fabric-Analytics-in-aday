@@ -1,3 +1,5 @@
+# Microsoft Fabric Analyst in a Day - 랩 2
+
 ![](../media/lab-02/image35.png)
 
 # 목차
