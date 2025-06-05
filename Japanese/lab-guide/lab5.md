@@ -59,7 +59,7 @@
 まず、Supplier データフローのスケジュールされた更新を構成しましょう。
 
 1. 左パネルでワークスペースを選択し、Fabric ワークスペース
-    (**FAIAD\_\<ユーザー名\>**) に戻ります。
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** に戻ります。
 
 2. アーティファクトの一覧を含むパネルを最大化するには、パネルの右上にある二重矢印を選択します。
 
@@ -152,7 +152,7 @@
 ### タスク 2: データ パイプラインを作成する
 
 1. 左パネルでワークスペースを選択し、Fabric ワークスペース
-    (**FAIAD\_\<ユーザー名\>**)\
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     に戻ります。
 
 2. 上部メニューで、**+ 新しい項目 (1) - \>** **データ パイプライン
@@ -213,7 +213,7 @@
     **下部ペイン**から、**設定**を選択します。
 
 3. **ワークスペース**がご自身の Fabric ワークスペース
-    **FAIAD\_\<ユーザー名\>** に設定されていることを確認します。
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** に設定されていることを確認します。
 
 4. **データフロー ドロップダウン**から、**df_People_SharePoint**
     を選択します。このデータフロー
@@ -271,7 +271,7 @@
 新しいデータ
 パイプラインを作成して、これをどのように実現できるかを見てみましょう。
 
-1. 左側のパネルで **FAIAD\_\<ユーザー名\>**
+1. 左側のパネルで **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     をクリックして、ワークスペースのホームに移動します。
 
 2. 上部メニューから **+ 新しい項目 (1)** をクリックし、ポップアップ
@@ -507,7 +507,7 @@ variables(\'varSuccess\')))**
 7. 下部ペインから**設定**を選択します。
 
 8. **ワークスペース**がご自身のワークスペース
-    **FAIAD\_\<ユーザー名\>**\
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     に設定されていることを確認します。
 
 9. **データフロー ドロップダウン**から、**df_People_SharePoint**
@@ -816,7 +816,7 @@ activity](images5/media/image47.png)
 
     ![](../media/lab-05/image50.png)
 
-11. 左側のパネルで Fabric ワークスペース **FAIAD\_\<ユーザー名\>**
+11. 左側のパネルで Fabric ワークスペース **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
     を選択して、\
     ワークスペースに移動します。
 

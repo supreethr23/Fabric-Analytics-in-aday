@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 1
 
+![A diagram of data flow](../media/lab-01/image1.png)
+
 # 目次
 
 - ドキュメントの構造	
@@ -47,7 +49,7 @@ Fabrikam, Inc. は、ノベルティ商品の卸売業者です。卸売業者�
     ファイルとして SharePoint フォルダーに格納されます。毎朝午前 9
     時に更新されます。
 
-![](../media/lab-01/image4.jpeg)
+   ![](../media/lab-01/image4.jpeg)
 
 あなたは現在、Power BI Premium で上記のソース
 システムからデータを取得するセマンティック
@@ -90,7 +92,7 @@ Power BI Desktop のレポートを見てみましょう。
 
     ![](../media/lab-01/image6.png)
 
-2. \[メール アドレスの入力\]
+2. メール アドレスの入力
     ダイアログが開きます。ラボ環境の右パネルにある**環境の詳細**タブに移動します。
 
 3. ユーザー名をコピーし、ダイアログの**電子メール**
@@ -100,7 +102,7 @@ Power BI Desktop のレポートを見てみましょう。
 
    ![](../media/lab-01/image7.png)
 
-5. \[サインイン\]
+5. サインイン
     ダイアログが開きます。**ユーザー名を環境の詳細**タブからコピーしてもう一度入力します。
 
 6. **次へ**を選択します。
@@ -126,7 +128,7 @@ Power BI Desktop のレポートを見てみましょう。
 以下のレポートでは、Fabrikam の売上を分析しています。ページの左上に KPI
 が一覧表示されています。残りのビジュアルは、担当地域、製品グループ、リセラー会社ごとの時系列に沿った売上を強調しています。
 
-     ![](../media/lab-01/image10.jpeg)
+![](../media/lab-01/image10.jpeg)
 
 **注:** このトレーニングでは、Fabric
 で利用できるツールを使ったデータの取得、変換、モデリングに焦点を当てています。レポートの作成やナビゲーションには焦点を当てません。数分かけてレポートを理解してから、次のステップに進みましょう。
@@ -214,7 +216,7 @@ e\. Reseller ごとの Customer 情報があります。Customer は Reseller
 
 2. Power Query ウィンドウが開きます。リボンから**ホーム -\> データ
     ソース設定**を選\
-    択します。\[データ ソース設定\]
+    択します。データ ソース設定
     ダイアログが開きます。一覧をスクロールしていくと、問題の説明で述べたように
     4 つのデータ ソースがあることがわかります。
 
@@ -223,11 +225,11 @@ e\. Reseller ごとの Customer 情報があります。Customer は Reseller
     - ADLS Gen2
     - Dataverse
 
-3. **閉じる**を選択して \[データ ソース設定\] ダイアログを閉じます。
+3. **閉じる**を選択して データ ソース設定 ダイアログを閉じます。
 
     ![](../media/lab-01/image18.png)
 
-4. 左側の \[クエリ\] パネルでは、各クエリがデータ
+4. 左側の クエリ パネルでは、各クエリがデータ
     ソースごとにグループ化されていることがわかります。
 
 5. **DataverseData** フォルダーには、BabyBoomer、GenX、GenY、GenZ
@@ -248,9 +250,9 @@ e\. Reseller ごとの Customer 情報があります。Customer は Reseller
 8. **ユーザー名**と**パスワード**を入力することで、Dataverse データ
     ソースの資格情報を入力できます。資格情報は下記のとおりです。**接続**を選択します。
 
-    - メール/ユーザー名: **\[環境\] タブで見つけることができます**
+    - メール/ユーザー名: <inject key="AzureAdUserEmail"></inject>
 
-    - パスワード: **\[環境\] タブで見つけることができます**
+    - パスワード: <inject key="AzureAdUserPassword"></inject>
 
 9. クエリ ウィンドウから **ADLS Base Folder**
     クエリをクリックします。このクエリを選択すると、資格情報を求められます。**資格情報の編集**をクリックします。
@@ -260,7 +262,7 @@ e\. Reseller ごとの Customer 情報があります。Customer は Reseller
 10. ADLS データ ソースの場合、**Shared Access Signature (SAS)**
     オプションを選択し、下記の **SAS トークン**を入力します。
 
-    - **SAS** トークン: \[環境\] タブで見つけることができます
+    - **SAS** トークン: <inject key="Sas token"></inject>
 
     ![](../media/lab-01/image22.png)
 
@@ -274,11 +276,11 @@ e\. Reseller ごとの Customer 情報があります。Customer は Reseller
     - **Product ディメンション**は、Product Groups と Product Item
         Group のクエリからのデータをマージすることで作成されます。
 
--   **Reseller ディメンション**は、BuyingGroup
+    - **Reseller ディメンション**は、BuyingGroup
     クエリを使ってフィルター処\
     理されます。
 
--   **Sales ファクト**は、InvoiceLineItems と Invoice
+    - **Sales ファクト**は、InvoiceLineItems と Invoice
     のクエリをマージするこ\
     とで作成されます。
 
@@ -290,23 +292,26 @@ e\. Reseller ごとの Customer 情報があります。Customer は Reseller
 
 13. 下記の **Snowflake ユーザー名**と **Snowflake
     パスワード**を入力します。これらの資格情報を使用して Snowflake
-    にあるすべてのテーブルを Snowflake に接続し、\[接続\] を選択します。
+    にあるすべてのテーブルを Snowflake に接続し、接続 を選択します。
 
--   **Snowflake ユーザー名**: TE_SNOWFLAKE1
+    - **Snowflake ユーザー名**: <inject key="SnowFlake Username"></inject>
 
--   **Snowflake パスワード**: 8UpfRpExVDXv2AC1
+    - **Snowflake パスワード**: <inject key="SnowFlake Password"></inject>
 
-*注: 環境の詳細にある資格情報を使用して Snowflake
-に接続する際に問題が発生した場合は、\[環境\]
-タブに示されているバックアップの資格情報を使用してください。*
+    >**注**: 環境の詳細にある資格情報を使用して Snowflake
+に接続する際に問題が発生した場合は、環境
+タブに示されているバックアップの資格情報を使用してください。
+    - **Snowflake ユーザー名**: SNOWFLAKE_BACKUP
+    - **Snowflake パスワード**: 8UpfRpExVDXv2AC1
+    >**注**: ユーザー名またはパスワードを3回以上間違えて入力しないでください。すべてのユーザーの Snowflake アカウントがロックされてしまいます。ログインに問題がある場合は、複数回試すのではなく、cloudlabs-support@spektrasystems.com までご連絡ください。
 
 14. **SnowflakeData** フォルダーには、Supplier ディメンションと PO
     (Order / Spend) ファクトが含まれていることがわかります。
 
-    -   **Supplier ディメンション**は、Suppliers クエリと
+    - **Supplier ディメンション**は、Suppliers クエリと
         SupplierCategories クエリをマージすることで作成されます。
 
-    -   **PO ファクト**は、PO と PO Line Items
+    - **PO ファクト**は、PO と PO Line Items
         のクエリをマージすることで作成されます。
 
 15. SharePoint データ ソースの場合は、クエリ ウィンドウから **People**
@@ -315,12 +320,12 @@ e\. Reseller ごとの Customer 情報があります。Customer は Reseller
      ![](../media/lab-01/image24.png)
 
 16. **Microsoft アカウント**
-    オプションを選択し、**サインイン**をクリックします。下記のユーザー名とパスワードを入力し、\[接続\]
+    オプションを選択し、**サインイン**をクリックします。下記のユーザー名とパスワードを入力し、接続
     を選択します。
 
--   **メール/ユーザー名:** \[環境\] タブで見つけることができます
+    - **メール/ユーザー名:** <inject key="AzureAdUserEmail"></inject>
 
--   **パスワード:** \[環境\] タブで見つけることができます
+    - **パスワード:** <inject key="AzureAdUserPassword"></inject>
 
      ![](../media/lab-01/image25.png)
 
@@ -344,57 +349,57 @@ Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric
 Microsoft Fabric
 の次のステップに役立つリソースをいくつか以下に紹介します。
 
--   ブログ記事で [Microsoft Fabric の GA
+- ブログ記事で [Microsoft Fabric の GA
     に関するお知らせ](https://aka.ms/Fabric-Hero-Blog-Ignite23)の全文を確認する
 
--   [ガイド付きツアー](https://aka.ms/Fabric-GuidedTour)を通じて Fabric
+- [ガイド付きツアー](https://aka.ms/Fabric-GuidedTour)を通じて Fabric
     を探索する
 
--   [Microsoft Fabric
+- [Microsoft Fabric
     の無料試用版](https://aka.ms/try-fabric)にサインアップする
 
--   [Microsoft Fabric の Web
+- [Microsoft Fabric の Web
     サイト](https://aka.ms/microsoft-fabric)にアクセスする
 
--   [Fabric
+- [Fabric
     の学習モジュール](https://aka.ms/learn-fabric)で新しいスキルを学ぶ
 
--   [Fabric の技術ドキュメント](https://aka.ms/fabric-docs)を参照する
+- [Fabric の技術ドキュメント](https://aka.ms/fabric-docs)を参照する
 
--   [Fabric の作業開始に関する無料の
+- [Fabric の作業開始に関する無料の
     e-book](https://aka.ms/fabric-get-started-ebook) を読む
 
--   [Fabric
+- [Fabric
     コミュニティ](https://aka.ms/fabric-community)に参加し、質問の投稿やフィードバックの共有を行い、他のユーザーから学びを得る
 
 より詳しい Fabric
 エクスペリエンスのお知らせに関するブログを参照してください。
 
--   [Fabric の Data Factory
+- [Fabric の Data Factory
     エクスペリエンスに関するブログ](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Fabric の Synapse Data Engineering
+- [Fabric の Synapse Data Engineering
     エクスペリエンスに関するブログ](https://aka.ms/Fabric-DE-Blog) 
 
--   [Fabric の Synapse Data Science
+- [Fabric の Synapse Data Science
     エクスペリエンスに関するブログ ](https://aka.ms/Fabric-DS-Blog)
 
--   [Fabric の Synapse Data Warehousing
+- [Fabric の Synapse Data Warehousing
     エクスペリエンスに関するブログ ](https://aka.ms/Fabric-DW-Blog)
 
--   [Fabric の Synapse Real-Time Analytics
+- [Fabric の Synapse Real-Time Analytics
     エクスペリエンスに関するブログ](https://aka.ms/Fabric-RTA-Blog)
 
--   [Power BI のお知らせに関するブログ](https://aka.ms/Fabric-PBI-Blog)
+- [Power BI のお知らせに関するブログ](https://aka.ms/Fabric-PBI-Blog)
 
--   [Fabric の Data Activator
+- [Fabric の Data Activator
     エクスペリエンスに関するブログ ](https://aka.ms/Fabric-DA-Blog)[Fabric
     の管理とガバナンスに関するブログ](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [Fabric の OneLake
+- [Fabric の OneLake
     に関するブログ](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Dataverse と Microsoft Fabric
+- [Dataverse と Microsoft Fabric
     の統合に関するブログ](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation.All rights reserved.
