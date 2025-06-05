@@ -1,6 +1,8 @@
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 2
 
-概要	
+![A diagram of data flow](../media/lab-02/image2.png)
+
+# 概要	
 - Fabric ライセンス	
     - タスク 1: Microsoft Fabric 試用版ライセンスを有効にする	
 - Fabric ワークスペース	
