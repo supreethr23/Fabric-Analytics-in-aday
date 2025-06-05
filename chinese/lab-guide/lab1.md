@@ -44,7 +44,7 @@ Fabrikam
 
 - **客户数据：** 来自 Customer Insights，数据存储在 Dataverse 中。此数据随时更新。
 
-- **员工数据：** 来自 HR 系统；作为导出文件存储在 SharePoint 文件夹中。每天早上\ 9 点更新。
+- **员工数据：** 来自 HR 系统；作为导出文件存储在 SharePoint 文件夹中。每天早上 9 点更新。
 
     ![](../media/lab-01/image5.png)
 
@@ -69,12 +69,12 @@ Power Query 更新模型。
 ### **Power BI Desktop 报表概览**
 
 在开始使用 Fabric 之前，我们先来看看 Power BI Desktop
-中的当前报表，以了解转换\
+中的当前报表，以了解转换
 和模型。
 
 ## 任务 1：在实验室环境中设置 Power BI Desktop
 
-1. 打开 **FAIAD.pbix，**它位于您的实验室环境的**桌面**上的 **Reports** 文件夹中。该文件将在\ Power BI Desktop 中打开。
+1. 打开 **FAIAD.pbix，**它位于您的实验室环境的**桌面**上的 **Reports** 文件夹中。该文件将在 Power BI Desktop 中打开。
 
      ![](../media/lab-01/image6.png)
 
@@ -130,7 +130,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 5. 在散点图视觉对象中选择离群值 Reseller 以**删除筛选器**。
 
-6. 我们按产品组和经销商获取产品详细信息。从按产品组和经销商公司划分的销售条形图视觉对象中，**右键单击 Tailspin Toys 的 Packaging Materials 栏**，并从对话框中选择**钻取 -\> Product Detail**。
+6. 我们按产品组和经销商获取产品详细信息。从按产品组和经销商公司划分的销售条形图视觉对象中，**右键单击 Tailspin Toys 的 Packaging Materials 栏**，并从对话框中选择**钻取 -> Product Detail**。
 
     ![](../media/lab-01/image14.png)
 7. 您将导航到提供产品详细信息的页面。请注意，还有一些未来的订单。
@@ -157,11 +157,11 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 ## 任务 3：查看 Power Queries
 
-1. 让我们查看 Power Query 来了解数据源。从功能区中选择**主页 -\> 转换数据**。
+1. 让我们查看 Power Query 来了解数据源。从功能区中选择**主页 -> 转换数据**。
 
     ![](../media/lab-01/image17.png)
 
-2. Power Query 窗口随即打开。从功能区中选择**主页 -\> 数据源设置**。"数据源设置"对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
+2. Power Query 窗口随即打开。从功能区中选择**主页 -> 数据源设置**。"数据源设置"对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
 
     - Snowflake
     
@@ -177,7 +177,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 4. 在左侧的"查询"面板中，请注意查询是按数据源分组的。
 
-5. 请注意，**DataverseData** 文件夹包含四个不同查询中可用的 Customer 数据：\ BabyBoomer、GenX、GenY 和 GenZ。追加这四个查询以创建 Customer 查询。
+5. 请注意，**DataverseData** 文件夹包含四个不同查询中可用的 Customer 数据： BabyBoomer、GenX、GenY 和 GenZ。追加这四个查询以创建 Customer 查询。
 
 6. 单击"查询"窗口中的 Customer 查询。选择本查询后，您将需要重新输入 Dataverse 凭据。单击**编辑凭据**。
 
@@ -187,13 +187,13 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 7. 单击**登录**以登录到您的帐户。
 
-8. 您可以通过输入**用户名**和**密码**来输入 Dataverse 数据源的凭据。下面提供了凭据，\ 选择**连接**。
+8. 您可以通过输入**用户名**和**密码**来输入 Dataverse 数据源的凭据。下面提供了凭据， 选择**连接**。
 
     - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
     - 密码：<inject key="AzureAdUserPassword"></inject>
 
-9. 单击"查询"窗口中的 **ADLS Base Folder** 查询。选择本查询后，您将需要输入凭据。\ 单击**编辑凭据**。
+9. 单击"查询"窗口中的 **ADLS Base Folder** 查询。选择本查询后，您将需要输入凭据。 单击**编辑凭据**。
 
     ![](../media/lab-01/image21.png)
 
@@ -203,7 +203,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
       ![](../media/lab-01/image22.png)
 
-11. 请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和 Date。还具有\ Sales 事实。
+11. 请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和 Date。还具有 Sales 事实。
 
     - **Geo 维度**是通过合并 Cities、Countries 和 States     查询的数据而创建的。
     
@@ -240,7 +240,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
     ![](../media/lab-01/image24.png)
 
-16. 选择 **Microsoft 帐户**选项，然后单击**登录**。输入下面提供的用户名和密码，然后选择\ **连接**。
+16. 选择 **Microsoft 帐户**选项，然后单击**登录**。输入下面提供的用户名和密码，然后选择 **连接**。
 
     - **电子邮件/用户名：** 在"环境"选项卡中找到
 
