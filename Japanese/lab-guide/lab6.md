@@ -224,10 +224,8 @@ Query モードになります。Direct Lake モードではありません。
 
     ![](../media/lab-06/image21.png)
 
-5. Sales テーブルと Reseller
-テーブルの間にリレーションシップを作成しましょう。**Sales** テーブルで
-**ResellerID** を選択して、**Reseller** テーブルの **ResellerID**
-までドラッグします。
+5. Sales テーブルと Reseller テーブルの間にリレーションシップを作成しましょう。**Sales** テーブルで
+   **ResellerID** を選択して、**Reseller** テーブルの **ResellerID** までドラッグします。
 
     ![](../media/lab-06/image22.png)
 
