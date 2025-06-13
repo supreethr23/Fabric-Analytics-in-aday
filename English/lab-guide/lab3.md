@@ -510,7 +510,7 @@ give this method a try.
 
 17. **Right-click** and select **Copy**.
 
-18. Select **Cancel** to close Advanced Editor.
+18. Select **Done** to close Advanced Editor.
 
     ![](../media/lab-03/image46.png)
 
