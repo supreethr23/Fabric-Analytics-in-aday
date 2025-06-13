@@ -295,7 +295,7 @@ model. We are going to create views to transform the data.
 
 25. Select **OK**.
 
-    ![](../media/lab-03/image24.png)
+    ![](../media/lab-03/image242.png)
 
     Notice the process is like Power Query, we have all the steps recorded
     both in the Applied Steps panel on the right and the visual view. Let's
