@@ -648,10 +648,10 @@ move things along, we are going to copy code into Advanced Editor.
 
 17. Right-click on **Product** query and select **Enable load** to enable the query to be loaded.
 
+   ![](../media/lab-03/image61.png)
+
 18. Select **Save** to Save and Close the Power Query dialog. You will be navigated to Visual query.
-
-    ![](../media/lab-03/image61.png)
-
+   
 19. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
 
 20. Enter **Product** as **View name**.
