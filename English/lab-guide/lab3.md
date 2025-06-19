@@ -273,11 +273,11 @@ model. We are going to create views to transform the data.
     We do not need all the columns in the **Merge** table. Make sure to only
     select those that we need.
 
-23. With **Merge (1)** query selected, from the ribbon select **Home (2) -> Manage columns (3) -> Choose columns (4) -> Choose columns (5)**.
+23. With **Merge (1)** query selected, from the ribbon select **Home (2) -> Choose columns (3) -> Choose columns (4)**.
 
     >**Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
-    ![](../media/lab-03/21042025(8).png)
+    ![](../media/lab-03/21042025(8)(1).png)
 
 24. Choose columns dialog opens. **Uncheck** the following columns.
 
