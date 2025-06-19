@@ -68,14 +68,11 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
     ![](../media/lab-05/image7.png)
 
-4. Hover over the **df_Supplier_Snowflake** row.
-    Select the **ellipsis (...)**.
-
-5. Notice there is an option to Delete and Edit the Dataflow. We can use Settings to update the name and description of the Dataflow. Select **Refresh now** to refresh the Dataflow.
+4. Hover over the **df\_Supplier\_Snowflake** row and click the **ellipsis (...) icon**. You’ll see options to **Delete** or **Edit** the Dataflow. Use **Settings** to update the name and description. Click **Refresh now** to manually refresh the Dataflow.
 
     ![](../media/lab-05/image8(1).png)
 
-6. After the Refresh is complete, select **Recent runs**.
+6. Once the refresh is complete, click the **ellipsis (...) icon** and select **Recent runs** to view the latest execution details.
 
     ![](../media/lab-05/image9(1).png)
 
@@ -91,7 +88,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
 8. Let's navigate away, by clicking on the **X** on the top right corner.
 
-9. Click on **Settings** to configure the next scheduled refresh for the dataflow.
+9. Click the **ellipsis (...) icon**, then select **Settings** to configure the next scheduled refresh for the Dataflow.
 
     ![](../media/lab-05/image12(1).png)
 
@@ -101,19 +98,17 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
 12. Set **Time** to **09:00**.
 
-13. Click the **Add a time** link. You'll see the **Time** option appear.
+13. Click the **+ Add a time** link. You'll see the **Time** option appear.
 
-14. Select the **Start Date and Time** and **End Date and Time** for the Scheduled Refresh.
+14. Select the **Start date and time** and **End Date and time** for the Scheduled Refresh.
 
-15. Set **Time Zone** to your preferred time zone.
+15. Set **Time zone** to your preferred time zone.
 
     >**Note:** Since this is a lab environment, you can set the time zone to
 your preferred time zone. In a real scenario, you will be setting the
 time zone based on your / data source location.
 
-16. Select **Apply** to save this setting.
-
-    >**Note:** By clicking on Add another time link, you can add multiple refresh times.
+16. Select **Apply** to save this settings.
 
     ![](../media/lab-05/image13(1).png)
 

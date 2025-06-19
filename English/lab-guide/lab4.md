@@ -68,7 +68,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-04/image6.png)
 
-4. From the pop-up window, **Uncheck (1)** the **Enable Git integration, deployment pipelines and Public API scenarios** box and click on **Create (2)**.
+4. From the pop-up window, **Uncheck the Enable Git integration, deployment pipelines and Public API scenarios box (1)** and click on **Create (2)**.
 
     ![](../media/lab-04/image6(1).png)
 
@@ -91,7 +91,7 @@ Query](../media/lab-04/image7.png)
 
 10. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+v to paste.
 
-   ![A screenshot of a computer](../media/lab-04/image8.png)
+    ![A screenshot of a computer](../media/lab-04/image8.png)
 
     >**Note:** If you are working in the lab environment, please select the **ellipsis (...) (1)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard (2)**. Select **OK** in the dialog. Once done pasting the queries, you can disable this option.
 
@@ -99,9 +99,7 @@ Query](../media/lab-04/image7.png)
 
     ![](../media/lab-03/image49.png)
 
-   Notice the query has been pasted and is available in the left panel.
-   Since we do not have a connection created to SharePoint, you will see a
-   warning message requesting you to configure the connection.
+    Notice the query has been pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
    
       ![](../media/lab-04/image10.png)
 
@@ -196,15 +194,15 @@ Now we need to ingest People data into the Lakehouse.
 
 ## Task 5: Copy Snowflake queries to Dataflow
 
-1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
+1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)** you created in Lab 2, Task 2.
 
-2. Select **+ New item (2)** option available in the upper left corner.
+2. Select + **New item (2)** option available in the upper left corner.
 
-3. Under Recommended items, select **Dataflow Gen2 (3)**.
+3. Under the **Get data (3)** section, select **Dataflow Gen2 (4)**.
 
-   ![](../media/lab-04/image21.png)
+    ![](../media/lab-04/image6.png)
 
-4. From the pop-up window, **Uncheck (1)** the **Enable Git integration, deployment pipelines and Public API scenarios** box and click on **Create (2)**.
+4. From the pop-up window, **Uncheck the Enable Git integration, deployment pipelines and Public API scenarios box (1)** and click on **Create (2)**.
 
     ![](../media/lab-04/image6(1).png)
 
