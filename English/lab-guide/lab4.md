@@ -68,24 +68,28 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-04/image6.png)
 
+4. From the pop-up window, **Uncheck (1)** the **Enable Git integration, deployment pipelines and Public API scenarios** box and click on **Create (2)**.
+
+    ![](../media/lab-04/image6(1).png)
+
    You will be navigated to the **Dataflow page**. The Dataflow Gen2
    interface is like Power Query in Power BI Desktop. We can copy queries
    from Power BI Desktop into Dataflow Gen2. Let's give this a try.
 
-4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
+5. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
 
-5. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier labs, queries in the left panel are organized by data source.
+6. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier labs, queries in the left panel are organized by data source.
 
-6. From the left panel, under the SharepointData folder, select the **People** query.
+7. From the left panel, under the SharepointData folder, select the **People** query.
 
-7. **Right click** and select **Copy**.
+8. **Right click** and select **Copy**.
 
    ![A screenshot of Queries in Power
 Query](../media/lab-04/image7.png)
 
-8. Navigate back to the **Dataflow screen** in the browser.
+9. Navigate back to the **Dataflow screen** in the browser.
 
-9. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+v to paste.
+10. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+v to paste.
 
    ![A screenshot of a computer](../media/lab-04/image8.png)
 
@@ -166,7 +170,7 @@ Now we need to ingest People data into the Lakehouse.
 
    >**Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace. It may take a few moments for the Dataflow to publish.
 
-3. **Dataflow 1** is the dataflow we were working on. Let's rename it before we continue. Click on the **ellipsis (...)** next to Dataflow 1. Select **Properties** (While the Dataflow is running, you cannot access the properties).
+3. **Dataflow 1** is the dataflow we were working on. Let's rename it before we continue. Click on the **ellipsis (...)** next to Dataflow 1. Select **Settings** (While the Dataflow is running, you cannot access the properties).
 
    ![](../media/lab-04/image18.png)
 
@@ -200,15 +204,19 @@ Now we need to ingest People data into the Lakehouse.
 
    ![](../media/lab-04/image21.png)
 
+4. From the pop-up window, **Uncheck (1)** the **Enable Git integration, deployment pipelines and Public API scenarios** box and click on **Create (2)**.
+
+    ![](../media/lab-04/image6(1).png)
+
    You will be navigated to the **Dataflow page**. Now that we are familiar
    with Dataflow, let's go ahead and copy the queries from Power BI Desktop
    into Dataflow.
 
-4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
+5. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
 
-5. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+6. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 
-6. From the left panel, under the **SnowflakeData** folder **Ctrl+Select** or Shift+Select the following queries:
+7. From the left panel, under the **SnowflakeData** folder **Ctrl+Select** or Shift+Select the following queries:
 
    a. SupplierCategories
 
@@ -220,13 +228,13 @@ Now we need to ingest People data into the Lakehouse.
 
    e. PO Line Items
 
-7. **Right click** and select **Copy**.
+8. **Right click** and select **Copy**.
 
    ![](../media/lab-04/image22.png)
 
-8. Navigate back to the **browser**.
+9. Navigate back to the **browser**.
 
-9. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+v to paste.
+10. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+v to paste.
 
     >**Note:** If you are working in the lab environment, please select the **ellipsis (...) (1)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard (2)**. Select **OK** in the dialog. Once done pasting the queries, you can disable this option.
 

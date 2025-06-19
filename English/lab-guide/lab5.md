@@ -68,74 +68,54 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
     ![](../media/lab-05/image7.png)
 
-4. Hover over the **df_Supplier_Snowflake** row. Notice that the
-    familiar **Refresh** and **Schedule Refresh icons** are available.
+4. Hover over the **df_Supplier_Snowflake** row.
     Select the **ellipsis (...)**.
 
-5. Notice there is an option to Delete, Edit, and Export the Dataflow. We
-    can use Properties to update the name and description of the
-    Dataflow. We will look at Refresh history shortly. Select
-    **Settings**.
+5. Notice there is an option to Delete and Edit the Dataflow. We can use Settings to update the name and description of the Dataflow. Select **Refresh now** to refresh the Dataflow.
 
-    ![](../media/lab-05/image8.png)
+    ![](../media/lab-05/image8(1).png)
 
-    >**Note:** Settings page opens. In the left panel, you will find all the Dataflows listed.
+6. After the Refresh is complete, select **Recent runs**.
 
-6. In the center pane, select **Refresh history** link.
+    ![](../media/lab-05/image9(1).png)
 
-    ![](../media/lab-05/image9.png)
-
-7. Refresh history dialog opens. You will have a refresh listed. This
-    is the refresh which occurred when the dataflow was published.
-    Select the **Start time** link.
+7. The Recent Run dialog will appear, displaying all the refresh activities. These include the refresh that happened when the Dataflow was published. Click on the **Start time** link to view details.
 
     >**Note:** Start time will be different for you.
 
-    ![](../media/lab-05/image10.png)
+    ![](../media/lab-05/image10(1).png)
 
     Details screen will open. This will provide details of the refresh, it lists the start, end time, and duration. It also lists the tables / activities that were refreshed. In case there is a failure, you can click on the name of the table / activity to investigate further.
 
-    ![](../media/lab-05/image11.png)
+    ![](../media/lab-05/image11(1).png)
 
-8. Let's navigate away, by clicking on the **X** on the top right corner. You will be navigated back to the **dataflow settings page**.
+8. Let's navigate away, by clicking on the **X** on the top right corner.
 
-9. Under Gateway connection, expand **Data source credentials**. A list
-    of connections used in the dataflow is displayed. In this case,
-    Lakehouse and Snowflake.
+9. Click on **Settings** to configure the next scheduled refresh for the dataflow.
 
-    a. **Lakehouse:** This is the connection to ingest data from Dataflow.
+    ![](../media/lab-05/image12(1).png)
 
-    b. **Snowflake:** This is the connection to the Snowflake source data.
+10. Go to **Schedule** and set **Schedule** **Refresh**  to **On**.
 
-    ![](../media/lab-05/image12.png)
+11. Set **Repeat** **dropdown** to **Daily**. Notice there is an option to set it to Weekly as well.
 
-10. Expand **Refresh**.
+12. Set **Time** to **09:00**.
 
-11. Set **Time Zone** to your preferred time zone.
+13. Click the **Add a time** link. You'll see the **Time** option appear.
+
+14. Select the **Start Date and Time** and **End Date and Time** for the Scheduled Refresh.
+
+15. Set **Time Zone** to your preferred time zone.
 
     >**Note:** Since this is a lab environment, you can set the time zone to
 your preferred time zone. In a real scenario, you will be setting the
 time zone based on your / data source location.
 
-12. Set **Configure a refresh** **schedule** slider to **On**.
-
-13. Set **Refresh frequency** **dropdown** to **Daily**. Notice there is
-    an option to set it to Weekly as well.
-
-14. Click **Add another time** link. Notice **Time** option is
-    displayed.
-
-15. Set **Time** to **midnight / 12 AM**. Notice that you can set
-    refresh on the top of the hour or half hour.
-
 16. Select **Apply** to save this setting.
 
     >**Note:** By clicking on Add another time link, you can add multiple refresh times.
 
-    You can also send failure notifications to the dataflow owner and other
-contacts.
-
-    ![](../media/lab-05/image13.png)
+    ![](../media/lab-05/image13(1).png)
 
 As mentioned earlier, we need to build custom logic to handle the
 scenario where the Employee file in SharePoint is not delivered on time.
