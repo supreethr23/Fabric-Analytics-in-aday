@@ -64,7 +64,7 @@ By the end of this lab, you will have learned:
 
 2. Select + **New item (2)** option available in the upper left corner.
 
-3. Under the **Get Data (3)** section, select **Dataflow Gen2 (4)**.
+3. Under the **Get data (3)** section, select **Dataflow Gen2 (4)**.
 
     ![](../media/lab-04/image6.png)
 
