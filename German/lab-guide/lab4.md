@@ -63,6 +63,10 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     ![](../media/lab-04/image6.png)
 
+1. Deaktivieren Sie im Popup-Fenster das Kontrollkästchen **Git-Integration, Bereitstellungspipelines und öffentliche API-Szenarien aktivieren (1)** und klicken Sie auf **Erstellen (2)**.
+
+   ![](../media/lab-04/Lab-4-German.png)
+
     Sie werden zur **Dataflow-Seite** weitergeleitet. Die Dataflow
     Gen2-Schnittstelle ähnelt der von Power Query in Power BI Desktop. Wir
     können Abfragen von Power BI Desktop nach Dataflow Gen2 kopieren. Lassen
@@ -236,6 +240,10 @@ incorrect.](../media/lab-04/image19.png)
 
     ![](../media/lab-04/image20.png)
 
+1. Deaktivieren Sie im Popup-Fenster das Kontrollkästchen **Git-Integration, Bereitstellungspipelines und öffentliche API-Szenarien aktivieren (1)** und klicken Sie auf **Erstellen (2)**.
+
+   ![](../media/lab-04/Lab-4-German.png)
+   
     Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow
     nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 

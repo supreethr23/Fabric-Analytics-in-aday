@@ -60,6 +60,10 @@ Ao final deste laboratório, você terá aprendido:
 
     ![](../media/lab-04/image6.png)
 
+1. Na janela pop-up, **desmarque a caixa Habilitar integração com Git, pipelines de implantação e cenários de API pública (1)** e clique em **Criar (2)**.
+
+     ![](../media/lab-04/Lab-4-Portuguese.png)
+
      Você será direcionado para a **página do Fluxo de Dados**. A interface
 do Fluxo de dados Gen2 é igual a do Power Query no Power BI Desktop.
 Podemos copiar consultas do Power BI Desktop para o Fluxo de dados Gen2.
@@ -218,6 +222,10 @@ tabelas.
 3. Em Itens recomendados, selecione **Fluxo de dados Gen2 (3)**.
 
     ![](../media/lab-04/image20.png)
+
+1. Na janela pop-up, **desmarque a caixa Habilitar integração com Git, pipelines de implantação e cenários de API pública (1)** e clique em **Criar (2)**.
+
+     ![](../media/lab-04/Lab-4-Portuguese.png)
 
      Você será direcionado para a **página do Fluxo de Dados**. Agora que
 estamos familiarizados com o Fluxo de Dados, vamos continuar e copiar as
