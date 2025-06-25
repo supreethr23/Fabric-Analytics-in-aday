@@ -62,6 +62,10 @@ In questo lab si apprenderà quanto segue:
 
    ![](../media/lab-04/image6.png)
 
+1. Nella finestra pop-up, **deseleziona la casella Abilita integrazione Git, pipeline di distribuzione e scenari API pubbliche (1)** e fai clic su **Crea (2)**.
+
+   ![](../media/lab-04/Lab-4-Italian.png)
+
    Verrà visualizzata la pagina **Flusso di dati**. L'interfaccia di
 Flusso di dati Gen2 è simile a Power Query in Power BI Desktop. Possiamo
 copiare le query da Power BI Desktop a Flusso di dati Gen2. Proviamo.
@@ -226,6 +230,10 @@ aggiornare le tabelle.
 
     ![](../media/lab-04/image20.png)
 
+1. Nella finestra pop-up, **deseleziona la casella Abilita integrazione Git, pipeline di distribuzione e scenari API pubbliche (1)** e fai clic su **Crea (2)**.
+
+   ![](../media/lab-04/Lab-4-Italian.png)
+   
     Verrà visualizzata la pagina **Flusso di dati**. Ora che abbiamo
 familiarità con Flusso di dati, procediamo con la copia delle query da
 Power BI Desktop a Flusso di dati.

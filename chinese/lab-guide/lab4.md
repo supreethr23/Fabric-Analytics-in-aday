@@ -60,6 +60,10 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
    ![](../media/lab-04/image6.png)
 
+1. 在弹出窗口中，**取消勾选“启用 Git 集成、部署流水线和公共 API 场景”复选框 (1)**，然后点击 **“创建” (2)**。
+
+   ![](../media/lab-04/Lab-4-Chinese.png)
+
    系统会将您导航到**数据流页面** 。数据流 Gen2 界面类似于 Power BI Desktop 中的 Power Query。我们可以将 Power BI Desktop 中的查询复制到数据流 Gen2 中。让我们试一下此方法。
 
 4. 如果您尚未打开 **FAIAD.pbix**，请打开它。它位于您的实验室环境的桌面的 **Reports** 文件夹中。
@@ -179,6 +183,10 @@ People 数据引入到湖屋中。
 
    ![](../media/lab-04/image20.png)
 
+1. 在弹出窗口中，**取消勾选“启用 Git 集成、部署流水线和公共 API 场景”复选框 (1)**，然后点击 **“创建” (2)**。
+
+   ![](../media/lab-04/Lab-4-Chinese.png)
+   
    系统会将您导航到**数据流页面** 。现在我们已经熟悉了数据流，我们接下来从
    Power BI
    Desktop 复制查询到数据流。

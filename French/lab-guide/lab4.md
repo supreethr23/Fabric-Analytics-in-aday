@@ -61,6 +61,10 @@ l'équipe informatique Lakehouse a créée(s).
 
     ![](../media/lab-04/image6.png)
 
+4. Dans la fenêtre contextuelle, **décochez la case Activer l'intégration Git, les pipelines de déploiement et les scénarios d'API publique (1)**, puis cliquez sur **Créer (2)**.
+
+   ![](../media/lab-04/Lab-4-French.png)
+
     Vous êtes alors redirigé vers la **page Dataflow**. L'interface
     Dataflow Gen2 ressemble à celle de Power Query dans Power BI Desktop.
     Nous pouvons copier des requêtes depuis Power BI Desktop
@@ -235,6 +239,10 @@ Lakehouse.
 
     ![](../media/lab-04/image20.png)
 
+1. Dans la fenêtre contextuelle, **décochez la case Activer l'intégration Git, les pipelines de déploiement et les scénarios d'API publique (1)**, puis cliquez sur **Créer (2)**.
+
+   ![](../media/lab-04/Lab-4-French.png)
+   
     Vous êtes alors redirigé vers la **page Dataflow**. Maintenant que nous
     connaissons Dataflow, copions les requêtes de Power BI Desktop dans
     Dataflow.

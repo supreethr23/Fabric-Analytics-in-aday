@@ -62,6 +62,10 @@ Al final de este laboratorio, habrá aprendido:
 
     ![](../media/lab-04/image6.png)
 
+1. En la ventana emergente, **desmarca la casilla Habilitar integración con Git, canalizaciones de implementación y escenarios de API pública (1)** y haz clic en **Crear (2)**.
+
+    ![](../media/lab-04/Lab-4-Spanish.png)
+
     Se le dirigirá de vuelta a la **página de del flujo de datos**. La
     interfaz Flujo de datos Gen2 es como Power Query en Power BI Desktop.
     Podemos copiar consultas desde el flujo de datos Gen2 de
@@ -229,6 +233,10 @@ almacén de lago de datos.
 
     ![](../media/lab-04/image20.png)
 
+1. En la ventana emergente, **desmarca la casilla Habilitar integración con Git, canalizaciones de implementación y escenarios de API pública (1)** y haz clic en **Crear (2)**.
+
+    ![](../media/lab-04/Lab-4-Spanish.png)
+    
     Se le dirigirá de vuelta a la **página de del flujo de datos**. Ahora
     que estamos familiarizados con el flujo de datos, sigamos adelante y
     copiemos las consultas de Power BI Desktop en el flujo de datos.
