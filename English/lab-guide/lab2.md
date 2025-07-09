@@ -9,7 +9,7 @@
 - Fabric License
 
    - Task 1: Enable a Microsoft Fabric trial license
-
+   
 - Fabric Workspace
 
    - Task 2: Create a Fabric Workspace
@@ -125,13 +125,13 @@ By the end of this lab, you will have learned:
 
 6. Click on **Advanced** to expand the section.
 
-   ![A screenshot of a computer](../media/lab-02/image14.png)
+   ![A screenshot of a computer](../media/lab-02/image14(1)upd.png)
 
 7. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
 
 8. Select **Apply** to create a new workspace.
 
-    ![](../media/lab-02/image15.png)
+    ![](../media/lab-02/image15-upd.png)
 
     A new workspace has been created, and you will be able to navigate into
     this workspace. We will bring data from the different data sources into
@@ -154,7 +154,7 @@ By the end of this lab, you will have learned:
 
 4. Select **Create**.
 
-   ![](../media/lab-02/image17.png)
+   ![](../media/lab-02/image17-upd.png)
 
     Within a few moments, a Lakehouse is created, and you will be navigated
     to the Lakehouse interface. On the left panel, notice that below your

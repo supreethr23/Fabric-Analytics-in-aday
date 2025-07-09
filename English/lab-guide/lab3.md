@@ -64,7 +64,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
 4. Select **New shortcut (4)**.
 
-   ![](../media/lab-03/image6.png)
+   ![](../media/lab-03/image6(5)upd.png)
 
 5. **New shortcut** dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**.
 

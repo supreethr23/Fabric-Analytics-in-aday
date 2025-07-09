@@ -60,13 +60,13 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 2. To maximize the panel with the list of artifacts, select the double
     arrow on the top right of the panel.
 
-    ![](../media/lab-05/image6.png)
+    ![](../media/lab-05/image6upd.png)
 
 3. All the artifacts you have created are listed here. On the right of
     the screen, in the **Search box**, enter **df**. This will filter the
     artifacts to Dataflows.
 
-    ![](../media/lab-05/image7.png)
+    ![](../media/lab-05/image7upd.png)
 
 4. Hover over the **df_Supplier_Snowflake** row. Notice that the
     familiar **Refresh** and **Schedule Refresh icons** are available.
@@ -77,7 +77,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
     Dataflow. We will look at Refresh history shortly. Select
     **Settings**.
 
-    ![](../media/lab-05/image8.png)
+    ![](../media/lab-05/image8upd.png)
 
     >**Note:** Settings page opens. In the left panel, you will find all the Dataflows listed.
 
@@ -155,7 +155,7 @@ Let's use Data Pipeline to solve this.
 3. A new pipeline dialog opens. Name the pipeline as
     **pl_Refresh_People_SharePoint** **(3)** and select **Create** **(4)**.
 
-    ![](../media/lab-05/image15.png)
+    ![](../media/lab-05/image15-upd(1).png)
 
     You are navigated to the **Data Pipeline page**. If you have worked with Azure Data Factory, this screen will be familiar. Let's get a quick overview of the layout.
 
@@ -260,13 +260,13 @@ new Data Pipeline.
 
 2. From the top menu, click **+ New item (1)** and from the popout window, click **Data pipeline (2)**.
 
-    ![](../media/lab-05/image21.png)
+    ![](../media/lab-05/image21upd.png)
 
 3. New pipeline dialog opens. **Name** the pipeline as
     **pl_Refresh_People_SharePoint_Option2 (3),** and select **Create
     (4)**.
 
-    ![](../media/lab-05/image22.png)
+    ![](../media/lab-05/image22-upd(1).png)
 
 ## Task 5: Create Until Activity
 
