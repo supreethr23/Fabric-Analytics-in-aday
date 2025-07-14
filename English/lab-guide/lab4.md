@@ -66,7 +66,7 @@ By the end of this lab, you will have learned:
 
 3. Under the **Get data (3)** section, select **Dataflow Gen2 (4)**.
 
-    ![](../media/lab-04/image6.png)
+    ![](../media/lab-04/image6(3)upd.png)
 
 4. From the pop-up window, **Uncheck the Enable Git integration, deployment pipelines and Public API scenarios box (1)** and click on **Create (2)**.
 
@@ -118,7 +118,7 @@ Query](../media/lab-04/image7.png)
    >**Note:** You will be signed in using your credentials. They will be
    different from the screenshot below.
 
-   ![](../media/lab-04/image12.png)
+   ![](../media/lab-04/image12upd.png)
 
 ## Task 3: Configure Data destination for People query
 
@@ -134,7 +134,7 @@ Now we need to ingest People data into the Lakehouse.
 
 3. Connect to data destination dialog opens. We need to create a new Connection to the Lakehouse. With **Create new connection** selected in the Connection dropdown and **Authentication kind** set to **Organizational account**, select **Next**.
 
-   ![](../media/lab-04/image14.png)
+   ![](../media/lab-04/image14upd.png)
 
 4. Choose destination target dialog opens. Make sure the **New table (1)** radio button is selected, since we are creating a new table.
 
@@ -200,7 +200,7 @@ Now we need to ingest People data into the Lakehouse.
 
 3. Under the **Get data (3)** section, select **Dataflow Gen2 (4)**.
 
-    ![](../media/lab-04/image6.png)
+    ![](../media/lab-04/image6(3)upd.png)
 
 4. From the pop-up window, **Uncheck the Enable Git integration, deployment pipelines and Public API scenarios box (1)** and click on **Create (2)**.
 
@@ -372,11 +372,11 @@ Lakehouse view (not SQL analytics endpoint).
 
 6. Select **Sign in** if you are not already logged in.
 
-   ![](../media/lab-04/image37.png)
+   ![](../media/lab-04/image37-upd.png)
 
 7. From the sign in dialog box, select the **user account** you have been using for these labs. **Note:** Your account will be different from the screenshot below.
 
-   ![](../media/lab-04/image38.png)
+   ![](../media/lab-04/image38-upd.png)
 
 8. Select **Next** in Connection settings dialog.
 

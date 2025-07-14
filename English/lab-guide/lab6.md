@@ -36,7 +36,7 @@ By the end of this lab, you will have learned:
 
 3. You will see three elements associated with the lh_FAIAD -- Lakehouse, Semantic model and SQL endpoint. We explored the Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select the **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
-    ![](../media/lab-06/image6.png)
+    ![](../media/lab-06/image6(1)upd.png)
 
     If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let's explore this.
 
@@ -104,7 +104,7 @@ incorrect.](../media/lab-06/image9.png)
 10. Select **Save**.
 
     ![A screenshot of a computer Description automatically
-generated](../media/lab-06/image12.png)
+generated](../media/lab-06/image12(1)upd.png)
 
     You will be navigated to back to the SQL query screen.
 
@@ -136,7 +136,7 @@ generated](../media/lab-06/image12.png)
 
 7. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
 
-    ![](../media/lab-06/image16.png)
+    ![](../media/lab-06/image16upd.png)
 
 8. **Select** the following tables/views:
 

@@ -47,7 +47,7 @@ lab, we will re-create the report we have in Power BI.
 
 2. From the bottom of the left panel select **Fabric experience selector** icon.
 
-    ![](../media/lab-07/image6.png)
+    ![](../media/lab-07/image6(2)upd.png)
 
 3. Fabric experience dialog opens. Select **Power BI**. You will be navigated to **Power BI Home page**.
 
@@ -59,7 +59,7 @@ lab, we will re-create the report we have in Power BI.
 
 5. You will be navigated to **Build your first report screen**. There will be options to build a report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs, so let's use that. Select **Pick a published semantic model** option.
 
-    ![](../media/lab-07/image9.png)
+    ![](../media/lab-07/image9upd.png)
 
 6. Pick a dataset to use in your report when the page opens. Notice we have multiple options. **Select sm_FAIAD**.
 
@@ -79,7 +79,7 @@ lab, we will re-create the report we have in Power BI.
     ready, a dialog appears on the top right of the screen. Select
     **View report now or it will autoload in a few seconds**.
 
-    ![](../media/lab-07/image11.png)
+    ![](../media/lab-07/image11upd.png)
 
     >**Checkpoint:** You will have a report which looks like the screenshot
     below. There are a few KPIs and some trend visuals. This is a good start
@@ -125,7 +125,7 @@ Let's create a new report using a blank canvas.
 3. Select **Pick a published semantic model,** so we can pick the model
     we have created.
 
-    ![](../media/lab-07/image15.png)
+    ![](../media/lab-07/image15upd.png)
 
 4. Pick a semantic model to use in your report dialog opens. Select
     **sm_FAIAD**.
@@ -134,7 +134,7 @@ Let's create a new report using a blank canvas.
     **Create a blank report**. You will be navigated to a report page
     which looks like the Power BI Desktop report page.
 
-    ![](../media/lab-07/image16.png)
+    ![](../media/lab-07/image16(1)upd.png)
 
 6. If you have not already opened it, open the **FAIAD.pbix** located
     **Reports** folder on the **desktop** of your lab environment.
@@ -291,7 +291,7 @@ changes to the model.
 4. Select **Save (3)**. Notice that the report is saved, and you are in view
     mode.
 
-    ![](../media/lab-07/21042025(19).png)
+    ![](../media/lab-07/21042025(19)upd.png)
 
 ## Task 7: Configure Year column in Date table
 
@@ -449,7 +449,7 @@ model and build visuals.
 4. Select **Connect**. Notice in the Data pane, we have the tables from
     the semantic model.
 
-    ![](../media/lab-07/image38.png)
+    ![](../media/lab-07/image38(1)upd.png)
 
 5. From the **left panel**, select **Model view**. Notice we can view
     the relationship between tables.
@@ -534,7 +534,7 @@ the May 2024 file in ADLS Gen2 and updating the Sales view.
 
 3. Select **lh_FAIAD** to navigate into the Lakehouse.
 
-    ![](../media/lab-07/image45.png)
+    ![](../media/lab-07/image45upd.png)
 
 4. From the **Explorer pane** on the left, select the **ellipsis (...)** next
     to **Tables**.
@@ -802,7 +802,7 @@ Once you are ready to clean up the lab environment, follow the steps below.
 
 2. From the top menu, select **Workspace settings**.
 
-    ![](../media/lab-07/image54.png)
+    ![](../media/lab-07/image54upd.png)
 
 3. Workspace settings dialog opens. In **General** section, scroll
     down.
