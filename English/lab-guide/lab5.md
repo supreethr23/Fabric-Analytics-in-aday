@@ -511,7 +511,7 @@ activity based on the result of the activity:
 
 10. Pipeline expression builder dialog opens. Select the **Add dynamic content below using any combination of expressions, functions, and system variables text area (1)**.
 
-11. From the bottom menu, click on the **elipses(...) (2)** select **Variables (3) -> varSuccess (4)**. Notice **@variables('varSuccess')** is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So, we are assigning the value of Yes to the varIsSuccess variable.
+11. From the bottom menu, click on the **ellipsis(...) (2)** select **Variables (3) -> varSuccess (4)**. Notice **@variables('varSuccess')** is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So, we are assigning the value of Yes to the varIsSuccess variable.
 
 12. Select **OK**. You will be navigated back to the **iterator design pane**.
 

@@ -60,7 +60,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
 2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away, that is fine. Select **lh_FAIAD** (**2)** to navigate to the Lakehouse.
 
-3. In the **Explorer** panel, select the **ellipsis (3)** next to **Tables**.
+3. In the **Explorer** panel, select the **ellipsis (...) (3)** next to **Tables**.
 
 4. Select **New shortcut (4)**.
 
@@ -179,7 +179,7 @@ model. We are going to create views to transform the data.
 
     ![](../media/lab-03/image14.png)
 
-3. To start building the query, add tables to the **Visual Query** panel. Navigate to **Schemas -> dbo -> Tables**, then click the ellipsis (three dots) next to the **Cities (1)** table and choose **Insert into canvas (2)**.
+3. To start building the query, add tables to the **Visual Query** panel. Navigate to **Schemas -> dbo -> Tables**, then click the **ellipsis** (three dots) next to the **Cities (1)** table and choose **Insert into canvas (2)**.
 
    ![](../media/lab-03/image15.png)
 
@@ -343,7 +343,7 @@ using Visual query without opening the Power Query option.
 
 1. From the top menu, click the drop down next to **New SQL query (1)** and then select **New visual query (2)**.
 
-2. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **BuyingGroups (1)** table and select **Insert into canvas (2)**.
+2. To build a query, we need to add tables to the Visual Query panel. Click on the **ellipsis (...)** next to the **BuyingGroups (1)** table and select **Insert into canvas (2)**.
 
    ![](../media/lab-03/image29.png)
 
@@ -463,11 +463,11 @@ give this method a try.
 
     ![](../media/lab-03/image40.png)
 
-2. From the **Explorer -> Table** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **InvoiceLineItems** table and select **Insert into canvas**.
+2. From the **Explorer -> Table** section, we need to add tables to the Visual Query panel. Click on the **ellipsis** next to the **InvoiceLineItems** table and select **Insert into canvas**.
 
 3. Repeat the same steps for the **Invoices**.
 
-4. From the **Explorer -> Views** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Reseller** table and select **Insert into canvas**.
+4. From the **Explorer -> Views** section, we need to add tables to the Visual Query panel. Click on the **ellipsis** next to the **Reseller** table and select **Insert into canvas**.
 
 5. From the Visual query editor, select the **Open in popup** to open Power Query editor.
 
@@ -591,7 +591,7 @@ move things along, we are going to copy code into Advanced Editor.
 
    ![](../media/lab-03/image54.png)
 
-2. From Explorer section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **ProductItem (1)** table and select **Insert into canvas (2)**.
+2. From Explorer section, we need to add tables to the Visual Query panel. Click on the **ellipsis** next to the **ProductItem (1)** table and select **Insert into canvas (2)**.
 
    ![](../media/lab-03/image55.png)
 
