@@ -177,9 +177,9 @@ lake mode.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](../media/lab-06/image18.png)
 
-2. Click on **Open data model**.
+2. Click on **Open semantic model**.
 
-    ![](../media/lab-06/image19.png)
+    ![](../media/lab-06/t4p2.png)
 
 3. In the upper-right corner make sure that you are in **Editing** mode.
     

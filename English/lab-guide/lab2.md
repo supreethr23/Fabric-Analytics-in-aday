@@ -307,6 +307,8 @@ By the end of this lab, you will have learned:
     e. **Activator:** Used to monitor datasets, queries, and event streams
     for patterns.
 
+    f. **Digital Twin Builder (preview):** Used to create and manage digital models of real-world systems for monitoring, simulation, and optimization using real-time data.
+
     **Get Started:**
 
     To start using Real-Time Intelligence, follow these steps:
@@ -334,7 +336,7 @@ By the end of this lab, you will have learned:
     g. **Get Started with Activator:** Click on the "Open" button to get
     started with activator concepts and began using the tool effectively.
 
-    ![](../media/lab-02/image25.png)
+    ![](../media/lab-02/rtiupdated.png)
 
 3. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
@@ -508,13 +510,15 @@ By the end of this lab, you will have learned:
 
     g. **Mirrored Azure Cosmos DB:** Used to mirror Azure Cosmos DB.
 
-    h. **Mirrored Azure Database for PostgreSQL (preview):** Used to mirror
+    h. **Mirrored SQL Server (preview):** Used to mirror your existing SQL Server or Azure SQL Database into Microsoft Fabric for real-time analytics.
+
+    i. **Mirrored Azure Database for PostgreSQL (preview):** Used to mirror
     your existing Azure Database for PostgreSQL
 
-    i. **Mirrored Azure SQL Managed Database:** Used to mirror Azure SQL
+    j. **Mirrored Azure SQL Managed Database:** Used to mirror Azure SQL
     Managed Databases for high availability and disaster recovery.
 
-    j. **Mirrored Database (preview):** Used to replicate databases for
+    k. **Mirrored Database (preview):** Used to replicate databases for
     high availability and disaster recovery.
 
     **Get Started:** 
@@ -527,7 +531,7 @@ By the end of this lab, you will have learned:
     b. **Get Started with Warehouse:** Click on the "Open" button to
     learn how to use a warehouse to analyze data.
 
-    ![](../media/lab-02/image31.png)
+    ![](../media/lab-02/datawhupdated.png)
 
 3. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
 
@@ -549,6 +553,8 @@ By the end of this lab, you will have learned:
 
     a. **SQL database (preview):** SQL database in Fabric is part of the Database workload, and the data is accessible from other items in Fabric. Your SQL database data is also kept up-to-date in a queryable format in OneLake, so you can use all the different services in Fabric, such as running analytics with Spark, executing notebooks, data engineering, visualizing through Power BI Reports, and more.
 
+    b. **Cosmos DB (preview):** Cosmos DB in Fabric allows you to mirror your existing Azure Cosmos DB data into Microsoft Fabric, making it instantly available for analytics. The mirrored data is stored in OneLake in a Delta-Parquet format, enabling seamless integration with Fabric workloads. This means you can analyze your operational NoSQL data using T-SQL, build reports in Power BI, run advanced analytics using Spark, or use notebooks for data exploration, all without moving or duplicating data manually. It bridges the gap between operational and analytical data in real-time.
+
     **Get Started:**
 
     To start using Databases, follow the steps below:
@@ -562,7 +568,7 @@ By the end of this lab, you will have learned:
     c. **Database templates:** look through a library of pre-created
     templates of common database designs
 
-    ![A screenshot of a computer](../media/lab-02/image33.png)
+    ![A screenshot of a computer](../media/lab-02/dbupdated.png)
 
 4. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
 

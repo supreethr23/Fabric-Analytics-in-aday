@@ -214,7 +214,7 @@ Now we need to ingest People data into the Lakehouse.
 
 6. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 
-7. From the left panel, under the **SnowflakeData** folder **Ctrl+Select** or Shift+Select the following queries:
+7. From the left panel, under the **SnowflakeData** folder **Ctrl+Select** or **Shift+Select** the following queries:
 
    a. SupplierCategories
 
@@ -232,7 +232,7 @@ Now we need to ingest People data into the Lakehouse.
 
 9. Navigate back to the **browser**.
 
-10. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+v to paste.
+10. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use **Cmd+v** to paste.
 
     >**Note:** If you are working in the lab environment, please select the **ellipsis (...) (1)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard (2)**. Select **OK** in the dialog. Once done pasting the queries, you can disable this option.
 
@@ -341,7 +341,7 @@ settings](../media/lab-04/image29.png)
    ![](../media/lab-04/image33.png)
 
    >**Note:** If you do not see the newly created tables, select the
-   ellipsis next to Tables and select refresh to refresh the Tables.
+   **ellipsis (...)** next to Tables and select refresh to refresh the Tables.
 
    Now let's create a shortcut to bring in data from Dataverse.
 
@@ -401,7 +401,7 @@ Lakehouse view (not SQL analytics endpoint).
 
 ## Task 10: Create a Shortcut to a Lakehouse
 
-1. In **Explorer** panel, select the **ellipsis** next to **Tables**.
+1. In **Explorer** panel, select the **ellipsis (...)** next to **Tables**.
 
 2. Select **New Shortcut**.
 

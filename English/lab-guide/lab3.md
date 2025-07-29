@@ -84,7 +84,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
 11. Select **Next (6)** on the bottom right of the screen.
 
-    ![](../media/lab-03/image8.png)
+    ![](../media/lab-03/t1p11.png)
 
 12. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25 (1)**.
 
@@ -179,7 +179,7 @@ model. We are going to create views to transform the data.
 
     ![](../media/lab-03/image14.png)
 
-3. To start building the query, add tables to the **Visual Query** panel. Navigate to **Schemas -> dbo -> Tables**, then click the **ellipsis** (three dots) next to the **Cities (1)** table and choose **Insert into canvas (2)**.
+3. To start building the query, add tables to the **Visual Query** panel. Navigate to **Schemas -> dbo -> Tables**, then click the **ellipsis (...)** next to the **Cities (1)** table and choose **Insert into canvas (2)**.
 
    ![](../media/lab-03/image15.png)
 
@@ -273,11 +273,11 @@ model. We are going to create views to transform the data.
     We do not need all the columns in the **Merge** table. Make sure to only
     select those that we need.
 
-23. With **Merge (1)** query selected, from the ribbon select **Home (2) -> Choose columns (3) -> Choose columns (4)**.
+23. With **Merge (1)** query selected, from the ribbon select **Home (2) -> Manage columns (3) -> Choose columns (4) -> Choose columns (5)**.
 
     >**Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
-    ![](../media/lab-03/21042025(8)(1).png)
+    ![](../media/lab-03/t2p23.png)
 
 24. Choose columns dialog opens. **Uncheck** the following columns.
 
@@ -463,11 +463,11 @@ give this method a try.
 
     ![](../media/lab-03/image40.png)
 
-2. From the **Explorer -> Table** section, we need to add tables to the Visual Query panel. Click on the **ellipsis** next to the **InvoiceLineItems** table and select **Insert into canvas**.
+2. From the **Explorer -> Table** section, we need to add tables to the Visual Query panel. Click on the **ellipsis (...)** next to the **InvoiceLineItems** table and select **Insert into canvas**.
 
 3. Repeat the same steps for the **Invoices**.
 
-4. From the **Explorer -> Views** section, we need to add tables to the Visual Query panel. Click on the **ellipsis** next to the **Reseller** table and select **Insert into canvas**.
+4. From the **Explorer -> Views** section, we need to add tables to the Visual Query panel. Click on the **ellipsis (...)** next to the **Reseller** table and select **Insert into canvas**.
 
 5. From the Visual query editor, select the **Open in popup** to open Power Query editor.
 
@@ -591,7 +591,7 @@ move things along, we are going to copy code into Advanced Editor.
 
    ![](../media/lab-03/image54.png)
 
-2. From Explorer section, we need to add tables to the Visual Query panel. Click on the **ellipsis** next to the **ProductItem (1)** table and select **Insert into canvas (2)**.
+2. From Explorer section, we need to add tables to the Visual Query panel. Click on the **ellipsis (...)** next to the **ProductItem (1)** table and select **Insert into canvas (2)**.
 
    ![](../media/lab-03/image55.png)
 
