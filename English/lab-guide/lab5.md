@@ -86,7 +86,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
     ![](../media/lab-05/image9.png)
 
 7. Refresh history dialog opens. You will have a refresh listed. This
-    is the refresh which occurred when the dataflow was published.
+    is the refresh that occurred when the dataflow was published.
     Select the **Start time** link.
 
     >**Note:** Start time will be different for you.
@@ -166,7 +166,7 @@ Let's use Data Pipeline to solve this.
 4. From the top menu select **Activities**. Now in the menu you will
     find a list of commonly used Activities.
 
-5. Select the **ellipsis (...)** on the right on the menu to view all
+5. Select the **ellipsis (...)** on the right of the menu to view all
     the other available Activities. We are going to use a few of these
     Activities in the lab.
 
@@ -487,9 +487,9 @@ Yes.
     >**Note:** Hover over **Dataflow activity**. To the right of the activity box, there are four icons. These can be used to connect to the next
 activity based on the result of the activity:
 
-    a. **Grey curved arrow** icon is used on skip the activity.
+    a. **Grey curved arrow** icon is used to skip the activity.
 
-    b. **Green check mark** icon is used on success of the activity.
+    b. **Green check mark** icon is used for the success of the activity.
 
     c. **Red x-mark** icon is used on failure of the activity.
 
@@ -571,7 +571,7 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 
 9. In the **Value** field, select the **text box**. Select **Add dynamic content** link.
 
-10. Pipeline expression builder dialog opens. Enter **@variables('varTempCounter')**. Feel free to type this expression in, or use the menu to select the functions, or copy and paste it in.
+10. Pipeline expression builder dialog opens. Enter **@variables('varTempCounter')**. Feel free to type this expression in, or use the menu to select the functions, or copy and paste it.
 
 11. Click on **OK**.
 
@@ -770,7 +770,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,
