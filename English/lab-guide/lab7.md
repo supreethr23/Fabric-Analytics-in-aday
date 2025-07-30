@@ -65,7 +65,7 @@ lab, we will re-create the report we have in Power BI.
 
     a. **sm_FAIAD:** This is the semantic model we have created and want to use to build the report.
 
-    b. **lh_FAIAD:** This is the lakehouse where we ingested all the data into.
+    b. **lh_FAIAD:** This is the lakehouse where we ingested all the data.
 
     c. **Units by Supplier:** This is the dataset we created using T-SQL.
 
@@ -81,7 +81,7 @@ lab, we will re-create the report we have in Power BI.
 
     ![](../media/lab-07/image11upd.png)
 
-    >**Checkpoint:** You will have a report which looks like the screenshot
+    >**Checkpoint:** You will have a report that looks like the screenshot
     below. There are a few KPIs and some trend visuals. This is a good start
     if you are analyzing a new model and need a jumpstart.
 
@@ -785,7 +785,7 @@ incorrect.](../media/lab-07/image53.png)
     large data sizes and complex transformations**.
 
     We noticed Dataflows and Lakehouses are efficient and easy to make
-    changes. Typically, preview in Dataflows and Lakehouses do not take long
+    changes. Typically, previews in Dataflows and Lakehouses do not take long
     to load.
 
     - **You need a Windows PC to use Power BI Desktop even though the
@@ -904,7 +904,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,
