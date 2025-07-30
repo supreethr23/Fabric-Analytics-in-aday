@@ -70,7 +70,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
    ![](../media/lab-03/image7.png)
 
-6. Select **Create new connection (1)**.
+6. Select **New connection (1)**.
 
 7. Enter the following link for the **URL** property: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2):**
 
