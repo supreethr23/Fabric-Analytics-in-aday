@@ -54,7 +54,7 @@ By the end of this lab, you will have learned:
 
 1. On the lab VM desktop, open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com/). You will be navigated to the login page.
 
-    >**Note:** If you're using the lab environment, it may sign you
+    >**Note:** If you're using the lab environment, it may sign you in
     automatically.
 
     >**Note:** If you are not using the lab environment and have an existing
@@ -461,7 +461,7 @@ By the end of this lab, you will have learned:
     a. **Explore a Sample:** Click on the "Select" button to use a sample
     and learn about Data Science.
 
-    b. **Get Started with ML Model**s: Click on the "Open" button to
+    b. **Get Started with ML Models:** Click on the "Open" button to
     learn how to get started with machine learning models.
 
     c. **Get Started with ML Experiments:** Click on the "Open" button to
@@ -562,7 +562,7 @@ By the end of this lab, you will have learned:
     a. **Explore:** Click on the "Open" to explore a sample database
    
     b. **Database concepts:** Explains common terms and concepts around
-    transactional database so that you can become familiar with how to work
+    transactional databases so that you can become familiar with how to work
     with SQL Database
 
     c. **Database templates:** look through a library of pre-created
@@ -668,7 +668,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,
