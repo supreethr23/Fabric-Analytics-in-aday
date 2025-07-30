@@ -250,7 +250,7 @@ will see a warning message requesting you to configure the connection.
 
    ![](../media/lab-04/image24.png)
 
-2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
+2. Connect to data source dialog opens. In the **Connection** drop-down, make sure **Create new connection** is selected.
 
 3. **Authentication kind** should be **Snowflake**.
 
@@ -529,7 +529,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,
