@@ -153,7 +153,7 @@ selected](../media/lab-01/image17.png)
 
 2. Let's compare this to the Rocky Mountain territory. Select **Rocky
     Mountain from Sales Territory** (Scatter plot) visual. Notice in the
-    Sales YoY% column chart, sales for Wingtip Toys has increased
+    Sales YoY% column chart, sales for Wingtip Toys have increased
     dramatically in 2023 Q4 after being low for the previous two
     quarters.
 
@@ -162,10 +162,10 @@ selected](../media/lab-01/image19.png)
 
 3. Select **Rocky Mountain from Sales Territory** to remove the filter.
 
-4. From the Scatter plot visual on the bottom center of the screen
+4. From the Scatter plot visual at the bottom center of the screen
     (Sales Orders by Sales) select the outlier on the top right (4th
     quadrant). Notice the margin % is 52%, which is above the average of
-    50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
+    50%. Also, the Sales YoY% has gone up in the last two quarters of 2023.
 
     ![A screenshot of Power BI Desktop with Scatter plot
 selection](../media/lab-01/image21.png)
@@ -181,7 +181,7 @@ selection](../media/lab-01/image21.png)
     ![A screenshot of Power BI Desktop with Drill through
 selection](../media/lab-01/image23.png)
 
-7. You will be navigated to the page which provides the Product
+7. You will be navigated to the page that provides the Product
     Details. Notice there are some future orders in place as well.
 
 8. Once you are done reviewing this page, select the **Ctrl+back
@@ -228,9 +228,9 @@ page](../media/lab-01/image25.png)
 
     ![](../media/lab-01/image29.png)
 
-4. In the left Queries panel, notice the queries are grouped by data source.
+4. In the left Queries panel, notice that the queries are grouped by data source.
 
-5. Notice **DataverseData** folder has Customer data available in four different queries: Customer, BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
+5. Notice **DataverseData** folder has Customer data available in four different queries: Customer, BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create the Customer query.
 
 6. Click on the **Customer** Query from the Queries window. Selecting this query will require that you re-enter your Dataverse credentials. Click **Edit Credentials**.
 
@@ -423,7 +423,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,

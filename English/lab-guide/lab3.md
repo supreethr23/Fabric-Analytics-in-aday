@@ -39,7 +39,7 @@ There are multiple ways to ingest this data.
 - **Data Pipeline:** This is an orchestration tool. Activities can be orchestrated to extract, transform, and ingest data. We will be using Data Pipeline to execute Dataflow Gen2 activity which in turn will perform extraction, transformation, and ingestion.
 
 We will start by creating a Shortcut to ingest data into a Lakehouse
-from ADLS Gen2 data source. Once ingested, we are going to use Visual
+from an ADLS Gen2 data source. Once ingested, we are going to use Visual
 query views to transform it.
 
 By the end of this lab, you will have learned:
@@ -60,7 +60,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
 2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away, that is fine. Select **lh_FAIAD** (**2)** to navigate to the Lakehouse.
 
-3. In the **Explorer** panel, select the **ellipsis (3)** next to **Tables**.
+3. In the **Explorer** panel, select the **ellipsis (...) (3)** next to **Tables**.
 
 4. Select **New shortcut (4)**.
 
@@ -70,7 +70,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
    ![](../media/lab-03/image7.png)
 
-6. Select **Create new connection (1)**.
+6. Select **New connection (1)**.
 
 7. Enter the following link for the **URL** property: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2):**
 
@@ -84,7 +84,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
 11. Select **Next (6)** on the bottom right of the screen.
 
-    ![](../media/lab-03/image8.png)
+    ![](../media/lab-03/t1p11.png)
 
 12. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25 (1)**.
 
@@ -146,7 +146,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
     j. Warehouse.StockItems to **ProductItem**
 
-    > **Note:** Double check the names. A typo may cause errors during the lab.
+    > **Note:** Double-check the names. A typo may cause errors during the lab.
 
 18. Select **Create** to create the Shortcut.
 
@@ -168,18 +168,18 @@ model. We are going to create views to transform the data.
    ![](../media/lab-03/image13.png)
 
     You will be navigated to SQL analytics endpoint. Notice the Explorer
-    panel has changed. You now can create views, stored procedures, queries
+    panel has changed. You can now create views, stored procedures, queries
     and more. We are going to create a visual query as it provides a low
     code, like Power Query, interface. We will save the result as a view.
 
     We will start by creating a Geo view. We need to merge data from the
     Cities, States and Countries tables to create the Geo view.
 
-2. From the top menu, click the drop down next to **New SQL query (1)** and then select **New visual query (2)**.
+2. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
     ![](../media/lab-03/image14.png)
 
-3. To start building the query, add tables to the **Visual Query** panel. Navigate to **Schemas -> dbo -> Tables**, then click the ellipsis (three dots) next to the **Cities (1)** table and choose **Insert into canvas (2)**.
+3. To start building the query, add tables to the **Visual Query** panel. Navigate to **Schemas -> dbo -> Tables**, then click the **ellipsis (...)** next to the **Cities (1)** table and choose **Insert into canvas (2)**.
 
    ![](../media/lab-03/image15.png)
 
@@ -189,7 +189,7 @@ model. We are going to create views to transform the data.
     the option to use Power Query editor. Let's use this, since we are
     familiar with this.
 
-5. From the menu in Visual query editor, select the **Open in popup** icon (towards the right). You will be navigated to Power Query editor. **Note:** You may have to scroll to the right or re-open you visual query tab if you do not immediately see this icon.
+5. From the menu in Visual query editor, select the **Open in popup** icon (towards the right). You will be navigated to Power Query editor. **Note:** You may have to scroll to the right or re-open your visual query tab if you do not immediately see this icon.
 
    ![](../media/lab-03/image16.png)
 
@@ -273,11 +273,11 @@ model. We are going to create views to transform the data.
     We do not need all the columns in the **Merge** table. Make sure to only
     select those that we need.
 
-23. With **Merge (1)** query selected, from the ribbon select **Home (2) -> Choose columns (3) -> Choose columns (4)**.
+23. With **Merge (1)** query selected, from the ribbon select **Home (2) -> Manage columns (3) -> Choose columns (4) -> Choose columns (5)**.
 
     >**Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
-    ![](../media/lab-03/21042025(8)(1).png)
+    ![](../media/lab-03/t2p23.png)
 
 24. Choose columns dialog opens. **Uncheck** the following columns.
 
@@ -341,9 +341,9 @@ Let's create Reseller view which is created by merging Customers table
 with the BuyingGroups table. This time around we will create the view
 using Visual query without opening the Power Query option.
 
-1. From the top menu, click the drop down next to **New SQL query (1)** and then select **New visual query (2)**.
+1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
-2. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **BuyingGroups (1)** table and select **Insert into canvas (2)**.
+2. To build a query, we need to add tables to the Visual Query panel. Click on the **ellipsis (...)** next to the **BuyingGroups (1)** table and select **Insert into canvas (2)**.
 
    ![](../media/lab-03/image29.png)
 
@@ -459,15 +459,15 @@ before copying the code, we need to create a merge table using Visual
 query as creating a blank query is not possible in Visual query. Let's
 give this method a try.
 
-1. From the top menu, click the drop down next to **New SQL query** and then select **New visual query**.    
+1. From the top menu, click the drop-down next to **New SQL query** and then select **New visual query**.    
 
     ![](../media/lab-03/image40.png)
 
-2. From the **Explorer -> Table** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **InvoiceLineItems** table and select **Insert into canvas**.
+2. From the **Explorer -> Table** section, we need to add tables to the Visual Query panel. Click on the **ellipsis (...)** next to the **InvoiceLineItems** table and select **Insert into canvas**.
 
 3. Repeat the same steps for the **Invoices**.
 
-4. From the **Explorer -> Views** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Reseller** table and select **Insert into canvas**.
+4. From the **Explorer -> Views** section, we need to add tables to the Visual Query panel. Click on the **ellipsis (...)** next to the **Reseller** table and select **Insert into canvas**.
 
 5. From the Visual query editor, select the **Open in popup** to open Power Query editor.
 
@@ -591,7 +591,7 @@ move things along, we are going to copy code into Advanced Editor.
 
    ![](../media/lab-03/image54.png)
 
-2. From Explorer section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **ProductItem (1)** table and select **Insert into canvas (2)**.
+2. From Explorer section, we need to add tables to the Visual Query panel. Click on the **ellipsis (...)** next to the **ProductItem (1)** table and select **Insert into canvas (2)**.
 
    ![](../media/lab-03/image55.png)
 
@@ -761,7 +761,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,

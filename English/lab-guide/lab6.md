@@ -82,7 +82,7 @@ incorrect.](../media/lab-06/image9.png)
 
 3. **Visualize results** dialog opens. Select **Continue**.
 
-    **Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
+    **Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options in this course.
 
 4. Expand **Data** pane and expand **SQL query 1**.
 
@@ -124,7 +124,7 @@ generated](../media/lab-06/image12(1)upd.png)
 
 3. From the menu, on the top right **select the arrow next to SQL analytics endpoint**.
 
-4. Select **Lakehouse** to be navigated to the Lakehouse view.
+4. Select **Lakehouse** to navigate to the Lakehouse view.
 
     ![](../media/lab-06/image14.png)
 
@@ -177,9 +177,9 @@ lake mode.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](../media/lab-06/image18.png)
 
-2. Click on **Open data model**.
+2. Click on **Open semantic model**.
 
-    ![](../media/lab-06/image19.png)
+    ![](../media/lab-06/t4p2.png)
 
 3. In the upper-right corner make sure that you are in **Editing** mode.
     
@@ -496,7 +496,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,
