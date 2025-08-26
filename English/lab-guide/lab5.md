@@ -654,7 +654,7 @@ activity](../media/lab-05/image47.png)
 
 2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
 
-3. Set **Scheduled run** radio button to **On**.
+3. Set **Add Schedule** under **Schedule**.
 
 4. Set **Repeat dropdown** to **Daily**.
 
@@ -668,12 +668,12 @@ activity](../media/lab-05/image47.png)
 
     >**Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
-9. Select **Apply**.
+9. Select **Save**.
+
+![A screenshot of a
+schedule](../media/lab-05/L5T13S10.png)
 
 10. Select the **X** mark on the top right of the dialog to close it.
-
-    ![A screenshot of a
-schedule](../media/lab-05/image50.png)
 
 11. Select your Fabric workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** in the left panel to navigate to the workspace.
 
