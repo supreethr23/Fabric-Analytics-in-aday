@@ -180,7 +180,7 @@ Now we need to ingest People data into the Lakehouse.
 
    ![](../media/lab-04/image19.png)
 
-   You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**.
+   You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
 7. Select **lh_FAIAD** to navigate to the lakehouse.
 
@@ -330,7 +330,7 @@ settings](../media/lab-04/image29.png)
 
    ![](../media/lab-04/image32.png)
 
-   You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to Publish.
+   You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace. It may take a few moments for the Dataflow to Publish.
 
 5. Select **lh_FAIAD** to navigate to the lakehouse.
 
