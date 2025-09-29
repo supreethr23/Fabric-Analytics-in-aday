@@ -126,7 +126,9 @@ verstehen.
 4. Geben Sie nun das folgende **Kennwort** ein, und klicken Sie auf
     **Anmelden**.
 
-   ![](../media/lab-01/image8.png)
+    * Kennwort: <inject key="AzureAdUserPassword"></inject>
+
+      ![](../media/lab-01/image8.png)
 
 1. Das Dialogfeld **Bei all Ihren Apps angemeldet bleiben** wird geöffnet. Klicken Sie auf **OK**.
 
